@@ -1,0 +1,48 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/sheetView/vehicleCategorySheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "dailyRate": "Tarifa ditore",
+  "depositAmount": "Depozita",
+  "description": "Përshkrimi",
+  "doors": "Dyer",
+  "endDate": "Deri",
+  "extraKmPrice": "Çmimi për km shtesë",
+  "features": "Pajisjet",
+  "fuelType": "Lloji i karburantit",
+  "images": "Imazhet",
+  "includedKmPerDay": "Km të përfshira në ditë",
+  "isPublic": "Në faqe",
+  "luggage": "Bagazhet",
+  "mileagePolicy": "Kilometrazhi",
+  "minDriverAge": "Mosha minimale e shoferit",
+  "overview": "Përmbledhje",
+  "pricing": "Çmimet",
+  "rateSeasons": "Tarifat sezonale",
+  "seats": "Ulëset",
+  "slug": "Emri i adresës web",
+  "startDate": "Nga",
+  "transmission": "Kambio",
+  "vehicleCategorySubtitle": "Kategoria e automjetit",
+  "weekendDailyRate": "Tarifa ditore e fundjavës",
+  "weeklyRate": "Tarifa javore",
+  "fuelTypeValues": {
+    "petrol": "Benzinë",
+    "diesel": "Naftë",
+    "hybrid": "Hibrid",
+    "electric": "Elektrik",
+    "other": "Tjetër"
+  },
+  "mileagePolicyValues": {
+    "unlimited": "Pa kufi",
+    "limited": "I kufizuar në ditë"
+  },
+  "transmissionValues": {
+    "manual": "Manual",
+    "automatic": "Automatik"
+  },
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

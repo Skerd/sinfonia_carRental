@@ -1,0 +1,72 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/createVehicleCategory.tsx",
+  "title": "Kategorie hinzufügen",
+  "description": "Eine Fahrzeugklasse hinzufügen, die Kunden buchen können",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "descriptionLabel": "Beschreibung",
+    "descriptionPlaceholder": "Was Kunden über diese Kategorie wissen sollten",
+    "featuresLabel": "Ausstattung",
+    "featuresPlaceholder": "z. B. Klimaanlage",
+    "fuelTypeLabel": "Treibstoff",
+    "fuelTypePlaceholder": "Treibstoff auswählen",
+    "imagesLabel": "Fotos",
+    "isPublicLabel": "Auf der Website angezeigt",
+    "mileagePolicy": {
+      "limited": "Begrenzt pro Tag",
+      "unlimited": "Unbegrenzt"
+    },
+    "mileagePolicyLabel": "Kilometer",
+    "mileagePolicyPlaceholder": "Kilometerregelung auswählen",
+    "nameLabel": "Name",
+    "namePlaceholder": "z. B. Flughafen Zürich",
+    "pricingSectionTitle": "Preise",
+    "rateSeasonsSectionTitle": "Saisonpreise",
+    "removeFeature": "Ausstattung entfernen",
+    "seasonAddRow": "Saison hinzufügen",
+    "seasonDailyRateLabel": "Tagespreis",
+    "seasonEndLabel": "Bis (inklusive)",
+    "seasonRemoveRow": "Entfernen",
+    "seasonRowTitle": "Saison",
+    "seasonStartLabel": "Von",
+    "slugLabel": "Webadressen-Name",
+    "slugPlaceholder": "z. B. kompakt",
+    "specsSectionTitle": "Technische Daten",
+    "transmission": {
+      "automatic": "Automatik",
+      "manual": "Manuell"
+    },
+    "transmissionLabel": "Getriebe",
+    "transmissionPlaceholder": "Getriebe auswählen"
+  },
+  "axios": {
+    "start": {
+      "title": "Kategorie wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Kategorie hinzugefügt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Kategorie konnte nicht hinzugefügt werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Kategorie hinzufügen",
+    "description": "Eine Fahrzeugklasse hinzufügen, die Kunden buchen können"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Hinzufügen"
+  }
+}

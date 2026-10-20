@@ -1,0 +1,44 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/index.tsx",
+  "title": "Reservations",
+  "description": "Bookings from the website and the counter",
+  "help": {
+    "ariaLabel": "About reservations",
+    "title": "About reservations",
+    "overview": "Every booking, from the website or made here. A booking is fixed once made: changes go through the actions in its menu.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Hand over records the odometer and fuel when the customer drives off; Return records them again and adds any extra charges.",
+          "Cancel refunds what was paid, minus the cancellation fee if you choose to apply it. Bookings that waited for online payment and timed out show as expired.",
+          "Times are shown in the pickup location's time zone on the booking itself."
+        ]
+      }
+    ]
+  },
+  "create": "Add reservation",
+  "searchPlaceholder": "Search reservations or add filters...",
+  "noData": "No reservations yet",
+  "failTitle": "Failed to load reservations",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "number": "Booking",
+    "status": "Status",
+    "paymentStatus": "Payment",
+    "category": "Category",
+    "vehicle": "Vehicle",
+    "pickupLocation": "Pickup location",
+    "pickupAt": "Pickup",
+    "returnAt": "Return",
+    "source": "Booked via",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

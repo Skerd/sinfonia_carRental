@@ -1,0 +1,48 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/editVehicleBlock.tsx",
+  "title": "Edit block",
+  "description": "Change the reason or note",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "endAtLabel": "Until",
+    "endAtPlaceholder": "Enter end at",
+    "noteLabel": "Note",
+    "notePlaceholder": "What is being done",
+    "reasonLabel": "Reason",
+    "reasonPlaceholder": "Select reason",
+    "startAtLabel": "From",
+    "startAtPlaceholder": "Enter start at",
+    "vehicleLabel": "Vehicle",
+    "vehiclePlaceholder": "Select vehicle"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving changes",
+      "time": 3000
+    },
+    "success": {
+      "title": "Changes saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Changes could not be saved. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Edit block",
+    "description": "Change the reason or note"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Save"
+  }
+}

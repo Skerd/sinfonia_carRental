@@ -1,0 +1,72 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/createRentalReservation.tsx",
+  "title": "Ajouter une réservation",
+  "description": "Réserver une voiture pour un client au comptoir ou par téléphone",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "categoryLabel": "Catégorie",
+    "categoryPlaceholder": "Choisir une catégorie",
+    "contactSectionTitle": "Conducteur",
+    "customerLabel": "Compte client",
+    "customerPlaceholder": "Facultatif : lier un compte client",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "Saisir l'e-mail",
+    "extraAddRow": "Ajouter un supplément",
+    "extraLabel": "Supplément",
+    "extraPlaceholder": "Choisir un supplément",
+    "extraRemoveRow": "Supprimer",
+    "extraRowTitle": "Supplément",
+    "extrasSectionTitle": "Suppléments",
+    "firstNameLabel": "Prénom",
+    "firstNamePlaceholder": "Saisir le prénom",
+    "lastNameLabel": "Nom",
+    "lastNamePlaceholder": "Saisir le nom",
+    "localTimeHint": "Saisissez les heures locales de chaque site. Un véhicule précis est facultatif : laissez vide pour attribuer la première voiture libre de la catégorie.",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Notes internes",
+    "phoneLabel": "Téléphone",
+    "phonePlaceholder": "Saisir le téléphone",
+    "pickupDateLabel": "Date de prise en charge",
+    "pickupLocationLabel": "Lieu de prise en charge",
+    "pickupLocationPlaceholder": "Choisir un site",
+    "pickupTimeLabel": "Heure de prise en charge",
+    "quantityLabel": "Quantité",
+    "returnDateLabel": "Date de retour",
+    "returnLocationLabel": "Lieu de retour",
+    "returnLocationPlaceholder": "Choisir un site",
+    "returnTimeLabel": "Heure de retour",
+    "tripSectionTitle": "Trajet",
+    "vehicleLabel": "Véhicule",
+    "vehiclePlaceholder": "N'importe quelle voiture libre de la catégorie"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement de la réservation",
+      "time": 3000
+    },
+    "success": {
+      "title": "Réservation ajoutée",
+      "time": 3000
+    },
+    "error": {
+      "title": "La réservation n'a pas pu être ajoutée. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ajouter une réservation",
+    "description": "Réserver une voiture pour un client au comptoir ou par téléphone"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Ajouter"
+  }
+}

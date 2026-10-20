@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/noShowDialog.tsx",
+  "cancel": "Zurück",
+  "confirm": "Als nicht erschienen markieren",
+  "title": "Als nicht erschienen markieren",
+  "description": "Der Kunde ist nicht zur Abholung erschienen. Die Buchung wird geschlossen und das Auto ist wieder frei. Zahlungen bleiben bestehen."
+}

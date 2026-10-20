@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/noShowDialog.tsx",
+  "cancel": "Mbrapa",
+  "confirm": "Shëno mosparaqitje",
+  "title": "Shëno si mosparaqitje",
+  "description": "Klienti nuk erdhi të marrë makinën. Rezervimi mbyllet dhe makina lirohet përsëri. Pagesat ruhen."
+}

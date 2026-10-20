@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/index.tsx",
+  "title": "Flotte",
+  "description": "Jedes Auto, das Sie vermieten",
+  "help": {
+    "ariaLabel": "Über die Flotte",
+    "title": "Über die Flotte",
+    "overview": "Jedes Fahrzeug gehört zu einer Kategorie und hat einen Heimstandort. Nur aktive Fahrzeuge werden vermietet.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Ein Fahrzeug mit bevorstehenden Buchungen kann nicht in Wartung oder ausser Betrieb gesetzt oder einer anderen Kategorie zugewiesen werden, bis diese Buchungen auf ein anderes Auto verschoben sind.",
+          "Setzen Sie ein Fahrzeug ausser Betrieb, statt es zu löschen: seine Geschichte bleibt bei vergangenen Buchungen erhalten."
+        ]
+      }
+    ]
+  },
+  "create": "Fahrzeug hinzufügen",
+  "searchPlaceholder": "Flotte durchsuchen oder Filter hinzufügen...",
+  "noData": "Noch keine Fahrzeuge",
+  "failTitle": "Flotte konnte nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "plate": "Kennzeichen",
+    "make": "Marke",
+    "model": "Modell",
+    "category": "Kategorie",
+    "homeLocation": "Heimstandort",
+    "status": "Status",
+    "year": "Jahr",
+    "color": "Farbe",
+    "odometerKm": "Kilometerstand (km)",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

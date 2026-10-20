@@ -1,0 +1,40 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/index.tsx",
+  "title": "Extras",
+  "description": "Zusatzangebote, die Kunden mit einem Auto buchen können",
+  "help": {
+    "ariaLabel": "Über Extras",
+    "title": "Über Extras",
+    "overview": "Extras wie Kindersitze, ein Zusatzfahrer oder eine Versicherung werden einer Buchung hinzugefügt.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Extras pro Tag werden für jeden Miettag verrechnet, Extras pro Miete einmal.",
+          "Deaktivieren Sie ein Extra, um es nicht mehr anzubieten; bestehende Buchungen behalten ihren Preis."
+        ]
+      }
+    ]
+  },
+  "create": "Extra hinzufügen",
+  "searchPlaceholder": "Extras suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Extras",
+  "failTitle": "Extras konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "name": "Name",
+    "pricing": "Preisgestaltung",
+    "price": "Preis",
+    "maxQuantity": "Höchstens pro Buchung",
+    "isActive": "Aktiv",
+    "sortOrder": "Sortierung",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

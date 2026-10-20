@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/cardView/vehicleCategoryCard.tsx",
+  "failedTitle": "Kategorie konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "dailyRate": "Tagespreis",
+  "seats": "Sitze",
+  "transmission": "Getriebe",
+  "transmissionValues": {
+    "manual": "Manuell",
+    "automatic": "Automatik"
+  },
+  "isPublic": "Auf der Website"
+}

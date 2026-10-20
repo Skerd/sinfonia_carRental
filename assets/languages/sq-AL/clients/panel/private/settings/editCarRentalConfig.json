@@ -1,0 +1,75 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/settings/editCarRentalConfig.tsx",
+  "title": "Cilësimet e qirasë së makinave",
+  "description": "Rregullat e rezervimit, pagesa, anulimi dhe kushtet",
+  "form": {
+    "bookingSectionTitle": "Rezervim online",
+    "cancellationFeePercentLabel": "Tarifa e anulimit të vonuar (%)",
+    "cancellationFeePercentPlaceholder": "",
+    "currencyLabel": "Monedha",
+    "currencyPlaceholder": "Zgjidh monedhën",
+    "freeCancellationHoursLabel": "Anulim falas deri në (orë para marrjes)",
+    "freeCancellationHoursPlaceholder": "",
+    "guestBookingAllowedLabel": "Lejo rezervimin pa llogari",
+    "guestBookingAllowedPlaceholder": "",
+    "holdMinutesLabel": "Mbaje gjatë pagesës online (minuta)",
+    "holdMinutesPlaceholder": "",
+    "lateGraceMinutesLabel": "Toleranca e kthimit me vonesë (minuta)",
+    "lateGraceMinutesPlaceholder": "",
+    "maxAdvanceDaysLabel": "Rezervo më së shumti (ditë përpara)",
+    "maxAdvanceDaysPlaceholder": "",
+    "maxRentalDaysLabel": "Qiraja më e gjatë (ditë)",
+    "maxRentalDaysPlaceholder": "",
+    "minLeadTimeHoursLabel": "Rezervo të paktën (orë përpara)",
+    "minLeadTimeHoursPlaceholder": "",
+    "minRentalHoursLabel": "Qiraja më e shkurtër (orë)",
+    "minRentalHoursPlaceholder": "",
+    "notificationsSectionTitle": "Njoftime për punonjësit",
+    "notifyUsersLabel": "Njofto këta punonjës për rezervimet e reja",
+    "paymentPolicy": {
+      "customer_choice": "Zgjedh klienti",
+      "pay_at_pickup": "Në marrje",
+      "prepay_online": "Online gjatë rezervimit"
+    },
+    "paymentPolicyLabel": "Si paguajnë klientët",
+    "paymentPolicyPlaceholder": "Zgjidh pagesën",
+    "paymentSectionTitle": "Pagesa dhe anulimi",
+    "pricesIncludeVatLabel": "Çmimet përfshijnë TVSH-në",
+    "pricesIncludeVatPlaceholder": "",
+    "publicBookingEnabledLabel": "Prano rezervime në faqe",
+    "publicBookingEnabledPlaceholder": "",
+    "removeUser": "Hiq",
+    "selectUser": "Zgjidh një person",
+    "termsSectionTitle": "Kushtet e qirasë",
+    "termsTextLabel": "Kushtet e qirasë",
+    "termsTextPlaceholder": "Kushtet që klientët pranojnë kur rezervojnë",
+    "termsVersionLabel": "Versioni i kushteve",
+    "termsVersionPlaceholder": "p.sh. 2026-10",
+    "turnaroundBufferMinutesLabel": "Koha mes qirave (minuta)",
+    "turnaroundBufferMinutesPlaceholder": "",
+    "vatRateLabel": "Norma e TVSH-së (%)",
+    "vatRatePlaceholder": ""
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur cilësimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Cilësimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Cilësimet nuk u ruajtën. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Cilësimet e qirasë së makinave",
+    "description": "Rregullat e rezervimit, pagesa, anulimi dhe kushtet"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

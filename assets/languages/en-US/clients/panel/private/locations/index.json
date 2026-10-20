@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/index.tsx",
+  "title": "Locations",
+  "description": "Where customers pick up and return cars",
+  "help": {
+    "ariaLabel": "About locations",
+    "title": "About locations",
+    "overview": "Locations are the branches where cars are picked up and returned. Each has its own time zone and opening hours, and every pickup or return time is checked against them.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Set the IANA time zone (for example Europe/Zurich) so bookings stay correct across daylight-saving changes.",
+          "Add closed days for holidays; the website won't offer pickups or returns on them.",
+          "A location with bookings can't be deleted; deactivate it instead."
+        ]
+      }
+    ]
+  },
+  "create": "Add location",
+  "searchPlaceholder": "Search locations or add filters...",
+  "noData": "No locations yet",
+  "failTitle": "Failed to load locations",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "name": "Name",
+    "timezone": "Timezone",
+    "phone": "Phone",
+    "email": "Email",
+    "pickupAllowed": "Pickups here",
+    "returnAllowed": "Returns here",
+    "isActive": "Active",
+    "address": "Address",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

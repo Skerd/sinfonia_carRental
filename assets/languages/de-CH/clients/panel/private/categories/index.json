@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/index.tsx",
+  "title": "Kategorien",
+  "description": "Was Kunden buchen: Fahrzeugklassen mit Fotos, technischen Daten und Preisen",
+  "help": {
+    "ariaLabel": "Über Kategorien",
+    "title": "Über Kategorien",
+    "overview": "Kunden buchen eine Kategorie, kein bestimmtes Auto. Das System teilt bei der Buchung ein freies Auto dieser Kategorie zu.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Preise: Der Tagespreis gilt, ausser eine Saison deckt den Tag ab; ein Wochenendpreis gilt an lokalen Samstagen und Sonntagen; ein Wochenpreis wird für ganze Wochen verwendet, wenn er günstiger ist.",
+          "Schalten Sie «Auf der Website angezeigt» aus, um eine Kategorie nur für Buchungen durch das Personal zu behalten.",
+          "Eine Preisänderung ändert nie bereits getätigte Buchungen."
+        ]
+      }
+    ]
+  },
+  "create": "Kategorie hinzufügen",
+  "searchPlaceholder": "Kategorien suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Kategorien",
+  "failTitle": "Kategorien konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "name": "Name",
+    "slug": "Webadressen-Name",
+    "seats": "Sitze",
+    "transmission": "Getriebe",
+    "fuelType": "Treibstoffart",
+    "dailyRate": "Tagespreis",
+    "isPublic": "Auf der Website",
+    "sortOrder": "Sortierung",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

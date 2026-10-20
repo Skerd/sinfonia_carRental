@@ -1,0 +1,48 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/sheetView/vehicleCategorySheetView.tsx",
+  "lifecycle": "Ciclo di vita",
+  "dailyRate": "Tariffa giornaliera",
+  "depositAmount": "Cauzione",
+  "description": "Descrizione",
+  "doors": "Porte",
+  "endDate": "A",
+  "extraKmPrice": "Prezzo per km extra",
+  "features": "Dotazioni",
+  "fuelType": "Tipo di carburante",
+  "images": "Immagini",
+  "includedKmPerDay": "Km inclusi al giorno",
+  "isPublic": "Sul sito web",
+  "luggage": "Bagagli",
+  "mileagePolicy": "Chilometraggio",
+  "minDriverAge": "Età minima del conducente",
+  "overview": "Panoramica",
+  "pricing": "Tariffe",
+  "rateSeasons": "Tariffe stagionali",
+  "seats": "Posti",
+  "slug": "Nome per l'indirizzo web",
+  "startDate": "Da",
+  "transmission": "Cambio",
+  "vehicleCategorySubtitle": "Categoria di veicolo",
+  "weekendDailyRate": "Tariffa giornaliera nel weekend",
+  "weeklyRate": "Tariffa settimanale",
+  "fuelTypeValues": {
+    "petrol": "Benzina",
+    "diesel": "Diesel",
+    "hybrid": "Ibrido",
+    "electric": "Elettrico",
+    "other": "Altro"
+  },
+  "mileagePolicyValues": {
+    "unlimited": "Illimitato",
+    "limited": "Limitato al giorno"
+  },
+  "transmissionValues": {
+    "manual": "Manuale",
+    "automatic": "Automatico"
+  },
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da"
+}

@@ -1,0 +1,5 @@
+{
+    "pay": "Pay now",
+    "processing": "Processing…",
+    "paymentFailed": "The payment did not go through. Please try again."
+}

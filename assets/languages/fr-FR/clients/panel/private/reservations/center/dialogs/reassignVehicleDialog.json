@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/reassignVehicleDialog.tsx",
+  "cancel": "Retour",
+  "confirm": "Changer de voiture",
+  "title": "Changer la voiture",
+  "description": "Choisissez une autre voiture de la même catégorie. Elle doit être libre pendant toute la réservation.",
+  "vehicleLabel": "Voiture",
+  "vehiclePlaceholder": "Choisir une voiture"
+}

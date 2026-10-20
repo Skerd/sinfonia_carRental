@@ -1,0 +1,11 @@
+{
+  "pickupLocation": "Luogo di ritiro",
+  "returnLocation": "Luogo di riconsegna",
+  "differentReturn": "Riconsegna in un'altra sede",
+  "pickupDate": "Data di ritiro",
+  "pickupTime": "Ora di ritiro",
+  "returnDate": "Data di riconsegna",
+  "returnTime": "Ora di riconsegna",
+  "returnBeforePickup": "La riconsegna deve essere dopo il ritiro.",
+  "search": "Mostra auto"
+}

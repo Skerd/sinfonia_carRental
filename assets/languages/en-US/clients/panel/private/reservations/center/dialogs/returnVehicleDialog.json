@@ -1,0 +1,24 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/returnVehicleDialog.tsx",
+  "cancel": "Back",
+  "confirm": "Complete rental",
+  "title": "Take back the car",
+  "description": "Record the odometer and fuel level, and add any extra charges. They are added to the total the customer owes.",
+  "odometerLabel": "Odometer (km)",
+  "fuelLabel": "Fuel level",
+  "fuel": {
+    "empty": "Empty",
+    "quarter": "1/4",
+    "half": "1/2",
+    "three_quarters": "3/4",
+    "full": "Full"
+  },
+  "damageLabel": "New damage found",
+  "chargesLabel": "Extra charges",
+  "chargeLabel": "Charge",
+  "chargePlaceholder": "e.g. Fuel refill",
+  "chargeAmount": "Amount",
+  "addCharge": "Add charge",
+  "removeCharge": "Remove",
+  "notesLabel": "Notes"
+}

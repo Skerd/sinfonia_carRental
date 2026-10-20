@@ -1,0 +1,44 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/index.tsx",
+  "title": "Rezervimet",
+  "description": "Rezervime nga faqja dhe nga sporteli",
+  "help": {
+    "ariaLabel": "Rreth rezervimeve",
+    "title": "Rreth rezervimeve",
+    "overview": "Çdo rezervim, nga faqja ose i krijuar këtu. Një rezervim është i fiksuar pasi krijohet: ndryshimet bëhen përmes veprimeve në menunë e tij.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Dorëzimi regjistron kilometrat dhe karburantin kur klienti niset; kthimi i regjistron përsëri dhe shton tarifat shtesë.",
+          "Anulimi kthen atë që është paguar, minus tarifën e anulimit nëse zgjidhni ta aplikoni. Rezervimet që prisnin pagesën online dhe skaduan shfaqen si të skaduara.",
+          "Oraret shfaqen në zonën kohore të vendit të marrjes te vetë rezervimi."
+        ]
+      }
+    ]
+  },
+  "create": "Shto rezervim",
+  "searchPlaceholder": "Kërko rezervime ose shto filtra...",
+  "noData": "Ende pa rezervime",
+  "failTitle": "Rezervimet nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "number": "Rezervimi",
+    "status": "Statusi",
+    "paymentStatus": "Pagesa",
+    "category": "Kategoria",
+    "vehicle": "Automjeti",
+    "pickupLocation": "Vendi i marrjes",
+    "pickupAt": "Marrja",
+    "returnAt": "Kthimi",
+    "source": "Rezervuar përmes",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "noTrip": "Zgjidhni vendndodhjen, datat dhe oraret për të parë makinat e disponueshme.",
+  "searchFailed": "Nuk mundëm të ngarkojmë makinat e disponueshme. Ju lutemi provoni përsëri.",
+  "resultsTitle": "Makina të disponueshme",
+  "noCategories": "Asnjë makinë nuk ofrohet për rezervim online.",
+  "orSimilar": "ose e ngjashme",
+  "unlimitedKm": "Kilometra pa kufi",
+  "kmPerDayIncluded": "km në ditë të përfshira",
+  "day": "ditë",
+  "days": "ditë",
+  "vatIncluded": "TVSH e përfshirë",
+  "choose": "Zgjidh",
+  "soldOut": "Nuk disponohet për këto data"
+}

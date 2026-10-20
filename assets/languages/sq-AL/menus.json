@@ -1,0 +1,26 @@
+{
+  "carRental": {
+    "title": "Qiraja e makinave",
+    "reservations": {
+      "title": "Rezervimet"
+    },
+    "vehicles": {
+      "title": "Flota"
+    },
+    "blocks": {
+      "title": "Bllokimet e automjeteve"
+    },
+    "categories": {
+      "title": "Kategoritë"
+    },
+    "extras": {
+      "title": "Shtesat"
+    },
+    "locations": {
+      "title": "Vendndodhjet"
+    },
+    "settings": {
+      "title": "Cilësimet"
+    }
+  }
+}

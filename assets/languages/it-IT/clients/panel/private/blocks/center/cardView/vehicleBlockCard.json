@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/center/cardView/vehicleBlockCard.tsx",
+  "failedTitle": "Impossibile caricare il blocco",
+  "failedDescription": "Tocca per riprovare.",
+  "reason": "Motivo",
+  "reasonValues": {
+    "maintenance": "Manutenzione",
+    "repair": "Riparazione",
+    "transfer": "Trasferimento",
+    "other": "Altro"
+  },
+  "startAt": "Da",
+  "endAt": "Fino a"
+}

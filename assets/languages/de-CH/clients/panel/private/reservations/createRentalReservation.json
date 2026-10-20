@@ -1,0 +1,72 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/createRentalReservation.tsx",
+  "title": "Reservierung hinzufügen",
+  "description": "Ein Auto für einen Kunden am Schalter oder am Telefon buchen",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "categoryLabel": "Kategorie",
+    "categoryPlaceholder": "Kategorie auswählen",
+    "contactSectionTitle": "Fahrer/in",
+    "customerLabel": "Kundenkonto",
+    "customerPlaceholder": "Optional: ein Kundenkonto verknüpfen",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "E-Mail eingeben",
+    "extraAddRow": "Extra hinzufügen",
+    "extraLabel": "Extra",
+    "extraPlaceholder": "Extra auswählen",
+    "extraRemoveRow": "Entfernen",
+    "extraRowTitle": "Extra",
+    "extrasSectionTitle": "Extras",
+    "firstNameLabel": "Vorname",
+    "firstNamePlaceholder": "Vorname eingeben",
+    "lastNameLabel": "Nachname",
+    "lastNamePlaceholder": "Nachname eingeben",
+    "localTimeHint": "Geben Sie die Zeiten als Ortszeit am jeweiligen Standort ein. Ein bestimmtes Fahrzeug ist optional: leer lassen, um das erste freie Auto der Kategorie zuzuteilen.",
+    "notesLabel": "Notizen",
+    "notesPlaceholder": "Interne Notizen",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "Telefon eingeben",
+    "pickupDateLabel": "Abholdatum",
+    "pickupLocationLabel": "Abholort",
+    "pickupLocationPlaceholder": "Standort auswählen",
+    "pickupTimeLabel": "Abholzeit",
+    "quantityLabel": "Menge",
+    "returnDateLabel": "Rückgabedatum",
+    "returnLocationLabel": "Rückgabeort",
+    "returnLocationPlaceholder": "Standort auswählen",
+    "returnTimeLabel": "Rückgabezeit",
+    "tripSectionTitle": "Fahrt",
+    "vehicleLabel": "Fahrzeug",
+    "vehiclePlaceholder": "Ein beliebiges freies Auto der Kategorie"
+  },
+  "axios": {
+    "start": {
+      "title": "Reservierung wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Reservierung hinzugefügt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Reservierung konnte nicht hinzugefügt werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Reservierung hinzufügen",
+    "description": "Ein Auto für einen Kunden am Schalter oder am Telefon buchen"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Hinzufügen"
+  }
+}

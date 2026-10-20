@@ -1,0 +1,72 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/editVehicleCategory.tsx",
+  "title": "Modifier la catégorie",
+  "description": "Modifier les informations et les prix de cette catégorie",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Ce que les clients doivent savoir sur cette catégorie",
+    "featuresLabel": "Équipements",
+    "featuresPlaceholder": "p. ex. Climatisation",
+    "fuelTypeLabel": "Carburant",
+    "fuelTypePlaceholder": "Choisir le carburant",
+    "imagesLabel": "Photos",
+    "isPublicLabel": "Affiché sur le site web",
+    "mileagePolicy": {
+      "limited": "Limité par jour",
+      "unlimited": "Illimité"
+    },
+    "mileagePolicyLabel": "Kilométrage",
+    "mileagePolicyPlaceholder": "Choisir la politique de kilométrage",
+    "nameLabel": "Nom",
+    "namePlaceholder": "p. ex. Aéroport de Zurich",
+    "pricingSectionTitle": "Prix",
+    "rateSeasonsSectionTitle": "Tarifs saisonniers",
+    "removeFeature": "Retirer l'équipement",
+    "seasonAddRow": "Ajouter une saison",
+    "seasonDailyRateLabel": "Tarif journalier",
+    "seasonEndLabel": "À (inclus)",
+    "seasonRemoveRow": "Supprimer",
+    "seasonRowTitle": "Saison",
+    "seasonStartLabel": "De",
+    "slugLabel": "Nom d'adresse web",
+    "slugPlaceholder": "p. ex. compacte",
+    "specsSectionTitle": "Caractéristiques",
+    "transmission": {
+      "automatic": "Automatique",
+      "manual": "Manuelle"
+    },
+    "transmissionLabel": "Transmission",
+    "transmissionPlaceholder": "Choisir la transmission"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement des modifications",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifications enregistrées",
+      "time": 3000
+    },
+    "error": {
+      "title": "Les modifications n'ont pas pu être enregistrées. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifier la catégorie",
+    "description": "Modifier les informations et les prix de cette catégorie"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Enregistrer"
+  }
+}

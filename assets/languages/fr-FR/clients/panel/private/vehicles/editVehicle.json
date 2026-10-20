@@ -1,0 +1,60 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/editVehicle.tsx",
+  "title": "Modifier le véhicule",
+  "description": "Modifier les informations ou le statut de ce véhicule",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "categoryLabel": "Catégorie",
+    "categoryPlaceholder": "Choisir une catégorie",
+    "colorLabel": "Couleur",
+    "colorPlaceholder": "Saisir la couleur",
+    "homeLocationLabel": "Site de rattachement",
+    "homeLocationPlaceholder": "Choisir un site",
+    "makeLabel": "Marque",
+    "makePlaceholder": "p. ex. Volkswagen",
+    "modelLabel": "Modèle",
+    "modelPlaceholder": "p. ex. Golf",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Notes internes",
+    "odometerKmLabel": "Kilométrage (km)",
+    "odometerKmPlaceholder": "Saisir le kilométrage",
+    "plateLabel": "Plaque d'immatriculation",
+    "platePlaceholder": "p. ex. ZH 123456",
+    "statusLabel": "Statut",
+    "statusPlaceholder": "Choisir un statut",
+    "vinLabel": "VIN",
+    "vinPlaceholder": "Saisir le VIN",
+    "yearLabel": "Année",
+    "yearPlaceholder": "Saisir l'année"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement des modifications",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifications enregistrées",
+      "time": 3000
+    },
+    "error": {
+      "title": "Les modifications n'ont pas pu être enregistrées. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifier le véhicule",
+    "description": "Modifier les informations ou le statut de ce véhicule"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Enregistrer"
+  }
+}

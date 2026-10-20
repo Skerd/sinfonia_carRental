@@ -1,0 +1,75 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/settings/editCarRentalConfig.tsx",
+  "title": "Paramètres de location",
+  "description": "Règles de réservation, paiement, annulation et conditions",
+  "form": {
+    "bookingSectionTitle": "Réservation en ligne",
+    "cancellationFeePercentLabel": "Frais d'annulation tardive (%)",
+    "cancellationFeePercentPlaceholder": "",
+    "currencyLabel": "Devise",
+    "currencyPlaceholder": "Choisir une devise",
+    "freeCancellationHoursLabel": "Annulation gratuite jusqu'à (heures avant la prise en charge)",
+    "freeCancellationHoursPlaceholder": "",
+    "guestBookingAllowedLabel": "Autoriser la réservation sans compte",
+    "guestBookingAllowedPlaceholder": "",
+    "holdMinutesLabel": "Retenir pendant le paiement en ligne (minutes)",
+    "holdMinutesPlaceholder": "",
+    "lateGraceMinutesLabel": "Tolérance de retour tardif (minutes)",
+    "lateGraceMinutesPlaceholder": "",
+    "maxAdvanceDaysLabel": "Réserver au plus (jours à l'avance)",
+    "maxAdvanceDaysPlaceholder": "",
+    "maxRentalDaysLabel": "Location la plus longue (jours)",
+    "maxRentalDaysPlaceholder": "",
+    "minLeadTimeHoursLabel": "Réserver au moins (heures à l'avance)",
+    "minLeadTimeHoursPlaceholder": "",
+    "minRentalHoursLabel": "Location la plus courte (heures)",
+    "minRentalHoursPlaceholder": "",
+    "notificationsSectionTitle": "Alertes au personnel",
+    "notifyUsersLabel": "Prévenir ces personnes des nouvelles réservations",
+    "paymentPolicy": {
+      "customer_choice": "Au choix du client",
+      "pay_at_pickup": "À la prise en charge",
+      "prepay_online": "En ligne à la réservation"
+    },
+    "paymentPolicyLabel": "Comment les clients paient",
+    "paymentPolicyPlaceholder": "Choisir le paiement",
+    "paymentSectionTitle": "Paiement et annulation",
+    "pricesIncludeVatLabel": "Prix TTC",
+    "pricesIncludeVatPlaceholder": "",
+    "publicBookingEnabledLabel": "Accepter les réservations sur le site web",
+    "publicBookingEnabledPlaceholder": "",
+    "removeUser": "Supprimer",
+    "selectUser": "Choisir une personne",
+    "termsSectionTitle": "Conditions de location",
+    "termsTextLabel": "Conditions de location",
+    "termsTextPlaceholder": "Les conditions que les clients acceptent en réservant",
+    "termsVersionLabel": "Version des conditions",
+    "termsVersionPlaceholder": "p. ex. 2026-10",
+    "turnaroundBufferMinutesLabel": "Délai entre deux locations (minutes)",
+    "turnaroundBufferMinutesPlaceholder": "",
+    "vatRateLabel": "Taux de TVA (%)",
+    "vatRatePlaceholder": ""
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement des paramètres",
+      "time": 3000
+    },
+    "success": {
+      "title": "Paramètres enregistrés",
+      "time": 3000
+    },
+    "error": {
+      "title": "Les paramètres n'ont pas pu être enregistrés. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Paramètres de location",
+    "description": "Règles de réservation, paiement, annulation et conditions"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Enregistrer"
+  }
+}

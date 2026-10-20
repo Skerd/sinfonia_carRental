@@ -1,0 +1,76 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/editRentalLocation.tsx",
+  "title": "Modifier le site",
+  "description": "Modifier les informations et les horaires de ce site",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "addressSectionTitle": "Adresse",
+    "cityLabel": "Ville",
+    "cityPlaceholder": "Saisir la ville",
+    "closureAddRow": "Ajouter un jour de fermeture",
+    "closureDateLabel": "Date",
+    "closureReasonLabel": "Motif",
+    "closureReasonPlaceholder": "p. ex. Jour férié",
+    "closureRemoveRow": "Supprimer",
+    "closureRowTitle": "Jour de fermeture",
+    "closuresSectionTitle": "Jours de fermeture",
+    "countryLabel": "Pays",
+    "countryPlaceholder": "Saisir le pays",
+    "dayOfWeekLabel": "Jour",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "Saisir l'e-mail",
+    "endTimeLabel": "Ferme",
+    "hoursAddRow": "Ajouter des horaires",
+    "hoursRemoveRow": "Supprimer",
+    "hoursRowTitle": "Horaires d'ouverture",
+    "isActiveLabel": "Actif",
+    "latitudeLabel": "Latitude",
+    "latitudePlaceholder": "Saisir la latitude",
+    "longitudeLabel": "Longitude",
+    "longitudePlaceholder": "Saisir la longitude",
+    "nameLabel": "Nom",
+    "namePlaceholder": "p. ex. Aéroport de Zurich",
+    "openingHoursSectionTitle": "Horaires d'ouverture",
+    "phoneLabel": "Téléphone",
+    "phonePlaceholder": "Saisir le téléphone",
+    "pickupAllowedLabel": "Prises en charge ici",
+    "postalCodeLabel": "Code postal",
+    "postalCodePlaceholder": "Saisir le code postal",
+    "returnAllowedLabel": "Retours ici",
+    "startTimeLabel": "Ouvre",
+    "streetLabel": "Rue",
+    "streetPlaceholder": "Saisir la rue",
+    "timezoneLabel": "Fuseau horaire",
+    "timezonePlaceholder": "p. ex. Europe/Zurich"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement des modifications",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifications enregistrées",
+      "time": 3000
+    },
+    "error": {
+      "title": "Les modifications n'ont pas pu être enregistrées. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifier le site",
+    "description": "Modifier les informations et les horaires de ce site"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Enregistrer"
+  }
+}

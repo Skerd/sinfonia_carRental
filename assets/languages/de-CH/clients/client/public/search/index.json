@@ -1,0 +1,14 @@
+{
+  "noTrip": "Wählen Sie Standort, Daten und Zeiten, um verfügbare Autos zu sehen.",
+  "searchFailed": "Wir konnten die verfügbaren Autos nicht laden. Bitte versuchen Sie es erneut.",
+  "resultsTitle": "Verfügbare Autos",
+  "noCategories": "Für die Online-Buchung sind keine Autos aufgeführt.",
+  "orSimilar": "oder ähnlich",
+  "unlimitedKm": "Unbegrenzte Kilometer",
+  "kmPerDayIncluded": "km pro Tag inklusive",
+  "day": "Tag",
+  "days": "Tage",
+  "vatIncluded": "Inkl. MwSt.",
+  "choose": "Auswählen",
+  "soldOut": "Für diese Daten nicht verfügbar"
+}

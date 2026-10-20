@@ -1,0 +1,45 @@
+{
+  "loadFailed": "Nuk mundëm të ngarkojmë këtë rezervim.",
+  "cancelFailed": "Rezervimi nuk u anulua.",
+  "linkInvalidTitle": "Kjo lidhje nuk funksionon",
+  "linkInvalidText": "Lidhja e rezervimit mungon ose ka skaduar. Përdorni lidhjen nga emaili juaj i fundit ose na kontaktoni.",
+  "backHome": "Kthehu në fillim",
+  "paidConfirmed": "Pagesa u mor – rezervimi juaj është konfirmuar. Një konfirmim po vjen në kutinë tuaj postare.",
+  "awaitingPayment": "Po konfirmojmë pagesën tuaj. Zakonisht zgjat disa sekonda…",
+  "heldNotice": "Ky rezervim pret pagesën dhe lirohet nëse pagesa nuk përfundon.",
+  "bookingNumber": "Rezervimi",
+  "status": {
+    "held": "Në pritje të pagesës",
+    "confirmed": "Konfirmuar",
+    "in_progress": "Në rrugë",
+    "completed": "Përfunduar",
+    "cancelled": "Anuluar",
+    "expired": "Skaduar",
+    "no_show": "Mosparaqitje"
+  },
+  "pickup": "Marrja",
+  "return": "Kthimi",
+  "driver": "Shoferi",
+  "payment": "Pagesa",
+  "paymentChoice": {
+    "pay_at_pickup": "Paguaj në marrje",
+    "online": "Paguar online"
+  },
+  "paymentStatus": {
+    "unpaid": "Ende e papaguar",
+    "pending": "Pagesa në pritje",
+    "paid": "Paguar",
+    "partially_refunded": "Rimbursuar pjesërisht",
+    "refunded": "Rimbursuar",
+    "failed": "Pagesa dështoi"
+  },
+  "cancelTitle": "Anulo rezervimin",
+  "cancelWithFee": "Periudha e anulimit falas ka kaluar: zbatohet një tarifë prej {percent}% e qirasë.",
+  "cancelFree": "Anulim falas deri më {until}.",
+  "cancelling": "Duke anuluar…",
+  "confirmCancel": "Po, anulo rezervimin",
+  "keepBooking": "Mbaj rezervimin",
+  "cancelBooking": "Anulo këtë rezervim",
+  "cancelledNotice": "Rezervimi juaj është anuluar. Çdo rimbursim i detyruar kthehet në mënyrën tuaj origjinale të pagesës.",
+  "priceTitle": "Çmimi"
+}

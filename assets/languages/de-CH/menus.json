@@ -1,0 +1,26 @@
+{
+  "carRental": {
+    "title": "Autovermietung",
+    "reservations": {
+      "title": "Reservierungen"
+    },
+    "vehicles": {
+      "title": "Flotte"
+    },
+    "blocks": {
+      "title": "Fahrzeugsperren"
+    },
+    "categories": {
+      "title": "Kategorien"
+    },
+    "extras": {
+      "title": "Extras"
+    },
+    "locations": {
+      "title": "Standorte"
+    },
+    "settings": {
+      "title": "Einstellungen"
+    }
+  }
+}

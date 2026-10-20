@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/index.tsx",
+  "title": "Vehicle blocks",
+  "description": "Time a car can't be rented: maintenance, repairs, transfers",
+  "help": {
+    "ariaLabel": "About vehicle blocks",
+    "title": "About vehicle blocks",
+    "overview": "A block takes a car out of rental for a window of time.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "A block can't overlap a booking; move the booking to another car first.",
+          "Once created, a block's window is fixed. To change it, delete it and add a new one."
+        ]
+      }
+    ]
+  },
+  "create": "Add block",
+  "searchPlaceholder": "Search vehicle blocks or add filters...",
+  "noData": "No vehicle blocks yet",
+  "failTitle": "Failed to load vehicle blocks",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "vehicle": "Vehicle",
+    "startAt": "From",
+    "endAt": "Until",
+    "reason": "Reason",
+    "note": "Note",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

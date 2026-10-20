@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/index.tsx",
+  "title": "Kategoritë",
+  "description": "Çfarë rezervojnë klientët: kategori makinash me foto, specifikime dhe çmime",
+  "help": {
+    "ariaLabel": "Rreth kategorive",
+    "title": "Rreth kategorive",
+    "overview": "Klientët rezervojnë një kategori, jo një makinë të caktuar. Sistemi cakton një makinë të lirë të asaj kategorie kur bëhet rezervimi.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Çmimet: zbatohet tarifa ditore, përveç kur një sezon e mbulon ditën; tarifa e fundjavës zbatohet të shtunave dhe të dielave lokale; tarifa javore përdoret për javë të plota kur është më e lirë.",
+          "Çaktivizoni «Shfaqet në faqe» për ta mbajtur një kategori vetëm për rezervimet e punonjësve.",
+          "Ndryshimi i një çmimi nuk ndryshon kurrë rezervimet e bëra tashmë."
+        ]
+      }
+    ]
+  },
+  "create": "Shto kategori",
+  "searchPlaceholder": "Kërko kategori ose shto filtra...",
+  "noData": "Ende pa kategori",
+  "failTitle": "Kategoritë nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "name": "Emri",
+    "slug": "Emri i adresës web",
+    "seats": "Ulëset",
+    "transmission": "Kambio",
+    "fuelType": "Lloji i karburantit",
+    "dailyRate": "Tarifa ditore",
+    "isPublic": "Në faqe",
+    "sortOrder": "Renditja",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/index.tsx",
+  "title": "Vendndodhjet",
+  "description": "Ku i marrin dhe i kthejnë klientët makinat",
+  "help": {
+    "ariaLabel": "Rreth vendndodhjeve",
+    "title": "Rreth vendndodhjeve",
+    "overview": "Vendndodhjet janë pikat ku makinat merren dhe kthehen. Secila ka zonën kohore dhe orarin e vet, dhe çdo orë marrjeje ose kthimi kontrollohet kundrejt tyre.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Vendosni zonën kohore IANA (për shembull Europe/Zurich) që rezervimet të mbeten të sakta gjatë ndërrimit të orës.",
+          "Shtoni festat si ditë pushimi; faqja nuk do të ofrojë marrje ose kthime në ato ditë.",
+          "Një vendndodhje me rezervime nuk mund të fshihet; çaktivizojeni në vend të kësaj."
+        ]
+      }
+    ]
+  },
+  "create": "Shto vendndodhje",
+  "searchPlaceholder": "Kërko vendndodhje ose shto filtra...",
+  "noData": "Ende pa vendndodhje",
+  "failTitle": "Vendndodhjet nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "name": "Emri",
+    "timezone": "Zona kohore",
+    "phone": "Telefoni",
+    "email": "Email",
+    "pickupAllowed": "Marrje këtu",
+    "returnAllowed": "Kthime këtu",
+    "isActive": "Aktiv",
+    "address": "Adresa",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

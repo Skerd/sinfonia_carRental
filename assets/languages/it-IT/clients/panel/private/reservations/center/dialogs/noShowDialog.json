@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/noShowDialog.tsx",
+  "cancel": "Indietro",
+  "confirm": "Segna non presentato",
+  "title": "Segna come non presentato",
+  "description": "Il cliente non si è presentato al ritiro. La prenotazione si chiude e l'auto torna libera. I pagamenti restano."
+}

@@ -1,0 +1,55 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/editRentalExtra.tsx",
+  "title": "Modifica extra",
+  "description": "Modifica questo extra",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "descriptionLabel": "Descrizione",
+    "descriptionPlaceholder": "Cosa dovrebbero sapere i clienti su questa categoria",
+    "isActiveLabel": "Attivo",
+    "maxQuantityLabel": "Massimo per prenotazione",
+    "maxQuantityPlaceholder": "Inserisci la quantità massima",
+    "nameLabel": "Nome",
+    "namePlaceholder": "es. Aeroporto di Zurigo",
+    "priceLabel": "Prezzo",
+    "pricePlaceholder": "Inserisci il prezzo",
+    "pricing": {
+      "per_day": "Al giorno",
+      "per_rental": "Per noleggio"
+    },
+    "pricingLabel": "Addebitato",
+    "pricingPlaceholder": "Seleziona come viene addebitato",
+    "sortOrderLabel": "Ordinamento",
+    "sortOrderPlaceholder": "Inserisci l'ordinamento"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio modifiche",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifiche salvate",
+      "time": 3000
+    },
+    "error": {
+      "title": "Non è stato possibile salvare le modifiche. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifica extra",
+    "description": "Modifica questo extra"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Salva"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/index.tsx",
+  "title": "Flotta",
+  "description": "Ogni auto che noleggi",
+  "help": {
+    "ariaLabel": "Informazioni sulla flotta",
+    "title": "Informazioni sulla flotta",
+    "overview": "Ogni veicolo appartiene a una categoria e ha una sede di riferimento. Vengono noleggiati solo i veicoli attivi.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Un veicolo con prenotazioni future non può essere messo in manutenzione, ritirato o spostato in un'altra categoria finché quelle prenotazioni non vengono spostate su un'altra auto.",
+          "Ritira un veicolo invece di eliminarlo: la sua storia resta sulle prenotazioni passate."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi veicolo",
+  "searchPlaceholder": "Cerca nella flotta o aggiungi filtri...",
+  "noData": "Nessun veicolo",
+  "failTitle": "Impossibile caricare la flotta",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "plate": "Targa",
+    "make": "Marca",
+    "model": "Modello",
+    "category": "Categoria",
+    "homeLocation": "Sede di riferimento",
+    "status": "Stato",
+    "year": "Anno",
+    "color": "Colore",
+    "odometerKm": "Chilometri (km)",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

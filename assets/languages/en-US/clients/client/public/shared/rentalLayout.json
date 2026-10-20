@@ -1,0 +1,8 @@
+{
+    "fallbackName": "Car rental",
+    "findCar": "Find a car",
+    "terms": "Rental terms",
+    "unavailableTitle": "Online booking is not available",
+    "unavailableText": "This business does not take car rental bookings online right now. Please contact them directly.",
+    "locations": "Locations"
+}

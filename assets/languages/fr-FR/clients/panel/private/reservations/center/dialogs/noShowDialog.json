@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/noShowDialog.tsx",
+  "cancel": "Retour",
+  "confirm": "Marquer absent",
+  "title": "Marquer comme absent",
+  "description": "Le client n'est pas venu chercher la voiture. La réservation est clôturée et la voiture redevient libre. Les paiements sont conservés."
+}

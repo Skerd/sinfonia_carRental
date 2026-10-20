@@ -1,0 +1,4 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/settings/index.tsx",
+  "loadError": "The car rental settings could not be opened. Add a currency first, then try again."
+}

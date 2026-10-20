@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/center/sheetView/rentalExtraSheetView.tsx",
+  "lifecycle": "Ciclo di vita",
+  "description": "Descrizione",
+  "isActive": "Attivo",
+  "maxQuantity": "Massimo per prenotazione",
+  "overview": "Panoramica",
+  "price": "Prezzo",
+  "pricing": "Tariffe",
+  "rentalExtraSubtitle": "Extra",
+  "pricingValues": {
+    "per_day": "Al giorno",
+    "per_rental": "Per noleggio"
+  },
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da"
+}

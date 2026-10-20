@@ -1,0 +1,75 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/settings/editCarRentalConfig.tsx",
+  "title": "Impostazioni noleggio auto",
+  "description": "Regole di prenotazione, pagamento, cancellazione e condizioni",
+  "form": {
+    "bookingSectionTitle": "Prenotazione online",
+    "cancellationFeePercentLabel": "Penale per cancellazione tardiva (%)",
+    "cancellationFeePercentPlaceholder": "",
+    "currencyLabel": "Valuta",
+    "currencyPlaceholder": "Seleziona valuta",
+    "freeCancellationHoursLabel": "Cancellazione gratuita fino a (ore prima del ritiro)",
+    "freeCancellationHoursPlaceholder": "",
+    "guestBookingAllowedLabel": "Consenti la prenotazione senza account",
+    "guestBookingAllowedPlaceholder": "",
+    "holdMinutesLabel": "Trattieni durante il pagamento online (minuti)",
+    "holdMinutesPlaceholder": "",
+    "lateGraceMinutesLabel": "Tolleranza riconsegna in ritardo (minuti)",
+    "lateGraceMinutesPlaceholder": "",
+    "maxAdvanceDaysLabel": "Prenota al massimo (giorni prima)",
+    "maxAdvanceDaysPlaceholder": "",
+    "maxRentalDaysLabel": "Noleggio più lungo (giorni)",
+    "maxRentalDaysPlaceholder": "",
+    "minLeadTimeHoursLabel": "Prenota almeno (ore prima)",
+    "minLeadTimeHoursPlaceholder": "",
+    "minRentalHoursLabel": "Noleggio più breve (ore)",
+    "minRentalHoursPlaceholder": "",
+    "notificationsSectionTitle": "Avvisi al personale",
+    "notifyUsersLabel": "Avvisa queste persone delle nuove prenotazioni",
+    "paymentPolicy": {
+      "customer_choice": "A scelta del cliente",
+      "pay_at_pickup": "Al ritiro",
+      "prepay_online": "Online al momento della prenotazione"
+    },
+    "paymentPolicyLabel": "Come pagano i clienti",
+    "paymentPolicyPlaceholder": "Seleziona pagamento",
+    "paymentSectionTitle": "Pagamento e cancellazione",
+    "pricesIncludeVatLabel": "Prezzi IVA inclusa",
+    "pricesIncludeVatPlaceholder": "",
+    "publicBookingEnabledLabel": "Accetta prenotazioni sul sito web",
+    "publicBookingEnabledPlaceholder": "",
+    "removeUser": "Rimuovi",
+    "selectUser": "Seleziona una persona",
+    "termsSectionTitle": "Condizioni di noleggio",
+    "termsTextLabel": "Condizioni di noleggio",
+    "termsTextPlaceholder": "Le condizioni che i clienti accettano al momento della prenotazione",
+    "termsVersionLabel": "Versione delle condizioni",
+    "termsVersionPlaceholder": "es. 2026-10",
+    "turnaroundBufferMinutesLabel": "Tempo tra un noleggio e l'altro (minuti)",
+    "turnaroundBufferMinutesPlaceholder": "",
+    "vatRateLabel": "Aliquota IVA (%)",
+    "vatRatePlaceholder": ""
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio impostazioni",
+      "time": 3000
+    },
+    "success": {
+      "title": "Impostazioni salvate",
+      "time": 3000
+    },
+    "error": {
+      "title": "Non è stato possibile salvare le impostazioni. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Impostazioni noleggio auto",
+    "description": "Regole di prenotazione, pagamento, cancellazione e condizioni"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Salva"
+  }
+}

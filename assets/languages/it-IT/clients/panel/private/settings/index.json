@@ -1,0 +1,4 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/settings/index.tsx",
+  "loadError": "Non è stato possibile aprire le impostazioni del noleggio. Aggiungi prima una valuta, poi riprova."
+}

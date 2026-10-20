@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/index.tsx",
+  "title": "Flotte",
+  "description": "Chaque voiture que vous louez",
+  "help": {
+    "ariaLabel": "À propos de la flotte",
+    "title": "À propos de la flotte",
+    "overview": "Chaque véhicule appartient à une catégorie et a un site de rattachement. Seuls les véhicules actifs sont loués.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Un véhicule avec des réservations à venir ne peut pas être mis en maintenance, retiré ou changé de catégorie tant que ces réservations ne sont pas déplacées sur une autre voiture.",
+          "Retirez un véhicule au lieu de le supprimer : son historique reste sur les réservations passées."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un véhicule",
+  "searchPlaceholder": "Rechercher dans la flotte ou ajouter des filtres...",
+  "noData": "Aucun véhicule pour l'instant",
+  "failTitle": "Impossible de charger la flotte",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "plate": "Plaque",
+    "make": "Marque",
+    "model": "Modèle",
+    "category": "Catégorie",
+    "homeLocation": "Site de rattachement",
+    "status": "Statut",
+    "year": "Année",
+    "color": "Couleur",
+    "odometerKm": "Kilométrage (km)",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

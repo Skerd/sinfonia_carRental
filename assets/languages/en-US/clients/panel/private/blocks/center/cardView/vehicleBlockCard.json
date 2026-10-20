@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/center/cardView/vehicleBlockCard.tsx",
+  "failedTitle": "Failed to load block",
+  "failedDescription": "Tap to retry.",
+  "reason": "Reason",
+  "reasonValues": {
+    "maintenance": "Maintenance",
+    "repair": "Repair",
+    "transfer": "Transfer",
+    "other": "Other"
+  },
+  "startAt": "From",
+  "endAt": "Until"
+}

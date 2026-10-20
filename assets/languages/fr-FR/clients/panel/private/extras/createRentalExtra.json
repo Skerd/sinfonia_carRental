@@ -1,0 +1,55 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/createRentalExtra.tsx",
+  "title": "Ajouter un supplément",
+  "description": "Ajouter une option que les clients peuvent réserver",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Ce que les clients doivent savoir sur cette catégorie",
+    "isActiveLabel": "Actif",
+    "maxQuantityLabel": "Maximum par réservation",
+    "maxQuantityPlaceholder": "Saisir la quantité maximale",
+    "nameLabel": "Nom",
+    "namePlaceholder": "p. ex. Aéroport de Zurich",
+    "priceLabel": "Prix",
+    "pricePlaceholder": "Saisir le prix",
+    "pricing": {
+      "per_day": "Par jour",
+      "per_rental": "Par location"
+    },
+    "pricingLabel": "Facturé",
+    "pricingPlaceholder": "Choisir le mode de facturation",
+    "sortOrderLabel": "Ordre de tri",
+    "sortOrderPlaceholder": "Saisir l'ordre de tri"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement du supplément",
+      "time": 3000
+    },
+    "success": {
+      "title": "Supplément ajouté",
+      "time": 3000
+    },
+    "error": {
+      "title": "Le supplément n'a pas pu être ajouté. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ajouter un supplément",
+    "description": "Ajouter une option que les clients peuvent réserver"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Ajouter"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/center/sheetView/vehicleBlockSheetView.tsx",
+  "lifecycle": "Lebenszyklus",
+  "endAt": "Bis",
+  "note": "Notiz",
+  "overview": "Übersicht",
+  "reason": "Grund",
+  "startAt": "Von",
+  "vehicle": "Fahrzeug",
+  "vehicleBlockSubtitle": "Fahrzeugsperre",
+  "reasonValues": {
+    "maintenance": "Wartung",
+    "repair": "Reparatur",
+    "transfer": "Überführung",
+    "other": "Andere"
+  },
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "createdBy": "Erstellt von",
+  "deletedAt": "Gelöscht am",
+  "deletedBy": "Gelöscht von"
+}

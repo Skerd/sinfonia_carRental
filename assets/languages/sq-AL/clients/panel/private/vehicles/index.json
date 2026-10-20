@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/index.tsx",
+  "title": "Flota",
+  "description": "Çdo makinë që jepni me qira",
+  "help": {
+    "ariaLabel": "Rreth flotës",
+    "title": "Rreth flotës",
+    "overview": "Çdo automjet i përket një kategorie dhe ka një vendndodhje bazë. Vetëm automjetet aktive jepen me qira.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Një automjet me rezervime të ardhshme nuk mund të kalojë në mirëmbajtje, të tërhiqet ose të kalojë në një kategori tjetër derisa ato rezervime të zhvendosen në një makinë tjetër.",
+          "Tërhiqni një automjet në vend që ta fshini: historia e tij mbetet te rezervimet e kaluara."
+        ]
+      }
+    ]
+  },
+  "create": "Shto automjet",
+  "searchPlaceholder": "Kërko në flotë ose shto filtra...",
+  "noData": "Ende pa automjete",
+  "failTitle": "Flota nuk u ngarkua",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "plate": "Targa",
+    "make": "Marka",
+    "model": "Modeli",
+    "category": "Kategoria",
+    "homeLocation": "Vendndodhja bazë",
+    "status": "Statusi",
+    "year": "Viti",
+    "color": "Ngjyra",
+    "odometerKm": "Kilometrat (km)",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

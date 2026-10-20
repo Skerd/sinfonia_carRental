@@ -1,0 +1,18 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/handoverDialog.tsx",
+  "cancel": "Mbrapa",
+  "confirm": "Dorëzo",
+  "title": "Dorëzo makinën",
+  "description": "Regjistroni kilometrat dhe nivelin e karburantit kur klienti niset.",
+  "odometerLabel": "Kilometrat (km)",
+  "fuelLabel": "Niveli i karburantit",
+  "fuel": {
+    "empty": "Bosh",
+    "quarter": "1/4",
+    "half": "1/2",
+    "three_quarters": "3/4",
+    "full": "Plot"
+  },
+  "notesLabel": "Shënime",
+  "notesPlaceholder": "Gërvishtje ekzistuese, sende në makinë"
+}

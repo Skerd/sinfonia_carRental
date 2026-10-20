@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/actions/rentalReservationMenu.tsx",
+  "recordPayment": "Enregistrer le paiement",
+  "handover": "Remettre",
+  "returnVehicle": "Reprendre",
+  "extend": "Prolonger",
+  "reassignVehicle": "Changer de voiture",
+  "noShow": "Marquer absent",
+  "cancel": "Annuler la réservation"
+}

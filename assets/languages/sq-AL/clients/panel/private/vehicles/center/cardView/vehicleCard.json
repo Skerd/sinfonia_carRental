@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/center/cardView/vehicleCard.tsx",
+  "failedTitle": "Automjeti nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "model": "Modeli",
+  "category": "Kategoria",
+  "homeLocation": "Vendndodhja bazë",
+  "status": "Statusi",
+  "statusValues": {
+    "active": "Aktiv",
+    "maintenance": "Në mirëmbajtje",
+    "retired": "I tërhequr",
+    "held": "Në pritje të pagesës",
+    "confirmed": "Konfirmuar",
+    "in_progress": "Në rrugë",
+    "completed": "Përfunduar",
+    "cancelled": "Anuluar",
+    "expired": "Skaduar",
+    "no_show": "Mosparaqitje"
+  }
+}

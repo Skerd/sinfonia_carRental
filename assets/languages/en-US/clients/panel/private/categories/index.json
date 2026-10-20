@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/index.tsx",
+  "title": "Categories",
+  "description": "What customers book: car classes with photos, specs and prices",
+  "help": {
+    "ariaLabel": "About categories",
+    "title": "About categories",
+    "overview": "Customers book a category, not a specific car. The system assigns a free car of that category when the booking is made.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Prices: the daily rate applies unless a season covers the day; a weekend rate applies on local Saturdays and Sundays; a weekly rate is used for whole weeks when it is cheaper.",
+          "Turn off 'Shown on the website' to keep a category for staff bookings only.",
+          "Changing a price never changes bookings already made."
+        ]
+      }
+    ]
+  },
+  "create": "Add category",
+  "searchPlaceholder": "Search categories or add filters...",
+  "noData": "No categories yet",
+  "failTitle": "Failed to load categories",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "name": "Name",
+    "slug": "Slug",
+    "seats": "Seats",
+    "transmission": "Transmission",
+    "fuelType": "Fuel type",
+    "dailyRate": "Daily rate",
+    "isPublic": "On the website",
+    "sortOrder": "Sort order",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

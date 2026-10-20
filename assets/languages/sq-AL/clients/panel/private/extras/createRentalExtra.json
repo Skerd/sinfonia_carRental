@@ -1,0 +1,55 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/createRentalExtra.tsx",
+  "title": "Shto shtesë",
+  "description": "Shtoni një shtesë që klientët mund ta rezervojnë",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "descriptionLabel": "Përshkrimi",
+    "descriptionPlaceholder": "Çfarë duhet të dinë klientët për këtë kategori",
+    "isActiveLabel": "Aktiv",
+    "maxQuantityLabel": "Më së shumti për rezervim",
+    "maxQuantityPlaceholder": "Shkruani sasinë maksimale",
+    "nameLabel": "Emri",
+    "namePlaceholder": "p.sh. Aeroporti i Cyrihut",
+    "priceLabel": "Çmimi",
+    "pricePlaceholder": "Shkruani çmimin",
+    "pricing": {
+      "per_day": "Në ditë",
+      "per_rental": "Për qira"
+    },
+    "pricingLabel": "Faturuar",
+    "pricingPlaceholder": "Zgjidh si faturohet",
+    "sortOrderLabel": "Renditja",
+    "sortOrderPlaceholder": "Shkruani renditjen"
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur shtesën",
+      "time": 3000
+    },
+    "success": {
+      "title": "Shtesa u shtua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Shtesa nuk u shtua. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Shto shtesë",
+    "description": "Shtoni një shtesë që klientët mund ta rezervojnë"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  }
+}

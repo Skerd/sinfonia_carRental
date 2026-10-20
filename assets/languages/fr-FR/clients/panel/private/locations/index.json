@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/index.tsx",
+  "title": "Sites",
+  "description": "Où les clients prennent et rendent les voitures",
+  "help": {
+    "ariaLabel": "À propos des sites",
+    "title": "À propos des sites",
+    "overview": "Les sites sont les agences où les voitures sont prises et rendues. Chacun a son propre fuseau horaire et ses horaires, et chaque heure de prise ou de retour est vérifiée par rapport à eux.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Définissez le fuseau horaire IANA (par exemple Europe/Zurich) pour que les réservations restent correctes lors des changements d'heure.",
+          "Ajoutez les jours fériés comme jours de fermeture ; le site web n'y proposera ni prise ni retour ces jours-là.",
+          "Un site avec des réservations ne peut pas être supprimé ; désactivez-le plutôt."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un site",
+  "searchPlaceholder": "Rechercher des sites ou ajouter des filtres...",
+  "noData": "Aucun site pour l'instant",
+  "failTitle": "Impossible de charger les sites",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "name": "Nom",
+    "timezone": "Fuseau horaire",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "pickupAllowed": "Prises en charge ici",
+    "returnAllowed": "Retours ici",
+    "isActive": "Actif",
+    "address": "Adresse",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

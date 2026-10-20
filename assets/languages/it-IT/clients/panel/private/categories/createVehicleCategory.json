@@ -1,0 +1,72 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/createVehicleCategory.tsx",
+  "title": "Aggiungi categoria",
+  "description": "Aggiungi una categoria di auto che i clienti possono prenotare",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "descriptionLabel": "Descrizione",
+    "descriptionPlaceholder": "Cosa dovrebbero sapere i clienti su questa categoria",
+    "featuresLabel": "Dotazioni",
+    "featuresPlaceholder": "es. Aria condizionata",
+    "fuelTypeLabel": "Carburante",
+    "fuelTypePlaceholder": "Seleziona carburante",
+    "imagesLabel": "Foto",
+    "isPublicLabel": "Mostrato sul sito web",
+    "mileagePolicy": {
+      "limited": "Limitato al giorno",
+      "unlimited": "Illimitato"
+    },
+    "mileagePolicyLabel": "Chilometraggio",
+    "mileagePolicyPlaceholder": "Seleziona regola chilometrica",
+    "nameLabel": "Nome",
+    "namePlaceholder": "es. Aeroporto di Zurigo",
+    "pricingSectionTitle": "Prezzi",
+    "rateSeasonsSectionTitle": "Tariffe stagionali",
+    "removeFeature": "Rimuovi dotazione",
+    "seasonAddRow": "Aggiungi stagione",
+    "seasonDailyRateLabel": "Tariffa giornaliera",
+    "seasonEndLabel": "A (incluso)",
+    "seasonRemoveRow": "Rimuovi",
+    "seasonRowTitle": "Stagione",
+    "seasonStartLabel": "Da",
+    "slugLabel": "Nome per l'indirizzo web",
+    "slugPlaceholder": "es. compatta",
+    "specsSectionTitle": "Caratteristiche",
+    "transmission": {
+      "automatic": "Automatico",
+      "manual": "Manuale"
+    },
+    "transmissionLabel": "Cambio",
+    "transmissionPlaceholder": "Seleziona cambio"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio categoria",
+      "time": 3000
+    },
+    "success": {
+      "title": "Categoria aggiunta",
+      "time": 3000
+    },
+    "error": {
+      "title": "Non è stato possibile aggiungere la categoria. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Aggiungi categoria",
+    "description": "Aggiungi una categoria di auto che i clienti possono prenotare"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

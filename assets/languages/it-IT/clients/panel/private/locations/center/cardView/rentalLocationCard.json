@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/center/cardView/rentalLocationCard.tsx",
+  "failedTitle": "Impossibile caricare la sede",
+  "failedDescription": "Tocca per riprovare.",
+  "timezone": "Fuso orario",
+  "phone": "Telefono",
+  "pickupAllowed": "Ritiri qui",
+  "isActive": "Attivo"
+}

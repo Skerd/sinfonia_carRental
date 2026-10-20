@@ -1,0 +1,48 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/sheetView/vehicleCategorySheetView.tsx",
+  "lifecycle": "Lebenszyklus",
+  "dailyRate": "Tagespreis",
+  "depositAmount": "Kaution",
+  "description": "Beschreibung",
+  "doors": "Türen",
+  "endDate": "Bis",
+  "extraKmPrice": "Preis pro Zusatzkilometer",
+  "features": "Ausstattung",
+  "fuelType": "Treibstoffart",
+  "images": "Bilder",
+  "includedKmPerDay": "Inklusive Kilometer pro Tag",
+  "isPublic": "Auf der Website",
+  "luggage": "Gepäck",
+  "mileagePolicy": "Kilometer",
+  "minDriverAge": "Mindestalter Fahrer/in",
+  "overview": "Übersicht",
+  "pricing": "Preisgestaltung",
+  "rateSeasons": "Saisonpreise",
+  "seats": "Sitze",
+  "slug": "Webadressen-Name",
+  "startDate": "Von",
+  "transmission": "Getriebe",
+  "vehicleCategorySubtitle": "Fahrzeugkategorie",
+  "weekendDailyRate": "Tagespreis am Wochenende",
+  "weeklyRate": "Wochenpreis",
+  "fuelTypeValues": {
+    "petrol": "Benzin",
+    "diesel": "Diesel",
+    "hybrid": "Hybrid",
+    "electric": "Elektro",
+    "other": "Andere"
+  },
+  "mileagePolicyValues": {
+    "unlimited": "Unbegrenzt",
+    "limited": "Begrenzt pro Tag"
+  },
+  "transmissionValues": {
+    "manual": "Manuell",
+    "automatic": "Automatik"
+  },
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "createdBy": "Erstellt von",
+  "deletedAt": "Gelöscht am",
+  "deletedBy": "Gelöscht von"
+}

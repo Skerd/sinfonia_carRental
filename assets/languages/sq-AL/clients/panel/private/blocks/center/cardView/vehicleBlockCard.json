@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/center/cardView/vehicleBlockCard.tsx",
+  "failedTitle": "Bllokimi nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "reason": "Arsyeja",
+  "reasonValues": {
+    "maintenance": "Mirëmbajtje",
+    "repair": "Riparim",
+    "transfer": "Transferim",
+    "other": "Tjetër"
+  },
+  "startAt": "Nga",
+  "endAt": "Deri"
+}

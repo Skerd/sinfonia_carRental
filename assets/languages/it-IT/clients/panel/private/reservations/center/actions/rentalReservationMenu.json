@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/actions/rentalReservationMenu.tsx",
+  "recordPayment": "Registra pagamento",
+  "handover": "Consegna",
+  "returnVehicle": "Ritira",
+  "extend": "Prolunga",
+  "reassignVehicle": "Cambia auto",
+  "noShow": "Segna non presentato",
+  "cancel": "Annulla prenotazione"
+}

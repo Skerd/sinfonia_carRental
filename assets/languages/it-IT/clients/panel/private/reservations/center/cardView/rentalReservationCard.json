@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/cardView/rentalReservationCard.tsx",
+  "failedTitle": "Impossibile caricare la prenotazione",
+  "failedDescription": "Tocca per riprovare.",
+  "status": "Stato",
+  "statusValues": {
+    "active": "Attivo",
+    "maintenance": "In manutenzione",
+    "retired": "Ritirato",
+    "held": "In attesa di pagamento",
+    "confirmed": "Confermato",
+    "in_progress": "In viaggio",
+    "completed": "Completato",
+    "cancelled": "Annullato",
+    "expired": "Scaduto",
+    "no_show": "Non presentato"
+  },
+  "pickupAt": "Ritiro",
+  "vehicle": "Veicolo",
+  "contact": "Contatto",
+  "paymentStatus": "Pagamento",
+  "paymentStatusValues": {
+    "unpaid": "Non pagato",
+    "pending": "Pagamento in sospeso",
+    "paid": "Pagato",
+    "partially_refunded": "Rimborsato in parte",
+    "refunded": "Rimborsato",
+    "failed": "Pagamento non riuscito"
+  }
+}

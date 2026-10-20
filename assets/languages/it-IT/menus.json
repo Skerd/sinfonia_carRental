@@ -1,0 +1,26 @@
+{
+  "carRental": {
+    "title": "Noleggio auto",
+    "reservations": {
+      "title": "Prenotazioni"
+    },
+    "vehicles": {
+      "title": "Flotta"
+    },
+    "blocks": {
+      "title": "Blocchi veicolo"
+    },
+    "categories": {
+      "title": "Categorie"
+    },
+    "extras": {
+      "title": "Extra"
+    },
+    "locations": {
+      "title": "Sedi"
+    },
+    "settings": {
+      "title": "Impostazioni"
+    }
+  }
+}

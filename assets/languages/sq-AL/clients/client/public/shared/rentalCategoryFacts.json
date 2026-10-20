@@ -1,0 +1,16 @@
+{
+  "seats": "ulëse",
+  "doors": "dyer",
+  "bags": "bagazhe",
+  "transmission": {
+    "manual": "Manual",
+    "automatic": "Automatik"
+  },
+  "fuel": {
+    "petrol": "Benzinë",
+    "diesel": "Naftë",
+    "hybrid": "Hibrid",
+    "electric": "Elektrik",
+    "other": "Karburant tjetër"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/index.tsx",
+  "title": "Fleet",
+  "description": "Every car you rent out",
+  "help": {
+    "ariaLabel": "About fleet",
+    "title": "About fleet",
+    "overview": "Each vehicle belongs to a category and has a home location. Only active vehicles are rented out.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "A vehicle with upcoming bookings can't be set to maintenance or retired, or moved to another category, until those bookings are moved to another car.",
+          "Retire a vehicle instead of deleting it: its history stays on past bookings."
+        ]
+      }
+    ]
+  },
+  "create": "Add vehicle",
+  "searchPlaceholder": "Search fleet or add filters...",
+  "noData": "No fleet yet",
+  "failTitle": "Failed to load fleet",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "plate": "Plate",
+    "make": "Make",
+    "model": "Model",
+    "category": "Category",
+    "homeLocation": "Home location",
+    "status": "Status",
+    "year": "Year",
+    "color": "Color",
+    "odometerKm": "Odometer (km)",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

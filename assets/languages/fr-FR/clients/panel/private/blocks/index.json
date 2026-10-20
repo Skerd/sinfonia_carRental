@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/index.tsx",
+  "title": "Blocages de véhicules",
+  "description": "Périodes où une voiture ne peut pas être louée : maintenance, réparations, transferts",
+  "help": {
+    "ariaLabel": "À propos des blocages de véhicules",
+    "title": "À propos des blocages de véhicules",
+    "overview": "Un blocage retire une voiture de la location pendant une période donnée.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Un blocage ne peut pas chevaucher une réservation ; déplacez d'abord la réservation sur une autre voiture.",
+          "Une fois créé, la période d'un blocage est figée. Pour la modifier, supprimez-le et créez-en un nouveau."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un blocage",
+  "searchPlaceholder": "Rechercher des blocages de véhicules ou ajouter des filtres...",
+  "noData": "Aucun blocage de véhicule pour l'instant",
+  "failTitle": "Impossible de charger les blocages de véhicules",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "vehicle": "Véhicule",
+    "startAt": "De",
+    "endAt": "Jusqu'à",
+    "reason": "Motif",
+    "note": "Note",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/cardView/vehicleCategoryCard.tsx",
+  "failedTitle": "Impossibile caricare la categoria",
+  "failedDescription": "Tocca per riprovare.",
+  "dailyRate": "Tariffa giornaliera",
+  "seats": "Posti",
+  "transmission": "Cambio",
+  "transmissionValues": {
+    "manual": "Manuale",
+    "automatic": "Automatico"
+  },
+  "isPublic": "Sul sito web"
+}

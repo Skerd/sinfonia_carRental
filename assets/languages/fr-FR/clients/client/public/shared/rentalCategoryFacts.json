@@ -1,0 +1,16 @@
+{
+  "seats": "places",
+  "doors": "portes",
+  "bags": "bagages",
+  "transmission": {
+    "manual": "Manuelle",
+    "automatic": "Automatique"
+  },
+  "fuel": {
+    "petrol": "Essence",
+    "diesel": "Diesel",
+    "hybrid": "Hybride",
+    "electric": "Électrique",
+    "other": "Autre carburant"
+  }
+}

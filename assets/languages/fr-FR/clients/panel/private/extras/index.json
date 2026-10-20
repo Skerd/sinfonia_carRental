@@ -1,0 +1,40 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/index.tsx",
+  "title": "Suppléments",
+  "description": "Options que les clients peuvent réserver avec une voiture",
+  "help": {
+    "ariaLabel": "À propos des suppléments",
+    "title": "À propos des suppléments",
+    "overview": "Des suppléments comme les sièges enfant, un conducteur additionnel ou une assurance s'ajoutent à une réservation.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Les suppléments par jour sont facturés pour chaque jour de location ; les suppléments par location une seule fois.",
+          "Désactivez un supplément pour ne plus le proposer ; les réservations existantes gardent leur prix."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un supplément",
+  "searchPlaceholder": "Rechercher des suppléments ou ajouter des filtres...",
+  "noData": "Aucun supplément pour l'instant",
+  "failTitle": "Impossible de charger les suppléments",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "name": "Nom",
+    "pricing": "Tarification",
+    "price": "Prix",
+    "maxQuantity": "Maximum par réservation",
+    "isActive": "Actif",
+    "sortOrder": "Ordre de tri",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

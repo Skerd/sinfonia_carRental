@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/recordPaymentDialog.tsx",
+  "cancel": "Indietro",
+  "confirm": "Registra pagamento",
+  "title": "Registra un pagamento",
+  "description": "Denaro incassato al banco (contanti o terminale carte). Si aggiunge a quanto pagato dal cliente.",
+  "amountLabel": "Importo",
+  "noteLabel": "Nota",
+  "notePlaceholder": "es. Terminale carte, ricevuta 1042"
+}

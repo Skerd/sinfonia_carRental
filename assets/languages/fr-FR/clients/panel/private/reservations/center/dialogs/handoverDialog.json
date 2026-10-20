@@ -1,0 +1,18 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/handoverDialog.tsx",
+  "cancel": "Retour",
+  "confirm": "Remettre",
+  "title": "Remettre la voiture",
+  "description": "Enregistrer le kilométrage et le niveau de carburant au départ du client.",
+  "odometerLabel": "Kilométrage (km)",
+  "fuelLabel": "Niveau de carburant",
+  "fuel": {
+    "empty": "Vide",
+    "quarter": "1/4",
+    "half": "1/2",
+    "three_quarters": "3/4",
+    "full": "Plein"
+  },
+  "notesLabel": "Notes",
+  "notesPlaceholder": "Rayures existantes, objets dans la voiture"
+}

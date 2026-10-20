@@ -1,0 +1,48 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/sheetView/vehicleCategorySheetView.tsx",
+  "lifecycle": "Lifecycle",
+  "dailyRate": "Daily rate",
+  "depositAmount": "Deposit",
+  "description": "Description",
+  "doors": "Doors",
+  "endDate": "To",
+  "extraKmPrice": "Price per extra km",
+  "features": "Features",
+  "fuelType": "Fuel type",
+  "images": "Images",
+  "includedKmPerDay": "Included km per day",
+  "isPublic": "On the website",
+  "luggage": "Luggage",
+  "mileagePolicy": "Mileage",
+  "minDriverAge": "Minimum driver age",
+  "overview": "Overview",
+  "pricing": "Pricing",
+  "rateSeasons": "Seasonal prices",
+  "seats": "Seats",
+  "slug": "Slug",
+  "startDate": "From",
+  "transmission": "Transmission",
+  "vehicleCategorySubtitle": "Vehicle category",
+  "weekendDailyRate": "Weekend daily rate",
+  "weeklyRate": "Weekly rate",
+  "fuelTypeValues": {
+    "petrol": "Petrol",
+    "diesel": "Diesel",
+    "hybrid": "Hybrid",
+    "electric": "Electric",
+    "other": "Other"
+  },
+  "mileagePolicyValues": {
+    "unlimited": "Unlimited",
+    "limited": "Limited per day"
+  },
+  "transmissionValues": {
+    "manual": "Manual",
+    "automatic": "Automatic"
+  },
+  "createdAt": "Created at",
+  "updatedAt": "Updated at",
+  "createdBy": "Created by",
+  "deletedAt": "Deleted at",
+  "deletedBy": "Deleted by"
+}

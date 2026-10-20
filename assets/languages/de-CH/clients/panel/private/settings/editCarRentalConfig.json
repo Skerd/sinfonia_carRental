@@ -1,0 +1,75 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/settings/editCarRentalConfig.tsx",
+  "title": "Einstellungen Autovermietung",
+  "description": "Buchungsregeln, Zahlung, Stornierung und Bedingungen",
+  "form": {
+    "bookingSectionTitle": "Online-Buchung",
+    "cancellationFeePercentLabel": "Gebühr bei später Stornierung (%)",
+    "cancellationFeePercentPlaceholder": "",
+    "currencyLabel": "Währung",
+    "currencyPlaceholder": "Währung auswählen",
+    "freeCancellationHoursLabel": "Kostenlose Stornierung bis (Stunden vor Abholung)",
+    "freeCancellationHoursPlaceholder": "",
+    "guestBookingAllowedLabel": "Buchung ohne Konto erlauben",
+    "guestBookingAllowedPlaceholder": "",
+    "holdMinutesLabel": "Reservierung während der Online-Zahlung (Minuten)",
+    "holdMinutesPlaceholder": "",
+    "lateGraceMinutesLabel": "Kulanzzeit bei verspäteter Rückgabe (Minuten)",
+    "lateGraceMinutesPlaceholder": "",
+    "maxAdvanceDaysLabel": "Höchstens buchen (Tage im Voraus)",
+    "maxAdvanceDaysPlaceholder": "",
+    "maxRentalDaysLabel": "Längste Miete (Tage)",
+    "maxRentalDaysPlaceholder": "",
+    "minLeadTimeHoursLabel": "Mindestens buchen (Stunden im Voraus)",
+    "minLeadTimeHoursPlaceholder": "",
+    "minRentalHoursLabel": "Kürzeste Miete (Stunden)",
+    "minRentalHoursPlaceholder": "",
+    "notificationsSectionTitle": "Benachrichtigungen ans Personal",
+    "notifyUsersLabel": "Diese Mitarbeitenden über neue Buchungen benachrichtigen",
+    "paymentPolicy": {
+      "customer_choice": "Kunde wählt",
+      "pay_at_pickup": "Bei Abholung",
+      "prepay_online": "Online bei der Buchung"
+    },
+    "paymentPolicyLabel": "Wie Kunden bezahlen",
+    "paymentPolicyPlaceholder": "Zahlungsart auswählen",
+    "paymentSectionTitle": "Zahlung und Stornierung",
+    "pricesIncludeVatLabel": "Preise inkl. MwSt.",
+    "pricesIncludeVatPlaceholder": "",
+    "publicBookingEnabledLabel": "Buchungen über die Website annehmen",
+    "publicBookingEnabledPlaceholder": "",
+    "removeUser": "Entfernen",
+    "selectUser": "Person auswählen",
+    "termsSectionTitle": "Mietbedingungen",
+    "termsTextLabel": "Mietbedingungen",
+    "termsTextPlaceholder": "Die Bedingungen, die Kunden bei der Buchung akzeptieren",
+    "termsVersionLabel": "Version der Bedingungen",
+    "termsVersionPlaceholder": "z. B. 2026-10",
+    "turnaroundBufferMinutesLabel": "Wechselzeit zwischen Mieten (Minuten)",
+    "turnaroundBufferMinutesPlaceholder": "",
+    "vatRateLabel": "MwSt.-Satz (%)",
+    "vatRatePlaceholder": ""
+  },
+  "axios": {
+    "start": {
+      "title": "Einstellungen werden gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Einstellungen gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Einstellungen konnten nicht gespeichert werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Einstellungen Autovermietung",
+    "description": "Buchungsregeln, Zahlung, Stornierung und Bedingungen"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Speichern"
+  }
+}

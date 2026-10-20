@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/center/cardView/rentalLocationCard.tsx",
+  "failedTitle": "Vendndodhja nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "timezone": "Zona kohore",
+  "phone": "Telefoni",
+  "pickupAllowed": "Marrje këtu",
+  "isActive": "Aktiv"
+}

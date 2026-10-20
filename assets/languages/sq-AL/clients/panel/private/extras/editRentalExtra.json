@@ -1,0 +1,55 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/editRentalExtra.tsx",
+  "title": "Ndrysho shtesën",
+  "description": "Ndryshoni këtë shtesë",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "descriptionLabel": "Përshkrimi",
+    "descriptionPlaceholder": "Çfarë duhet të dinë klientët për këtë kategori",
+    "isActiveLabel": "Aktiv",
+    "maxQuantityLabel": "Më së shumti për rezervim",
+    "maxQuantityPlaceholder": "Shkruani sasinë maksimale",
+    "nameLabel": "Emri",
+    "namePlaceholder": "p.sh. Aeroporti i Cyrihut",
+    "priceLabel": "Çmimi",
+    "pricePlaceholder": "Shkruani çmimin",
+    "pricing": {
+      "per_day": "Në ditë",
+      "per_rental": "Për qira"
+    },
+    "pricingLabel": "Faturuar",
+    "pricingPlaceholder": "Zgjidh si faturohet",
+    "sortOrderLabel": "Renditja",
+    "sortOrderPlaceholder": "Shkruani renditjen"
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur ndryshimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Ndryshimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Ndryshimet nuk u ruajtën. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ndrysho shtesën",
+    "description": "Ndryshoni këtë shtesë"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

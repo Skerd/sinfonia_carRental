@@ -1,0 +1,24 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/returnVehicleDialog.tsx",
+  "cancel": "Retour",
+  "confirm": "Terminer la location",
+  "title": "Reprendre la voiture",
+  "description": "Enregistrer le kilométrage et le niveau de carburant, et ajouter les éventuels frais supplémentaires. Ils s'ajoutent au total dû par le client.",
+  "odometerLabel": "Kilométrage (km)",
+  "fuelLabel": "Niveau de carburant",
+  "fuel": {
+    "empty": "Vide",
+    "quarter": "1/4",
+    "half": "1/2",
+    "three_quarters": "3/4",
+    "full": "Plein"
+  },
+  "damageLabel": "Nouveau dommage constaté",
+  "chargesLabel": "Frais supplémentaires",
+  "chargeLabel": "Frais",
+  "chargePlaceholder": "p. ex. Plein de carburant",
+  "chargeAmount": "Montant",
+  "addCharge": "Ajouter un frais",
+  "removeCharge": "Supprimer",
+  "notesLabel": "Notes"
+}

@@ -1,0 +1,14 @@
+{
+    "noTrip": "Choose a location, dates and times to see available cars.",
+    "searchFailed": "We could not load available cars. Please try again.",
+    "resultsTitle": "Available cars",
+    "noCategories": "No cars are listed for online booking.",
+    "orSimilar": "or similar",
+    "unlimitedKm": "Unlimited kilometres",
+    "kmPerDayIncluded": "km per day included",
+    "day": "day",
+    "days": "days",
+    "vatIncluded": "VAT included",
+    "choose": "Choose",
+    "soldOut": "Not available for these dates"
+}

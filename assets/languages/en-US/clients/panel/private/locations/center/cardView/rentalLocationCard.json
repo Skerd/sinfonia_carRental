@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/center/cardView/rentalLocationCard.tsx",
+  "failedTitle": "Failed to load location",
+  "failedDescription": "Tap to retry.",
+  "timezone": "Timezone",
+  "phone": "Phone",
+  "pickupAllowed": "Pickups here",
+  "isActive": "Active"
+}

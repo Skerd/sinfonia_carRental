@@ -1,0 +1,11 @@
+{
+  "pickupLocation": "Vendi i marrjes",
+  "returnLocation": "Vendi i kthimit",
+  "differentReturn": "Kthe në një vend tjetër",
+  "pickupDate": "Data e marrjes",
+  "pickupTime": "Ora e marrjes",
+  "returnDate": "Data e kthimit",
+  "returnTime": "Ora e kthimit",
+  "returnBeforePickup": "Kthimi duhet të jetë pas marrjes.",
+  "search": "Shfaq makinat"
+}

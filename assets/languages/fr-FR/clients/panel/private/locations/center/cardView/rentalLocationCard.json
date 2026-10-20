@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/center/cardView/rentalLocationCard.tsx",
+  "failedTitle": "Impossible de charger le site",
+  "failedDescription": "Touchez pour réessayer.",
+  "timezone": "Fuseau horaire",
+  "phone": "Téléphone",
+  "pickupAllowed": "Prises en charge ici",
+  "isActive": "Actif"
+}

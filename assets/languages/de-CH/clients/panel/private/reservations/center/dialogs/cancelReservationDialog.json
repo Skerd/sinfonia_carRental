@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/cancelReservationDialog.tsx",
+  "cancel": "Zurück",
+  "confirm": "Buchung stornieren",
+  "title": "Diese Buchung stornieren",
+  "description": "Das Auto wird wieder frei und das Bezahlte wird zurückerstattet. Der Kunde erhält eine E-Mail.",
+  "applyFeeLabel": "Stornogebühr behalten",
+  "reasonLabel": "Grund",
+  "reasonPlaceholder": "Warum wird storniert?"
+}

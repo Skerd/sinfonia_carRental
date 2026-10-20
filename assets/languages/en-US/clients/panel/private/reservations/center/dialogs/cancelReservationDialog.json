@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/cancelReservationDialog.tsx",
+  "cancel": "Back",
+  "confirm": "Cancel booking",
+  "title": "Cancel this booking",
+  "description": "The car becomes free again and what the customer paid is refunded. The customer gets an email.",
+  "applyFeeLabel": "Keep the cancellation fee",
+  "reasonLabel": "Reason",
+  "reasonPlaceholder": "Why is it cancelled?"
+}

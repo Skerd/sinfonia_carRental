@@ -1,0 +1,55 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/editRentalExtra.tsx",
+  "title": "Edit extra",
+  "description": "Change this extra",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "What customers should know about this category",
+    "isActiveLabel": "Active",
+    "maxQuantityLabel": "Most per booking",
+    "maxQuantityPlaceholder": "Enter max quantity",
+    "nameLabel": "Name",
+    "namePlaceholder": "e.g. Zurich Airport",
+    "priceLabel": "Price",
+    "pricePlaceholder": "Enter price",
+    "pricing": {
+      "per_day": "Per day",
+      "per_rental": "Per rental"
+    },
+    "pricingLabel": "Charged",
+    "pricingPlaceholder": "Select how it is charged",
+    "sortOrderLabel": "Sort order",
+    "sortOrderPlaceholder": "Enter sort order"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving changes",
+      "time": 3000
+    },
+    "success": {
+      "title": "Changes saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Changes could not be saved. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Edit extra",
+    "description": "Change this extra"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Save"
+  }
+}

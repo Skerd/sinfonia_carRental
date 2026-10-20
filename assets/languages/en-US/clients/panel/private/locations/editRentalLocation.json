@@ -1,0 +1,76 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/editRentalLocation.tsx",
+  "title": "Edit location",
+  "description": "Change this location's details and hours",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "addressSectionTitle": "Address",
+    "cityLabel": "City",
+    "cityPlaceholder": "Enter city",
+    "closureAddRow": "Add closed day",
+    "closureDateLabel": "Date",
+    "closureReasonLabel": "Reason",
+    "closureReasonPlaceholder": "e.g. Public holiday",
+    "closureRemoveRow": "Remove",
+    "closureRowTitle": "Closed day",
+    "closuresSectionTitle": "Closed days",
+    "countryLabel": "Country",
+    "countryPlaceholder": "Enter country",
+    "dayOfWeekLabel": "Day",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter email",
+    "endTimeLabel": "Closes",
+    "hoursAddRow": "Add hours",
+    "hoursRemoveRow": "Remove",
+    "hoursRowTitle": "Opening hours",
+    "isActiveLabel": "Active",
+    "latitudeLabel": "Latitude",
+    "latitudePlaceholder": "Enter latitude",
+    "longitudeLabel": "Longitude",
+    "longitudePlaceholder": "Enter longitude",
+    "nameLabel": "Name",
+    "namePlaceholder": "e.g. Zurich Airport",
+    "openingHoursSectionTitle": "Opening hours",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "Enter phone",
+    "pickupAllowedLabel": "Pickups here",
+    "postalCodeLabel": "Postal code",
+    "postalCodePlaceholder": "Enter postal code",
+    "returnAllowedLabel": "Returns here",
+    "startTimeLabel": "Opens",
+    "streetLabel": "Street",
+    "streetPlaceholder": "Enter street",
+    "timezoneLabel": "Time zone",
+    "timezonePlaceholder": "e.g. Europe/Zurich"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving changes",
+      "time": 3000
+    },
+    "success": {
+      "title": "Changes saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Changes could not be saved. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Edit location",
+    "description": "Change this location's details and hours"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Save"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/createVehicleBlock.tsx",
+  "title": "Sperre hinzufügen",
+  "description": "Ein Auto für eine Weile aus der Vermietung nehmen",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "endAtLabel": "Bis",
+    "endAtPlaceholder": "Ende eingeben",
+    "noteLabel": "Notiz",
+    "notePlaceholder": "Was gemacht wird",
+    "reasonLabel": "Grund",
+    "reasonPlaceholder": "Grund auswählen",
+    "startAtLabel": "Von",
+    "startAtPlaceholder": "Beginn eingeben",
+    "vehicleLabel": "Fahrzeug",
+    "vehiclePlaceholder": "Fahrzeug auswählen"
+  },
+  "axios": {
+    "start": {
+      "title": "Sperre wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Sperre hinzugefügt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Sperre konnte nicht hinzugefügt werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Sperre hinzufügen",
+    "description": "Ein Auto für eine Weile aus der Vermietung nehmen"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Hinzufügen"
+  }
+}

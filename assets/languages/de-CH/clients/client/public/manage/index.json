@@ -1,0 +1,45 @@
+{
+  "loadFailed": "Wir konnten diese Buchung nicht laden.",
+  "cancelFailed": "Die Buchung konnte nicht storniert werden.",
+  "linkInvalidTitle": "Dieser Link funktioniert nicht",
+  "linkInvalidText": "Der Buchungslink fehlt oder ist abgelaufen. Verwenden Sie den Link aus Ihrer neuesten E-Mail oder kontaktieren Sie uns.",
+  "backHome": "Zurück zum Anfang",
+  "paidConfirmed": "Zahlung erhalten – Ihre Buchung ist bestätigt. Eine Bestätigung ist unterwegs in Ihr Postfach.",
+  "awaitingPayment": "Wir bestätigen Ihre Zahlung. Das dauert meist nur ein paar Sekunden…",
+  "heldNotice": "Diese Buchung wartet auf die Zahlung und wird freigegeben, wenn die Zahlung nicht abgeschlossen wird.",
+  "bookingNumber": "Buchung",
+  "status": {
+    "held": "Wartet auf Zahlung",
+    "confirmed": "Bestätigt",
+    "in_progress": "Unterwegs",
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert",
+    "expired": "Abgelaufen",
+    "no_show": "Nicht erschienen"
+  },
+  "pickup": "Abholung",
+  "return": "Rückgabe",
+  "driver": "Fahrer/in",
+  "payment": "Zahlung",
+  "paymentChoice": {
+    "pay_at_pickup": "Bei Abholung bezahlen",
+    "online": "Online bezahlt"
+  },
+  "paymentStatus": {
+    "unpaid": "Noch nicht bezahlt",
+    "pending": "Zahlung ausstehend",
+    "paid": "Bezahlt",
+    "partially_refunded": "Teilweise erstattet",
+    "refunded": "Erstattet",
+    "failed": "Zahlung fehlgeschlagen"
+  },
+  "cancelTitle": "Buchung stornieren",
+  "cancelWithFee": "Die kostenlose Stornierungsfrist ist abgelaufen: Es fällt eine Gebühr von {percent}% der Miete an.",
+  "cancelFree": "Kostenlose Stornierung bis {until}.",
+  "cancelling": "Wird storniert…",
+  "confirmCancel": "Ja, Buchung stornieren",
+  "keepBooking": "Buchung behalten",
+  "cancelBooking": "Diese Buchung stornieren",
+  "cancelledNotice": "Ihre Buchung ist storniert. Allfällige Rückerstattungen gehen an Ihr ursprüngliches Zahlungsmittel.",
+  "priceTitle": "Preis"
+}

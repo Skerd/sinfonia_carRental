@@ -1,0 +1,60 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/createVehicle.tsx",
+  "title": "Shto automjet",
+  "description": "Shtoni një makinë në flotë",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "categoryLabel": "Kategoria",
+    "categoryPlaceholder": "Zgjidh kategorinë",
+    "colorLabel": "Ngjyra",
+    "colorPlaceholder": "Shkruani ngjyrën",
+    "homeLocationLabel": "Vendndodhja bazë",
+    "homeLocationPlaceholder": "Zgjidh vendndodhjen",
+    "makeLabel": "Marka",
+    "makePlaceholder": "p.sh. Volkswagen",
+    "modelLabel": "Modeli",
+    "modelPlaceholder": "p.sh. Golf",
+    "notesLabel": "Shënime",
+    "notesPlaceholder": "Shënime të brendshme",
+    "odometerKmLabel": "Kilometrat (km)",
+    "odometerKmPlaceholder": "Shkruani kilometrat",
+    "plateLabel": "Targa e regjistrimit",
+    "platePlaceholder": "p.sh. ZH 123456",
+    "statusLabel": "Statusi",
+    "statusPlaceholder": "Zgjidh statusin",
+    "vinLabel": "VIN",
+    "vinPlaceholder": "Shkruani VIN-in",
+    "yearLabel": "Viti",
+    "yearPlaceholder": "Shkruani vitin"
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur automjetin",
+      "time": 3000
+    },
+    "success": {
+      "title": "Automjeti u shtua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Automjeti nuk u shtua. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Shto automjet",
+    "description": "Shtoni një makinë në flotë"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  }
+}

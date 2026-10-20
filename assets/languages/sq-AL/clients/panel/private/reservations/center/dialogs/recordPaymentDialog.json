@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/recordPaymentDialog.tsx",
+  "cancel": "Mbrapa",
+  "confirm": "Regjistro pagesën",
+  "title": "Regjistro një pagesë",
+  "description": "Para të marra në sportel (para në dorë ose terminal kartash). I shtohen asaj që ka paguar klienti.",
+  "amountLabel": "Shuma",
+  "noteLabel": "Shënim",
+  "notePlaceholder": "p.sh. Terminal kartash, fatura 1042"
+}

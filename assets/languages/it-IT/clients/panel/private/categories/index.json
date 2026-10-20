@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/index.tsx",
+  "title": "Categorie",
+  "description": "Cosa prenotano i clienti: categorie di auto con foto, caratteristiche e prezzi",
+  "help": {
+    "ariaLabel": "Informazioni sulle categorie",
+    "title": "Informazioni sulle categorie",
+    "overview": "I clienti prenotano una categoria, non un'auto precisa. Il sistema assegna un'auto libera di quella categoria al momento della prenotazione.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Prezzi: si applica la tariffa giornaliera salvo che una stagione copra il giorno; una tariffa weekend si applica il sabato e la domenica locali; una tariffa settimanale si usa per settimane intere quando è più conveniente.",
+          "Disattiva «Mostrato sul sito web» per riservare una categoria alle prenotazioni del personale.",
+          "Cambiare un prezzo non modifica mai le prenotazioni già fatte."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi categoria",
+  "searchPlaceholder": "Cerca categorie o aggiungi filtri...",
+  "noData": "Nessuna categoria",
+  "failTitle": "Impossibile caricare le categorie",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "name": "Nome",
+    "slug": "Nome per l'indirizzo web",
+    "seats": "Posti",
+    "transmission": "Cambio",
+    "fuelType": "Tipo di carburante",
+    "dailyRate": "Tariffa giornaliera",
+    "isPublic": "Sul sito web",
+    "sortOrder": "Ordinamento",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

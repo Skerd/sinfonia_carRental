@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/recordPaymentDialog.tsx",
+  "cancel": "Zurück",
+  "confirm": "Zahlung erfassen",
+  "title": "Eine Zahlung erfassen",
+  "description": "Am Schalter erhaltenes Geld (bar oder per Kartenterminal). Es wird zu dem addiert, was der Kunde bezahlt hat.",
+  "amountLabel": "Betrag",
+  "noteLabel": "Notiz",
+  "notePlaceholder": "z. B. Kartenterminal, Beleg 1042"
+}

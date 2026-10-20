@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/recordPaymentDialog.tsx",
+  "cancel": "Back",
+  "confirm": "Record payment",
+  "title": "Record a payment",
+  "description": "Money taken at the counter (cash or card terminal). It is added to what the customer has paid.",
+  "amountLabel": "Amount",
+  "noteLabel": "Note",
+  "notePlaceholder": "e.g. Card terminal, receipt 1042"
+}

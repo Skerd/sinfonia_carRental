@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/index.tsx",
+  "title": "Fahrzeugsperren",
+  "description": "Zeit, in der ein Auto nicht vermietet werden kann: Wartung, Reparaturen, Überführungen",
+  "help": {
+    "ariaLabel": "Über Fahrzeugsperren",
+    "title": "Über Fahrzeugsperren",
+    "overview": "Eine Sperre nimmt ein Auto für eine bestimmte Zeit aus der Vermietung.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Eine Sperre darf keine Buchung überschneiden; verschieben Sie die Buchung zuerst auf ein anderes Auto.",
+          "Nach dem Erstellen ist der Zeitraum einer Sperre fest. Um ihn zu ändern, löschen Sie sie und erstellen Sie eine neue."
+        ]
+      }
+    ]
+  },
+  "create": "Sperre hinzufügen",
+  "searchPlaceholder": "Fahrzeugsperren suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Fahrzeugsperren",
+  "failTitle": "Fahrzeugsperren konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "vehicle": "Fahrzeug",
+    "startAt": "Von",
+    "endAt": "Bis",
+    "reason": "Grund",
+    "note": "Notiz",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

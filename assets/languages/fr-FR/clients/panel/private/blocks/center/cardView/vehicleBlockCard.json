@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/center/cardView/vehicleBlockCard.tsx",
+  "failedTitle": "Impossible de charger le blocage",
+  "failedDescription": "Touchez pour réessayer.",
+  "reason": "Motif",
+  "reasonValues": {
+    "maintenance": "Maintenance",
+    "repair": "Réparation",
+    "transfer": "Transfert",
+    "other": "Autre"
+  },
+  "startAt": "De",
+  "endAt": "Jusqu'à"
+}

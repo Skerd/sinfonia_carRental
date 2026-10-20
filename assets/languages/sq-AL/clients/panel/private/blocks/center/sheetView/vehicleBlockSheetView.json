@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/center/sheetView/vehicleBlockSheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "endAt": "Deri",
+  "note": "Shënim",
+  "overview": "Përmbledhje",
+  "reason": "Arsyeja",
+  "startAt": "Nga",
+  "vehicle": "Automjeti",
+  "vehicleBlockSubtitle": "Bllokim automjeti",
+  "reasonValues": {
+    "maintenance": "Mirëmbajtje",
+    "repair": "Riparim",
+    "transfer": "Transferim",
+    "other": "Tjetër"
+  },
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

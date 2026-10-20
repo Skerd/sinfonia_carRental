@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/extendReservationDialog.tsx",
+  "cancel": "Back",
+  "confirm": "Extend",
+  "title": "Extend the rental",
+  "description": "New return date and time, in the return location's local time",
+  "returnDateLabel": "New return date",
+  "returnTimeLabel": "New return time"
+}

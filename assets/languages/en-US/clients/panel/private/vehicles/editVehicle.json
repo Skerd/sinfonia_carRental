@@ -1,0 +1,60 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/editVehicle.tsx",
+  "title": "Edit vehicle",
+  "description": "Change this vehicle's details or status",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "categoryLabel": "Category",
+    "categoryPlaceholder": "Select category",
+    "colorLabel": "Colour",
+    "colorPlaceholder": "Enter color",
+    "homeLocationLabel": "Home location",
+    "homeLocationPlaceholder": "Select location",
+    "makeLabel": "Make",
+    "makePlaceholder": "e.g. Volkswagen",
+    "modelLabel": "Model",
+    "modelPlaceholder": "e.g. Golf",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Internal notes",
+    "odometerKmLabel": "Odometer (km)",
+    "odometerKmPlaceholder": "Enter odometer km",
+    "plateLabel": "Registration plate",
+    "platePlaceholder": "e.g. ZH 123456",
+    "statusLabel": "Status",
+    "statusPlaceholder": "Select status",
+    "vinLabel": "VIN",
+    "vinPlaceholder": "Enter vin",
+    "yearLabel": "Year",
+    "yearPlaceholder": "Enter year"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving changes",
+      "time": 3000
+    },
+    "success": {
+      "title": "Changes saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Changes could not be saved. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Edit vehicle",
+    "description": "Change this vehicle's details or status"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Save"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/returnVehicleDialog.tsx",
+  "cancel": "Zurück",
+  "confirm": "Vermietung abschliessen",
+  "title": "Das Auto zurücknehmen",
+  "description": "Kilometerstand und Tankfüllung erfassen und allfällige Zusatzkosten hinzufügen. Sie werden zum Betrag addiert, den der Kunde schuldet.",
+  "odometerLabel": "Kilometerstand (km)",
+  "fuelLabel": "Tankfüllung",
+  "fuel": {
+    "empty": "Leer",
+    "quarter": "1/4",
+    "half": "1/2",
+    "three_quarters": "3/4",
+    "full": "Voll"
+  },
+  "damageLabel": "Neuer Schaden festgestellt",
+  "chargesLabel": "Zusatzkosten",
+  "chargeLabel": "Belastung",
+  "chargePlaceholder": "z. B. Tankfüllung",
+  "chargeAmount": "Betrag",
+  "addCharge": "Belastung hinzufügen",
+  "removeCharge": "Entfernen",
+  "notesLabel": "Notizen"
+}

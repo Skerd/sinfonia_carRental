@@ -1,0 +1,76 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/createRentalLocation.tsx",
+  "title": "Aggiungi sede",
+  "description": "Aggiungi una filiale dove le auto vengono ritirate o riconsegnate",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "addressSectionTitle": "Indirizzo",
+    "cityLabel": "Città",
+    "cityPlaceholder": "Inserisci la città",
+    "closureAddRow": "Aggiungi giorno di chiusura",
+    "closureDateLabel": "Data",
+    "closureReasonLabel": "Motivo",
+    "closureReasonPlaceholder": "es. Giorno festivo",
+    "closureRemoveRow": "Rimuovi",
+    "closureRowTitle": "Giorno di chiusura",
+    "closuresSectionTitle": "Giorni di chiusura",
+    "countryLabel": "Paese",
+    "countryPlaceholder": "Inserisci il paese",
+    "dayOfWeekLabel": "Giorno",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "Inserisci l'e-mail",
+    "endTimeLabel": "Chiude",
+    "hoursAddRow": "Aggiungi orari",
+    "hoursRemoveRow": "Rimuovi",
+    "hoursRowTitle": "Orari di apertura",
+    "isActiveLabel": "Attivo",
+    "latitudeLabel": "Latitudine",
+    "latitudePlaceholder": "Inserisci la latitudine",
+    "longitudeLabel": "Longitudine",
+    "longitudePlaceholder": "Inserisci la longitudine",
+    "nameLabel": "Nome",
+    "namePlaceholder": "es. Aeroporto di Zurigo",
+    "openingHoursSectionTitle": "Orari di apertura",
+    "phoneLabel": "Telefono",
+    "phonePlaceholder": "Inserisci il telefono",
+    "pickupAllowedLabel": "Ritiri qui",
+    "postalCodeLabel": "CAP",
+    "postalCodePlaceholder": "Inserisci il CAP",
+    "returnAllowedLabel": "Riconsegne qui",
+    "startTimeLabel": "Apre",
+    "streetLabel": "Via",
+    "streetPlaceholder": "Inserisci la via",
+    "timezoneLabel": "Fuso orario",
+    "timezonePlaceholder": "es. Europe/Zurich"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio sede",
+      "time": 3000
+    },
+    "success": {
+      "title": "Sede aggiunta",
+      "time": 3000
+    },
+    "error": {
+      "title": "Non è stato possibile aggiungere la sede. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Aggiungi sede",
+    "description": "Aggiungi una filiale dove le auto vengono ritirate o riconsegnate"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

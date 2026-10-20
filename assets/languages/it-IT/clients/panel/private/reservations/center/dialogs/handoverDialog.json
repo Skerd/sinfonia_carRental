@@ -1,0 +1,18 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/handoverDialog.tsx",
+  "cancel": "Indietro",
+  "confirm": "Consegna",
+  "title": "Consegna l'auto",
+  "description": "Registra chilometri e livello del carburante quando il cliente parte.",
+  "odometerLabel": "Chilometri (km)",
+  "fuelLabel": "Livello carburante",
+  "fuel": {
+    "empty": "Vuoto",
+    "quarter": "1/4",
+    "half": "1/2",
+    "three_quarters": "3/4",
+    "full": "Pieno"
+  },
+  "notesLabel": "Note",
+  "notesPlaceholder": "Graffi esistenti, oggetti nell'auto"
+}

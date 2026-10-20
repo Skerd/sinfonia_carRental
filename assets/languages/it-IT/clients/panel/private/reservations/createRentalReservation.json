@@ -1,0 +1,72 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/createRentalReservation.tsx",
+  "title": "Aggiungi prenotazione",
+  "description": "Prenota un'auto per un cliente al banco o al telefono",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "categoryLabel": "Categoria",
+    "categoryPlaceholder": "Seleziona categoria",
+    "contactSectionTitle": "Conducente",
+    "customerLabel": "Account cliente",
+    "customerPlaceholder": "Facoltativo: collega un account cliente",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "Inserisci l'e-mail",
+    "extraAddRow": "Aggiungi extra",
+    "extraLabel": "Extra",
+    "extraPlaceholder": "Seleziona extra",
+    "extraRemoveRow": "Rimuovi",
+    "extraRowTitle": "Extra",
+    "extrasSectionTitle": "Extra",
+    "firstNameLabel": "Nome",
+    "firstNamePlaceholder": "Inserisci il nome",
+    "lastNameLabel": "Cognome",
+    "lastNamePlaceholder": "Inserisci il cognome",
+    "localTimeHint": "Inserisci gli orari come ora locale di ciascuna sede. Un veicolo specifico è facoltativo: lascialo vuoto per assegnare la prima auto libera della categoria.",
+    "notesLabel": "Note",
+    "notesPlaceholder": "Note interne",
+    "phoneLabel": "Telefono",
+    "phonePlaceholder": "Inserisci il telefono",
+    "pickupDateLabel": "Data di ritiro",
+    "pickupLocationLabel": "Luogo di ritiro",
+    "pickupLocationPlaceholder": "Seleziona sede",
+    "pickupTimeLabel": "Ora di ritiro",
+    "quantityLabel": "Quantità",
+    "returnDateLabel": "Data di riconsegna",
+    "returnLocationLabel": "Luogo di riconsegna",
+    "returnLocationPlaceholder": "Seleziona sede",
+    "returnTimeLabel": "Ora di riconsegna",
+    "tripSectionTitle": "Viaggio",
+    "vehicleLabel": "Veicolo",
+    "vehiclePlaceholder": "Qualsiasi auto libera della categoria"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio prenotazione",
+      "time": 3000
+    },
+    "success": {
+      "title": "Prenotazione aggiunta",
+      "time": 3000
+    },
+    "error": {
+      "title": "Non è stato possibile aggiungere la prenotazione. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Aggiungi prenotazione",
+    "description": "Prenota un'auto per un cliente al banco o al telefono"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

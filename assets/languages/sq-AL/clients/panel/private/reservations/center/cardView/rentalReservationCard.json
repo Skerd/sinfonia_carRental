@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/cardView/rentalReservationCard.tsx",
+  "failedTitle": "Rezervimi nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "status": "Statusi",
+  "statusValues": {
+    "active": "Aktiv",
+    "maintenance": "Në mirëmbajtje",
+    "retired": "I tërhequr",
+    "held": "Në pritje të pagesës",
+    "confirmed": "Konfirmuar",
+    "in_progress": "Në rrugë",
+    "completed": "Përfunduar",
+    "cancelled": "Anuluar",
+    "expired": "Skaduar",
+    "no_show": "Mosparaqitje"
+  },
+  "pickupAt": "Marrja",
+  "vehicle": "Automjeti",
+  "contact": "Kontakti",
+  "paymentStatus": "Pagesa",
+  "paymentStatusValues": {
+    "unpaid": "E papaguar",
+    "pending": "Pagesa në pritje",
+    "paid": "Paguar",
+    "partially_refunded": "Rimbursuar pjesërisht",
+    "refunded": "Rimbursuar",
+    "failed": "Pagesa dështoi"
+  }
+}

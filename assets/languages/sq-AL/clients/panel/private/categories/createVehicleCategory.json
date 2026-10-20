@@ -1,0 +1,72 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/createVehicleCategory.tsx",
+  "title": "Shto kategori",
+  "description": "Shtoni një kategori makine që klientët mund ta rezervojnë",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "descriptionLabel": "Përshkrimi",
+    "descriptionPlaceholder": "Çfarë duhet të dinë klientët për këtë kategori",
+    "featuresLabel": "Pajisjet",
+    "featuresPlaceholder": "p.sh. Kondicioner",
+    "fuelTypeLabel": "Karburanti",
+    "fuelTypePlaceholder": "Zgjidh karburantin",
+    "imagesLabel": "Fotot",
+    "isPublicLabel": "Shfaqet në faqe",
+    "mileagePolicy": {
+      "limited": "I kufizuar në ditë",
+      "unlimited": "Pa kufi"
+    },
+    "mileagePolicyLabel": "Kilometrazhi",
+    "mileagePolicyPlaceholder": "Zgjidh rregullin e kilometrazhit",
+    "nameLabel": "Emri",
+    "namePlaceholder": "p.sh. Aeroporti i Cyrihut",
+    "pricingSectionTitle": "Çmimet",
+    "rateSeasonsSectionTitle": "Tarifat sezonale",
+    "removeFeature": "Hiq pajisjen",
+    "seasonAddRow": "Shto sezon",
+    "seasonDailyRateLabel": "Tarifa ditore",
+    "seasonEndLabel": "Deri (përfshirë)",
+    "seasonRemoveRow": "Hiq",
+    "seasonRowTitle": "Sezoni",
+    "seasonStartLabel": "Nga",
+    "slugLabel": "Emri i adresës web",
+    "slugPlaceholder": "p.sh. kompakte",
+    "specsSectionTitle": "Specifikimet",
+    "transmission": {
+      "automatic": "Automatik",
+      "manual": "Manual"
+    },
+    "transmissionLabel": "Kambio",
+    "transmissionPlaceholder": "Zgjidh kambion"
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur kategorinë",
+      "time": 3000
+    },
+    "success": {
+      "title": "Kategoria u shtua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Kategoria nuk u shtua. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Shto kategori",
+    "description": "Shtoni një kategori makine që klientët mund ta rezervojnë"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  }
+}

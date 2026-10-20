@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/cancelReservationDialog.tsx",
+  "cancel": "Retour",
+  "confirm": "Annuler la réservation",
+  "title": "Annuler cette réservation",
+  "description": "La voiture redevient libre et ce que le client a payé est remboursé. Le client reçoit un e-mail.",
+  "applyFeeLabel": "Garder les frais d'annulation",
+  "reasonLabel": "Motif",
+  "reasonPlaceholder": "Pourquoi est-ce annulé ?"
+}

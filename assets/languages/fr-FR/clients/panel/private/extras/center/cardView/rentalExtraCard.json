@@ -1,0 +1,12 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/center/cardView/rentalExtraCard.tsx",
+  "failedTitle": "Impossible de charger le supplément",
+  "failedDescription": "Touchez pour réessayer.",
+  "price": "Prix",
+  "pricing": "Tarification",
+  "pricingValues": {
+    "per_day": "Par jour",
+    "per_rental": "Par location"
+  },
+  "isActive": "Actif"
+}

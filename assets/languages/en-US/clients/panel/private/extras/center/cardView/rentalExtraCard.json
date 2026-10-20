@@ -1,0 +1,12 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/center/cardView/rentalExtraCard.tsx",
+  "failedTitle": "Failed to load extra",
+  "failedDescription": "Tap to retry.",
+  "price": "Price",
+  "pricing": "Pricing",
+  "pricingValues": {
+    "per_day": "Per day",
+    "per_rental": "Per rental"
+  },
+  "isActive": "Active"
+}

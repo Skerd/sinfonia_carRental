@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/noShowDialog.tsx",
+  "cancel": "Back",
+  "confirm": "Mark no-show",
+  "title": "Mark as no-show",
+  "description": "The customer did not come to pick up the car. The booking closes and the car is free again. Payments are kept."
+}

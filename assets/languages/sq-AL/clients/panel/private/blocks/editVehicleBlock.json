@@ -1,0 +1,48 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/editVehicleBlock.tsx",
+  "title": "Ndrysho bllokimin",
+  "description": "Ndrysho arsyen ose shënimin",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "endAtLabel": "Deri",
+    "endAtPlaceholder": "Shkruani fundin",
+    "noteLabel": "Shënim",
+    "notePlaceholder": "Çfarë po bëhet",
+    "reasonLabel": "Arsyeja",
+    "reasonPlaceholder": "Zgjidh arsyen",
+    "startAtLabel": "Nga",
+    "startAtPlaceholder": "Shkruani fillimin",
+    "vehicleLabel": "Automjeti",
+    "vehiclePlaceholder": "Zgjidh automjetin"
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur ndryshimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Ndryshimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Ndryshimet nuk u ruajtën. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ndrysho bllokimin",
+    "description": "Ndrysho arsyen ose shënimin"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

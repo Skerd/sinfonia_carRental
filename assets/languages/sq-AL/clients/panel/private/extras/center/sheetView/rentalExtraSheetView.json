@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/center/sheetView/rentalExtraSheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "description": "Përshkrimi",
+  "isActive": "Aktiv",
+  "maxQuantity": "Më së shumti për rezervim",
+  "overview": "Përmbledhje",
+  "price": "Çmimi",
+  "pricing": "Çmimet",
+  "rentalExtraSubtitle": "Shtesë",
+  "pricingValues": {
+    "per_day": "Në ditë",
+    "per_rental": "Për qira"
+  },
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

@@ -1,0 +1,12 @@
+{
+  "carRental": {
+    "title": "Car rental",
+    "reservations": {"title": "Reservations"},
+    "vehicles": {"title": "Fleet"},
+    "blocks": {"title": "Vehicle blocks"},
+    "categories": {"title": "Categories"},
+    "extras": {"title": "Extras"},
+    "locations": {"title": "Locations"},
+    "settings": {"title": "Settings"}
+  }
+}

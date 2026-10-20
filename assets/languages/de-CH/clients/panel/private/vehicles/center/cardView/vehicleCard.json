@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/center/cardView/vehicleCard.tsx",
+  "failedTitle": "Fahrzeug konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "model": "Modell",
+  "category": "Kategorie",
+  "homeLocation": "Heimstandort",
+  "status": "Status",
+  "statusValues": {
+    "active": "Aktiv",
+    "maintenance": "In Wartung",
+    "retired": "Ausser Betrieb",
+    "held": "Wartet auf Zahlung",
+    "confirmed": "Bestätigt",
+    "in_progress": "Unterwegs",
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert",
+    "expired": "Abgelaufen",
+    "no_show": "Nicht erschienen"
+  }
+}

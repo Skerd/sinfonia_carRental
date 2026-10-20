@@ -1,0 +1,24 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/returnVehicleDialog.tsx",
+  "cancel": "Indietro",
+  "confirm": "Concludi noleggio",
+  "title": "Ritira l'auto",
+  "description": "Registra chilometri e livello del carburante e aggiungi eventuali addebiti extra. Si sommano al totale dovuto dal cliente.",
+  "odometerLabel": "Chilometri (km)",
+  "fuelLabel": "Livello carburante",
+  "fuel": {
+    "empty": "Vuoto",
+    "quarter": "1/4",
+    "half": "1/2",
+    "three_quarters": "3/4",
+    "full": "Pieno"
+  },
+  "damageLabel": "Nuovo danno rilevato",
+  "chargesLabel": "Addebiti extra",
+  "chargeLabel": "Addebito",
+  "chargePlaceholder": "es. Rifornimento",
+  "chargeAmount": "Importo",
+  "addCharge": "Aggiungi addebito",
+  "removeCharge": "Rimuovi",
+  "notesLabel": "Note"
+}

@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/reassignVehicleDialog.tsx",
+  "cancel": "Indietro",
+  "confirm": "Cambia auto",
+  "title": "Cambia l'auto",
+  "description": "Scegli un'altra auto della stessa categoria. Deve essere libera per tutta la prenotazione.",
+  "vehicleLabel": "Auto",
+  "vehiclePlaceholder": "Seleziona un'auto"
+}

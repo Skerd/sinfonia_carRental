@@ -1,0 +1,40 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/index.tsx",
+  "title": "Shtesat",
+  "description": "Shtesa që klientët mund t'i rezervojnë me një makinë",
+  "help": {
+    "ariaLabel": "Rreth shtesave",
+    "title": "Rreth shtesave",
+    "overview": "Shtesa si ndenjëse për fëmijë, një shofer shtesë ose sigurim i shtohen një rezervimi.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Shtesat ditore faturohen për çdo ditë qiraje; shtesat për qira vetëm një herë.",
+          "Çaktivizoni një shtesë për të mos e ofruar më; rezervimet ekzistuese ruajnë çmimin e tyre."
+        ]
+      }
+    ]
+  },
+  "create": "Shto shtesë",
+  "searchPlaceholder": "Kërko shtesa ose shto filtra...",
+  "noData": "Ende pa shtesa",
+  "failTitle": "Shtesat nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "name": "Emri",
+    "pricing": "Çmimet",
+    "price": "Çmimi",
+    "maxQuantity": "Më së shumti për rezervim",
+    "isActive": "Aktiv",
+    "sortOrder": "Renditja",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

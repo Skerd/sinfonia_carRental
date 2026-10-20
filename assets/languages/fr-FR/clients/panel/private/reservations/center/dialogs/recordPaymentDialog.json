@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/recordPaymentDialog.tsx",
+  "cancel": "Retour",
+  "confirm": "Enregistrer le paiement",
+  "title": "Enregistrer un paiement",
+  "description": "Argent encaissé au comptoir (espèces ou terminal de carte). Il s'ajoute à ce que le client a payé.",
+  "amountLabel": "Montant",
+  "noteLabel": "Note",
+  "notePlaceholder": "p. ex. Terminal de carte, reçu 1042"
+}

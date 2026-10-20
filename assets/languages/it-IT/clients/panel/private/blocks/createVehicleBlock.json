@@ -1,0 +1,48 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/createVehicleBlock.tsx",
+  "title": "Aggiungi blocco",
+  "description": "Togli un'auto dal noleggio per un periodo",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "endAtLabel": "Fino a",
+    "endAtPlaceholder": "Inserisci la fine",
+    "noteLabel": "Nota",
+    "notePlaceholder": "Cosa viene fatto",
+    "reasonLabel": "Motivo",
+    "reasonPlaceholder": "Seleziona motivo",
+    "startAtLabel": "Da",
+    "startAtPlaceholder": "Inserisci l'inizio",
+    "vehicleLabel": "Veicolo",
+    "vehiclePlaceholder": "Seleziona veicolo"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio blocco",
+      "time": 3000
+    },
+    "success": {
+      "title": "Blocco aggiunto",
+      "time": 3000
+    },
+    "error": {
+      "title": "Non è stato possibile aggiungere il blocco. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Aggiungi blocco",
+    "description": "Togli un'auto dal noleggio per un periodo"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/createVehicle.tsx",
+  "title": "Ajouter un véhicule",
+  "description": "Ajouter une voiture à la flotte",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "categoryLabel": "Catégorie",
+    "categoryPlaceholder": "Choisir une catégorie",
+    "colorLabel": "Couleur",
+    "colorPlaceholder": "Saisir la couleur",
+    "homeLocationLabel": "Site de rattachement",
+    "homeLocationPlaceholder": "Choisir un site",
+    "makeLabel": "Marque",
+    "makePlaceholder": "p. ex. Volkswagen",
+    "modelLabel": "Modèle",
+    "modelPlaceholder": "p. ex. Golf",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Notes internes",
+    "odometerKmLabel": "Kilométrage (km)",
+    "odometerKmPlaceholder": "Saisir le kilométrage",
+    "plateLabel": "Plaque d'immatriculation",
+    "platePlaceholder": "p. ex. ZH 123456",
+    "statusLabel": "Statut",
+    "statusPlaceholder": "Choisir un statut",
+    "vinLabel": "VIN",
+    "vinPlaceholder": "Saisir le VIN",
+    "yearLabel": "Année",
+    "yearPlaceholder": "Saisir l'année"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement du véhicule",
+      "time": 3000
+    },
+    "success": {
+      "title": "Véhicule ajouté",
+      "time": 3000
+    },
+    "error": {
+      "title": "Le véhicule n'a pas pu être ajouté. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ajouter un véhicule",
+    "description": "Ajouter une voiture à la flotte"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Ajouter"
+  }
+}

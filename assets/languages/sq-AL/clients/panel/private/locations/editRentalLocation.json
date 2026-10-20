@@ -1,0 +1,76 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/editRentalLocation.tsx",
+  "title": "Ndrysho vendndodhjen",
+  "description": "Ndryshoni të dhënat dhe orarin e kësaj vendndodhjeje",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "addressSectionTitle": "Adresa",
+    "cityLabel": "Qyteti",
+    "cityPlaceholder": "Shkruani qytetin",
+    "closureAddRow": "Shto ditë pushimi",
+    "closureDateLabel": "Data",
+    "closureReasonLabel": "Arsyeja",
+    "closureReasonPlaceholder": "p.sh. Festë zyrtare",
+    "closureRemoveRow": "Hiq",
+    "closureRowTitle": "Ditë pushimi",
+    "closuresSectionTitle": "Ditë pushimi",
+    "countryLabel": "Shteti",
+    "countryPlaceholder": "Shkruani shtetin",
+    "dayOfWeekLabel": "Dita",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Shkruani email-in",
+    "endTimeLabel": "Mbyllet",
+    "hoursAddRow": "Shto orar",
+    "hoursRemoveRow": "Hiq",
+    "hoursRowTitle": "Orari i punës",
+    "isActiveLabel": "Aktiv",
+    "latitudeLabel": "Gjerësia gjeografike",
+    "latitudePlaceholder": "Shkruani gjerësinë gjeografike",
+    "longitudeLabel": "Gjatësia gjeografike",
+    "longitudePlaceholder": "Shkruani gjatësinë gjeografike",
+    "nameLabel": "Emri",
+    "namePlaceholder": "p.sh. Aeroporti i Cyrihut",
+    "openingHoursSectionTitle": "Orari i punës",
+    "phoneLabel": "Telefoni",
+    "phonePlaceholder": "Shkruani telefonin",
+    "pickupAllowedLabel": "Marrje këtu",
+    "postalCodeLabel": "Kodi postar",
+    "postalCodePlaceholder": "Shkruani kodin postar",
+    "returnAllowedLabel": "Kthime këtu",
+    "startTimeLabel": "Hapet",
+    "streetLabel": "Rruga",
+    "streetPlaceholder": "Shkruani rrugën",
+    "timezoneLabel": "Zona kohore",
+    "timezonePlaceholder": "p.sh. Europe/Zurich"
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur ndryshimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Ndryshimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Ndryshimet nuk u ruajtën. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ndrysho vendndodhjen",
+    "description": "Ndryshoni të dhënat dhe orarin e kësaj vendndodhjeje"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

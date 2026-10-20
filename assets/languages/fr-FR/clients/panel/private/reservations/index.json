@@ -1,0 +1,44 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/index.tsx",
+  "title": "Réservations",
+  "description": "Réservations du site web et du comptoir",
+  "help": {
+    "ariaLabel": "À propos des réservations",
+    "title": "À propos des réservations",
+    "overview": "Chaque réservation, faite sur le site web ou ici. Une réservation est figée une fois faite : les changements passent par les actions de son menu.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "La remise enregistre le kilométrage et le carburant au départ du client ; le retour les enregistre à nouveau et ajoute les éventuels frais supplémentaires.",
+          "L'annulation rembourse ce qui a été payé, moins les frais d'annulation si vous choisissez de les appliquer. Les réservations qui attendaient un paiement en ligne et ont expiré apparaissent comme expirées.",
+          "Les heures sont affichées dans le fuseau horaire du lieu de prise en charge sur la réservation elle-même."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter une réservation",
+  "searchPlaceholder": "Rechercher des réservations ou ajouter des filtres...",
+  "noData": "Aucune réservation pour l'instant",
+  "failTitle": "Impossible de charger les réservations",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "number": "Réservation",
+    "status": "Statut",
+    "paymentStatus": "Paiement",
+    "category": "Catégorie",
+    "vehicle": "Véhicule",
+    "pickupLocation": "Lieu de prise en charge",
+    "pickupAt": "Prise en charge",
+    "returnAt": "Retour",
+    "source": "Réservé via",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

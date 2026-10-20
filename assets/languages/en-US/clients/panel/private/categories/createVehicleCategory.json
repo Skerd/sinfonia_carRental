@@ -1,0 +1,72 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/createVehicleCategory.tsx",
+  "title": "Add category",
+  "description": "Add a car class customers can book",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "What customers should know about this category",
+    "featuresLabel": "Features",
+    "featuresPlaceholder": "e.g. Air conditioning",
+    "fuelTypeLabel": "Fuel",
+    "fuelTypePlaceholder": "Select fuel",
+    "imagesLabel": "Photos",
+    "isPublicLabel": "Shown on the website",
+    "mileagePolicy": {
+      "limited": "Limited per day",
+      "unlimited": "Unlimited"
+    },
+    "mileagePolicyLabel": "Mileage",
+    "mileagePolicyPlaceholder": "Select mileage policy",
+    "nameLabel": "Name",
+    "namePlaceholder": "e.g. Zurich Airport",
+    "pricingSectionTitle": "Prices",
+    "rateSeasonsSectionTitle": "Seasonal prices",
+    "removeFeature": "Remove feature",
+    "seasonAddRow": "Add season",
+    "seasonDailyRateLabel": "Daily rate",
+    "seasonEndLabel": "To (inclusive)",
+    "seasonRemoveRow": "Remove",
+    "seasonRowTitle": "Season",
+    "seasonStartLabel": "From",
+    "slugLabel": "Web address name",
+    "slugPlaceholder": "e.g. compact",
+    "specsSectionTitle": "Specifications",
+    "transmission": {
+      "automatic": "Automatic",
+      "manual": "Manual"
+    },
+    "transmissionLabel": "Transmission",
+    "transmissionPlaceholder": "Select transmission"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving category",
+      "time": 3000
+    },
+    "success": {
+      "title": "Category added",
+      "time": 3000
+    },
+    "error": {
+      "title": "Category could not be added. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Add category",
+    "description": "Add a car class customers can book"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}

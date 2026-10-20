@@ -1,0 +1,72 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/createRentalReservation.tsx",
+  "title": "Shto rezervim",
+  "description": "Rezervoni një makinë për një klient në sportel ose me telefon",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "categoryLabel": "Kategoria",
+    "categoryPlaceholder": "Zgjidh kategorinë",
+    "contactSectionTitle": "Shoferi",
+    "customerLabel": "Llogaria e klientit",
+    "customerPlaceholder": "Opsionale: lidhni një llogari klienti",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Shkruani email-in",
+    "extraAddRow": "Shto shtesë",
+    "extraLabel": "Shtesë",
+    "extraPlaceholder": "Zgjidh shtesën",
+    "extraRemoveRow": "Hiq",
+    "extraRowTitle": "Shtesë",
+    "extrasSectionTitle": "Shtesat",
+    "firstNameLabel": "Emri",
+    "firstNamePlaceholder": "Shkruani emrin",
+    "lastNameLabel": "Mbiemri",
+    "lastNamePlaceholder": "Shkruani mbiemrin",
+    "localTimeHint": "Shkruani oraret si orë lokale të secilës vendndodhje. Një automjet i caktuar është opsional: lëreni bosh për të caktuar makinën e parë të lirë të kategorisë.",
+    "notesLabel": "Shënime",
+    "notesPlaceholder": "Shënime të brendshme",
+    "phoneLabel": "Telefoni",
+    "phonePlaceholder": "Shkruani telefonin",
+    "pickupDateLabel": "Data e marrjes",
+    "pickupLocationLabel": "Vendi i marrjes",
+    "pickupLocationPlaceholder": "Zgjidh vendndodhjen",
+    "pickupTimeLabel": "Ora e marrjes",
+    "quantityLabel": "Sasia",
+    "returnDateLabel": "Data e kthimit",
+    "returnLocationLabel": "Vendi i kthimit",
+    "returnLocationPlaceholder": "Zgjidh vendndodhjen",
+    "returnTimeLabel": "Ora e kthimit",
+    "tripSectionTitle": "Udhëtimi",
+    "vehicleLabel": "Automjeti",
+    "vehiclePlaceholder": "Çdo makinë e lirë e kategorisë"
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur rezervimin",
+      "time": 3000
+    },
+    "success": {
+      "title": "Rezervimi u shtua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Rezervimi nuk u shtua. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Shto rezervim",
+    "description": "Rezervoni një makinë për një klient në sportel ose me telefon"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  }
+}

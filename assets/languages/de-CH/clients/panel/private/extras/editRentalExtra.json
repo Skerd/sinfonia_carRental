@@ -1,0 +1,55 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/editRentalExtra.tsx",
+  "title": "Extra bearbeiten",
+  "description": "Dieses Extra ändern",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "descriptionLabel": "Beschreibung",
+    "descriptionPlaceholder": "Was Kunden über diese Kategorie wissen sollten",
+    "isActiveLabel": "Aktiv",
+    "maxQuantityLabel": "Höchstens pro Buchung",
+    "maxQuantityPlaceholder": "Höchstmenge eingeben",
+    "nameLabel": "Name",
+    "namePlaceholder": "z. B. Flughafen Zürich",
+    "priceLabel": "Preis",
+    "pricePlaceholder": "Preis eingeben",
+    "pricing": {
+      "per_day": "Pro Tag",
+      "per_rental": "Pro Miete"
+    },
+    "pricingLabel": "Verrechnet",
+    "pricingPlaceholder": "Verrechnungsart auswählen",
+    "sortOrderLabel": "Sortierung",
+    "sortOrderPlaceholder": "Sortierung eingeben"
+  },
+  "axios": {
+    "start": {
+      "title": "Änderungen werden gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Änderungen gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Änderungen konnten nicht gespeichert werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Extra bearbeiten",
+    "description": "Dieses Extra ändern"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Speichern"
+  }
+}

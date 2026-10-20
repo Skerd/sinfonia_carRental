@@ -1,0 +1,11 @@
+{
+    "pickupLocation": "Pick-up location",
+    "returnLocation": "Return location",
+    "differentReturn": "Return to a different location",
+    "pickupDate": "Pick-up date",
+    "pickupTime": "Pick-up time",
+    "returnDate": "Return date",
+    "returnTime": "Return time",
+    "returnBeforePickup": "The return must be after the pick-up.",
+    "search": "Show cars"
+}

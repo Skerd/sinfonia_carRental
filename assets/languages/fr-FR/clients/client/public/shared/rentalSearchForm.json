@@ -1,0 +1,11 @@
+{
+  "pickupLocation": "Lieu de prise en charge",
+  "returnLocation": "Lieu de retour",
+  "differentReturn": "Rendre à un autre endroit",
+  "pickupDate": "Date de prise en charge",
+  "pickupTime": "Heure de prise en charge",
+  "returnDate": "Date de retour",
+  "returnTime": "Heure de retour",
+  "returnBeforePickup": "Le retour doit être après la prise en charge.",
+  "search": "Afficher les voitures"
+}

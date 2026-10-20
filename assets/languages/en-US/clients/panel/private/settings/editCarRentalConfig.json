@@ -1,0 +1,75 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/settings/editCarRentalConfig.tsx",
+  "title": "Car rental settings",
+  "description": "Booking rules, payment, cancellation and terms",
+  "form": {
+    "bookingSectionTitle": "Online booking",
+    "cancellationFeePercentLabel": "Late cancellation fee (%)",
+    "cancellationFeePercentPlaceholder": "",
+    "currencyLabel": "Currency",
+    "currencyPlaceholder": "Select currency",
+    "freeCancellationHoursLabel": "Free cancellation until (hours before pickup)",
+    "freeCancellationHoursPlaceholder": "",
+    "guestBookingAllowedLabel": "Allow booking without an account",
+    "guestBookingAllowedPlaceholder": "",
+    "holdMinutesLabel": "Hold while paying online (minutes)",
+    "holdMinutesPlaceholder": "",
+    "lateGraceMinutesLabel": "Late return grace (minutes)",
+    "lateGraceMinutesPlaceholder": "",
+    "maxAdvanceDaysLabel": "Book at most (days ahead)",
+    "maxAdvanceDaysPlaceholder": "",
+    "maxRentalDaysLabel": "Longest rental (days)",
+    "maxRentalDaysPlaceholder": "",
+    "minLeadTimeHoursLabel": "Book at least (hours ahead)",
+    "minLeadTimeHoursPlaceholder": "",
+    "minRentalHoursLabel": "Shortest rental (hours)",
+    "minRentalHoursPlaceholder": "",
+    "notificationsSectionTitle": "Staff alerts",
+    "notifyUsersLabel": "Alert these staff about new bookings",
+    "paymentPolicy": {
+      "customer_choice": "Customer chooses",
+      "pay_at_pickup": "At pickup",
+      "prepay_online": "Online when booking"
+    },
+    "paymentPolicyLabel": "How customers pay",
+    "paymentPolicyPlaceholder": "Select payment",
+    "paymentSectionTitle": "Payment and cancellation",
+    "pricesIncludeVatLabel": "Prices include VAT",
+    "pricesIncludeVatPlaceholder": "",
+    "publicBookingEnabledLabel": "Take bookings on the website",
+    "publicBookingEnabledPlaceholder": "",
+    "removeUser": "Remove",
+    "selectUser": "Select a person",
+    "termsSectionTitle": "Rental terms",
+    "termsTextLabel": "Rental terms",
+    "termsTextPlaceholder": "The terms customers accept when booking",
+    "termsVersionLabel": "Terms version",
+    "termsVersionPlaceholder": "e.g. 2026-10",
+    "turnaroundBufferMinutesLabel": "Turnaround between rentals (minutes)",
+    "turnaroundBufferMinutesPlaceholder": "",
+    "vatRateLabel": "VAT rate (%)",
+    "vatRatePlaceholder": ""
+  },
+  "axios": {
+    "start": {
+      "title": "Saving settings",
+      "time": 3000
+    },
+    "success": {
+      "title": "Settings saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Settings could not be saved. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Car rental settings",
+    "description": "Booking rules, payment, cancellation and terms"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Save"
+  }
+}

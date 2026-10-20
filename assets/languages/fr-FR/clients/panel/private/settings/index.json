@@ -1,0 +1,4 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/settings/index.tsx",
+  "loadError": "Les paramètres de location n'ont pas pu être ouverts. Ajoutez d'abord une devise, puis réessayez."
+}

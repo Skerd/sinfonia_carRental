@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/index.tsx",
+  "title": "Bllokimet e automjeteve",
+  "description": "Koha kur një makinë nuk mund të jepet me qira: mirëmbajtje, riparime, transferime",
+  "help": {
+    "ariaLabel": "Rreth bllokimeve të automjeteve",
+    "title": "Rreth bllokimeve të automjeteve",
+    "overview": "Një bllokim e heq një makinë nga qiraja për një periudhë kohe.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Një bllokim nuk mund të mbivendoset me një rezervim; zhvendoseni fillimisht rezervimin në një makinë tjetër.",
+          "Pasi krijohet, periudha e një bllokimi është e fiksuar. Për ta ndryshuar, fshijeni dhe krijoni një të re."
+        ]
+      }
+    ]
+  },
+  "create": "Shto bllokim",
+  "searchPlaceholder": "Kërko bllokime automjetesh ose shto filtra...",
+  "noData": "Ende pa bllokime automjetesh",
+  "failTitle": "Bllokimet e automjeteve nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "vehicle": "Automjeti",
+    "startAt": "Nga",
+    "endAt": "Deri",
+    "reason": "Arsyeja",
+    "note": "Shënim",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

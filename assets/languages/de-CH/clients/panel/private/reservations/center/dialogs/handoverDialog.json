@@ -1,0 +1,18 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/handoverDialog.tsx",
+  "cancel": "Zurück",
+  "confirm": "Übergeben",
+  "title": "Das Auto übergeben",
+  "description": "Kilometerstand und Tankfüllung erfassen, wenn der Kunde losfährt.",
+  "odometerLabel": "Kilometerstand (km)",
+  "fuelLabel": "Tankfüllung",
+  "fuel": {
+    "empty": "Leer",
+    "quarter": "1/4",
+    "half": "1/2",
+    "three_quarters": "3/4",
+    "full": "Voll"
+  },
+  "notesLabel": "Notizen",
+  "notesPlaceholder": "Bestehende Kratzer, Gegenstände im Auto"
+}

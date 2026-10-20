@@ -1,0 +1,24 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/returnVehicleDialog.tsx",
+  "cancel": "Mbrapa",
+  "confirm": "Përfundo qiranë",
+  "title": "Merr makinën mbrapsht",
+  "description": "Regjistroni kilometrat dhe nivelin e karburantit dhe shtoni tarifat shtesë. Ato i shtohen totalit që detyrohet klienti.",
+  "odometerLabel": "Kilometrat (km)",
+  "fuelLabel": "Niveli i karburantit",
+  "fuel": {
+    "empty": "Bosh",
+    "quarter": "1/4",
+    "half": "1/2",
+    "three_quarters": "3/4",
+    "full": "Plot"
+  },
+  "damageLabel": "U gjet dëmtim i ri",
+  "chargesLabel": "Tarifa shtesë",
+  "chargeLabel": "Tarifë",
+  "chargePlaceholder": "p.sh. Mbushje karburanti",
+  "chargeAmount": "Shuma",
+  "addCharge": "Shto tarifë",
+  "removeCharge": "Hiq",
+  "notesLabel": "Shënime"
+}

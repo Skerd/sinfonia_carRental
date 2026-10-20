@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/index.tsx",
+  "title": "Blocchi veicolo",
+  "description": "Periodi in cui un'auto non può essere noleggiata: manutenzione, riparazioni, trasferimenti",
+  "help": {
+    "ariaLabel": "Informazioni sui blocchi veicolo",
+    "title": "Informazioni sui blocchi veicolo",
+    "overview": "Un blocco toglie un'auto dal noleggio per un periodo di tempo.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Un blocco non può sovrapporsi a una prenotazione; sposta prima la prenotazione su un'altra auto.",
+          "Una volta creato, il periodo di un blocco è fisso. Per cambiarlo, eliminalo e creane uno nuovo."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi blocco",
+  "searchPlaceholder": "Cerca blocchi veicolo o aggiungi filtri...",
+  "noData": "Nessun blocco veicolo",
+  "failTitle": "Impossibile caricare i blocchi veicolo",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "vehicle": "Veicolo",
+    "startAt": "Da",
+    "endAt": "Fino a",
+    "reason": "Motivo",
+    "note": "Nota",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

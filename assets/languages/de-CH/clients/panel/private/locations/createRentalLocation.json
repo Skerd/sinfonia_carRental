@@ -1,0 +1,76 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/createRentalLocation.tsx",
+  "title": "Standort hinzufügen",
+  "description": "Eine Filiale hinzufügen, in der Autos abgeholt oder zurückgegeben werden",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "addressSectionTitle": "Adresse",
+    "cityLabel": "Ort",
+    "cityPlaceholder": "Ort eingeben",
+    "closureAddRow": "Ruhetag hinzufügen",
+    "closureDateLabel": "Datum",
+    "closureReasonLabel": "Grund",
+    "closureReasonPlaceholder": "z. B. Feiertag",
+    "closureRemoveRow": "Entfernen",
+    "closureRowTitle": "Ruhetag",
+    "closuresSectionTitle": "Ruhetage",
+    "countryLabel": "Land",
+    "countryPlaceholder": "Land eingeben",
+    "dayOfWeekLabel": "Tag",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "E-Mail eingeben",
+    "endTimeLabel": "Schliesst",
+    "hoursAddRow": "Öffnungszeiten hinzufügen",
+    "hoursRemoveRow": "Entfernen",
+    "hoursRowTitle": "Öffnungszeiten",
+    "isActiveLabel": "Aktiv",
+    "latitudeLabel": "Breitengrad",
+    "latitudePlaceholder": "Breitengrad eingeben",
+    "longitudeLabel": "Längengrad",
+    "longitudePlaceholder": "Längengrad eingeben",
+    "nameLabel": "Name",
+    "namePlaceholder": "z. B. Flughafen Zürich",
+    "openingHoursSectionTitle": "Öffnungszeiten",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "Telefon eingeben",
+    "pickupAllowedLabel": "Abholungen hier",
+    "postalCodeLabel": "Postleitzahl",
+    "postalCodePlaceholder": "Postleitzahl eingeben",
+    "returnAllowedLabel": "Rückgaben hier",
+    "startTimeLabel": "Öffnet",
+    "streetLabel": "Strasse",
+    "streetPlaceholder": "Strasse eingeben",
+    "timezoneLabel": "Zeitzone",
+    "timezonePlaceholder": "z. B. Europe/Zurich"
+  },
+  "axios": {
+    "start": {
+      "title": "Standort wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Standort hinzugefügt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Der Standort konnte nicht hinzugefügt werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Standort hinzufügen",
+    "description": "Eine Filiale hinzufügen, in der Autos abgeholt oder zurückgegeben werden"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Hinzufügen"
+  }
+}

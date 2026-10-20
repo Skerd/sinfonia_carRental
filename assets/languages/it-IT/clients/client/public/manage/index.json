@@ -1,0 +1,45 @@
+{
+  "loadFailed": "Non è stato possibile caricare questa prenotazione.",
+  "cancelFailed": "Non è stato possibile annullare la prenotazione.",
+  "linkInvalidTitle": "Questo link non funziona",
+  "linkInvalidText": "Il link della prenotazione manca o è scaduto. Usa il link dell'ultima e-mail oppure contattaci.",
+  "backHome": "Torna all'inizio",
+  "paidConfirmed": "Pagamento ricevuto – la tua prenotazione è confermata. Una conferma sta arrivando nella tua casella di posta.",
+  "awaitingPayment": "Stiamo confermando il tuo pagamento. Di solito servono pochi secondi…",
+  "heldNotice": "Questa prenotazione è in attesa di pagamento e verrà liberata se il pagamento non viene completato.",
+  "bookingNumber": "Prenotazione",
+  "status": {
+    "held": "In attesa di pagamento",
+    "confirmed": "Confermato",
+    "in_progress": "In viaggio",
+    "completed": "Completato",
+    "cancelled": "Annullato",
+    "expired": "Scaduto",
+    "no_show": "Non presentato"
+  },
+  "pickup": "Ritiro",
+  "return": "Riconsegna",
+  "driver": "Conducente",
+  "payment": "Pagamento",
+  "paymentChoice": {
+    "pay_at_pickup": "Paga al ritiro",
+    "online": "Pagato online"
+  },
+  "paymentStatus": {
+    "unpaid": "Non ancora pagato",
+    "pending": "Pagamento in sospeso",
+    "paid": "Pagato",
+    "partially_refunded": "Rimborsato in parte",
+    "refunded": "Rimborsato",
+    "failed": "Pagamento non riuscito"
+  },
+  "cancelTitle": "Annulla prenotazione",
+  "cancelWithFee": "Il periodo di cancellazione gratuita è scaduto: si applica una penale del {percent}% del noleggio.",
+  "cancelFree": "Cancellazione gratuita fino al {until}.",
+  "cancelling": "Annullamento in corso…",
+  "confirmCancel": "Sì, annulla la prenotazione",
+  "keepBooking": "Mantieni la prenotazione",
+  "cancelBooking": "Annulla questa prenotazione",
+  "cancelledNotice": "La tua prenotazione è annullata. Eventuali rimborsi tornano sul metodo di pagamento originale.",
+  "priceTitle": "Prezzo"
+}

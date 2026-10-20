@@ -1,0 +1,14 @@
+{
+  "noTrip": "Scegli sede, date e orari per vedere le auto disponibili.",
+  "searchFailed": "Non è stato possibile caricare le auto disponibili. Riprova.",
+  "resultsTitle": "Auto disponibili",
+  "noCategories": "Nessuna auto è disponibile per la prenotazione online.",
+  "orSimilar": "o simile",
+  "unlimitedKm": "Chilometri illimitati",
+  "kmPerDayIncluded": "km al giorno inclusi",
+  "day": "giorno",
+  "days": "giorni",
+  "vatIncluded": "IVA inclusa",
+  "choose": "Scegli",
+  "soldOut": "Non disponibile per queste date"
+}

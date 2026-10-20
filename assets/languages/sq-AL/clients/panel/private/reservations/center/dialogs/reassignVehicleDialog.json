@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/reassignVehicleDialog.tsx",
+  "cancel": "Mbrapa",
+  "confirm": "Ndrysho makinën",
+  "title": "Ndrysho makinën",
+  "description": "Zgjidhni një makinë tjetër të së njëjtës kategori. Duhet të jetë e lirë për gjithë rezervimin.",
+  "vehicleLabel": "Makina",
+  "vehiclePlaceholder": "Zgjidh një makinë"
+}

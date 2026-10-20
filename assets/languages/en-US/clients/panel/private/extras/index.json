@@ -1,0 +1,40 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/index.tsx",
+  "title": "Extras",
+  "description": "Add-ons customers can book with a car",
+  "help": {
+    "ariaLabel": "About extras",
+    "title": "About extras",
+    "overview": "Extras such as child seats, an additional driver or insurance cover are added to a booking.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Per-day extras are charged for every rental day; per-rental extras once.",
+          "Deactivate an extra to stop offering it; existing bookings keep their price."
+        ]
+      }
+    ]
+  },
+  "create": "Add extra",
+  "searchPlaceholder": "Search extras or add filters...",
+  "noData": "No extras yet",
+  "failTitle": "Failed to load extras",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "name": "Name",
+    "pricing": "Pricing",
+    "price": "Price",
+    "maxQuantity": "Most per booking",
+    "isActive": "Active",
+    "sortOrder": "Sort order",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

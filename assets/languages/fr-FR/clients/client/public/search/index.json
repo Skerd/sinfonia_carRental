@@ -1,0 +1,14 @@
+{
+  "noTrip": "Choisissez un site, des dates et des heures pour voir les voitures disponibles.",
+  "searchFailed": "Nous n'avons pas pu charger les voitures disponibles. Veuillez réessayer.",
+  "resultsTitle": "Voitures disponibles",
+  "noCategories": "Aucune voiture n'est proposée à la réservation en ligne.",
+  "orSimilar": "ou similaire",
+  "unlimitedKm": "Kilométrage illimité",
+  "kmPerDayIncluded": "km par jour inclus",
+  "day": "jour",
+  "days": "jours",
+  "vatIncluded": "TVA incluse",
+  "choose": "Choisir",
+  "soldOut": "Indisponible pour ces dates"
+}

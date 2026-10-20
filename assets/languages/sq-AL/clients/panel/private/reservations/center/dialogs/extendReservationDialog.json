@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/extendReservationDialog.tsx",
+  "cancel": "Mbrapa",
+  "confirm": "Zgjat",
+  "title": "Zgjat qiranë",
+  "description": "Data dhe ora e re e kthimit, në orën lokale të vendndodhjes së kthimit",
+  "returnDateLabel": "Data e re e kthimit",
+  "returnTimeLabel": "Ora e re e kthimit"
+}

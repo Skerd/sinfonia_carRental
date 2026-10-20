@@ -1,0 +1,72 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/createRentalReservation.tsx",
+  "title": "Add reservation",
+  "description": "Book a car for a customer at the counter or on the phone",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "categoryLabel": "Category",
+    "categoryPlaceholder": "Select category",
+    "contactSectionTitle": "Driver",
+    "customerLabel": "Customer account",
+    "customerPlaceholder": "Optional: link a customer account",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter email",
+    "extraAddRow": "Add extra",
+    "extraLabel": "Extra",
+    "extraPlaceholder": "Select extra",
+    "extraRemoveRow": "Remove",
+    "extraRowTitle": "Extra",
+    "extrasSectionTitle": "Extras",
+    "firstNameLabel": "First name",
+    "firstNamePlaceholder": "Enter first name",
+    "lastNameLabel": "Last name",
+    "lastNamePlaceholder": "Enter last name",
+    "localTimeHint": "Enter times as local time at each location. A specific vehicle is optional: leave it empty to assign the first free car of the category.",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Internal notes",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "Enter phone",
+    "pickupDateLabel": "Pickup date",
+    "pickupLocationLabel": "Pickup location",
+    "pickupLocationPlaceholder": "Select location",
+    "pickupTimeLabel": "Pickup time",
+    "quantityLabel": "Quantity",
+    "returnDateLabel": "Return date",
+    "returnLocationLabel": "Return location",
+    "returnLocationPlaceholder": "Select location",
+    "returnTimeLabel": "Return time",
+    "tripSectionTitle": "Trip",
+    "vehicleLabel": "Vehicle",
+    "vehiclePlaceholder": "Any free car of the category"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving reservation",
+      "time": 3000
+    },
+    "success": {
+      "title": "Reservation added",
+      "time": 3000
+    },
+    "error": {
+      "title": "Reservation could not be added. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Add reservation",
+    "description": "Book a car for a customer at the counter or on the phone"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}

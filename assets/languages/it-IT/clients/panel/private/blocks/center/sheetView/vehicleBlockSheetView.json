@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/center/sheetView/vehicleBlockSheetView.tsx",
+  "lifecycle": "Ciclo di vita",
+  "endAt": "Fino a",
+  "note": "Nota",
+  "overview": "Panoramica",
+  "reason": "Motivo",
+  "startAt": "Da",
+  "vehicle": "Veicolo",
+  "vehicleBlockSubtitle": "Blocco veicolo",
+  "reasonValues": {
+    "maintenance": "Manutenzione",
+    "repair": "Riparazione",
+    "transfer": "Trasferimento",
+    "other": "Altro"
+  },
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da"
+}

@@ -1,0 +1,45 @@
+{
+    "loadFailed": "We could not load this booking.",
+    "cancelFailed": "The booking could not be cancelled.",
+    "linkInvalidTitle": "This link does not work",
+    "linkInvalidText": "The booking link is missing or has expired. Use the link from your latest email, or contact us.",
+    "backHome": "Back to the start",
+    "paidConfirmed": "Payment received — your booking is confirmed. A confirmation is on its way to your inbox.",
+    "awaitingPayment": "We are confirming your payment. This usually takes a few seconds…",
+    "heldNotice": "This booking is waiting for payment and is released if the payment is not completed.",
+    "bookingNumber": "Booking",
+    "status": {
+        "held": "Awaiting payment",
+        "confirmed": "Confirmed",
+        "in_progress": "On the road",
+        "completed": "Completed",
+        "cancelled": "Cancelled",
+        "expired": "Expired",
+        "no_show": "No-show"
+    },
+    "pickup": "Pick-up",
+    "return": "Return",
+    "driver": "Driver",
+    "payment": "Payment",
+    "paymentChoice": {
+        "pay_at_pickup": "Pay at pick-up",
+        "online": "Paid online"
+    },
+    "paymentStatus": {
+        "unpaid": "Not paid yet",
+        "pending": "Payment pending",
+        "paid": "Paid",
+        "partially_refunded": "Partly refunded",
+        "refunded": "Refunded",
+        "failed": "Payment failed"
+    },
+    "cancelTitle": "Cancel booking",
+    "cancelWithFee": "The free cancellation period has passed: a fee of {percent}% of the rental applies.",
+    "cancelFree": "Free cancellation until {until}.",
+    "cancelling": "Cancelling…",
+    "confirmCancel": "Yes, cancel booking",
+    "keepBooking": "Keep booking",
+    "cancelBooking": "Cancel this booking",
+    "cancelledNotice": "Your booking is cancelled. Any refund due goes back to your original payment method.",
+    "priceTitle": "Price"
+}

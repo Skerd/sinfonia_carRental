@@ -1,0 +1,16 @@
+{
+  "seats": "posti",
+  "doors": "porte",
+  "bags": "bagagli",
+  "transmission": {
+    "manual": "Manuale",
+    "automatic": "Automatico"
+  },
+  "fuel": {
+    "petrol": "Benzina",
+    "diesel": "Diesel",
+    "hybrid": "Ibrido",
+    "electric": "Elettrico",
+    "other": "Altro carburante"
+  }
+}

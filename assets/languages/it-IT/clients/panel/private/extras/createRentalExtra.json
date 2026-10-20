@@ -1,0 +1,55 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/createRentalExtra.tsx",
+  "title": "Aggiungi extra",
+  "description": "Aggiungi un servizio extra che i clienti possono prenotare",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "descriptionLabel": "Descrizione",
+    "descriptionPlaceholder": "Cosa dovrebbero sapere i clienti su questa categoria",
+    "isActiveLabel": "Attivo",
+    "maxQuantityLabel": "Massimo per prenotazione",
+    "maxQuantityPlaceholder": "Inserisci la quantità massima",
+    "nameLabel": "Nome",
+    "namePlaceholder": "es. Aeroporto di Zurigo",
+    "priceLabel": "Prezzo",
+    "pricePlaceholder": "Inserisci il prezzo",
+    "pricing": {
+      "per_day": "Al giorno",
+      "per_rental": "Per noleggio"
+    },
+    "pricingLabel": "Addebitato",
+    "pricingPlaceholder": "Seleziona come viene addebitato",
+    "sortOrderLabel": "Ordinamento",
+    "sortOrderPlaceholder": "Inserisci l'ordinamento"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio extra",
+      "time": 3000
+    },
+    "success": {
+      "title": "Extra aggiunto",
+      "time": 3000
+    },
+    "error": {
+      "title": "Non è stato possibile aggiungere l'extra. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Aggiungi extra",
+    "description": "Aggiungi un servizio extra che i clienti possono prenotare"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

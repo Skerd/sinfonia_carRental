@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/extendReservationDialog.tsx",
+  "cancel": "Zurück",
+  "confirm": "Verlängern",
+  "title": "Die Miete verlängern",
+  "description": "Neues Rückgabedatum und neue Rückgabezeit, in der Ortszeit des Rückgabestandorts",
+  "returnDateLabel": "Neues Rückgabedatum",
+  "returnTimeLabel": "Neue Rückgabezeit"
+}

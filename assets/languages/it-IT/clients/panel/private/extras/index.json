@@ -1,0 +1,40 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/index.tsx",
+  "title": "Extra",
+  "description": "Servizi extra che i clienti possono prenotare con un'auto",
+  "help": {
+    "ariaLabel": "Informazioni sugli extra",
+    "title": "Informazioni sugli extra",
+    "overview": "Extra come seggiolini per bambini, un conducente aggiuntivo o un'assicurazione vengono aggiunti a una prenotazione.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Gli extra al giorno vengono addebitati per ogni giorno di noleggio; quelli per noleggio una sola volta.",
+          "Disattiva un extra per non offrirlo più; le prenotazioni esistenti mantengono il loro prezzo."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi extra",
+  "searchPlaceholder": "Cerca extra o aggiungi filtri...",
+  "noData": "Nessun extra",
+  "failTitle": "Impossibile caricare gli extra",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "name": "Nome",
+    "pricing": "Tariffe",
+    "price": "Prezzo",
+    "maxQuantity": "Massimo per prenotazione",
+    "isActive": "Attivo",
+    "sortOrder": "Ordinamento",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

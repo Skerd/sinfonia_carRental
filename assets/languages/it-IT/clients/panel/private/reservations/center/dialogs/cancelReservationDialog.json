@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/cancelReservationDialog.tsx",
+  "cancel": "Indietro",
+  "confirm": "Annulla prenotazione",
+  "title": "Annulla questa prenotazione",
+  "description": "L'auto torna libera e quanto pagato dal cliente viene rimborsato. Il cliente riceve un'e-mail.",
+  "applyFeeLabel": "Trattieni la penale",
+  "reasonLabel": "Motivo",
+  "reasonPlaceholder": "Perché viene annullato?"
+}

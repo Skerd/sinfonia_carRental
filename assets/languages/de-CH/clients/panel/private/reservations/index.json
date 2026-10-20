@@ -1,0 +1,44 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/index.tsx",
+  "title": "Reservierungen",
+  "description": "Buchungen über die Website und am Schalter",
+  "help": {
+    "ariaLabel": "Über Reservierungen",
+    "title": "Über Reservierungen",
+    "overview": "Jede Buchung, ob über die Website oder hier erfasst. Eine Buchung ist nach dem Erfassen fest: Änderungen erfolgen über die Aktionen in ihrem Menü.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Bei der Übergabe werden Kilometerstand und Tankfüllung erfasst, wenn der Kunde losfährt; bei der Rückgabe werden sie erneut erfasst und allfällige Zusatzkosten hinzugefügt.",
+          "Beim Stornieren wird das Bezahlte zurückerstattet, abzüglich der Stornogebühr, falls Sie diese anwenden. Buchungen, die auf eine Online-Zahlung gewartet haben und abgelaufen sind, erscheinen als abgelaufen.",
+          "Die Zeiten werden in der Buchung selbst in der Zeitzone des Abholorts angezeigt."
+        ]
+      }
+    ]
+  },
+  "create": "Reservierung hinzufügen",
+  "searchPlaceholder": "Reservierungen suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Reservierungen",
+  "failTitle": "Reservierungen konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "number": "Buchung",
+    "status": "Status",
+    "paymentStatus": "Zahlung",
+    "category": "Kategorie",
+    "vehicle": "Fahrzeug",
+    "pickupLocation": "Abholort",
+    "pickupAt": "Abholung",
+    "returnAt": "Rückgabe",
+    "source": "Gebucht über",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/index.tsx",
+  "title": "Catégories",
+  "description": "Ce que les clients réservent : des catégories de voitures avec photos, caractéristiques et prix",
+  "help": {
+    "ariaLabel": "À propos des catégories",
+    "title": "À propos des catégories",
+    "overview": "Les clients réservent une catégorie, pas une voiture précise. Le système attribue une voiture libre de cette catégorie lors de la réservation.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Prix : le tarif journalier s'applique sauf si une saison couvre le jour ; un tarif week-end s'applique les samedis et dimanches locaux ; un tarif hebdomadaire est utilisé pour les semaines complètes lorsqu'il est moins cher.",
+          "Désactivez « Affiché sur le site web » pour réserver une catégorie aux réservations du personnel.",
+          "Modifier un prix ne change jamais les réservations déjà faites."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter une catégorie",
+  "searchPlaceholder": "Rechercher des catégories ou ajouter des filtres...",
+  "noData": "Aucune catégorie pour l'instant",
+  "failTitle": "Impossible de charger les catégories",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "name": "Nom",
+    "slug": "Nom d'adresse web",
+    "seats": "Places",
+    "transmission": "Transmission",
+    "fuelType": "Type de carburant",
+    "dailyRate": "Tarif journalier",
+    "isPublic": "Sur le site web",
+    "sortOrder": "Ordre de tri",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

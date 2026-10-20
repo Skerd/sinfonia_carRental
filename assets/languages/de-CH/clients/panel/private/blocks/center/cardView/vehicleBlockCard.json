@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/blocks/center/cardView/vehicleBlockCard.tsx",
+  "failedTitle": "Sperre konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "reason": "Grund",
+  "reasonValues": {
+    "maintenance": "Wartung",
+    "repair": "Reparatur",
+    "transfer": "Überführung",
+    "other": "Andere"
+  },
+  "startAt": "Von",
+  "endAt": "Bis"
+}

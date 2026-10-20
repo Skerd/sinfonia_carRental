@@ -1,0 +1,60 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/editVehicle.tsx",
+  "title": "Ndrysho automjetin",
+  "description": "Ndryshoni të dhënat ose statusin e këtij automjeti",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "categoryLabel": "Kategoria",
+    "categoryPlaceholder": "Zgjidh kategorinë",
+    "colorLabel": "Ngjyra",
+    "colorPlaceholder": "Shkruani ngjyrën",
+    "homeLocationLabel": "Vendndodhja bazë",
+    "homeLocationPlaceholder": "Zgjidh vendndodhjen",
+    "makeLabel": "Marka",
+    "makePlaceholder": "p.sh. Volkswagen",
+    "modelLabel": "Modeli",
+    "modelPlaceholder": "p.sh. Golf",
+    "notesLabel": "Shënime",
+    "notesPlaceholder": "Shënime të brendshme",
+    "odometerKmLabel": "Kilometrat (km)",
+    "odometerKmPlaceholder": "Shkruani kilometrat",
+    "plateLabel": "Targa e regjistrimit",
+    "platePlaceholder": "p.sh. ZH 123456",
+    "statusLabel": "Statusi",
+    "statusPlaceholder": "Zgjidh statusin",
+    "vinLabel": "VIN",
+    "vinPlaceholder": "Shkruani VIN-in",
+    "yearLabel": "Viti",
+    "yearPlaceholder": "Shkruani vitin"
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur ndryshimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Ndryshimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Ndryshimet nuk u ruajtën. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ndrysho automjetin",
+    "description": "Ndryshoni të dhënat ose statusin e këtij automjeti"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

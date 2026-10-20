@@ -1,0 +1,44 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/index.tsx",
+  "title": "Prenotazioni",
+  "description": "Prenotazioni dal sito web e dal banco",
+  "help": {
+    "ariaLabel": "Informazioni sulle prenotazioni",
+    "title": "Informazioni sulle prenotazioni",
+    "overview": "Ogni prenotazione, dal sito web o creata qui. Una prenotazione è fissa una volta creata: le modifiche passano dalle azioni del suo menu.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "La consegna registra chilometri e carburante quando il cliente parte; la riconsegna li registra di nuovo e aggiunge eventuali addebiti extra.",
+          "L'annullamento rimborsa quanto pagato, meno la penale di cancellazione se scegli di applicarla. Le prenotazioni in attesa di pagamento online e scadute risultano come scadute.",
+          "Gli orari sono mostrati nel fuso orario del luogo di ritiro nella prenotazione stessa."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi prenotazione",
+  "searchPlaceholder": "Cerca prenotazioni o aggiungi filtri...",
+  "noData": "Nessuna prenotazione",
+  "failTitle": "Impossibile caricare le prenotazioni",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "number": "Prenotazione",
+    "status": "Stato",
+    "paymentStatus": "Pagamento",
+    "category": "Categoria",
+    "vehicle": "Veicolo",
+    "pickupLocation": "Luogo di ritiro",
+    "pickupAt": "Ritiro",
+    "returnAt": "Riconsegna",
+    "source": "Prenotato tramite",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "pickupLocation": "Abholort",
+  "returnLocation": "Rückgabeort",
+  "differentReturn": "An einem anderen Ort zurückgeben",
+  "pickupDate": "Abholdatum",
+  "pickupTime": "Abholzeit",
+  "returnDate": "Rückgabedatum",
+  "returnTime": "Rückgabezeit",
+  "returnBeforePickup": "Die Rückgabe muss nach der Abholung liegen.",
+  "search": "Autos anzeigen"
+}

@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/extendReservationDialog.tsx",
+  "cancel": "Indietro",
+  "confirm": "Prolunga",
+  "title": "Prolunga il noleggio",
+  "description": "Nuova data e ora di riconsegna, nell'ora locale della sede di riconsegna",
+  "returnDateLabel": "Nuova data di riconsegna",
+  "returnTimeLabel": "Nuova ora di riconsegna"
+}

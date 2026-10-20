@@ -1,0 +1,45 @@
+{
+  "loadFailed": "Nous n'avons pas pu charger cette réservation.",
+  "cancelFailed": "La réservation n'a pas pu être annulée.",
+  "linkInvalidTitle": "Ce lien ne fonctionne pas",
+  "linkInvalidText": "Le lien de réservation est manquant ou expiré. Utilisez le lien de votre dernier e-mail ou contactez-nous.",
+  "backHome": "Retour au début",
+  "paidConfirmed": "Paiement reçu – votre réservation est confirmée. Une confirmation arrive dans votre boîte de réception.",
+  "awaitingPayment": "Nous confirmons votre paiement. Cela prend généralement quelques secondes…",
+  "heldNotice": "Cette réservation attend le paiement et sera libérée si le paiement n'est pas finalisé.",
+  "bookingNumber": "Réservation",
+  "status": {
+    "held": "En attente de paiement",
+    "confirmed": "Confirmé",
+    "in_progress": "En route",
+    "completed": "Terminé",
+    "cancelled": "Annulé",
+    "expired": "Expiré",
+    "no_show": "Absent"
+  },
+  "pickup": "Prise en charge",
+  "return": "Retour",
+  "driver": "Conducteur",
+  "payment": "Paiement",
+  "paymentChoice": {
+    "pay_at_pickup": "Payer à la prise en charge",
+    "online": "Payé en ligne"
+  },
+  "paymentStatus": {
+    "unpaid": "Pas encore payé",
+    "pending": "Paiement en attente",
+    "paid": "Payé",
+    "partially_refunded": "Partiellement remboursé",
+    "refunded": "Remboursé",
+    "failed": "Paiement échoué"
+  },
+  "cancelTitle": "Annuler la réservation",
+  "cancelWithFee": "Le délai d'annulation gratuite est dépassé : des frais de {percent}% de la location s'appliquent.",
+  "cancelFree": "Annulation gratuite jusqu'au {until}.",
+  "cancelling": "Annulation…",
+  "confirmCancel": "Oui, annuler la réservation",
+  "keepBooking": "Garder la réservation",
+  "cancelBooking": "Annuler cette réservation",
+  "cancelledNotice": "Votre réservation est annulée. Tout remboursement dû revient sur votre moyen de paiement d'origine.",
+  "priceTitle": "Prix"
+}
