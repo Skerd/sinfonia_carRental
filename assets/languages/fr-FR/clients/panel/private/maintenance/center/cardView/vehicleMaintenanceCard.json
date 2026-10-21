@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/cardView/vehicleMaintenanceCard.tsx",
+  "failedTitle": "Impossible de charger l'intervention",
+  "failedDescription": "Touchez pour réessayer.",
+  "type": "Type",
+  "serviceDate": "Date de l'intervention",
+  "odometerKm": "Kilométrage",
+  "cost": "Coût",
+  "status": "Statut",
+  "typeValues": {
+    "scheduled_service": "Entretien périodique",
+    "oil_change": "Vidange",
+    "tires": "Pneus",
+    "brakes": "Freins",
+    "inspection": "Contrôle",
+    "repair": "Réparation",
+    "battery": "Batterie",
+    "other": "Autre"
+  },
+  "statusValues": {
+    "scheduled": "Planifié",
+    "completed": "Terminé",
+    "cancelled": "Annulé"
+  }
+}

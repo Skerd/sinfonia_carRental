@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/createVehicleDocument.tsx",
+  "title": "Aggiungi documento",
+  "description": "Registra un documento di un veicolo",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "vehicleLabel": "Veicolo",
+    "vehiclePlaceholder": "Seleziona un veicolo",
+    "typeLabel": "Tipo",
+    "typePlaceholder": "Seleziona il tipo",
+    "documentNumberLabel": "Numero del documento",
+    "documentNumberPlaceholder": "Numero riportato sul documento",
+    "issuerLabel": "Emesso da",
+    "issuerPlaceholder": "es. DPSHTRR",
+    "issuedAtLabel": "Emesso il",
+    "issuedAtPlaceholder": "Scegli una data",
+    "expiresAtLabel": "Scade il",
+    "expiresAtPlaceholder": "Scegli una data",
+    "statusLabel": "Stato",
+    "statusPlaceholder": "Seleziona lo stato",
+    "notesLabel": "Note",
+    "notesPlaceholder": "Note interne",
+    "attachmentsLabel": "Allegati",
+    "type": {
+      "registration": "Libretto di circolazione",
+      "technical_inspection": "Revisione",
+      "emissions_test": "Controllo emissioni",
+      "road_tax": "Bollo auto",
+      "green_card": "Carta verde",
+      "other": "Altro"
+    },
+    "status": {
+      "active": "Valido",
+      "expired": "Scaduto"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio del documento",
+      "time": 3000
+    },
+    "success": {
+      "title": "Documento aggiunto",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile aggiungere il documento. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Aggiungi documento",
+    "description": "Registra un documento di un veicolo"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

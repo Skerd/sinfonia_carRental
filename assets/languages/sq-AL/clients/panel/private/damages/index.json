@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/index.tsx",
+  "title": "Dëmtimet",
+  "description": "Dëmtimet e gjetura në automjete, me foto dhe koston e riparimit",
+  "help": {
+    "ariaLabel": "Rreth dëmtimeve",
+    "title": "Rreth dëmtimeve",
+    "overview": "Regjistroni çdo dëmtim me foto dhe lidheni me rezervimin gjatë të cilit ndodhi.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Lista e rezervimeve tregon vetëm rezervimet e automjetit të zgjedhur.",
+          "Vendosni statusin «I riparuar» kur automjeti rregullohet.",
+          "Edhe stafi në sportel mund të raportojë dëmtime."
+        ]
+      }
+    ]
+  },
+  "create": "Raporto dëmtim",
+  "searchPlaceholder": "Kërkoni dëmtime ose shtoni filtra...",
+  "noData": "Ende pa dëmtime",
+  "failTitle": "Dëmtime nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "vehicle": "Automjeti",
+    "reservation": "Rezervimi",
+    "reportedAt": "Raportuar më",
+    "area": "Zona",
+    "severity": "Rëndësia",
+    "status": "Statusi",
+    "estimatedCost": "Kosto e vlerësuar",
+    "repairCost": "Kosto e riparimit",
+    "repairedAt": "Riparuar më",
+    "description": "Përshkrimi",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

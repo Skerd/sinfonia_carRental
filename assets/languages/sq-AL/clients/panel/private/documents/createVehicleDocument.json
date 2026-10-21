@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/createVehicleDocument.tsx",
+  "title": "Shto dokument",
+  "description": "Regjistroni një dokument të automjetit",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "vehicleLabel": "Automjeti",
+    "vehiclePlaceholder": "Zgjidhni automjetin",
+    "typeLabel": "Lloji",
+    "typePlaceholder": "Zgjidhni llojin",
+    "documentNumberLabel": "Numri i dokumentit",
+    "documentNumberPlaceholder": "Numri në dokument",
+    "issuerLabel": "Lëshuar nga",
+    "issuerPlaceholder": "p.sh. DPSHTRR",
+    "issuedAtLabel": "Lëshuar më",
+    "issuedAtPlaceholder": "Zgjidhni datën",
+    "expiresAtLabel": "Skadon më",
+    "expiresAtPlaceholder": "Zgjidhni datën",
+    "statusLabel": "Statusi",
+    "statusPlaceholder": "Zgjidhni statusin",
+    "notesLabel": "Shënime",
+    "notesPlaceholder": "Shënime të brendshme",
+    "attachmentsLabel": "Bashkëngjitjet",
+    "type": {
+      "registration": "Leja e qarkullimit",
+      "technical_inspection": "Kontrolli teknik",
+      "emissions_test": "Testi i emetimeve",
+      "road_tax": "Taksa e qarkullimit",
+      "green_card": "Karta jeshile",
+      "other": "Tjetër"
+    },
+    "status": {
+      "active": "I vlefshëm",
+      "expired": "I skaduar"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhet dokumenti",
+      "time": 3000
+    },
+    "success": {
+      "title": "Dokumenti u shtua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Dokumenti nuk u shtua. Kontrolloni formularin dhe provoni sërish.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Shto dokument",
+    "description": "Regjistroni një dokument të automjetit"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  }
+}

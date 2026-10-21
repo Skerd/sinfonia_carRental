@@ -1,0 +1,31 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/cardView/vehicleDamageCard.tsx",
+  "failedTitle": "Failed to load damage",
+  "failedDescription": "Tap to retry.",
+  "area": "Area",
+  "severity": "Severity",
+  "reportedAt": "Reported on",
+  "status": "Status",
+  "areaValues": {
+    "front": "Front",
+    "rear": "Rear",
+    "left": "Left side",
+    "right": "Right side",
+    "roof": "Roof",
+    "interior": "Interior",
+    "windshield": "Windshield",
+    "wheels": "Wheels",
+    "underbody": "Underbody",
+    "other": "Other"
+  },
+  "severityValues": {
+    "minor": "Minor",
+    "moderate": "Moderate",
+    "major": "Major"
+  },
+  "statusValues": {
+    "open": "Open",
+    "in_repair": "In repair",
+    "repaired": "Repaired"
+  }
+}

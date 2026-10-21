@@ -56,7 +56,7 @@ function VehicleCategorySheetView({
             hideActions={hideActions}
             onDelete={onDelete}
             onRestore={onRestore}
-            editPath={`/carRental/categories/edit?vehicleCategoryId=${entityId}`}
+            editPath={`/tenancy/systemSettings/vehicleCategories/edit?vehicleCategoryId=${entityId}`}
             onSheetRowPatched={(row) => {
                 setSheetData(row);
                 onSheetRowPatched?.(row as Partial<VehicleCategory>);

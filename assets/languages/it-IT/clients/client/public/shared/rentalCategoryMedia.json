@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/client/public/shared/rentalCategoryMedia.tsx",
+  "photoCount": "1 foto",
+  "photosCount": "{count} foto",
+  "video": "video",
+  "openGallery": "Guarda foto e video di {name}",
+  "previous": "Precedente",
+  "next": "Successivo",
+  "close": "Chiudi"
+}

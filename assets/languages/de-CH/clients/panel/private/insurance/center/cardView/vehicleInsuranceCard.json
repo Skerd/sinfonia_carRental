@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/cardView/vehicleInsuranceCard.tsx",
+  "failedTitle": "Police konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "vehicle": "Fahrzeug",
+  "insurer": "Versicherer",
+  "coverage": "Deckung",
+  "expiresAt": "Läuft ab am",
+  "status": "Status",
+  "coverageValues": {
+    "third_party": "Haftpflicht",
+    "partial_casco": "Teilkasko",
+    "full_casco": "Vollkasko"
+  },
+  "statusValues": {
+    "active": "Aktiv",
+    "expired": "Abgelaufen",
+    "cancelled": "Gekündigt"
+  }
+}

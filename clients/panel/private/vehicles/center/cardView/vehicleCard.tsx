@@ -5,11 +5,13 @@ import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import {IconCar, IconCategory, IconMapPin, IconStatusChange} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
+import {AccessGatedGalleryCarousel} from "@coreModule/components/viewEngine/widgets/gallery/galleryCarousel.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {Vehicle} from "armonia/src/modules/carRental/api/carRental/private/vehicle/vehicle.dto.ts";
 import VehicleSheetView from "@carRentalModule/clients/panel/private/vehicles/center/sheetView/vehicleSheetView.tsx";
 import {vehicleEditPath} from "@carRentalModule/clients/panel/private/vehicles/index.tsx";
+import VehicleRecordsMenu from "@carRentalModule/clients/panel/private/vehicles/center/actions/vehicleRecordsMenu.tsx";
 
 type VehicleCardProps = WithLanguageType & {
     vehicle: Vehicle;
@@ -51,9 +53,25 @@ function VehicleCard({
             titlePath="plate"
             innerRef={innerRef}
         >
-            {({entity: row}) => (
+            {({entity: row, read}) => (
                 <>
-                    <EntityCard.Header titlePath="plate" title={row.plate} />
+                    {/* Vehicles have no separate cover field: the first photo is the cover. */}
+                    <div className="-mx-(--density-pad) -mt-(--density-pad) w-[calc(100%+2*var(--density-pad))]">
+                        <AccessGatedGalleryCarousel
+                            read={read}
+                            imageGallery={row.images || []}
+                            videoGallery={row.videos || []}
+                            mainImagePath="images"
+                            imageGalleryPath="images"
+                            videoGalleryPath="videos"
+                            showThumbnails={false}
+                            allowFullScreen={false}
+                            coverAfterFirst
+                        />
+                    </div>
+                    <EntityCard.Header titlePath="plate" title={row.plate}>
+                        <VehicleRecordsMenu vehicleId={row._id} />
+                    </EntityCard.Header>
                     <EntityCard.Body>
                         <EntityCardRow
                             icon={IconCar}

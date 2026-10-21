@@ -38,6 +38,10 @@
     "createdBy": "Créé par",
     "company": "Entreprise",
     "deletedAt": "Supprimé le",
-    "deletedBy": "Supprimé par"
+    "deletedBy": "Supprimé par",
+    "nextServiceDueAt": "Prochain entretien le",
+    "nextServiceDueKm": "Prochain entretien à (km)",
+    "acquiredAt": "Dans la flotte depuis",
+    "purchasePrice": "Prix d'achat"
   }
 }

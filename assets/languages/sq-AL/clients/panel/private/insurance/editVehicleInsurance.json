@@ -1,0 +1,69 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/editVehicleInsurance.tsx",
+  "title": "Ndrysho policën",
+  "description": "Ndryshoni datat, mbulimin ose statusin",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "vehicleLabel": "Automjeti",
+    "vehiclePlaceholder": "Zgjidhni automjetin",
+    "insurerLabel": "Siguruesi",
+    "insurerPlaceholder": "p.sh. Sigal",
+    "policyNumberLabel": "Numri i policës",
+    "policyNumberPlaceholder": "Numri në policë",
+    "coverageLabel": "Mbulimi",
+    "coveragePlaceholder": "Zgjidhni mbulimin",
+    "validFromLabel": "E vlefshme nga",
+    "validFromPlaceholder": "Zgjidhni datën",
+    "expiresAtLabel": "Skadon më",
+    "expiresAtPlaceholder": "Zgjidhni datën",
+    "premiumLabel": "Primi",
+    "premiumPlaceholder": "p.sh. 350",
+    "deductibleLabel": "Franshiza",
+    "deductiblePlaceholder": "p.sh. 350",
+    "statusLabel": "Statusi",
+    "statusPlaceholder": "Zgjidhni statusin",
+    "notesLabel": "Shënime",
+    "notesPlaceholder": "Shënime të brendshme",
+    "attachmentsLabel": "Bashkëngjitjet",
+    "coverage": {
+      "third_party": "Përgjegjësi civile",
+      "partial_casco": "Kasko e pjesshme",
+      "full_casco": "Kasko e plotë"
+    },
+    "status": {
+      "active": "Aktive",
+      "expired": "E skaduar",
+      "cancelled": "E anuluar"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhen ndryshimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Ndryshimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Ndryshimet nuk u ruajtën. Kontrolloni formularin dhe provoni sërish.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ndrysho policën",
+    "description": "Ndryshoni datat, mbulimin ose statusin"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

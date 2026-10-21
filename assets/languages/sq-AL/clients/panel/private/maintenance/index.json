@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/index.tsx",
+  "title": "Mirëmbajtja",
+  "description": "Servisimet, riparimet dhe kontrollet e çdo automjeti",
+  "help": {
+    "ariaLabel": "Rreth mirëmbajtjes",
+    "title": "Rreth mirëmbajtjes",
+    "overview": "Libri i servisit të çdo automjeti. Regjistrimi i fundit i përfunduar përcakton datën dhe km e servisit të radhës.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Regjistrimet e planifikuara ose të anuluara nuk llogariten për servisin e radhës.",
+          "Stafi i zgjedhur njoftohet 14 ditë ose 1.000 km para servisit të radhës.",
+          "Një kilometrazh më i lartë në regjistrim përditëson atë të automjetit."
+        ]
+      }
+    ]
+  },
+  "create": "Shto regjistrim",
+  "searchPlaceholder": "Kërkoni mirëmbajtje ose shtoni filtra...",
+  "noData": "Ende pa mirëmbajtje",
+  "failTitle": "Mirëmbajtje nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "vehicle": "Automjeti",
+    "type": "Lloji",
+    "status": "Statusi",
+    "serviceDate": "Data e servisit",
+    "odometerKm": "Kilometrazhi (km)",
+    "provider": "Autoservisi",
+    "cost": "Kostoja",
+    "description": "Përshkrimi",
+    "nextDueAt": "Servisi i radhës më",
+    "nextDueKm": "Servisi i radhës në (km)",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

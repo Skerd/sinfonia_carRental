@@ -1,0 +1,37 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/sheetView/vehicleMaintenanceSheetView.tsx",
+  "lifecycle": "Lifecycle",
+  "overview": "Overview",
+  "vehicleMaintenanceSubtitle": "Maintenance",
+  "vehicle": "Vehicle",
+  "type": "Type",
+  "status": "Status",
+  "serviceDate": "Service date",
+  "odometerKm": "Odometer (km)",
+  "provider": "Garage",
+  "cost": "Cost",
+  "description": "Description",
+  "nextDueAt": "Next service due",
+  "nextDueKm": "Next service at (km)",
+  "attachments": "Attachments",
+  "typeValues": {
+    "scheduled_service": "Scheduled service",
+    "oil_change": "Oil change",
+    "tires": "Tyres",
+    "brakes": "Brakes",
+    "inspection": "Inspection",
+    "repair": "Repair",
+    "battery": "Battery",
+    "other": "Other"
+  },
+  "statusValues": {
+    "scheduled": "Scheduled",
+    "completed": "Completed",
+    "cancelled": "Cancelled"
+  },
+  "createdAt": "Created at",
+  "updatedAt": "Updated at",
+  "createdBy": "Created by",
+  "deletedAt": "Deleted at",
+  "deletedBy": "Deleted by"
+}

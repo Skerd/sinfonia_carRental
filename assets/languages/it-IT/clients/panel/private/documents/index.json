@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/index.tsx",
+  "title": "Documenti dei veicoli",
+  "description": "Libretti, revisioni e tasse con la loro scadenza",
+  "help": {
+    "ariaLabel": "Informazioni sui documenti",
+    "title": "Informazioni sui documenti",
+    "overview": "Conserva qui i documenti di ogni veicolo, con le scansioni. I documenti senza scadenza non generano promemoria.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Il personale scelto viene avvisato una volta, 30 giorni prima della scadenza.",
+          "I documenti scaduti vengono segnati ogni mattina.",
+          "Un documento più recente dello stesso tipo sostituisce il promemoria del vecchio."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi documento",
+  "searchPlaceholder": "Cerca documenti o aggiungi filtri...",
+  "noData": "Ancora nessun documenti",
+  "failTitle": "Impossibile caricare documenti",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "vehicle": "Veicolo",
+    "type": "Tipo",
+    "documentNumber": "Numero del documento",
+    "issuer": "Emesso da",
+    "issuedAt": "Emesso il",
+    "expiresAt": "Scade il",
+    "status": "Stato",
+    "notes": "Note",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

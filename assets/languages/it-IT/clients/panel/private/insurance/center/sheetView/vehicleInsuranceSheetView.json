@@ -1,0 +1,32 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/sheetView/vehicleInsuranceSheetView.tsx",
+  "lifecycle": "Ciclo di vita",
+  "overview": "Panoramica",
+  "vehicleInsuranceSubtitle": "Polizza assicurativa",
+  "vehicle": "Veicolo",
+  "insurer": "Assicuratore",
+  "policyNumber": "Numero di polizza",
+  "coverage": "Copertura",
+  "validFrom": "Valida dal",
+  "expiresAt": "Scade il",
+  "premium": "Premio",
+  "deductible": "Franchigia",
+  "status": "Stato",
+  "notes": "Note",
+  "attachments": "Allegati",
+  "coverageValues": {
+    "third_party": "RC auto",
+    "partial_casco": "Kasko parziale",
+    "full_casco": "Kasko completa"
+  },
+  "statusValues": {
+    "active": "Attiva",
+    "expired": "Scaduta",
+    "cancelled": "Annullata"
+  },
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da"
+}

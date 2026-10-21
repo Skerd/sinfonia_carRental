@@ -1,0 +1,37 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/sheetView/vehicleMaintenanceSheetView.tsx",
+  "lifecycle": "Lebenszyklus",
+  "overview": "Übersicht",
+  "vehicleMaintenanceSubtitle": "Wartung",
+  "vehicle": "Fahrzeug",
+  "type": "Art",
+  "status": "Status",
+  "serviceDate": "Datum",
+  "odometerKm": "Kilometerstand",
+  "provider": "Werkstatt",
+  "cost": "Kosten",
+  "description": "Beschreibung",
+  "nextDueAt": "Nächster Service am",
+  "nextDueKm": "Nächster Service bei (km)",
+  "attachments": "Anhänge",
+  "typeValues": {
+    "scheduled_service": "Service",
+    "oil_change": "Ölwechsel",
+    "tires": "Reifen",
+    "brakes": "Bremsen",
+    "inspection": "Kontrolle",
+    "repair": "Reparatur",
+    "battery": "Batterie",
+    "other": "Andere"
+  },
+  "statusValues": {
+    "scheduled": "Geplant",
+    "completed": "Erledigt",
+    "cancelled": "Abgesagt"
+  },
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "createdBy": "Erstellt von",
+  "deletedAt": "Gelöscht am",
+  "deletedBy": "Gelöscht von"
+}

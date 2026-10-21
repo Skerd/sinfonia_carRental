@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/center/cardView/vehicleDocumentCard.tsx",
+  "failedTitle": "Impossible de charger le document",
+  "failedDescription": "Touchez pour réessayer.",
+  "type": "Type",
+  "documentNumber": "Numéro du document",
+  "expiresAt": "Expire le",
+  "status": "Statut",
+  "typeValues": {
+    "registration": "Certificat d'immatriculation",
+    "technical_inspection": "Contrôle technique",
+    "emissions_test": "Contrôle antipollution",
+    "road_tax": "Taxe de circulation",
+    "green_card": "Carte verte",
+    "other": "Autre"
+  },
+  "statusValues": {
+    "active": "Valide",
+    "expired": "Expiré"
+  }
+}

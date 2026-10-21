@@ -1,4 +1,12 @@
-import {IconAdjustments, IconCalendarEvent, IconCar, IconCategory, IconMapPin, IconPlus, IconTool} from "@tabler/icons-react";
+import {
+    IconCalendarEvent,
+    IconCar,
+    IconCarCrash,
+    IconEngine,
+    IconFileCertificate,
+    IconShieldCheck,
+    IconTool,
+} from "@tabler/icons-react";
 import type {SidebarContribution} from "@coreModule/helpers/types/sidebarContribution.types.ts";
 import type {NavGroup, NavItem} from "@coreModule/helpers/types/sidebarNav.types.ts";
 import type {ResolveLanguageKey} from "@coreModule/helpers/hocs/withLanguage.tsx";
@@ -25,10 +33,18 @@ const carRentalSidebarContribution: SidebarContribution = {
                     item("reservations", IconCalendarEvent, "rentalreservations"),
                     item("vehicles", IconCar, "vehicles"),
                     item("blocks", IconTool, "vehicleblocks"),
-                    item("categories", IconCategory, "vehiclecategories"),
-                    item("extras", IconPlus, "rentalextras"),
-                    item("locations", IconMapPin, "rentallocations"),
-                    item("settings", IconAdjustments, "carrentalconfigs"),
+                ],
+            },
+            {
+                title: resolveLanguageKey("menus.carRental.fleetOps.title"),
+                permissions: [],
+                usersPermissions: [],
+                atLeastOnePermission: true,
+                items: [
+                    item("maintenance", IconEngine, "vehiclemaintenances"),
+                    item("damages", IconCarCrash, "vehicledamages"),
+                    item("insurance", IconShieldCheck, "vehicleinsurances"),
+                    item("documents", IconFileCertificate, "vehicledocuments"),
                 ],
             },
         ];

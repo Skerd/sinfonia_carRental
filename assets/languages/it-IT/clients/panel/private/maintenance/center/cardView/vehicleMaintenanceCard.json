@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/cardView/vehicleMaintenanceCard.tsx",
+  "failedTitle": "Impossibile caricare l'intervento",
+  "failedDescription": "Tocca per riprovare.",
+  "type": "Tipo",
+  "serviceDate": "Data dell'intervento",
+  "odometerKm": "Chilometraggio",
+  "cost": "Costo",
+  "status": "Stato",
+  "typeValues": {
+    "scheduled_service": "Tagliando",
+    "oil_change": "Cambio olio",
+    "tires": "Pneumatici",
+    "brakes": "Freni",
+    "inspection": "Controllo",
+    "repair": "Riparazione",
+    "battery": "Batteria",
+    "other": "Altro"
+  },
+  "statusValues": {
+    "scheduled": "Programmato",
+    "completed": "Completato",
+    "cancelled": "Annullato"
+  }
+}

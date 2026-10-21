@@ -1,0 +1,44 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/sheetView/vehicleDamageSheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "overview": "Përmbledhje",
+  "vehicleDamageSubtitle": "Raport dëmtimi",
+  "vehicle": "Automjeti",
+  "reservation": "Rezervimi",
+  "reportedAt": "Raportuar më",
+  "area": "Zona",
+  "severity": "Rëndësia",
+  "status": "Statusi",
+  "estimatedCost": "Kosto e vlerësuar",
+  "repairCost": "Kosto e riparimit",
+  "repairedAt": "Riparuar më",
+  "description": "Përshkrimi",
+  "photos": "Fotot",
+  "areaValues": {
+    "front": "Përpara",
+    "rear": "Prapa",
+    "left": "Ana e majtë",
+    "right": "Ana e djathtë",
+    "roof": "Çatia",
+    "interior": "Brendësia",
+    "windshield": "Xhami i përparmë",
+    "wheels": "Rrotat",
+    "underbody": "Pjesa e poshtme",
+    "other": "Tjetër"
+  },
+  "severityValues": {
+    "minor": "I lehtë",
+    "moderate": "Mesatar",
+    "major": "I rëndë"
+  },
+  "statusValues": {
+    "open": "I hapur",
+    "in_repair": "Në riparim",
+    "repaired": "I riparuar"
+  },
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

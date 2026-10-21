@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/center/actions/vehicleRecordsMenu.tsx",
+  "reservations": "Bookings",
+  "maintenance": "Service log",
+  "damages": "Damages",
+  "insurance": "Insurance",
+  "documents": "Documents"
+}

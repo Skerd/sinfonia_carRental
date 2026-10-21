@@ -1,0 +1,37 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/sheetView/vehicleMaintenanceSheetView.tsx",
+  "lifecycle": "Ciclo di vita",
+  "overview": "Panoramica",
+  "vehicleMaintenanceSubtitle": "Manutenzione",
+  "vehicle": "Veicolo",
+  "type": "Tipo",
+  "status": "Stato",
+  "serviceDate": "Data dell'intervento",
+  "odometerKm": "Chilometraggio",
+  "provider": "Officina",
+  "cost": "Costo",
+  "description": "Descrizione",
+  "nextDueAt": "Prossimo intervento il",
+  "nextDueKm": "Prossimo intervento a (km)",
+  "attachments": "Allegati",
+  "typeValues": {
+    "scheduled_service": "Tagliando",
+    "oil_change": "Cambio olio",
+    "tires": "Pneumatici",
+    "brakes": "Freni",
+    "inspection": "Controllo",
+    "repair": "Riparazione",
+    "battery": "Batteria",
+    "other": "Altro"
+  },
+  "statusValues": {
+    "scheduled": "Programmato",
+    "completed": "Completato",
+    "cancelled": "Annullato"
+  },
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da"
+}

@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/center/cardView/vehicleDocumentCard.tsx",
+  "failedTitle": "Failed to load document",
+  "failedDescription": "Tap to retry.",
+  "type": "Type",
+  "documentNumber": "Document number",
+  "expiresAt": "Expires on",
+  "status": "Status",
+  "typeValues": {
+    "registration": "Registration",
+    "technical_inspection": "Technical inspection",
+    "emissions_test": "Emissions test",
+    "road_tax": "Road tax",
+    "green_card": "Green card",
+    "other": "Other"
+  },
+  "statusValues": {
+    "active": "Valid",
+    "expired": "Expired"
+  }
+}

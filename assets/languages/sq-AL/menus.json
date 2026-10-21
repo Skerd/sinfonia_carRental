@@ -20,7 +20,22 @@
       "title": "Vendndodhjet"
     },
     "settings": {
-      "title": "Cilësimet"
+      "title": "Rezervimi dhe pagesa"
+    },
+    "fleetOps": {
+      "title": "Operacionet e flotës"
+    },
+    "maintenance": {
+      "title": "Mirëmbajtja"
+    },
+    "damages": {
+      "title": "Dëmtimet"
+    },
+    "insurance": {
+      "title": "Sigurimet"
+    },
+    "documents": {
+      "title": "Dokumentet"
     }
   }
 }

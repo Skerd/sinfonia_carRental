@@ -9,7 +9,7 @@ import VehicleCategoryCard from "./center/cardView/vehicleCategoryCard.tsx";
 import VehicleCategorySheetView from "./center/sheetView/vehicleCategorySheetView.tsx";
 
 export function vehicleCategoryEditPath(row: {_id: string}) {
-    return `/carRental/categories/edit?vehicleCategoryId=${row._id}`;
+    return `/tenancy/systemSettings/vehicleCategories/edit?vehicleCategoryId=${row._id}`;
 }
 
 function AllVehicleCategories({resolveLanguageKey}: WithLanguageType) {
@@ -19,7 +19,7 @@ function AllVehicleCategories({resolveLanguageKey}: WithLanguageType) {
             collectionName="vehiclecategories"
             accessModel="vehiclecategories"
             tableConfigKey="vehiclecategories"
-            createPath="/carRental/categories/create"
+            createPath="/tenancy/systemSettings/vehicleCategories/create"
             createIcon={<IconPlus />}
             createLanguageKey="create"
             buildEditPath={vehicleCategoryEditPath}

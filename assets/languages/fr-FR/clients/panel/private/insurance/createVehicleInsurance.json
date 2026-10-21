@@ -1,0 +1,69 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/createVehicleInsurance.tsx",
+  "title": "Ajouter une police",
+  "description": "Enregistrer une police d'assurance pour un véhicule",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "vehicleLabel": "Véhicule",
+    "vehiclePlaceholder": "Choisir un véhicule",
+    "insurerLabel": "Assureur",
+    "insurerPlaceholder": "ex. Sigal",
+    "policyNumberLabel": "Numéro de police",
+    "policyNumberPlaceholder": "Numéro figurant sur la police",
+    "coverageLabel": "Couverture",
+    "coveragePlaceholder": "Choisir la couverture",
+    "validFromLabel": "Valable dès le",
+    "validFromPlaceholder": "Choisir une date",
+    "expiresAtLabel": "Expire le",
+    "expiresAtPlaceholder": "Choisir une date",
+    "premiumLabel": "Prime",
+    "premiumPlaceholder": "ex. 350",
+    "deductibleLabel": "Franchise",
+    "deductiblePlaceholder": "ex. 350",
+    "statusLabel": "Statut",
+    "statusPlaceholder": "Choisir le statut",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Notes internes",
+    "attachmentsLabel": "Pièces jointes",
+    "coverage": {
+      "third_party": "Responsabilité civile",
+      "partial_casco": "Casco partielle",
+      "full_casco": "Casco complète"
+    },
+    "status": {
+      "active": "Active",
+      "expired": "Expirée",
+      "cancelled": "Résiliée"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement de la police",
+      "time": 3000
+    },
+    "success": {
+      "title": "Police ajoutée",
+      "time": 3000
+    },
+    "error": {
+      "title": "La police n'a pas pu être ajoutée. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ajouter une police",
+    "description": "Enregistrer une police d'assurance pour un véhicule"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Ajouter"
+  }
+}

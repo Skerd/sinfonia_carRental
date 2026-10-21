@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/index.tsx",
+  "title": "Dommages",
+  "description": "Dommages constatés sur les véhicules, avec photos et coût de réparation",
+  "help": {
+    "ariaLabel": "À propos des dommages",
+    "title": "À propos des dommages",
+    "overview": "Enregistrez chaque dommage avec des photos et liez-le à la réservation pendant laquelle il est survenu.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "La liste des réservations ne montre que celles du véhicule choisi.",
+          "Passez le statut à « Réparé » une fois le véhicule remis en état.",
+          "Le personnel au comptoir peut aussi signaler un dommage."
+        ]
+      }
+    ]
+  },
+  "create": "Signaler un dommage",
+  "searchPlaceholder": "Rechercher des dommages ou ajouter des filtres...",
+  "noData": "Aucun dommages pour l'instant",
+  "failTitle": "Impossible de charger les dommages",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "vehicle": "Véhicule",
+    "reservation": "Réservation",
+    "reportedAt": "Signalé le",
+    "area": "Zone",
+    "severity": "Gravité",
+    "status": "Statut",
+    "estimatedCost": "Coût estimé",
+    "repairCost": "Coût de réparation",
+    "repairedAt": "Réparé le",
+    "description": "Description",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

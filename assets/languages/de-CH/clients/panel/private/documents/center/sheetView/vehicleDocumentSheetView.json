@@ -1,0 +1,32 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/center/sheetView/vehicleDocumentSheetView.tsx",
+  "lifecycle": "Lebenszyklus",
+  "overview": "Übersicht",
+  "vehicleDocumentSubtitle": "Fahrzeugdokument",
+  "vehicle": "Fahrzeug",
+  "type": "Art",
+  "documentNumber": "Dokumentnummer",
+  "issuer": "Ausgestellt von",
+  "issuedAt": "Ausgestellt am",
+  "expiresAt": "Läuft ab am",
+  "status": "Status",
+  "notes": "Notizen",
+  "attachments": "Anhänge",
+  "typeValues": {
+    "registration": "Fahrzeugausweis",
+    "technical_inspection": "Fahrzeugprüfung",
+    "emissions_test": "Abgaswartung",
+    "road_tax": "Motorfahrzeugsteuer",
+    "green_card": "Grüne Karte",
+    "other": "Andere"
+  },
+  "statusValues": {
+    "active": "Gültig",
+    "expired": "Abgelaufen"
+  },
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "createdBy": "Erstellt von",
+  "deletedAt": "Gelöscht am",
+  "deletedBy": "Gelöscht von"
+}

@@ -1,0 +1,69 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/editVehicleInsurance.tsx",
+  "title": "Modifica polizza",
+  "description": "Modifica date, copertura o stato",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "vehicleLabel": "Veicolo",
+    "vehiclePlaceholder": "Seleziona un veicolo",
+    "insurerLabel": "Assicuratore",
+    "insurerPlaceholder": "es. Sigal",
+    "policyNumberLabel": "Numero di polizza",
+    "policyNumberPlaceholder": "Numero riportato sulla polizza",
+    "coverageLabel": "Copertura",
+    "coveragePlaceholder": "Seleziona la copertura",
+    "validFromLabel": "Valida dal",
+    "validFromPlaceholder": "Scegli una data",
+    "expiresAtLabel": "Scade il",
+    "expiresAtPlaceholder": "Scegli una data",
+    "premiumLabel": "Premio",
+    "premiumPlaceholder": "es. 350",
+    "deductibleLabel": "Franchigia",
+    "deductiblePlaceholder": "es. 350",
+    "statusLabel": "Stato",
+    "statusPlaceholder": "Seleziona lo stato",
+    "notesLabel": "Note",
+    "notesPlaceholder": "Note interne",
+    "attachmentsLabel": "Allegati",
+    "coverage": {
+      "third_party": "RC auto",
+      "partial_casco": "Kasko parziale",
+      "full_casco": "Kasko completa"
+    },
+    "status": {
+      "active": "Attiva",
+      "expired": "Scaduta",
+      "cancelled": "Annullata"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio delle modifiche",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifiche salvate",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare le modifiche. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifica polizza",
+    "description": "Modifica date, copertura o stato"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Salva"
+  }
+}

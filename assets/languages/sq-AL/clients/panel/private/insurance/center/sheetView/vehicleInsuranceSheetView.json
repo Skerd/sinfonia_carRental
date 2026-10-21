@@ -1,0 +1,32 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/sheetView/vehicleInsuranceSheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "overview": "Përmbledhje",
+  "vehicleInsuranceSubtitle": "Policë sigurimi",
+  "vehicle": "Automjeti",
+  "insurer": "Siguruesi",
+  "policyNumber": "Numri i policës",
+  "coverage": "Mbulimi",
+  "validFrom": "E vlefshme nga",
+  "expiresAt": "Skadon më",
+  "premium": "Primi",
+  "deductible": "Franshiza",
+  "status": "Statusi",
+  "notes": "Shënime",
+  "attachments": "Bashkëngjitjet",
+  "coverageValues": {
+    "third_party": "Përgjegjësi civile",
+    "partial_casco": "Kasko e pjesshme",
+    "full_casco": "Kasko e plotë"
+  },
+  "statusValues": {
+    "active": "Aktive",
+    "expired": "E skaduar",
+    "cancelled": "E anuluar"
+  },
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

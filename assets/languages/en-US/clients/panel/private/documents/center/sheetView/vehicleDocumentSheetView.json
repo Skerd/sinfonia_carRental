@@ -1,0 +1,32 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/center/sheetView/vehicleDocumentSheetView.tsx",
+  "lifecycle": "Lifecycle",
+  "overview": "Overview",
+  "vehicleDocumentSubtitle": "Vehicle document",
+  "vehicle": "Vehicle",
+  "type": "Type",
+  "documentNumber": "Document number",
+  "issuer": "Issued by",
+  "issuedAt": "Issued on",
+  "expiresAt": "Expires on",
+  "status": "Status",
+  "notes": "Notes",
+  "attachments": "Attachments",
+  "typeValues": {
+    "registration": "Registration",
+    "technical_inspection": "Technical inspection",
+    "emissions_test": "Emissions test",
+    "road_tax": "Road tax",
+    "green_card": "Green card",
+    "other": "Other"
+  },
+  "statusValues": {
+    "active": "Valid",
+    "expired": "Expired"
+  },
+  "createdAt": "Created at",
+  "updatedAt": "Updated at",
+  "createdBy": "Created by",
+  "deletedAt": "Deleted at",
+  "deletedBy": "Deleted by"
+}

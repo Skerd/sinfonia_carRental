@@ -20,7 +20,22 @@
       "title": "Sites"
     },
     "settings": {
-      "title": "Paramètres"
+      "title": "Réservation et paiement"
+    },
+    "fleetOps": {
+      "title": "Gestion de flotte"
+    },
+    "maintenance": {
+      "title": "Entretien"
+    },
+    "damages": {
+      "title": "Dommages"
+    },
+    "insurance": {
+      "title": "Assurances"
+    },
+    "documents": {
+      "title": "Documents"
     }
   }
 }

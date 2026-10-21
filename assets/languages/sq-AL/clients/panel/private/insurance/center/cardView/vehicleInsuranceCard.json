@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/cardView/vehicleInsuranceCard.tsx",
+  "failedTitle": "Polica nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "vehicle": "Automjeti",
+  "insurer": "Siguruesi",
+  "coverage": "Mbulimi",
+  "expiresAt": "Skadon më",
+  "status": "Statusi",
+  "coverageValues": {
+    "third_party": "Përgjegjësi civile",
+    "partial_casco": "Kasko e pjesshme",
+    "full_casco": "Kasko e plotë"
+  },
+  "statusValues": {
+    "active": "Aktive",
+    "expired": "E skaduar",
+    "cancelled": "E anuluar"
+  }
+}

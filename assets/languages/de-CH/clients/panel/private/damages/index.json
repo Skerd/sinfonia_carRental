@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/index.tsx",
+  "title": "Schäden",
+  "description": "Schäden an den Fahrzeugen, mit Fotos und Reparaturkosten",
+  "help": {
+    "ariaLabel": "Über Schäden",
+    "title": "Über Schäden",
+    "overview": "Erfassen Sie jeden Schaden mit Fotos. Verknüpfen Sie ihn mit der Buchung, während der er entstanden ist.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Die Buchungsliste zeigt nur Buchungen des gewählten Fahrzeugs.",
+          "Setzen Sie den Status auf «Repariert», sobald das Fahrzeug wieder in Ordnung ist.",
+          "Auch Mitarbeitende am Schalter können Schäden erfassen."
+        ]
+      }
+    ]
+  },
+  "create": "Schaden melden",
+  "searchPlaceholder": "Schäden suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Schäden",
+  "failTitle": "Schäden konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "vehicle": "Fahrzeug",
+    "reservation": "Buchung",
+    "reportedAt": "Gemeldet am",
+    "area": "Bereich",
+    "severity": "Schweregrad",
+    "status": "Status",
+    "estimatedCost": "Geschätzte Kosten",
+    "repairCost": "Reparaturkosten",
+    "repairedAt": "Repariert am",
+    "description": "Beschreibung",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

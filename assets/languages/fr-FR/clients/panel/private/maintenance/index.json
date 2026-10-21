@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/index.tsx",
+  "title": "Entretien",
+  "description": "Entretiens, réparations et contrôles de chaque véhicule",
+  "help": {
+    "ariaLabel": "À propos de l'entretien",
+    "title": "À propos de l'entretien",
+    "overview": "Le carnet d'entretien de chaque véhicule. La dernière intervention terminée fixe la date et le kilométrage du prochain entretien.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Les interventions planifiées ou annulées ne comptent pas pour le prochain entretien.",
+          "Le personnel choisi est averti 14 jours ou 1 000 km avant le prochain entretien.",
+          "Un kilométrage plus élevé sur une intervention met à jour celui du véhicule."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter une intervention",
+  "searchPlaceholder": "Rechercher des entretiens ou ajouter des filtres...",
+  "noData": "Aucun entretiens pour l'instant",
+  "failTitle": "Impossible de charger les entretiens",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "vehicle": "Véhicule",
+    "type": "Type",
+    "status": "Statut",
+    "serviceDate": "Date de l'intervention",
+    "odometerKm": "Kilométrage",
+    "provider": "Garage",
+    "cost": "Coût",
+    "description": "Description",
+    "nextDueAt": "Prochain entretien le",
+    "nextDueKm": "Prochain entretien à (km)",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

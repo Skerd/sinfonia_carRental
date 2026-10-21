@@ -30,5 +30,11 @@
   "updatedAt": "Updated at",
   "createdBy": "Created by",
   "deletedAt": "Deleted at",
-  "deletedBy": "Deleted by"
+  "deletedBy": "Deleted by",
+  "images": "Photos",
+  "fleet": "Fleet",
+  "nextServiceDueAt": "Next service due",
+  "nextServiceDueKm": "Next service at (km)",
+  "acquiredAt": "In fleet since",
+  "purchasePrice": "Purchase price"
 }

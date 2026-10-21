@@ -1,0 +1,44 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/sheetView/vehicleDamageSheetView.tsx",
+  "lifecycle": "Ciclo di vita",
+  "overview": "Panoramica",
+  "vehicleDamageSubtitle": "Rapporto danni",
+  "vehicle": "Veicolo",
+  "reservation": "Prenotazione",
+  "reportedAt": "Segnalato il",
+  "area": "Zona",
+  "severity": "Gravità",
+  "status": "Stato",
+  "estimatedCost": "Costo stimato",
+  "repairCost": "Costo della riparazione",
+  "repairedAt": "Riparato il",
+  "description": "Descrizione",
+  "photos": "Foto",
+  "areaValues": {
+    "front": "Anteriore",
+    "rear": "Posteriore",
+    "left": "Lato sinistro",
+    "right": "Lato destro",
+    "roof": "Tetto",
+    "interior": "Interni",
+    "windshield": "Parabrezza",
+    "wheels": "Ruote",
+    "underbody": "Sottoscocca",
+    "other": "Altro"
+  },
+  "severityValues": {
+    "minor": "Lieve",
+    "moderate": "Moderato",
+    "major": "Grave"
+  },
+  "statusValues": {
+    "open": "Aperto",
+    "in_repair": "In riparazione",
+    "repaired": "Riparato"
+  },
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da"
+}

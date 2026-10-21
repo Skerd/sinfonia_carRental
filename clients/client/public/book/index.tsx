@@ -19,6 +19,7 @@ import type {
 import type {RentalPaymentChoice} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.constants.ts";
 import {useRentalConfig, type RentalConfig} from "../shared/rentalConfigContext.tsx";
 import RentalCategoryFacts from "../shared/rentalCategoryFacts.tsx";
+import RentalCategoryMedia from "../shared/rentalCategoryMedia.tsx";
 import RentalPriceSummary from "../shared/rentalPriceSummary.tsx";
 import {formatLocalDateTime, tripFromSearch, tripToSearch} from "../shared/rentalTripParams.ts";
 import {RENT_CARD, RENT_HEADING, RENT_INPUT, RENT_LABEL, RENT_PRIMARY_BUTTON} from "../shared/rentalStyles.ts";
@@ -199,6 +200,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
         <form onSubmit={submit} noValidate className="grid gap-6 lg:grid-cols-[1fr_360px]">
             <div className="flex flex-col gap-6">
                 <section className={`${RENT_CARD} flex flex-col gap-2`}>
+                    <RentalCategoryMedia category={category} coverClassName="mb-2 aspect-[16/9] w-full rounded-xl" />
                     <h1 className={`${RENT_HEADING} text-2xl`}>{category.name}</h1>
                     <RentalCategoryFacts category={category} />
                     <Link to={`/search?${tripKey}`} className="text-sm font-medium text-rent-accent hover:underline">{resolveLanguageKey("changeSearch")}</Link>

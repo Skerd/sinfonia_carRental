@@ -1,0 +1,69 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/createVehicleInsurance.tsx",
+  "title": "Add policy",
+  "description": "Record an insurance policy for a car",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "vehicleLabel": "Vehicle",
+    "vehiclePlaceholder": "Select vehicle",
+    "insurerLabel": "Insurer",
+    "insurerPlaceholder": "e.g. Sigal",
+    "policyNumberLabel": "Policy number",
+    "policyNumberPlaceholder": "Number on the policy",
+    "coverageLabel": "Coverage",
+    "coveragePlaceholder": "Select coverage",
+    "validFromLabel": "Valid from",
+    "validFromPlaceholder": "Pick a date",
+    "expiresAtLabel": "Expires on",
+    "expiresAtPlaceholder": "Pick a date",
+    "premiumLabel": "Premium",
+    "premiumPlaceholder": "e.g. 350",
+    "deductibleLabel": "Deductible",
+    "deductiblePlaceholder": "e.g. 350",
+    "statusLabel": "Status",
+    "statusPlaceholder": "Select status",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Internal notes",
+    "attachmentsLabel": "Attachments",
+    "coverage": {
+      "third_party": "Third party",
+      "partial_casco": "Partial casco",
+      "full_casco": "Full casco"
+    },
+    "status": {
+      "active": "Active",
+      "expired": "Expired",
+      "cancelled": "Cancelled"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Saving policy",
+      "time": 3000
+    },
+    "success": {
+      "title": "Policy added",
+      "time": 3000
+    },
+    "error": {
+      "title": "Policy could not be added. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Add policy",
+    "description": "Record an insurance policy for a car"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}

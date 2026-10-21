@@ -45,7 +45,8 @@
       "manual": "Manual"
     },
     "transmissionLabel": "Kambio",
-    "transmissionPlaceholder": "Zgjidh kambion"
+    "transmissionPlaceholder": "Zgjidh kambion",
+    "videosLabel": "Videot"
   },
   "axios": {
     "start": {

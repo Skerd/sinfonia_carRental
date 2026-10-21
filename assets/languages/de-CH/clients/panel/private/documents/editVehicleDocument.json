@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/editVehicleDocument.tsx",
+  "title": "Dokument bearbeiten",
+  "description": "Daten, Nummer oder Scans ändern",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "vehicleLabel": "Fahrzeug",
+    "vehiclePlaceholder": "Fahrzeug wählen",
+    "typeLabel": "Art",
+    "typePlaceholder": "Art wählen",
+    "documentNumberLabel": "Dokumentnummer",
+    "documentNumberPlaceholder": "Nummer auf dem Dokument",
+    "issuerLabel": "Ausgestellt von",
+    "issuerPlaceholder": "z. B. DPSHTRR",
+    "issuedAtLabel": "Ausgestellt am",
+    "issuedAtPlaceholder": "Datum wählen",
+    "expiresAtLabel": "Läuft ab am",
+    "expiresAtPlaceholder": "Datum wählen",
+    "statusLabel": "Status",
+    "statusPlaceholder": "Status wählen",
+    "notesLabel": "Notizen",
+    "notesPlaceholder": "Interne Notizen",
+    "attachmentsLabel": "Anhänge",
+    "type": {
+      "registration": "Fahrzeugausweis",
+      "technical_inspection": "Fahrzeugprüfung",
+      "emissions_test": "Abgaswartung",
+      "road_tax": "Motorfahrzeugsteuer",
+      "green_card": "Grüne Karte",
+      "other": "Andere"
+    },
+    "status": {
+      "active": "Gültig",
+      "expired": "Abgelaufen"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Änderungen werden gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Änderungen gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Änderungen konnten nicht gespeichert werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Dokument bearbeiten",
+    "description": "Daten, Nummer oder Scans ändern"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Speichern"
+  }
+}

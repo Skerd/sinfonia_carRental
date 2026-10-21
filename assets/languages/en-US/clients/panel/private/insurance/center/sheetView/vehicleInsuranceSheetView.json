@@ -1,0 +1,32 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/sheetView/vehicleInsuranceSheetView.tsx",
+  "lifecycle": "Lifecycle",
+  "overview": "Overview",
+  "vehicleInsuranceSubtitle": "Insurance policy",
+  "vehicle": "Vehicle",
+  "insurer": "Insurer",
+  "policyNumber": "Policy number",
+  "coverage": "Coverage",
+  "validFrom": "Valid from",
+  "expiresAt": "Expires on",
+  "premium": "Premium",
+  "deductible": "Deductible",
+  "status": "Status",
+  "notes": "Notes",
+  "attachments": "Attachments",
+  "coverageValues": {
+    "third_party": "Third party",
+    "partial_casco": "Partial casco",
+    "full_casco": "Full casco"
+  },
+  "statusValues": {
+    "active": "Active",
+    "expired": "Expired",
+    "cancelled": "Cancelled"
+  },
+  "createdAt": "Created at",
+  "updatedAt": "Updated at",
+  "createdBy": "Created by",
+  "deletedAt": "Deleted at",
+  "deletedBy": "Deleted by"
+}

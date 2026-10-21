@@ -1,0 +1,74 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/editVehicleMaintenance.tsx",
+  "title": "Modifica intervento",
+  "description": "Modifica data, costo o prossimo intervento",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "vehicleLabel": "Veicolo",
+    "vehiclePlaceholder": "Seleziona un veicolo",
+    "typeLabel": "Tipo",
+    "typePlaceholder": "Seleziona il tipo",
+    "statusLabel": "Stato",
+    "statusPlaceholder": "Seleziona lo stato",
+    "serviceDateLabel": "Data dell'intervento",
+    "serviceDatePlaceholder": "Scegli una data",
+    "odometerKmLabel": "Chilometraggio",
+    "odometerKmPlaceholder": "es. 45000",
+    "providerLabel": "Officina",
+    "providerPlaceholder": "Nome dell'officina",
+    "costLabel": "Costo",
+    "costPlaceholder": "es. 350",
+    "descriptionLabel": "Descrizione",
+    "descriptionPlaceholder": "Cosa è stato fatto o cosa è danneggiato",
+    "nextDueAtLabel": "Prossimo intervento il",
+    "nextDueAtPlaceholder": "Scegli una data",
+    "nextDueKmLabel": "Prossimo intervento a (km)",
+    "nextDueKmPlaceholder": "es. 60000",
+    "attachmentsLabel": "Allegati",
+    "type": {
+      "scheduled_service": "Tagliando",
+      "oil_change": "Cambio olio",
+      "tires": "Pneumatici",
+      "brakes": "Freni",
+      "inspection": "Controllo",
+      "repair": "Riparazione",
+      "battery": "Batteria",
+      "other": "Altro"
+    },
+    "status": {
+      "scheduled": "Programmato",
+      "completed": "Completato",
+      "cancelled": "Annullato"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio delle modifiche",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifiche salvate",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare le modifiche. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifica intervento",
+    "description": "Modifica data, costo o prossimo intervento"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Salva"
+  }
+}

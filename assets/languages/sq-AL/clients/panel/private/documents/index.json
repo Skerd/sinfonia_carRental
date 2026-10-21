@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/index.tsx",
+  "title": "Dokumentet e automjeteve",
+  "description": "Lejet, kontrollet dhe taksat me skadimin e tyre",
+  "help": {
+    "ariaLabel": "Rreth dokumenteve",
+    "title": "Rreth dokumenteve",
+    "overview": "Ruani këtu dokumentet e çdo automjeti, me skanime. Dokumentet pa datë skadimi nuk krijojnë kujtesë.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Stafi i zgjedhur njoftohet një herë, 30 ditë para skadimit.",
+          "Dokumentet e skaduara shënohen çdo mëngjes.",
+          "Një dokument më i ri i të njëjtit lloj zëvendëson kujtesën e të vjetrit."
+        ]
+      }
+    ]
+  },
+  "create": "Shto dokument",
+  "searchPlaceholder": "Kërkoni dokumente ose shtoni filtra...",
+  "noData": "Ende pa dokumente",
+  "failTitle": "Dokumente nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "vehicle": "Automjeti",
+    "type": "Lloji",
+    "documentNumber": "Numri i dokumentit",
+    "issuer": "Lëshuar nga",
+    "issuedAt": "Lëshuar më",
+    "expiresAt": "Skadon më",
+    "status": "Statusi",
+    "notes": "Shënime",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

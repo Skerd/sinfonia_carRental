@@ -45,7 +45,8 @@
       "manual": "Manuale"
     },
     "transmissionLabel": "Cambio",
-    "transmissionPlaceholder": "Seleziona cambio"
+    "transmissionPlaceholder": "Seleziona cambio",
+    "videosLabel": "Video"
   },
   "axios": {
     "start": {

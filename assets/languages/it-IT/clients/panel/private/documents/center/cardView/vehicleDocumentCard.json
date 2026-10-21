@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/center/cardView/vehicleDocumentCard.tsx",
+  "failedTitle": "Impossibile caricare il documento",
+  "failedDescription": "Tocca per riprovare.",
+  "type": "Tipo",
+  "documentNumber": "Numero del documento",
+  "expiresAt": "Scade il",
+  "status": "Stato",
+  "typeValues": {
+    "registration": "Libretto di circolazione",
+    "technical_inspection": "Revisione",
+    "emissions_test": "Controllo emissioni",
+    "road_tax": "Bollo auto",
+    "green_card": "Carta verde",
+    "other": "Altro"
+  },
+  "statusValues": {
+    "active": "Valido",
+    "expired": "Scaduto"
+  }
+}

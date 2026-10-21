@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/index.tsx",
+  "title": "Wartung",
+  "description": "Service, Reparaturen und Kontrollen jedes Fahrzeugs",
+  "help": {
+    "ariaLabel": "Über die Wartung",
+    "title": "Über die Wartung",
+    "overview": "Das Serviceheft jedes Fahrzeugs. Der zuletzt erledigte Eintrag bestimmt den nächsten fälligen Service des Fahrzeugs.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Geplante und abgesagte Einträge zählen nicht für den nächsten Service.",
+          "Die gewählten Mitarbeitenden werden 14 Tage oder 1000 km vor dem nächsten Service benachrichtigt.",
+          "Ein höherer Kilometerstand im Eintrag wird ins Fahrzeug übernommen."
+        ]
+      }
+    ]
+  },
+  "create": "Eintrag hinzufügen",
+  "searchPlaceholder": "Wartungseinträge suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Wartungseinträge",
+  "failTitle": "Wartungseinträge konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "vehicle": "Fahrzeug",
+    "type": "Art",
+    "status": "Status",
+    "serviceDate": "Datum",
+    "odometerKm": "Kilometerstand",
+    "provider": "Werkstatt",
+    "cost": "Kosten",
+    "description": "Beschreibung",
+    "nextDueAt": "Nächster Service am",
+    "nextDueKm": "Nächster Service bei (km)",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

@@ -9,6 +9,7 @@ import type {RentalSearchResponse} from "armonia/src/modules/carRental/api/carRe
 import {useRentalConfig} from "../shared/rentalConfigContext.tsx";
 import RentalSearchForm from "../shared/rentalSearchForm.tsx";
 import RentalCategoryFacts from "../shared/rentalCategoryFacts.tsx";
+import RentalCategoryMedia from "../shared/rentalCategoryMedia.tsx";
 import {tripFromSearch, tripToSearch} from "../shared/rentalTripParams.ts";
 import {RENT_CARD, RENT_HEADING, RENT_PRIMARY_BUTTON} from "../shared/rentalStyles.ts";
 
@@ -54,11 +55,7 @@ function SearchPage({resolveLanguageKey}: WithLanguageType) {
                     <ul className="flex flex-col gap-4">
                         {results.map(({category, available, quote}) => (
                             <li key={category._id} className="grid overflow-hidden rounded-2xl border border-rent-border bg-rent-card sm:grid-cols-[240px_1fr]">
-                                {category.images[0] ? (
-                                    <img src={category.images[0]} alt={category.name} className="h-full max-h-56 w-full object-cover" loading="lazy" />
-                                ) : (
-                                    <div className="min-h-32 bg-rent-surface" aria-hidden />
-                                )}
+                                <RentalCategoryMedia category={category} coverClassName="h-full min-h-32 max-h-56 w-full" />
                                 <div className="flex flex-col gap-3 p-5 sm:flex-row sm:items-end sm:justify-between">
                                     <div className="flex flex-col gap-1.5">
                                         <h2 className={`${RENT_HEADING} text-xl`}>{category.name}</h2>

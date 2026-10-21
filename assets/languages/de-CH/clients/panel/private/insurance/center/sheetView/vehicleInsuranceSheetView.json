@@ -1,0 +1,32 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/sheetView/vehicleInsuranceSheetView.tsx",
+  "lifecycle": "Lebenszyklus",
+  "overview": "Übersicht",
+  "vehicleInsuranceSubtitle": "Versicherungspolice",
+  "vehicle": "Fahrzeug",
+  "insurer": "Versicherer",
+  "policyNumber": "Policennummer",
+  "coverage": "Deckung",
+  "validFrom": "Gültig ab",
+  "expiresAt": "Läuft ab am",
+  "premium": "Prämie",
+  "deductible": "Selbstbehalt",
+  "status": "Status",
+  "notes": "Notizen",
+  "attachments": "Anhänge",
+  "coverageValues": {
+    "third_party": "Haftpflicht",
+    "partial_casco": "Teilkasko",
+    "full_casco": "Vollkasko"
+  },
+  "statusValues": {
+    "active": "Aktiv",
+    "expired": "Abgelaufen",
+    "cancelled": "Gekündigt"
+  },
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "createdBy": "Erstellt von",
+  "deletedAt": "Gelöscht am",
+  "deletedBy": "Gelöscht von"
+}

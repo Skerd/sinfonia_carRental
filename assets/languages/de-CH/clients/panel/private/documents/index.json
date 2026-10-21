@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/index.tsx",
+  "title": "Fahrzeugdokumente",
+  "description": "Ausweise, Prüfungen und Steuern mit Ablaufdatum",
+  "help": {
+    "ariaLabel": "Über Fahrzeugdokumente",
+    "title": "Über Fahrzeugdokumente",
+    "overview": "Bewahren Sie die Papiere jedes Fahrzeugs mit Scans auf. Dokumente ohne Ablaufdatum lösen keine Erinnerung aus.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Die gewählten Mitarbeitenden werden 30 Tage vor Ablauf einmal benachrichtigt.",
+          "Abgelaufene Dokumente werden jeden Morgen markiert.",
+          "Ein neues Dokument derselben Art ersetzt die Erinnerung an das alte."
+        ]
+      }
+    ]
+  },
+  "create": "Dokument hinzufügen",
+  "searchPlaceholder": "Dokumente suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Dokumente",
+  "failTitle": "Dokumente konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "vehicle": "Fahrzeug",
+    "type": "Art",
+    "documentNumber": "Dokumentnummer",
+    "issuer": "Ausgestellt von",
+    "issuedAt": "Ausgestellt am",
+    "expiresAt": "Läuft ab am",
+    "status": "Status",
+    "notes": "Notizen",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/editVehicleInsurance.tsx",
+  "title": "Police bearbeiten",
+  "description": "Daten, Deckung oder Status ändern",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "vehicleLabel": "Fahrzeug",
+    "vehiclePlaceholder": "Fahrzeug wählen",
+    "insurerLabel": "Versicherer",
+    "insurerPlaceholder": "z. B. Sigal",
+    "policyNumberLabel": "Policennummer",
+    "policyNumberPlaceholder": "Nummer auf der Police",
+    "coverageLabel": "Deckung",
+    "coveragePlaceholder": "Deckung wählen",
+    "validFromLabel": "Gültig ab",
+    "validFromPlaceholder": "Datum wählen",
+    "expiresAtLabel": "Läuft ab am",
+    "expiresAtPlaceholder": "Datum wählen",
+    "premiumLabel": "Prämie",
+    "premiumPlaceholder": "z. B. 350",
+    "deductibleLabel": "Selbstbehalt",
+    "deductiblePlaceholder": "z. B. 350",
+    "statusLabel": "Status",
+    "statusPlaceholder": "Status wählen",
+    "notesLabel": "Notizen",
+    "notesPlaceholder": "Interne Notizen",
+    "attachmentsLabel": "Anhänge",
+    "coverage": {
+      "third_party": "Haftpflicht",
+      "partial_casco": "Teilkasko",
+      "full_casco": "Vollkasko"
+    },
+    "status": {
+      "active": "Aktiv",
+      "expired": "Abgelaufen",
+      "cancelled": "Gekündigt"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Änderungen werden gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Änderungen gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Änderungen konnten nicht gespeichert werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Police bearbeiten",
+    "description": "Daten, Deckung oder Status ändern"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Speichern"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/index.tsx",
+  "title": "Assicurazioni",
+  "description": "Le polizze di ogni veicolo e quando scadono",
+  "help": {
+    "ariaLabel": "Informazioni sulle assicurazioni",
+    "title": "Informazioni sulle assicurazioni",
+    "overview": "Ogni polizza appartiene a un veicolo. Un rinnovo è una nuova polizza: quella vecchia resta nello storico.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Il personale scelto nelle impostazioni di noleggio viene avvisato una volta, 30 giorni prima della scadenza.",
+          "Le polizze oltre la scadenza vengono segnate come scadute ogni mattina.",
+          "Apri il menu di un veicolo per vedere solo le sue polizze."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi polizza",
+  "searchPlaceholder": "Cerca assicurazioni o aggiungi filtri...",
+  "noData": "Ancora nessun assicurazioni",
+  "failTitle": "Impossibile caricare assicurazioni",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "vehicle": "Veicolo",
+    "insurer": "Assicuratore",
+    "policyNumber": "Numero di polizza",
+    "coverage": "Copertura",
+    "validFrom": "Valida dal",
+    "expiresAt": "Scade il",
+    "premium": "Premio",
+    "deductible": "Franchigia",
+    "status": "Stato",
+    "notes": "Note",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

@@ -45,7 +45,8 @@
       "manual": "Manual"
     },
     "transmissionLabel": "Transmission",
-    "transmissionPlaceholder": "Select transmission"
+    "transmissionPlaceholder": "Select transmission",
+    "videosLabel": "Videos"
   },
   "axios": {
     "start": {

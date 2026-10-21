@@ -1,0 +1,81 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/createVehicleDamage.tsx",
+  "title": "Schaden melden",
+  "description": "Einen Schaden an einem Fahrzeug erfassen",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "vehicleLabel": "Fahrzeug",
+    "vehiclePlaceholder": "Fahrzeug wählen",
+    "reservationLabel": "Buchung",
+    "reservationPlaceholder": "Buchung wählen (optional)",
+    "reportedAtLabel": "Gemeldet am",
+    "reportedAtPlaceholder": "Datum und Zeit wählen",
+    "areaLabel": "Bereich",
+    "areaPlaceholder": "Bereich wählen",
+    "severityLabel": "Schweregrad",
+    "severityPlaceholder": "Schweregrad wählen",
+    "statusLabel": "Status",
+    "statusPlaceholder": "Status wählen",
+    "estimatedCostLabel": "Geschätzte Kosten",
+    "estimatedCostPlaceholder": "z. B. 350",
+    "repairCostLabel": "Reparaturkosten",
+    "repairCostPlaceholder": "z. B. 350",
+    "repairedAtLabel": "Repariert am",
+    "repairedAtPlaceholder": "Datum wählen",
+    "descriptionLabel": "Beschreibung",
+    "descriptionPlaceholder": "Was gemacht wurde oder was beschädigt ist",
+    "photosLabel": "Fotos",
+    "area": {
+      "front": "Front",
+      "rear": "Heck",
+      "left": "Linke Seite",
+      "right": "Rechte Seite",
+      "roof": "Dach",
+      "interior": "Innenraum",
+      "windshield": "Windschutzscheibe",
+      "wheels": "Räder",
+      "underbody": "Unterboden",
+      "other": "Andere"
+    },
+    "severity": {
+      "minor": "Gering",
+      "moderate": "Mittel",
+      "major": "Schwer"
+    },
+    "status": {
+      "open": "Offen",
+      "in_repair": "In Reparatur",
+      "repaired": "Repariert"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Schaden wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Schaden gemeldet",
+      "time": 3000
+    },
+    "error": {
+      "title": "Der Schaden konnte nicht gemeldet werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Schaden melden",
+    "description": "Einen Schaden an einem Fahrzeug erfassen"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Hinzufügen"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/sheetView/vehicleMaintenanceSheetView.tsx",
+  "lifecycle": "Cycle de vie",
+  "overview": "Aperçu",
+  "vehicleMaintenanceSubtitle": "Entretien",
+  "vehicle": "Véhicule",
+  "type": "Type",
+  "status": "Statut",
+  "serviceDate": "Date de l'intervention",
+  "odometerKm": "Kilométrage",
+  "provider": "Garage",
+  "cost": "Coût",
+  "description": "Description",
+  "nextDueAt": "Prochain entretien le",
+  "nextDueKm": "Prochain entretien à (km)",
+  "attachments": "Pièces jointes",
+  "typeValues": {
+    "scheduled_service": "Entretien périodique",
+    "oil_change": "Vidange",
+    "tires": "Pneus",
+    "brakes": "Freins",
+    "inspection": "Contrôle",
+    "repair": "Réparation",
+    "battery": "Batterie",
+    "other": "Autre"
+  },
+  "statusValues": {
+    "scheduled": "Planifié",
+    "completed": "Terminé",
+    "cancelled": "Annulé"
+  },
+  "createdAt": "Créé le",
+  "updatedAt": "Mis à jour le",
+  "createdBy": "Créé par",
+  "deletedAt": "Supprimé le",
+  "deletedBy": "Supprimé par"
+}

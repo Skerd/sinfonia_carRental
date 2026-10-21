@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/index.tsx",
+  "title": "Damages",
+  "description": "Damage found on the cars, with photos and repair cost",
+  "help": {
+    "ariaLabel": "About damages",
+    "title": "About damages",
+    "overview": "Record each damage with photos. Link it to the booking it happened in.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "The booking list only shows bookings of the chosen car.",
+          "Set the status to Repaired once the car is fixed.",
+          "Counter staff can report damage too."
+        ]
+      }
+    ]
+  },
+  "create": "Report damage",
+  "searchPlaceholder": "Search damages or add filters...",
+  "noData": "No damages yet",
+  "failTitle": "Failed to load damages",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "vehicle": "Vehicle",
+    "reservation": "Booking",
+    "reportedAt": "Reported on",
+    "area": "Area",
+    "severity": "Severity",
+    "status": "Status",
+    "estimatedCost": "Estimated cost",
+    "repairCost": "Repair cost",
+    "repairedAt": "Repaired on",
+    "description": "Description",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

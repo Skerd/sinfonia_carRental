@@ -33,7 +33,13 @@
     "vinLabel": "VIN",
     "vinPlaceholder": "Inserisci il VIN",
     "yearLabel": "Anno",
-    "yearPlaceholder": "Inserisci l'anno"
+    "yearPlaceholder": "Inserisci l'anno",
+    "acquiredAtLabel": "In flotta dal",
+    "acquiredAtPlaceholder": "Scegli una data",
+    "purchasePriceLabel": "Prezzo d'acquisto",
+    "purchasePricePlaceholder": "es. 24500",
+    "imagesLabel": "Foto",
+    "videosLabel": "Video"
   },
   "axios": {
     "start": {

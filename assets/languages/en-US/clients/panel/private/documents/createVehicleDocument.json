@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/createVehicleDocument.tsx",
+  "title": "Add document",
+  "description": "Record a document of a car",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "vehicleLabel": "Vehicle",
+    "vehiclePlaceholder": "Select vehicle",
+    "typeLabel": "Type",
+    "typePlaceholder": "Select type",
+    "documentNumberLabel": "Document number",
+    "documentNumberPlaceholder": "Number on the document",
+    "issuerLabel": "Issued by",
+    "issuerPlaceholder": "e.g. DPSHTRR",
+    "issuedAtLabel": "Issued on",
+    "issuedAtPlaceholder": "Pick a date",
+    "expiresAtLabel": "Expires on",
+    "expiresAtPlaceholder": "Pick a date",
+    "statusLabel": "Status",
+    "statusPlaceholder": "Select status",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Internal notes",
+    "attachmentsLabel": "Attachments",
+    "type": {
+      "registration": "Registration",
+      "technical_inspection": "Technical inspection",
+      "emissions_test": "Emissions test",
+      "road_tax": "Road tax",
+      "green_card": "Green card",
+      "other": "Other"
+    },
+    "status": {
+      "active": "Valid",
+      "expired": "Expired"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Saving document",
+      "time": 3000
+    },
+    "success": {
+      "title": "Document added",
+      "time": 3000
+    },
+    "error": {
+      "title": "Document could not be added. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Add document",
+    "description": "Record a document of a car"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}

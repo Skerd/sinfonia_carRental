@@ -1,0 +1,74 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/createVehicleMaintenance.tsx",
+  "title": "Eintrag hinzufügen",
+  "description": "Einen Service, eine Reparatur oder Kontrolle erfassen",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "vehicleLabel": "Fahrzeug",
+    "vehiclePlaceholder": "Fahrzeug wählen",
+    "typeLabel": "Art",
+    "typePlaceholder": "Art wählen",
+    "statusLabel": "Status",
+    "statusPlaceholder": "Status wählen",
+    "serviceDateLabel": "Datum",
+    "serviceDatePlaceholder": "Datum wählen",
+    "odometerKmLabel": "Kilometerstand",
+    "odometerKmPlaceholder": "z. B. 45000",
+    "providerLabel": "Werkstatt",
+    "providerPlaceholder": "Name der Werkstatt",
+    "costLabel": "Kosten",
+    "costPlaceholder": "z. B. 350",
+    "descriptionLabel": "Beschreibung",
+    "descriptionPlaceholder": "Was gemacht wurde oder was beschädigt ist",
+    "nextDueAtLabel": "Nächster Service am",
+    "nextDueAtPlaceholder": "Datum wählen",
+    "nextDueKmLabel": "Nächster Service bei (km)",
+    "nextDueKmPlaceholder": "z. B. 60000",
+    "attachmentsLabel": "Anhänge",
+    "type": {
+      "scheduled_service": "Service",
+      "oil_change": "Ölwechsel",
+      "tires": "Reifen",
+      "brakes": "Bremsen",
+      "inspection": "Kontrolle",
+      "repair": "Reparatur",
+      "battery": "Batterie",
+      "other": "Andere"
+    },
+    "status": {
+      "scheduled": "Geplant",
+      "completed": "Erledigt",
+      "cancelled": "Abgesagt"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Eintrag wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Eintrag hinzugefügt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Der Eintrag konnte nicht hinzugefügt werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Eintrag hinzufügen",
+    "description": "Einen Service, eine Reparatur oder Kontrolle erfassen"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Hinzufügen"
+  }
+}

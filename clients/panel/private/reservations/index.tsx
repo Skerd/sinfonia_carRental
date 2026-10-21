@@ -14,7 +14,8 @@ export function rentalReservationEditPath(row: {_id: string}) {
     return `/carRental/reservations/edit?rentalReservationId=${row._id}`;
 }
 
-function AllRentalReservations({resolveLanguageKey}: WithLanguageType) {
+/** `vehicleId` narrows the list to one car (opened from that car's records menu). */
+function AllRentalReservations({resolveLanguageKey, vehicleId}: WithLanguageType & {vehicleId?: string}) {
     return (
         <EntityListPage<RentalReservation>
             apiUrl="/api/carRental/rentalReservation"
@@ -26,6 +27,7 @@ function AllRentalReservations({resolveLanguageKey}: WithLanguageType) {
             createLanguageKey="create"
             buildEditPath={() => ""}
             resolveLanguageKey={resolveLanguageKey}
+            extraFilters={vehicleId ? {vehicle: vehicleId} : undefined}
             sheetLanguagePath="src/modules/carRental/clients/panel/private/reservations/center/sheetView/rentalReservationSheetView.tsx"
             cardViewClassName="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             rowActionMenu={{allowMenuForCustomChildren: true, hideEdit: true}}

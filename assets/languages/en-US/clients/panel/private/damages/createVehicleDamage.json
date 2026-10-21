@@ -1,0 +1,81 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/createVehicleDamage.tsx",
+  "title": "Report damage",
+  "description": "Record damage found on a car",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "vehicleLabel": "Vehicle",
+    "vehiclePlaceholder": "Select vehicle",
+    "reservationLabel": "Booking",
+    "reservationPlaceholder": "Select booking (optional)",
+    "reportedAtLabel": "Reported on",
+    "reportedAtPlaceholder": "Pick date and time",
+    "areaLabel": "Area",
+    "areaPlaceholder": "Select area",
+    "severityLabel": "Severity",
+    "severityPlaceholder": "Select severity",
+    "statusLabel": "Status",
+    "statusPlaceholder": "Select status",
+    "estimatedCostLabel": "Estimated cost",
+    "estimatedCostPlaceholder": "e.g. 350",
+    "repairCostLabel": "Repair cost",
+    "repairCostPlaceholder": "e.g. 350",
+    "repairedAtLabel": "Repaired on",
+    "repairedAtPlaceholder": "Pick a date",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "What was done, or what is damaged",
+    "photosLabel": "Photos",
+    "area": {
+      "front": "Front",
+      "rear": "Rear",
+      "left": "Left side",
+      "right": "Right side",
+      "roof": "Roof",
+      "interior": "Interior",
+      "windshield": "Windshield",
+      "wheels": "Wheels",
+      "underbody": "Underbody",
+      "other": "Other"
+    },
+    "severity": {
+      "minor": "Minor",
+      "moderate": "Moderate",
+      "major": "Major"
+    },
+    "status": {
+      "open": "Open",
+      "in_repair": "In repair",
+      "repaired": "Repaired"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Saving damage report",
+      "time": 3000
+    },
+    "success": {
+      "title": "Damage reported",
+      "time": 3000
+    },
+    "error": {
+      "title": "Damage could not be reported. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Report damage",
+    "description": "Record damage found on a car"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}

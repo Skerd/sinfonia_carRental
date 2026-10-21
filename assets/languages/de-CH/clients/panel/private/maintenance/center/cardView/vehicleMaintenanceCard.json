@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/cardView/vehicleMaintenanceCard.tsx",
+  "failedTitle": "Eintrag konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "type": "Art",
+  "serviceDate": "Datum",
+  "odometerKm": "Kilometerstand",
+  "cost": "Kosten",
+  "status": "Status",
+  "typeValues": {
+    "scheduled_service": "Service",
+    "oil_change": "Ölwechsel",
+    "tires": "Reifen",
+    "brakes": "Bremsen",
+    "inspection": "Kontrolle",
+    "repair": "Reparatur",
+    "battery": "Batterie",
+    "other": "Andere"
+  },
+  "statusValues": {
+    "scheduled": "Geplant",
+    "completed": "Erledigt",
+    "cancelled": "Abgesagt"
+  }
+}

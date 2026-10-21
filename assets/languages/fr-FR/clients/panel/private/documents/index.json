@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/index.tsx",
+  "title": "Documents des véhicules",
+  "description": "Certificats, contrôles et taxes avec leur échéance",
+  "help": {
+    "ariaLabel": "À propos des documents",
+    "title": "À propos des documents",
+    "overview": "Conservez ici les papiers de chaque véhicule, avec leurs scans. Un document sans échéance ne déclenche aucun rappel.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Le personnel choisi est averti une fois, 30 jours avant l'échéance.",
+          "Les documents échus sont marqués chaque matin.",
+          "Un document plus récent du même type remplace le rappel de l'ancien."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un document",
+  "searchPlaceholder": "Rechercher des documents ou ajouter des filtres...",
+  "noData": "Aucun documents pour l'instant",
+  "failTitle": "Impossible de charger les documents",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "vehicle": "Véhicule",
+    "type": "Type",
+    "documentNumber": "Numéro du document",
+    "issuer": "Émis par",
+    "issuedAt": "Émis le",
+    "expiresAt": "Expire le",
+    "status": "Statut",
+    "notes": "Notes",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

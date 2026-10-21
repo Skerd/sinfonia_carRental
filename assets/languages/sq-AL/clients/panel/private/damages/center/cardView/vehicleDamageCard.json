@@ -1,0 +1,31 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/cardView/vehicleDamageCard.tsx",
+  "failedTitle": "Dëmtimi nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "area": "Zona",
+  "severity": "Rëndësia",
+  "reportedAt": "Raportuar më",
+  "status": "Statusi",
+  "areaValues": {
+    "front": "Përpara",
+    "rear": "Prapa",
+    "left": "Ana e majtë",
+    "right": "Ana e djathtë",
+    "roof": "Çatia",
+    "interior": "Brendësia",
+    "windshield": "Xhami i përparmë",
+    "wheels": "Rrotat",
+    "underbody": "Pjesa e poshtme",
+    "other": "Tjetër"
+  },
+  "severityValues": {
+    "minor": "I lehtë",
+    "moderate": "Mesatar",
+    "major": "I rëndë"
+  },
+  "statusValues": {
+    "open": "I hapur",
+    "in_repair": "Në riparim",
+    "repaired": "I riparuar"
+  }
+}

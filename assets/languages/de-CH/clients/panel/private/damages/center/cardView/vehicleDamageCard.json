@@ -1,0 +1,31 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/cardView/vehicleDamageCard.tsx",
+  "failedTitle": "Schaden konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "area": "Bereich",
+  "severity": "Schweregrad",
+  "reportedAt": "Gemeldet am",
+  "status": "Status",
+  "areaValues": {
+    "front": "Front",
+    "rear": "Heck",
+    "left": "Linke Seite",
+    "right": "Rechte Seite",
+    "roof": "Dach",
+    "interior": "Innenraum",
+    "windshield": "Windschutzscheibe",
+    "wheels": "Räder",
+    "underbody": "Unterboden",
+    "other": "Andere"
+  },
+  "severityValues": {
+    "minor": "Gering",
+    "moderate": "Mittel",
+    "major": "Schwer"
+  },
+  "statusValues": {
+    "open": "Offen",
+    "in_repair": "In Reparatur",
+    "repaired": "Repariert"
+  }
+}

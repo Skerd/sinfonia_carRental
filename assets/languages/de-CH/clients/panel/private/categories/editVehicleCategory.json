@@ -45,7 +45,8 @@
       "manual": "Manuell"
     },
     "transmissionLabel": "Getriebe",
-    "transmissionPlaceholder": "Getriebe auswählen"
+    "transmissionPlaceholder": "Getriebe auswählen",
+    "videosLabel": "Videos"
   },
   "axios": {
     "start": {

@@ -9,7 +9,7 @@ import RentalExtraCard from "./center/cardView/rentalExtraCard.tsx";
 import RentalExtraSheetView from "./center/sheetView/rentalExtraSheetView.tsx";
 
 export function rentalExtraEditPath(row: {_id: string}) {
-    return `/carRental/extras/edit?rentalExtraId=${row._id}`;
+    return `/tenancy/systemSettings/rentalExtras/edit?rentalExtraId=${row._id}`;
 }
 
 function AllRentalExtras({resolveLanguageKey}: WithLanguageType) {
@@ -19,7 +19,7 @@ function AllRentalExtras({resolveLanguageKey}: WithLanguageType) {
             collectionName="rentalextras"
             accessModel="rentalextras"
             tableConfigKey="rentalextras"
-            createPath="/carRental/extras/create"
+            createPath="/tenancy/systemSettings/rentalExtras/create"
             createIcon={<IconPlus />}
             createLanguageKey="create"
             buildEditPath={rentalExtraEditPath}

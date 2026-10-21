@@ -1,0 +1,81 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/editVehicleDamage.tsx",
+  "title": "Ndrysho dëmtimin",
+  "description": "Përditësoni statusin, koston ose fotot",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "vehicleLabel": "Automjeti",
+    "vehiclePlaceholder": "Zgjidhni automjetin",
+    "reservationLabel": "Rezervimi",
+    "reservationPlaceholder": "Zgjidhni rezervimin (opsionale)",
+    "reportedAtLabel": "Raportuar më",
+    "reportedAtPlaceholder": "Zgjidhni datën dhe orën",
+    "areaLabel": "Zona",
+    "areaPlaceholder": "Zgjidhni zonën",
+    "severityLabel": "Rëndësia",
+    "severityPlaceholder": "Zgjidhni rëndësinë",
+    "statusLabel": "Statusi",
+    "statusPlaceholder": "Zgjidhni statusin",
+    "estimatedCostLabel": "Kosto e vlerësuar",
+    "estimatedCostPlaceholder": "p.sh. 350",
+    "repairCostLabel": "Kosto e riparimit",
+    "repairCostPlaceholder": "p.sh. 350",
+    "repairedAtLabel": "Riparuar më",
+    "repairedAtPlaceholder": "Zgjidhni datën",
+    "descriptionLabel": "Përshkrimi",
+    "descriptionPlaceholder": "Çfarë u bë ose çfarë është dëmtuar",
+    "photosLabel": "Fotot",
+    "area": {
+      "front": "Përpara",
+      "rear": "Prapa",
+      "left": "Ana e majtë",
+      "right": "Ana e djathtë",
+      "roof": "Çatia",
+      "interior": "Brendësia",
+      "windshield": "Xhami i përparmë",
+      "wheels": "Rrotat",
+      "underbody": "Pjesa e poshtme",
+      "other": "Tjetër"
+    },
+    "severity": {
+      "minor": "I lehtë",
+      "moderate": "Mesatar",
+      "major": "I rëndë"
+    },
+    "status": {
+      "open": "I hapur",
+      "in_repair": "Në riparim",
+      "repaired": "I riparuar"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhen ndryshimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Ndryshimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Ndryshimet nuk u ruajtën. Kontrolloni formularin dhe provoni sërish.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ndrysho dëmtimin",
+    "description": "Përditësoni statusin, koston ose fotot"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

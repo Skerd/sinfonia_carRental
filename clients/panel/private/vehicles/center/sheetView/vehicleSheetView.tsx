@@ -7,6 +7,7 @@ import SheetViewRenderer from "@coreModule/components/viewEngine/SheetViewRender
 import {useViewConfig} from "@coreModule/helpers/hooks/useViewConfig.ts";
 import type {Vehicle} from "armonia/src/modules/carRental/api/carRental/private/vehicle/vehicle.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
+import VehicleRecordsMenu from "@carRentalModule/clients/panel/private/vehicles/center/actions/vehicleRecordsMenu.tsx";
 
 type VehicleSheetViewOwnProps = {
     open: boolean;
@@ -56,6 +57,8 @@ function VehicleSheetView({
             hideActions={hideActions}
             onDelete={onDelete}
             onRestore={onRestore}
+            actionMenuAllowCustomChildren
+            actionMenuChildren={<VehicleRecordsMenu vehicleId={entityId} />}
             editPath={`/carRental/vehicles/edit?vehicleId=${entityId}`}
             onSheetRowPatched={(row) => {
                 setSheetData(row);

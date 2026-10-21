@@ -33,7 +33,13 @@
     "vinLabel": "VIN",
     "vinPlaceholder": "Shkruani VIN-in",
     "yearLabel": "Viti",
-    "yearPlaceholder": "Shkruani vitin"
+    "yearPlaceholder": "Shkruani vitin",
+    "acquiredAtLabel": "Në flotë që nga",
+    "acquiredAtPlaceholder": "Zgjidhni datën",
+    "purchasePriceLabel": "Çmimi i blerjes",
+    "purchasePricePlaceholder": "p.sh. 24500",
+    "imagesLabel": "Fotot",
+    "videosLabel": "Videot"
   },
   "axios": {
     "start": {

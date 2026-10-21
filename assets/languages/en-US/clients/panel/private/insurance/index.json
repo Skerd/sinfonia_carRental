@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/index.tsx",
+  "title": "Insurance",
+  "description": "Every car's policies and when they expire",
+  "help": {
+    "ariaLabel": "About insurance",
+    "title": "About insurance",
+    "overview": "Each policy belongs to one car. A renewal is a new policy, so the old one stays as history.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Staff chosen in the rental settings are notified once, 30 days before a policy expires.",
+          "Policies past their expiry date are marked expired every morning.",
+          "Open a car's menu to see only that car's policies."
+        ]
+      }
+    ]
+  },
+  "create": "Add policy",
+  "searchPlaceholder": "Search insurance or add filters...",
+  "noData": "No insurance yet",
+  "failTitle": "Failed to load insurance",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "vehicle": "Vehicle",
+    "insurer": "Insurer",
+    "policyNumber": "Policy number",
+    "coverage": "Coverage",
+    "validFrom": "Valid from",
+    "expiresAt": "Expires on",
+    "premium": "Premium",
+    "deductible": "Deductible",
+    "status": "Status",
+    "notes": "Notes",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

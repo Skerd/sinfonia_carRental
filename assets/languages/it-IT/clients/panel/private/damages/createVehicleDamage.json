@@ -1,0 +1,81 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/createVehicleDamage.tsx",
+  "title": "Segnala un danno",
+  "description": "Registra un danno trovato su un veicolo",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "vehicleLabel": "Veicolo",
+    "vehiclePlaceholder": "Seleziona un veicolo",
+    "reservationLabel": "Prenotazione",
+    "reservationPlaceholder": "Seleziona una prenotazione (facoltativa)",
+    "reportedAtLabel": "Segnalato il",
+    "reportedAtPlaceholder": "Scegli data e ora",
+    "areaLabel": "Zona",
+    "areaPlaceholder": "Seleziona la zona",
+    "severityLabel": "Gravità",
+    "severityPlaceholder": "Seleziona la gravità",
+    "statusLabel": "Stato",
+    "statusPlaceholder": "Seleziona lo stato",
+    "estimatedCostLabel": "Costo stimato",
+    "estimatedCostPlaceholder": "es. 350",
+    "repairCostLabel": "Costo della riparazione",
+    "repairCostPlaceholder": "es. 350",
+    "repairedAtLabel": "Riparato il",
+    "repairedAtPlaceholder": "Scegli una data",
+    "descriptionLabel": "Descrizione",
+    "descriptionPlaceholder": "Cosa è stato fatto o cosa è danneggiato",
+    "photosLabel": "Foto",
+    "area": {
+      "front": "Anteriore",
+      "rear": "Posteriore",
+      "left": "Lato sinistro",
+      "right": "Lato destro",
+      "roof": "Tetto",
+      "interior": "Interni",
+      "windshield": "Parabrezza",
+      "wheels": "Ruote",
+      "underbody": "Sottoscocca",
+      "other": "Altro"
+    },
+    "severity": {
+      "minor": "Lieve",
+      "moderate": "Moderato",
+      "major": "Grave"
+    },
+    "status": {
+      "open": "Aperto",
+      "in_repair": "In riparazione",
+      "repaired": "Riparato"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio del danno",
+      "time": 3000
+    },
+    "success": {
+      "title": "Danno segnalato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile segnalare il danno. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Segnala un danno",
+    "description": "Registra un danno trovato su un veicolo"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

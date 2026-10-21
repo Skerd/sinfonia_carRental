@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/cardView/vehicleMaintenanceCard.tsx",
+  "failedTitle": "Failed to load record",
+  "failedDescription": "Tap to retry.",
+  "type": "Type",
+  "serviceDate": "Service date",
+  "odometerKm": "Odometer (km)",
+  "cost": "Cost",
+  "status": "Status",
+  "typeValues": {
+    "scheduled_service": "Scheduled service",
+    "oil_change": "Oil change",
+    "tires": "Tyres",
+    "brakes": "Brakes",
+    "inspection": "Inspection",
+    "repair": "Repair",
+    "battery": "Battery",
+    "other": "Other"
+  },
+  "statusValues": {
+    "scheduled": "Scheduled",
+    "completed": "Completed",
+    "cancelled": "Cancelled"
+  }
+}

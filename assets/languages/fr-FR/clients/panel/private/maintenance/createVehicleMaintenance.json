@@ -1,0 +1,74 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/createVehicleMaintenance.tsx",
+  "title": "Ajouter une intervention",
+  "description": "Enregistrer un entretien, une réparation ou un contrôle",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "vehicleLabel": "Véhicule",
+    "vehiclePlaceholder": "Choisir un véhicule",
+    "typeLabel": "Type",
+    "typePlaceholder": "Choisir le type",
+    "statusLabel": "Statut",
+    "statusPlaceholder": "Choisir le statut",
+    "serviceDateLabel": "Date de l'intervention",
+    "serviceDatePlaceholder": "Choisir une date",
+    "odometerKmLabel": "Kilométrage",
+    "odometerKmPlaceholder": "ex. 45000",
+    "providerLabel": "Garage",
+    "providerPlaceholder": "Nom du garage",
+    "costLabel": "Coût",
+    "costPlaceholder": "ex. 350",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Ce qui a été fait ou ce qui est endommagé",
+    "nextDueAtLabel": "Prochain entretien le",
+    "nextDueAtPlaceholder": "Choisir une date",
+    "nextDueKmLabel": "Prochain entretien à (km)",
+    "nextDueKmPlaceholder": "ex. 60000",
+    "attachmentsLabel": "Pièces jointes",
+    "type": {
+      "scheduled_service": "Entretien périodique",
+      "oil_change": "Vidange",
+      "tires": "Pneus",
+      "brakes": "Freins",
+      "inspection": "Contrôle",
+      "repair": "Réparation",
+      "battery": "Batterie",
+      "other": "Autre"
+    },
+    "status": {
+      "scheduled": "Planifié",
+      "completed": "Terminé",
+      "cancelled": "Annulé"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement de l'intervention",
+      "time": 3000
+    },
+    "success": {
+      "title": "Intervention ajoutée",
+      "time": 3000
+    },
+    "error": {
+      "title": "L'intervention n'a pas pu être ajoutée. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ajouter une intervention",
+    "description": "Enregistrer un entretien, une réparation ou un contrôle"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Ajouter"
+  }
+}

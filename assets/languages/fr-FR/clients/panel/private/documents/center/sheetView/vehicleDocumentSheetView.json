@@ -1,0 +1,32 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/center/sheetView/vehicleDocumentSheetView.tsx",
+  "lifecycle": "Cycle de vie",
+  "overview": "Aperçu",
+  "vehicleDocumentSubtitle": "Document du véhicule",
+  "vehicle": "Véhicule",
+  "type": "Type",
+  "documentNumber": "Numéro du document",
+  "issuer": "Émis par",
+  "issuedAt": "Émis le",
+  "expiresAt": "Expire le",
+  "status": "Statut",
+  "notes": "Notes",
+  "attachments": "Pièces jointes",
+  "typeValues": {
+    "registration": "Certificat d'immatriculation",
+    "technical_inspection": "Contrôle technique",
+    "emissions_test": "Contrôle antipollution",
+    "road_tax": "Taxe de circulation",
+    "green_card": "Carte verte",
+    "other": "Autre"
+  },
+  "statusValues": {
+    "active": "Valide",
+    "expired": "Expiré"
+  },
+  "createdAt": "Créé le",
+  "updatedAt": "Mis à jour le",
+  "createdBy": "Créé par",
+  "deletedAt": "Supprimé le",
+  "deletedBy": "Supprimé par"
+}

@@ -9,7 +9,7 @@ import RentalLocationCard from "./center/cardView/rentalLocationCard.tsx";
 import RentalLocationSheetView from "./center/sheetView/rentalLocationSheetView.tsx";
 
 export function rentalLocationEditPath(row: {_id: string}) {
-    return `/carRental/locations/edit?rentalLocationId=${row._id}`;
+    return `/tenancy/systemSettings/rentalLocations/edit?rentalLocationId=${row._id}`;
 }
 
 function AllRentalLocations({resolveLanguageKey}: WithLanguageType) {
@@ -19,7 +19,7 @@ function AllRentalLocations({resolveLanguageKey}: WithLanguageType) {
             collectionName="rentallocations"
             accessModel="rentallocations"
             tableConfigKey="rentallocations"
-            createPath="/carRental/locations/create"
+            createPath="/tenancy/systemSettings/rentalLocations/create"
             createIcon={<IconPlus />}
             createLanguageKey="create"
             buildEditPath={rentalLocationEditPath}

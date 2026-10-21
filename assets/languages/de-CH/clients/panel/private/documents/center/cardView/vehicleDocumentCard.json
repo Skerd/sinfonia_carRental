@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/center/cardView/vehicleDocumentCard.tsx",
+  "failedTitle": "Dokument konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "type": "Art",
+  "documentNumber": "Dokumentnummer",
+  "expiresAt": "Läuft ab am",
+  "status": "Status",
+  "typeValues": {
+    "registration": "Fahrzeugausweis",
+    "technical_inspection": "Fahrzeugprüfung",
+    "emissions_test": "Abgaswartung",
+    "road_tax": "Motorfahrzeugsteuer",
+    "green_card": "Grüne Karte",
+    "other": "Andere"
+  },
+  "statusValues": {
+    "active": "Gültig",
+    "expired": "Abgelaufen"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/index.tsx",
+  "title": "Versicherungen",
+  "description": "Die Policen jedes Fahrzeugs und wann sie ablaufen",
+  "help": {
+    "ariaLabel": "Über Versicherungen",
+    "title": "Über Versicherungen",
+    "overview": "Jede Police gehört zu einem Fahrzeug. Eine Verlängerung ist eine neue Police, die alte bleibt als Verlauf erhalten.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Die in den Vermietungseinstellungen gewählten Mitarbeitenden werden 30 Tage vor Ablauf einmal benachrichtigt.",
+          "Policen nach dem Ablaufdatum werden jeden Morgen als abgelaufen markiert.",
+          "Über das Menü eines Fahrzeugs sehen Sie nur dessen Policen."
+        ]
+      }
+    ]
+  },
+  "create": "Police hinzufügen",
+  "searchPlaceholder": "Versicherungen suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Versicherungen",
+  "failTitle": "Versicherungen konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "vehicle": "Fahrzeug",
+    "insurer": "Versicherer",
+    "policyNumber": "Policennummer",
+    "coverage": "Deckung",
+    "validFrom": "Gültig ab",
+    "expiresAt": "Läuft ab am",
+    "premium": "Prämie",
+    "deductible": "Selbstbehalt",
+    "status": "Status",
+    "notes": "Notizen",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

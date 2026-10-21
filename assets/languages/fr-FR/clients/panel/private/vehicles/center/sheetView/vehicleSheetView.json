@@ -30,5 +30,11 @@
   "updatedAt": "Mis à jour le",
   "createdBy": "Créé par",
   "deletedAt": "Supprimé le",
-  "deletedBy": "Supprimé par"
+  "deletedBy": "Supprimé par",
+  "images": "Photos",
+  "fleet": "Flotte",
+  "nextServiceDueAt": "Prochain entretien le",
+  "nextServiceDueKm": "Prochain entretien à (km)",
+  "acquiredAt": "Dans la flotte depuis",
+  "purchasePrice": "Prix d'achat"
 }

@@ -1,0 +1,31 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/cardView/vehicleDamageCard.tsx",
+  "failedTitle": "Impossible de charger le dommage",
+  "failedDescription": "Touchez pour réessayer.",
+  "area": "Zone",
+  "severity": "Gravité",
+  "reportedAt": "Signalé le",
+  "status": "Statut",
+  "areaValues": {
+    "front": "Avant",
+    "rear": "Arrière",
+    "left": "Côté gauche",
+    "right": "Côté droit",
+    "roof": "Toit",
+    "interior": "Intérieur",
+    "windshield": "Pare-brise",
+    "wheels": "Roues",
+    "underbody": "Soubassement",
+    "other": "Autre"
+  },
+  "severityValues": {
+    "minor": "Mineur",
+    "moderate": "Modéré",
+    "major": "Grave"
+  },
+  "statusValues": {
+    "open": "Ouvert",
+    "in_repair": "En réparation",
+    "repaired": "Réparé"
+  }
+}

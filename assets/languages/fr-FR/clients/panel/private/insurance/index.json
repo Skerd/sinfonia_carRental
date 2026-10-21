@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/index.tsx",
+  "title": "Assurances",
+  "description": "Les polices de chaque véhicule et leur échéance",
+  "help": {
+    "ariaLabel": "À propos des assurances",
+    "title": "À propos des assurances",
+    "overview": "Chaque police appartient à un véhicule. Un renouvellement est une nouvelle police : l'ancienne reste dans l'historique.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Le personnel choisi dans les réglages de location est averti une fois, 30 jours avant l'échéance.",
+          "Les polices échues sont marquées expirées chaque matin.",
+          "Ouvrez le menu d'un véhicule pour ne voir que ses polices."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter une police",
+  "searchPlaceholder": "Rechercher des assurances ou ajouter des filtres...",
+  "noData": "Aucun assurances pour l'instant",
+  "failTitle": "Impossible de charger les assurances",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "vehicle": "Véhicule",
+    "insurer": "Assureur",
+    "policyNumber": "Numéro de police",
+    "coverage": "Couverture",
+    "validFrom": "Valable dès le",
+    "expiresAt": "Expire le",
+    "premium": "Prime",
+    "deductible": "Franchise",
+    "status": "Statut",
+    "notes": "Notes",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

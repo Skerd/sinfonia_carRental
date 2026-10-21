@@ -1,0 +1,74 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/createVehicleMaintenance.tsx",
+  "title": "Aggiungi intervento",
+  "description": "Registra un tagliando, una riparazione o un controllo",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "vehicleLabel": "Veicolo",
+    "vehiclePlaceholder": "Seleziona un veicolo",
+    "typeLabel": "Tipo",
+    "typePlaceholder": "Seleziona il tipo",
+    "statusLabel": "Stato",
+    "statusPlaceholder": "Seleziona lo stato",
+    "serviceDateLabel": "Data dell'intervento",
+    "serviceDatePlaceholder": "Scegli una data",
+    "odometerKmLabel": "Chilometraggio",
+    "odometerKmPlaceholder": "es. 45000",
+    "providerLabel": "Officina",
+    "providerPlaceholder": "Nome dell'officina",
+    "costLabel": "Costo",
+    "costPlaceholder": "es. 350",
+    "descriptionLabel": "Descrizione",
+    "descriptionPlaceholder": "Cosa è stato fatto o cosa è danneggiato",
+    "nextDueAtLabel": "Prossimo intervento il",
+    "nextDueAtPlaceholder": "Scegli una data",
+    "nextDueKmLabel": "Prossimo intervento a (km)",
+    "nextDueKmPlaceholder": "es. 60000",
+    "attachmentsLabel": "Allegati",
+    "type": {
+      "scheduled_service": "Tagliando",
+      "oil_change": "Cambio olio",
+      "tires": "Pneumatici",
+      "brakes": "Freni",
+      "inspection": "Controllo",
+      "repair": "Riparazione",
+      "battery": "Batteria",
+      "other": "Altro"
+    },
+    "status": {
+      "scheduled": "Programmato",
+      "completed": "Completato",
+      "cancelled": "Annullato"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio dell'intervento",
+      "time": 3000
+    },
+    "success": {
+      "title": "Intervento aggiunto",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile aggiungere l'intervento. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Aggiungi intervento",
+    "description": "Registra un tagliando, una riparazione o un controllo"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

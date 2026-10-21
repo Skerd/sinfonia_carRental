@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/client/public/shared/rentalCategoryMedia.tsx",
+  "photoCount": "1 foto",
+  "photosCount": "{count} foto",
+  "video": "video",
+  "openGallery": "Shikoni fotot dhe videot e {name}",
+  "previous": "Më parë",
+  "next": "Tjetra",
+  "close": "Mbyll"
+}

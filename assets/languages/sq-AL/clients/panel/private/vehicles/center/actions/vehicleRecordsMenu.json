@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/center/actions/vehicleRecordsMenu.tsx",
+  "reservations": "Rezervimet",
+  "maintenance": "Mirëmbajtja",
+  "damages": "Dëmtimet",
+  "insurance": "Sigurimet",
+  "documents": "Dokumentet"
+}

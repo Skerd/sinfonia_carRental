@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/cardView/vehicleMaintenanceCard.tsx",
+  "failedTitle": "Regjistrimi nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "type": "Lloji",
+  "serviceDate": "Data e servisit",
+  "odometerKm": "Kilometrazhi (km)",
+  "cost": "Kostoja",
+  "status": "Statusi",
+  "typeValues": {
+    "scheduled_service": "Servis i planifikuar",
+    "oil_change": "Ndërrim vaji",
+    "tires": "Goma",
+    "brakes": "Frenat",
+    "inspection": "Kontroll",
+    "repair": "Riparim",
+    "battery": "Bateria",
+    "other": "Tjetër"
+  },
+  "statusValues": {
+    "scheduled": "I planifikuar",
+    "completed": "I përfunduar",
+    "cancelled": "I anuluar"
+  }
+}

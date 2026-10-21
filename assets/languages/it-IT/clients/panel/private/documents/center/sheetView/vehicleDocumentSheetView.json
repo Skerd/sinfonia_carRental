@@ -1,0 +1,32 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/center/sheetView/vehicleDocumentSheetView.tsx",
+  "lifecycle": "Ciclo di vita",
+  "overview": "Panoramica",
+  "vehicleDocumentSubtitle": "Documento del veicolo",
+  "vehicle": "Veicolo",
+  "type": "Tipo",
+  "documentNumber": "Numero del documento",
+  "issuer": "Emesso da",
+  "issuedAt": "Emesso il",
+  "expiresAt": "Scade il",
+  "status": "Stato",
+  "notes": "Note",
+  "attachments": "Allegati",
+  "typeValues": {
+    "registration": "Libretto di circolazione",
+    "technical_inspection": "Revisione",
+    "emissions_test": "Controllo emissioni",
+    "road_tax": "Bollo auto",
+    "green_card": "Carta verde",
+    "other": "Altro"
+  },
+  "statusValues": {
+    "active": "Valido",
+    "expired": "Scaduto"
+  },
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da"
+}

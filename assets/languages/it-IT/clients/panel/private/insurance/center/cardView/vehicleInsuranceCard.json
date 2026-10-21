@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/cardView/vehicleInsuranceCard.tsx",
+  "failedTitle": "Impossibile caricare la polizza",
+  "failedDescription": "Tocca per riprovare.",
+  "vehicle": "Veicolo",
+  "insurer": "Assicuratore",
+  "coverage": "Copertura",
+  "expiresAt": "Scade il",
+  "status": "Stato",
+  "coverageValues": {
+    "third_party": "RC auto",
+    "partial_casco": "Kasko parziale",
+    "full_casco": "Kasko completa"
+  },
+  "statusValues": {
+    "active": "Attiva",
+    "expired": "Scaduta",
+    "cancelled": "Annullata"
+  }
+}

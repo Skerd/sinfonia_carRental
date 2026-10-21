@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/index.tsx",
+  "title": "Maintenance",
+  "description": "Every car's services, repairs and checks",
+  "help": {
+    "ariaLabel": "About maintenance",
+    "title": "About maintenance",
+    "overview": "Each car's service book. The latest completed record sets the car's next service date and km.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Scheduled and cancelled records don't count towards the next service.",
+          "Chosen staff are notified 14 days or 1,000 km before the next service is due.",
+          "A higher odometer reading on a record moves the car's odometer forward."
+        ]
+      }
+    ]
+  },
+  "create": "Add record",
+  "searchPlaceholder": "Search maintenance or add filters...",
+  "noData": "No maintenance yet",
+  "failTitle": "Failed to load maintenance",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "vehicle": "Vehicle",
+    "type": "Type",
+    "status": "Status",
+    "serviceDate": "Service date",
+    "odometerKm": "Odometer (km)",
+    "provider": "Garage",
+    "cost": "Cost",
+    "description": "Description",
+    "nextDueAt": "Next service due",
+    "nextDueKm": "Next service at (km)",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

@@ -20,7 +20,22 @@
       "title": "Standorte"
     },
     "settings": {
-      "title": "Einstellungen"
+      "title": "Buchung & Zahlung"
+    },
+    "fleetOps": {
+      "title": "Flottenbetrieb"
+    },
+    "maintenance": {
+      "title": "Wartung"
+    },
+    "damages": {
+      "title": "Schäden"
+    },
+    "insurance": {
+      "title": "Versicherungen"
+    },
+    "documents": {
+      "title": "Dokumente"
     }
   }
 }

@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/editVehicleDocument.tsx",
+  "title": "Modifier le document",
+  "description": "Modifier les dates, le numéro ou les scans",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "vehicleLabel": "Véhicule",
+    "vehiclePlaceholder": "Choisir un véhicule",
+    "typeLabel": "Type",
+    "typePlaceholder": "Choisir le type",
+    "documentNumberLabel": "Numéro du document",
+    "documentNumberPlaceholder": "Numéro figurant sur le document",
+    "issuerLabel": "Émis par",
+    "issuerPlaceholder": "ex. DPSHTRR",
+    "issuedAtLabel": "Émis le",
+    "issuedAtPlaceholder": "Choisir une date",
+    "expiresAtLabel": "Expire le",
+    "expiresAtPlaceholder": "Choisir une date",
+    "statusLabel": "Statut",
+    "statusPlaceholder": "Choisir le statut",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Notes internes",
+    "attachmentsLabel": "Pièces jointes",
+    "type": {
+      "registration": "Certificat d'immatriculation",
+      "technical_inspection": "Contrôle technique",
+      "emissions_test": "Contrôle antipollution",
+      "road_tax": "Taxe de circulation",
+      "green_card": "Carte verte",
+      "other": "Autre"
+    },
+    "status": {
+      "active": "Valide",
+      "expired": "Expiré"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement des modifications",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifications enregistrées",
+      "time": 3000
+    },
+    "error": {
+      "title": "Les modifications n'ont pas pu être enregistrées. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifier le document",
+    "description": "Modifier les dates, le numéro ou les scans"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Enregistrer"
+  }
+}

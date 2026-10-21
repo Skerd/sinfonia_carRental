@@ -1,0 +1,31 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/cardView/vehicleDamageCard.tsx",
+  "failedTitle": "Impossibile caricare il danno",
+  "failedDescription": "Tocca per riprovare.",
+  "area": "Zona",
+  "severity": "Gravità",
+  "reportedAt": "Segnalato il",
+  "status": "Stato",
+  "areaValues": {
+    "front": "Anteriore",
+    "rear": "Posteriore",
+    "left": "Lato sinistro",
+    "right": "Lato destro",
+    "roof": "Tetto",
+    "interior": "Interni",
+    "windshield": "Parabrezza",
+    "wheels": "Ruote",
+    "underbody": "Sottoscocca",
+    "other": "Altro"
+  },
+  "severityValues": {
+    "minor": "Lieve",
+    "moderate": "Moderato",
+    "major": "Grave"
+  },
+  "statusValues": {
+    "open": "Aperto",
+    "in_repair": "In riparazione",
+    "repaired": "Riparato"
+  }
+}

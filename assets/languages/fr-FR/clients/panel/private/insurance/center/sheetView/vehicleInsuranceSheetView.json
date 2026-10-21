@@ -1,0 +1,32 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/sheetView/vehicleInsuranceSheetView.tsx",
+  "lifecycle": "Cycle de vie",
+  "overview": "Aperçu",
+  "vehicleInsuranceSubtitle": "Police d'assurance",
+  "vehicle": "Véhicule",
+  "insurer": "Assureur",
+  "policyNumber": "Numéro de police",
+  "coverage": "Couverture",
+  "validFrom": "Valable dès le",
+  "expiresAt": "Expire le",
+  "premium": "Prime",
+  "deductible": "Franchise",
+  "status": "Statut",
+  "notes": "Notes",
+  "attachments": "Pièces jointes",
+  "coverageValues": {
+    "third_party": "Responsabilité civile",
+    "partial_casco": "Casco partielle",
+    "full_casco": "Casco complète"
+  },
+  "statusValues": {
+    "active": "Active",
+    "expired": "Expirée",
+    "cancelled": "Résiliée"
+  },
+  "createdAt": "Créé le",
+  "updatedAt": "Mis à jour le",
+  "createdBy": "Créé par",
+  "deletedAt": "Supprimé le",
+  "deletedBy": "Supprimé par"
+}

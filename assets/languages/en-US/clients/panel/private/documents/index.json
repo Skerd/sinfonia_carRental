@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/index.tsx",
+  "title": "Vehicle documents",
+  "description": "Registrations, inspections and taxes with their expiry",
+  "help": {
+    "ariaLabel": "About vehicle documents",
+    "title": "About vehicle documents",
+    "overview": "Keep each car's papers here, with scans. Documents without an expiry date never trigger a reminder.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Chosen staff are notified once, 30 days before a document expires.",
+          "Expired documents are marked every morning.",
+          "A newer document of the same type takes over the old one's reminder."
+        ]
+      }
+    ]
+  },
+  "create": "Add document",
+  "searchPlaceholder": "Search documents or add filters...",
+  "noData": "No documents yet",
+  "failTitle": "Failed to load documents",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "vehicle": "Vehicle",
+    "type": "Type",
+    "documentNumber": "Document number",
+    "issuer": "Issued by",
+    "issuedAt": "Issued on",
+    "expiresAt": "Expires on",
+    "status": "Status",
+    "notes": "Notes",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

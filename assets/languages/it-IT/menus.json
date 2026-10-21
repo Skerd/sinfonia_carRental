@@ -20,7 +20,22 @@
       "title": "Sedi"
     },
     "settings": {
-      "title": "Impostazioni"
+      "title": "Prenotazione e pagamento"
+    },
+    "fleetOps": {
+      "title": "Gestione flotta"
+    },
+    "maintenance": {
+      "title": "Manutenzione"
+    },
+    "damages": {
+      "title": "Danni"
+    },
+    "insurance": {
+      "title": "Assicurazioni"
+    },
+    "documents": {
+      "title": "Documenti"
     }
   }
 }

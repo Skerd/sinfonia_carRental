@@ -56,7 +56,7 @@ function RentalExtraSheetView({
             hideActions={hideActions}
             onDelete={onDelete}
             onRestore={onRestore}
-            editPath={`/carRental/extras/edit?rentalExtraId=${entityId}`}
+            editPath={`/tenancy/systemSettings/rentalExtras/edit?rentalExtraId=${entityId}`}
             onSheetRowPatched={(row) => {
                 setSheetData(row);
                 onSheetRowPatched?.(row as Partial<RentalExtra>);

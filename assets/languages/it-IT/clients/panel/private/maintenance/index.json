@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/index.tsx",
+  "title": "Manutenzione",
+  "description": "Tagliandi, riparazioni e controlli di ogni veicolo",
+  "help": {
+    "ariaLabel": "Informazioni sulla manutenzione",
+    "title": "Informazioni sulla manutenzione",
+    "overview": "Il libretto di manutenzione di ogni veicolo. L'ultimo intervento completato fissa data e chilometri del prossimo.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Gli interventi programmati o annullati non contano per il prossimo tagliando.",
+          "Il personale scelto viene avvisato 14 giorni o 1.000 km prima del prossimo intervento.",
+          "Un chilometraggio più alto sull'intervento aggiorna quello del veicolo."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi intervento",
+  "searchPlaceholder": "Cerca interventi o aggiungi filtri...",
+  "noData": "Ancora nessun interventi",
+  "failTitle": "Impossibile caricare interventi",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "vehicle": "Veicolo",
+    "type": "Tipo",
+    "status": "Stato",
+    "serviceDate": "Data dell'intervento",
+    "odometerKm": "Chilometraggio",
+    "provider": "Officina",
+    "cost": "Costo",
+    "description": "Descrizione",
+    "nextDueAt": "Prossimo intervento il",
+    "nextDueKm": "Prossimo intervento a (km)",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

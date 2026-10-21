@@ -33,7 +33,13 @@
     "vinLabel": "FIN",
     "vinPlaceholder": "FIN eingeben",
     "yearLabel": "Jahr",
-    "yearPlaceholder": "Jahr eingeben"
+    "yearPlaceholder": "Jahr eingeben",
+    "acquiredAtLabel": "In der Flotte seit",
+    "acquiredAtPlaceholder": "Datum wählen",
+    "purchasePriceLabel": "Kaufpreis",
+    "purchasePricePlaceholder": "z. B. 24500",
+    "imagesLabel": "Fotos",
+    "videosLabel": "Videos"
   },
   "axios": {
     "start": {

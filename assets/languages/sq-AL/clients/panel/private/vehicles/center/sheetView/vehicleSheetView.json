@@ -30,5 +30,11 @@
   "updatedAt": "Përditësuar më",
   "createdBy": "Krijuar nga",
   "deletedAt": "Fshirë më",
-  "deletedBy": "Fshirë nga"
+  "deletedBy": "Fshirë nga",
+  "images": "Fotot",
+  "fleet": "Flota",
+  "nextServiceDueAt": "Servisi i radhës më",
+  "nextServiceDueKm": "Servisi i radhës në (km)",
+  "acquiredAt": "Në flotë që nga",
+  "purchasePrice": "Çmimi i blerjes"
 }

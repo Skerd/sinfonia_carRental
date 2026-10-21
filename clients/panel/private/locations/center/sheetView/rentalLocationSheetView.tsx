@@ -56,7 +56,7 @@ function RentalLocationSheetView({
             hideActions={hideActions}
             onDelete={onDelete}
             onRestore={onRestore}
-            editPath={`/carRental/locations/edit?rentalLocationId=${entityId}`}
+            editPath={`/tenancy/systemSettings/rentalLocations/edit?rentalLocationId=${entityId}`}
             onSheetRowPatched={(row) => {
                 setSheetData(row);
                 onSheetRowPatched?.(row as Partial<RentalLocation>);

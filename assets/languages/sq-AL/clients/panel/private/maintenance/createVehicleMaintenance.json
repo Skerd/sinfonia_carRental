@@ -1,0 +1,74 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/createVehicleMaintenance.tsx",
+  "title": "Shto regjistrim",
+  "description": "Regjistroni një servis, riparim ose kontroll",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "vehicleLabel": "Automjeti",
+    "vehiclePlaceholder": "Zgjidhni automjetin",
+    "typeLabel": "Lloji",
+    "typePlaceholder": "Zgjidhni llojin",
+    "statusLabel": "Statusi",
+    "statusPlaceholder": "Zgjidhni statusin",
+    "serviceDateLabel": "Data e servisit",
+    "serviceDatePlaceholder": "Zgjidhni datën",
+    "odometerKmLabel": "Kilometrazhi (km)",
+    "odometerKmPlaceholder": "p.sh. 45000",
+    "providerLabel": "Autoservisi",
+    "providerPlaceholder": "Emri i autoservisit",
+    "costLabel": "Kostoja",
+    "costPlaceholder": "p.sh. 350",
+    "descriptionLabel": "Përshkrimi",
+    "descriptionPlaceholder": "Çfarë u bë ose çfarë është dëmtuar",
+    "nextDueAtLabel": "Servisi i radhës më",
+    "nextDueAtPlaceholder": "Zgjidhni datën",
+    "nextDueKmLabel": "Servisi i radhës në (km)",
+    "nextDueKmPlaceholder": "p.sh. 60000",
+    "attachmentsLabel": "Bashkëngjitjet",
+    "type": {
+      "scheduled_service": "Servis i planifikuar",
+      "oil_change": "Ndërrim vaji",
+      "tires": "Goma",
+      "brakes": "Frenat",
+      "inspection": "Kontroll",
+      "repair": "Riparim",
+      "battery": "Bateria",
+      "other": "Tjetër"
+    },
+    "status": {
+      "scheduled": "I planifikuar",
+      "completed": "I përfunduar",
+      "cancelled": "I anuluar"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhet regjistrimi",
+      "time": 3000
+    },
+    "success": {
+      "title": "Regjistrimi u shtua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Regjistrimi nuk u shtua. Kontrolloni formularin dhe provoni sërish.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Shto regjistrim",
+    "description": "Regjistroni një servis, riparim ose kontroll"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  }
+}

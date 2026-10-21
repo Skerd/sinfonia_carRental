@@ -1,0 +1,37 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/sheetView/vehicleMaintenanceSheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "overview": "Përmbledhje",
+  "vehicleMaintenanceSubtitle": "Mirëmbajtje",
+  "vehicle": "Automjeti",
+  "type": "Lloji",
+  "status": "Statusi",
+  "serviceDate": "Data e servisit",
+  "odometerKm": "Kilometrazhi (km)",
+  "provider": "Autoservisi",
+  "cost": "Kostoja",
+  "description": "Përshkrimi",
+  "nextDueAt": "Servisi i radhës më",
+  "nextDueKm": "Servisi i radhës në (km)",
+  "attachments": "Bashkëngjitjet",
+  "typeValues": {
+    "scheduled_service": "Servis i planifikuar",
+    "oil_change": "Ndërrim vaji",
+    "tires": "Goma",
+    "brakes": "Frenat",
+    "inspection": "Kontroll",
+    "repair": "Riparim",
+    "battery": "Bateria",
+    "other": "Tjetër"
+  },
+  "statusValues": {
+    "scheduled": "I planifikuar",
+    "completed": "I përfunduar",
+    "cancelled": "I anuluar"
+  },
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

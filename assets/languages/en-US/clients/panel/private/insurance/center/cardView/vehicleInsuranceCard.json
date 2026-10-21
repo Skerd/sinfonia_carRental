@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/cardView/vehicleInsuranceCard.tsx",
+  "failedTitle": "Failed to load policy",
+  "failedDescription": "Tap to retry.",
+  "vehicle": "Vehicle",
+  "insurer": "Insurer",
+  "coverage": "Coverage",
+  "expiresAt": "Expires on",
+  "status": "Status",
+  "coverageValues": {
+    "third_party": "Third party",
+    "partial_casco": "Partial casco",
+    "full_casco": "Full casco"
+  },
+  "statusValues": {
+    "active": "Active",
+    "expired": "Expired",
+    "cancelled": "Cancelled"
+  }
+}

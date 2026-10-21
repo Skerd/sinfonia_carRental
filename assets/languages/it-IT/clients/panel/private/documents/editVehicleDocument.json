@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/editVehicleDocument.tsx",
+  "title": "Modifica documento",
+  "description": "Modifica date, numero o scansioni",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "vehicleLabel": "Veicolo",
+    "vehiclePlaceholder": "Seleziona un veicolo",
+    "typeLabel": "Tipo",
+    "typePlaceholder": "Seleziona il tipo",
+    "documentNumberLabel": "Numero del documento",
+    "documentNumberPlaceholder": "Numero riportato sul documento",
+    "issuerLabel": "Emesso da",
+    "issuerPlaceholder": "es. DPSHTRR",
+    "issuedAtLabel": "Emesso il",
+    "issuedAtPlaceholder": "Scegli una data",
+    "expiresAtLabel": "Scade il",
+    "expiresAtPlaceholder": "Scegli una data",
+    "statusLabel": "Stato",
+    "statusPlaceholder": "Seleziona lo stato",
+    "notesLabel": "Note",
+    "notesPlaceholder": "Note interne",
+    "attachmentsLabel": "Allegati",
+    "type": {
+      "registration": "Libretto di circolazione",
+      "technical_inspection": "Revisione",
+      "emissions_test": "Controllo emissioni",
+      "road_tax": "Bollo auto",
+      "green_card": "Carta verde",
+      "other": "Altro"
+    },
+    "status": {
+      "active": "Valido",
+      "expired": "Scaduto"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio delle modifiche",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifiche salvate",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare le modifiche. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifica documento",
+    "description": "Modifica date, numero o scansioni"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Salva"
+  }
+}

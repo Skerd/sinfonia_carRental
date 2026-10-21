@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/documents/center/cardView/vehicleDocumentCard.tsx",
+  "failedTitle": "Dokumenti nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "type": "Lloji",
+  "documentNumber": "Numri i dokumentit",
+  "expiresAt": "Skadon më",
+  "status": "Statusi",
+  "typeValues": {
+    "registration": "Leja e qarkullimit",
+    "technical_inspection": "Kontrolli teknik",
+    "emissions_test": "Testi i emetimeve",
+    "road_tax": "Taksa e qarkullimit",
+    "green_card": "Karta jeshile",
+    "other": "Tjetër"
+  },
+  "statusValues": {
+    "active": "I vlefshëm",
+    "expired": "I skaduar"
+  }
+}

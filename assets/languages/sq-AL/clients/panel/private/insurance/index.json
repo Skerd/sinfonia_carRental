@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/index.tsx",
+  "title": "Sigurimet",
+  "description": "Policat e çdo automjeti dhe kur skadojnë",
+  "help": {
+    "ariaLabel": "Rreth sigurimeve",
+    "title": "Rreth sigurimeve",
+    "overview": "Çdo policë i përket një automjeti. Rinovimi është një policë e re, kështu që e vjetra mbetet në histori.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Stafi i zgjedhur në cilësimet e qirasë njoftohet një herë, 30 ditë para skadimit.",
+          "Policat pas datës së skadimit shënohen të skaduara çdo mëngjes.",
+          "Hapni menunë e një automjeti për të parë vetëm policat e tij."
+        ]
+      }
+    ]
+  },
+  "create": "Shto policë",
+  "searchPlaceholder": "Kërkoni sigurime ose shtoni filtra...",
+  "noData": "Ende pa sigurime",
+  "failTitle": "Sigurime nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "vehicle": "Automjeti",
+    "insurer": "Siguruesi",
+    "policyNumber": "Numri i policës",
+    "coverage": "Mbulimi",
+    "validFrom": "E vlefshme nga",
+    "expiresAt": "Skadon më",
+    "premium": "Primi",
+    "deductible": "Franshiza",
+    "status": "Statusi",
+    "notes": "Shënime",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

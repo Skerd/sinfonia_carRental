@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/index.tsx",
+  "title": "Danni",
+  "description": "Danni trovati sui veicoli, con foto e costi di riparazione",
+  "help": {
+    "ariaLabel": "Informazioni sui danni",
+    "title": "Informazioni sui danni",
+    "overview": "Registra ogni danno con le foto e collegalo alla prenotazione in cui è avvenuto.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "L'elenco delle prenotazioni mostra solo quelle del veicolo scelto.",
+          "Imposta lo stato su «Riparato» quando il veicolo è sistemato.",
+          "Anche il personale al banco può segnalare un danno."
+        ]
+      }
+    ]
+  },
+  "create": "Segnala un danno",
+  "searchPlaceholder": "Cerca danni o aggiungi filtri...",
+  "noData": "Ancora nessun danni",
+  "failTitle": "Impossibile caricare danni",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "vehicle": "Veicolo",
+    "reservation": "Prenotazione",
+    "reportedAt": "Segnalato il",
+    "area": "Zona",
+    "severity": "Gravità",
+    "status": "Stato",
+    "estimatedCost": "Costo stimato",
+    "repairCost": "Costo della riparazione",
+    "repairedAt": "Riparato il",
+    "description": "Descrizione",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

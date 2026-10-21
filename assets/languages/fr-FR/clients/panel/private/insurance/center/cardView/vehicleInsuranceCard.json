@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/cardView/vehicleInsuranceCard.tsx",
+  "failedTitle": "Impossible de charger la police",
+  "failedDescription": "Touchez pour réessayer.",
+  "vehicle": "Véhicule",
+  "insurer": "Assureur",
+  "coverage": "Couverture",
+  "expiresAt": "Expire le",
+  "status": "Statut",
+  "coverageValues": {
+    "third_party": "Responsabilité civile",
+    "partial_casco": "Casco partielle",
+    "full_casco": "Casco complète"
+  },
+  "statusValues": {
+    "active": "Active",
+    "expired": "Expirée",
+    "cancelled": "Résiliée"
+  }
+}

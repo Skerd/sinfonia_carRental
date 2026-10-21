@@ -1,0 +1,74 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/createVehicleMaintenance.tsx",
+  "title": "Add record",
+  "description": "Record a service, repair or check",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "vehicleLabel": "Vehicle",
+    "vehiclePlaceholder": "Select vehicle",
+    "typeLabel": "Type",
+    "typePlaceholder": "Select type",
+    "statusLabel": "Status",
+    "statusPlaceholder": "Select status",
+    "serviceDateLabel": "Service date",
+    "serviceDatePlaceholder": "Pick a date",
+    "odometerKmLabel": "Odometer (km)",
+    "odometerKmPlaceholder": "e.g. 45000",
+    "providerLabel": "Garage",
+    "providerPlaceholder": "Garage name",
+    "costLabel": "Cost",
+    "costPlaceholder": "e.g. 350",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "What was done, or what is damaged",
+    "nextDueAtLabel": "Next service due",
+    "nextDueAtPlaceholder": "Pick a date",
+    "nextDueKmLabel": "Next service at (km)",
+    "nextDueKmPlaceholder": "e.g. 60000",
+    "attachmentsLabel": "Attachments",
+    "type": {
+      "scheduled_service": "Scheduled service",
+      "oil_change": "Oil change",
+      "tires": "Tyres",
+      "brakes": "Brakes",
+      "inspection": "Inspection",
+      "repair": "Repair",
+      "battery": "Battery",
+      "other": "Other"
+    },
+    "status": {
+      "scheduled": "Scheduled",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Saving record",
+      "time": 3000
+    },
+    "success": {
+      "title": "Record added",
+      "time": 3000
+    },
+    "error": {
+      "title": "Record could not be added. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Add record",
+    "description": "Record a service, repair or check"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}
