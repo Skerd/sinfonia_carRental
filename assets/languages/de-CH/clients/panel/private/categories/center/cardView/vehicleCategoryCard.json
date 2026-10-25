@@ -9,5 +9,7 @@
     "manual": "Manuell",
     "automatic": "Automatik"
   },
-  "isPublic": "Auf der Website"
+  "isPublic": "Auf der Website",
+  "sortOrder": "Sortierung",
+  "hiddenFromWebsite": "Von der Website ausgeblendet"
 }

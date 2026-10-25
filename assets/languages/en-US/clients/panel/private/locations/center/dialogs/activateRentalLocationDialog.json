@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/center/dialogs/activateRentalLocationDialog.tsx",
+  "title": "Activate location",
+  "description": "This location will be offered for new bookings.",
+  "cancel": "Cancel",
+  "confirm": "Activate",
+  "busy": "Working…",
+  "axios": {
+    "start": {
+      "title": "Activating location…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Location activated",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not activate location",
+      "time": 3000
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/center/dialogs/deactivateRentalLocationDialog.tsx",
+  "title": "Deactivate location",
+  "description": "This location will no longer be offered until it is activated again.",
+  "cancel": "Cancel",
+  "confirm": "Deactivate",
+  "busy": "Working…",
+  "axios": {
+    "start": {
+      "title": "Deactivating location…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Location deactivated",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not deactivate location",
+      "time": 3000
+    }
+  }
+}

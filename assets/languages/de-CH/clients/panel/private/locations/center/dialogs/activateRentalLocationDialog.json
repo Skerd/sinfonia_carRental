@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/center/dialogs/activateRentalLocationDialog.tsx",
+  "title": "Standort aktivieren",
+  "description": "Dieser Standort wird bei neuen Buchungen angeboten.",
+  "cancel": "Abbrechen",
+  "confirm": "Aktivieren",
+  "busy": "Wird ausgeführt…",
+  "axios": {
+    "start": {
+      "title": "Standort wird aktiviert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Standort aktiviert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Standort konnte nicht aktiviert werden",
+      "time": 3000
+    }
+  }
+}

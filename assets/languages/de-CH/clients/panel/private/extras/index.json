@@ -11,12 +11,23 @@
         "title": "Auf dieser Seite",
         "items": [
           "Extras pro Tag werden für jeden Miettag verrechnet, Extras pro Miete einmal.",
-          "Deaktivieren Sie ein Extra, um es nicht mehr anzubieten; bestehende Buchungen behalten ihren Preis."
+          "Deaktivieren Sie ein Extra, um es nicht mehr anzubieten; bestehende Buchungen behalten ihren Preis.",
+          "Neu anordnen legt die Reihenfolge fest, die Kunden auf der Website sehen."
         ]
       }
     ]
   },
   "create": "Extra hinzufügen",
+  "reorderExtras": "Extras neu anordnen",
+  "reorderTitle": "Extras neu anordnen",
+  "reorderDescription": "Ziehen Sie die Extras, um ihre Reihenfolge auf der Website zu ändern.",
+  "empty": "Keine Extras zum Anordnen.",
+  "cancel": "Abbrechen",
+  "save": "Reihenfolge speichern",
+  "saving": "Wird gespeichert...",
+  "saveSuccess": "Reihenfolge gespeichert.",
+  "saveError": "Die Reihenfolge konnte nicht gespeichert werden.",
+  "loadError": "Extras konnten nicht geladen werden.",
   "searchPlaceholder": "Extras suchen oder Filter hinzufügen...",
   "noData": "Noch keine Extras",
   "failTitle": "Extras konnten nicht geladen werden",

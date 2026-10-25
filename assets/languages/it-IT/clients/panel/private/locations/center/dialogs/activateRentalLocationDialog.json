@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/center/dialogs/activateRentalLocationDialog.tsx",
+  "title": "Attiva sede",
+  "description": "Questa sede sarà proposta per le nuove prenotazioni.",
+  "cancel": "Annulla",
+  "confirm": "Attiva",
+  "busy": "Operazione in corso…",
+  "axios": {
+    "start": {
+      "title": "Attivazione della sede…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Sede attivata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile attivare la sede",
+      "time": 3000
+    }
+  }
+}

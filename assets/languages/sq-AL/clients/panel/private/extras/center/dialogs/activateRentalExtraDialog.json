@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/center/dialogs/activateRentalExtraDialog.tsx",
+  "title": "Aktivizo ekstrën",
+  "description": "Kjo ekstra do të ofrohet në rezervimet e reja.",
+  "cancel": "Anulo",
+  "confirm": "Aktivizo",
+  "busy": "Duke punuar…",
+  "axios": {
+    "start": {
+      "title": "Duke aktivizuar ekstrën…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Ekstra u aktivizua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Ekstra nuk u aktivizua dot",
+      "time": 3000
+    }
+  }
+}

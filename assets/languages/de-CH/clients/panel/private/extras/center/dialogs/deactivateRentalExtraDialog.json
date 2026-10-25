@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/center/dialogs/deactivateRentalExtraDialog.tsx",
+  "title": "Extra deaktivieren",
+  "description": "Dieses Extra wird nicht mehr angeboten, bis es wieder aktiviert wird.",
+  "cancel": "Abbrechen",
+  "confirm": "Deaktivieren",
+  "busy": "Wird ausgeführt…",
+  "axios": {
+    "start": {
+      "title": "Extra wird deaktiviert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Extra deaktiviert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Extra konnte nicht deaktiviert werden",
+      "time": 3000
+    }
+  }
+}

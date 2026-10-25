@@ -11,12 +11,23 @@
         "title": "Sur cette page",
         "items": [
           "Les suppléments par jour sont facturés pour chaque jour de location ; les suppléments par location une seule fois.",
-          "Désactivez un supplément pour ne plus le proposer ; les réservations existantes gardent leur prix."
+          "Désactivez un supplément pour ne plus le proposer ; les réservations existantes gardent leur prix.",
+          "Réorganiser définit l'ordre que les clients voient sur le site web."
         ]
       }
     ]
   },
   "create": "Ajouter un supplément",
+  "reorderExtras": "Réorganiser les suppléments",
+  "reorderTitle": "Réorganiser les suppléments",
+  "reorderDescription": "Faites glisser les suppléments pour modifier leur ordre sur le site web.",
+  "empty": "Aucun supplément à réorganiser.",
+  "cancel": "Annuler",
+  "save": "Enregistrer l'ordre",
+  "saving": "Enregistrement...",
+  "saveSuccess": "Ordre des suppléments enregistré.",
+  "saveError": "Impossible d'enregistrer l'ordre des suppléments.",
+  "loadError": "Impossible de charger les suppléments.",
   "searchPlaceholder": "Rechercher des suppléments ou ajouter des filtres...",
   "noData": "Aucun supplément pour l'instant",
   "failTitle": "Impossible de charger les suppléments",

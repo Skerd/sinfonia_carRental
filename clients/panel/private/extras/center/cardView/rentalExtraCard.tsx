@@ -10,6 +10,10 @@ import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {RentalExtra} from "armonia/src/modules/carRental/api/carRental/private/rentalExtra/rentalExtra.dto.ts";
 import RentalExtraSheetView from "@carRentalModule/clients/panel/private/extras/center/sheetView/rentalExtraSheetView.tsx";
 import {rentalExtraEditPath} from "@carRentalModule/clients/panel/private/extras/index.tsx";
+import ActivateRentalExtra from "@carRentalModule/clients/panel/private/extras/center/actions/activateRentalExtra.tsx";
+import DeactivateRentalExtra from "@carRentalModule/clients/panel/private/extras/center/actions/deactivateRentalExtra.tsx";
+import ActivateRentalExtraDialog from "@carRentalModule/clients/panel/private/extras/center/dialogs/activateRentalExtraDialog.tsx";
+import DeactivateRentalExtraDialog from "@carRentalModule/clients/panel/private/extras/center/dialogs/deactivateRentalExtraDialog.tsx";
 
 type RentalExtraCardProps = WithLanguageType & {
     rentalExtra: RentalExtra;
@@ -18,6 +22,7 @@ type RentalExtraCardProps = WithLanguageType & {
     onDelete?: (deleted?: RentalExtra, response?: DeletedData) => void;
     onRestore?: () => void;
     sheetOnly?: boolean;
+    onActiveChanged?: (isActive: boolean) => void;
     innerRef?: RefObject<WithAxiosLifecycleRef<RentalExtra> | null>;
 };
 
@@ -29,6 +34,7 @@ function RentalExtraCard({
     onDelete,
     onRestore,
     sheetOnly = false,
+    onActiveChanged,
     innerRef,
 }: RentalExtraCardProps) {
     return (
@@ -50,10 +56,50 @@ function RentalExtraCard({
             failedDescription={String(resolveLanguageKey("failedDescription"))}
             titlePath="name"
             innerRef={innerRef}
-        >
-            {({entity: row}) => (
+            sheetProps={({entity, setEntity}) => ({
+                fetchId,
+                onActiveChanged: (isActive: boolean) => {
+                    setEntity({...entity, isActive});
+                    onActiveChanged?.(isActive);
+                },
+                onSheetRowPatched: (row: Partial<RentalExtra>) => {
+                    setEntity({...entity, ...row});
+                    if (typeof row.isActive === "boolean") onActiveChanged?.(row.isActive);
+                },
+            })}
+            extraDialogs={({action, setAction, entity, setEntity}) => (
                 <>
-                    <EntityCard.Header titlePath="name" title={row.name} />
+                    {action === "activateRentalExtra" && (
+                        <ActivateRentalExtraDialog
+                            open
+                            onClose={() => setAction("")}
+                            entity={entity}
+                            onSuccess={() => {
+                                setEntity({...entity, isActive: true});
+                                onActiveChanged?.(true);
+                            }}
+                        />
+                    )}
+                    {action === "deactivateRentalExtra" && (
+                        <DeactivateRentalExtraDialog
+                            open
+                            onClose={() => setAction("")}
+                            entity={entity}
+                            onSuccess={() => {
+                                setEntity({...entity, isActive: false});
+                                onActiveChanged?.(false);
+                            }}
+                        />
+                    )}
+                </>
+            )}
+        >
+            {({entity: row, setAction}) => (
+                <>
+                    <EntityCard.Header titlePath="name" title={row.name}>
+                        <ActivateRentalExtra entity={row} onAction={setAction} />
+                        <DeactivateRentalExtra entity={row} onAction={setAction} />
+                    </EntityCard.Header>
                     <EntityCard.Body>
                         <EntityCardRow
                             icon={IconCash}

@@ -11,12 +11,23 @@
         "title": "Në këtë faqe",
         "items": [
           "Shtesat ditore faturohen për çdo ditë qiraje; shtesat për qira vetëm një herë.",
-          "Çaktivizoni një shtesë për të mos e ofruar më; rezervimet ekzistuese ruajnë çmimin e tyre."
+          "Çaktivizoni një shtesë për të mos e ofruar më; rezervimet ekzistuese ruajnë çmimin e tyre.",
+          "Rirenditja cakton rendin që klientët shohin në faqe."
         ]
       }
     ]
   },
   "create": "Shto shtesë",
+  "reorderExtras": "Rirendit shtesat",
+  "reorderTitle": "Rirendit shtesat",
+  "reorderDescription": "Zvarritni shtesat për të ndryshuar rendin e tyre në faqe.",
+  "empty": "Nuk ka shtesa për t'u rirenditur.",
+  "cancel": "Anulo",
+  "save": "Ruaj rendin",
+  "saving": "Duke ruajtur...",
+  "saveSuccess": "Rendi i shtesave u ruajt.",
+  "saveError": "Rendi i shtesave nuk u ruajt.",
+  "loadError": "Shtesat nuk u ngarkuan.",
   "searchPlaceholder": "Kërko shtesa ose shto filtra...",
   "noData": "Ende pa shtesa",
   "failTitle": "Shtesat nuk u ngarkuan",

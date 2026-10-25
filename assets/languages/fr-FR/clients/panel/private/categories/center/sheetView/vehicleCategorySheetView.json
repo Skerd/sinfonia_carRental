@@ -12,6 +12,7 @@
   "images": "Images",
   "includedKmPerDay": "Km inclus par jour",
   "isPublic": "Sur le site web",
+  "sortOrder": "Ordre de tri",
   "luggage": "Bagages",
   "mileagePolicy": "Kilométrage",
   "minDriverAge": "Âge minimum du conducteur",

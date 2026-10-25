@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/dialogs/hideVehicleCategoryFromWebsiteDialog.tsx",
+  "title": "Hide from the website",
+  "description": "Customers will no longer see this category on the website. Staff can still book it.",
+  "cancel": "Cancel",
+  "confirm": "Hide from the website",
+  "busy": "Working…",
+  "axios": {
+    "start": {"title": "Hiding category from the website…", "time": 3000},
+    "success": {"title": "Category is hidden from the website", "time": 3000},
+    "error": {"title": "Could not hide the category from the website", "time": 3000}
+  }
+}

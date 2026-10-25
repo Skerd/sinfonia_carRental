@@ -12,6 +12,7 @@
   "images": "Images",
   "includedKmPerDay": "Included km per day",
   "isPublic": "On the website",
+  "sortOrder": "Sort order",
   "luggage": "Luggage",
   "mileagePolicy": "Mileage",
   "minDriverAge": "Minimum driver age",

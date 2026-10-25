@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/center/dialogs/deactivateRentalLocationDialog.tsx",
+  "title": "Disattiva sede",
+  "description": "Questa sede non sarà più proposta finché non viene riattivata.",
+  "cancel": "Annulla",
+  "confirm": "Disattiva",
+  "busy": "Operazione in corso…",
+  "axios": {
+    "start": {
+      "title": "Disattivazione della sede…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Sede disattivata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile disattivare la sede",
+      "time": 3000
+    }
+  }
+}

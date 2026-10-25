@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/center/dialogs/activateRentalLocationDialog.tsx",
+  "title": "Aktivizo vendndodhjen",
+  "description": "Kjo vendndodhje do të ofrohet në rezervimet e reja.",
+  "cancel": "Anulo",
+  "confirm": "Aktivizo",
+  "busy": "Duke punuar…",
+  "axios": {
+    "start": {
+      "title": "Duke aktivizuar vendndodhjen…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Vendndodhja u aktivizua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Vendndodhja nuk u aktivizua dot",
+      "time": 3000
+    }
+  }
+}

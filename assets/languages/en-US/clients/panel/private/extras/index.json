@@ -11,12 +11,23 @@
         "title": "On this page",
         "items": [
           "Per-day extras are charged for every rental day; per-rental extras once.",
-          "Deactivate an extra to stop offering it; existing bookings keep their price."
+          "Deactivate an extra to stop offering it; existing bookings keep their price.",
+          "Reorder sets the order customers see on the website."
         ]
       }
     ]
   },
   "create": "Add extra",
+  "reorderExtras": "Reorder extras",
+  "reorderTitle": "Reorder extras",
+  "reorderDescription": "Drag extras to change their order on the website.",
+  "empty": "No extras to reorder.",
+  "cancel": "Cancel",
+  "save": "Save order",
+  "saving": "Saving...",
+  "saveSuccess": "Extra order saved.",
+  "saveError": "Failed to save extra order.",
+  "loadError": "Failed to load extras.",
   "searchPlaceholder": "Search extras or add filters...",
   "noData": "No extras yet",
   "failTitle": "Failed to load extras",

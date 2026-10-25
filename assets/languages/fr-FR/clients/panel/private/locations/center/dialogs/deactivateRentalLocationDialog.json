@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/center/dialogs/deactivateRentalLocationDialog.tsx",
+  "title": "Désactiver le site",
+  "description": "Ce site ne sera plus proposé tant qu'il n'est pas réactivé.",
+  "cancel": "Annuler",
+  "confirm": "Désactiver",
+  "busy": "En cours…",
+  "axios": {
+    "start": {
+      "title": "Désactivation du site…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Site désactivé",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible de désactiver le site",
+      "time": 3000
+    }
+  }
+}

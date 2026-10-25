@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/dialogs/showVehicleCategoryOnWebsiteDialog.tsx",
+  "title": "Auf der Website anzeigen",
+  "description": "Kunden können diese Kategorie auf der Website buchen.",
+  "cancel": "Abbrechen",
+  "confirm": "Auf der Website anzeigen",
+  "busy": "Wird ausgeführt…",
+  "axios": {
+    "start": {"title": "Kategorie wird auf der Website angezeigt…", "time": 3000},
+    "success": {"title": "Kategorie wird auf der Website angezeigt", "time": 3000},
+    "error": {"title": "Die Kategorie konnte nicht auf der Website angezeigt werden", "time": 3000}
+  }
+}

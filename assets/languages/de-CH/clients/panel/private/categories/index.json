@@ -11,13 +11,23 @@
         "title": "Auf dieser Seite",
         "items": [
           "Preise: Der Tagespreis gilt, ausser eine Saison deckt den Tag ab; ein Wochenendpreis gilt an lokalen Samstagen und Sonntagen; ein Wochenpreis wird für ganze Wochen verwendet, wenn er günstiger ist.",
-          "Schalten Sie «Auf der Website angezeigt» aus, um eine Kategorie nur für Buchungen durch das Personal zu behalten.",
+          "Verwenden Sie «Auf der Website anzeigen» oder «Von der Website ausblenden», um zu steuern, ob Kunden die Kategorie buchen können. Neu anordnen legt die Reihenfolge auf der Website fest.",
           "Eine Preisänderung ändert nie bereits getätigte Buchungen."
         ]
       }
     ]
   },
   "create": "Kategorie hinzufügen",
+  "reorderCategories": "Kategorien neu anordnen",
+  "reorderTitle": "Kategorien neu anordnen",
+  "reorderDescription": "Ziehen Sie die Kategorien, um ihre Reihenfolge auf der Website zu ändern.",
+  "empty": "Keine Kategorien zum Anordnen.",
+  "cancel": "Abbrechen",
+  "save": "Reihenfolge speichern",
+  "saving": "Wird gespeichert...",
+  "saveSuccess": "Reihenfolge gespeichert.",
+  "saveError": "Die Reihenfolge konnte nicht gespeichert werden.",
+  "loadError": "Kategorien konnten nicht geladen werden.",
   "searchPlaceholder": "Kategorien suchen oder Filter hinzufügen...",
   "noData": "Noch keine Kategorien",
   "failTitle": "Kategorien konnten nicht geladen werden",
@@ -25,12 +35,43 @@
   "deleted": "Gelöscht",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "transmission": {
+        "manual": "Manuell",
+        "automatic": "Automatik"
+      },
+      "fuelType": {
+        "petrol": "Benzin",
+        "diesel": "Diesel",
+        "hybrid": "Hybrid",
+        "electric": "Elektrisch",
+        "other": "Andere"
+      },
+      "mileagePolicy": {
+        "unlimited": "Unbegrenzt",
+        "limited": "Begrenzt pro Tag"
+      }
+    },
     "name": "Name",
     "slug": "Webadressen-Name",
+    "description": "Beschreibung",
+    "images": "Fotos",
+    "videos": "Videos",
     "seats": "Sitze",
+    "doors": "Türen",
+    "luggage": "Gepäck",
     "transmission": "Getriebe",
     "fuelType": "Treibstoffart",
+    "features": "Ausstattung",
     "dailyRate": "Tagespreis",
+    "weekendDailyRate": "Tagespreis am Wochenende",
+    "weeklyRate": "Wochenpreis",
+    "rateSeasons": "Saisonpreise",
+    "depositAmount": "Kaution",
+    "mileagePolicy": "Kilometer",
+    "includedKmPerDay": "Inklusive Kilometer pro Tag",
+    "extraKmPrice": "Preis pro Zusatzkilometer",
+    "minDriverAge": "Mindestalter Fahrer/in",
     "isPublic": "Auf der Website",
     "sortOrder": "Sortierung",
     "createdAt": "Erstellt am",

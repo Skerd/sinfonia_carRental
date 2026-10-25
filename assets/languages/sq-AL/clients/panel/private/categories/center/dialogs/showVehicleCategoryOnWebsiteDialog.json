@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/dialogs/showVehicleCategoryOnWebsiteDialog.tsx",
+  "title": "Shfaq në faqe",
+  "description": "Klientët do të mund ta rezervojnë këtë kategori në faqe.",
+  "cancel": "Anulo",
+  "confirm": "Shfaq në faqe",
+  "busy": "Duke punuar…",
+  "axios": {
+    "start": {"title": "Duke e shfaqur kategorinë në faqe…", "time": 3000},
+    "success": {"title": "Kategoria shfaqet në faqe", "time": 3000},
+    "error": {"title": "Kategoria nuk u shfaq dot në faqe", "time": 3000}
+  }
+}

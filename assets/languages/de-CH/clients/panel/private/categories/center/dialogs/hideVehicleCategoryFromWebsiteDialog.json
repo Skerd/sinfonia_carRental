@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/dialogs/hideVehicleCategoryFromWebsiteDialog.tsx",
+  "title": "Von der Website ausblenden",
+  "description": "Kunden sehen diese Kategorie nicht mehr auf der Website. Das Personal kann sie weiterhin buchen.",
+  "cancel": "Abbrechen",
+  "confirm": "Von der Website ausblenden",
+  "busy": "Wird ausgeführt…",
+  "axios": {
+    "start": {"title": "Kategorie wird von der Website ausgeblendet…", "time": 3000},
+    "success": {"title": "Kategorie ist von der Website ausgeblendet", "time": 3000},
+    "error": {"title": "Die Kategorie konnte nicht von der Website ausgeblendet werden", "time": 3000}
+  }
+}

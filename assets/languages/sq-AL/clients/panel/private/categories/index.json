@@ -11,13 +11,23 @@
         "title": "Në këtë faqe",
         "items": [
           "Çmimet: zbatohet tarifa ditore, përveç kur një sezon e mbulon ditën; tarifa e fundjavës zbatohet të shtunave dhe të dielave lokale; tarifa javore përdoret për javë të plota kur është më e lirë.",
-          "Çaktivizoni «Shfaqet në faqe» për ta mbajtur një kategori vetëm për rezervimet e punonjësve.",
+          "Përdorni «Shfaq në faqe» ose «Fshih nga faqja» për të vendosur nëse klientët mund ta rezervojnë kategorinë. Rirenditja cakton rendin në faqe.",
           "Ndryshimi i një çmimi nuk ndryshon kurrë rezervimet e bëra tashmë."
         ]
       }
     ]
   },
   "create": "Shto kategori",
+  "reorderCategories": "Rirendit kategoritë",
+  "reorderTitle": "Rirendit kategoritë",
+  "reorderDescription": "Zvarritni kategoritë për të ndryshuar rendin e tyre në faqe.",
+  "empty": "Nuk ka kategori për t'u rirenditur.",
+  "cancel": "Anulo",
+  "save": "Ruaj rendin",
+  "saving": "Duke ruajtur...",
+  "saveSuccess": "Rendi i kategorive u ruajt.",
+  "saveError": "Rendi i kategorive nuk u ruajt.",
+  "loadError": "Kategoritë nuk u ngarkuan.",
   "searchPlaceholder": "Kërko kategori ose shto filtra...",
   "noData": "Ende pa kategori",
   "failTitle": "Kategoritë nuk u ngarkuan",
@@ -25,12 +35,43 @@
   "deleted": "Fshirë",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "transmission": {
+        "manual": "Manual",
+        "automatic": "Automatik"
+      },
+      "fuelType": {
+        "petrol": "Benzinë",
+        "diesel": "Naftë",
+        "hybrid": "Hibrid",
+        "electric": "Elektrik",
+        "other": "Tjetër"
+      },
+      "mileagePolicy": {
+        "unlimited": "Pa kufi",
+        "limited": "I kufizuar në ditë"
+      }
+    },
     "name": "Emri",
     "slug": "Emri i adresës web",
+    "description": "Përshkrimi",
+    "images": "Fotot",
+    "videos": "Videot",
     "seats": "Ulëset",
+    "doors": "Dyer",
+    "luggage": "Bagazhet",
     "transmission": "Kambio",
     "fuelType": "Lloji i karburantit",
+    "features": "Pajisjet",
     "dailyRate": "Tarifa ditore",
+    "weekendDailyRate": "Tarifa ditore e fundjavës",
+    "weeklyRate": "Tarifa javore",
+    "rateSeasons": "Tarifat sezonale",
+    "depositAmount": "Depozita",
+    "mileagePolicy": "Kilometrazhi",
+    "includedKmPerDay": "Km të përfshira në ditë",
+    "extraKmPrice": "Çmimi për km shtesë",
+    "minDriverAge": "Mosha minimale e shoferit",
     "isPublic": "Në faqe",
     "sortOrder": "Renditja",
     "createdAt": "Krijuar më",

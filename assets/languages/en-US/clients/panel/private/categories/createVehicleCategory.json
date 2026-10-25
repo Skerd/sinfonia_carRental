@@ -12,20 +12,40 @@
     "6": "Saturday"
   },
   "form": {
+    "dailyRateLabel": "Daily rate",
+    "dailyRatePlaceholder": "e.g. 49",
+    "depositAmountLabel": "Deposit",
+    "depositAmountPlaceholder": "e.g. 500",
     "descriptionLabel": "Description",
     "descriptionPlaceholder": "What customers should know about this category",
+    "doorsLabel": "Doors",
+    "doorsPlaceholder": "e.g. 4",
+    "extraKmPriceLabel": "Price per extra km",
+    "extraKmPricePlaceholder": "e.g. 0.25",
     "featuresLabel": "Features",
     "featuresPlaceholder": "e.g. Air conditioning",
+    "fuelType": {
+      "diesel": "Diesel",
+      "electric": "Electric",
+      "hybrid": "Hybrid",
+      "other": "Other",
+      "petrol": "Petrol"
+    },
     "fuelTypeLabel": "Fuel",
     "fuelTypePlaceholder": "Select fuel",
     "imagesLabel": "Photos",
-    "isPublicLabel": "Shown on the website",
+    "includedKmPerDayLabel": "Included km per day",
+    "includedKmPerDayPlaceholder": "e.g. 200",
+    "luggageLabel": "Luggage",
+    "luggagePlaceholder": "e.g. 2",
     "mileagePolicy": {
       "limited": "Limited per day",
       "unlimited": "Unlimited"
     },
     "mileagePolicyLabel": "Mileage",
     "mileagePolicyPlaceholder": "Select mileage policy",
+    "minDriverAgeLabel": "Minimum driver age",
+    "minDriverAgePlaceholder": "e.g. 21",
     "nameLabel": "Name",
     "namePlaceholder": "e.g. Zurich Airport",
     "pricingSectionTitle": "Prices",
@@ -37,8 +57,12 @@
     "seasonRemoveRow": "Remove",
     "seasonRowTitle": "Season",
     "seasonStartLabel": "From",
+    "seatsLabel": "Seats",
+    "seatsPlaceholder": "e.g. 5",
     "slugLabel": "Web address name",
     "slugPlaceholder": "e.g. compact",
+    "sortOrderLabel": "Sort order",
+    "sortOrderPlaceholder": "e.g. 1",
     "specsSectionTitle": "Specifications",
     "transmission": {
       "automatic": "Automatic",
@@ -46,7 +70,11 @@
     },
     "transmissionLabel": "Transmission",
     "transmissionPlaceholder": "Select transmission",
-    "videosLabel": "Videos"
+    "videosLabel": "Videos",
+    "weekendDailyRateLabel": "Weekend daily rate",
+    "weekendDailyRatePlaceholder": "e.g. 59",
+    "weeklyRateLabel": "Weekly rate",
+    "weeklyRatePlaceholder": "e.g. 280"
   },
   "axios": {
     "start": {

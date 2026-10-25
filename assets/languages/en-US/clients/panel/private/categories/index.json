@@ -11,13 +11,23 @@
         "title": "On this page",
         "items": [
           "Prices: the daily rate applies unless a season covers the day; a weekend rate applies on local Saturdays and Sundays; a weekly rate is used for whole weeks when it is cheaper.",
-          "Turn off 'Shown on the website' to keep a category for staff bookings only.",
+          "Use Show on the website or Hide from the website to decide whether customers can book the category. Reorder sets the order on the website.",
           "Changing a price never changes bookings already made."
         ]
       }
     ]
   },
   "create": "Add category",
+  "reorderCategories": "Reorder categories",
+  "reorderTitle": "Reorder categories",
+  "reorderDescription": "Drag categories to change their order on the website.",
+  "empty": "No categories to reorder.",
+  "cancel": "Cancel",
+  "save": "Save order",
+  "saving": "Saving...",
+  "saveSuccess": "Category order saved.",
+  "saveError": "Failed to save category order.",
+  "loadError": "Failed to load categories.",
   "searchPlaceholder": "Search categories or add filters...",
   "noData": "No categories yet",
   "failTitle": "Failed to load categories",
@@ -25,12 +35,43 @@
   "deleted": "Deleted",
   "active": "Active",
   "fields": {
+    "!enums": {
+      "transmission": {
+        "manual": "Manual",
+        "automatic": "Automatic"
+      },
+      "fuelType": {
+        "petrol": "Petrol",
+        "diesel": "Diesel",
+        "hybrid": "Hybrid",
+        "electric": "Electric",
+        "other": "Other"
+      },
+      "mileagePolicy": {
+        "unlimited": "Unlimited",
+        "limited": "Limited per day"
+      }
+    },
     "name": "Name",
     "slug": "Slug",
+    "description": "Description",
+    "images": "Photos",
+    "videos": "Videos",
     "seats": "Seats",
+    "doors": "Doors",
+    "luggage": "Luggage",
     "transmission": "Transmission",
     "fuelType": "Fuel type",
+    "features": "Features",
     "dailyRate": "Daily rate",
+    "weekendDailyRate": "Weekend daily rate",
+    "weeklyRate": "Weekly rate",
+    "rateSeasons": "Seasonal prices",
+    "depositAmount": "Deposit",
+    "mileagePolicy": "Mileage",
+    "includedKmPerDay": "Included km per day",
+    "extraKmPrice": "Price per extra km",
+    "minDriverAge": "Minimum driver age",
     "isPublic": "On the website",
     "sortOrder": "Sort order",
     "createdAt": "Created at",

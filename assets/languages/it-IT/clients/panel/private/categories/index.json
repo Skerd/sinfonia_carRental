@@ -11,13 +11,23 @@
         "title": "In questa pagina",
         "items": [
           "Prezzi: si applica la tariffa giornaliera salvo che una stagione copra il giorno; una tariffa weekend si applica il sabato e la domenica locali; una tariffa settimanale si usa per settimane intere quando è più conveniente.",
-          "Disattiva «Mostrato sul sito web» per riservare una categoria alle prenotazioni del personale.",
+          "Usa «Mostra sul sito web» o «Nascondi dal sito web» per decidere se i clienti possono prenotare la categoria. Riordina imposta l'ordine sul sito web.",
           "Cambiare un prezzo non modifica mai le prenotazioni già fatte."
         ]
       }
     ]
   },
   "create": "Aggiungi categoria",
+  "reorderCategories": "Riordina le categorie",
+  "reorderTitle": "Riordina le categorie",
+  "reorderDescription": "Trascina le categorie per cambiare il loro ordine sul sito web.",
+  "empty": "Nessuna categoria da riordinare.",
+  "cancel": "Annulla",
+  "save": "Salva ordine",
+  "saving": "Salvataggio...",
+  "saveSuccess": "Ordine delle categorie salvato.",
+  "saveError": "Impossibile salvare l'ordine delle categorie.",
+  "loadError": "Impossibile caricare le categorie.",
   "searchPlaceholder": "Cerca categorie o aggiungi filtri...",
   "noData": "Nessuna categoria",
   "failTitle": "Impossibile caricare le categorie",
@@ -25,12 +35,43 @@
   "deleted": "Eliminato",
   "active": "Attivo",
   "fields": {
+    "!enums": {
+      "transmission": {
+        "manual": "Manuale",
+        "automatic": "Automatico"
+      },
+      "fuelType": {
+        "petrol": "Benzina",
+        "diesel": "Diesel",
+        "hybrid": "Ibrido",
+        "electric": "Elettrico",
+        "other": "Altro"
+      },
+      "mileagePolicy": {
+        "unlimited": "Illimitato",
+        "limited": "Limitato al giorno"
+      }
+    },
     "name": "Nome",
     "slug": "Nome per l'indirizzo web",
+    "description": "Descrizione",
+    "images": "Foto",
+    "videos": "Video",
     "seats": "Posti",
+    "doors": "Porte",
+    "luggage": "Bagagli",
     "transmission": "Cambio",
     "fuelType": "Tipo di carburante",
+    "features": "Dotazioni",
     "dailyRate": "Tariffa giornaliera",
+    "weekendDailyRate": "Tariffa giornaliera nel weekend",
+    "weeklyRate": "Tariffa settimanale",
+    "rateSeasons": "Tariffe stagionali",
+    "depositAmount": "Cauzione",
+    "mileagePolicy": "Chilometraggio",
+    "includedKmPerDay": "Km inclusi al giorno",
+    "extraKmPrice": "Prezzo per km extra",
+    "minDriverAge": "Età minima del conducente",
     "isPublic": "Sul sito web",
     "sortOrder": "Ordinamento",
     "createdAt": "Creato il",

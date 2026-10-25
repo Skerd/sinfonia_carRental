@@ -9,5 +9,7 @@
     "manual": "Manual",
     "automatic": "Automatik"
   },
-  "isPublic": "Në faqe"
+  "isPublic": "Në faqe",
+  "sortOrder": "Renditja",
+  "hiddenFromWebsite": "E fshehur nga faqja"
 }

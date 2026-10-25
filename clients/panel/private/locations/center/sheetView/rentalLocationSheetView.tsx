@@ -7,6 +7,10 @@ import SheetViewRenderer from "@coreModule/components/viewEngine/SheetViewRender
 import {useViewConfig} from "@coreModule/helpers/hooks/useViewConfig.ts";
 import type {RentalLocation} from "armonia/src/modules/carRental/api/carRental/private/rentalLocation/rentalLocation.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
+import ActivateRentalLocation from "@carRentalModule/clients/panel/private/locations/center/actions/activateRentalLocation.tsx";
+import DeactivateRentalLocation from "@carRentalModule/clients/panel/private/locations/center/actions/deactivateRentalLocation.tsx";
+import ActivateRentalLocationDialog from "@carRentalModule/clients/panel/private/locations/center/dialogs/activateRentalLocationDialog.tsx";
+import DeactivateRentalLocationDialog from "@carRentalModule/clients/panel/private/locations/center/dialogs/deactivateRentalLocationDialog.tsx";
 
 type RentalLocationSheetViewOwnProps = {
     open: boolean;
@@ -16,6 +20,7 @@ type RentalLocationSheetViewOwnProps = {
     onDelete?: (response?: DeletedData) => void;
     onRestore?: () => void;
     onSheetRowPatched?: (patch: Partial<RentalLocation>) => void;
+    onActiveChanged?: (isActive: boolean) => void;
     fetchId?: string;
 };
 
@@ -28,11 +33,17 @@ function RentalLocationSheetView({
     onDelete = () => {},
     onRestore = () => {},
     onSheetRowPatched,
+    onActiveChanged,
     fetchId,
 }: RentalLocationSheetViewOwnProps & WithLanguageType) {
     const [sheetData, setSheetData] = useState<Record<string, unknown>>(rentalLocationProp || {_id: fetchId});
+    const [action, setAction] = useState("");
     const access = useAccess("rentallocations");
     const viewConfig = useViewConfig("rentallocations", "sheet");
+
+    useEffect(() => {
+        if (!open) setAction("");
+    }, [open]);
 
     useEffect(() => {
         if (!rentalLocationProp) return;
@@ -42,26 +53,61 @@ function RentalLocationSheetView({
     const entityId = rentalLocationProp?._id ?? fetchId;
     if (!viewConfig || !entityId) return null;
 
+    const asEntity = sheetData as RentalLocation;
+
     return (
-        <SheetViewRenderer
-            config={viewConfig}
-            url="/api/carRental/rentalLocation/single"
-            fetchId={fetchId ?? entityId}
-            onDataFetched={(data) => setSheetData(data)}
-            data={sheetData}
-            open={open}
-            onOpenChange={onOpenChange}
-            resolveLanguageKey={resolveLanguageKey}
-            access={access}
-            hideActions={hideActions}
-            onDelete={onDelete}
-            onRestore={onRestore}
-            editPath={`/tenancy/systemSettings/rentalLocations/edit?rentalLocationId=${entityId}`}
-            onSheetRowPatched={(row) => {
-                setSheetData(row);
-                onSheetRowPatched?.(row as Partial<RentalLocation>);
-            }}
-        />
+        <>
+            <SheetViewRenderer
+                config={viewConfig}
+                url="/api/carRental/rentalLocation/single"
+                fetchId={fetchId ?? entityId}
+                onDataFetched={(data) => setSheetData(data)}
+                data={sheetData}
+                open={open}
+                onOpenChange={onOpenChange}
+                resolveLanguageKey={resolveLanguageKey}
+                access={access}
+                hideActions={hideActions}
+                onDelete={onDelete}
+                onRestore={onRestore}
+                editPath={`/tenancy/systemSettings/rentalLocations/edit?rentalLocationId=${entityId}`}
+                onSheetRowPatched={(row) => {
+                    setSheetData(row);
+                    onSheetRowPatched?.(row as Partial<RentalLocation>);
+                }}
+                actionMenuAllowCustomChildren
+                actionMenuChildren={
+                    <>
+                        <ActivateRentalLocation entity={asEntity} onAction={(a: string) => setAction(a)} />
+                        <DeactivateRentalLocation entity={asEntity} onAction={(a: string) => setAction(a)} />
+                    </>
+                }
+            />
+            {action === "activateRentalLocation" && (
+                <ActivateRentalLocationDialog
+                    open
+                    onClose={() => setAction("")}
+                    entity={asEntity}
+                    onSuccess={() => {
+                        setSheetData((prev) => ({...prev, isActive: true}));
+                        onSheetRowPatched?.({isActive: true});
+                        onActiveChanged?.(true);
+                    }}
+                />
+            )}
+            {action === "deactivateRentalLocation" && (
+                <DeactivateRentalLocationDialog
+                    open
+                    onClose={() => setAction("")}
+                    entity={asEntity}
+                    onSuccess={() => {
+                        setSheetData((prev) => ({...prev, isActive: false}));
+                        onSheetRowPatched?.({isActive: false});
+                        onActiveChanged?.(false);
+                    }}
+                />
+            )}
+        </>
     );
 }
 

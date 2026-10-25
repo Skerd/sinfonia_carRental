@@ -9,6 +9,6 @@ export default createGenericCreatePage<CreateRentalExtraFormType>({
     accessModel: "rentalextras",
     apiUrl: "/api/carRental/rentalExtra",
     schema: createRentalExtraFormSchema,
-    defaultValues: {name: "", pricing: "per_day", price: 0, maxQuantity: 1, isActive: true},
+    defaultValues: {name: "", pricing: "per_day", price: 0, maxQuantity: 1},
     submitIcon: <IconPlus />,
 });

@@ -14,7 +14,6 @@
   "form": {
     "descriptionLabel": "Description",
     "descriptionPlaceholder": "Ce que les clients doivent savoir sur cette catégorie",
-    "isActiveLabel": "Actif",
     "maxQuantityLabel": "Maximum par réservation",
     "maxQuantityPlaceholder": "Saisir la quantité maximale",
     "nameLabel": "Nom",

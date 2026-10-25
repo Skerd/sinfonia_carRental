@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/center/dialogs/deactivateRentalExtraDialog.tsx",
+  "title": "Disattiva extra",
+  "description": "Questo extra non sarà più proposto finché non viene riattivato.",
+  "cancel": "Annulla",
+  "confirm": "Disattiva",
+  "busy": "Operazione in corso…",
+  "axios": {
+    "start": {
+      "title": "Disattivazione dell'extra…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Extra disattivato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile disattivare l'extra",
+      "time": 3000
+    }
+  }
+}

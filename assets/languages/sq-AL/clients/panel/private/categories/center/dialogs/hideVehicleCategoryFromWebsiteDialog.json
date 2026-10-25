@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/dialogs/hideVehicleCategoryFromWebsiteDialog.tsx",
+  "title": "Fshih nga faqja",
+  "description": "Klientët nuk e shohin më këtë kategori në faqe. Stafi mund ta rezervojë ende.",
+  "cancel": "Anulo",
+  "confirm": "Fshih nga faqja",
+  "busy": "Duke punuar…",
+  "axios": {
+    "start": {"title": "Duke e fshehur kategorinë nga faqja…", "time": 3000},
+    "success": {"title": "Kategoria është fshehur nga faqja", "time": 3000},
+    "error": {"title": "Kategoria nuk u fsheh dot nga faqja", "time": 3000}
+  }
+}

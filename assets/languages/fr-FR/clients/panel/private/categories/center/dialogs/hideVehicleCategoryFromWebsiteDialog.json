@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/dialogs/hideVehicleCategoryFromWebsiteDialog.tsx",
+  "title": "Masquer du site web",
+  "description": "Les clients ne verront plus cette catégorie sur le site web. Le personnel peut toujours la réserver.",
+  "cancel": "Annuler",
+  "confirm": "Masquer du site web",
+  "busy": "En cours…",
+  "axios": {
+    "start": {"title": "Masquage de la catégorie du site web…", "time": 3000},
+    "success": {"title": "La catégorie est masquée du site web", "time": 3000},
+    "error": {"title": "Impossible de masquer la catégorie du site web", "time": 3000}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/center/dialogs/deactivateRentalLocationDialog.tsx",
+  "title": "Standort deaktivieren",
+  "description": "Dieser Standort wird nicht mehr angeboten, bis er wieder aktiviert wird.",
+  "cancel": "Abbrechen",
+  "confirm": "Deaktivieren",
+  "busy": "Wird ausgeführt…",
+  "axios": {
+    "start": {
+      "title": "Standort wird deaktiviert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Standort deaktiviert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Standort konnte nicht deaktiviert werden",
+      "time": 3000
+    }
+  }
+}

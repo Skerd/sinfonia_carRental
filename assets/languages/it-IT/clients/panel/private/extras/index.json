@@ -11,12 +11,23 @@
         "title": "In questa pagina",
         "items": [
           "Gli extra al giorno vengono addebitati per ogni giorno di noleggio; quelli per noleggio una sola volta.",
-          "Disattiva un extra per non offrirlo più; le prenotazioni esistenti mantengono il loro prezzo."
+          "Disattiva un extra per non offrirlo più; le prenotazioni esistenti mantengono il loro prezzo.",
+          "Riordina imposta l'ordine che i clienti vedono sul sito web."
         ]
       }
     ]
   },
   "create": "Aggiungi extra",
+  "reorderExtras": "Riordina gli extra",
+  "reorderTitle": "Riordina gli extra",
+  "reorderDescription": "Trascina gli extra per cambiare il loro ordine sul sito web.",
+  "empty": "Nessun extra da riordinare.",
+  "cancel": "Annulla",
+  "save": "Salva ordine",
+  "saving": "Salvataggio...",
+  "saveSuccess": "Ordine degli extra salvato.",
+  "saveError": "Impossibile salvare l'ordine degli extra.",
+  "loadError": "Impossibile caricare gli extra.",
   "searchPlaceholder": "Cerca extra o aggiungi filtri...",
   "noData": "Nessun extra",
   "failTitle": "Impossibile caricare gli extra",

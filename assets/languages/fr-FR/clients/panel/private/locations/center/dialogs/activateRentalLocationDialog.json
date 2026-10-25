@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/locations/center/dialogs/activateRentalLocationDialog.tsx",
+  "title": "Activer le site",
+  "description": "Ce site sera proposé pour les nouvelles réservations.",
+  "cancel": "Annuler",
+  "confirm": "Activer",
+  "busy": "En cours…",
+  "axios": {
+    "start": {
+      "title": "Activation du site…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Site activé",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible d'activer le site",
+      "time": 3000
+    }
+  }
+}

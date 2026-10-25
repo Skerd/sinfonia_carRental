@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/extras/center/dialogs/activateRentalExtraDialog.tsx",
+  "title": "Activer l'extra",
+  "description": "Cet extra sera proposé pour les nouvelles réservations.",
+  "cancel": "Annuler",
+  "confirm": "Activer",
+  "busy": "En cours…",
+  "axios": {
+    "start": {
+      "title": "Activation de l'extra…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Extra activé",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible d'activer l'extra",
+      "time": 3000
+    }
+  }
+}
