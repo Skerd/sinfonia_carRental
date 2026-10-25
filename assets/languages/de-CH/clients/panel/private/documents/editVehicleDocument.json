@@ -12,6 +12,7 @@
     "6": "Samstag"
   },
   "form": {
+    "identificationSectionTitle": "Identifikation",
     "vehicleLabel": "Fahrzeug",
     "vehiclePlaceholder": "Fahrzeug wählen",
     "typeLabel": "Art",
@@ -20,6 +21,7 @@
     "documentNumberPlaceholder": "Nummer auf dem Dokument",
     "issuerLabel": "Ausgestellt von",
     "issuerPlaceholder": "z. B. DPSHTRR",
+    "validitySectionTitle": "Gültigkeit",
     "issuedAtLabel": "Ausgestellt am",
     "issuedAtPlaceholder": "Datum wählen",
     "expiresAtLabel": "Läuft ab am",

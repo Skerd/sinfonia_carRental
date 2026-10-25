@@ -12,6 +12,7 @@
     "6": "Saturday"
   },
   "form": {
+    "identificationSectionTitle": "Identification",
     "vehicleLabel": "Vehicle",
     "vehiclePlaceholder": "Select vehicle",
     "typeLabel": "Type",
@@ -20,6 +21,7 @@
     "documentNumberPlaceholder": "Number on the document",
     "issuerLabel": "Issued by",
     "issuerPlaceholder": "e.g. DPSHTRR",
+    "validitySectionTitle": "Validity",
     "issuedAtLabel": "Issued on",
     "issuedAtPlaceholder": "Pick a date",
     "expiresAtLabel": "Expires on",

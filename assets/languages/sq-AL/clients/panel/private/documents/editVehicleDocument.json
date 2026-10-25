@@ -12,6 +12,7 @@
     "6": "E shtunë"
   },
   "form": {
+    "identificationSectionTitle": "Identifikimi",
     "vehicleLabel": "Automjeti",
     "vehiclePlaceholder": "Zgjidhni automjetin",
     "typeLabel": "Lloji",
@@ -20,6 +21,7 @@
     "documentNumberPlaceholder": "Numri në dokument",
     "issuerLabel": "Lëshuar nga",
     "issuerPlaceholder": "p.sh. DPSHTRR",
+    "validitySectionTitle": "Vlefshmëria",
     "issuedAtLabel": "Lëshuar më",
     "issuedAtPlaceholder": "Zgjidhni datën",
     "expiresAtLabel": "Skadon më",

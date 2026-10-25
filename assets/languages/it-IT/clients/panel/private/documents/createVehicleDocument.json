@@ -12,6 +12,7 @@
     "6": "Sabato"
   },
   "form": {
+    "identificationSectionTitle": "Identificazione",
     "vehicleLabel": "Veicolo",
     "vehiclePlaceholder": "Seleziona un veicolo",
     "typeLabel": "Tipo",
@@ -20,6 +21,7 @@
     "documentNumberPlaceholder": "Numero riportato sul documento",
     "issuerLabel": "Emesso da",
     "issuerPlaceholder": "es. DPSHTRR",
+    "validitySectionTitle": "Validità",
     "issuedAtLabel": "Emesso il",
     "issuedAtPlaceholder": "Scegli una data",
     "expiresAtLabel": "Scade il",

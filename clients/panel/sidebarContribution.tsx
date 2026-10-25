@@ -8,7 +8,7 @@ import {
     IconTool,
 } from "@tabler/icons-react";
 import type {SidebarContribution} from "@coreModule/helpers/types/sidebarContribution.types.ts";
-import type {NavGroup, NavItem} from "@coreModule/helpers/types/sidebarNav.types.ts";
+import type {NavCollapsible, NavGroup, NavItem} from "@coreModule/helpers/types/sidebarNav.types.ts";
 import type {ResolveLanguageKey} from "@coreModule/helpers/hocs/withLanguage.tsx";
 
 const carRentalSidebarContribution: SidebarContribution = {
@@ -23,6 +23,19 @@ const carRentalSidebarContribution: SidebarContribution = {
             usersPermissions: [],
             atLeastOnePermission: true,
         });
+        const fleetOps: NavCollapsible = {
+            title: resolveLanguageKey("menus.carRental.fleetOps.title"),
+            icon: IconEngine,
+            permissions: [],
+            usersPermissions: [],
+            atLeastOnePermission: true,
+            items: [
+                item("maintenance", IconEngine, "vehiclemaintenances"),
+                item("damages", IconCarCrash, "vehicledamages"),
+                item("insurance", IconShieldCheck, "vehicleinsurances"),
+                item("documents", IconFileCertificate, "vehicledocuments"),
+            ],
+        };
         return [
             {
                 title: resolveLanguageKey("menus.carRental.title"),
@@ -33,18 +46,7 @@ const carRentalSidebarContribution: SidebarContribution = {
                     item("reservations", IconCalendarEvent, "rentalreservations"),
                     item("vehicles", IconCar, "vehicles"),
                     item("blocks", IconTool, "vehicleblocks"),
-                ],
-            },
-            {
-                title: resolveLanguageKey("menus.carRental.fleetOps.title"),
-                permissions: [],
-                usersPermissions: [],
-                atLeastOnePermission: true,
-                items: [
-                    item("maintenance", IconEngine, "vehiclemaintenances"),
-                    item("damages", IconCarCrash, "vehicledamages"),
-                    item("insurance", IconShieldCheck, "vehicleinsurances"),
-                    item("documents", IconFileCertificate, "vehicledocuments"),
+                    fleetOps,
                 ],
             },
         ];

@@ -11,7 +11,7 @@ import {Textarea} from "@coreModule/components/ui/textarea.tsx";
 import {Switch} from "@coreModule/components/ui/switch.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {SimpleSelect} from "@coreModule/components/viewEngine/widgets/inputs/simpleSelect.tsx";
-import type {ReturnRentalReservationFormType} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.forms.ts";
+import type {ReturnRentalReservationFormType} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.schema-def.ts";
 
 const FUEL_LEVELS = ["empty", "quarter", "half", "three_quarters", "full"];
 

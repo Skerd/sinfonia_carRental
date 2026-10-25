@@ -7,7 +7,7 @@ import type {RentalReservation} from "armonia/src/modules/carRental/api/carRenta
 import ReservationActionDialogShell from "./reservationActionDialogShell.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
 import {Label} from "@coreModule/components/ui/label.tsx";
-import type {ExtendRentalReservationFormType} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.forms.ts";
+import type {ExtendRentalReservationFormType} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.schema-def.ts";
 
 type Props = WithLanguageType & WithAxiosType<RentalReservation, ExtendRentalReservationFormType> & {
     reservation: RentalReservation;

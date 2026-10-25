@@ -1,7 +1,7 @@
 import {IconPlus} from "@tabler/icons-react";
 import {createGenericCreatePage} from "@coreModule/components/entityPage/pages/createGenericCreatePage.tsx";
 import {createRentalReservationFormSchema} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.form.validators.ts";
-import type {CreateRentalReservationFormType} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.forms.ts";
+import type {CreateRentalReservationFormType} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.schema-def.ts";
 
 export default createGenericCreatePage<CreateRentalReservationFormType>({
     languagePath: "src/modules/carRental/clients/panel/private/reservations/createRentalReservation.tsx",
