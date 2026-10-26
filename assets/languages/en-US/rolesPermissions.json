@@ -31,6 +31,7 @@
       "paymentPolicy": "Payment policy",
       "pricesIncludeVat": "Prices include vat",
       "publicBookingEnabled": "Public booking enabled",
+      "listedOnPortal": "Listed on portal",
       "termsText": "Terms text",
       "termsVersion": "Terms version",
       "turnaroundBufferMinutes": "Turnaround buffer minutes",

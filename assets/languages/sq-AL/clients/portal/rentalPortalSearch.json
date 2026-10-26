@@ -1,0 +1,11 @@
+{
+  "path": "src/modules/carRental/clients/portal/rentalPortalSearch.tsx",
+  "pickupDate": "Data e marrjes",
+  "pickupTime": "Ora e marrjes",
+  "returnDate": "Data e kthimit",
+  "returnTime": "Ora e kthimit",
+  "search": "Gjej makina",
+  "book": "Rezervo",
+  "failed": "Kërkimi dështoi. Kontrolloni datat.",
+  "noCars": "Asnjë makinë e lirë për këto data këtu. Provoni data të tjera ose një qytet tjetër."
+}

@@ -1,0 +1,17 @@
+/* Design tokens of this site, shared with the portal (which renders its pages). */
+
+@theme {
+    --color-rent-ink: #14202b;
+    --color-rent-ink-muted: rgba(20, 32, 43, 0.7);
+    --color-rent-ink-faded: rgba(20, 32, 43, 0.5);
+    --color-rent-accent: #0e6b5c;
+    --color-rent-accent-strong: #0a5246;
+    --color-rent-surface: #f4f2ed;
+    --color-rent-card: #ffffff;
+    --color-rent-border: rgba(20, 32, 43, 0.14);
+    --color-rent-success: #1d6b45;
+    --color-rent-danger: #b42318;
+    --color-rent-warning: #8a5a00;
+    --font-rent-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+    --font-rent-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+}

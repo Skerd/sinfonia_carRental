@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/portal/myRentalReservations.tsx",
+  "none": "Aucune location pour l'instant.",
+  "manage": "Gérer",
+  "status": {
+    "held": "En attente de paiement",
+    "confirmed": "Confirmée",
+    "in_progress": "En cours",
+    "completed": "Terminée",
+    "cancelled": "Annulée",
+    "expired": "Expirée",
+    "no_show": "Non présenté"
+  }
+}

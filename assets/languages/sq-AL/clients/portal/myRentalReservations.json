@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/portal/myRentalReservations.tsx",
+  "none": "Ende asnjë qira.",
+  "manage": "Menaxho",
+  "status": {
+    "held": "Në pritje të pagesës",
+    "confirmed": "E konfirmuar",
+    "in_progress": "Në vazhdim",
+    "completed": "E përfunduar",
+    "cancelled": "E anuluar",
+    "expired": "E skaduar",
+    "no_show": "Nuk u paraqit"
+  }
+}

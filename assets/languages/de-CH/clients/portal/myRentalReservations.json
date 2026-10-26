@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/portal/myRentalReservations.tsx",
+  "none": "Noch keine Automiete.",
+  "manage": "Verwalten",
+  "status": {
+    "held": "Zahlung ausstehend",
+    "confirmed": "Bestätigt",
+    "in_progress": "Laufend",
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert",
+    "expired": "Abgelaufen",
+    "no_show": "Nicht erschienen"
+  }
+}

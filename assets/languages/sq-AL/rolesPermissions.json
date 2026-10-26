@@ -31,6 +31,7 @@
       "paymentPolicy": "Rregulli i pagesës",
       "pricesIncludeVat": "Çmimet përfshijnë TVSH-në",
       "publicBookingEnabled": "Rezervimi publik aktiv",
+      "listedOnPortal": "Listuar në portal",
       "termsText": "Teksti i kushteve",
       "termsVersion": "Versioni i kushteve",
       "turnaroundBufferMinutes": "Koha e përgatitjes (minuta)",

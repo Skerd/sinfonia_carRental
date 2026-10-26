@@ -31,6 +31,7 @@
       "paymentPolicy": "Zahlungsregel",
       "pricesIncludeVat": "Preise inkl. MwSt.",
       "publicBookingEnabled": "Öffentliche Buchung aktiviert",
+      "listedOnPortal": "Im Portal gelistet",
       "termsText": "Text der Bedingungen",
       "termsVersion": "Version der Bedingungen",
       "turnaroundBufferMinutes": "Wechselzeit (Minuten)",

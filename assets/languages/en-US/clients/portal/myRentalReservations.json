@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/portal/myRentalReservations.tsx",
+  "none": "No car rental yet.",
+  "manage": "Manage",
+  "status": {
+    "held": "Awaiting payment",
+    "confirmed": "Confirmed",
+    "in_progress": "In progress",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "expired": "Expired",
+    "no_show": "No-show"
+  }
+}

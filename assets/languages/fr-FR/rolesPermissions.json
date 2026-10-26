@@ -31,6 +31,7 @@
       "paymentPolicy": "Politique de paiement",
       "pricesIncludeVat": "Prix TTC",
       "publicBookingEnabled": "Réservation publique activée",
+      "listedOnPortal": "Listé sur le portail",
       "termsText": "Texte des conditions",
       "termsVersion": "Version des conditions",
       "turnaroundBufferMinutes": "Délai de rotation (minutes)",

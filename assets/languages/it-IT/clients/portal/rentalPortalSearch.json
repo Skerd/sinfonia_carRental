@@ -1,0 +1,11 @@
+{
+  "path": "src/modules/carRental/clients/portal/rentalPortalSearch.tsx",
+  "pickupDate": "Data di ritiro",
+  "pickupTime": "Ora di ritiro",
+  "returnDate": "Data di riconsegna",
+  "returnTime": "Ora di riconsegna",
+  "search": "Trova auto",
+  "book": "Prenota",
+  "failed": "La ricerca non è riuscita. Controlla le date.",
+  "noCars": "Nessuna auto libera per queste date qui. Prova altre date o un'altra città."
+}

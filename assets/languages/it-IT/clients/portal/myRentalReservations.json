@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/portal/myRentalReservations.tsx",
+  "none": "Ancora nessun noleggio.",
+  "manage": "Gestisci",
+  "status": {
+    "held": "In attesa di pagamento",
+    "confirmed": "Confermata",
+    "in_progress": "In corso",
+    "completed": "Completata",
+    "cancelled": "Annullata",
+    "expired": "Scaduta",
+    "no_show": "Mancata presentazione"
+  }
+}

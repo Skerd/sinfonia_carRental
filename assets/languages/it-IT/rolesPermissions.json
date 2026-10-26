@@ -31,6 +31,7 @@
       "paymentPolicy": "Regola di pagamento",
       "pricesIncludeVat": "Prezzi IVA inclusa",
       "publicBookingEnabled": "Prenotazione pubblica attivata",
+      "listedOnPortal": "Elencato sul portale",
       "termsText": "Testo delle condizioni",
       "termsVersion": "Versione delle condizioni",
       "turnaroundBufferMinutes": "Tempo di ripristino (minuti)",

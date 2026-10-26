@@ -1,0 +1,11 @@
+{
+  "path": "src/modules/carRental/clients/portal/rentalPortalSearch.tsx",
+  "pickupDate": "Abholdatum",
+  "pickupTime": "Abholzeit",
+  "returnDate": "Rückgabedatum",
+  "returnTime": "Rückgabezeit",
+  "search": "Autos suchen",
+  "book": "Buchen",
+  "failed": "Die Suche ist fehlgeschlagen. Prüfen Sie die Daten.",
+  "noCars": "Für diese Daten ist hier kein Auto frei. Versuchen Sie andere Daten oder einen anderen Ort."
+}

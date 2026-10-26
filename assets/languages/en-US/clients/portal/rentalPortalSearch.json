@@ -1,0 +1,11 @@
+{
+  "path": "src/modules/carRental/clients/portal/rentalPortalSearch.tsx",
+  "pickupDate": "Pick-up date",
+  "pickupTime": "Pick-up time",
+  "returnDate": "Return date",
+  "returnTime": "Return time",
+  "search": "Find cars",
+  "book": "Book",
+  "failed": "The search failed. Check the dates and try again.",
+  "noCars": "No car is free for these dates here. Try other dates or another city."
+}
