@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import {compose} from "redux";
 import {Link, useSearchParams} from "react-router-dom";
+import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
 import {normalizeError} from "@coreModule/helpers/general/errors.ts";
@@ -11,11 +12,12 @@ import RentalSearchForm from "../shared/rentalSearchForm.tsx";
 import RentalCategoryFacts from "../shared/rentalCategoryFacts.tsx";
 import RentalCategoryMedia from "../shared/rentalCategoryMedia.tsx";
 import {tripFromSearch, tripToSearch} from "../shared/rentalTripParams.ts";
-import {RENT_CARD, RENT_HEADING, RENT_PRIMARY_BUTTON} from "../shared/rentalStyles.ts";
+import {Button} from "@coreModule/components/ui/button.tsx";
 
 type Results = RentalSearchResponse["data"]["results"];
 
 function SearchPage({resolveLanguageKey}: WithLanguageType) {
+    const base = useSectionBase();
     const [params] = useSearchParams();
     const {formatMoney} = useRentalConfig();
     const trip = tripFromSearch(params);
@@ -39,50 +41,55 @@ function SearchPage({resolveLanguageKey}: WithLanguageType) {
     }, [tripKey]);
 
     return (
-        <div className="flex flex-col gap-6">
-            <div className={RENT_CARD}>
+        <div className="flex flex-col gap-10">
+            <div className="rounded-3xl bg-muted p-5 sm:p-8">
                 <RentalSearchForm key={tripKey} initial={trip} />
             </div>
 
-            {!trip ? <p className="text-rent-ink-muted">{resolveLanguageKey("noTrip")}</p> : null}
-            {error ? <div className={`${RENT_CARD} text-rent-danger`} role="alert">{error}</div> : null}
+            {!trip ? <p className="text-muted-foreground">{resolveLanguageKey("noTrip")}</p> : null}
+            {error ? <p className="text-destructive" role="alert">{error}</p> : null}
             {trip && !results && !error ? <Loader /> : null}
 
             {results ? (
-                <section className="flex flex-col gap-4" aria-live="polite">
-                    <h1 className={`${RENT_HEADING} text-2xl`}>{resolveLanguageKey("resultsTitle")}</h1>
-                    {results.length === 0 ? <p className="text-rent-ink-muted">{resolveLanguageKey("noCategories")}</p> : null}
-                    <ul className="flex flex-col gap-4">
-                        {results.map(({category, available, quote}) => (
-                            <li key={category._id} className="grid overflow-hidden rounded-2xl border border-rent-border bg-rent-card sm:grid-cols-[240px_1fr]">
-                                <RentalCategoryMedia category={category} coverClassName="h-full min-h-32 max-h-56 w-full" />
-                                <div className="flex flex-col gap-3 p-5 sm:flex-row sm:items-end sm:justify-between">
-                                    <div className="flex flex-col gap-1.5">
-                                        <h2 className={`${RENT_HEADING} text-xl`}>{category.name}</h2>
-                                        <p className="text-sm text-rent-ink-faded">{resolveLanguageKey("orSimilar")}</p>
-                                        <RentalCategoryFacts category={category} />
-                                        <p className="text-sm text-rent-ink-muted">
-                                            {category.mileagePolicy === "unlimited"
-                                                ? resolveLanguageKey("unlimitedKm")
-                                                : `${category.includedKmPerDay ?? 0} ${resolveLanguageKey("kmPerDayIncluded")}`}
-                                        </p>
+                <section className="flex flex-col gap-6" aria-live="polite">
+                    <h1 className="font-display font-bold tracking-tight text-3xl sm:text-4xl">{resolveLanguageKey("resultsTitle")}</h1>
+                    {results.length === 0 ? (
+                        <div className="flex flex-col items-center gap-4 rounded-3xl bg-muted px-6 py-20 text-center">
+                            <p className="font-display font-bold tracking-tight text-2xl">{resolveLanguageKey("noCategories")}</p>
+                        </div>
+                    ) : (
+                        <ul className="flex flex-col gap-10">
+                            {results.map(({category, available, quote}) => (
+                                <li key={category._id} className="grid gap-6 sm:grid-cols-[240px_1fr] sm:items-center">
+                                    <RentalCategoryMedia category={category} coverClassName="aspect-[4/5] w-full rounded-2xl" />
+                                    <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                                        <div className="flex flex-col gap-1.5">
+                                            <h2 className="font-display font-bold tracking-tight text-xl">{category.name}</h2>
+                                            <p className="text-sm text-muted-foreground">{resolveLanguageKey("orSimilar")}</p>
+                                            <RentalCategoryFacts category={category} />
+                                            <p className="text-sm text-muted-foreground">
+                                                {category.mileagePolicy === "unlimited"
+                                                    ? resolveLanguageKey("unlimitedKm")
+                                                    : `${category.includedKmPerDay ?? 0} ${resolveLanguageKey("kmPerDayIncluded")}`}
+                                            </p>
+                                        </div>
+                                        <div className="flex flex-col items-start gap-2 sm:items-end">
+                                            <p className="font-display text-2xl font-semibold tabular-nums">{formatMoney(quote.grandTotal)}</p>
+                                            <p className="text-sm text-muted-foreground">
+                                                {quote.rentalDays} {resolveLanguageKey(quote.rentalDays === 1 ? "day" : "days")}
+                                                {quote.pricesIncludeVat && quote.vatRate > 0 ? ` · ${resolveLanguageKey("vatIncluded")}` : ""}
+                                            </p>
+                                            {available ? (
+                                                <Button asChild size="lg"><Link to={`${base}/book/${category._id}?${tripKey}`}>{resolveLanguageKey("choose")}</Link></Button>
+                                            ) : (
+                                                <span className="text-sm font-medium text-destructive">{resolveLanguageKey("soldOut")}</span>
+                                            )}
+                                        </div>
                                     </div>
-                                    <div className="flex flex-col items-start gap-2 sm:items-end">
-                                        <p className="text-2xl font-semibold">{formatMoney(quote.grandTotal)}</p>
-                                        <p className="text-sm text-rent-ink-muted">
-                                            {quote.rentalDays} {resolveLanguageKey(quote.rentalDays === 1 ? "day" : "days")}
-                                            {quote.pricesIncludeVat && quote.vatRate > 0 ? ` · ${resolveLanguageKey("vatIncluded")}` : ""}
-                                        </p>
-                                        {available ? (
-                                            <Link to={`/book/${category._id}?${tripKey}`} className={RENT_PRIMARY_BUTTON}>{resolveLanguageKey("choose")}</Link>
-                                        ) : (
-                                            <span className="text-sm font-medium text-rent-danger">{resolveLanguageKey("soldOut")}</span>
-                                        )}
-                                    </div>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
                 </section>
             ) : null}
         </div>

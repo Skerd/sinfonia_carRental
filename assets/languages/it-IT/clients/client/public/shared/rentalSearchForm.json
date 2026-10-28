@@ -7,5 +7,11 @@
   "returnDate": "Data di riconsegna",
   "returnTime": "Ora di riconsegna",
   "returnBeforePickup": "La riconsegna deve essere dopo il ritiro.",
-  "search": "Mostra auto"
+    "search": "Mostra auto",
+    "noTimesLeft": "Nessun orario rimasto in questo giorno.",
+    "period": {
+        "morning": "Mattina",
+        "afternoon": "Pomeriggio",
+        "evening": "Sera"
+    }
 }

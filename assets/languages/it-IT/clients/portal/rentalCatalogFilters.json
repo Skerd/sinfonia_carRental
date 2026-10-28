@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/carRental/clients/portal/rentalCatalogFilters.tsx",
+  "pickupDate": "Data di ritiro",
+  "pickupTime": "Ora di ritiro",
+  "returnDate": "Data di riconsegna",
+  "returnTime": "Ora di riconsegna",
+  "any": "Qualsiasi",
+  "transmission": "Cambio",
+  "transmissions": {
+    "manual": "Manuale",
+    "automatic": "Automatico"
+  },
+  "fuel": "Alimentazione",
+  "fuels": {
+    "petrol": "Benzina",
+    "diesel": "Diesel",
+    "hybrid": "Ibrida",
+    "electric": "Elettrica",
+    "other": "Altro"
+  },
+  "seats": "Posti",
+  "seatsAtLeast": "{count}+ posti"
+}

@@ -4,14 +4,14 @@ Client-side UI for the Arpeggio car rental domain: admin panel pages (reservatio
 
 Types and validators come from **armonia**; API calls target **maestro** routes under `/api/carRental/`.
 
-Enable via `VITE_ENABLED_MODULES=carRental` (or leave unset to load all present modules). Run the public site with `npm run rental`.
+Enable via `VITE_ENABLED_MODULES=carRental` (or leave unset to load all present modules). Its public pages run in the portal (`npm run dev -- up carRental`): under `/car-rental` on a company's own site, `/car-rental/<slug>` on the apex.
 
 ## Directory layout
 
 ```
 carRental/
-├── apps/rental/                   # public site entry (search, book, manage)
 ├── assets/languages/<locale>/     # dictionaries in 5 locales
-├── clients/client/public/         # public site pages
+├── clients/client/public/         # public site pages (search, book, manage)
+├── clients/portal/                # portal contribution and account section
 └── clients/panel/                 # panel pages, sidebar and route contributions
 ```

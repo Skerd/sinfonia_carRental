@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/carRental/clients/portal/rentalCatalogFilters.tsx",
+  "pickupDate": "Abholdatum",
+  "pickupTime": "Abholzeit",
+  "returnDate": "Rückgabedatum",
+  "returnTime": "Rückgabezeit",
+  "any": "Alle",
+  "transmission": "Getriebe",
+  "transmissions": {
+    "manual": "Schaltgetriebe",
+    "automatic": "Automatik"
+  },
+  "fuel": "Kraftstoff",
+  "fuels": {
+    "petrol": "Benzin",
+    "diesel": "Diesel",
+    "hybrid": "Hybrid",
+    "electric": "Elektro",
+    "other": "Andere"
+  },
+  "seats": "Sitze",
+  "seatsAtLeast": "ab {count} Sitzen"
+}

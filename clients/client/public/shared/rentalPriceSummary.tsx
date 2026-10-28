@@ -12,7 +12,7 @@ function RentalPriceSummary({pricing, resolveLanguageKey}: Props) {
         <dl className="flex flex-col gap-2 text-sm">
             {pricing.lines.map((line, index) => (
                 <div key={`${line.kind}-${index}`} className="flex justify-between gap-4">
-                    <dt className="text-rent-ink-muted">
+                    <dt className="text-muted-foreground">
                         {line.label}
                         {line.quantity > 1 ? ` × ${line.quantity}` : ""}
                     </dt>
@@ -20,17 +20,17 @@ function RentalPriceSummary({pricing, resolveLanguageKey}: Props) {
                 </div>
             ))}
             {pricing.vatRate > 0 ? (
-                <div className="flex justify-between gap-4 text-rent-ink-faded">
+                <div className="flex justify-between gap-4 text-muted-foreground">
                     <dt>{resolveLanguageKey(pricing.pricesIncludeVat ? "vatIncluded" : "vat")} ({pricing.vatRate}%)</dt>
                     <dd>{formatMoney(pricing.vatAmount)}</dd>
                 </div>
             ) : null}
-            <div className="mt-1 flex justify-between gap-4 border-t border-rent-border pt-3 text-base font-semibold">
+            <div className="mt-1 flex justify-between gap-4 border-t border-border pt-3 text-base font-semibold">
                 <dt>{resolveLanguageKey("total")}</dt>
                 <dd>{formatMoney(pricing.grandTotal)}</dd>
             </div>
             {pricing.depositAmount > 0 ? (
-                <div className="flex justify-between gap-4 text-rent-ink-muted">
+                <div className="flex justify-between gap-4 text-muted-foreground">
                     <dt>{resolveLanguageKey("deposit")}</dt>
                     <dd>{formatMoney(pricing.depositAmount)}</dd>
                 </div>

@@ -1,6 +1,7 @@
 import {useEffect, useMemo, useRef, useState, type FormEvent} from "react";
 import {compose} from "redux";
 import {Link, useNavigate, useParams, useSearchParams} from "react-router-dom";
+import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
 import {loadStripe} from "@stripe/stripe-js";
 import {Elements} from "@stripe/react-stripe-js";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
@@ -22,8 +23,10 @@ import RentalCategoryFacts from "../shared/rentalCategoryFacts.tsx";
 import RentalCategoryMedia from "../shared/rentalCategoryMedia.tsx";
 import RentalPriceSummary from "../shared/rentalPriceSummary.tsx";
 import {formatLocalDateTime, tripFromSearch, tripToSearch} from "../shared/rentalTripParams.ts";
-import {RENT_CARD, RENT_HEADING, RENT_INPUT, RENT_LABEL, RENT_PRIMARY_BUTTON} from "../shared/rentalStyles.ts";
 import RentalStripePayment from "./rentalStripePayment.tsx";
+import {Button} from "@coreModule/components/ui/button.tsx";
+import {Input} from "@coreModule/components/ui/input.tsx";
+import {NativeSelect} from "@coreModule/components/ui/native-select.tsx";
 
 const CONTACT_KEYS = ["firstName", "lastName", "email", "phone"] as const;
 type ContactKey = (typeof CONTACT_KEYS)[number];
@@ -35,11 +38,12 @@ function defaultPaymentChoice(config: RentalConfig): RentalPaymentChoice {
     return config.onlinePaymentAvailable ? "online" : "pay_at_pickup";
 }
 
-function manageUrl(token: string, paid: boolean): string {
-    return `/manage?${new URLSearchParams(paid ? {token, paid: "1"} : {token}).toString()}`;
+function manageUrl(base: string, token: string, paid: boolean): string {
+    return `${base}/manage?${new URLSearchParams(paid ? {token, paid: "1"} : {token}).toString()}`;
 }
 
 function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
+    const base = useSectionBase();
     const {categoryId = ""} = useParams();
     const [params] = useSearchParams();
     const navigate = useNavigate();
@@ -92,9 +96,9 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
     if (!config) return null;
     if (!trip || !category || !pickupLocation || !returnLocation) {
         return (
-            <div className={`${RENT_CARD} flex flex-col items-start gap-3`}>
+            <div className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col items-start gap-3">
                 <p>{resolveLanguageKey("missingTrip")}</p>
-                <Link to="/" className={RENT_PRIMARY_BUTTON}>{resolveLanguageKey("startOver")}</Link>
+                <Button asChild size="lg"><Link to={base}>{resolveLanguageKey("startOver")}</Link></Button>
             </div>
         );
     }
@@ -135,7 +139,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
             if (data.payment) {
                 setPendingPayment({...data.payment, token: data.manageToken});
             } else {
-                navigate(manageUrl(data.manageToken, false));
+                navigate(manageUrl(base, data.manageToken, false));
             }
         } catch (e) {
             const error = handleError(e, {context: "RentalBook"});
@@ -150,24 +154,24 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
     };
 
     const summary = (
-        <aside className={`${RENT_CARD} flex flex-col gap-4 lg:sticky lg:top-6`}>
+        <aside className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-4 lg:sticky lg:top-6">
             <div>
-                <h2 className={`${RENT_HEADING} text-lg`}>{category.name}</h2>
-                <p className="text-sm text-rent-ink-faded">{resolveLanguageKey("orSimilar")}</p>
+                <h2 className="font-display font-bold tracking-tight text-lg">{category.name}</h2>
+                <p className="text-sm text-muted-foreground">{resolveLanguageKey("orSimilar")}</p>
             </div>
             <dl className="grid gap-3 text-sm">
                 <div>
                     <dt className="font-medium">{resolveLanguageKey("pickup")}</dt>
-                    <dd className="text-rent-ink-muted">{pickupLocation.name} · {formatLocalDateTime(trip.pickupDate, trip.pickupTime, languageCode)}</dd>
+                    <dd className="text-muted-foreground">{pickupLocation.name} · {formatLocalDateTime(trip.pickupDate, trip.pickupTime, languageCode)}</dd>
                 </div>
                 <div>
                     <dt className="font-medium">{resolveLanguageKey("return")}</dt>
-                    <dd className="text-rent-ink-muted">{returnLocation.name} · {formatLocalDateTime(trip.returnDate, trip.returnTime, languageCode)}</dd>
+                    <dd className="text-muted-foreground">{returnLocation.name} · {formatLocalDateTime(trip.returnDate, trip.returnTime, languageCode)}</dd>
                 </div>
             </dl>
             {quote ? <RentalPriceSummary pricing={quote} /> : quoteError ? null : <Loader />}
             {config.freeCancellationHours > 0 ? (
-                <p className="text-sm text-rent-ink-muted">
+                <p className="text-sm text-muted-foreground">
                     {String(resolveLanguageKey("freeCancellation")).replace("{hours}", String(config.freeCancellationHours))}
                 </p>
             ) : null}
@@ -177,14 +181,14 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
     if (pendingPayment && stripePromise) {
         return (
             <div className="grid gap-6 lg:grid-cols-[1fr_360px]">
-                <section className={`${RENT_CARD} flex flex-col gap-4`}>
-                    <h1 className={`${RENT_HEADING} text-2xl`}>{resolveLanguageKey("payTitle")}</h1>
-                    <p className="text-sm text-rent-ink-muted">{resolveLanguageKey("payHint")}</p>
+                <section className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-4">
+                    <h1 className="font-display font-bold tracking-tight text-3xl sm:text-4xl">{resolveLanguageKey("payTitle")}</h1>
+                    <p className="text-sm text-muted-foreground">{resolveLanguageKey("payHint")}</p>
                     <Elements stripe={stripePromise} options={{clientSecret: pendingPayment.clientSecret}}>
                         <RentalStripePayment
                             clientSecret={pendingPayment.clientSecret}
-                            returnPath={manageUrl(pendingPayment.token, true)}
-                            onPaid={() => navigate(manageUrl(pendingPayment.token, true))}
+                            returnPath={manageUrl(base, pendingPayment.token, true)}
+                            onPaid={() => navigate(manageUrl(base, pendingPayment.token, true))}
                         />
                     </Elements>
                 </section>
@@ -199,68 +203,68 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
     return (
         <form onSubmit={submit} noValidate className="grid gap-6 lg:grid-cols-[1fr_360px]">
             <div className="flex flex-col gap-6">
-                <section className={`${RENT_CARD} flex flex-col gap-2`}>
-                    <RentalCategoryMedia category={category} coverClassName="mb-2 aspect-[16/9] w-full rounded-xl" />
-                    <h1 className={`${RENT_HEADING} text-2xl`}>{category.name}</h1>
+                <section className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-2">
+                    <RentalCategoryMedia category={category} coverClassName="mb-2 aspect-[16/10] w-full rounded-2xl" />
+                    <h1 className="font-display font-bold tracking-tight text-3xl sm:text-4xl">{category.name}</h1>
                     <RentalCategoryFacts category={category} />
-                    <Link to={`/search?${tripKey}`} className="text-sm font-medium text-rent-accent hover:underline">{resolveLanguageKey("changeSearch")}</Link>
+                    <Button asChild variant="link" className="h-auto p-0 text-sm"><Link to={`${base}/categories/${category._id}?${tripKey}`}>{resolveLanguageKey("changeSearch")}</Link></Button>
                 </section>
 
                 {config.extras.length ? (
-                    <section className={`${RENT_CARD} flex flex-col gap-4`}>
-                        <h2 className={`${RENT_HEADING} text-lg`}>{resolveLanguageKey("extrasTitle")}</h2>
+                    <section className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-4">
+                        <h2 className="font-display font-bold tracking-tight text-lg">{resolveLanguageKey("extrasTitle")}</h2>
                         <ul className="flex flex-col gap-3">
                             {config.extras.map((extra) => (
                                 <li key={extra._id} className="flex items-center justify-between gap-4">
                                     <div>
                                         <p className="font-medium">{extra.name}</p>
-                                        {extra.description ? <p className="text-sm text-rent-ink-muted">{extra.description}</p> : null}
+                                        {extra.description ? <p className="text-sm text-muted-foreground">{extra.description}</p> : null}
                                     </div>
-                                    <select
-                                        aria-label={extra.name}
-                                        className={`${RENT_INPUT} w-20`}
-                                        value={quantities[extra._id] ?? 0}
-                                        onChange={(e) => setQuantities((current) => ({...current, [extra._id]: Number(e.target.value)}))}
-                                    >
+                                    <NativeSelect
+                    aria-label={extra.name}
+                    className="w-full w-20"
+                    value={quantities[extra._id] ?? 0}
+                    onChange={(e) => setQuantities((current) => ({...current, [extra._id]: Number(e.target.value)}))}
+                  >
                                         {Array.from({length: extra.maxQuantity + 1}, (_, quantity) => <option key={quantity} value={quantity}>{quantity}</option>)}
-                                    </select>
+                                    </NativeSelect>
                                 </li>
                             ))}
                         </ul>
                     </section>
                 ) : null}
 
-                <section className={`${RENT_CARD} grid gap-4 sm:grid-cols-2`}>
-                    <h2 className={`${RENT_HEADING} text-lg sm:col-span-2`}>{resolveLanguageKey("driverTitle")}</h2>
+                <section className="rounded-2xl bg-muted p-5 sm:p-6 grid gap-4 sm:grid-cols-2">
+                    <h2 className="font-display font-bold tracking-tight text-lg sm:col-span-2">{resolveLanguageKey("driverTitle")}</h2>
                     {CONTACT_KEYS.map((key) => (
                         <label key={key} className="flex flex-col gap-1.5">
-                            <span className={RENT_LABEL}>{resolveLanguageKey(`contact.${key}`)}</span>
-                            <input
-                                className={RENT_INPUT}
-                                type={key === "email" ? "email" : key === "phone" ? "tel" : "text"}
-                                autoComplete={key === "firstName" ? "given-name" : key === "lastName" ? "family-name" : key === "email" ? "email" : "tel"}
-                                value={contact[key]}
-                                onChange={(e) => updateContact(key, e.target.value)}
-                                aria-invalid={!!fieldErrors[key] || undefined}
-                            />
-                            {fieldErrors[key] ? <span className="text-sm text-rent-danger">{fieldErrors[key]}</span> : null}
+                            <span className="text-sm font-medium">{resolveLanguageKey(`contact.${key}`)}</span>
+                            <Input
+                
+                type={key === "email" ? "email" : key === "phone" ? "tel" : "text"}
+                autoComplete={key === "firstName" ? "given-name" : key === "lastName" ? "family-name" : key === "email" ? "email" : "tel"}
+                value={contact[key]}
+                onChange={(e) => updateContact(key, e.target.value)}
+                aria-invalid={!!fieldErrors[key] || undefined}
+              />
+                            {fieldErrors[key] ? <span className="text-sm text-destructive">{fieldErrors[key]}</span> : null}
                         </label>
                     ))}
                     {category.minDriverAge ? (
-                        <p className="text-sm text-rent-ink-muted sm:col-span-2">
+                        <p className="text-sm text-muted-foreground sm:col-span-2">
                             {String(resolveLanguageKey("minDriverAge")).replace("{age}", String(category.minDriverAge))}
                         </p>
                     ) : null}
                 </section>
 
-                <section className={`${RENT_CARD} flex flex-col gap-3`}>
-                    <h2 className={`${RENT_HEADING} text-lg`}>{resolveLanguageKey("paymentTitle")}</h2>
+                <section className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-3">
+                    <h2 className="font-display font-bold tracking-tight text-lg">{resolveLanguageKey("paymentTitle")}</h2>
                     {atPickupAllowed ? (
                         <label className="flex items-start gap-3">
                             <input type="radio" name="paymentChoice" checked={choice === "pay_at_pickup"} onChange={() => setPaymentChoice("pay_at_pickup")} disabled={!onlineAllowed} />
                             <span>
                                 <span className="font-medium">{resolveLanguageKey("payAtPickup")}</span>
-                                <span className="block text-sm text-rent-ink-muted">{resolveLanguageKey("payAtPickupHint")}</span>
+                                <span className="block text-sm text-muted-foreground">{resolveLanguageKey("payAtPickupHint")}</span>
                             </span>
                         </label>
                     ) : null}
@@ -269,7 +273,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                             <input type="radio" name="paymentChoice" checked={choice === "online"} onChange={() => setPaymentChoice("online")} disabled={!onlineAllowed} />
                             <span>
                                 <span className="font-medium">{resolveLanguageKey("payOnline")}</span>
-                                <span className="block text-sm text-rent-ink-muted">
+                                <span className="block text-sm text-muted-foreground">
                                     {resolveLanguageKey(config.onlinePaymentAvailable ? "payOnlineHint" : "payOnlineUnavailable")}
                                 </span>
                             </span>
@@ -277,18 +281,18 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                     ) : null}
                 </section>
 
-                <section className={`${RENT_CARD} flex flex-col gap-4`}>
+                <section className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-4">
                     <label className="flex items-start gap-3 text-sm">
                         <input type="checkbox" checked={acceptTerms} onChange={(e) => setAcceptTerms(e.target.checked)} />
                         <span>
                             {resolveLanguageKey("acceptTerms")}{" "}
-                            {config.termsText ? <Link to="/terms" target="_blank" className="font-medium text-rent-accent hover:underline">{resolveLanguageKey("readTerms")}</Link> : null}
+                            {config.termsText ? <Button asChild variant="link" className="h-auto p-0"><Link to={`${base}/terms`} target="_blank">{resolveLanguageKey("readTerms")}</Link></Button> : null}
                         </span>
                     </label>
-                    {formError || quoteError ? <p className="text-sm text-rent-danger" role="alert">{formError ?? quoteError}</p> : null}
-                    <button type="submit" className={`${RENT_PRIMARY_BUTTON} w-full sm:w-auto`} disabled={submitting || !quote}>
+                    {formError || quoteError ? <p className="text-sm text-destructive" role="alert">{formError ?? quoteError}</p> : null}
+                    <Button size="lg" type="submit" className="w-full sm:w-auto" disabled={submitting || !quote}>
                         {resolveLanguageKey(submitting ? "booking" : choice === "online" ? "continueToPayment" : "confirmBooking")}
-                    </button>
+                    </Button>
                 </section>
             </div>
             {summary}

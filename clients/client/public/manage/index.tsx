@@ -1,11 +1,11 @@
 import {useEffect, useState} from "react";
 import {compose} from "redux";
 import {Link, useSearchParams} from "react-router-dom";
+import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
 import {handleError, normalizeError} from "@coreModule/helpers/general/errors.ts";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
-import {cn} from "@coreModule/components/lib/utils.ts";
 import type {
     PublicRentalReservation,
     PublicRentalReservationResponse,
@@ -13,23 +13,24 @@ import type {
 import {useRentalConfig} from "../shared/rentalConfigContext.tsx";
 import RentalPriceSummary from "../shared/rentalPriceSummary.tsx";
 import {formatAtLocation} from "../shared/rentalTripParams.ts";
-import {RENT_CARD, RENT_HEADING, RENT_PRIMARY_BUTTON, RENT_SECONDARY_BUTTON} from "../shared/rentalStyles.ts";
+import {Button} from "@coreModule/components/ui/button.tsx";
 
 /** After paying, the webhook confirms the booking; check again for this long before giving up. */
 const PAYMENT_POLL_MS = 2500;
 const PAYMENT_POLL_ATTEMPTS = 24;
 
 const STATUS_TONE: Record<PublicRentalReservation["status"], string> = {
-    held: "bg-rent-warning/10 text-rent-warning",
-    confirmed: "bg-rent-success/10 text-rent-success",
-    in_progress: "bg-rent-accent/10 text-rent-accent",
-    completed: "bg-rent-surface text-rent-ink",
-    cancelled: "bg-rent-danger/10 text-rent-danger",
-    expired: "bg-rent-danger/10 text-rent-danger",
-    no_show: "bg-rent-danger/10 text-rent-danger",
+    held: "bg-warning/10 text-warning",
+    confirmed: "bg-success/10 text-success",
+    in_progress: "bg-primary/10 text-primary",
+    completed: "bg-muted text-foreground",
+    cancelled: "bg-destructive/10 text-destructive",
+    expired: "bg-destructive/10 text-destructive",
+    no_show: "bg-destructive/10 text-destructive",
 };
 
 function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
+    const base = useSectionBase();
     const [params] = useSearchParams();
     const token = params.get("token") ?? "";
     const justPaid = params.get("paid") === "1";
@@ -77,10 +78,10 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
 
     if (!token || error) {
         return (
-            <div className={`${RENT_CARD} flex flex-col items-start gap-3`} role="alert">
-                <h1 className={`${RENT_HEADING} text-xl`}>{resolveLanguageKey("linkInvalidTitle")}</h1>
-                <p className="text-rent-ink-muted">{error ?? resolveLanguageKey("linkInvalidText")}</p>
-                <Link to="/" className={RENT_PRIMARY_BUTTON}>{resolveLanguageKey("backHome")}</Link>
+            <div className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col items-start gap-3" role="alert">
+                <h1 className="font-display font-bold tracking-tight text-xl">{resolveLanguageKey("linkInvalidTitle")}</h1>
+                <p className="text-muted-foreground">{error ?? resolveLanguageKey("linkInvalidText")}</p>
+                <Button asChild size="lg"><Link to={base}>{resolveLanguageKey("backHome")}</Link></Button>
             </div>
         );
     }
@@ -93,19 +94,19 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
         <div className="grid gap-6 lg:grid-cols-[1fr_360px]">
             <div className="flex flex-col gap-6">
                 {justPaid && reservation.status === "confirmed" && !cancelled ? (
-                    <div className="rounded-2xl bg-rent-success/10 p-4 text-rent-success" role="status">{resolveLanguageKey("paidConfirmed")}</div>
+                    <div className="rounded-2xl bg-success/10 p-4 text-success" role="status">{resolveLanguageKey("paidConfirmed")}</div>
                 ) : null}
                 {reservation.status === "held" ? (
-                    <div className="rounded-2xl bg-rent-warning/10 p-4 text-rent-warning" role="status" aria-live="polite">
+                    <div className="rounded-2xl bg-warning/10 p-4 text-warning" role="status" aria-live="polite">
                         {resolveLanguageKey(waitingForPayment ? "awaitingPayment" : "heldNotice")}
                     </div>
                 ) : null}
 
-                <section className={`${RENT_CARD} flex flex-col gap-4`}>
+                <section className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-4">
                     <div className="flex flex-wrap items-center justify-between gap-3">
                         <div>
-                            <p className="text-sm text-rent-ink-faded">{resolveLanguageKey("bookingNumber")} {reservation.number}</p>
-                            <h1 className={`${RENT_HEADING} text-2xl`}>{reservation.vehicleLabel ?? reservation.categoryName}</h1>
+                            <p className="text-sm text-muted-foreground">{resolveLanguageKey("bookingNumber")} {reservation.number}</p>
+                            <h1 className="font-display font-bold tracking-tight text-3xl">{reservation.vehicleLabel ?? reservation.categoryName}</h1>
                         </div>
                         <span className={`rounded-full px-3 py-1 text-sm font-medium ${STATUS_TONE[reservation.status]}`}>
                             {resolveLanguageKey(`status.${reservation.status}`)}
@@ -114,26 +115,26 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                     <dl className="grid gap-4 text-sm sm:grid-cols-2">
                         <div>
                             <dt className="font-medium">{resolveLanguageKey("pickup")}</dt>
-                            <dd className="text-rent-ink-muted">{at(reservation.pickupAt)}</dd>
-                            <dd className="text-rent-ink-muted">{reservation.pickupLocationName}</dd>
-                            {reservation.pickupAddress ? <dd className="text-rent-ink-faded">{reservation.pickupAddress}</dd> : null}
+                            <dd className="text-muted-foreground">{at(reservation.pickupAt)}</dd>
+                            <dd className="text-muted-foreground">{reservation.pickupLocationName}</dd>
+                            {reservation.pickupAddress ? <dd className="text-muted-foreground">{reservation.pickupAddress}</dd> : null}
                         </div>
                         <div>
                             <dt className="font-medium">{resolveLanguageKey("return")}</dt>
-                            <dd className="text-rent-ink-muted">{at(reservation.returnAt)}</dd>
-                            <dd className="text-rent-ink-muted">{reservation.returnLocationName}</dd>
-                            {reservation.returnAddress ? <dd className="text-rent-ink-faded">{reservation.returnAddress}</dd> : null}
+                            <dd className="text-muted-foreground">{at(reservation.returnAt)}</dd>
+                            <dd className="text-muted-foreground">{reservation.returnLocationName}</dd>
+                            {reservation.returnAddress ? <dd className="text-muted-foreground">{reservation.returnAddress}</dd> : null}
                         </div>
                         <div>
                             <dt className="font-medium">{resolveLanguageKey("driver")}</dt>
-                            <dd className="text-rent-ink-muted">{reservation.contact.firstName} {reservation.contact.lastName}</dd>
-                            <dd className="text-rent-ink-muted">{reservation.contact.email}</dd>
-                            <dd className="text-rent-ink-muted">{reservation.contact.phone}</dd>
+                            <dd className="text-muted-foreground">{reservation.contact.firstName} {reservation.contact.lastName}</dd>
+                            <dd className="text-muted-foreground">{reservation.contact.email}</dd>
+                            <dd className="text-muted-foreground">{reservation.contact.phone}</dd>
                         </div>
                         <div>
                             <dt className="font-medium">{resolveLanguageKey("payment")}</dt>
-                            <dd className="text-rent-ink-muted">{resolveLanguageKey(`paymentChoice.${reservation.paymentChoice}`)}</dd>
-                            <dd className="text-rent-ink-muted">
+                            <dd className="text-muted-foreground">{resolveLanguageKey(`paymentChoice.${reservation.paymentChoice}`)}</dd>
+                            <dd className="text-muted-foreground">
                                 {resolveLanguageKey(`paymentStatus.${reservation.paymentStatus}`)}
                                 {reservation.amountPaid > 0 ? ` · ${formatMoney(reservation.amountPaid)}` : ""}
                             </dd>
@@ -142,34 +143,34 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                 </section>
 
                 {reservation.canCancel && !cancelled ? (
-                    <section className={`${RENT_CARD} flex flex-col gap-3`}>
-                        <h2 className={`${RENT_HEADING} text-lg`}>{resolveLanguageKey("cancelTitle")}</h2>
-                        <p className="text-sm text-rent-ink-muted">
+                    <section className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-3">
+                        <h2 className="font-display font-bold tracking-tight text-lg">{resolveLanguageKey("cancelTitle")}</h2>
+                        <p className="text-sm text-muted-foreground">
                             {feeApplies
                                 ? String(resolveLanguageKey("cancelWithFee")).replace("{percent}", String(reservation.cancellationFeePercent))
                                 : String(resolveLanguageKey("cancelFree")).replace("{until}", at(reservation.freeCancellationUntil))}
                         </p>
                         {confirmingCancel ? (
                             <div className="flex flex-wrap gap-3">
-                                <button type="button" className={cn(RENT_PRIMARY_BUTTON, "bg-rent-danger hover:bg-rent-danger/90")} disabled={cancelling} onClick={() => void cancel()}>
+                                <Button size="lg" type="button" className="bg-destructive hover:bg-destructive/90" disabled={cancelling} onClick={() => void cancel()}>
                                     {resolveLanguageKey(cancelling ? "cancelling" : "confirmCancel")}
-                                </button>
-                                <button type="button" className={RENT_SECONDARY_BUTTON} disabled={cancelling} onClick={() => setConfirmingCancel(false)}>
+                                </Button>
+                                <Button variant="outline" size="lg" type="button"  disabled={cancelling} onClick={() => setConfirmingCancel(false)}>
                                     {resolveLanguageKey("keepBooking")}
-                                </button>
+                                </Button>
                             </div>
                         ) : (
-                            <button type="button" className={`${RENT_SECONDARY_BUTTON} self-start`} onClick={() => setConfirmingCancel(true)}>
+                            <Button variant="outline" size="lg" type="button" className="self-start" onClick={() => setConfirmingCancel(true)}>
                                 {resolveLanguageKey("cancelBooking")}
-                            </button>
+                            </Button>
                         )}
                     </section>
                 ) : null}
-                {cancelled ? <div className="rounded-2xl bg-rent-danger/10 p-4 text-rent-danger" role="status">{resolveLanguageKey("cancelledNotice")}</div> : null}
+                {cancelled ? <div className="rounded-2xl bg-destructive/10 p-4 text-destructive" role="status">{resolveLanguageKey("cancelledNotice")}</div> : null}
             </div>
 
-            <aside className={`${RENT_CARD} flex flex-col gap-4 self-start`}>
-                <h2 className={`${RENT_HEADING} text-lg`}>{resolveLanguageKey("priceTitle")}</h2>
+            <aside className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-4 self-start">
+                <h2 className="font-display font-bold tracking-tight text-lg">{resolveLanguageKey("priceTitle")}</h2>
                 <RentalPriceSummary pricing={reservation.pricing} />
             </aside>
         </div>

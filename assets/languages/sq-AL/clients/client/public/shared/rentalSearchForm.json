@@ -7,5 +7,11 @@
   "returnDate": "Data e kthimit",
   "returnTime": "Ora e kthimit",
   "returnBeforePickup": "Kthimi duhet të jetë pas marrjes.",
-  "search": "Shfaq makinat"
+    "search": "Shfaq makinat",
+    "noTimesLeft": "Nuk ka orare të mbetura këtë ditë.",
+    "period": {
+        "morning": "Mëngjes",
+        "afternoon": "Pasdite",
+        "evening": "Mbrëmje"
+    }
 }

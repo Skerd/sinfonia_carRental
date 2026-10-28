@@ -1,0 +1,40 @@
+{
+  "path": "src/modules/carRental/clients/client/public/category/index.tsx",
+  "loading": "Makina po ngarkohet",
+  "notFound": "Kjo makinë nuk është në listë",
+  "notFoundMessage": "Mund të jetë hequr nga faqja. Zgjidhni një tjetër nga flota.",
+  "backToFleet": "Kthehu te flota",
+  "orSimilar": "ose e ngjashme",
+  "perDay": "në ditë",
+  "forDay": "për 1 ditë",
+  "forDays": "për {days} ditë",
+  "available": "E lirë për këto data",
+  "quoteFailed": "Nuk mundëm të llogarisim çmimin e këtij udhëtimi. Ju lutemi zgjidhni data të tjera.",
+  "tripTitle": "Kur ju nevojitet?",
+  "continue": "Vazhdo te rezervimi",
+  "description": "Rreth kësaj makine",
+  "details": "Detajet e qirasë",
+  "deposit": "Depozita",
+  "mileage": "Kilometrazhi",
+  "unlimitedKm": "Kilometra pa kufi",
+  "kmPerDayIncluded": "km në ditë të përfshira",
+  "minDriverAge": "Mosha minimale e shoferit",
+  "facts": {
+    "seats": "Ulëse",
+    "doors": "Dyer",
+    "bags": "Bagazhe",
+    "transmission": "Kambio",
+    "fuel": "Karburanti"
+  },
+  "transmission": {
+    "manual": "Manual",
+    "automatic": "Automatik"
+  },
+  "fuel": {
+    "petrol": "Benzinë",
+    "diesel": "Naftë",
+    "hybrid": "Hibrid",
+    "electric": "Elektrik",
+    "other": "Karburant tjetër"
+  }
+}

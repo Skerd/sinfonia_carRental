@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/carRental/clients/portal/rentalCatalogFilters.tsx",
+  "pickupDate": "Data e marrjes",
+  "pickupTime": "Ora e marrjes",
+  "returnDate": "Data e kthimit",
+  "returnTime": "Ora e kthimit",
+  "any": "Çdo",
+  "transmission": "Kambio",
+  "transmissions": {
+    "manual": "Manuale",
+    "automatic": "Automatike"
+  },
+  "fuel": "Karburanti",
+  "fuels": {
+    "petrol": "Benzinë",
+    "diesel": "Naftë",
+    "hybrid": "Hibrid",
+    "electric": "Elektrik",
+    "other": "Tjetër"
+  },
+  "seats": "Ulëse",
+  "seatsAtLeast": "{count}+ ulëse"
+}

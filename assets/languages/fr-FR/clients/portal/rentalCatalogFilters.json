@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/carRental/clients/portal/rentalCatalogFilters.tsx",
+  "pickupDate": "Date de prise en charge",
+  "pickupTime": "Heure de prise en charge",
+  "returnDate": "Date de retour",
+  "returnTime": "Heure de retour",
+  "any": "Tous",
+  "transmission": "Boîte de vitesses",
+  "transmissions": {
+    "manual": "Manuelle",
+    "automatic": "Automatique"
+  },
+  "fuel": "Carburant",
+  "fuels": {
+    "petrol": "Essence",
+    "diesel": "Diesel",
+    "hybrid": "Hybride",
+    "electric": "Électrique",
+    "other": "Autre"
+  },
+  "seats": "Places",
+  "seatsAtLeast": "{count} places et +"
+}

@@ -1,0 +1,40 @@
+{
+  "path": "src/modules/carRental/clients/client/public/category/index.tsx",
+  "loading": "Auto wird geladen",
+  "notFound": "Dieses Auto ist nicht gelistet",
+  "notFoundMessage": "Es wurde möglicherweise von der Website genommen. Wählen Sie ein anderes aus der Flotte.",
+  "backToFleet": "Zurück zur Flotte",
+  "orSimilar": "oder ähnlich",
+  "perDay": "pro Tag",
+  "forDay": "für 1 Tag",
+  "forDays": "für {days} Tage",
+  "available": "Frei für diese Daten",
+  "quoteFailed": "Wir konnten für diese Fahrt keinen Preis berechnen. Bitte andere Daten wählen.",
+  "tripTitle": "Wann brauchen Sie es?",
+  "continue": "Weiter zur Buchung",
+  "description": "Über dieses Auto",
+  "details": "Mietdetails",
+  "deposit": "Kaution",
+  "mileage": "Kilometer",
+  "unlimitedKm": "Unbegrenzte Kilometer",
+  "kmPerDayIncluded": "km pro Tag inklusive",
+  "minDriverAge": "Mindestalter Fahrer/in",
+  "facts": {
+    "seats": "Sitze",
+    "doors": "Türen",
+    "bags": "Gepäckstücke",
+    "transmission": "Getriebe",
+    "fuel": "Treibstoff"
+  },
+  "transmission": {
+    "manual": "Manuell",
+    "automatic": "Automatik"
+  },
+  "fuel": {
+    "petrol": "Benzin",
+    "diesel": "Diesel",
+    "hybrid": "Hybrid",
+    "electric": "Elektro",
+    "other": "Anderer Treibstoff"
+  }
+}

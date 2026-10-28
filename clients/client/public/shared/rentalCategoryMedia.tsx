@@ -13,7 +13,7 @@ type Props = WithLanguageType & {
 type Item = {kind: "image" | "video"; src: string};
 
 const ROUND_BUTTON =
-    "inline-flex size-10 items-center justify-center rounded-full bg-white/90 text-rent-ink shadow transition-colors hover:bg-white disabled:opacity-40";
+    "inline-flex size-10 items-center justify-center rounded-full bg-card/90 text-foreground shadow transition-colors hover:bg-card disabled:opacity-40";
 
 /**
  * A category's cover photo, plus a native dialog that steps through all its photos and
@@ -28,7 +28,7 @@ function RentalCategoryMedia({category, coverClassName, resolveLanguageKey}: Pro
     const items: Item[] = [...category.images.map((src) => ({kind: "image" as const, src})), ...category.videos.map((src) => ({kind: "video" as const, src}))];
 
     if (items.length === 0) {
-        return <div className={`${coverClassName} bg-rent-surface`} aria-hidden />;
+        return <div className={`${coverClassName} bg-muted`} aria-hidden />;
     }
 
     const open = (at: number) => {
@@ -54,15 +54,16 @@ function RentalCategoryMedia({category, coverClassName, resolveLanguageKey}: Pro
                 ) : (
                     <video src={cover.src} className="size-full object-cover" muted playsInline preload="metadata" />
                 )}
-                <span className="absolute bottom-2 left-2 inline-flex items-center gap-1.5 rounded-full bg-black/65 px-2.5 py-1 text-xs font-semibold text-white">
+                <span className="absolute bottom-2 left-2 inline-flex items-center gap-1.5 rounded-full bg-overlay px-2.5 py-1 text-xs font-semibold text-overlay-foreground">
                     {category.videos.length ? <IconPlayerPlayFilled size={12} aria-hidden /> : <IconPhoto size={13} aria-hidden />}
                     {label}
                 </span>
             </button>
 
+            {/* A media viewer: dark in both themes, like the photos it frames. */}
             <dialog
                 ref={dialogRef}
-                className="m-auto w-[min(960px,calc(100vw-2rem))] rounded-2xl bg-rent-ink p-0 text-white backdrop:bg-black/75"
+                className="m-auto w-[min(960px,calc(100vw-2rem))] rounded-2xl bg-neutral-950 p-0 text-white backdrop:bg-overlay"
                 aria-label={category.name}
                 onClick={(e) => {
                     if (e.target === dialogRef.current) dialogRef.current.close();
@@ -127,7 +128,7 @@ function RentalCategoryMedia({category, coverClassName, resolveLanguageKey}: Pro
                                             {item.kind === "image" ? (
                                                 <img src={item.src} alt="" className="size-full object-cover" loading="lazy" />
                                             ) : (
-                                                <span className="flex size-full items-center justify-center bg-white/10">
+                                                <span className="flex size-full items-center justify-center bg-card/10">
                                                     <IconPlayerPlayFilled size={18} aria-hidden />
                                                 </span>
                                             )}

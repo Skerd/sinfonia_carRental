@@ -4,7 +4,7 @@ import {toast} from "sonner";
 import {Lock} from "lucide-react";
 import {PaymentElement, useElements, useStripe} from "@stripe/react-stripe-js";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import {RENT_PRIMARY_BUTTON} from "../shared/rentalStyles.ts";
+import {Button} from "@coreModule/components/ui/button.tsx";
 
 type Props = WithLanguageType & {
     clientSecret: string;
@@ -47,10 +47,10 @@ function RentalStripePayment({clientSecret, returnPath, onPaid, resolveLanguageK
     return (
         <div className="flex flex-col gap-5">
             <PaymentElement />
-            <button type="button" onClick={() => void handlePay()} disabled={!stripe || submitting} className={RENT_PRIMARY_BUTTON}>
+            <Button size="lg" type="button" onClick={() => void handlePay()} disabled={!stripe || submitting} >
                 <Lock className="h-4 w-4" aria-hidden />
                 {resolveLanguageKey(submitting ? "processing" : "pay")}
-            </button>
+            </Button>
         </div>
     );
 }

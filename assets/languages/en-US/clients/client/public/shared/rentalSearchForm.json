@@ -7,5 +7,11 @@
     "returnDate": "Return date",
     "returnTime": "Return time",
     "returnBeforePickup": "The return must be after the pick-up.",
-    "search": "Show cars"
+    "search": "Show cars",
+    "noTimesLeft": "No times left this day.",
+    "period": {
+        "morning": "Morning",
+        "afternoon": "Afternoon",
+        "evening": "Evening"
+    }
 }

@@ -1,0 +1,40 @@
+{
+  "path": "src/modules/carRental/clients/client/public/category/index.tsx",
+  "loading": "Loading car",
+  "notFound": "This car is not listed",
+  "notFoundMessage": "It may have been taken off the website. Choose another from the fleet.",
+  "backToFleet": "Back to the fleet",
+  "orSimilar": "or similar",
+  "perDay": "per day",
+  "forDay": "for 1 day",
+  "forDays": "for {days} days",
+  "available": "Free for these dates",
+  "quoteFailed": "We could not price this trip. Please try other dates.",
+  "tripTitle": "When do you need it?",
+  "continue": "Continue to book",
+  "description": "About this car",
+  "details": "Rental details",
+  "deposit": "Deposit",
+  "mileage": "Mileage",
+  "unlimitedKm": "Unlimited kilometres",
+  "kmPerDayIncluded": "km per day included",
+  "minDriverAge": "Minimum driver age",
+  "facts": {
+    "seats": "Seats",
+    "doors": "Doors",
+    "bags": "Bags",
+    "transmission": "Gearbox",
+    "fuel": "Fuel"
+  },
+  "transmission": {
+    "manual": "Manual",
+    "automatic": "Automatic"
+  },
+  "fuel": {
+    "petrol": "Petrol",
+    "diesel": "Diesel",
+    "hybrid": "Hybrid",
+    "electric": "Electric",
+    "other": "Other fuel"
+  }
+}

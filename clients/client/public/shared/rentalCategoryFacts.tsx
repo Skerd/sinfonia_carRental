@@ -13,7 +13,7 @@ function RentalCategoryFacts({category, resolveLanguageKey}: Props) {
         resolveLanguageKey(`transmission.${category.transmission}`),
         resolveLanguageKey(`fuel.${category.fuelType}`),
     ].filter(Boolean);
-    return <p className="text-sm text-rent-ink-muted">{facts.join(" · ")}</p>;
+    return <p className="text-sm text-muted-foreground">{facts.join(" · ")}</p>;
 }
 
 export default compose(withLanguage("src/modules/carRental/clients/client/public/shared/rentalCategoryFacts.tsx"))(RentalCategoryFacts);
