@@ -1,7 +1,7 @@
 {
   "path": "src/modules/carRental/clients/panel/private/settings/editCarRentalConfig.tsx",
   "title": "Einstellungen Autovermietung",
-  "description": "Buchungsregeln, Zahlung, Stornierung und Bedingungen",
+  "description": "Gilt für diese Autovermietung.",
   "form": {
     "bookingSectionTitle": "Online-Buchung",
     "cancellationFeePercentLabel": "Gebühr bei später Stornierung (%)",
@@ -68,7 +68,7 @@
   },
   "formHeader": {
     "title": "Einstellungen Autovermietung",
-    "description": "Buchungsregeln, Zahlung, Stornierung und Bedingungen"
+    "description": "Gilt für diese Autovermietung."
   },
   "formButtons": {
     "cancel": "Abbrechen",

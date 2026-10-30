@@ -27,7 +27,7 @@
       "maxRentalDays": "Ditët maksimale të qirasë",
       "minLeadTimeHours": "Paralajmërimi minimal (orë)",
       "minRentalHours": "Orët minimale të qirasë",
-      "notifyUsers": "Njofto përdoruesit",
+      "notifyUsers": "Njofto këta punonjës për rezervimet e reja",
       "paymentPolicy": "Rregulli i pagesës",
       "pricesIncludeVat": "Çmimet përfshijnë TVSH-në",
       "publicBookingEnabled": "Rezervimi publik aktiv",

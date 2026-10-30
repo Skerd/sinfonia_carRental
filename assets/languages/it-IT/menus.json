@@ -1,41 +1,27 @@
 {
   "carRental": {
     "title": "Noleggio auto",
-    "reservations": {
-      "title": "Prenotazioni"
-    },
-    "vehicles": {
-      "title": "Flotta"
-    },
-    "blocks": {
-      "title": "Blocchi veicolo"
-    },
-    "categories": {
-      "title": "Categorie"
-    },
-    "extras": {
-      "title": "Extra"
-    },
-    "locations": {
-      "title": "Sedi"
-    },
-    "settings": {
-      "title": "Prenotazione e pagamento"
-    },
-    "fleetOps": {
-      "title": "Gestione flotta"
-    },
-    "maintenance": {
-      "title": "Manutenzione"
-    },
-    "damages": {
-      "title": "Danni"
-    },
-    "insurance": {
-      "title": "Assicurazioni"
-    },
-    "documents": {
-      "title": "Documenti"
+    "reservations": {"title": "Prenotazioni"},
+    "vehicles": {"title": "Flotta"},
+    "blocks": {"title": "Blocchi veicolo"},
+    "fleetOps": {"title": "Gestione flotta"},
+    "maintenance": {"title": "Manutenzione"},
+    "damages": {"title": "Danni"},
+    "insurance": {"title": "Assicurazioni"},
+    "documents": {"title": "Documenti"}
+  },
+  "tenancy": {
+    "systemSettings": {
+      "carRentalConfig": {
+        "title": "Noleggio auto",
+        "booking": {"title": "Prenotazione online"},
+        "payment": {"title": "Pagamento e cancellazione"},
+        "terms": {"title": "Condizioni di noleggio"},
+        "alerts": {"title": "Avvisi al personale"}
+      },
+      "vehicleCategories": {"title": "Categorie"},
+      "rentalExtras": {"title": "Extra"},
+      "rentalLocations": {"title": "Sedi"}
     }
   }
 }

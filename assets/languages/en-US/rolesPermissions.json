@@ -27,7 +27,7 @@
       "maxRentalDays": "Max rental days",
       "minLeadTimeHours": "Min lead time hours",
       "minRentalHours": "Min rental hours",
-      "notifyUsers": "Notify users",
+      "notifyUsers": "Alert these staff about new bookings",
       "paymentPolicy": "Payment policy",
       "pricesIncludeVat": "Prices include vat",
       "publicBookingEnabled": "Public booking enabled",

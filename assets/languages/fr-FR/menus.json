@@ -1,41 +1,27 @@
 {
   "carRental": {
     "title": "Location de voitures",
-    "reservations": {
-      "title": "Réservations"
-    },
-    "vehicles": {
-      "title": "Flotte"
-    },
-    "blocks": {
-      "title": "Blocages de véhicules"
-    },
-    "categories": {
-      "title": "Catégories"
-    },
-    "extras": {
-      "title": "Suppléments"
-    },
-    "locations": {
-      "title": "Sites"
-    },
-    "settings": {
-      "title": "Réservation et paiement"
-    },
-    "fleetOps": {
-      "title": "Gestion de flotte"
-    },
-    "maintenance": {
-      "title": "Entretien"
-    },
-    "damages": {
-      "title": "Dommages"
-    },
-    "insurance": {
-      "title": "Assurances"
-    },
-    "documents": {
-      "title": "Documents"
+    "reservations": {"title": "Réservations"},
+    "vehicles": {"title": "Flotte"},
+    "blocks": {"title": "Blocages de véhicules"},
+    "fleetOps": {"title": "Gestion de flotte"},
+    "maintenance": {"title": "Entretien"},
+    "damages": {"title": "Dommages"},
+    "insurance": {"title": "Assurances"},
+    "documents": {"title": "Documents"}
+  },
+  "tenancy": {
+    "systemSettings": {
+      "carRentalConfig": {
+        "title": "Location de voitures",
+        "booking": {"title": "Réservation en ligne"},
+        "payment": {"title": "Paiement et annulation"},
+        "terms": {"title": "Conditions de location"},
+        "alerts": {"title": "Alertes au personnel"}
+      },
+      "vehicleCategories": {"title": "Catégories"},
+      "rentalExtras": {"title": "Suppléments"},
+      "rentalLocations": {"title": "Sites"}
     }
   }
 }

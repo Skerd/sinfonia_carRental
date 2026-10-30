@@ -1,41 +1,27 @@
 {
   "carRental": {
     "title": "Qiraja e makinave",
-    "reservations": {
-      "title": "Rezervimet"
-    },
-    "vehicles": {
-      "title": "Flota"
-    },
-    "blocks": {
-      "title": "Bllokimet e automjeteve"
-    },
-    "categories": {
-      "title": "Kategoritë"
-    },
-    "extras": {
-      "title": "Shtesat"
-    },
-    "locations": {
-      "title": "Vendndodhjet"
-    },
-    "settings": {
-      "title": "Rezervimi dhe pagesa"
-    },
-    "fleetOps": {
-      "title": "Operacionet e flotës"
-    },
-    "maintenance": {
-      "title": "Mirëmbajtja"
-    },
-    "damages": {
-      "title": "Dëmtimet"
-    },
-    "insurance": {
-      "title": "Sigurimet"
-    },
-    "documents": {
-      "title": "Dokumentet"
+    "reservations": {"title": "Rezervimet"},
+    "vehicles": {"title": "Flota"},
+    "blocks": {"title": "Bllokimet e automjeteve"},
+    "fleetOps": {"title": "Operacionet e flotës"},
+    "maintenance": {"title": "Mirëmbajtja"},
+    "damages": {"title": "Dëmtimet"},
+    "insurance": {"title": "Sigurimet"},
+    "documents": {"title": "Dokumentet"}
+  },
+  "tenancy": {
+    "systemSettings": {
+      "carRentalConfig": {
+        "title": "Qiraja e makinave",
+        "booking": {"title": "Rezervim online"},
+        "payment": {"title": "Pagesa dhe anulimi"},
+        "terms": {"title": "Kushtet e qirasë"},
+        "alerts": {"title": "Njoftime për punonjësit"}
+      },
+      "vehicleCategories": {"title": "Kategoritë"},
+      "rentalExtras": {"title": "Shtesat"},
+      "rentalLocations": {"title": "Vendndodhjet"}
     }
   }
 }

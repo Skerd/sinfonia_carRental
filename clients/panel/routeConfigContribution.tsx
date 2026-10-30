@@ -1,5 +1,7 @@
 import type {ReactNode} from "react";
+import {Navigate} from "react-router-dom";
 import type {RouteConfigArgs, RouteConfigContribution} from "@coreModule/helpers/types/routeConfigContribution.types.ts";
+import {carRentalConfigSectionPath, isCarRentalConfigSection} from "@carRentalModule/clients/panel/private/settings/carRentalConfigSections.ts";
 import AllRentalReservations from "@carRentalModule/clients/panel/private/reservations/index.tsx";
 import CreateRentalReservation from "@carRentalModule/clients/panel/private/reservations/createRentalReservation.tsx";
 import AllVehicles from "@carRentalModule/clients/panel/private/vehicles/index.tsx";
@@ -66,7 +68,10 @@ const carRentalRouteConfigContribution: RouteConfigContribution = {
     order: 36,
     contributeRoutes({menu, subview, segments, searchParams}: RouteConfigArgs) {
         if (menu === "tenancy" && subview === "systemSettings") {
-            if (segments[2] === "carRentalConfig") return <CarRentalSettings />;
+            if (segments[2] === "carRentalConfig") {
+                if (!isCarRentalConfigSection(segments[3])) return <Navigate to={carRentalConfigSectionPath("booking")} replace />;
+                return <CarRentalSettings />;
+            }
             return renderPage(SETTINGS_PAGES, segments[2], segments[3], searchParams);
         }
         if (menu !== "carRental") return undefined;

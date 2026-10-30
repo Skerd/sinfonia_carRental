@@ -6,6 +6,21 @@ import type {EditCarRentalConfigFormType} from "armonia/src/modules/carRental/ap
 import type {CarRentalConfig} from "armonia/src/modules/carRental/api/carRental/private/carRentalConfig/carRentalConfig.dto.ts";
 import type {SimpleBlankUser} from "armonia/src/modules/core/dto/user.dto.ts";
 import {getName} from "@coreModule/helpers/general/names.ts";
+import {isCarRentalConfigSection, type CarRentalConfigSection} from "@carRentalModule/clients/panel/private/settings/carRentalConfigSections.ts";
+
+/** Matches `skipRenderWhenFormExtraNotTruthy` on each block in `carRentalConfig.views.ts`. */
+const SECTION_FLAGS: Record<CarRentalConfigSection, string> = {
+    booking: "sectionBooking",
+    payment: "sectionPayment",
+    terms: "sectionTerms",
+    alerts: "sectionAlerts",
+};
+
+function openSectionFlag(): string {
+    const segment = window.location.pathname.split("/").filter(Boolean)[3];
+    const section: CarRentalConfigSection = isCarRentalConfigSection(segment) ? segment : "booking";
+    return SECTION_FLAGS[section];
+}
 
 const chipLabelState = {
     loadedId: null as string | null,
@@ -37,6 +52,7 @@ export default createGenericEditPage<CarRentalConfig, EditCarRentalConfigFormTyp
         return {
             notifyUsers: users.map((user) => ({value: user._id, label: userDisplayName(user)})),
             [FORM_EXTRAS_OBJECT_ID_CHIP_LABEL_REFS]: {notifyUsers: chipLabelState.notifyUsers},
+            [openSectionFlag()]: true,
         };
     },
     submitIcon: <Save />,

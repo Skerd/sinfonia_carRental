@@ -1,7 +1,7 @@
 {
   "path": "src/modules/carRental/clients/panel/private/settings/editCarRentalConfig.tsx",
   "title": "Paramètres de location",
-  "description": "Règles de réservation, paiement, annulation et conditions",
+  "description": "S'applique à cette agence.",
   "form": {
     "bookingSectionTitle": "Réservation en ligne",
     "cancellationFeePercentLabel": "Frais d'annulation tardive (%)",
@@ -68,7 +68,7 @@
   },
   "formHeader": {
     "title": "Paramètres de location",
-    "description": "Règles de réservation, paiement, annulation et conditions"
+    "description": "S'applique à cette agence."
   },
   "formButtons": {
     "cancel": "Annuler",

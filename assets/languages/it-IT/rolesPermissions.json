@@ -27,7 +27,7 @@
       "maxRentalDays": "Durata massima del noleggio (giorni)",
       "minLeadTimeHours": "Preavviso minimo (ore)",
       "minRentalHours": "Durata minima del noleggio (ore)",
-      "notifyUsers": "Avvisa utenti",
+      "notifyUsers": "Avvisa queste persone delle nuove prenotazioni",
       "paymentPolicy": "Regola di pagamento",
       "pricesIncludeVat": "Prezzi IVA inclusa",
       "publicBookingEnabled": "Prenotazione pubblica attivata",

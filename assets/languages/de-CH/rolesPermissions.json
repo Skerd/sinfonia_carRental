@@ -27,7 +27,7 @@
       "maxRentalDays": "Maximale Mietdauer (Tage)",
       "minLeadTimeHours": "Minimale Vorlaufzeit (Stunden)",
       "minRentalHours": "Minimale Mietdauer (Stunden)",
-      "notifyUsers": "Benutzer benachrichtigen",
+      "notifyUsers": "Diese Mitarbeitenden über neue Buchungen benachrichtigen",
       "paymentPolicy": "Zahlungsregel",
       "pricesIncludeVat": "Preise inkl. MwSt.",
       "publicBookingEnabled": "Öffentliche Buchung aktiviert",

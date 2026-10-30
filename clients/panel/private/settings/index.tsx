@@ -1,5 +1,6 @@
 import {compose} from "redux";
 import {useEffect, useState} from "react";
+import {useLocation} from "react-router-dom";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
@@ -7,9 +8,14 @@ import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import SimpleError from "@coreModule/components/custom/errors/errorViewWrapper.tsx";
 import type {CarRentalConfig} from "armonia/src/modules/carRental/api/carRental/private/carRentalConfig/carRentalConfig.dto.ts";
 import EditCarRentalConfig from "@carRentalModule/clients/panel/private/settings/editCarRentalConfig.tsx";
+import {isCarRentalConfigSection, type CarRentalConfigSection} from "@carRentalModule/clients/panel/private/settings/carRentalConfigSections.ts";
 
-/** One settings record per company: make sure it exists, then edit it in place. */
+/** One settings record per company: make sure it exists, then edit the open section in place. */
 function CarRentalSettingsGate({resolveLanguageKey}: WithLanguageType) {
+    const {pathname} = useLocation();
+    const segment = pathname.split("/").filter(Boolean)[3];
+    const section: CarRentalConfigSection = isCarRentalConfigSection(segment) ? segment : "booking";
+
     const [configId, setConfigId] = useState<string | null>(null);
     const [error, setError] = useState<string | null>(null);
 
@@ -30,7 +36,8 @@ function CarRentalSettingsGate({resolveLanguageKey}: WithLanguageType) {
 
     if (error) return <SimpleError title={error} />;
     if (!configId) return <Loader />;
-    return <EditCarRentalConfig entityId={configId} />;
+    const sectionTitle = String(resolveLanguageKey(`menus.tenancy.systemSettings.carRentalConfig.${section}.title`));
+    return <EditCarRentalConfig key={section} entityId={configId} entityName={sectionTitle} />;
 }
 
 export default compose(

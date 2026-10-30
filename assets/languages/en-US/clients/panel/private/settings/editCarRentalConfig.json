@@ -1,7 +1,7 @@
 {
   "path": "src/modules/carRental/clients/panel/private/settings/editCarRentalConfig.tsx",
   "title": "Car rental settings",
-  "description": "Booking rules, payment, cancellation and terms",
+  "description": "Applies to this rental company.",
   "form": {
     "bookingSectionTitle": "Online booking",
     "cancellationFeePercentLabel": "Late cancellation fee (%)",
@@ -68,7 +68,7 @@
   },
   "formHeader": {
     "title": "Car rental settings",
-    "description": "Booking rules, payment, cancellation and terms"
+    "description": "Applies to this rental company."
   },
   "formButtons": {
     "cancel": "Cancel",

@@ -1,41 +1,27 @@
 {
   "carRental": {
     "title": "Autovermietung",
-    "reservations": {
-      "title": "Reservierungen"
-    },
-    "vehicles": {
-      "title": "Flotte"
-    },
-    "blocks": {
-      "title": "Fahrzeugsperren"
-    },
-    "categories": {
-      "title": "Kategorien"
-    },
-    "extras": {
-      "title": "Extras"
-    },
-    "locations": {
-      "title": "Standorte"
-    },
-    "settings": {
-      "title": "Buchung & Zahlung"
-    },
-    "fleetOps": {
-      "title": "Flottenbetrieb"
-    },
-    "maintenance": {
-      "title": "Wartung"
-    },
-    "damages": {
-      "title": "Schäden"
-    },
-    "insurance": {
-      "title": "Versicherungen"
-    },
-    "documents": {
-      "title": "Dokumente"
+    "reservations": {"title": "Reservierungen"},
+    "vehicles": {"title": "Flotte"},
+    "blocks": {"title": "Fahrzeugsperren"},
+    "fleetOps": {"title": "Flottenbetrieb"},
+    "maintenance": {"title": "Wartung"},
+    "damages": {"title": "Schäden"},
+    "insurance": {"title": "Versicherungen"},
+    "documents": {"title": "Dokumente"}
+  },
+  "tenancy": {
+    "systemSettings": {
+      "carRentalConfig": {
+        "title": "Autovermietung",
+        "booking": {"title": "Online-Buchung"},
+        "payment": {"title": "Zahlung und Stornierung"},
+        "terms": {"title": "Mietbedingungen"},
+        "alerts": {"title": "Benachrichtigungen ans Personal"}
+      },
+      "vehicleCategories": {"title": "Kategorien"},
+      "rentalExtras": {"title": "Extras"},
+      "rentalLocations": {"title": "Standorte"}
     }
   }
 }

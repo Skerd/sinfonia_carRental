@@ -1,7 +1,7 @@
 {
   "path": "src/modules/carRental/clients/panel/private/settings/editCarRentalConfig.tsx",
   "title": "Cilësimet e qirasë së makinave",
-  "description": "Rregullat e rezervimit, pagesa, anulimi dhe kushtet",
+  "description": "Vlen për këtë qira.",
   "form": {
     "bookingSectionTitle": "Rezervim online",
     "cancellationFeePercentLabel": "Tarifa e anulimit të vonuar (%)",
@@ -68,7 +68,7 @@
   },
   "formHeader": {
     "title": "Cilësimet e qirasë së makinave",
-    "description": "Rregullat e rezervimit, pagesa, anulimi dhe kushtet"
+    "description": "Vlen për këtë qira."
   },
   "formButtons": {
     "cancel": "Anulo",

@@ -27,7 +27,7 @@
       "maxRentalDays": "Durée de location maximale (jours)",
       "minLeadTimeHours": "Délai minimum (heures)",
       "minRentalHours": "Durée de location minimale (heures)",
-      "notifyUsers": "Prévenir les utilisateurs",
+      "notifyUsers": "Prévenir ces personnes des nouvelles réservations",
       "paymentPolicy": "Politique de paiement",
       "pricesIncludeVat": "Prix TTC",
       "publicBookingEnabled": "Réservation publique activée",

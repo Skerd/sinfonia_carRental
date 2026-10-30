@@ -1,7 +1,7 @@
 {
   "path": "src/modules/carRental/clients/panel/private/settings/editCarRentalConfig.tsx",
   "title": "Impostazioni noleggio auto",
-  "description": "Regole di prenotazione, pagamento, cancellazione e condizioni",
+  "description": "Vale per questo noleggio.",
   "form": {
     "bookingSectionTitle": "Prenotazione online",
     "cancellationFeePercentLabel": "Penale per cancellazione tardiva (%)",
@@ -68,7 +68,7 @@
   },
   "formHeader": {
     "title": "Impostazioni noleggio auto",
-    "description": "Regole di prenotazione, pagamento, cancellazione e condizioni"
+    "description": "Vale per questo noleggio."
   },
   "formButtons": {
     "cancel": "Annulla",

@@ -4,14 +4,24 @@
     "reservations": {"title": "Reservations"},
     "vehicles": {"title": "Fleet"},
     "blocks": {"title": "Vehicle blocks"},
-    "categories": {"title": "Categories"},
-    "extras": {"title": "Extras"},
-    "locations": {"title": "Locations"},
-    "settings": {"title": "Booking & payments"},
     "fleetOps": {"title": "Fleet operations"},
     "maintenance": {"title": "Maintenance"},
     "damages": {"title": "Damages"},
     "insurance": {"title": "Insurance"},
     "documents": {"title": "Documents"}
+  },
+  "tenancy": {
+    "systemSettings": {
+      "carRentalConfig": {
+        "title": "Car rental",
+        "booking": {"title": "Online booking"},
+        "payment": {"title": "Payment and cancellation"},
+        "terms": {"title": "Rental terms"},
+        "alerts": {"title": "Staff alerts"}
+      },
+      "vehicleCategories": {"title": "Categories"},
+      "rentalExtras": {"title": "Extras"},
+      "rentalLocations": {"title": "Locations"}
+    }
   }
 }
