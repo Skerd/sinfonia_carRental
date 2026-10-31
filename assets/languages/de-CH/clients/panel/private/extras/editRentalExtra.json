@@ -12,8 +12,18 @@
     "6": "Samstag"
   },
   "form": {
+    "depositAmountLabel": "Kaution mit diesem Paket",
+    "depositAmountPlaceholder": "Leer lassen, um die Kaution der Kategorie zu behalten",
     "descriptionLabel": "Beschreibung",
     "descriptionPlaceholder": "Was Kunden über diese Kategorie wissen sollten",
+    "excessAmountLabel": "Selbstbehalt (nur Schutzpaket)",
+    "excessAmountPlaceholder": "Höchstbetrag, den die Kundschaft bei Schäden zahlt",
+    "kind": {
+      "extra": "Extra",
+      "protection": "Schutzpaket"
+    },
+    "kindLabel": "Art",
+    "kindPlaceholder": "Art auswählen",
     "maxQuantityLabel": "Höchstens pro Buchung",
     "maxQuantityPlaceholder": "Höchstmenge eingeben",
     "nameLabel": "Name",

@@ -14,6 +14,15 @@
           "Anulimi kthen atë që është paguar, minus tarifën e anulimit nëse zgjidhni ta aplikoni. Rezervimet që prisnin pagesën online dhe skaduan shfaqen si të skaduara.",
           "Oraret shfaqen në zonën kohore të vendit të marrjes te vetë rezervimi."
         ]
+      },
+      {
+        "title": "Shoferët, depozita dhe kthimi",
+        "items": [
+          "Çdo shofer duhet të ketë numrin e patentës, ende të vlefshme ditën e kthimit. Pa të, makina nuk niset.",
+          "Merrni depozitën para dorëzimit: para në dorë, bllokim në kartë për qira deri në një javë, ose kartë të ruajtur për më të gjata. Mbylleni kur makina kthehet.",
+          "Dorëzimi dërgon kontratën me email. E shkarkoni përsëri nga menuja e rezervimit.",
+          "Kthimi propozon tarifat e karburantit, vonesës dhe pastrimit nga matjet. Ndryshojini para se të konfirmoni. Një dëmtim i ri regjistrohet te makina."
+        ]
       }
     ]
   },

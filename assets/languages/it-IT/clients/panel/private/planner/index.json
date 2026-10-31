@@ -1,0 +1,29 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/planner/index.tsx",
+  "from": "Data di inizio",
+  "earlier": "Prima",
+  "later": "Dopo",
+  "today": "Oggi",
+  "span": "Giorni mostrati",
+  "days": "{count} giorni",
+  "location": "Sede",
+  "allLocations": "Tutte le sedi",
+  "category": "Categoria",
+  "allCategories": "Tutte le categorie",
+  "car": "Veicolo",
+  "noCars": "Nessun veicolo corrisponde a questi filtri.",
+  "needsTransfer": "Il veicolo va portato alla sede di ritiro",
+  "hint": "Trascina una prenotazione su un altro veicolo della stessa categoria per spostarla. Fai clic per aprirla.",
+  "moved": "{number} spostata su {plate}",
+  "blockReason": {
+    "maintenance": "Manutenzione",
+    "repair": "Riparazione",
+    "transfer": "Trasferimento",
+    "other": "Bloccato"
+  },
+  "readiness": {
+    "ready": "Pronto",
+    "needs_cleaning": "Da pulire",
+    "needs_check": "Da controllare"
+  }
+}

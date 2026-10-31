@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/depositDialog.tsx",
+  "title": "Take the deposit",
+  "descriptionHold": "The amount is held on the customer's card and released or charged after the return.",
+  "descriptionSaveCard": "This rental is longer than a week, so the customer's card is saved instead of held. It can be charged after the return.",
+  "amountLabel": "Deposit",
+  "method": {
+    "card": "Card",
+    "cash": "Cash"
+  },
+  "confirmCash": "Record cash deposit",
+  "continueCard": "Continue to card",
+  "cardTitle": "Customer's card",
+  "cardHoldHint": "Hand the device to the customer to enter their card. Nothing is charged now.",
+  "cardSaveHint": "Hand the device to the customer to save their card. Nothing is charged now.",
+  "confirmHold": "Hold deposit",
+  "confirmSave": "Save card",
+  "close": "Close",
+  "cancel": "Back"
+}

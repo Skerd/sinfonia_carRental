@@ -1,0 +1,54 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/editVehicleTransfer.tsx",
+  "title": "Modifica trasferimento",
+  "description": "Cambia conducente, km o note",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "vehicleLabel": "Veicolo",
+    "vehiclePlaceholder": "Seleziona veicolo",
+    "fromLocationLabel": "Da",
+    "fromLocationPlaceholder": "Seleziona sede",
+    "toLocationLabel": "A",
+    "toLocationPlaceholder": "Seleziona sede",
+    "departAtLabel": "Partenza",
+    "departAtPlaceholder": "Scegli data e ora",
+    "arriveAtLabel": "Arrivo",
+    "arriveAtPlaceholder": "Scegli data e ora",
+    "driverLabel": "Guidato da",
+    "driverPlaceholder": "Seleziona una persona",
+    "odometerKmLabel": "Km all'arrivo",
+    "odometerKmPlaceholder": "Letti all'arrivo",
+    "notesLabel": "Note",
+    "notesPlaceholder": "Note interne"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio delle modifiche",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifiche salvate",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare le modifiche. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifica trasferimento",
+    "description": "Cambia conducente, km o note"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Salva"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/index.tsx",
+  "title": "Liste d'exclusion",
+  "description": "Clients qui ne peuvent ni réserver ni retirer un véhicule",
+  "help": {
+    "ariaLabel": "À propos de la liste d'exclusion",
+    "title": "À propos de la liste d'exclusion",
+    "overview": "Un e-mail ou un numéro de permis bloqué est refusé à la réservation et de nouveau à la remise des clés.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Indiquez un e-mail, un numéro de permis, ou les deux.",
+          "Décochez Actif pour autoriser à nouveau ce client sans supprimer la ligne."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter une entrée",
+  "searchPlaceholder": "Rechercher dans la liste ou ajouter des filtres...",
+  "noData": "Personne n'est bloqué",
+  "failTitle": "Impossible de charger la liste",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "email": "E-mail",
+    "licenseNumber": "Numéro de permis",
+    "reason": "Motif",
+    "isActive": "Actif",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

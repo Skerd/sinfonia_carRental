@@ -38,7 +38,8 @@
   "vehicle": "Veicolo",
   "paymentChoiceValues": {
     "pay_at_pickup": "Al ritiro",
-    "online": "Online"
+    "online": "Online",
+    "on_account": "A conto"
   },
   "paymentStatusValues": {
     "unpaid": "Non pagato",
@@ -70,17 +71,64 @@
     "payment_failed": "Pagamento non riuscito",
     "confirmed": "Confermato",
     "vehicle_reassigned": "Veicolo cambiato",
+    "drivers_updated": "Conducenti aggiornati",
     "handover": "Consegnato",
     "extended": "Prolungato",
     "returned": "Riconsegnato",
     "cancelled": "Annullato",
     "expired": "Trattenimento scaduto",
     "no_show": "Non presentato",
-    "refunded": "Rimborsato"
+    "refunded": "Rimborsato",
+    "charge_added": "Addebito aggiunto",
+    "deposit_held": "Deposito bloccato",
+    "deposit_captured": "Deposito trattenuto",
+    "deposit_released": "Deposito sbloccato"
   },
   "createdAt": "Creato il",
   "updatedAt": "Aggiornato il",
   "createdBy": "Creato da",
   "deletedAt": "Eliminato il",
-  "deletedBy": "Eliminato da"
+  "deletedBy": "Eliminato da",
+  "drivers": "Conducenti",
+  "role": "Ruolo",
+  "birthDate": "Data di nascita",
+  "licenseNumber": "Numero di patente",
+  "licenseCountry": "Rilasciata in",
+  "licenseExpiresAt": "Patente valida fino al",
+  "driverRole": {
+    "primary": "Conducente principale",
+    "additional": "Conducente aggiuntivo"
+  },
+  "inspection": "Ritiro e riconsegna",
+  "handover_odometerKm": "Km al ritiro",
+  "handover_fuelLevel": "Carburante al ritiro",
+  "returnInfo_odometerKm": "Km alla riconsegna",
+  "returnInfo_fuelLevel": "Carburante alla riconsegna",
+  "agreement_signerName": "Contratto firmato da",
+  "agreement_signedAt": "Firmato il",
+  "fuelValues": {
+    "empty": "Vuoto",
+    "quarter": "1/4",
+    "half": "1/2",
+    "three_quarters": "3/4",
+    "full": "Pieno"
+  },
+  "deposit": "Deposito",
+  "deposit_method": "Preso come",
+  "deposit_status": "Stato del deposito",
+  "deposit_amount": "Deposito bloccato",
+  "deposit_capturedAmount": "Trattenuto",
+  "depositMethodValues": {
+    "card_hold": "Blocco su carta",
+    "saved_card": "Carta salvata",
+    "cash": "Contanti"
+  },
+  "depositStatusValues": {
+    "pending": "In attesa della carta",
+    "held": "Bloccato",
+    "captured": "Trattenuto",
+    "released": "Sbloccato",
+    "failed": "Non riuscito"
+  },
+  "needsTransfer": "Serve un trasferimento"
 }

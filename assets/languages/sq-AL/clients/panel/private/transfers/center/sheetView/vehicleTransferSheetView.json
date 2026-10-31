@@ -1,0 +1,27 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/center/sheetView/vehicleTransferSheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "overview": "Përmbledhje",
+  "vehicleTransferSubtitle": "Transferim",
+  "vehicle": "Automjeti",
+  "fromLocation": "Nga",
+  "toLocation": "Për",
+  "departAt": "Nisja",
+  "arriveAt": "Mbërritja",
+  "driver": "Drejtuar nga",
+  "status": "Statusi",
+  "odometerKm": "Km në mbërritje",
+  "notes": "Shënime",
+  "statusValues": {
+    "planned": "I planifikuar",
+    "in_transit": "Në rrugë",
+    "done": "Mbërriti",
+    "cancelled": "I anuluar"
+  },
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "company": "Kompania",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

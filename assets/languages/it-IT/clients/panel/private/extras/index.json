@@ -14,6 +14,13 @@
           "Disattiva un extra per non offrirlo più; le prenotazioni esistenti mantengono il loro prezzo.",
           "Riordina imposta l'ordine che i clienti vedono sul sito web."
         ]
+      },
+      {
+        "title": "Pacchetto di protezione",
+        "items": [
+          "Scegli Pacchetto di protezione per coperture come una franchigia più bassa. Una prenotazione può includerne solo uno.",
+          "La franchigia è il massimo che il cliente paga per un danno. Il deposito di quel pacchetto si blocca al ritiro."
+        ]
       }
     ]
   },

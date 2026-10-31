@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/center/cardView/rentalBusinessAccountCard.tsx",
+  "failedTitle": "Konto konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "name": "Name",
+  "vatNumber": "MwSt.-Nummer",
+  "discountPercent": "Rabatt %",
+  "isActive": "Aktiv",
+  "statement": "Monatsabrechnung"
+}

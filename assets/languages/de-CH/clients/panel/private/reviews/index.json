@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/index.tsx",
+  "title": "Bewertungen",
+  "description": "Was die Kundschaft nach einer Miete geschrieben hat",
+  "help": {
+    "ariaLabel": "Über Bewertungen",
+    "title": "Über Bewertungen",
+    "overview": "Die Kundschaft kann nach der Rückgabe eine Bewertung über den Verwaltungslink hinterlassen. Sie bleibt verborgen, bis Sie sie veröffentlichen.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Veröffentlichen Sie eine Bewertung, um sie zu zeigen.",
+          "Eine Buchung kann nur eine Bewertung haben."
+        ]
+      }
+    ]
+  },
+  "create": "Bewertung hinzufügen",
+  "searchPlaceholder": "Bewertungen suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Bewertungen",
+  "failTitle": "Bewertungen konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "reservation": "Buchung",
+    "rating": "Bewertung",
+    "comment": "Kommentar",
+    "authorName": "Name",
+    "isPublished": "Veröffentlicht",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/center/dialogs/rentalStatementDialog.tsx",
+  "title": "Monthly statement",
+  "description": "Invoices issued during the month you choose.",
+  "month": "Month",
+  "download": "Download",
+  "cancel": "Cancel"
+}

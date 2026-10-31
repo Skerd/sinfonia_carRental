@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/depositDialog.tsx",
+  "title": "Prendre la caution",
+  "descriptionHold": "Le montant est bloqué sur la carte du client, puis libéré ou débité après le retour.",
+  "descriptionSaveCard": "Cette location dure plus d'une semaine : la carte est enregistrée au lieu d'être bloquée. Elle pourra être débitée après le retour.",
+  "amountLabel": "Caution",
+  "method": {
+    "card": "Carte",
+    "cash": "Espèces"
+  },
+  "confirmCash": "Enregistrer la caution en espèces",
+  "continueCard": "Continuer vers la carte",
+  "cardTitle": "Carte du client",
+  "cardHoldHint": "Tendez l'appareil au client pour qu'il saisisse sa carte. Rien n'est débité maintenant.",
+  "cardSaveHint": "Tendez l'appareil au client pour qu'il enregistre sa carte. Rien n'est débité maintenant.",
+  "confirmHold": "Bloquer la caution",
+  "confirmSave": "Enregistrer la carte",
+  "close": "Fermer",
+  "cancel": "Retour"
+}

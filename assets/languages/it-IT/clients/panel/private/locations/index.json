@@ -14,6 +14,12 @@
           "Aggiungi i giorni festivi come chiusure; in quei giorni il sito non offrirà ritiri né riconsegne.",
           "Una sede con prenotazioni non può essere eliminata; disattivala invece."
         ]
+      },
+      {
+        "title": "Supplemento sola andata",
+        "items": [
+          "Il supplemento sola andata si applica quando l'auto viene riconsegnata in un'altra sede. Si usa il supplemento della sede di riconsegna. Se è vuoto, si usa quello dell'azienda."
+        ]
       }
     ]
   },

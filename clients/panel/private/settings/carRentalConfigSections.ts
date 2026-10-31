@@ -1,5 +1,5 @@
 /** Path segments under `/tenancy/systemSettings/carRentalConfig/`. One page per settings block. */
-export const CAR_RENTAL_CONFIG_SECTIONS = ["booking", "payment", "terms", "alerts"] as const;
+export const CAR_RENTAL_CONFIG_SECTIONS = ["booking", "payment", "fees", "terms", "alerts"] as const;
 
 export type CarRentalConfigSection = (typeof CAR_RENTAL_CONFIG_SECTIONS)[number];
 

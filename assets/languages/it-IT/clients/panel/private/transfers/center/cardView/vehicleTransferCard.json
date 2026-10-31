@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/center/cardView/vehicleTransferCard.tsx",
+  "failedTitle": "Impossibile caricare il trasferimento",
+  "failedDescription": "Tocca per riprovare.",
+  "fromLocation": "Da",
+  "toLocation": "A",
+  "departAt": "Partenza",
+  "driver": "Guidato da",
+  "status": "Stato",
+  "statusValues": {
+    "planned": "Pianificato",
+    "in_transit": "In viaggio",
+    "done": "Arrivato",
+    "cancelled": "Annullato"
+  }
+}

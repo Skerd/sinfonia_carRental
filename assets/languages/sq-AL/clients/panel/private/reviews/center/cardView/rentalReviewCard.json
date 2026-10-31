@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/center/cardView/rentalReviewCard.tsx",
+  "failedTitle": "Vlerësimi nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "reservation": "Rezervimi",
+  "rating": "Vlerësimi",
+  "authorName": "Emri",
+  "isPublished": "E publikuar"
+}

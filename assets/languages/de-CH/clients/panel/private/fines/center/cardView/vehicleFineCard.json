@@ -1,0 +1,27 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/cardView/vehicleFineCard.tsx",
+  "failedTitle": "Busse konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "vehicle": "Fahrzeug",
+  "offenceAt": "Datum und Zeit des Verstosses",
+  "type": "Art",
+  "amount": "Betrag",
+  "status": "Status",
+  "reservation": "Buchung",
+  "driverName": "Fahrer/in",
+  "typeValues": {
+    "speeding": "Geschwindigkeit",
+    "parking": "Parkieren",
+    "red_light": "Rotlicht",
+    "toll": "Maut",
+    "other": "Anderes"
+  },
+  "statusValues": {
+    "received": "Erhalten",
+    "driver_identified": "Fahrer/in ermittelt",
+    "charged": "Der Kundschaft belastet",
+    "paid_by_company": "Von uns bezahlt",
+    "transferred": "Fahrer/in gemeldet",
+    "disputed": "Bestritten"
+  }
+}

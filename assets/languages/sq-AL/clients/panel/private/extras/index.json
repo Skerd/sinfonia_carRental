@@ -14,6 +14,13 @@
           "Çaktivizoni një shtesë për të mos e ofruar më; rezervimet ekzistuese ruajnë çmimin e tyre.",
           "Rirenditja cakton rendin që klientët shohin në faqe."
         ]
+      },
+      {
+        "title": "Paketë mbrojtjeje",
+        "items": [
+          "Zgjidhni Paketë mbrojtjeje për mbulime si një franshizë më e ulët. Një rezervim mund të ketë vetëm një.",
+          "Franshiza është maksimumi që klienti paguan për një dëmtim. Depozita e asaj pakete bllokohet në marrje."
+        ]
       }
     ]
   },

@@ -12,6 +12,7 @@ import {isCarRentalConfigSection, type CarRentalConfigSection} from "@carRentalM
 const SECTION_FLAGS: Record<CarRentalConfigSection, string> = {
     booking: "sectionBooking",
     payment: "sectionPayment",
+    fees: "sectionFees",
     terms: "sectionTerms",
     alerts: "sectionAlerts",
 };

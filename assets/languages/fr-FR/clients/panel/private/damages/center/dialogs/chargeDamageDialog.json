@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/dialogs/chargeDamageDialog.tsx",
+  "title": "Facturer le client",
+  "description": "Ajoute la réparation au montant dû par le client de la réservation {number} et l'en informe par e-mail.",
+  "confirm": "Ajouter les frais",
+  "cancel": "Retour",
+  "amountLabel": "Montant",
+  "excessHint": "Avec une formule de protection, les frais s'arrêtent à la franchise du client."
+}

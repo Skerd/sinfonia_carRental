@@ -2,12 +2,21 @@
   "carRental": {
     "title": "Noleggio auto",
     "reservations": {"title": "Prenotazioni"},
+    "planner": {"title": "Planner"},
+    "counter": {"title": "Banco"},
+    "reports": {"title": "Report"},
+    "businessAccounts": {"title": "Conti aziendali"},
+    "subscriptions": {"title": "Abbonamenti"},
+    "reviews": {"title": "Recensioni"},
+    "denyList": {"title": "Lista di esclusione"},
     "vehicles": {"title": "Flotta"},
     "blocks": {"title": "Blocchi veicolo"},
     "fleetOps": {"title": "Gestione flotta"},
     "maintenance": {"title": "Manutenzione"},
     "damages": {"title": "Danni"},
     "insurance": {"title": "Assicurazioni"},
+    "fines": {"title": "Multe"},
+    "transfers": {"title": "Trasferimenti"},
     "documents": {"title": "Documenti"}
   },
   "tenancy": {
@@ -16,12 +25,14 @@
         "title": "Noleggio auto",
         "booking": {"title": "Prenotazione online"},
         "payment": {"title": "Pagamento e cancellazione"},
+        "fees": {"title": "Costi e supplementi"},
         "terms": {"title": "Condizioni di noleggio"},
         "alerts": {"title": "Avvisi al personale"}
       },
       "vehicleCategories": {"title": "Categorie"},
       "rentalExtras": {"title": "Extra"},
-      "rentalLocations": {"title": "Sedi"}
+      "rentalLocations": {"title": "Sedi"},
+      "rentalPromoCodes": {"title": "Codici promozionali"}
     }
   }
 }

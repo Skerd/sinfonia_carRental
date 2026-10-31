@@ -30,5 +30,16 @@
     "readTerms": "Read the terms",
     "booking": "Booking…",
     "continueToPayment": "Continue to payment",
-    "confirmBooking": "Confirm booking"
+    "confirmBooking": "Confirm booking",
+    "protectionTitle": "Protection",
+    "protectionBasic": "Basic cover",
+    "protectionBasicHint": "Included. You pay the full excess if the car is damaged.",
+    "perDay": "per day",
+    "protectionExcess": "Excess: {amount}",
+    "birthDate": "Date of birth",
+    "birthDateRequired": "Enter the driver's date of birth.",
+    "promoLabel": "Promo code",
+    "promoApply": "Apply",
+    "promoInvalid": "This promo code can't be used for this booking.",
+    "crossBorder": "Taking the car out of the country"
 }

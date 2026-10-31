@@ -1,0 +1,6 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/actions/vehicleFineMenu.tsx",
+  "matchDriver": "Rapprocher à nouveau",
+  "chargeCustomer": "Facturer le client",
+  "driverLetter": "Télécharger la lettre de désignation"
+}

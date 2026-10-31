@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/depositDialog.tsx",
+  "title": "Merr depozitën",
+  "descriptionHold": "Shuma bllokohet në kartën e klientit dhe lirohet ose faturohet pas kthimit.",
+  "descriptionSaveCard": "Kjo qira zgjat më shumë se një javë, ndaj karta ruhet në vend që të bllokohet. Mund të faturohet pas kthimit.",
+  "amountLabel": "Depozita",
+  "method": {
+    "card": "Kartë",
+    "cash": "Para në dorë"
+  },
+  "confirmCash": "Regjistro depozitën në para",
+  "continueCard": "Vazhdo te karta",
+  "cardTitle": "Karta e klientit",
+  "cardHoldHint": "Jepini klientit pajisjen që të fusë kartën. Tani nuk faturohet asgjë.",
+  "cardSaveHint": "Jepini klientit pajisjen që të ruajë kartën. Tani nuk faturohet asgjë.",
+  "confirmHold": "Blloko depozitën",
+  "confirmSave": "Ruaj kartën",
+  "close": "Mbyll",
+  "cancel": "Kthehu"
+}

@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/settleDepositDialog.tsx",
+  "title": "Régler la caution",
+  "description": "Bloqué : {held}. Reste dû : {due}. Retenez le montant dû ; le reste est libéré.",
+  "keepLabel": "Retenir sur la caution",
+  "confirmKeep": "Retenir et libérer le reste",
+  "confirmRelease": "Libérer la caution",
+  "cancel": "Retour"
+}

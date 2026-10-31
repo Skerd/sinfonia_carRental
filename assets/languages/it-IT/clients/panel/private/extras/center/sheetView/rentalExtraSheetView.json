@@ -16,5 +16,12 @@
   "updatedAt": "Aggiornato il",
   "createdBy": "Creato da",
   "deletedAt": "Eliminato il",
-  "deletedBy": "Eliminato da"
+  "deletedBy": "Eliminato da",
+  "kind": "Tipo",
+  "excessAmount": "Franchigia",
+  "depositAmount": "Deposito con questo pacchetto",
+  "kindValues": {
+    "extra": "Extra",
+    "protection": "Pacchetto di protezione"
+  }
 }

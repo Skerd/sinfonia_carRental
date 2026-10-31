@@ -13,6 +13,13 @@
           "Ein Fahrzeug mit bevorstehenden Buchungen kann nicht in Wartung oder ausser Betrieb gesetzt oder einer anderen Kategorie zugewiesen werden, bis diese Buchungen auf ein anderes Auto verschoben sind.",
           "Setzen Sie ein Fahrzeug ausser Betrieb, statt es zu löschen: seine Geschichte bleibt bei vergangenen Buchungen erhalten."
         ]
+      },
+      {
+        "title": "Bereit zur Ausgabe",
+        "items": [
+          "Die Bereitschaft sagt, ob das Fahrzeug raus kann: bereit, Reinigung nötig oder Kontrolle nötig. Jede Rückgabe setzt sie auf Reinigung nötig, bis jemand sie auf bereit stellt.",
+          "Jetzt in ist der Ort, an dem das Fahrzeug steht. Er ändert sich, wenn eine Miete zurückkommt und wenn eine Überführung ankommt."
+        ]
       }
     ]
   },

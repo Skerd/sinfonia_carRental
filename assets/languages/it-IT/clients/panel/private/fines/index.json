@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/index.tsx",
+  "title": "Multe",
+  "description": "Multe e pedaggi dei tuoi veicoli, attribuiti al conducente del momento",
+  "help": {
+    "ariaLabel": "Informazioni sulle multe",
+    "title": "Informazioni sulle multe",
+    "overview": "Inserisci una multa quando arriva il verbale. La prenotazione il cui ritiro e riconsegna comprendono l'ora dell'infrazione viene trovata da sola, con il suo conducente principale.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Addebita al cliente per aggiungere multa e spese di gestione alla sua prenotazione; una carta salvata viene addebitata subito.",
+          "Scarica la lettera per comunicare il conducente all'autorità.",
+          "Se il veicolo o l'ora vengono corretti, usa Abbina di nuovo."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi multa",
+  "searchPlaceholder": "Cerca multe o aggiungi filtri...",
+  "noData": "Ancora nessuna multa",
+  "failTitle": "Impossibile caricare le multe",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "reference": "Riferimento",
+    "vehicle": "Veicolo",
+    "offenceAt": "Data e ora dell'infrazione",
+    "type": "Tipo",
+    "authority": "Emesso da",
+    "amount": "Importo",
+    "place": "Luogo",
+    "dueDate": "Pagare o rispondere entro",
+    "status": "Stato",
+    "reservation": "Prenotazione",
+    "driverName": "Conducente",
+    "chargedAmount": "Addebitato al cliente",
+    "attachments": "Scansione del verbale",
+    "notes": "Note",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

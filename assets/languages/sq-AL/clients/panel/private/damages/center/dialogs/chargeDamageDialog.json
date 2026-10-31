@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/dialogs/chargeDamageDialog.tsx",
+  "title": "Faturo klientin",
+  "description": "Shton riparimin te shuma që i detyrohet klienti i rezervimit {number} dhe e njofton me email.",
+  "confirm": "Shto pagesën",
+  "cancel": "Kthehu",
+  "amountLabel": "Shuma",
+  "excessHint": "Me paketë mbrojtjeje, pagesa ndalet te franshiza e klientit."
+}

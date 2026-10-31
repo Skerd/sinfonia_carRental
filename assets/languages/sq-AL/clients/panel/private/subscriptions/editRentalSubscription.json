@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/editRentalSubscription.tsx",
+  "title": "Ndrysho abonimin",
+  "description": "Ndryshoni planin, çmimin ose statusin",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "contactNameLabel": "Emri i kontaktit",
+    "contactNamePlaceholder": "Për kë është makina",
+    "emailLabel": "Email",
+    "emailPlaceholder": "klienti@email.al",
+    "phoneLabel": "Telefoni",
+    "phonePlaceholder": "Numri i telefonit",
+    "categoryLabel": "Kategoria",
+    "categoryPlaceholder": "Zgjidhni kategorinë",
+    "pickupLocationLabel": "Vendi i marrjes",
+    "pickupLocationPlaceholder": "Zgjidhni vendndodhjen",
+    "periodLabel": "Periudha",
+    "periodPlaceholder": "Zgjidhni periudhën",
+    "period": {
+      "week": "Javë",
+      "month": "Muaj"
+    },
+    "priceLabel": "Çmimi për periudhë",
+    "pricePlaceholder": "0.00",
+    "statusLabel": "Statusi",
+    "statusPlaceholder": "Zgjidhni statusin",
+    "status": {
+      "active": "Aktiv",
+      "paused": "Në pauzë",
+      "ended": "Përfunduar"
+    },
+    "nextRunAtLabel": "Rezervimi tjetër",
+    "nextRunAtPlaceholder": "Zgjidhni një datë",
+    "businessAccountLabel": "Llogari biznesi",
+    "businessAccountPlaceholder": "Opsionale"
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhen ndryshimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Ndryshimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Ndryshimet nuk u ruajtën. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ndrysho abonimin",
+    "description": "Ndryshoni planin, çmimin ose statusin"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

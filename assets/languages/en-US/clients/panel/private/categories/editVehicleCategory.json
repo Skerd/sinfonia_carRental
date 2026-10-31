@@ -12,6 +12,9 @@
     "6": "Saturday"
   },
   "form": {
+    "crossBorderAllowedLabel": "Cross-border allowed",
+    "crossBorderFeeLabel": "Cross-border fee",
+    "crossBorderFeePlaceholder": "0.00",
     "dailyRateLabel": "Daily rate",
     "dailyRatePlaceholder": "e.g. 49",
     "depositAmountLabel": "Deposit",

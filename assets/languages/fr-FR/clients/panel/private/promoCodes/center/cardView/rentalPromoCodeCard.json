@@ -1,0 +1,15 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/center/cardView/rentalPromoCodeCard.tsx",
+  "failedTitle": "Impossible de charger le code promo",
+  "failedDescription": "Touchez pour réessayer.",
+  "type": "Type de remise",
+  "value": "Remise",
+  "category": "Catégorie",
+  "bookableUntil": "Réservable jusqu'au",
+  "usageCount": "Utilisations",
+  "isActive": "Actif",
+  "typeValues": {
+    "percent": "Pourcentage",
+    "fixed": "Montant fixe"
+  }
+}

@@ -23,7 +23,8 @@
   "payment": "Pagamento",
   "paymentChoice": {
     "pay_at_pickup": "Paga al ritiro",
-    "online": "Pagato online"
+    "online": "Pagato online",
+    "on_account": "A conto"
   },
   "paymentStatus": {
     "unpaid": "Non ancora pagato",
@@ -41,5 +42,22 @@
   "keepBooking": "Mantieni la prenotazione",
   "cancelBooking": "Annulla questa prenotazione",
   "cancelledNotice": "La tua prenotazione è annullata. Eventuali rimborsi tornano sul metodo di pagamento originale.",
-  "priceTitle": "Prezzo"
+  "priceTitle": "Prezzo",
+  "amountDue": "{amount} ancora da pagare",
+  "licenceTitle": "Patente",
+  "licenceHint": "Inserisci il numero e carica una foto.",
+  "licenceNumber": "Numero di patente",
+  "saveLicence": "Salva patente",
+  "documentsCount": "{count} file caricati",
+  "extendTitle": "Tieni l'auto più a lungo",
+  "extendAndPay": "Prolunga e paga la differenza",
+  "extrasTitle": "Aggiungi qualcosa prima del ritiro",
+  "payBalance": "Paga il saldo",
+  "payTitle": "Paga ora",
+  "downloadAgreement": "Scarica il contratto",
+  "downloadInvoice": "Fattura {number}",
+  "reviewTitle": "Com'era l'auto?",
+  "reviewComment": "Qualche parola",
+  "sendReview": "Invia recensione",
+  "reviewThanks": "Grazie. La recensione attende la pubblicazione."
 }

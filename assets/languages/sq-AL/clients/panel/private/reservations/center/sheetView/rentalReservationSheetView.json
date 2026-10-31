@@ -38,7 +38,8 @@
   "vehicle": "Automjeti",
   "paymentChoiceValues": {
     "pay_at_pickup": "Në marrje",
-    "online": "Online"
+    "online": "Online",
+    "on_account": "Në llogari"
   },
   "paymentStatusValues": {
     "unpaid": "E papaguar",
@@ -70,17 +71,64 @@
     "payment_failed": "Pagesa dështoi",
     "confirmed": "Konfirmuar",
     "vehicle_reassigned": "Automjeti u ndryshua",
+    "drivers_updated": "Shoferët u përditësuan",
     "handover": "Dorëzuar",
     "extended": "Zgjatur",
     "returned": "Kthyer",
     "cancelled": "Anuluar",
     "expired": "Mbajtja skadoi",
     "no_show": "Mosparaqitje",
-    "refunded": "Rimbursuar"
+    "refunded": "Rimbursuar",
+    "charge_added": "Pagesë e shtuar",
+    "deposit_held": "Depozita u bllokua",
+    "deposit_captured": "Depozita u mbajt",
+    "deposit_released": "Depozita u lirua"
   },
   "createdAt": "Krijuar më",
   "updatedAt": "Përditësuar më",
   "createdBy": "Krijuar nga",
   "deletedAt": "Fshirë më",
-  "deletedBy": "Fshirë nga"
+  "deletedBy": "Fshirë nga",
+  "drivers": "Shoferët",
+  "role": "Roli",
+  "birthDate": "Data e lindjes",
+  "licenseNumber": "Numri i patentës",
+  "licenseCountry": "Lëshuar në",
+  "licenseExpiresAt": "Patenta e vlefshme deri më",
+  "driverRole": {
+    "primary": "Shoferi kryesor",
+    "additional": "Shofer shtesë"
+  },
+  "inspection": "Marrja dhe kthimi",
+  "handover_odometerKm": "Km në marrje",
+  "handover_fuelLevel": "Karburanti në marrje",
+  "returnInfo_odometerKm": "Km në kthim",
+  "returnInfo_fuelLevel": "Karburanti në kthim",
+  "agreement_signerName": "Kontrata nënshkruar nga",
+  "agreement_signedAt": "Nënshkruar më",
+  "fuelValues": {
+    "empty": "Bosh",
+    "quarter": "1/4",
+    "half": "1/2",
+    "three_quarters": "3/4",
+    "full": "Plot"
+  },
+  "deposit": "Depozita",
+  "deposit_method": "Marrë si",
+  "deposit_status": "Gjendja e depozitës",
+  "deposit_amount": "Depozita e bllokuar",
+  "deposit_capturedAmount": "E mbajtur",
+  "depositMethodValues": {
+    "card_hold": "Bllokim në kartë",
+    "saved_card": "Kartë e ruajtur",
+    "cash": "Para në dorë"
+  },
+  "depositStatusValues": {
+    "pending": "Në pritje të kartës",
+    "held": "E bllokuar",
+    "captured": "E mbajtur",
+    "released": "E liruar",
+    "failed": "Dështoi"
+  },
+  "needsTransfer": "Duhet transferim"
 }

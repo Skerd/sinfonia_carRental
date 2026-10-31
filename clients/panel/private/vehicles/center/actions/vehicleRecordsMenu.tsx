@@ -4,7 +4,7 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
 import {DropdownMenuItem} from "@coreModule/components/ui/dropdown-menu.tsx";
-import {IconCalendarEvent, IconCarCrash, IconEngine, IconFileCertificate, IconShieldCheck} from "@tabler/icons-react";
+import {IconCalendarEvent, IconCarCrash, IconEngine, IconFileCertificate, IconReceipt2, IconShieldCheck, IconTransfer} from "@tabler/icons-react";
 
 /** Each record list a car links to: page key, access model, icon. */
 const RECORDS = [
@@ -13,11 +13,13 @@ const RECORDS = [
     {key: "damages", model: "vehicledamages", Icon: IconCarCrash},
     {key: "insurance", model: "vehicleinsurances", Icon: IconShieldCheck},
     {key: "documents", model: "vehicledocuments", Icon: IconFileCertificate},
+    {key: "fines", model: "vehiclefines", Icon: IconReceipt2},
+    {key: "transfers", model: "vehicletransfers", Icon: IconTransfer},
 ] as const;
 
 type Props = WithLanguageType & {vehicleId: string};
 
-/** Opens a car's bookings, service log, damages, policies or documents, each list filtered to that car. */
+/** Opens a car's bookings, service log, damages, policies, documents, fines or transfers, each list filtered to that car. */
 function VehicleRecordsMenu({vehicleId, resolveLanguageKey}: Props) {
     const navigate = useNavigate();
     const access = {
@@ -26,6 +28,8 @@ function VehicleRecordsMenu({vehicleId, resolveLanguageKey}: Props) {
         vehicledamages: useAccess("vehicledamages"),
         vehicleinsurances: useAccess("vehicleinsurances"),
         vehicledocuments: useAccess("vehicledocuments"),
+        vehiclefines: useAccess("vehiclefines"),
+        vehicletransfers: useAccess("vehicletransfers"),
     };
 
     return (

@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/createRentalDenyEntry.tsx",
+  "title": "Blloko një klient",
+  "description": "Refuzoni rezervimet dhe dorëzimet për këtë email ose patentë",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "emailLabel": "Email",
+    "emailPlaceholder": "klienti@email.al",
+    "licenseNumberLabel": "Numri i patentës",
+    "licenseNumberPlaceholder": "Siç është në patentë",
+    "reasonLabel": "Arsyeja",
+    "reasonPlaceholder": "Pse ky klient është i bllokuar",
+    "isActiveLabel": "Aktiv"
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhet hyrja",
+      "time": 3000
+    },
+    "success": {
+      "title": "Klienti u bllokua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Hyrja nuk u shtua. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Blloko një klient",
+    "description": "Refuzoni rezervimet dhe dorëzimet për këtë email ose patentë"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  }
+}

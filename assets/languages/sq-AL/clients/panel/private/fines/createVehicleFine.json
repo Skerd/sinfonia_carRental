@@ -1,0 +1,74 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/createVehicleFine.tsx",
+  "title": "Shto gjobë",
+  "description": "Regjistroni një gjobë ose pagesë rruge që erdhi për një nga makinat tuaja",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "referenceLabel": "Referenca",
+    "referencePlaceholder": "Numri në njoftim",
+    "vehicleLabel": "Automjeti",
+    "vehiclePlaceholder": "Zgjidhni automjetin",
+    "offenceAtLabel": "Data dhe ora e shkeljes",
+    "offenceAtPlaceholder": "Zgjidhni një datë",
+    "typeLabel": "Lloji",
+    "typePlaceholder": "Zgjidhni llojin",
+    "type": {
+      "speeding": "Shpejtësi",
+      "parking": "Parkim",
+      "red_light": "Semafor i kuq",
+      "toll": "Pagesë rruge",
+      "other": "Tjetër"
+    },
+    "authorityLabel": "Lëshuar nga",
+    "authorityPlaceholder": "p.sh. Policia Rrugore Tiranë",
+    "amountLabel": "Shuma",
+    "amountPlaceholder": "Shuma në njoftim",
+    "placeLabel": "Vendi",
+    "placePlaceholder": "Ku ndodhi",
+    "dueDateLabel": "Paguani ose përgjigjuni deri më",
+    "dueDatePlaceholder": "Zgjidhni një datë",
+    "statusLabel": "Statusi",
+    "statusPlaceholder": "Zgjidhni statusin",
+    "status": {
+      "received": "E marrë",
+      "driver_identified": "Shoferi u identifikua",
+      "charged": "I faturuar klientit",
+      "paid_by_company": "E paguar nga ne",
+      "transferred": "Shoferi u njoftua",
+      "disputed": "E kundërshtuar"
+    },
+    "attachmentsLabel": "Skanimi i njoftimit",
+    "notesLabel": "Shënime",
+    "notesPlaceholder": "Shënime të brendshme"
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhet gjoba",
+      "time": 3000
+    },
+    "success": {
+      "title": "Gjoba u shtua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Gjoba nuk u shtua. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Shto gjobë",
+    "description": "Regjistroni një gjobë ose pagesë rruge që erdhi për një nga makinat tuaja"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  }
+}

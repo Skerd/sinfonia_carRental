@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/index.tsx",
+  "title": "Lista di esclusione",
+  "description": "Clienti che non possono prenotare o ritirare un veicolo",
+  "help": {
+    "ariaLabel": "Informazioni sulla lista di esclusione",
+    "title": "Informazioni sulla lista di esclusione",
+    "overview": "Un'email o un numero di patente bloccato viene rifiutato alla prenotazione e di nuovo alla consegna.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Indica un'email, un numero di patente, o entrambi.",
+          "Disattiva Attivo per riammettere il cliente senza cancellare la riga."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi voce",
+  "searchPlaceholder": "Cerca nella lista o aggiungi filtri...",
+  "noData": "Nessuno è bloccato",
+  "failTitle": "Impossibile caricare la lista",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "email": "Email",
+    "licenseNumber": "Numero di patente",
+    "reason": "Motivo",
+    "isActive": "Attivo",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

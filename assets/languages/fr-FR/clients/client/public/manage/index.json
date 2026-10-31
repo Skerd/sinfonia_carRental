@@ -23,7 +23,8 @@
   "payment": "Paiement",
   "paymentChoice": {
     "pay_at_pickup": "Payer à la prise en charge",
-    "online": "Payé en ligne"
+    "online": "Payé en ligne",
+    "on_account": "En compte"
   },
   "paymentStatus": {
     "unpaid": "Pas encore payé",
@@ -41,5 +42,22 @@
   "keepBooking": "Garder la réservation",
   "cancelBooking": "Annuler cette réservation",
   "cancelledNotice": "Votre réservation est annulée. Tout remboursement dû revient sur votre moyen de paiement d'origine.",
-  "priceTitle": "Prix"
+  "priceTitle": "Prix",
+  "amountDue": "{amount} restant à payer",
+  "licenceTitle": "Permis de conduire",
+  "licenceHint": "Indiquez le numéro et téléchargez une photo.",
+  "licenceNumber": "Numéro de permis",
+  "saveLicence": "Enregistrer le permis",
+  "documentsCount": "{count} fichiers téléchargés",
+  "extendTitle": "Garder la voiture plus longtemps",
+  "extendAndPay": "Prolonger et payer la différence",
+  "extrasTitle": "Ajouter quelque chose avant le départ",
+  "payBalance": "Payer le solde",
+  "payTitle": "Payer maintenant",
+  "downloadAgreement": "Télécharger le contrat",
+  "downloadInvoice": "Facture {number}",
+  "reviewTitle": "Comment était la voiture ?",
+  "reviewComment": "Quelques mots",
+  "sendReview": "Envoyer l'avis",
+  "reviewThanks": "Merci. L'avis attend d'être publié."
 }

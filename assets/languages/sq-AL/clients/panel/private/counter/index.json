@@ -1,0 +1,52 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/counter/index.tsx",
+  "title": "Sporteli",
+  "description": "Marrjet, kthimet dhe vonesat e sotme",
+  "date": "Data",
+  "today": "Sot",
+  "location": "Vendndodhja",
+  "allLocations": "Të gjitha vendndodhjet",
+  "search": "Kërko",
+  "searchPlaceholder": "Targë ose numër rezervimi",
+  "pickups": "Marrjet",
+  "returns": "Kthimet",
+  "overdue": "Të vonuara",
+  "empty": "Asgjë këtu.",
+  "noMatches": "Asnjë rezervim nuk përputhet me këtë kërkim.",
+  "noCar": "Pa makinë",
+  "needsTransfer": "Duhet transferim",
+  "driversMissing": "Mungojnë shoferët",
+  "depositMissing": "Depozita nuk është marrë",
+  "drivers": "Shoferët",
+  "takeDeposit": "Depozita",
+  "handover": "Dorëzo",
+  "returnVehicle": "Merr mbrapsht",
+  "settleDeposit": "Mbyll depozitën",
+  "depositStatus": {
+    "pending": "Në pritje të kartës",
+    "held": "Depozita e bllokuar",
+    "captured": "Depozita e mbajtur",
+    "released": "Depozita e liruar",
+    "failed": "Depozita dështoi"
+  },
+  "readiness": {
+    "ready": "Gati",
+    "needs_cleaning": "Duhet pastruar",
+    "needs_check": "Duhet kontrolluar"
+  },
+  "help": {
+    "ariaLabel": "Rreth sportelit",
+    "title": "Rreth sportelit",
+    "overview": "Sporteli për një ditë. Marrjet janë rezervime të konfirmuara që nisen atë ditë. Kthimet janë makina që priten atë ditë. Të vonuarat duhej të ishin kthyer tashmë.",
+    "sections": [
+      {
+        "title": "Në sportel",
+        "items": [
+          "Zgjidhni datën dhe, nëse duhet, një vendndodhje. Kërkoni me targë ose numër rezervimi.",
+          "Shoferët, Depozita, Dorëzo dhe Merr mbrapsht janë të njëjtat hapa si te rezervimi.",
+          "Shenjat tregojnë një patentë që mungon, një depozitë ende të hapur, një makinë që duhet çuar te vendi i marrjes, dhe nëse makina është gati."
+        ]
+      }
+    ]
+  }
+}

@@ -14,6 +14,12 @@
           "Ajoutez les jours fériés comme jours de fermeture ; le site web n'y proposera ni prise ni retour ces jours-là.",
           "Un site avec des réservations ne peut pas être supprimé ; désactivez-le plutôt."
         ]
+      },
+      {
+        "title": "Frais d'aller simple",
+        "items": [
+          "Des frais d'aller simple s'appliquent quand le véhicule revient dans une autre agence. Les frais de l'agence de retour sont utilisés. S'ils sont vides, les frais de la société s'appliquent."
+        ]
       }
     ]
   },

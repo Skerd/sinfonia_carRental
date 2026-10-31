@@ -1,0 +1,42 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/index.tsx",
+  "title": "Business accounts",
+  "description": "Companies that book on account, with their discount and billing details",
+  "help": {
+    "ariaLabel": "About business accounts",
+    "title": "About business accounts",
+    "overview": "A business account is billed instead of the driver. Its discount is a line on the booking, and invoices use its name, VAT number and address.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Put the account on a staff booking and choose On account.",
+          "Open an account and choose Monthly statement."
+        ]
+      }
+    ]
+  },
+  "create": "Add account",
+  "searchPlaceholder": "Search accounts or add filters...",
+  "noData": "No business accounts yet",
+  "failTitle": "Failed to load accounts",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "name": "Name",
+    "vatNumber": "VAT number",
+    "billingEmail": "Billing email",
+    "address": "Address",
+    "discountPercent": "Discount %",
+    "paymentTermsDays": "Payment terms (days)",
+    "isActive": "Active",
+    "notes": "Notes",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

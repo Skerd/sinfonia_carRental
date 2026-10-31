@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/dialogs/vehicleFineDialogs.tsx",
+  "cancel": "Indietro",
+  "matchDriver": {
+    "title": "Abbina di nuovo",
+    "description": "Cerca la prenotazione che aveva il veicolo al momento dell'infrazione, dopo la correzione del veicolo o dell'ora.",
+    "confirm": "Abbina"
+  },
+  "chargeCustomer": {
+    "title": "Addebita al cliente",
+    "description": "Aggiunge multa e spese di gestione alla prenotazione {booking} di {driver} e lo avvisa per e-mail. Una carta salvata viene addebitata subito.",
+    "confirm": "Addebita"
+  }
+}

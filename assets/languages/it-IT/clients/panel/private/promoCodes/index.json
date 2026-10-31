@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/index.tsx",
+  "title": "Codici promozionali",
+  "description": "Sconti che i clienti inseriscono alla prenotazione",
+  "help": {
+    "ariaLabel": "Informazioni sui codici promozionali",
+    "title": "Informazioni sui codici promozionali",
+    "overview": "Un codice promozionale toglie una percentuale o un importo fisso dai giorni di noleggio. Extra, supplementi e addebiti non sono mai scontati.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Lascia vuote le date per accettare un codice in qualsiasi momento.",
+          "Un codice viene contato alla prenotazione, quindi non può essere usato più volte del consentito.",
+          "Disattiva un codice per fermarlo senza eliminarlo."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi codice promozionale",
+  "searchPlaceholder": "Cerca codici promozionali o aggiungi filtri...",
+  "noData": "Ancora nessun codice promozionale",
+  "failTitle": "Impossibile caricare i codici promozionali",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "code": "Codice",
+    "type": "Tipo di sconto",
+    "value": "Sconto",
+    "category": "Categoria",
+    "bookableFrom": "Prenotabile dal",
+    "bookableUntil": "Prenotabile fino al",
+    "tripFrom": "Ritiri dal",
+    "tripUntil": "Ritiri fino al",
+    "minRentalDays": "Giorni di noleggio minimi",
+    "usageLimit": "Utilizzi totali consentiti",
+    "usageLimitPerEmail": "Utilizzi per cliente",
+    "usageCount": "Volte usato",
+    "isActive": "Attivo",
+    "description": "Nota interna",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

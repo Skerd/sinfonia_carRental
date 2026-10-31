@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/center/sheetView/rentalSubscriptionSheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "overview": "Përmbledhje",
+  "rentalSubscriptionSubtitle": "Abonim",
+  "contactName": "Emri i kontaktit",
+  "email": "Email",
+  "phone": "Telefoni",
+  "category": "Kategoria",
+  "pickupLocation": "Vendi i marrjes",
+  "period": "Periudha",
+  "price": "Çmimi për periudhë",
+  "status": "Statusi",
+  "nextRunAt": "Rezervimi tjetër",
+  "periodValues": {
+    "week": "Javë",
+    "month": "Muaj"
+  },
+  "statusValues": {
+    "active": "Aktiv",
+    "paused": "Në pauzë",
+    "ended": "Përfunduar"
+  },
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "company": "Kompania",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

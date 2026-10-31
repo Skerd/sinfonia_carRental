@@ -14,5 +14,36 @@
     "full": "Plein"
   },
   "notesLabel": "Notes",
-  "notesPlaceholder": "Rayures existantes, objets dans la voiture"
+  "notesPlaceholder": "Rayures existantes, objets dans la voiture",
+  "driversMissing": "Chaque conducteur doit avoir un numéro de permis avant le départ du véhicule. Ajoutez-le sous Conducteurs.",
+  "photosLabel": "Photos du véhicule",
+  "photosSelected": "{count} photos sélectionnées",
+  "damagesLabel": "Dommages vus par le client",
+  "noDamages": "Aucun dommage ouvert sur ce véhicule.",
+  "signerLabel": "Signé par",
+  "signatureLabel": "Signature du client",
+  "signatureClear": "Effacer",
+  "signatureHint": "Le client signe ici le contrat de location.",
+  "declinedLabel": "Le client n'a pas signé",
+  "area": {
+    "front": "Avant",
+    "rear": "Arrière",
+    "left": "Côté gauche",
+    "right": "Côté droit",
+    "roof": "Toit",
+    "interior": "Intérieur",
+    "windshield": "Pare-brise",
+    "wheels": "Roues",
+    "underbody": "Soubassement",
+    "other": "Autre"
+  },
+  "severity": {
+    "minor": "léger",
+    "moderate": "moyen",
+    "major": "grave"
+  },
+  "notReady": {
+    "needs_cleaning": "Ce véhicule n'a pas été nettoyé depuis son dernier retour.",
+    "needs_check": "Ce véhicule a été marqué comme à contrôler."
+  }
 }

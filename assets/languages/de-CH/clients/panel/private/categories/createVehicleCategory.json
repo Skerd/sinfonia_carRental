@@ -74,7 +74,10 @@
     },
     "transmissionLabel": "Getriebe",
     "transmissionPlaceholder": "Getriebe auswählen",
-    "videosLabel": "Videos"
+    "videosLabel": "Videos",
+    "crossBorderAllowedLabel": "Grenzübertritt erlaubt",
+    "crossBorderFeeLabel": "Gebühr Grenzübertritt",
+    "crossBorderFeePlaceholder": "0.00"
   },
   "axios": {
     "start": {

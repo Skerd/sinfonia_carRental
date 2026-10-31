@@ -1,0 +1,18 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/center/dialogs/vehicleTransferDialogs.tsx",
+  "cancel": {
+    "title": "Cancel the transfer",
+    "description": "{plate} stays where it is and is free for bookings again.",
+    "confirm": "Cancel transfer"
+  },
+  "start": {
+    "title": "The car leaves",
+    "description": "Marks {plate} as on the way.",
+    "confirm": "Leave now"
+  },
+  "complete": {
+    "title": "The car has arrived",
+    "description": "{plate} counts at the new location from now on.",
+    "confirm": "Mark arrived"
+  }
+}

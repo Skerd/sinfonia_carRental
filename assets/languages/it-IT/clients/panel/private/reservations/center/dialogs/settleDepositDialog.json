@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/settleDepositDialog.tsx",
+  "title": "Chiudi il deposito",
+  "description": "Bloccato: {held}. Ancora dovuto: {due}. Trattieni l'importo dovuto; il resto viene sbloccato.",
+  "keepLabel": "Trattieni dal deposito",
+  "confirmKeep": "Trattieni e sblocca il resto",
+  "confirmRelease": "Sblocca deposito",
+  "cancel": "Indietro"
+}

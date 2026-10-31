@@ -1,0 +1,40 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reports/index.tsx",
+  "title": "Report",
+  "description": "Come è stata usata la flotta, quanto ha reso e quanto è costata",
+  "from": "Dal",
+  "to": "Al",
+  "location": "Sede",
+  "allLocations": "Tutte le sedi",
+  "refresh": "Mostra",
+  "utilisation": "Utilizzo",
+  "revenue": "Ricavi",
+  "averageDailyRate": "Tariffa giornaliera media",
+  "revpac": "Ricavo per giorno-auto disponibile",
+  "leadTime": "Anticipo della prenotazione",
+  "days": "giorni",
+  "cancellationRate": "Annullamenti",
+  "noShowRate": "Mancate presentazioni",
+  "lostSearches": "Ricerche senza auto",
+  "revenueByCar": "Ricavi per auto",
+  "noRevenue": "Nessun ricavo in questo periodo",
+  "car": "Auto",
+  "maintenance": "Manutenzione",
+  "repairs": "Riparazioni",
+  "insurance": "Assicurazione",
+  "payback": "Rientro",
+  "help": {
+    "ariaLabel": "Informazioni sui report",
+    "title": "Informazioni sui report",
+    "overview": "L'utilizzo è le ore noleggiate divise per le ore in cui un'auto non era bloccata.",
+    "sections": [
+      {
+        "title": "Leggere i numeri",
+        "items": [
+          "Una ricerca senza un'auto libera conta come domanda persa.",
+          "Il rientro è il ricavo del periodo diviso per il prezzo di acquisto."
+        ]
+      }
+    ]
+  }
+}

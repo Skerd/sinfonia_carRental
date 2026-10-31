@@ -74,7 +74,10 @@
     },
     "transmissionLabel": "Kambio",
     "transmissionPlaceholder": "Zgjidh kambion",
-    "videosLabel": "Videot"
+    "videosLabel": "Videot",
+    "crossBorderAllowedLabel": "Lejohet jashtë vendit",
+    "crossBorderFeeLabel": "Tarifa jashtë vendit",
+    "crossBorderFeePlaceholder": "0.00"
   },
   "axios": {
     "start": {

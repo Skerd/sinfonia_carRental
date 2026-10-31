@@ -1,0 +1,19 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/center/cardView/rentalSubscriptionCard.tsx",
+  "failedTitle": "Abonimi nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "contactName": "Emri i kontaktit",
+  "category": "Kategoria",
+  "period": "Periudha",
+  "price": "Çmimi për periudhë",
+  "status": "Statusi",
+  "periodValues": {
+    "week": "Javë",
+    "month": "Muaj"
+  },
+  "statusValues": {
+    "active": "Aktiv",
+    "paused": "Në pauzë",
+    "ended": "Përfunduar"
+  }
+}

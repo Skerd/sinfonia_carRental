@@ -74,7 +74,10 @@
     },
     "transmissionLabel": "Cambio",
     "transmissionPlaceholder": "Seleziona cambio",
-    "videosLabel": "Video"
+    "videosLabel": "Video",
+    "crossBorderAllowedLabel": "Estero consentito",
+    "crossBorderFeeLabel": "Supplemento estero",
+    "crossBorderFeePlaceholder": "0.00"
   },
   "axios": {
     "start": {

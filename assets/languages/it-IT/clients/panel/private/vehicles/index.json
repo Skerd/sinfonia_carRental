@@ -13,6 +13,13 @@
           "Un veicolo con prenotazioni future non può essere messo in manutenzione, ritirato o spostato in un'altra categoria finché quelle prenotazioni non vengono spostate su un'altra auto.",
           "Ritira un veicolo invece di eliminarlo: la sua storia resta sulle prenotazioni passate."
         ]
+      },
+      {
+        "title": "Pronto a uscire",
+        "items": [
+          "La prontezza dice se l'auto può uscire: pronto, da pulire o da controllare. Ogni riconsegna la imposta su da pulire finché qualcuno non la segna pronta.",
+          "Ora a è dove si trova l'auto. Si aggiorna quando un noleggio torna e quando arriva un trasferimento."
+        ]
       }
     ]
   },

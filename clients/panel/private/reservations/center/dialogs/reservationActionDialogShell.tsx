@@ -12,6 +12,7 @@ export default function ReservationActionDialogShell({
     loading,
     canConfirm = true,
     destructive = false,
+    contentClassName = "sm:max-w-md",
     onConfirm,
     onClose,
     children,
@@ -23,13 +24,14 @@ export default function ReservationActionDialogShell({
     loading: boolean;
     canConfirm?: boolean;
     destructive?: boolean;
+    contentClassName?: string;
     onConfirm: () => void;
     onClose: () => void;
     children?: ReactNode;
 }) {
     return (
         <Dialog open onOpenChange={(next) => !loading && !next && onClose()}>
-            <DialogContent className="sm:max-w-md" onOpenAutoFocus={(e) => e.preventDefault()}>
+            <DialogContent className={contentClassName} onOpenAutoFocus={(e) => e.preventDefault()}>
                 <DialogHeader>
                     <DialogTitle>{title}</DialogTitle>
                     <DialogDescription>{description}</DialogDescription>

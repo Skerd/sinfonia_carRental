@@ -12,8 +12,18 @@
     "6": "E shtunë"
   },
   "form": {
+    "depositAmountLabel": "Depozita me këtë paketë",
+    "depositAmountPlaceholder": "Lëreni bosh për të mbajtur depozitën e kategorisë",
     "descriptionLabel": "Përshkrimi",
     "descriptionPlaceholder": "Çfarë duhet të dinë klientët për këtë kategori",
+    "excessAmountLabel": "Franshiza (vetëm mbrojtje)",
+    "excessAmountPlaceholder": "Shuma maksimale që klienti paguan për dëmtime",
+    "kind": {
+      "extra": "Shtesë",
+      "protection": "Paketë mbrojtjeje"
+    },
+    "kindLabel": "Lloji",
+    "kindPlaceholder": "Zgjidhni një lloj",
     "maxQuantityLabel": "Më së shumti për rezervim",
     "maxQuantityPlaceholder": "Shkruani sasinë maksimale",
     "nameLabel": "Emri",

@@ -1,0 +1,52 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/counter/index.tsx",
+  "title": "Schalter",
+  "description": "Heutige Abholungen, Rückgaben und verspätete Fahrzeuge",
+  "date": "Datum",
+  "today": "Heute",
+  "location": "Standort",
+  "allLocations": "Alle Standorte",
+  "search": "Suche",
+  "searchPlaceholder": "Kennzeichen oder Buchungsnummer",
+  "pickups": "Abholungen",
+  "returns": "Rückgaben",
+  "overdue": "Überfällig",
+  "empty": "Nichts hier.",
+  "noMatches": "Keine Buchung passt zu dieser Suche.",
+  "noCar": "Kein Fahrzeug",
+  "needsTransfer": "Überführung nötig",
+  "driversMissing": "Fahrer fehlen",
+  "depositMissing": "Kaution fehlt",
+  "drivers": "Fahrer/innen",
+  "takeDeposit": "Kaution",
+  "handover": "Übergeben",
+  "returnVehicle": "Zurücknehmen",
+  "settleDeposit": "Kaution abrechnen",
+  "depositStatus": {
+    "pending": "Wartet auf die Karte",
+    "held": "Kaution hinterlegt",
+    "captured": "Kaution behalten",
+    "released": "Kaution freigegeben",
+    "failed": "Kaution fehlgeschlagen"
+  },
+  "readiness": {
+    "ready": "Bereit",
+    "needs_cleaning": "Reinigung nötig",
+    "needs_check": "Kontrolle nötig"
+  },
+  "help": {
+    "ariaLabel": "Über den Schalter",
+    "title": "Über den Schalter",
+    "overview": "Der Schalter für einen Tag. Abholungen sind bestätigte Buchungen, die an diesem Tag starten. Rückgaben sind Fahrzeuge, die an diesem Tag zurückkommen. Überfällige Fahrzeuge hätten schon zurück sein sollen.",
+    "sections": [
+      {
+        "title": "Am Schalter",
+        "items": [
+          "Wählen Sie das Datum und bei Bedarf einen Standort. Suchen Sie nach Kennzeichen oder Buchungsnummer.",
+          "Fahrer/innen, Kaution, Übergeben und Zurücknehmen sind dieselben Schritte wie bei der Buchung.",
+          "Hinweise zeigen einen fehlenden Führerausweis, eine offene Kaution, ein Fahrzeug, das zum Abholort muss, und ob das Fahrzeug bereit ist."
+        ]
+      }
+    ]
+  }
+}

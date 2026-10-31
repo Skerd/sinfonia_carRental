@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/index.tsx",
+  "title": "Subscriptions",
+  "description": "A car of a category, booked again each week or month",
+  "help": {
+    "ariaLabel": "About subscriptions",
+    "title": "About subscriptions",
+    "overview": "While a subscription is active, the next booking is created on its date and the following one is scheduled.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Pause it to skip the next run.",
+          "The booking uses the price you set and pay at pickup."
+        ]
+      }
+    ]
+  },
+  "create": "Add subscription",
+  "searchPlaceholder": "Search subscriptions or add filters...",
+  "noData": "No subscriptions yet",
+  "failTitle": "Failed to load subscriptions",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "contactName": "Contact name",
+    "email": "Email",
+    "phone": "Phone",
+    "category": "Category",
+    "pickupLocation": "Pickup location",
+    "period": "Period",
+    "price": "Price per period",
+    "status": "Status",
+    "nextRunAt": "Next booking",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

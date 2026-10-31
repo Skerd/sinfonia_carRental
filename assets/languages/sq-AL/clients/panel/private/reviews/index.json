@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/index.tsx",
+  "title": "Vlerësimet",
+  "description": "Çfarë shkruan klientët pas një qiraje",
+  "help": {
+    "ariaLabel": "Rreth vlerësimeve",
+    "title": "Rreth vlerësimeve",
+    "overview": "Një klient mund të lërë një vlerësim nga lidhja e menaxhimit pasi makina është kthyer. Mbetet i fshehur derisa ta publikoni.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Publikoni një vlerësim për ta treguar.",
+          "Një rezervim mund të ketë vetëm një vlerësim."
+        ]
+      }
+    ]
+  },
+  "create": "Shto vlerësim",
+  "searchPlaceholder": "Kërkoni vlerësime ose shtoni filtra...",
+  "noData": "Ende asnjë vlerësim",
+  "failTitle": "Vlerësimet nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "reservation": "Rezervimi",
+    "rating": "Vlerësimi",
+    "comment": "Komenti",
+    "authorName": "Emri",
+    "isPublished": "E publikuar",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

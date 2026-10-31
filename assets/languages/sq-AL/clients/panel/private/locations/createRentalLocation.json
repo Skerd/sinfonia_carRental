@@ -49,7 +49,9 @@
     "streetLabel": "Rruga",
     "streetPlaceholder": "Shkruani rrugën",
     "timezoneLabel": "Zona kohore",
-    "timezonePlaceholder": "p.sh. Europe/Zurich"
+    "timezonePlaceholder": "p.sh. Europe/Zurich",
+    "oneWayFeeLabel": "Tarifa e kthimit këtu nga një vendndodhje tjetër",
+    "oneWayFeePlaceholder": "Bosh: tarifa e kompanisë"
   },
   "axios": {
     "start": {

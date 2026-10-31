@@ -23,7 +23,8 @@
     "payment": "Payment",
     "paymentChoice": {
         "pay_at_pickup": "Pay at pick-up",
-        "online": "Paid online"
+        "online": "Paid online",
+        "on_account": "On account"
     },
     "paymentStatus": {
         "unpaid": "Not paid yet",
@@ -41,5 +42,22 @@
     "keepBooking": "Keep booking",
     "cancelBooking": "Cancel this booking",
     "cancelledNotice": "Your booking is cancelled. Any refund due goes back to your original payment method.",
-    "priceTitle": "Price"
+    "priceTitle": "Price",
+    "amountDue": "{amount} still to pay",
+    "licenceTitle": "Driving licence",
+    "licenceHint": "Enter the licence number and upload a photo of it.",
+    "licenceNumber": "Licence number",
+    "saveLicence": "Save licence",
+    "documentsCount": "{count} files uploaded",
+    "extendTitle": "Keep the car longer",
+    "extendAndPay": "Extend and pay the difference",
+    "extrasTitle": "Add something before pickup",
+    "payBalance": "Pay the balance",
+    "payTitle": "Pay now",
+    "downloadAgreement": "Download the agreement",
+    "downloadInvoice": "Invoice {number}",
+    "reviewTitle": "How was the car?",
+    "reviewComment": "A few words",
+    "sendReview": "Send review",
+    "reviewThanks": "Thank you. The review is waiting to be published."
 }

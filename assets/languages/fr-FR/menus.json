@@ -2,12 +2,21 @@
   "carRental": {
     "title": "Location de voitures",
     "reservations": {"title": "Réservations"},
+    "planner": {"title": "Planning"},
+    "counter": {"title": "Comptoir"},
+    "reports": {"title": "Rapports"},
+    "businessAccounts": {"title": "Comptes entreprise"},
+    "subscriptions": {"title": "Abonnements"},
+    "reviews": {"title": "Avis"},
+    "denyList": {"title": "Liste d'exclusion"},
     "vehicles": {"title": "Flotte"},
     "blocks": {"title": "Blocages de véhicules"},
     "fleetOps": {"title": "Gestion de flotte"},
     "maintenance": {"title": "Entretien"},
     "damages": {"title": "Dommages"},
     "insurance": {"title": "Assurances"},
+    "fines": {"title": "Amendes"},
+    "transfers": {"title": "Transferts"},
     "documents": {"title": "Documents"}
   },
   "tenancy": {
@@ -16,12 +25,14 @@
         "title": "Location de voitures",
         "booking": {"title": "Réservation en ligne"},
         "payment": {"title": "Paiement et annulation"},
+        "fees": {"title": "Frais et suppléments"},
         "terms": {"title": "Conditions de location"},
         "alerts": {"title": "Alertes au personnel"}
       },
       "vehicleCategories": {"title": "Catégories"},
       "rentalExtras": {"title": "Suppléments"},
-      "rentalLocations": {"title": "Sites"}
+      "rentalLocations": {"title": "Sites"},
+      "rentalPromoCodes": {"title": "Codes promo"}
     }
   }
 }

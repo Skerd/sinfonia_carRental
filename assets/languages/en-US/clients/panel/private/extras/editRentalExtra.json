@@ -12,8 +12,18 @@
     "6": "Saturday"
   },
   "form": {
+    "depositAmountLabel": "Deposit with this package",
+    "depositAmountPlaceholder": "Leave empty to keep the category deposit",
     "descriptionLabel": "Description",
     "descriptionPlaceholder": "What customers should know about this category",
+    "excessAmountLabel": "Excess (protection only)",
+    "excessAmountPlaceholder": "Most the customer pays for damage",
+    "kind": {
+      "extra": "Extra",
+      "protection": "Protection package"
+    },
+    "kindLabel": "Type",
+    "kindPlaceholder": "Select a type",
     "maxQuantityLabel": "Most per booking",
     "maxQuantityPlaceholder": "Enter max quantity",
     "nameLabel": "Name",

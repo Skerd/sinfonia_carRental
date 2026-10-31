@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/center/cardView/rentalBusinessAccountCard.tsx",
+  "failedTitle": "Llogaria nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "name": "Emri",
+  "vatNumber": "Numri i TVSH-së",
+  "discountPercent": "Zbritje %",
+  "isActive": "Aktiv",
+  "statement": "Pasqyra mujore"
+}

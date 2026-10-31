@@ -1,0 +1,52 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/counter/index.tsx",
+  "title": "Comptoir",
+  "description": "Départs, retours et retards du jour",
+  "date": "Date",
+  "today": "Aujourd'hui",
+  "location": "Agence",
+  "allLocations": "Toutes les agences",
+  "search": "Recherche",
+  "searchPlaceholder": "Plaque ou numéro de réservation",
+  "pickups": "Départs",
+  "returns": "Retours",
+  "overdue": "En retard",
+  "empty": "Rien ici.",
+  "noMatches": "Aucune réservation ne correspond à cette recherche.",
+  "noCar": "Pas de véhicule",
+  "needsTransfer": "Transfert nécessaire",
+  "driversMissing": "Conducteurs manquants",
+  "depositMissing": "Caution non prise",
+  "drivers": "Conducteurs",
+  "takeDeposit": "Caution",
+  "handover": "Remettre",
+  "returnVehicle": "Reprendre",
+  "settleDeposit": "Régler la caution",
+  "depositStatus": {
+    "pending": "En attente de la carte",
+    "held": "Caution bloquée",
+    "captured": "Caution retenue",
+    "released": "Caution libérée",
+    "failed": "Caution échouée"
+  },
+  "readiness": {
+    "ready": "Prêt",
+    "needs_cleaning": "À nettoyer",
+    "needs_check": "À contrôler"
+  },
+  "help": {
+    "ariaLabel": "À propos du comptoir",
+    "title": "À propos du comptoir",
+    "overview": "Le comptoir pour une journée. Les départs sont les réservations confirmées qui partent ce jour-là. Les retours sont les véhicules attendus ce jour-là. Les retards auraient déjà dû revenir.",
+    "sections": [
+      {
+        "title": "Au comptoir",
+        "items": [
+          "Choisissez la date et, si besoin, une agence. Cherchez par plaque ou numéro de réservation.",
+          "Conducteurs, Caution, Remettre et Reprendre sont les mêmes étapes que sur la réservation.",
+          "Les pastilles signalent un permis manquant, une caution encore ouverte, un véhicule à amener à l'agence de départ, et si le véhicule est prêt."
+        ]
+      }
+    ]
+  }
+}

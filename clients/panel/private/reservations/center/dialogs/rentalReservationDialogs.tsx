@@ -6,6 +6,9 @@ import CancelReservationDialog from "./cancelReservationDialog.tsx";
 import NoShowDialog from "./noShowDialog.tsx";
 import ReassignVehicleDialog from "./reassignVehicleDialog.tsx";
 import ExtendReservationDialog from "./extendReservationDialog.tsx";
+import DriversDialog from "./driversDialog.tsx";
+import DepositDialog from "./depositDialog.tsx";
+import SettleDepositDialog from "./settleDepositDialog.tsx";
 
 /** The dialog for the action picked in a reservation's menu. */
 export default function RentalReservationDialogs({
@@ -28,6 +31,9 @@ export default function RentalReservationDialogs({
         case "noShow": return <NoShowDialog {...props} />;
         case "reassignVehicle": return <ReassignVehicleDialog {...props} />;
         case "extend": return <ExtendReservationDialog {...props} />;
+        case "drivers": return <DriversDialog {...props} />;
+        case "takeDeposit": return <DepositDialog {...props} />;
+        case "settleDeposit": return <SettleDepositDialog {...props} />;
         default: return null;
     }
 }

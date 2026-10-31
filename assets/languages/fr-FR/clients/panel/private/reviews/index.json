@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/index.tsx",
+  "title": "Avis",
+  "description": "Ce que les clients ont écrit après une location",
+  "help": {
+    "ariaLabel": "À propos des avis",
+    "title": "À propos des avis",
+    "overview": "Un client peut laisser un avis depuis le lien de gestion une fois la voiture rendue. Il reste caché tant que vous ne le publiez pas.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Publiez un avis pour l'afficher.",
+          "Une réservation ne peut avoir qu'un seul avis."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un avis",
+  "searchPlaceholder": "Rechercher des avis ou ajouter des filtres...",
+  "noData": "Aucun avis pour l'instant",
+  "failTitle": "Impossible de charger les avis",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "reservation": "Réservation",
+    "rating": "Note",
+    "comment": "Commentaire",
+    "authorName": "Nom",
+    "isPublished": "Publié",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

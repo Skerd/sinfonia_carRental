@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/index.tsx",
+  "title": "Bussen",
+  "description": "Bussen und Maut für Ihre Fahrzeuge, der Fahrerin oder dem Fahrer zur Tatzeit zugeordnet",
+  "help": {
+    "ariaLabel": "Über Bussen",
+    "title": "Über Bussen",
+    "overview": "Erfassen Sie eine Busse, wenn sie eintrifft. Die Buchung, deren Abholung und Rückgabe die Tatzeit umfassen, wird mit ihrer Hauptfahrerin oder ihrem Hauptfahrer automatisch gefunden.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Belasten Sie die Kundschaft, um Busse und Bearbeitungsgebühr der Buchung hinzuzufügen; eine gespeicherte Karte wird sofort belastet.",
+          "Laden Sie das Fahrerschreiben herunter, um der Behörde die fahrende Person zu melden.",
+          "Wurde Fahrzeug oder Zeit korrigiert, verwenden Sie Erneut zuordnen."
+        ]
+      }
+    ]
+  },
+  "create": "Busse hinzufügen",
+  "searchPlaceholder": "Bussen suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Bussen",
+  "failTitle": "Bussen konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "reference": "Referenz",
+    "vehicle": "Fahrzeug",
+    "offenceAt": "Datum und Zeit des Verstosses",
+    "type": "Art",
+    "authority": "Ausgestellt von",
+    "amount": "Betrag",
+    "place": "Ort",
+    "dueDate": "Zahlen oder antworten bis",
+    "status": "Status",
+    "reservation": "Buchung",
+    "driverName": "Fahrer/in",
+    "chargedAmount": "Der Kundschaft belastet",
+    "attachments": "Scan der Busse",
+    "notes": "Notizen",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

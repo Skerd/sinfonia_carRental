@@ -17,5 +17,11 @@
     "cancelled": "Annullato",
     "expired": "Scaduto",
     "no_show": "Non presentato"
+  },
+  "readiness": "Prontezza",
+  "readinessValues": {
+    "ready": "Pronto",
+    "needs_cleaning": "Da pulire",
+    "needs_check": "Da controllare"
   }
 }

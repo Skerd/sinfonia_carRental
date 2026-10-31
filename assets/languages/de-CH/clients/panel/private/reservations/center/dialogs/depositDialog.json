@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/depositDialog.tsx",
+  "title": "Kaution nehmen",
+  "descriptionHold": "Der Betrag wird auf der Karte reserviert und nach der Rückgabe freigegeben oder belastet.",
+  "descriptionSaveCard": "Diese Miete dauert länger als eine Woche, daher wird die Karte gespeichert statt reserviert. Sie kann nach der Rückgabe belastet werden.",
+  "amountLabel": "Kaution",
+  "method": {
+    "card": "Karte",
+    "cash": "Bar"
+  },
+  "confirmCash": "Barkaution erfassen",
+  "continueCard": "Weiter zur Karte",
+  "cardTitle": "Karte der Kundschaft",
+  "cardHoldHint": "Geben Sie das Gerät der Kundschaft, um die Karte einzugeben. Es wird jetzt nichts belastet.",
+  "cardSaveHint": "Geben Sie das Gerät der Kundschaft, um die Karte zu speichern. Es wird jetzt nichts belastet.",
+  "confirmHold": "Kaution reservieren",
+  "confirmSave": "Karte speichern",
+  "close": "Schliessen",
+  "cancel": "Zurück"
+}

@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/center/sheetView/rentalPromoCodeSheetView.tsx",
+  "lifecycle": "Lifecycle",
+  "overview": "Overview",
+  "rentalPromoCodeSubtitle": "Promo code",
+  "code": "Code",
+  "type": "Discount type",
+  "value": "Discount",
+  "category": "Category",
+  "bookableFrom": "Bookable from",
+  "bookableUntil": "Bookable until",
+  "tripFrom": "Pickups from",
+  "tripUntil": "Pickups until",
+  "minRentalDays": "Minimum rental days",
+  "usageLimit": "Total uses allowed",
+  "usageLimitPerEmail": "Uses per customer",
+  "usageCount": "Times used",
+  "isActive": "Active",
+  "description": "Internal note",
+  "typeValues": {
+    "percent": "Percent off",
+    "fixed": "Fixed amount off"
+  },
+  "createdAt": "Created at",
+  "updatedAt": "Updated at",
+  "createdBy": "Created by",
+  "company": "Company",
+  "deletedAt": "Deleted at",
+  "deletedBy": "Deleted by"
+}

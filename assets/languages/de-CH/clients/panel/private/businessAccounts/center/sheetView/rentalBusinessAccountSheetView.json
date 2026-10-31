@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/center/sheetView/rentalBusinessAccountSheetView.tsx",
+  "lifecycle": "Lebenszyklus",
+  "overview": "Übersicht",
+  "rentalBusinessAccountSubtitle": "Geschäftskonto",
+  "name": "Name",
+  "vatNumber": "MwSt.-Nummer",
+  "billingEmail": "Rechnungs-E-Mail",
+  "address": "Adresse",
+  "discountPercent": "Rabatt %",
+  "paymentTermsDays": "Zahlungsziel (Tage)",
+  "isActive": "Aktiv",
+  "notes": "Notizen",
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "createdBy": "Erstellt von",
+  "company": "Unternehmen",
+  "deletedAt": "Gelöscht am",
+  "deletedBy": "Gelöscht von"
+}

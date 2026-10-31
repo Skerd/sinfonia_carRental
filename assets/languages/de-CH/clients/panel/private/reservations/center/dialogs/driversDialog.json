@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/driversDialog.tsx",
+  "cancel": "Zurück",
+  "confirm": "Fahrer/innen speichern",
+  "title": "Fahrer/innen",
+  "description": "Wer dieses Fahrzeug fahren darf. Die Führerausweisdaten können bis zur Übergabe ergänzt werden.",
+  "primary": "Hauptfahrer/in",
+  "additional": "Zusätzliche/r Fahrer/in",
+  "addDriver": "Fahrer/in hinzufügen",
+  "remove": "Entfernen",
+  "firstName": "Vorname",
+  "lastName": "Nachname",
+  "birthDate": "Geburtsdatum",
+  "licenseNumber": "Führerausweisnummer",
+  "licenseCountry": "Ausstellungsland",
+  "licenseIssuedAt": "Führerausweis ausgestellt am",
+  "licenseExpiresAt": "Führerausweis gültig bis",
+  "idDocumentType": "Ausweisdokument",
+  "idDocumentNumber": "Ausweisnummer",
+  "idDocumentTypes": {
+    "passport": "Pass",
+    "national_id": "Identitätskarte",
+    "other": "Anderes"
+  }
+}

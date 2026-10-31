@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/index.tsx",
+  "title": "Abos",
+  "description": "Ein Fahrzeug einer Kategorie, jede Woche oder jeden Monat erneut gebucht",
+  "help": {
+    "ariaLabel": "Über Abos",
+    "title": "Über Abos",
+    "overview": "Solange ein Abo aktiv ist, wird am Termin die nächste Buchung erstellt und die folgende geplant.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Pausieren Sie es, um den nächsten Lauf zu überspringen.",
+          "Die Buchung verwendet den gesetzten Preis und wird bei der Abholung bezahlt."
+        ]
+      }
+    ]
+  },
+  "create": "Abo hinzufügen",
+  "searchPlaceholder": "Abos suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Abos",
+  "failTitle": "Abos konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "contactName": "Kontaktname",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "category": "Kategorie",
+    "pickupLocation": "Abholort",
+    "period": "Zeitraum",
+    "price": "Preis pro Zeitraum",
+    "status": "Status",
+    "nextRunAt": "Nächste Buchung",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

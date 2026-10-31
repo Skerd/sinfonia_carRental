@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/createRentalPromoCode.tsx",
+  "title": "Ajouter un code promo",
+  "description": "Créer une remise que les clients saisissent lors de la réservation",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "codeLabel": "Code",
+    "codePlaceholder": "p. ex. ETE10",
+    "typeLabel": "Type de remise",
+    "typePlaceholder": "Choisir un type",
+    "type": {
+      "percent": "Pourcentage",
+      "fixed": "Montant fixe"
+    },
+    "valueLabel": "Remise",
+    "valuePlaceholder": "Pourcentage ou montant",
+    "categoryLabel": "Catégorie",
+    "categoryPlaceholder": "Toutes les catégories",
+    "bookableFromLabel": "Réservable à partir du",
+    "bookableFromPlaceholder": "Choisir une date",
+    "bookableUntilLabel": "Réservable jusqu'au",
+    "bookableUntilPlaceholder": "Choisir une date",
+    "tripFromLabel": "Prises en charge à partir du",
+    "tripFromPlaceholder": "Choisir une date",
+    "tripUntilLabel": "Prises en charge jusqu'au",
+    "tripUntilPlaceholder": "Choisir une date",
+    "minRentalDaysLabel": "Jours de location minimum",
+    "minRentalDaysPlaceholder": "p. ex. 3",
+    "usageLimitLabel": "Utilisations autorisées au total",
+    "usageLimitPlaceholder": "Vide pour illimité",
+    "usageLimitPerEmailLabel": "Utilisations par client",
+    "usageLimitPerEmailPlaceholder": "Vide pour illimité",
+    "isActiveLabel": "Actif",
+    "descriptionLabel": "Note interne",
+    "descriptionPlaceholder": "Pour quelle campagne est ce code"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement du code promo",
+      "time": 3000
+    },
+    "success": {
+      "title": "Code promo ajouté",
+      "time": 3000
+    },
+    "error": {
+      "title": "Le code promo n'a pas pu être ajouté. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ajouter un code promo",
+    "description": "Créer une remise que les clients saisissent lors de la réservation"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Ajouter"
+  }
+}

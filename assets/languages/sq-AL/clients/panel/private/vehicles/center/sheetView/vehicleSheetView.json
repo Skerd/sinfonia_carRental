@@ -36,5 +36,9 @@
   "nextServiceDueAt": "Servisi i radhës më",
   "nextServiceDueKm": "Servisi i radhës në (km)",
   "acquiredAt": "Në flotë që nga",
-  "purchasePrice": "Çmimi i blerjes"
+  "purchasePrice": "Çmimi i blerjes",
+  "trackerId": "Gjurmuesi",
+  "lastLatitude": "Gjerësia",
+  "lastLongitude": "Gjatësia",
+  "lastReportedAt": "Sinjali i fundit"
 }

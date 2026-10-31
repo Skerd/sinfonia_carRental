@@ -10,7 +10,14 @@
     "Vehicleinsurances": "Sigurimet e automjeteve",
     "Vehicledocuments": "Dokumentet e automjeteve",
     "Vehiclemaintenances": "Mirëmbajtja e automjeteve",
-    "Vehicledamages": "Dëmtimet e automjeteve"
+    "Vehicledamages": "Dëmtimet e automjeteve",
+    "Rentalpromocodes": "Kodet promocionale",
+    "Vehiclefines": "Gjobat",
+    "Vehicletransfers": "Transferimet",
+    "Rentalbusinessaccounts": "Llogaritë e biznesit",
+    "Rentaldenyentrys": "Lista e bllokimit",
+    "Rentalreviews": "Vlerësimet",
+    "Rentalsubscriptions": "Abonimet"
   },
   "permissions": {
     "Carrentalconfigs": {
@@ -36,7 +43,17 @@
       "termsVersion": "Versioni i kushteve",
       "turnaroundBufferMinutes": "Koha e përgatitjes (minuta)",
       "updatedAt": "Përditësuar më",
-      "vatRate": "Norma e TVSH-së"
+      "vatRate": "Norma e TVSH-së",
+      "youngDriverUnderAge": "Shofer i ri: nën këtë moshë",
+      "youngDriverDailyFee": "Tarifa e shoferit të ri në ditë",
+      "additionalDriverDailyFee": "Tarifa e shoferit shtesë në ditë",
+      "oneWayFee": "Tarifa e kthimit në një vendndodhje tjetër",
+      "fuelPricePerQuarter": "Karburanti për çdo çerek rezervuari që mungon",
+      "refuelServiceFee": "Tarifa e shërbimit të furnizimit me karburant",
+      "lateFeePerHour": "Tarifa e vonesës për orë",
+      "cleaningFee": "Tarifa e pastrimit",
+      "smokingFee": "Tarifa e duhanit",
+      "fineAdminFee": "Tarifa administrative për gjobë"
     },
     "Rentallocations": {
       "address": "Adresa",
@@ -46,6 +63,7 @@
       "email": "Email",
       "isActive": "Është aktiv",
       "name": "Emri",
+      "oneWayFee": "Tarifa e kthimit diku tjetër",
       "openingHours": "Orari i punës",
       "phone": "Telefoni",
       "pickupAllowed": "Marrja lejohet",
@@ -89,6 +107,7 @@
       "color": "Ngjyra",
       "createdAt": "Krijuar më",
       "createdBy": "Krijuar nga",
+      "currentLocation": "Tani në",
       "homeLocation": "Vendndodhja bazë",
       "images": "Fotot",
       "make": "Marka",
@@ -99,6 +118,7 @@
       "odometerKm": "Kilometrat km",
       "plate": "Targa",
       "purchasePrice": "Çmimi i blerjes",
+      "readiness": "Gatishmëria",
       "serviceReminderSentAt": "Kujtesa e servisit u dërgua më",
       "status": "Statusi",
       "updatedAt": "Përditësuar më",
@@ -121,8 +141,11 @@
     "Rentalextras": {
       "createdAt": "Krijuar më",
       "createdBy": "Krijuar nga",
+      "depositAmount": "Depozita me këtë paketë",
       "description": "Përshkrimi",
+      "excessAmount": "Franshiza",
       "isActive": "Është aktiv",
+      "kind": "Lloji",
       "maxQuantity": "Sasia maksimale",
       "name": "Emri",
       "price": "Çmimi",
@@ -140,6 +163,7 @@
       "category": "Kategoria",
       "confirmationSentAt": "Konfirmimi u dërgua më",
       "contact": "Kontakti",
+      "drivers": "Shoferët",
       "createdAt": "Krijuar më",
       "createdBy": "Krijuar nga",
       "customer": "Klienti",
@@ -167,7 +191,11 @@
       "stripePaymentIntentId": "ID e pagesës Stripe",
       "timeline": "Kronologjia",
       "updatedAt": "Përditësuar më",
-      "vehicle": "Automjeti"
+      "vehicle": "Automjeti",
+      "needsTransfer": "Duhet transferim",
+      "deposit": "Depozita",
+      "agreement": "Kontrata",
+      "promoCode": "Kodi promocional"
     },
     "Vehicleinsurances": {
       "attachments": "Bashkëngjitjet",
@@ -222,6 +250,8 @@
     },
     "Vehicledamages": {
       "area": "Zona",
+      "chargedAmount": "I faturuar klientit",
+      "chargedAt": "Faturuar më",
       "createdAt": "Krijuar më",
       "createdBy": "Krijuar nga",
       "description": "Përshkrimi",
@@ -236,6 +266,90 @@
       "updatedAt": "Përditësuar më",
       "vehicle": "Automjeti",
       "vehicledamages": "Dëmtimet e automjeteve"
+    },
+    "Rentalpromocodes": {
+      "bookableFrom": "Mund të rezervohet nga",
+      "bookableUntil": "Mund të rezervohet deri më",
+      "category": "Kategoria",
+      "code": "Kodi",
+      "description": "Shënim i brendshëm",
+      "isActive": "Aktiv",
+      "minRentalDays": "Ditë minimale qiraje",
+      "rentalpromocodes": "Kodet promocionale",
+      "tripFrom": "Marrje nga",
+      "tripUntil": "Marrje deri më",
+      "type": "Lloji i zbritjes",
+      "usageCount": "Herë të përdorur",
+      "usageLimit": "Përdorime gjithsej",
+      "usageLimitPerEmail": "Përdorime për klient",
+      "value": "Zbritja"
+    },
+    "Vehiclefines": {
+      "amount": "Shuma",
+      "attachments": "Skanimi i njoftimit",
+      "authority": "Lëshuar nga",
+      "chargedAmount": "I faturuar klientit",
+      "driverName": "Shoferi",
+      "dueDate": "Paguani ose përgjigjuni deri më",
+      "notes": "Shënime",
+      "offenceAt": "Data dhe ora e shkeljes",
+      "place": "Vendi",
+      "reference": "Referenca",
+      "reservation": "Rezervimi",
+      "status": "Statusi",
+      "type": "Lloji",
+      "vehicle": "Automjeti",
+      "vehiclefines": "Gjobat"
+    },
+    "Vehicletransfers": {
+      "arriveAt": "Mbërritja",
+      "departAt": "Nisja",
+      "driver": "Drejtuar nga",
+      "fromLocation": "Nga",
+      "notes": "Shënime",
+      "odometerKm": "Km në mbërritje",
+      "status": "Statusi",
+      "toLocation": "Për",
+      "vehicle": "Automjeti",
+      "vehicletransfers": "Transferimet"
+    },
+    "Rentalbusinessaccounts": {
+      "address": "Adresa",
+      "billingEmail": "Email i faturimit",
+      "discountPercent": "Zbritje %",
+      "isActive": "Aktiv",
+      "name": "Emri",
+      "notes": "Shënime",
+      "paymentTermsDays": "Afati i pagesës (ditë)",
+      "rentalbusinessaccounts": "Llogaritë e biznesit",
+      "vatNumber": "Numri i TVSH-së"
+    },
+    "Rentaldenyentrys": {
+      "email": "Email",
+      "isActive": "Aktiv",
+      "licenseNumber": "Numri i patentës",
+      "reason": "Arsyeja",
+      "rentaldenyentrys": "Lista e bllokimit"
+    },
+    "Rentalreviews": {
+      "authorName": "Emri",
+      "comment": "Komenti",
+      "isPublished": "E publikuar",
+      "rating": "Vlerësimi",
+      "rentalreviews": "Vlerësimet",
+      "reservation": "Rezervimi"
+    },
+    "Rentalsubscriptions": {
+      "category": "Kategoria",
+      "contactName": "Emri i kontaktit",
+      "email": "Email",
+      "nextRunAt": "Rezervimi tjetër",
+      "period": "Periudha",
+      "phone": "Telefoni",
+      "pickupLocation": "Vendi i marrjes",
+      "price": "Çmimi për periudhë",
+      "rentalsubscriptions": "Abonimet",
+      "status": "Statusi"
     }
   }
 }

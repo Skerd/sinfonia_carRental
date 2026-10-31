@@ -39,7 +39,9 @@
     "purchasePriceLabel": "Kaufpreis",
     "purchasePricePlaceholder": "z. B. 24500",
     "imagesLabel": "Fotos",
-    "videosLabel": "Videos"
+    "videosLabel": "Videos",
+    "trackerIdLabel": "Tracker",
+    "trackerIdPlaceholder": "Tracker-ID"
   },
   "axios": {
     "start": {

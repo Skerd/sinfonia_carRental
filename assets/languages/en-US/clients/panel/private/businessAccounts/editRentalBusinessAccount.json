@@ -1,0 +1,53 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/editRentalBusinessAccount.tsx",
+  "title": "Edit account",
+  "description": "Change billing details or the discount",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "nameLabel": "Name",
+    "namePlaceholder": "Company name",
+    "vatNumberLabel": "VAT number",
+    "vatNumberPlaceholder": "VAT number",
+    "billingEmailLabel": "Billing email",
+    "billingEmailPlaceholder": "accounts@company.com",
+    "addressLabel": "Address",
+    "addressPlaceholder": "Billing address",
+    "discountPercentLabel": "Discount %",
+    "discountPercentPlaceholder": "0",
+    "paymentTermsDaysLabel": "Payment terms (days)",
+    "paymentTermsDaysPlaceholder": "30",
+    "isActiveLabel": "Active",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Internal notes"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving changes",
+      "time": 3000
+    },
+    "success": {
+      "title": "Changes saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Changes could not be saved. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Edit account",
+    "description": "Change billing details or the discount"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Save"
+  }
+}

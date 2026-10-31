@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/index.tsx",
+  "title": "Kodet promocionale",
+  "description": "Zbritje që klientët fusin kur rezervojnë",
+  "help": {
+    "ariaLabel": "Rreth kodeve promocionale",
+    "title": "Rreth kodeve promocionale",
+    "overview": "Një kod promocional heq një përqindje ose një shumë fikse nga ditët e qirasë. Shtesat, tarifat dhe pagesat shtesë nuk zbriten kurrë.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Lërini datat bosh që kodi të pranohet në çdo kohë.",
+          "Një kod numërohet kur bëhet rezervimi, ndaj nuk mund të përdoret më shumë herë se sa lejohet.",
+          "Çaktivizoni një kod për ta ndalur pa e fshirë."
+        ]
+      }
+    ]
+  },
+  "create": "Shto kod promocional",
+  "searchPlaceholder": "Kërkoni kode ose shtoni filtra...",
+  "noData": "Ende asnjë kod promocional",
+  "failTitle": "Kodet promocionale nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "code": "Kodi",
+    "type": "Lloji i zbritjes",
+    "value": "Zbritja",
+    "category": "Kategoria",
+    "bookableFrom": "Mund të rezervohet nga",
+    "bookableUntil": "Mund të rezervohet deri më",
+    "tripFrom": "Marrje nga",
+    "tripUntil": "Marrje deri më",
+    "minRentalDays": "Ditë minimale qiraje",
+    "usageLimit": "Përdorime gjithsej",
+    "usageLimitPerEmail": "Përdorime për klient",
+    "usageCount": "Herë të përdorur",
+    "isActive": "Aktiv",
+    "description": "Shënim i brendshëm",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

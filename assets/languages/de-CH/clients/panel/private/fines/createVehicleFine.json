@@ -1,0 +1,74 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/createVehicleFine.tsx",
+  "title": "Busse hinzufügen",
+  "description": "Eine Busse oder Maut für eines Ihrer Fahrzeuge erfassen",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "referenceLabel": "Referenz",
+    "referencePlaceholder": "Nummer auf der Busse",
+    "vehicleLabel": "Fahrzeug",
+    "vehiclePlaceholder": "Fahrzeug wählen",
+    "offenceAtLabel": "Datum und Zeit des Verstosses",
+    "offenceAtPlaceholder": "Datum wählen",
+    "typeLabel": "Art",
+    "typePlaceholder": "Art wählen",
+    "type": {
+      "speeding": "Geschwindigkeit",
+      "parking": "Parkieren",
+      "red_light": "Rotlicht",
+      "toll": "Maut",
+      "other": "Anderes"
+    },
+    "authorityLabel": "Ausgestellt von",
+    "authorityPlaceholder": "z. B. Stadtpolizei Zürich",
+    "amountLabel": "Betrag",
+    "amountPlaceholder": "Betrag auf der Busse",
+    "placeLabel": "Ort",
+    "placePlaceholder": "Wo es passiert ist",
+    "dueDateLabel": "Zahlen oder antworten bis",
+    "dueDatePlaceholder": "Datum wählen",
+    "statusLabel": "Status",
+    "statusPlaceholder": "Status wählen",
+    "status": {
+      "received": "Erhalten",
+      "driver_identified": "Fahrer/in ermittelt",
+      "charged": "Der Kundschaft belastet",
+      "paid_by_company": "Von uns bezahlt",
+      "transferred": "Fahrer/in gemeldet",
+      "disputed": "Bestritten"
+    },
+    "attachmentsLabel": "Scan der Busse",
+    "notesLabel": "Notizen",
+    "notesPlaceholder": "Interne Notizen"
+  },
+  "axios": {
+    "start": {
+      "title": "Busse wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Busse hinzugefügt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Busse konnte nicht hinzugefügt werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Busse hinzufügen",
+    "description": "Eine Busse oder Maut für eines Ihrer Fahrzeuge erfassen"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Hinzufügen"
+  }
+}

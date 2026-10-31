@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/createRentalDenyEntry.tsx",
+  "title": "Kundschaft sperren",
+  "description": "Buchungen und Übergaben für diese E-Mail oder diesen Führerschein ablehnen",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "kunde@email.ch",
+    "licenseNumberLabel": "Führerscheinnummer",
+    "licenseNumberPlaceholder": "Wie auf dem Führerschein",
+    "reasonLabel": "Grund",
+    "reasonPlaceholder": "Warum diese Kundschaft gesperrt ist",
+    "isActiveLabel": "Aktiv"
+  },
+  "axios": {
+    "start": {
+      "title": "Eintrag wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Kundschaft gesperrt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Der Eintrag konnte nicht hinzugefügt werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Kundschaft sperren",
+    "description": "Buchungen und Übergaben für diese E-Mail oder diesen Führerschein ablehnen"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Hinzufügen"
+  }
+}

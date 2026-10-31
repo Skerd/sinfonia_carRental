@@ -1,0 +1,40 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reports/index.tsx",
+  "title": "Berichte",
+  "description": "Wie die Flotte genutzt wurde, was sie einbrachte und was sie kostete",
+  "from": "Von",
+  "to": "Bis",
+  "location": "Standort",
+  "allLocations": "Alle Standorte",
+  "refresh": "Anzeigen",
+  "utilisation": "Auslastung",
+  "revenue": "Umsatz",
+  "averageDailyRate": "Durchschnittlicher Tagessatz",
+  "revpac": "Umsatz pro verfügbarem Fahrzeugtag",
+  "leadTime": "Vorlauf der Buchung",
+  "days": "Tage",
+  "cancellationRate": "Stornierungen",
+  "noShowRate": "Nichterscheinen",
+  "lostSearches": "Suchen ohne Fahrzeug",
+  "revenueByCar": "Umsatz je Fahrzeug",
+  "noRevenue": "Kein Umsatz in diesem Zeitraum",
+  "car": "Fahrzeug",
+  "maintenance": "Wartung",
+  "repairs": "Reparaturen",
+  "insurance": "Versicherung",
+  "payback": "Amortisation",
+  "help": {
+    "ariaLabel": "Über Berichte",
+    "title": "Über Berichte",
+    "overview": "Die Auslastung ist die vermietete Zeit geteilt durch die Zeit, in der ein Fahrzeug nicht blockiert war.",
+    "sections": [
+      {
+        "title": "Die Zahlen lesen",
+        "items": [
+          "Eine Suche ohne freies Fahrzeug zählt als verlorene Nachfrage.",
+          "Die Amortisation ist der Umsatz des Zeitraums geteilt durch den Kaufpreis."
+        ]
+      }
+    ]
+  }
+}

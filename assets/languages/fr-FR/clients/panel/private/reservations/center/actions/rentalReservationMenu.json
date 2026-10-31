@@ -1,10 +1,14 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reservations/center/actions/rentalReservationMenu.tsx",
   "recordPayment": "Enregistrer le paiement",
+  "drivers": "Conducteurs",
   "handover": "Remettre",
   "returnVehicle": "Reprendre",
   "extend": "Prolonger",
   "reassignVehicle": "Changer de voiture",
   "noShow": "Marquer absent",
-  "cancel": "Annuler la réservation"
+  "cancel": "Annuler la réservation",
+  "downloadAgreement": "Télécharger le contrat",
+  "takeDeposit": "Prendre la caution",
+  "settleDeposit": "Régler la caution"
 }

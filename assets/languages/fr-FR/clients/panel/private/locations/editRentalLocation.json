@@ -49,7 +49,9 @@
     "streetLabel": "Rue",
     "streetPlaceholder": "Saisir la rue",
     "timezoneLabel": "Fuseau horaire",
-    "timezonePlaceholder": "p. ex. Europe/Zurich"
+    "timezonePlaceholder": "p. ex. Europe/Zurich",
+    "oneWayFeeLabel": "Frais d'aller simple pour un retour ici",
+    "oneWayFeePlaceholder": "Vide : frais d'aller simple de l'entreprise"
   },
   "axios": {
     "start": {

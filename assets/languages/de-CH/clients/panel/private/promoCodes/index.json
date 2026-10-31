@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/index.tsx",
+  "title": "Aktionscodes",
+  "description": "Rabatte, die Kundinnen und Kunden bei der Buchung eingeben",
+  "help": {
+    "ariaLabel": "Über Aktionscodes",
+    "title": "Über Aktionscodes",
+    "overview": "Ein Aktionscode zieht einen Prozentsatz oder festen Betrag von den Miettagen ab. Extras, Gebühren und Zuschläge werden nie rabattiert.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Lassen Sie die Daten leer, damit ein Code jederzeit gilt.",
+          "Ein Code wird bei der Buchung gezählt, so kann er nicht öfter als erlaubt eingelöst werden.",
+          "Schalten Sie einen Code aus, um ihn zu stoppen, ohne ihn zu löschen."
+        ]
+      }
+    ]
+  },
+  "create": "Aktionscode hinzufügen",
+  "searchPlaceholder": "Aktionscodes suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Aktionscodes",
+  "failTitle": "Aktionscodes konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "code": "Code",
+    "type": "Rabattart",
+    "value": "Rabatt",
+    "category": "Kategorie",
+    "bookableFrom": "Buchbar ab",
+    "bookableUntil": "Buchbar bis",
+    "tripFrom": "Abholungen ab",
+    "tripUntil": "Abholungen bis",
+    "minRentalDays": "Mindestmiettage",
+    "usageLimit": "Erlaubte Einlösungen insgesamt",
+    "usageLimitPerEmail": "Einlösungen pro Kunde",
+    "usageCount": "Bereits eingelöst",
+    "isActive": "Aktiv",
+    "description": "Interne Notiz",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

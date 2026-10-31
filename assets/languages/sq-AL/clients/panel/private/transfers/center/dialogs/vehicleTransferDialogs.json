@@ -1,0 +1,18 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/center/dialogs/vehicleTransferDialogs.tsx",
+  "cancel": {
+    "title": "Anulo transferimin",
+    "description": "{plate} mbetet ku është dhe mund të rezervohet përsëri.",
+    "confirm": "Anulo transferimin"
+  },
+  "start": {
+    "title": "Makina niset",
+    "description": "Shënon {plate} si në rrugë.",
+    "confirm": "Nis tani"
+  },
+  "complete": {
+    "title": "Makina mbërriti",
+    "description": "Që tani {plate} numërohet në vendndodhjen e re.",
+    "confirm": "Shëno si të mbërritur"
+  }
+}

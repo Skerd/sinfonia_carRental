@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/depositDialog.tsx",
+  "title": "Prendi il deposito",
+  "descriptionHold": "L'importo viene bloccato sulla carta del cliente e sbloccato o addebitato dopo la riconsegna.",
+  "descriptionSaveCard": "Questo noleggio dura più di una settimana, quindi la carta viene salvata invece di bloccata. Potrà essere addebitata dopo la riconsegna.",
+  "amountLabel": "Deposito",
+  "method": {
+    "card": "Carta",
+    "cash": "Contanti"
+  },
+  "confirmCash": "Registra deposito in contanti",
+  "continueCard": "Continua con la carta",
+  "cardTitle": "Carta del cliente",
+  "cardHoldHint": "Passa il dispositivo al cliente per inserire la carta. Ora non viene addebitato nulla.",
+  "cardSaveHint": "Passa il dispositivo al cliente per salvare la carta. Ora non viene addebitato nulla.",
+  "confirmHold": "Blocca deposito",
+  "confirmSave": "Salva carta",
+  "close": "Chiudi",
+  "cancel": "Indietro"
+}

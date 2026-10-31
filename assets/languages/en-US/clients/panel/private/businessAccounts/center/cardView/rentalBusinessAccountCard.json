@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/center/cardView/rentalBusinessAccountCard.tsx",
+  "failedTitle": "Failed to load account",
+  "failedDescription": "Tap to retry.",
+  "name": "Name",
+  "vatNumber": "VAT number",
+  "discountPercent": "Discount %",
+  "isActive": "Active",
+  "statement": "Monthly statement"
+}

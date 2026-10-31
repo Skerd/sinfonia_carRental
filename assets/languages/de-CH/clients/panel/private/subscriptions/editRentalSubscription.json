@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/editRentalSubscription.tsx",
+  "title": "Abo bearbeiten",
+  "description": "Plan, Preis oder Status ändern",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "contactNameLabel": "Kontaktname",
+    "contactNamePlaceholder": "Für wen das Fahrzeug ist",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "kunde@email.ch",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "Telefonnummer",
+    "categoryLabel": "Kategorie",
+    "categoryPlaceholder": "Kategorie wählen",
+    "pickupLocationLabel": "Abholort",
+    "pickupLocationPlaceholder": "Standort wählen",
+    "periodLabel": "Zeitraum",
+    "periodPlaceholder": "Zeitraum wählen",
+    "period": {
+      "week": "Woche",
+      "month": "Monat"
+    },
+    "priceLabel": "Preis pro Zeitraum",
+    "pricePlaceholder": "0.00",
+    "statusLabel": "Status",
+    "statusPlaceholder": "Status wählen",
+    "status": {
+      "active": "Aktiv",
+      "paused": "Pausiert",
+      "ended": "Beendet"
+    },
+    "nextRunAtLabel": "Nächste Buchung",
+    "nextRunAtPlaceholder": "Datum wählen",
+    "businessAccountLabel": "Geschäftskonto",
+    "businessAccountPlaceholder": "Optional"
+  },
+  "axios": {
+    "start": {
+      "title": "Änderungen werden gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Änderungen gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Änderungen konnten nicht gespeichert werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Abo bearbeiten",
+    "description": "Plan, Preis oder Status ändern"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Speichern"
+  }
+}

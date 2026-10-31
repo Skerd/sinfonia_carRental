@@ -14,6 +14,15 @@
           "Beim Stornieren wird das Bezahlte zurückerstattet, abzüglich der Stornogebühr, falls Sie diese anwenden. Buchungen, die auf eine Online-Zahlung gewartet haben und abgelaufen sind, erscheinen als abgelaufen.",
           "Die Zeiten werden in der Buchung selbst in der Zeitzone des Abholorts angezeigt."
         ]
+      },
+      {
+        "title": "Fahrer, Kaution und Rückgabe",
+        "items": [
+          "Jede Fahrerin und jeder Fahrer braucht eine Führerausweisnummer, die am Rückgabetag noch gültig ist. Ohne sie darf das Fahrzeug nicht weg.",
+          "Nehmen Sie die Kaution vor der Übergabe: bar, als Kartenreservierung bei Mieten bis zu einer Woche, sonst als gespeicherte Karte. Rechnen Sie sie ab, wenn das Fahrzeug zurückkommt.",
+          "Die Übergabe sendet den Mietvertrag per E-Mail. Sie laden ihn im Menü der Buchung erneut herunter.",
+          "Die Rücknahme schlägt Treibstoff-, Verspätungs- und Reinigungskosten aus den Angaben vor. Ändern Sie sie vor dem Bestätigen. Ein neuer Schaden wird am Fahrzeug erfasst."
+        ]
       }
     ]
   },

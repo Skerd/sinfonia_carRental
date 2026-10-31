@@ -39,7 +39,9 @@
     "purchasePriceLabel": "Prezzo d'acquisto",
     "purchasePricePlaceholder": "es. 24500",
     "imagesLabel": "Foto",
-    "videosLabel": "Video"
+    "videosLabel": "Video",
+    "trackerIdLabel": "Localizzatore",
+    "trackerIdPlaceholder": "Id del localizzatore"
   },
   "axios": {
     "start": {

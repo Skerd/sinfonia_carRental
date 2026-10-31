@@ -14,6 +14,13 @@
           "Deaktivieren Sie ein Extra, um es nicht mehr anzubieten; bestehende Buchungen behalten ihren Preis.",
           "Neu anordnen legt die Reihenfolge fest, die Kunden auf der Website sehen."
         ]
+      },
+      {
+        "title": "Schutzpaket",
+        "items": [
+          "Wählen Sie Schutzpaket für Deckungen wie einen tieferen Selbstbehalt. Eine Buchung kann nur eines enthalten.",
+          "Der Selbstbehalt ist der Höchstbetrag, den der Kunde für einen Schaden zahlt. Die Kaution dieses Pakets wird bei der Abholung gehalten."
+        ]
       }
     ]
   },

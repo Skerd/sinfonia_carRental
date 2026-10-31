@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/center/cardView/vehicleTransferCard.tsx",
+  "failedTitle": "Transferimi nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "fromLocation": "Nga",
+  "toLocation": "Për",
+  "departAt": "Nisja",
+  "driver": "Drejtuar nga",
+  "status": "Statusi",
+  "statusValues": {
+    "planned": "I planifikuar",
+    "in_transit": "Në rrugë",
+    "done": "Mbërriti",
+    "cancelled": "I anuluar"
+  }
+}

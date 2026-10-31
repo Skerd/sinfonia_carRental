@@ -1,10 +1,14 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reservations/center/actions/rentalReservationMenu.tsx",
   "recordPayment": "Registra pagamento",
+  "drivers": "Conducenti",
   "handover": "Consegna",
   "returnVehicle": "Ritira",
   "extend": "Prolunga",
   "reassignVehicle": "Cambia auto",
   "noShow": "Segna non presentato",
-  "cancel": "Annulla prenotazione"
+  "cancel": "Annulla prenotazione",
+  "downloadAgreement": "Scarica il contratto",
+  "takeDeposit": "Prendi il deposito",
+  "settleDeposit": "Chiudi il deposito"
 }

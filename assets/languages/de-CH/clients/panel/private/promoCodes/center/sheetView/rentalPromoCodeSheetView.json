@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/center/sheetView/rentalPromoCodeSheetView.tsx",
+  "lifecycle": "Lebenszyklus",
+  "overview": "Übersicht",
+  "rentalPromoCodeSubtitle": "Aktionscode",
+  "code": "Code",
+  "type": "Rabattart",
+  "value": "Rabatt",
+  "category": "Kategorie",
+  "bookableFrom": "Buchbar ab",
+  "bookableUntil": "Buchbar bis",
+  "tripFrom": "Abholungen ab",
+  "tripUntil": "Abholungen bis",
+  "minRentalDays": "Mindestmiettage",
+  "usageLimit": "Erlaubte Einlösungen insgesamt",
+  "usageLimitPerEmail": "Einlösungen pro Kunde",
+  "usageCount": "Bereits eingelöst",
+  "isActive": "Aktiv",
+  "description": "Interne Notiz",
+  "typeValues": {
+    "percent": "Prozent",
+    "fixed": "Fester Betrag"
+  },
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "createdBy": "Erstellt von",
+  "company": "Unternehmen",
+  "deletedAt": "Gelöscht am",
+  "deletedBy": "Gelöscht von"
+}

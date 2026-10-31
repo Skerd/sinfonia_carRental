@@ -1,0 +1,41 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/sheetView/vehicleFineSheetView.tsx",
+  "lifecycle": "Ciclo di vita",
+  "overview": "Panoramica",
+  "vehicleFineSubtitle": "Multa",
+  "reference": "Riferimento",
+  "vehicle": "Veicolo",
+  "offenceAt": "Data e ora dell'infrazione",
+  "type": "Tipo",
+  "authority": "Emesso da",
+  "amount": "Importo",
+  "place": "Luogo",
+  "dueDate": "Pagare o rispondere entro",
+  "status": "Stato",
+  "reservation": "Prenotazione",
+  "driverName": "Conducente",
+  "chargedAmount": "Addebitato al cliente",
+  "attachments": "Scansione del verbale",
+  "notes": "Note",
+  "typeValues": {
+    "speeding": "Eccesso di velocità",
+    "parking": "Parcheggio",
+    "red_light": "Semaforo rosso",
+    "toll": "Pedaggio",
+    "other": "Altro"
+  },
+  "statusValues": {
+    "received": "Ricevuta",
+    "driver_identified": "Conducente identificato",
+    "charged": "Addebitata al cliente",
+    "paid_by_company": "Pagata da noi",
+    "transferred": "Conducente comunicato",
+    "disputed": "Contestata"
+  },
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "company": "Azienda",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da"
+}

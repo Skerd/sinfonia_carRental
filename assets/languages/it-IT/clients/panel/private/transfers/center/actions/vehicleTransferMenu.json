@@ -1,0 +1,6 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/center/actions/vehicleTransferMenu.tsx",
+  "start": "Parti ora",
+  "complete": "Segna come arrivato",
+  "cancel": "Annulla trasferimento"
+}

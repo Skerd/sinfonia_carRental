@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/index.tsx",
+  "title": "Abonnements",
+  "description": "Une voiture d'une catégorie, réservée à nouveau chaque semaine ou chaque mois",
+  "help": {
+    "ariaLabel": "À propos des abonnements",
+    "title": "À propos des abonnements",
+    "overview": "Tant qu'un abonnement est actif, la réservation suivante est créée à sa date et la prochaine est planifiée.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Mettez-le en pause pour sauter la prochaine exécution.",
+          "La réservation utilise le prix indiqué et se paie au départ."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un abonnement",
+  "searchPlaceholder": "Rechercher des abonnements ou ajouter des filtres...",
+  "noData": "Aucun abonnement pour l'instant",
+  "failTitle": "Impossible de charger les abonnements",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "contactName": "Nom du contact",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "category": "Catégorie",
+    "pickupLocation": "Lieu de départ",
+    "period": "Période",
+    "price": "Prix par période",
+    "status": "Statut",
+    "nextRunAt": "Prochaine réservation",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

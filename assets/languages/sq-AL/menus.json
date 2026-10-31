@@ -2,12 +2,21 @@
   "carRental": {
     "title": "Qiraja e makinave",
     "reservations": {"title": "Rezervimet"},
+    "planner": {"title": "Plani"},
+    "counter": {"title": "Sporteli"},
+    "reports": {"title": "Raporte"},
+    "businessAccounts": {"title": "Llogaritë e biznesit"},
+    "subscriptions": {"title": "Abonimet"},
+    "reviews": {"title": "Vlerësimet"},
+    "denyList": {"title": "Lista e bllokimit"},
     "vehicles": {"title": "Flota"},
     "blocks": {"title": "Bllokimet e automjeteve"},
     "fleetOps": {"title": "Operacionet e flotës"},
     "maintenance": {"title": "Mirëmbajtja"},
     "damages": {"title": "Dëmtimet"},
     "insurance": {"title": "Sigurimet"},
+    "fines": {"title": "Gjobat"},
+    "transfers": {"title": "Transferimet"},
     "documents": {"title": "Dokumentet"}
   },
   "tenancy": {
@@ -16,12 +25,14 @@
         "title": "Qiraja e makinave",
         "booking": {"title": "Rezervim online"},
         "payment": {"title": "Pagesa dhe anulimi"},
+        "fees": {"title": "Tarifat dhe pagesat shtesë"},
         "terms": {"title": "Kushtet e qirasë"},
         "alerts": {"title": "Njoftime për punonjësit"}
       },
       "vehicleCategories": {"title": "Kategoritë"},
       "rentalExtras": {"title": "Shtesat"},
-      "rentalLocations": {"title": "Vendndodhjet"}
+      "rentalLocations": {"title": "Vendndodhjet"},
+      "rentalPromoCodes": {"title": "Kodet promocionale"}
     }
   }
 }

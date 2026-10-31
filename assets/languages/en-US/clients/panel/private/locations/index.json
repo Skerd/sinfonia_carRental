@@ -14,6 +14,12 @@
           "Add closed days for holidays; the website won't offer pickups or returns on them.",
           "A location with bookings can't be deleted; deactivate it instead."
         ]
+      },
+      {
+        "title": "One-way fee",
+        "items": [
+          "A one-way fee applies when the car is returned at another location. The return location's fee is used. If that fee is empty, the company fee is used."
+        ]
       }
     ]
   },

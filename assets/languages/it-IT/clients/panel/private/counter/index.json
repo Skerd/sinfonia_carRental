@@ -1,0 +1,52 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/counter/index.tsx",
+  "title": "Banco",
+  "description": "Ritiri, riconsegne e ritardi di oggi",
+  "date": "Data",
+  "today": "Oggi",
+  "location": "Sede",
+  "allLocations": "Tutte le sedi",
+  "search": "Cerca",
+  "searchPlaceholder": "Targa o numero di prenotazione",
+  "pickups": "Ritiri",
+  "returns": "Riconsegne",
+  "overdue": "In ritardo",
+  "empty": "Niente qui.",
+  "noMatches": "Nessuna prenotazione corrisponde a questa ricerca.",
+  "noCar": "Nessuna auto",
+  "needsTransfer": "Serve un trasferimento",
+  "driversMissing": "Conducenti mancanti",
+  "depositMissing": "Deposito non preso",
+  "drivers": "Conducenti",
+  "takeDeposit": "Deposito",
+  "handover": "Consegna",
+  "returnVehicle": "Ritira",
+  "settleDeposit": "Chiudi il deposito",
+  "depositStatus": {
+    "pending": "In attesa della carta",
+    "held": "Deposito bloccato",
+    "captured": "Deposito trattenuto",
+    "released": "Deposito sbloccato",
+    "failed": "Deposito non riuscito"
+  },
+  "readiness": {
+    "ready": "Pronto",
+    "needs_cleaning": "Da pulire",
+    "needs_check": "Da controllare"
+  },
+  "help": {
+    "ariaLabel": "Informazioni sul banco",
+    "title": "Informazioni sul banco",
+    "overview": "Il banco per un giorno. I ritiri sono prenotazioni confermate che partono quel giorno. Le riconsegne sono le auto attese quel giorno. I ritardi avrebbero già dovuto tornare.",
+    "sections": [
+      {
+        "title": "Al banco",
+        "items": [
+          "Scegli la data e, se serve, una sede. Cerca per targa o numero di prenotazione.",
+          "Conducenti, Deposito, Consegna e Ritira sono gli stessi passi della prenotazione.",
+          "I badge mostrano una patente mancante, un deposito ancora aperto, un'auto da portare alla sede di ritiro e se l'auto è pronta."
+        ]
+      }
+    ]
+  }
+}

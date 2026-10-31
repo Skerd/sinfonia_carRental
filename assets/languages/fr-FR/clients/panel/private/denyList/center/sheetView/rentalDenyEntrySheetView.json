@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/center/sheetView/rentalDenyEntrySheetView.tsx",
+  "lifecycle": "Cycle de vie",
+  "overview": "Aperçu",
+  "rentalDenyEntrySubtitle": "Entrée de la liste",
+  "email": "E-mail",
+  "licenseNumber": "Numéro de permis",
+  "reason": "Motif",
+  "isActive": "Actif",
+  "createdAt": "Créé le",
+  "updatedAt": "Mis à jour le",
+  "createdBy": "Créé par",
+  "company": "Entreprise",
+  "deletedAt": "Supprimé le",
+  "deletedBy": "Supprimé par"
+}

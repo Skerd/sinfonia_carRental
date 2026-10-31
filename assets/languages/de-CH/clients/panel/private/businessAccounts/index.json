@@ -1,0 +1,42 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/index.tsx",
+  "title": "Geschäftskonten",
+  "description": "Firmen, die auf Rechnung buchen, mit Rabatt und Rechnungsangaben",
+  "help": {
+    "ariaLabel": "Über Geschäftskonten",
+    "title": "Über Geschäftskonten",
+    "overview": "Ein Geschäftskonto wird statt der fahrenden Person in Rechnung gestellt. Der Rabatt ist eine Zeile der Buchung, und Rechnungen verwenden Name, MwSt.-Nummer und Adresse.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Setzen Sie das Konto auf eine Buchung am Schalter und wählen Sie Auf Rechnung.",
+          "Öffnen Sie ein Konto und wählen Sie Monatsabrechnung."
+        ]
+      }
+    ]
+  },
+  "create": "Konto hinzufügen",
+  "searchPlaceholder": "Konten suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Geschäftskonten",
+  "failTitle": "Konten konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "name": "Name",
+    "vatNumber": "MwSt.-Nummer",
+    "billingEmail": "Rechnungs-E-Mail",
+    "address": "Adresse",
+    "discountPercent": "Rabatt %",
+    "paymentTermsDays": "Zahlungsziel (Tage)",
+    "isActive": "Aktiv",
+    "notes": "Notizen",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/center/cardView/rentalDenyEntryCard.tsx",
+  "failedTitle": "Impossibile caricare la voce",
+  "failedDescription": "Tocca per riprovare.",
+  "email": "Email",
+  "licenseNumber": "Numero di patente",
+  "reason": "Motivo",
+  "isActive": "Attivo"
+}

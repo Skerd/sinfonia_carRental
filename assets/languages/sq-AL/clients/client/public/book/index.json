@@ -30,5 +30,16 @@
   "readTerms": "Lexoni kushtet",
   "booking": "Duke rezervuar…",
   "continueToPayment": "Vazhdo te pagesa",
-  "confirmBooking": "Konfirmo rezervimin"
+  "confirmBooking": "Konfirmo rezervimin",
+  "protectionTitle": "Mbrojtja",
+  "protectionBasic": "Mbulim bazë",
+  "protectionBasicHint": "E përfshirë. Nëse makina dëmtohet, paguani franshizën e plotë.",
+  "perDay": "në ditë",
+  "protectionExcess": "Franshiza: {amount}",
+  "birthDate": "Data e lindjes",
+  "birthDateRequired": "Shkruani datën e lindjes së shoferit.",
+  "promoLabel": "Kodi promocional",
+  "promoApply": "Apliko",
+  "promoInvalid": "Ky kod promocional nuk mund të përdoret për këtë rezervim.",
+  "crossBorder": "Ta nxjerr makinën jashtë vendit"
 }

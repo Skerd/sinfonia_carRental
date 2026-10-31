@@ -1,0 +1,27 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/cardView/vehicleFineCard.tsx",
+  "failedTitle": "Failed to load fine",
+  "failedDescription": "Tap to retry.",
+  "vehicle": "Vehicle",
+  "offenceAt": "Date and time of the offence",
+  "type": "Type",
+  "amount": "Amount",
+  "status": "Status",
+  "reservation": "Booking",
+  "driverName": "Driver",
+  "typeValues": {
+    "speeding": "Speeding",
+    "parking": "Parking",
+    "red_light": "Red light",
+    "toll": "Toll",
+    "other": "Other"
+  },
+  "statusValues": {
+    "received": "Received",
+    "driver_identified": "Driver identified",
+    "charged": "Charged to customer",
+    "paid_by_company": "Paid by us",
+    "transferred": "Named the driver",
+    "disputed": "Disputed"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reports/index.tsx",
+  "title": "Reports",
+  "description": "How the fleet was used, what it earned and what it cost",
+  "from": "From",
+  "to": "To",
+  "location": "Branch",
+  "allLocations": "All branches",
+  "refresh": "Show",
+  "utilisation": "Utilisation",
+  "revenue": "Revenue",
+  "averageDailyRate": "Average daily rate",
+  "revpac": "Revenue per available car-day",
+  "leadTime": "Booking lead time",
+  "days": "days",
+  "cancellationRate": "Cancellations",
+  "noShowRate": "No-shows",
+  "lostSearches": "Searches with no car",
+  "revenueByCar": "Revenue by car",
+  "noRevenue": "No revenue in this window",
+  "car": "Car",
+  "maintenance": "Maintenance",
+  "repairs": "Repairs",
+  "insurance": "Insurance",
+  "payback": "Payback",
+  "help": {
+    "ariaLabel": "About reports",
+    "title": "About reports",
+    "overview": "Utilisation is rented hours divided by the hours a car was not blocked. Revenue is the total of bookings that started in the window.",
+    "sections": [
+      {
+        "title": "Reading the numbers",
+        "items": [
+          "A search with no free car is counted as lost demand.",
+          "Payback is the window's revenue divided by the car's purchase price."
+        ]
+      }
+    ]
+  }
+}

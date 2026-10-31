@@ -1,0 +1,19 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/center/cardView/rentalSubscriptionCard.tsx",
+  "failedTitle": "Impossible de charger l'abonnement",
+  "failedDescription": "Touchez pour réessayer.",
+  "contactName": "Nom du contact",
+  "category": "Catégorie",
+  "period": "Période",
+  "price": "Prix par période",
+  "status": "Statut",
+  "periodValues": {
+    "week": "Semaine",
+    "month": "Mois"
+  },
+  "statusValues": {
+    "active": "Actif",
+    "paused": "En pause",
+    "ended": "Terminé"
+  }
+}

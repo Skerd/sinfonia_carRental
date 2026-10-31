@@ -38,7 +38,8 @@
   "vehicle": "Fahrzeug",
   "paymentChoiceValues": {
     "pay_at_pickup": "Bei Abholung",
-    "online": "Online"
+    "online": "Online",
+    "on_account": "Auf Rechnung"
   },
   "paymentStatusValues": {
     "unpaid": "Unbezahlt",
@@ -70,17 +71,64 @@
     "payment_failed": "Zahlung fehlgeschlagen",
     "confirmed": "Bestätigt",
     "vehicle_reassigned": "Fahrzeug gewechselt",
+    "drivers_updated": "Fahrer/innen aktualisiert",
     "handover": "Übergeben",
     "extended": "Verlängert",
     "returned": "Zurückgegeben",
     "cancelled": "Storniert",
     "expired": "Reservierung abgelaufen",
     "no_show": "Nicht erschienen",
-    "refunded": "Erstattet"
+    "refunded": "Erstattet",
+    "charge_added": "Belastung hinzugefügt",
+    "deposit_held": "Kaution hinterlegt",
+    "deposit_captured": "Kaution behalten",
+    "deposit_released": "Kaution freigegeben"
   },
   "createdAt": "Erstellt am",
   "updatedAt": "Aktualisiert am",
   "createdBy": "Erstellt von",
   "deletedAt": "Gelöscht am",
-  "deletedBy": "Gelöscht von"
+  "deletedBy": "Gelöscht von",
+  "drivers": "Fahrer/innen",
+  "role": "Rolle",
+  "birthDate": "Geburtsdatum",
+  "licenseNumber": "Führerausweisnummer",
+  "licenseCountry": "Ausgestellt in",
+  "licenseExpiresAt": "Führerausweis gültig bis",
+  "driverRole": {
+    "primary": "Hauptfahrer/in",
+    "additional": "Zusätzliche/r Fahrer/in"
+  },
+  "inspection": "Abholung und Rückgabe",
+  "handover_odometerKm": "Kilometer bei Abholung",
+  "handover_fuelLevel": "Tank bei Abholung",
+  "returnInfo_odometerKm": "Kilometer bei Rückgabe",
+  "returnInfo_fuelLevel": "Tank bei Rückgabe",
+  "agreement_signerName": "Mietvertrag unterschrieben von",
+  "agreement_signedAt": "Unterschrieben am",
+  "fuelValues": {
+    "empty": "Leer",
+    "quarter": "1/4",
+    "half": "1/2",
+    "three_quarters": "3/4",
+    "full": "Voll"
+  },
+  "deposit": "Kaution",
+  "deposit_method": "Genommen als",
+  "deposit_status": "Status der Kaution",
+  "deposit_amount": "Hinterlegte Kaution",
+  "deposit_capturedAmount": "Behalten",
+  "depositMethodValues": {
+    "card_hold": "Kartenreservierung",
+    "saved_card": "Gespeicherte Karte",
+    "cash": "Bar"
+  },
+  "depositStatusValues": {
+    "pending": "Wartet auf Karte",
+    "held": "Hinterlegt",
+    "captured": "Behalten",
+    "released": "Freigegeben",
+    "failed": "Fehlgeschlagen"
+  },
+  "needsTransfer": "Überführung nötig"
 }

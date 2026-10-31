@@ -12,8 +12,18 @@
     "6": "Samedi"
   },
   "form": {
+    "depositAmountLabel": "Caution avec cette formule",
+    "depositAmountPlaceholder": "Laisser vide pour garder la caution de la catégorie",
     "descriptionLabel": "Description",
     "descriptionPlaceholder": "Ce que les clients doivent savoir sur cette catégorie",
+    "excessAmountLabel": "Franchise (protection uniquement)",
+    "excessAmountPlaceholder": "Montant maximal payé par le client en cas de dommage",
+    "kind": {
+      "extra": "Supplément",
+      "protection": "Formule de protection"
+    },
+    "kindLabel": "Type",
+    "kindPlaceholder": "Choisir un type",
     "maxQuantityLabel": "Maximum par réservation",
     "maxQuantityPlaceholder": "Saisir la quantité maximale",
     "nameLabel": "Nom",

@@ -1,0 +1,18 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/center/dialogs/vehicleTransferDialogs.tsx",
+  "cancel": {
+    "title": "Annuler le transfert",
+    "description": "{plate} reste où il est et redevient réservable.",
+    "confirm": "Annuler le transfert"
+  },
+  "start": {
+    "title": "Le véhicule part",
+    "description": "Marque {plate} comme en route.",
+    "confirm": "Partir maintenant"
+  },
+  "complete": {
+    "title": "Le véhicule est arrivé",
+    "description": "{plate} compte désormais dans la nouvelle agence.",
+    "confirm": "Marquer comme arrivé"
+  }
+}

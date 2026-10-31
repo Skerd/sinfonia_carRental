@@ -17,5 +17,11 @@
     "cancelled": "Storniert",
     "expired": "Abgelaufen",
     "no_show": "Nicht erschienen"
+  },
+  "readiness": "Bereitschaft",
+  "readinessValues": {
+    "ready": "Bereit",
+    "needs_cleaning": "Reinigung nötig",
+    "needs_check": "Kontrolle nötig"
   }
 }

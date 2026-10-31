@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/editRentalDenyEntry.tsx",
+  "title": "Ndrysho hyrjen",
+  "description": "Ndryshoni emailin, patentën ose arsyen",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "emailLabel": "Email",
+    "emailPlaceholder": "klienti@email.al",
+    "licenseNumberLabel": "Numri i patentës",
+    "licenseNumberPlaceholder": "Siç është në patentë",
+    "reasonLabel": "Arsyeja",
+    "reasonPlaceholder": "Pse ky klient është i bllokuar",
+    "isActiveLabel": "Aktiv"
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhen ndryshimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Ndryshimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Ndryshimet nuk u ruajtën. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ndrysho hyrjen",
+    "description": "Ndryshoni emailin, patentën ose arsyen"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

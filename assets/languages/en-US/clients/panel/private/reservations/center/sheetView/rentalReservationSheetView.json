@@ -38,7 +38,8 @@
   "vehicle": "Vehicle",
   "paymentChoiceValues": {
     "pay_at_pickup": "At pickup",
-    "online": "Online"
+    "online": "Online",
+    "on_account": "On account"
   },
   "paymentStatusValues": {
     "unpaid": "Unpaid",
@@ -70,17 +71,64 @@
     "payment_failed": "Payment failed",
     "confirmed": "Confirmed",
     "vehicle_reassigned": "Vehicle changed",
+    "drivers_updated": "Drivers updated",
     "handover": "Handed over",
     "extended": "Extended",
     "returned": "Returned",
     "cancelled": "Cancelled",
     "expired": "Hold expired",
     "no_show": "No-show",
-    "refunded": "Refunded"
+    "refunded": "Refunded",
+    "charge_added": "Charge added",
+    "deposit_held": "Deposit held",
+    "deposit_captured": "Deposit kept",
+    "deposit_released": "Deposit released"
   },
   "createdAt": "Created at",
   "updatedAt": "Updated at",
   "createdBy": "Created by",
   "deletedAt": "Deleted at",
-  "deletedBy": "Deleted by"
+  "deletedBy": "Deleted by",
+  "drivers": "Drivers",
+  "role": "Role",
+  "birthDate": "Birth date",
+  "licenseNumber": "Licence number",
+  "licenseCountry": "Issued in",
+  "licenseExpiresAt": "Licence valid until",
+  "driverRole": {
+    "primary": "Main driver",
+    "additional": "Additional driver"
+  },
+  "inspection": "Pickup and return",
+  "handover_odometerKm": "Km at pickup",
+  "handover_fuelLevel": "Fuel at pickup",
+  "returnInfo_odometerKm": "Km at return",
+  "returnInfo_fuelLevel": "Fuel at return",
+  "agreement_signerName": "Agreement signed by",
+  "agreement_signedAt": "Signed on",
+  "fuelValues": {
+    "empty": "Empty",
+    "quarter": "1/4",
+    "half": "1/2",
+    "three_quarters": "3/4",
+    "full": "Full"
+  },
+  "deposit": "Deposit",
+  "deposit_method": "Taken as",
+  "deposit_status": "Deposit status",
+  "deposit_amount": "Deposit held",
+  "deposit_capturedAmount": "Kept",
+  "depositMethodValues": {
+    "card_hold": "Card hold",
+    "saved_card": "Saved card",
+    "cash": "Cash"
+  },
+  "depositStatusValues": {
+    "pending": "Waiting for card",
+    "held": "Held",
+    "captured": "Kept",
+    "released": "Released",
+    "failed": "Failed"
+  },
+  "needsTransfer": "Needs a transfer"
 }

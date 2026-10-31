@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/center/cardView/rentalDenyEntryCard.tsx",
+  "failedTitle": "Failed to load the entry",
+  "failedDescription": "Tap to retry.",
+  "email": "Email",
+  "licenseNumber": "Licence number",
+  "reason": "Reason",
+  "isActive": "Active"
+}

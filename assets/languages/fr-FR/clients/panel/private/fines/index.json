@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/index.tsx",
+  "title": "Amendes",
+  "description": "Amendes et péages de vos véhicules, attribués au conducteur du moment",
+  "help": {
+    "ariaLabel": "À propos des amendes",
+    "title": "À propos des amendes",
+    "overview": "Saisissez une amende à sa réception. La réservation dont le départ et le retour couvrent l'heure de l'infraction est trouvée automatiquement, avec son conducteur principal.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Facturez le client pour ajouter l'amende et les frais de dossier à sa réservation ; une carte enregistrée est débitée tout de suite.",
+          "Téléchargez la lettre de désignation pour indiquer le conducteur à l'autorité.",
+          "Si le véhicule ou l'heure est corrigé, utilisez Rapprocher à nouveau."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter une amende",
+  "searchPlaceholder": "Rechercher des amendes ou ajouter des filtres...",
+  "noData": "Aucune amende pour l'instant",
+  "failTitle": "Impossible de charger les amendes",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "reference": "Référence",
+    "vehicle": "Véhicule",
+    "offenceAt": "Date et heure de l'infraction",
+    "type": "Type",
+    "authority": "Émis par",
+    "amount": "Montant",
+    "place": "Lieu",
+    "dueDate": "Payer ou répondre avant le",
+    "status": "Statut",
+    "reservation": "Réservation",
+    "driverName": "Conducteur",
+    "chargedAmount": "Facturé au client",
+    "attachments": "Scan de l'avis",
+    "notes": "Notes",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/index.tsx",
+  "title": "Abonimet",
+  "description": "Një makinë e një kategorie, e rezervuar përsëri çdo javë ose muaj",
+  "help": {
+    "ariaLabel": "Rreth abonimeve",
+    "title": "Rreth abonimeve",
+    "overview": "Për sa kohë një abonim është aktiv, rezervimi tjetër krijohet në datën e tij dhe i mëpasshmi planifikohet.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Vendoseni në pauzë për të kapërcyer ekzekutimin tjetër.",
+          "Rezervimi përdor çmimin që vendosni dhe paguhet në marrje."
+        ]
+      }
+    ]
+  },
+  "create": "Shto abonim",
+  "searchPlaceholder": "Kërkoni abonime ose shtoni filtra...",
+  "noData": "Ende asnjë abonim",
+  "failTitle": "Abonimet nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "contactName": "Emri i kontaktit",
+    "email": "Email",
+    "phone": "Telefoni",
+    "category": "Kategoria",
+    "pickupLocation": "Vendi i marrjes",
+    "period": "Periudha",
+    "price": "Çmimi për periudhë",
+    "status": "Statusi",
+    "nextRunAt": "Rezervimi tjetër",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

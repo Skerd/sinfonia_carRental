@@ -14,5 +14,36 @@
     "full": "Voll"
   },
   "notesLabel": "Notizen",
-  "notesPlaceholder": "Bestehende Kratzer, Gegenstände im Auto"
+  "notesPlaceholder": "Bestehende Kratzer, Gegenstände im Auto",
+  "driversMissing": "Jede Fahrerin und jeder Fahrer braucht eine Führerausweisnummer, bevor das Fahrzeug übergeben wird. Erfassen Sie sie unter Fahrer/innen.",
+  "photosLabel": "Fotos des Fahrzeugs",
+  "photosSelected": "{count} Fotos ausgewählt",
+  "damagesLabel": "Schäden, die die Kundschaft gesehen hat",
+  "noDamages": "Keine offenen Schäden an diesem Fahrzeug.",
+  "signerLabel": "Unterschrieben von",
+  "signatureLabel": "Unterschrift der Kundschaft",
+  "signatureClear": "Löschen",
+  "signatureHint": "Hier unterschreibt die Kundschaft den Mietvertrag.",
+  "declinedLabel": "Die Kundschaft hat nicht unterschrieben",
+  "area": {
+    "front": "Front",
+    "rear": "Heck",
+    "left": "Linke Seite",
+    "right": "Rechte Seite",
+    "roof": "Dach",
+    "interior": "Innenraum",
+    "windshield": "Windschutzscheibe",
+    "wheels": "Räder",
+    "underbody": "Unterboden",
+    "other": "Anderes"
+  },
+  "severity": {
+    "minor": "leicht",
+    "moderate": "mittel",
+    "major": "schwer"
+  },
+  "notReady": {
+    "needs_cleaning": "Dieses Fahrzeug wurde seit der letzten Rückgabe nicht gereinigt.",
+    "needs_check": "Dieses Fahrzeug wurde als kontrollbedürftig markiert."
+  }
 }

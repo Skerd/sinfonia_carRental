@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/index.tsx",
+  "title": "Promo codes",
+  "description": "Discounts customers enter when booking",
+  "help": {
+    "ariaLabel": "About promo codes",
+    "title": "About promo codes",
+    "overview": "A promo code takes a percentage or a fixed amount off the rental days. Extras, fees and charges are never discounted.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Leave the dates empty to accept a code at any time.",
+          "A code is counted when a booking with it is made, so it can't be used more often than allowed.",
+          "Turn a code off to stop it without deleting it."
+        ]
+      }
+    ]
+  },
+  "create": "Add promo code",
+  "searchPlaceholder": "Search promo codes or add filters...",
+  "noData": "No promo codes yet",
+  "failTitle": "Failed to load promo codes",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "code": "Code",
+    "type": "Discount type",
+    "value": "Discount",
+    "category": "Category",
+    "bookableFrom": "Bookable from",
+    "bookableUntil": "Bookable until",
+    "tripFrom": "Pickups from",
+    "tripUntil": "Pickups until",
+    "minRentalDays": "Minimum rental days",
+    "usageLimit": "Total uses allowed",
+    "usageLimitPerEmail": "Uses per customer",
+    "usageCount": "Times used",
+    "isActive": "Active",
+    "description": "Internal note",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

@@ -14,6 +14,12 @@
           "Fügen Sie Ruhetage für Feiertage hinzu; die Website bietet an diesen Tagen keine Abholungen oder Rückgaben an.",
           "Ein Standort mit Buchungen kann nicht gelöscht werden; deaktivieren Sie ihn stattdessen."
         ]
+      },
+      {
+        "title": "Einweggebühr",
+        "items": [
+          "Eine Einweggebühr gilt, wenn das Fahrzeug an einem anderen Standort zurückkommt. Es gilt die Gebühr des Rückgabeorts. Ist sie leer, gilt die Gebühr der Firma."
+        ]
       }
     ]
   },

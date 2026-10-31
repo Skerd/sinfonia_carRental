@@ -9,6 +9,8 @@ import {AccessGatedGalleryCarousel} from "@coreModule/components/viewEngine/widg
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {VehicleDamage} from "armonia/src/modules/carRental/api/carRental/private/vehicleDamage/vehicleDamage.dto.ts";
+import VehicleDamageMenu from "@carRentalModule/clients/panel/private/damages/center/actions/vehicleDamageMenu.tsx";
+import ChargeDamageDialog from "@carRentalModule/clients/panel/private/damages/center/dialogs/chargeDamageDialog.tsx";
 import VehicleDamageSheetView from "@carRentalModule/clients/panel/private/damages/center/sheetView/vehicleDamageSheetView.tsx";
 import {vehicleDamageEditPath} from "@carRentalModule/clients/panel/private/damages/index.tsx";
 
@@ -51,8 +53,17 @@ function VehicleDamageCard({
             failedDescription={String(resolveLanguageKey("failedDescription"))}
             titlePath="vehicle"
             innerRef={innerRef}
+            sheetProps={({entity, setAction}) => ({
+                fetchId,
+                actionMenuAllowCustomChildren: true,
+                onActionMenuAction: setAction,
+                actionMenuChildren: <VehicleDamageMenu damage={entity} onAction={setAction} />,
+            })}
+            extraDialogs={({action, setAction, entity, setEntity}) => (action === "chargeToCustomer" ? (
+                <ChargeDamageDialog damage={entity} onClose={() => setAction("")} onUpdated={(updated: VehicleDamage) => setEntity({...entity, ...updated})} />
+            ) : null)}
         >
-            {({entity: row, read}) => (
+            {({entity: row, read, setAction}) => (
                 <>
                     {/* Most damage reports have no photos: an empty gallery would only add a blank tile. */}
                     {row.photos?.length ? (
@@ -69,7 +80,9 @@ function VehicleDamageCard({
                             />
                         </div>
                     ) : null}
-                    <EntityCard.Header titlePath="vehicle" title={row.vehicle?.plate} />
+                    <EntityCard.Header titlePath="vehicle" title={row.vehicle?.plate}>
+                        <VehicleDamageMenu damage={row} onAction={setAction} />
+                    </EntityCard.Header>
                     <EntityCard.Body>
                         <EntityCardRow
                             icon={IconCarCrash}

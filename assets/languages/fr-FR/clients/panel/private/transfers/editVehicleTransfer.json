@@ -1,0 +1,54 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/editVehicleTransfer.tsx",
+  "title": "Modifier le transfert",
+  "description": "Modifier le conducteur, les km ou les notes",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "vehicleLabel": "Véhicule",
+    "vehiclePlaceholder": "Choisir un véhicule",
+    "fromLocationLabel": "De",
+    "fromLocationPlaceholder": "Choisir l'agence",
+    "toLocationLabel": "Vers",
+    "toLocationPlaceholder": "Choisir l'agence",
+    "departAtLabel": "Départ",
+    "departAtPlaceholder": "Choisir la date et l'heure",
+    "arriveAtLabel": "Arrivée",
+    "arriveAtPlaceholder": "Choisir la date et l'heure",
+    "driverLabel": "Conduit par",
+    "driverPlaceholder": "Choisir une personne",
+    "odometerKmLabel": "Km à l'arrivée",
+    "odometerKmPlaceholder": "Relevé à l'arrivée",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Notes internes"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement des modifications",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifications enregistrées",
+      "time": 3000
+    },
+    "error": {
+      "title": "Les modifications n'ont pas pu être enregistrées. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifier le transfert",
+    "description": "Modifier le conducteur, les km ou les notes"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Enregistrer"
+  }
+}

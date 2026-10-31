@@ -1,0 +1,54 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/createVehicleTransfer.tsx",
+  "title": "Plan transfer",
+  "description": "Move a car to another location",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "vehicleLabel": "Vehicle",
+    "vehiclePlaceholder": "Select vehicle",
+    "fromLocationLabel": "From",
+    "fromLocationPlaceholder": "Select location",
+    "toLocationLabel": "To",
+    "toLocationPlaceholder": "Select location",
+    "departAtLabel": "Leaves",
+    "departAtPlaceholder": "Pick a date and time",
+    "arriveAtLabel": "Arrives",
+    "arriveAtPlaceholder": "Pick a date and time",
+    "driverLabel": "Driven by",
+    "driverPlaceholder": "Select a person",
+    "odometerKmLabel": "Km at arrival",
+    "odometerKmPlaceholder": "Read at arrival",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Internal notes"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving transfer",
+      "time": 3000
+    },
+    "success": {
+      "title": "Transfer planned",
+      "time": 3000
+    },
+    "error": {
+      "title": "The transfer could not be planned. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Plan transfer",
+    "description": "Move a car to another location"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}

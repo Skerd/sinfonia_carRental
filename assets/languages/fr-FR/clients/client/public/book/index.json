@@ -30,5 +30,16 @@
   "readTerms": "Lire les conditions",
   "booking": "Réservation…",
   "continueToPayment": "Continuer vers le paiement",
-  "confirmBooking": "Confirmer la réservation"
+  "confirmBooking": "Confirmer la réservation",
+  "protectionTitle": "Protection",
+  "protectionBasic": "Protection de base",
+  "protectionBasicHint": "Incluse. Vous payez la franchise complète si le véhicule est endommagé.",
+  "perDay": "par jour",
+  "protectionExcess": "Franchise : {amount}",
+  "birthDate": "Date de naissance",
+  "birthDateRequired": "Saisissez la date de naissance du conducteur.",
+  "promoLabel": "Code promo",
+  "promoApply": "Appliquer",
+  "promoInvalid": "Ce code promo ne peut pas être utilisé pour cette réservation.",
+  "crossBorder": "Emmener la voiture à l'étranger"
 }

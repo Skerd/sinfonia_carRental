@@ -14,6 +14,15 @@
           "Cancel refunds what was paid, minus the cancellation fee if you choose to apply it. Bookings that waited for online payment and timed out show as expired.",
           "Times are shown in the pickup location's time zone on the booking itself."
         ]
+      },
+      {
+        "title": "Drivers, deposit and return",
+        "items": [
+          "Every driver needs a licence number that is still valid on the return day. The car cannot leave without it.",
+          "Take the deposit before handover: cash, a card hold for rentals of a week or less, or a saved card for longer ones. Settle it when the car comes back.",
+          "Hand over emails the rental agreement. Download it again from the booking menu.",
+          "Take back suggests fuel, late and cleaning charges from the readings. Change them before you confirm. Damage found then is recorded on the car."
+        ]
       }
     ]
   },

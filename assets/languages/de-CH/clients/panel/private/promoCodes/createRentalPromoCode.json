@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/createRentalPromoCode.tsx",
+  "title": "Aktionscode hinzufügen",
+  "description": "Einen Rabatt erstellen, den Kundinnen und Kunden bei der Buchung eingeben",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "codeLabel": "Code",
+    "codePlaceholder": "z. B. SOMMER10",
+    "typeLabel": "Rabattart",
+    "typePlaceholder": "Art auswählen",
+    "type": {
+      "percent": "Prozent",
+      "fixed": "Fester Betrag"
+    },
+    "valueLabel": "Rabatt",
+    "valuePlaceholder": "Prozent oder Betrag",
+    "categoryLabel": "Kategorie",
+    "categoryPlaceholder": "Alle Kategorien",
+    "bookableFromLabel": "Buchbar ab",
+    "bookableFromPlaceholder": "Datum wählen",
+    "bookableUntilLabel": "Buchbar bis",
+    "bookableUntilPlaceholder": "Datum wählen",
+    "tripFromLabel": "Abholungen ab",
+    "tripFromPlaceholder": "Datum wählen",
+    "tripUntilLabel": "Abholungen bis",
+    "tripUntilPlaceholder": "Datum wählen",
+    "minRentalDaysLabel": "Mindestmiettage",
+    "minRentalDaysPlaceholder": "z. B. 3",
+    "usageLimitLabel": "Erlaubte Einlösungen insgesamt",
+    "usageLimitPlaceholder": "Leer für unbegrenzt",
+    "usageLimitPerEmailLabel": "Einlösungen pro Kunde",
+    "usageLimitPerEmailPlaceholder": "Leer für unbegrenzt",
+    "isActiveLabel": "Aktiv",
+    "descriptionLabel": "Interne Notiz",
+    "descriptionPlaceholder": "Für welche Aktion der Code ist"
+  },
+  "axios": {
+    "start": {
+      "title": "Aktionscode wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Aktionscode hinzugefügt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Aktionscode konnte nicht hinzugefügt werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Aktionscode hinzufügen",
+    "description": "Einen Rabatt erstellen, den Kundinnen und Kunden bei der Buchung eingeben"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Hinzufügen"
+  }
+}

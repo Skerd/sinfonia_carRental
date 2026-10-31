@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/center/cardView/rentalBusinessAccountCard.tsx",
+  "failedTitle": "Impossibile caricare il conto",
+  "failedDescription": "Tocca per riprovare.",
+  "name": "Nome",
+  "vatNumber": "Partita IVA",
+  "discountPercent": "Sconto %",
+  "isActive": "Attivo",
+  "statement": "Estratto mensile"
+}

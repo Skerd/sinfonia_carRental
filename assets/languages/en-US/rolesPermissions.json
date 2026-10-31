@@ -10,7 +10,14 @@
     "Vehicleinsurances": "Vehicle insurance",
     "Vehicledocuments": "Vehicle documents",
     "Vehiclemaintenances": "Vehicle maintenance",
-    "Vehicledamages": "Vehicle damages"
+    "Vehicledamages": "Vehicle damages",
+    "Rentalpromocodes": "Promo codes",
+    "Vehiclefines": "Traffic fines",
+    "Vehicletransfers": "Transfers",
+    "Rentalbusinessaccounts": "Business accounts",
+    "Rentaldenyentrys": "Deny list",
+    "Rentalreviews": "Reviews",
+    "Rentalsubscriptions": "Subscriptions"
   },
   "permissions": {
     "Carrentalconfigs": {
@@ -36,7 +43,17 @@
       "termsVersion": "Terms version",
       "turnaroundBufferMinutes": "Turnaround buffer minutes",
       "updatedAt": "Updated at",
-      "vatRate": "Vat rate"
+      "vatRate": "Vat rate",
+      "youngDriverUnderAge": "Young driver: under this age",
+      "youngDriverDailyFee": "Young driver fee per day",
+      "additionalDriverDailyFee": "Additional driver fee per day",
+      "oneWayFee": "One-way fee (returned at another location)",
+      "fuelPricePerQuarter": "Fuel charge per quarter tank missing",
+      "refuelServiceFee": "Refuelling service fee",
+      "lateFeePerHour": "Late return fee per hour",
+      "cleaningFee": "Cleaning fee",
+      "smokingFee": "Smoking fee",
+      "fineAdminFee": "Admin fee per traffic fine"
     },
     "Rentallocations": {
       "address": "Address",
@@ -46,6 +63,7 @@
       "email": "Email",
       "isActive": "Is active",
       "name": "Name",
+      "oneWayFee": "One-way fee",
       "openingHours": "Opening hours",
       "phone": "Phone",
       "pickupAllowed": "Pickup allowed",
@@ -89,6 +107,7 @@
       "color": "Color",
       "createdAt": "Created at",
       "createdBy": "Created by",
+      "currentLocation": "Now at",
       "homeLocation": "Home location",
       "images": "Photos",
       "make": "Make",
@@ -99,6 +118,7 @@
       "odometerKm": "Odometer km",
       "plate": "Plate",
       "purchasePrice": "Purchase price",
+      "readiness": "Readiness",
       "serviceReminderSentAt": "Service reminder sent at",
       "status": "Status",
       "updatedAt": "Updated at",
@@ -121,8 +141,11 @@
     "Rentalextras": {
       "createdAt": "Created at",
       "createdBy": "Created by",
+      "depositAmount": "Deposit with this package",
       "description": "Description",
+      "excessAmount": "Excess",
       "isActive": "Is active",
+      "kind": "Type",
       "maxQuantity": "Max quantity",
       "name": "Name",
       "price": "Price",
@@ -140,6 +163,7 @@
       "category": "Category",
       "confirmationSentAt": "Confirmation sent at",
       "contact": "Contact",
+      "drivers": "Drivers",
       "createdAt": "Created at",
       "createdBy": "Created by",
       "customer": "Customer",
@@ -167,7 +191,11 @@
       "stripePaymentIntentId": "Stripe payment intent id",
       "timeline": "Timeline",
       "updatedAt": "Updated at",
-      "vehicle": "Vehicle"
+      "vehicle": "Vehicle",
+      "needsTransfer": "Needs a transfer",
+      "deposit": "Deposit",
+      "agreement": "Agreement",
+      "promoCode": "Promo code"
     },
     "Vehicleinsurances": {
       "attachments": "Attachments",
@@ -222,6 +250,8 @@
     },
     "Vehicledamages": {
       "area": "Area",
+      "chargedAmount": "Charged to customer",
+      "chargedAt": "Charged on",
       "createdAt": "Created at",
       "createdBy": "Created by",
       "description": "Description",
@@ -236,6 +266,90 @@
       "updatedAt": "Updated at",
       "vehicle": "Vehicle",
       "vehicledamages": "Vehicle damages"
+    },
+    "Rentalpromocodes": {
+      "bookableFrom": "Bookable from",
+      "bookableUntil": "Bookable until",
+      "category": "Category",
+      "code": "Code",
+      "description": "Internal note",
+      "isActive": "Active",
+      "minRentalDays": "Minimum rental days",
+      "rentalpromocodes": "Promo codes",
+      "tripFrom": "Pickups from",
+      "tripUntil": "Pickups until",
+      "type": "Discount type",
+      "usageCount": "Times used",
+      "usageLimit": "Total uses allowed",
+      "usageLimitPerEmail": "Uses per customer",
+      "value": "Discount"
+    },
+    "Vehiclefines": {
+      "amount": "Amount",
+      "attachments": "Scan of the notice",
+      "authority": "Issued by",
+      "chargedAmount": "Charged to customer",
+      "driverName": "Driver",
+      "dueDate": "Pay or reply by",
+      "notes": "Notes",
+      "offenceAt": "Date and time of the offence",
+      "place": "Place",
+      "reference": "Reference",
+      "reservation": "Booking",
+      "status": "Status",
+      "type": "Type",
+      "vehicle": "Vehicle",
+      "vehiclefines": "Traffic fines"
+    },
+    "Vehicletransfers": {
+      "arriveAt": "Arrives",
+      "departAt": "Leaves",
+      "driver": "Driven by",
+      "fromLocation": "From",
+      "notes": "Notes",
+      "odometerKm": "Km at arrival",
+      "status": "Status",
+      "toLocation": "To",
+      "vehicle": "Vehicle",
+      "vehicletransfers": "Transfers"
+    },
+    "Rentalbusinessaccounts": {
+      "address": "Address",
+      "billingEmail": "Billing email",
+      "discountPercent": "Discount %",
+      "isActive": "Active",
+      "name": "Name",
+      "notes": "Notes",
+      "paymentTermsDays": "Payment terms (days)",
+      "rentalbusinessaccounts": "Business accounts",
+      "vatNumber": "VAT number"
+    },
+    "Rentaldenyentrys": {
+      "email": "Email",
+      "isActive": "Active",
+      "licenseNumber": "Licence number",
+      "reason": "Reason",
+      "rentaldenyentrys": "Deny list"
+    },
+    "Rentalreviews": {
+      "authorName": "Name",
+      "comment": "Comment",
+      "isPublished": "Published",
+      "rating": "Rating",
+      "rentalreviews": "Reviews",
+      "reservation": "Booking"
+    },
+    "Rentalsubscriptions": {
+      "category": "Category",
+      "contactName": "Contact name",
+      "email": "Email",
+      "nextRunAt": "Next booking",
+      "period": "Period",
+      "phone": "Phone",
+      "pickupLocation": "Pickup location",
+      "price": "Price per period",
+      "rentalsubscriptions": "Subscriptions",
+      "status": "Status"
     }
   }
 }

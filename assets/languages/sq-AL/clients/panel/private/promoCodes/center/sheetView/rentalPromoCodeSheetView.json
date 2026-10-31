@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/center/sheetView/rentalPromoCodeSheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "overview": "Përmbledhje",
+  "rentalPromoCodeSubtitle": "Kod promocional",
+  "code": "Kodi",
+  "type": "Lloji i zbritjes",
+  "value": "Zbritja",
+  "category": "Kategoria",
+  "bookableFrom": "Mund të rezervohet nga",
+  "bookableUntil": "Mund të rezervohet deri më",
+  "tripFrom": "Marrje nga",
+  "tripUntil": "Marrje deri më",
+  "minRentalDays": "Ditë minimale qiraje",
+  "usageLimit": "Përdorime gjithsej",
+  "usageLimitPerEmail": "Përdorime për klient",
+  "usageCount": "Herë të përdorur",
+  "isActive": "Aktiv",
+  "description": "Shënim i brendshëm",
+  "typeValues": {
+    "percent": "Përqindje",
+    "fixed": "Shumë fikse"
+  },
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "company": "Kompania",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

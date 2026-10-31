@@ -14,5 +14,36 @@
     "full": "Plot"
   },
   "notesLabel": "Shënime",
-  "notesPlaceholder": "Gërvishtje ekzistuese, sende në makinë"
+  "notesPlaceholder": "Gërvishtje ekzistuese, sende në makinë",
+  "driversMissing": "Çdo shofer duhet të ketë numrin e patentës para se makina të largohet. Shtojeni te Shoferët.",
+  "photosLabel": "Fotot e makinës",
+  "photosSelected": "{count} foto të zgjedhura",
+  "damagesLabel": "Dëmtimet që ka parë klienti",
+  "noDamages": "Asnjë dëmtim i hapur në këtë makinë.",
+  "signerLabel": "Nënshkruar nga",
+  "signatureLabel": "Nënshkrimi i klientit",
+  "signatureClear": "Fshi",
+  "signatureHint": "Klienti nënshkruan këtu kontratën e qirasë.",
+  "declinedLabel": "Klienti nuk nënshkroi",
+  "area": {
+    "front": "Përpara",
+    "rear": "Mbrapa",
+    "left": "Ana e majtë",
+    "right": "Ana e djathtë",
+    "roof": "Çatia",
+    "interior": "Brenda",
+    "windshield": "Xhami i përparmë",
+    "wheels": "Rrotat",
+    "underbody": "Poshtë",
+    "other": "Tjetër"
+  },
+  "severity": {
+    "minor": "i lehtë",
+    "moderate": "mesatar",
+    "major": "i rëndë"
+  },
+  "notReady": {
+    "needs_cleaning": "Kjo makinë nuk është pastruar që nga kthimi i fundit.",
+    "needs_check": "Kjo makinë u shënua që duhet kontrolluar."
+  }
 }

@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/index.tsx",
+  "title": "Deny list",
+  "description": "Customers who cannot book or collect a car",
+  "help": {
+    "ariaLabel": "About the deny list",
+    "title": "About the deny list",
+    "overview": "A blocked email or licence number is refused when a booking is made and again at handover.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Give an email, a licence number, or both.",
+          "Turn Active off to allow that customer again without deleting the row."
+        ]
+      }
+    ]
+  },
+  "create": "Add entry",
+  "searchPlaceholder": "Search the deny list or add filters...",
+  "noData": "Nobody is blocked",
+  "failTitle": "Failed to load the deny list",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "email": "Email",
+    "licenseNumber": "Licence number",
+    "reason": "Reason",
+    "isActive": "Active",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

@@ -40,5 +40,7 @@
   "updatedAt": "Updated at",
   "createdBy": "Created by",
   "deletedAt": "Deleted at",
-  "deletedBy": "Deleted by"
+  "deletedBy": "Deleted by",
+  "chargedAmount": "Charged to customer",
+  "chargedAt": "Charged on"
 }

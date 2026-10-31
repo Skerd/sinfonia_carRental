@@ -1,0 +1,54 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/editVehicleTransfer.tsx",
+  "title": "Ndrysho transferimin",
+  "description": "Ndryshoni shoferin, km ose shënimet",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "vehicleLabel": "Automjeti",
+    "vehiclePlaceholder": "Zgjidhni automjetin",
+    "fromLocationLabel": "Nga",
+    "fromLocationPlaceholder": "Zgjidhni vendndodhjen",
+    "toLocationLabel": "Për",
+    "toLocationPlaceholder": "Zgjidhni vendndodhjen",
+    "departAtLabel": "Nisja",
+    "departAtPlaceholder": "Zgjidhni datën dhe orën",
+    "arriveAtLabel": "Mbërritja",
+    "arriveAtPlaceholder": "Zgjidhni datën dhe orën",
+    "driverLabel": "Drejtuar nga",
+    "driverPlaceholder": "Zgjidhni një person",
+    "odometerKmLabel": "Km në mbërritje",
+    "odometerKmPlaceholder": "Lexuar në mbërritje",
+    "notesLabel": "Shënime",
+    "notesPlaceholder": "Shënime të brendshme"
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhen ndryshimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Ndryshimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Ndryshimet nuk u ruajtën. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ndrysho transferimin",
+    "description": "Ndryshoni shoferin, km ose shënimet"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

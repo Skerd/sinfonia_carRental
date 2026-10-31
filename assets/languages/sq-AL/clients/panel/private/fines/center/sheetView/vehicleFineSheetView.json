@@ -1,0 +1,41 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/sheetView/vehicleFineSheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "overview": "Përmbledhje",
+  "vehicleFineSubtitle": "Gjobë",
+  "reference": "Referenca",
+  "vehicle": "Automjeti",
+  "offenceAt": "Data dhe ora e shkeljes",
+  "type": "Lloji",
+  "authority": "Lëshuar nga",
+  "amount": "Shuma",
+  "place": "Vendi",
+  "dueDate": "Paguani ose përgjigjuni deri më",
+  "status": "Statusi",
+  "reservation": "Rezervimi",
+  "driverName": "Shoferi",
+  "chargedAmount": "I faturuar klientit",
+  "attachments": "Skanimi i njoftimit",
+  "notes": "Shënime",
+  "typeValues": {
+    "speeding": "Shpejtësi",
+    "parking": "Parkim",
+    "red_light": "Semafor i kuq",
+    "toll": "Pagesë rruge",
+    "other": "Tjetër"
+  },
+  "statusValues": {
+    "received": "E marrë",
+    "driver_identified": "Shoferi u identifikua",
+    "charged": "I faturuar klientit",
+    "paid_by_company": "E paguar nga ne",
+    "transferred": "Shoferi u njoftua",
+    "disputed": "E kundërshtuar"
+  },
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "company": "Kompania",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

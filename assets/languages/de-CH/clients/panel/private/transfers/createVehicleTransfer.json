@@ -1,0 +1,54 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/createVehicleTransfer.tsx",
+  "title": "Überführung planen",
+  "description": "Ein Fahrzeug an einen anderen Standort bringen",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "vehicleLabel": "Fahrzeug",
+    "vehiclePlaceholder": "Fahrzeug wählen",
+    "fromLocationLabel": "Von",
+    "fromLocationPlaceholder": "Standort wählen",
+    "toLocationLabel": "Nach",
+    "toLocationPlaceholder": "Standort wählen",
+    "departAtLabel": "Abfahrt",
+    "departAtPlaceholder": "Datum und Zeit wählen",
+    "arriveAtLabel": "Ankunft",
+    "arriveAtPlaceholder": "Datum und Zeit wählen",
+    "driverLabel": "Gefahren von",
+    "driverPlaceholder": "Person wählen",
+    "odometerKmLabel": "Kilometer bei Ankunft",
+    "odometerKmPlaceholder": "Bei Ankunft ablesen",
+    "notesLabel": "Notizen",
+    "notesPlaceholder": "Interne Notizen"
+  },
+  "axios": {
+    "start": {
+      "title": "Überführung wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Überführung geplant",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Überführung konnte nicht geplant werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Überführung planen",
+    "description": "Ein Fahrzeug an einen anderen Standort bringen"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Hinzufügen"
+  }
+}

@@ -16,5 +16,12 @@
   "updatedAt": "Mis à jour le",
   "createdBy": "Créé par",
   "deletedAt": "Supprimé le",
-  "deletedBy": "Supprimé par"
+  "deletedBy": "Supprimé par",
+  "kind": "Type",
+  "excessAmount": "Franchise",
+  "depositAmount": "Caution avec cette formule",
+  "kindValues": {
+    "extra": "Supplément",
+    "protection": "Formule de protection"
+  }
 }

@@ -1,0 +1,15 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/center/cardView/rentalPromoCodeCard.tsx",
+  "failedTitle": "Impossibile caricare il codice promozionale",
+  "failedDescription": "Tocca per riprovare.",
+  "type": "Tipo di sconto",
+  "value": "Sconto",
+  "category": "Categoria",
+  "bookableUntil": "Prenotabile fino al",
+  "usageCount": "Volte usato",
+  "isActive": "Attivo",
+  "typeValues": {
+    "percent": "Percentuale",
+    "fixed": "Importo fisso"
+  }
+}

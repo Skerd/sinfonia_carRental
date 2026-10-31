@@ -14,6 +14,15 @@
           "L'annulation rembourse ce qui a été payé, moins les frais d'annulation si vous choisissez de les appliquer. Les réservations qui attendaient un paiement en ligne et ont expiré apparaissent comme expirées.",
           "Les heures sont affichées dans le fuseau horaire du lieu de prise en charge sur la réservation elle-même."
         ]
+      },
+      {
+        "title": "Conducteurs, caution et retour",
+        "items": [
+          "Chaque conducteur doit avoir un numéro de permis encore valable le jour du retour. Sans cela, le véhicule ne part pas.",
+          "Prenez la caution avant la remise : en espèces, par blocage de carte pour une location d'une semaine ou moins, ou par carte enregistrée au-delà. Réglez-la au retour.",
+          "La remise envoie le contrat par e-mail. Téléchargez-le à nouveau dans le menu de la réservation.",
+          "La reprise propose les frais de carburant, de retard et de nettoyage d'après les relevés. Modifiez-les avant de confirmer. Un dommage nouveau est enregistré sur le véhicule."
+        ]
       }
     ]
   },

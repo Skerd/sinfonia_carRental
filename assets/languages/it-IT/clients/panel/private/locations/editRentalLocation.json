@@ -49,7 +49,9 @@
     "streetLabel": "Via",
     "streetPlaceholder": "Inserisci la via",
     "timezoneLabel": "Fuso orario",
-    "timezonePlaceholder": "es. Europe/Zurich"
+    "timezonePlaceholder": "es. Europe/Zurich",
+    "oneWayFeeLabel": "Supplemento sola andata per riconsegne qui",
+    "oneWayFeePlaceholder": "Vuoto: supplemento dell'azienda"
   },
   "axios": {
     "start": {

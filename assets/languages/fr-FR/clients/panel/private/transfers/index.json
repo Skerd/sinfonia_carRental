@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/index.tsx",
+  "title": "Transferts",
+  "description": "Véhicules déplacés entre vos agences",
+  "help": {
+    "ariaLabel": "À propos des transferts",
+    "title": "À propos des transferts",
+    "overview": "Un transfert déplace un véhicule vers une autre agence. Le véhicule est bloqué pour les réservations pendant le trajet, puis compté dans sa nouvelle agence à l'arrivée.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Les heures de départ et d'arrivée ne peuvent plus être modifiées ; annulez le transfert et planifiez-en un nouveau.",
+          "Le planning de flotte montre les transferts prévus et les réservations qui ont besoin d'un véhicule d'une autre agence."
+        ]
+      }
+    ]
+  },
+  "create": "Planifier un transfert",
+  "searchPlaceholder": "Rechercher des transferts ou ajouter des filtres...",
+  "noData": "Aucun transfert pour l'instant",
+  "failTitle": "Impossible de charger les transferts",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "vehicle": "Véhicule",
+    "fromLocation": "De",
+    "toLocation": "Vers",
+    "departAt": "Départ",
+    "arriveAt": "Arrivée",
+    "driver": "Conduit par",
+    "status": "Statut",
+    "odometerKm": "Km à l'arrivée",
+    "notes": "Notes",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

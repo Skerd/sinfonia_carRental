@@ -13,6 +13,13 @@
           "A vehicle with upcoming bookings can't be set to maintenance or retired, or moved to another category, until those bookings are moved to another car.",
           "Retire a vehicle instead of deleting it: its history stays on past bookings."
         ]
+      },
+      {
+        "title": "Ready to go",
+        "items": [
+          "Readiness says whether the car can go out: ready, needs cleaning, or needs a check. Every return sets it to needs cleaning until someone marks it ready.",
+          "Now at is where the car is. It updates when a rental comes back and when a transfer arrives."
+        ]
       }
     ]
   },

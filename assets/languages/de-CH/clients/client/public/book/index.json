@@ -30,5 +30,16 @@
   "readTerms": "Bedingungen lesen",
   "booking": "Wird gebucht…",
   "continueToPayment": "Weiter zur Zahlung",
-  "confirmBooking": "Buchung bestätigen"
+  "confirmBooking": "Buchung bestätigen",
+  "protectionTitle": "Schutz",
+  "protectionBasic": "Basisschutz",
+  "protectionBasicHint": "Inbegriffen. Bei einem Schaden zahlen Sie den vollen Selbstbehalt.",
+  "perDay": "pro Tag",
+  "protectionExcess": "Selbstbehalt: {amount}",
+  "birthDate": "Geburtsdatum",
+  "birthDateRequired": "Geben Sie das Geburtsdatum der Fahrerin oder des Fahrers ein.",
+  "promoLabel": "Aktionscode",
+  "promoApply": "Anwenden",
+  "promoInvalid": "Dieser Aktionscode kann für diese Buchung nicht verwendet werden.",
+  "crossBorder": "Das Fahrzeug ins Ausland mitnehmen"
 }

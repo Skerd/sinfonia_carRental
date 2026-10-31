@@ -1,0 +1,42 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/index.tsx",
+  "title": "Conti aziendali",
+  "description": "Aziende che prenotano a conto, con sconto e dati di fatturazione",
+  "help": {
+    "ariaLabel": "Informazioni sui conti aziendali",
+    "title": "Informazioni sui conti aziendali",
+    "overview": "Un conto aziendale viene fatturato al posto del conducente. Lo sconto è una riga della prenotazione e le fatture usano nome, partita IVA e indirizzo.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Indica il conto su una prenotazione allo sportello e scegli A conto.",
+          "Apri un conto e scegli Estratto mensile."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi conto",
+  "searchPlaceholder": "Cerca conti o aggiungi filtri...",
+  "noData": "Ancora nessun conto aziendale",
+  "failTitle": "Impossibile caricare i conti",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "name": "Nome",
+    "vatNumber": "Partita IVA",
+    "billingEmail": "Email di fatturazione",
+    "address": "Indirizzo",
+    "discountPercent": "Sconto %",
+    "paymentTermsDays": "Termini di pagamento (giorni)",
+    "isActive": "Attivo",
+    "notes": "Note",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

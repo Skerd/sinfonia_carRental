@@ -1,0 +1,17 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/center/sheetView/rentalReviewSheetView.tsx",
+  "lifecycle": "Ciclo di vita",
+  "overview": "Panoramica",
+  "rentalReviewSubtitle": "Recensione",
+  "reservation": "Prenotazione",
+  "rating": "Valutazione",
+  "comment": "Commento",
+  "authorName": "Nome",
+  "isPublished": "Pubblicata",
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "company": "Azienda",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da"
+}

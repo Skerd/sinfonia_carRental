@@ -1,0 +1,19 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/center/cardView/rentalSubscriptionCard.tsx",
+  "failedTitle": "Failed to load subscription",
+  "failedDescription": "Tap to retry.",
+  "contactName": "Contact name",
+  "category": "Category",
+  "period": "Period",
+  "price": "Price per period",
+  "status": "Status",
+  "periodValues": {
+    "week": "Week",
+    "month": "Month"
+  },
+  "statusValues": {
+    "active": "Active",
+    "paused": "Paused",
+    "ended": "Ended"
+  }
+}

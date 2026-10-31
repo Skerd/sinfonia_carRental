@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/dialogs/vehicleFineDialogs.tsx",
+  "cancel": "Back",
+  "matchDriver": {
+    "title": "Match the driver again",
+    "description": "Looks up which booking had the car at the time of the offence, after the car or time was corrected.",
+    "confirm": "Match"
+  },
+  "chargeCustomer": {
+    "title": "Charge the customer",
+    "description": "Adds the fine and the handling fee to booking {booking} of {driver} and emails them. A saved card is charged now.",
+    "confirm": "Charge"
+  }
+}

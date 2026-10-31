@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/center/dialogs/rentalStatementDialog.tsx",
+  "title": "Monatsabrechnung",
+  "description": "Rechnungen, die im gewählten Monat ausgestellt wurden.",
+  "month": "Monat",
+  "download": "Herunterladen",
+  "cancel": "Abbrechen"
+}

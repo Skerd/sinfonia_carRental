@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/dialogs/vehicleFineDialogs.tsx",
+  "cancel": "Retour",
+  "matchDriver": {
+    "title": "Rapprocher à nouveau",
+    "description": "Recherche la réservation qui avait le véhicule au moment de l'infraction, après correction du véhicule ou de l'heure.",
+    "confirm": "Rapprocher"
+  },
+  "chargeCustomer": {
+    "title": "Facturer le client",
+    "description": "Ajoute l'amende et les frais de dossier à la réservation {booking} de {driver} et l'informe par e-mail. Une carte enregistrée est débitée tout de suite.",
+    "confirm": "Facturer"
+  }
+}

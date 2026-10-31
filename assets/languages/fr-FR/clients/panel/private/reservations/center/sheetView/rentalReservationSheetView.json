@@ -38,7 +38,8 @@
   "vehicle": "Véhicule",
   "paymentChoiceValues": {
     "pay_at_pickup": "À la prise en charge",
-    "online": "En ligne"
+    "online": "En ligne",
+    "on_account": "En compte"
   },
   "paymentStatusValues": {
     "unpaid": "Non payé",
@@ -70,17 +71,64 @@
     "payment_failed": "Paiement échoué",
     "confirmed": "Confirmé",
     "vehicle_reassigned": "Véhicule changé",
+    "drivers_updated": "Conducteurs mis à jour",
     "handover": "Remis",
     "extended": "Prolongé",
     "returned": "Rendu",
     "cancelled": "Annulé",
     "expired": "Blocage expiré",
     "no_show": "Absent",
-    "refunded": "Remboursé"
+    "refunded": "Remboursé",
+    "charge_added": "Frais ajoutés",
+    "deposit_held": "Caution bloquée",
+    "deposit_captured": "Caution retenue",
+    "deposit_released": "Caution libérée"
   },
   "createdAt": "Créé le",
   "updatedAt": "Mis à jour le",
   "createdBy": "Créé par",
   "deletedAt": "Supprimé le",
-  "deletedBy": "Supprimé par"
+  "deletedBy": "Supprimé par",
+  "drivers": "Conducteurs",
+  "role": "Rôle",
+  "birthDate": "Date de naissance",
+  "licenseNumber": "Numéro de permis",
+  "licenseCountry": "Délivré en",
+  "licenseExpiresAt": "Permis valable jusqu'au",
+  "driverRole": {
+    "primary": "Conducteur principal",
+    "additional": "Conducteur supplémentaire"
+  },
+  "inspection": "Départ et retour",
+  "handover_odometerKm": "Km au départ",
+  "handover_fuelLevel": "Carburant au départ",
+  "returnInfo_odometerKm": "Km au retour",
+  "returnInfo_fuelLevel": "Carburant au retour",
+  "agreement_signerName": "Contrat signé par",
+  "agreement_signedAt": "Signé le",
+  "fuelValues": {
+    "empty": "Vide",
+    "quarter": "1/4",
+    "half": "1/2",
+    "three_quarters": "3/4",
+    "full": "Plein"
+  },
+  "deposit": "Caution",
+  "deposit_method": "Prise par",
+  "deposit_status": "État de la caution",
+  "deposit_amount": "Caution bloquée",
+  "deposit_capturedAmount": "Retenu",
+  "depositMethodValues": {
+    "card_hold": "Blocage carte",
+    "saved_card": "Carte enregistrée",
+    "cash": "Espèces"
+  },
+  "depositStatusValues": {
+    "pending": "En attente de la carte",
+    "held": "Bloquée",
+    "captured": "Retenue",
+    "released": "Libérée",
+    "failed": "Échouée"
+  },
+  "needsTransfer": "Transfert nécessaire"
 }

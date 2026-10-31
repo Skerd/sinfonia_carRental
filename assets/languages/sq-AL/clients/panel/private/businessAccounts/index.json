@@ -1,0 +1,42 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/index.tsx",
+  "title": "Llogaritë e biznesit",
+  "description": "Kompani që rezervojnë në llogari, me zbritjen dhe të dhënat e faturimit",
+  "help": {
+    "ariaLabel": "Rreth llogarive të biznesit",
+    "title": "Rreth llogarive të biznesit",
+    "overview": "Një llogari biznesi faturohet në vend të shoferit. Zbritja e saj është një rresht i rezervimit dhe faturat përdorin emrin, numrin e TVSH-së dhe adresën.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Vendoseni llogarinë në një rezervim në sportel dhe zgjidhni Në llogari.",
+          "Hapni një llogari dhe zgjidhni Pasqyra mujore."
+        ]
+      }
+    ]
+  },
+  "create": "Shto llogari",
+  "searchPlaceholder": "Kërkoni llogari ose shtoni filtra...",
+  "noData": "Ende asnjë llogari biznesi",
+  "failTitle": "Llogaritë nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "name": "Emri",
+    "vatNumber": "Numri i TVSH-së",
+    "billingEmail": "Email i faturimit",
+    "address": "Adresa",
+    "discountPercent": "Zbritje %",
+    "paymentTermsDays": "Afati i pagesës (ditë)",
+    "isActive": "Aktiv",
+    "notes": "Shënime",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

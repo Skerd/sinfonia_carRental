@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/editRentalPromoCode.tsx",
+  "title": "Ndrysho kodin promocional",
+  "description": "Ndryshoni zbritjen, datat ose kufijtë",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "codeLabel": "Kodi",
+    "codePlaceholder": "p.sh. VERA10",
+    "typeLabel": "Lloji i zbritjes",
+    "typePlaceholder": "Zgjidhni një lloj",
+    "type": {
+      "percent": "Përqindje",
+      "fixed": "Shumë fikse"
+    },
+    "valueLabel": "Zbritja",
+    "valuePlaceholder": "Përqindje ose shumë",
+    "categoryLabel": "Kategoria",
+    "categoryPlaceholder": "Të gjitha kategoritë",
+    "bookableFromLabel": "Mund të rezervohet nga",
+    "bookableFromPlaceholder": "Zgjidhni një datë",
+    "bookableUntilLabel": "Mund të rezervohet deri më",
+    "bookableUntilPlaceholder": "Zgjidhni një datë",
+    "tripFromLabel": "Marrje nga",
+    "tripFromPlaceholder": "Zgjidhni një datë",
+    "tripUntilLabel": "Marrje deri më",
+    "tripUntilPlaceholder": "Zgjidhni një datë",
+    "minRentalDaysLabel": "Ditë minimale qiraje",
+    "minRentalDaysPlaceholder": "p.sh. 3",
+    "usageLimitLabel": "Përdorime gjithsej",
+    "usageLimitPlaceholder": "Bosh për pa kufi",
+    "usageLimitPerEmailLabel": "Përdorime për klient",
+    "usageLimitPerEmailPlaceholder": "Bosh për pa kufi",
+    "isActiveLabel": "Aktiv",
+    "descriptionLabel": "Shënim i brendshëm",
+    "descriptionPlaceholder": "Për cilën fushatë është ky kod"
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhen ndryshimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Ndryshimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Ndryshimet nuk u ruajtën. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ndrysho kodin promocional",
+    "description": "Ndryshoni zbritjen, datat ose kufijtë"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

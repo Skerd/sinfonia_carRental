@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/editRentalDenyEntry.tsx",
+  "title": "Eintrag bearbeiten",
+  "description": "E-Mail, Führerschein oder Grund ändern",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "kunde@email.ch",
+    "licenseNumberLabel": "Führerscheinnummer",
+    "licenseNumberPlaceholder": "Wie auf dem Führerschein",
+    "reasonLabel": "Grund",
+    "reasonPlaceholder": "Warum diese Kundschaft gesperrt ist",
+    "isActiveLabel": "Aktiv"
+  },
+  "axios": {
+    "start": {
+      "title": "Änderungen werden gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Änderungen gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Änderungen konnten nicht gespeichert werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Eintrag bearbeiten",
+    "description": "E-Mail, Führerschein oder Grund ändern"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Speichern"
+  }
+}

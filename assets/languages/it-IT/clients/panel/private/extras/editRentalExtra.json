@@ -12,8 +12,18 @@
     "6": "Sabato"
   },
   "form": {
+    "depositAmountLabel": "Deposito con questo pacchetto",
+    "depositAmountPlaceholder": "Lascia vuoto per mantenere il deposito della categoria",
     "descriptionLabel": "Descrizione",
     "descriptionPlaceholder": "Cosa dovrebbero sapere i clienti su questa categoria",
+    "excessAmountLabel": "Franchigia (solo protezione)",
+    "excessAmountPlaceholder": "Importo massimo che il cliente paga per i danni",
+    "kind": {
+      "extra": "Extra",
+      "protection": "Pacchetto di protezione"
+    },
+    "kindLabel": "Tipo",
+    "kindPlaceholder": "Seleziona un tipo",
     "maxQuantityLabel": "Massimo per prenotazione",
     "maxQuantityPlaceholder": "Inserisci la quantità massima",
     "nameLabel": "Nome",

@@ -1,0 +1,52 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/counter/index.tsx",
+  "title": "Counter",
+  "description": "Today's pickups, returns and late cars",
+  "date": "Date",
+  "today": "Today",
+  "location": "Location",
+  "allLocations": "All locations",
+  "search": "Search",
+  "searchPlaceholder": "Plate or booking number",
+  "pickups": "Pickups",
+  "returns": "Returns",
+  "overdue": "Overdue",
+  "empty": "Nothing here.",
+  "noMatches": "No bookings match this search.",
+  "noCar": "No car",
+  "needsTransfer": "Needs a transfer",
+  "driversMissing": "Drivers missing",
+  "depositMissing": "Deposit not taken",
+  "drivers": "Drivers",
+  "takeDeposit": "Deposit",
+  "handover": "Hand over",
+  "returnVehicle": "Take back",
+  "settleDeposit": "Settle deposit",
+  "depositStatus": {
+    "pending": "Waiting for card",
+    "held": "Deposit held",
+    "captured": "Deposit kept",
+    "released": "Deposit released",
+    "failed": "Deposit failed"
+  },
+  "readiness": {
+    "ready": "Ready",
+    "needs_cleaning": "Needs cleaning",
+    "needs_check": "Needs a check"
+  },
+  "help": {
+    "ariaLabel": "About the counter",
+    "title": "About the counter",
+    "overview": "The desk for one day. Pickups are confirmed bookings leaving that day. Returns are cars due back that day. Overdue cars should already have been back.",
+    "sections": [
+      {
+        "title": "At the desk",
+        "items": [
+          "Choose the date and, if you want, one location. Search by plate or booking number.",
+          "Drivers, Deposit, Hand over and Take back are the same steps as on the booking.",
+          "Badges show a missing licence, a deposit still open, a car that must be moved to the pickup, and whether the car is ready."
+        ]
+      }
+    ]
+  }
+}

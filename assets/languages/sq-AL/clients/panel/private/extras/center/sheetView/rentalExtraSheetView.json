@@ -16,5 +16,12 @@
   "updatedAt": "Përditësuar më",
   "createdBy": "Krijuar nga",
   "deletedAt": "Fshirë më",
-  "deletedBy": "Fshirë nga"
+  "deletedBy": "Fshirë nga",
+  "kind": "Lloji",
+  "excessAmount": "Franshiza",
+  "depositAmount": "Depozita me këtë paketë",
+  "kindValues": {
+    "extra": "Shtesë",
+    "protection": "Paketë mbrojtjeje"
+  }
 }

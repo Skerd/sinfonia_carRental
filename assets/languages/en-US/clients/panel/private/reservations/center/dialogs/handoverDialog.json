@@ -14,5 +14,36 @@
     "full": "Full"
   },
   "notesLabel": "Notes",
-  "notesPlaceholder": "Existing scratches, items in the car"
+  "notesPlaceholder": "Existing scratches, items in the car",
+  "driversMissing": "Every driver needs a licence number before the car leaves. Add it under Drivers.",
+  "photosLabel": "Photos of the car",
+  "photosSelected": "{count} photos selected",
+  "damagesLabel": "Damage the customer has seen",
+  "noDamages": "No open damage on this car.",
+  "signerLabel": "Signed by",
+  "signatureLabel": "Customer signature",
+  "signatureClear": "Clear",
+  "signatureHint": "The customer signs the rental agreement here.",
+  "declinedLabel": "The customer did not sign",
+  "area": {
+    "front": "Front",
+    "rear": "Rear",
+    "left": "Left side",
+    "right": "Right side",
+    "roof": "Roof",
+    "interior": "Interior",
+    "windshield": "Windshield",
+    "wheels": "Wheels",
+    "underbody": "Underbody",
+    "other": "Other"
+  },
+  "severity": {
+    "minor": "minor",
+    "moderate": "moderate",
+    "major": "major"
+  },
+  "notReady": {
+    "needs_cleaning": "This car has not been cleaned since its last return.",
+    "needs_check": "This car was marked as needing a check."
+  }
 }

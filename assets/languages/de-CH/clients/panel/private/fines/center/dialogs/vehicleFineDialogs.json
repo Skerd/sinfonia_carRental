@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/dialogs/vehicleFineDialogs.tsx",
+  "cancel": "Zurück",
+  "matchDriver": {
+    "title": "Erneut zuordnen",
+    "description": "Sucht die Buchung, die das Fahrzeug zur Tatzeit hatte, nachdem Fahrzeug oder Zeit korrigiert wurden.",
+    "confirm": "Zuordnen"
+  },
+  "chargeCustomer": {
+    "title": "Kundschaft belasten",
+    "description": "Fügt Busse und Bearbeitungsgebühr der Buchung {booking} von {driver} hinzu und informiert per E-Mail. Eine gespeicherte Karte wird sofort belastet.",
+    "confirm": "Belasten"
+  }
+}

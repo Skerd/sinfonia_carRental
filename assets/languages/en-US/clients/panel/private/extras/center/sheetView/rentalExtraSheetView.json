@@ -16,5 +16,12 @@
   "updatedAt": "Updated at",
   "createdBy": "Created by",
   "deletedAt": "Deleted at",
-  "deletedBy": "Deleted by"
+  "deletedBy": "Deleted by",
+  "kind": "Type",
+  "excessAmount": "Excess",
+  "depositAmount": "Deposit with this package",
+  "kindValues": {
+    "extra": "Extra",
+    "protection": "Protection package"
+  }
 }

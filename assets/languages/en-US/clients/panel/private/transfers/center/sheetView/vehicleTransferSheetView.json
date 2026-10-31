@@ -1,0 +1,27 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/center/sheetView/vehicleTransferSheetView.tsx",
+  "lifecycle": "Lifecycle",
+  "overview": "Overview",
+  "vehicleTransferSubtitle": "Transfer",
+  "vehicle": "Vehicle",
+  "fromLocation": "From",
+  "toLocation": "To",
+  "departAt": "Leaves",
+  "arriveAt": "Arrives",
+  "driver": "Driven by",
+  "status": "Status",
+  "odometerKm": "Km at arrival",
+  "notes": "Notes",
+  "statusValues": {
+    "planned": "Planned",
+    "in_transit": "On the way",
+    "done": "Arrived",
+    "cancelled": "Cancelled"
+  },
+  "createdAt": "Created at",
+  "updatedAt": "Updated at",
+  "createdBy": "Created by",
+  "company": "Company",
+  "deletedAt": "Deleted at",
+  "deletedBy": "Deleted by"
+}

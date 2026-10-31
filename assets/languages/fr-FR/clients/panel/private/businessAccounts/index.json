@@ -1,0 +1,42 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/index.tsx",
+  "title": "Comptes entreprise",
+  "description": "Entreprises qui réservent en compte, avec leur remise et leurs coordonnées de facturation",
+  "help": {
+    "ariaLabel": "À propos des comptes entreprise",
+    "title": "À propos des comptes entreprise",
+    "overview": "Un compte entreprise est facturé à la place du conducteur. Sa remise est une ligne de la réservation, et les factures utilisent son nom, son numéro de TVA et son adresse.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Indiquez le compte sur une réservation au comptoir et choisissez En compte.",
+          "Ouvrez un compte et choisissez Relevé mensuel."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un compte",
+  "searchPlaceholder": "Rechercher des comptes ou ajouter des filtres...",
+  "noData": "Aucun compte entreprise pour l'instant",
+  "failTitle": "Impossible de charger les comptes",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "name": "Nom",
+    "vatNumber": "Numéro de TVA",
+    "billingEmail": "E-mail de facturation",
+    "address": "Adresse",
+    "discountPercent": "Remise %",
+    "paymentTermsDays": "Délai de paiement (jours)",
+    "isActive": "Actif",
+    "notes": "Notes",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

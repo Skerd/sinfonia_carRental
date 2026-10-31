@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/index.tsx",
+  "title": "Transferimet",
+  "description": "Makina të zhvendosura mes vendndodhjeve tuaja",
+  "help": {
+    "ariaLabel": "Rreth transferimeve",
+    "title": "Rreth transferimeve",
+    "overview": "Një transferim e çon makinën në një vendndodhje tjetër. Gjatë rrugës makina është e bllokuar për rezervime; pas mbërritjes numërohet në vendndodhjen e re.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Oraret e nisjes dhe mbërritjes nuk ndryshohen më vonë; anuloni transferimin dhe planifikoni një të ri.",
+          "Plani i flotës tregon transferimet e planifikuara dhe rezervimet që kanë nevojë për makinë nga një vendndodhje tjetër."
+        ]
+      }
+    ]
+  },
+  "create": "Planifiko transferim",
+  "searchPlaceholder": "Kërkoni transferime ose shtoni filtra...",
+  "noData": "Ende asnjë transferim",
+  "failTitle": "Transferimet nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "vehicle": "Automjeti",
+    "fromLocation": "Nga",
+    "toLocation": "Për",
+    "departAt": "Nisja",
+    "arriveAt": "Mbërritja",
+    "driver": "Drejtuar nga",
+    "status": "Statusi",
+    "odometerKm": "Km në mbërritje",
+    "notes": "Shënime",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

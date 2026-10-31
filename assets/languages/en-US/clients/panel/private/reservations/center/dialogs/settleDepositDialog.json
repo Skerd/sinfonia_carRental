@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/settleDepositDialog.tsx",
+  "title": "Settle the deposit",
+  "description": "Held: {held}. Still owed: {due}. Keep what is owed; the rest is released.",
+  "keepLabel": "Keep from the deposit",
+  "confirmKeep": "Keep and release the rest",
+  "confirmRelease": "Release deposit",
+  "cancel": "Back"
+}

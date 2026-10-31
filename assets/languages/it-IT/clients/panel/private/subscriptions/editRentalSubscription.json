@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/editRentalSubscription.tsx",
+  "title": "Modifica abbonamento",
+  "description": "Cambia calendario, prezzo o stato",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "contactNameLabel": "Nome del contatto",
+    "contactNamePlaceholder": "Per chi è l'auto",
+    "emailLabel": "Email",
+    "emailPlaceholder": "cliente@email.it",
+    "phoneLabel": "Telefono",
+    "phonePlaceholder": "Numero di telefono",
+    "categoryLabel": "Categoria",
+    "categoryPlaceholder": "Seleziona una categoria",
+    "pickupLocationLabel": "Luogo di ritiro",
+    "pickupLocationPlaceholder": "Seleziona una sede",
+    "periodLabel": "Periodo",
+    "periodPlaceholder": "Seleziona un periodo",
+    "period": {
+      "week": "Settimana",
+      "month": "Mese"
+    },
+    "priceLabel": "Prezzo per periodo",
+    "pricePlaceholder": "0.00",
+    "statusLabel": "Stato",
+    "statusPlaceholder": "Seleziona stato",
+    "status": {
+      "active": "Attivo",
+      "paused": "In pausa",
+      "ended": "Terminato"
+    },
+    "nextRunAtLabel": "Prossima prenotazione",
+    "nextRunAtPlaceholder": "Scegli una data",
+    "businessAccountLabel": "Conto aziendale",
+    "businessAccountPlaceholder": "Facoltativo"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio delle modifiche",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifiche salvate",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare le modifiche. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifica abbonamento",
+    "description": "Cambia calendario, prezzo o stato"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Salva"
+  }
+}

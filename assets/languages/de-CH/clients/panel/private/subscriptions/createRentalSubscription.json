@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/createRentalSubscription.tsx",
+  "title": "Abo hinzufügen",
+  "description": "Dieselbe Kategorie nach einem wiederkehrenden Plan buchen",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "contactNameLabel": "Kontaktname",
+    "contactNamePlaceholder": "Für wen das Fahrzeug ist",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "kunde@email.ch",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "Telefonnummer",
+    "categoryLabel": "Kategorie",
+    "categoryPlaceholder": "Kategorie wählen",
+    "pickupLocationLabel": "Abholort",
+    "pickupLocationPlaceholder": "Standort wählen",
+    "periodLabel": "Zeitraum",
+    "periodPlaceholder": "Zeitraum wählen",
+    "period": {
+      "week": "Woche",
+      "month": "Monat"
+    },
+    "priceLabel": "Preis pro Zeitraum",
+    "pricePlaceholder": "0.00",
+    "statusLabel": "Status",
+    "statusPlaceholder": "Status wählen",
+    "status": {
+      "active": "Aktiv",
+      "paused": "Pausiert",
+      "ended": "Beendet"
+    },
+    "nextRunAtLabel": "Nächste Buchung",
+    "nextRunAtPlaceholder": "Datum wählen",
+    "businessAccountLabel": "Geschäftskonto",
+    "businessAccountPlaceholder": "Optional"
+  },
+  "axios": {
+    "start": {
+      "title": "Abo wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Abo hinzugefügt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Das Abo konnte nicht hinzugefügt werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Abo hinzufügen",
+    "description": "Dieselbe Kategorie nach einem wiederkehrenden Plan buchen"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Hinzufügen"
+  }
+}

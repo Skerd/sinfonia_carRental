@@ -1,0 +1,29 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/planner/index.tsx",
+  "from": "Data e fillimit",
+  "earlier": "Më herët",
+  "later": "Më vonë",
+  "today": "Sot",
+  "span": "Ditët që shfaqen",
+  "days": "{count} ditë",
+  "location": "Vendndodhja",
+  "allLocations": "Të gjitha vendndodhjet",
+  "category": "Kategoria",
+  "allCategories": "Të gjitha kategoritë",
+  "car": "Makina",
+  "noCars": "Asnjë makinë nuk përputhet me këta filtra.",
+  "needsTransfer": "Makina duhet çuar te vendi i marrjes",
+  "hint": "Tërhiqni një rezervim mbi një makinë tjetër të së njëjtës kategori për ta zhvendosur. Klikoni për ta hapur.",
+  "moved": "{number} u zhvendos te {plate}",
+  "blockReason": {
+    "maintenance": "Mirëmbajtje",
+    "repair": "Riparim",
+    "transfer": "Transferim",
+    "other": "E bllokuar"
+  },
+  "readiness": {
+    "ready": "Gati",
+    "needs_cleaning": "Duhet pastruar",
+    "needs_check": "Duhet kontrolluar"
+  }
+}

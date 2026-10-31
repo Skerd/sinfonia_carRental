@@ -2,12 +2,21 @@
   "carRental": {
     "title": "Car rental",
     "reservations": {"title": "Reservations"},
+    "planner": {"title": "Planner"},
+    "counter": {"title": "Counter"},
+    "reports": {"title": "Reports"},
+    "businessAccounts": {"title": "Business accounts"},
+    "subscriptions": {"title": "Subscriptions"},
+    "reviews": {"title": "Reviews"},
+    "denyList": {"title": "Deny list"},
     "vehicles": {"title": "Fleet"},
     "blocks": {"title": "Vehicle blocks"},
     "fleetOps": {"title": "Fleet operations"},
     "maintenance": {"title": "Maintenance"},
     "damages": {"title": "Damages"},
     "insurance": {"title": "Insurance"},
+    "fines": {"title": "Fines"},
+    "transfers": {"title": "Transfers"},
     "documents": {"title": "Documents"}
   },
   "tenancy": {
@@ -16,12 +25,14 @@
         "title": "Car rental",
         "booking": {"title": "Online booking"},
         "payment": {"title": "Payment and cancellation"},
+        "fees": {"title": "Fees and charges"},
         "terms": {"title": "Rental terms"},
         "alerts": {"title": "Staff alerts"}
       },
       "vehicleCategories": {"title": "Categories"},
       "rentalExtras": {"title": "Extras"},
-      "rentalLocations": {"title": "Locations"}
+      "rentalLocations": {"title": "Locations"},
+      "rentalPromoCodes": {"title": "Promo codes"}
     }
   }
 }

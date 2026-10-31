@@ -1,0 +1,40 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reports/index.tsx",
+  "title": "Raporte",
+  "description": "Si u përdor flota, sa fitoi dhe sa kushtoi",
+  "from": "Nga",
+  "to": "Deri",
+  "location": "Degë",
+  "allLocations": "Të gjitha degët",
+  "refresh": "Shfaq",
+  "utilisation": "Shfrytëzimi",
+  "revenue": "Të ardhurat",
+  "averageDailyRate": "Tarifa mesatare ditore",
+  "revpac": "Të ardhura për ditë-makinë të lirë",
+  "leadTime": "Koha para rezervimit",
+  "days": "ditë",
+  "cancellationRate": "Anulimet",
+  "noShowRate": "Mosparaqitjet",
+  "lostSearches": "Kërkime pa makinë",
+  "revenueByCar": "Të ardhurat sipas makinës",
+  "noRevenue": "Asnjë e ardhur në këtë periudhë",
+  "car": "Makina",
+  "maintenance": "Mirëmbajtja",
+  "repairs": "Riparimet",
+  "insurance": "Sigurimi",
+  "payback": "Kthimi",
+  "help": {
+    "ariaLabel": "Rreth raporteve",
+    "title": "Rreth raporteve",
+    "overview": "Shfrytëzimi është orët e qirasë pjesëtuar me orët kur makina nuk ishte e bllokuar.",
+    "sections": [
+      {
+        "title": "Leximi i shifrave",
+        "items": [
+          "Një kërkim pa makinë të lirë numërohet si kërkesë e humbur.",
+          "Kthimi është të ardhurat e periudhës pjesëtuar me çmimin e blerjes."
+        ]
+      }
+    ]
+  }
+}

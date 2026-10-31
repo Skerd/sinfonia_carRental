@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/center/cardView/rentalReviewCard.tsx",
+  "failedTitle": "Impossibile caricare la recensione",
+  "failedDescription": "Tocca per riprovare.",
+  "reservation": "Prenotazione",
+  "rating": "Valutazione",
+  "authorName": "Nome",
+  "isPublished": "Pubblicata"
+}

@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/center/actions/vehicleReadinessMenu.tsx",
+  "markReady": "Shëno si gati",
+  "markNeedsCheck": "Duhet kontrolluar",
+  "done": {
+    "ready": "U shënua si gati",
+    "needs_check": "U shënua që duhet kontrolluar"
+  }
+}

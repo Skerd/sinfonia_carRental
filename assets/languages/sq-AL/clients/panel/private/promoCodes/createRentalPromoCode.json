@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/createRentalPromoCode.tsx",
+  "title": "Shto kod promocional",
+  "description": "Krijoni një zbritje që klientët e fusin kur rezervojnë",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "codeLabel": "Kodi",
+    "codePlaceholder": "p.sh. VERA10",
+    "typeLabel": "Lloji i zbritjes",
+    "typePlaceholder": "Zgjidhni një lloj",
+    "type": {
+      "percent": "Përqindje",
+      "fixed": "Shumë fikse"
+    },
+    "valueLabel": "Zbritja",
+    "valuePlaceholder": "Përqindje ose shumë",
+    "categoryLabel": "Kategoria",
+    "categoryPlaceholder": "Të gjitha kategoritë",
+    "bookableFromLabel": "Mund të rezervohet nga",
+    "bookableFromPlaceholder": "Zgjidhni një datë",
+    "bookableUntilLabel": "Mund të rezervohet deri më",
+    "bookableUntilPlaceholder": "Zgjidhni një datë",
+    "tripFromLabel": "Marrje nga",
+    "tripFromPlaceholder": "Zgjidhni një datë",
+    "tripUntilLabel": "Marrje deri më",
+    "tripUntilPlaceholder": "Zgjidhni një datë",
+    "minRentalDaysLabel": "Ditë minimale qiraje",
+    "minRentalDaysPlaceholder": "p.sh. 3",
+    "usageLimitLabel": "Përdorime gjithsej",
+    "usageLimitPlaceholder": "Bosh për pa kufi",
+    "usageLimitPerEmailLabel": "Përdorime për klient",
+    "usageLimitPerEmailPlaceholder": "Bosh për pa kufi",
+    "isActiveLabel": "Aktiv",
+    "descriptionLabel": "Shënim i brendshëm",
+    "descriptionPlaceholder": "Për cilën fushatë është ky kod"
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhet kodi promocional",
+      "time": 3000
+    },
+    "success": {
+      "title": "Kodi promocional u shtua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Kodi promocional nuk u shtua. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Shto kod promocional",
+    "description": "Krijoni një zbritje që klientët e fusin kur rezervojnë"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/createRentalDenyEntry.tsx",
+  "title": "Bloquer un client",
+  "description": "Refuser les réservations et les remises pour cet e-mail ou ce permis",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "client@email.fr",
+    "licenseNumberLabel": "Numéro de permis",
+    "licenseNumberPlaceholder": "Tel qu'imprimé sur le permis",
+    "reasonLabel": "Motif",
+    "reasonPlaceholder": "Pourquoi ce client est bloqué",
+    "isActiveLabel": "Actif"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement de l'entrée",
+      "time": 3000
+    },
+    "success": {
+      "title": "Client bloqué",
+      "time": 3000
+    },
+    "error": {
+      "title": "L'entrée n'a pas pu être ajoutée. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Bloquer un client",
+    "description": "Refuser les réservations et les remises pour cet e-mail ou ce permis"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Ajouter"
+  }
+}

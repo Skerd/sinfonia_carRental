@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/center/dialogs/rentalStatementDialog.tsx",
+  "title": "Pasqyra mujore",
+  "description": "Faturat e lëshuara gjatë muajit të zgjedhur.",
+  "month": "Muaji",
+  "download": "Shkarko",
+  "cancel": "Anulo"
+}

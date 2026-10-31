@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/index.tsx",
+  "title": "Traffic fines",
+  "description": "Fines and tolls for your cars, matched to the driver at the time",
+  "help": {
+    "ariaLabel": "About traffic fines",
+    "title": "About traffic fines",
+    "overview": "Enter a fine when the notice arrives. The booking whose pickup and return cover the time of the offence is found by itself, with its main driver.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Charge the customer to add the fine and the handling fee to their booking; a saved card is charged straight away.",
+          "Download the driver letter to name the driver to the authority.",
+          "If the car or time is corrected, use Match again."
+        ]
+      }
+    ]
+  },
+  "create": "Add fine",
+  "searchPlaceholder": "Search fines or add filters...",
+  "noData": "No fines yet",
+  "failTitle": "Failed to load fines",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "reference": "Reference",
+    "vehicle": "Vehicle",
+    "offenceAt": "Date and time of the offence",
+    "type": "Type",
+    "authority": "Issued by",
+    "amount": "Amount",
+    "place": "Place",
+    "dueDate": "Pay or reply by",
+    "status": "Status",
+    "reservation": "Booking",
+    "driverName": "Driver",
+    "chargedAmount": "Charged to customer",
+    "attachments": "Scan of the notice",
+    "notes": "Notes",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

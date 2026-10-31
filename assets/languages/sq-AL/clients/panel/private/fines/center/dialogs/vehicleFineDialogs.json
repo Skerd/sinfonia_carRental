@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/dialogs/vehicleFineDialogs.tsx",
+  "cancel": "Kthehu",
+  "matchDriver": {
+    "title": "Lidh përsëri shoferin",
+    "description": "Kërkon rezervimin që kishte makinën në kohën e shkeljes, pasi u korrigjua makina ose ora.",
+    "confirm": "Lidh"
+  },
+  "chargeCustomer": {
+    "title": "Faturo klientin",
+    "description": "Shton gjobën dhe tarifën e trajtimit në rezervimin {booking} të {driver} dhe e njofton me email. Një kartë e ruajtur faturohet menjëherë.",
+    "confirm": "Faturo"
+  }
+}

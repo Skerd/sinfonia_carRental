@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/index.tsx",
+  "title": "Abbonamenti",
+  "description": "Un'auto di una categoria, prenotata di nuovo ogni settimana o mese",
+  "help": {
+    "ariaLabel": "Informazioni sugli abbonamenti",
+    "title": "Informazioni sugli abbonamenti",
+    "overview": "Finché un abbonamento è attivo, la prenotazione successiva viene creata alla sua data e la seguente viene pianificata.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Mettilo in pausa per saltare la prossima esecuzione.",
+          "La prenotazione usa il prezzo indicato e si paga al ritiro."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi abbonamento",
+  "searchPlaceholder": "Cerca abbonamenti o aggiungi filtri...",
+  "noData": "Ancora nessun abbonamento",
+  "failTitle": "Impossibile caricare gli abbonamenti",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "contactName": "Nome del contatto",
+    "email": "Email",
+    "phone": "Telefono",
+    "category": "Categoria",
+    "pickupLocation": "Luogo di ritiro",
+    "period": "Periodo",
+    "price": "Prezzo per periodo",
+    "status": "Stato",
+    "nextRunAt": "Prossima prenotazione",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

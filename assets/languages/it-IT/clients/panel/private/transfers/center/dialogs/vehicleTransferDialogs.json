@@ -1,0 +1,18 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/center/dialogs/vehicleTransferDialogs.tsx",
+  "cancel": {
+    "title": "Annulla il trasferimento",
+    "description": "{plate} resta dov'è ed è di nuovo prenotabile.",
+    "confirm": "Annulla trasferimento"
+  },
+  "start": {
+    "title": "Il veicolo parte",
+    "description": "Segna {plate} come in viaggio.",
+    "confirm": "Parti ora"
+  },
+  "complete": {
+    "title": "Il veicolo è arrivato",
+    "description": "Da ora {plate} conta nella nuova sede.",
+    "confirm": "Segna come arrivato"
+  }
+}

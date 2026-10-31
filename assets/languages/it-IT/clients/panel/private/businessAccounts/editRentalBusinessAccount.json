@@ -1,0 +1,53 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/editRentalBusinessAccount.tsx",
+  "title": "Modifica conto",
+  "description": "Cambia i dati di fatturazione o lo sconto",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "nameLabel": "Nome",
+    "namePlaceholder": "Nome dell'azienda",
+    "vatNumberLabel": "Partita IVA",
+    "vatNumberPlaceholder": "Partita IVA",
+    "billingEmailLabel": "Email di fatturazione",
+    "billingEmailPlaceholder": "contabilita@azienda.it",
+    "addressLabel": "Indirizzo",
+    "addressPlaceholder": "Indirizzo di fatturazione",
+    "discountPercentLabel": "Sconto %",
+    "discountPercentPlaceholder": "0",
+    "paymentTermsDaysLabel": "Termini di pagamento (giorni)",
+    "paymentTermsDaysPlaceholder": "30",
+    "isActiveLabel": "Attivo",
+    "notesLabel": "Note",
+    "notesPlaceholder": "Note interne"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio delle modifiche",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifiche salvate",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare le modifiche. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifica conto",
+    "description": "Cambia i dati di fatturazione o lo sconto"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Salva"
+  }
+}

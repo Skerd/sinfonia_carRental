@@ -1,0 +1,27 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/cardView/vehicleFineCard.tsx",
+  "failedTitle": "Gjoba nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "vehicle": "Automjeti",
+  "offenceAt": "Data dhe ora e shkeljes",
+  "type": "Lloji",
+  "amount": "Shuma",
+  "status": "Statusi",
+  "reservation": "Rezervimi",
+  "driverName": "Shoferi",
+  "typeValues": {
+    "speeding": "Shpejtësi",
+    "parking": "Parkim",
+    "red_light": "Semafor i kuq",
+    "toll": "Pagesë rruge",
+    "other": "Tjetër"
+  },
+  "statusValues": {
+    "received": "E marrë",
+    "driver_identified": "Shoferi u identifikua",
+    "charged": "I faturuar klientit",
+    "paid_by_company": "E paguar nga ne",
+    "transferred": "Shoferi u njoftua",
+    "disputed": "E kundërshtuar"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/center/sheetView/rentalSubscriptionSheetView.tsx",
+  "lifecycle": "Lifecycle",
+  "overview": "Overview",
+  "rentalSubscriptionSubtitle": "Subscription",
+  "contactName": "Contact name",
+  "email": "Email",
+  "phone": "Phone",
+  "category": "Category",
+  "pickupLocation": "Pickup location",
+  "period": "Period",
+  "price": "Price per period",
+  "status": "Status",
+  "nextRunAt": "Next booking",
+  "periodValues": {
+    "week": "Week",
+    "month": "Month"
+  },
+  "statusValues": {
+    "active": "Active",
+    "paused": "Paused",
+    "ended": "Ended"
+  },
+  "createdAt": "Created at",
+  "updatedAt": "Updated at",
+  "createdBy": "Created by",
+  "company": "Company",
+  "deletedAt": "Deleted at",
+  "deletedBy": "Deleted by"
+}

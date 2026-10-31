@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/center/sheetView/rentalPromoCodeSheetView.tsx",
+  "lifecycle": "Ciclo di vita",
+  "overview": "Panoramica",
+  "rentalPromoCodeSubtitle": "Codice promozionale",
+  "code": "Codice",
+  "type": "Tipo di sconto",
+  "value": "Sconto",
+  "category": "Categoria",
+  "bookableFrom": "Prenotabile dal",
+  "bookableUntil": "Prenotabile fino al",
+  "tripFrom": "Ritiri dal",
+  "tripUntil": "Ritiri fino al",
+  "minRentalDays": "Giorni di noleggio minimi",
+  "usageLimit": "Utilizzi totali consentiti",
+  "usageLimitPerEmail": "Utilizzi per cliente",
+  "usageCount": "Volte usato",
+  "isActive": "Attivo",
+  "description": "Nota interna",
+  "typeValues": {
+    "percent": "Percentuale",
+    "fixed": "Importo fisso"
+  },
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "company": "Azienda",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da"
+}

@@ -36,5 +36,9 @@
   "nextServiceDueAt": "Next service due",
   "nextServiceDueKm": "Next service at (km)",
   "acquiredAt": "In fleet since",
-  "purchasePrice": "Purchase price"
+  "purchasePrice": "Purchase price",
+  "trackerId": "Tracker",
+  "lastLatitude": "Latitude",
+  "lastLongitude": "Longitude",
+  "lastReportedAt": "Last reported"
 }

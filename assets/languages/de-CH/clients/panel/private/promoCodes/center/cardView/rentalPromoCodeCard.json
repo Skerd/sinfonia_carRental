@@ -1,0 +1,15 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/center/cardView/rentalPromoCodeCard.tsx",
+  "failedTitle": "Aktionscode konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "type": "Rabattart",
+  "value": "Rabatt",
+  "category": "Kategorie",
+  "bookableUntil": "Buchbar bis",
+  "usageCount": "Bereits eingelöst",
+  "isActive": "Aktiv",
+  "typeValues": {
+    "percent": "Prozent",
+    "fixed": "Fester Betrag"
+  }
+}

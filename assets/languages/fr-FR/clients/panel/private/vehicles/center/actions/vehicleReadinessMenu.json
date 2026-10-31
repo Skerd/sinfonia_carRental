@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/center/actions/vehicleReadinessMenu.tsx",
+  "markReady": "Marquer comme prêt",
+  "markNeedsCheck": "À contrôler",
+  "done": {
+    "ready": "Marqué comme prêt",
+    "needs_check": "Marqué comme à contrôler"
+  }
+}

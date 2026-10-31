@@ -1,0 +1,41 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/sheetView/vehicleFineSheetView.tsx",
+  "lifecycle": "Lebenszyklus",
+  "overview": "Übersicht",
+  "vehicleFineSubtitle": "Busse",
+  "reference": "Referenz",
+  "vehicle": "Fahrzeug",
+  "offenceAt": "Datum und Zeit des Verstosses",
+  "type": "Art",
+  "authority": "Ausgestellt von",
+  "amount": "Betrag",
+  "place": "Ort",
+  "dueDate": "Zahlen oder antworten bis",
+  "status": "Status",
+  "reservation": "Buchung",
+  "driverName": "Fahrer/in",
+  "chargedAmount": "Der Kundschaft belastet",
+  "attachments": "Scan der Busse",
+  "notes": "Notizen",
+  "typeValues": {
+    "speeding": "Geschwindigkeit",
+    "parking": "Parkieren",
+    "red_light": "Rotlicht",
+    "toll": "Maut",
+    "other": "Anderes"
+  },
+  "statusValues": {
+    "received": "Erhalten",
+    "driver_identified": "Fahrer/in ermittelt",
+    "charged": "Der Kundschaft belastet",
+    "paid_by_company": "Von uns bezahlt",
+    "transferred": "Fahrer/in gemeldet",
+    "disputed": "Bestritten"
+  },
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "createdBy": "Erstellt von",
+  "company": "Unternehmen",
+  "deletedAt": "Gelöscht am",
+  "deletedBy": "Gelöscht von"
+}

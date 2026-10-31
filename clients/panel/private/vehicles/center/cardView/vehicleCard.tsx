@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCar, IconCategory, IconMapPin, IconStatusChange} from "@tabler/icons-react";
+import {IconCar, IconCategory, IconMapPin, IconSparkles, IconStatusChange} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import {AccessGatedGalleryCarousel} from "@coreModule/components/viewEngine/widgets/gallery/galleryCarousel.tsx";
@@ -12,6 +12,7 @@ import type {Vehicle} from "armonia/src/modules/carRental/api/carRental/private/
 import VehicleSheetView from "@carRentalModule/clients/panel/private/vehicles/center/sheetView/vehicleSheetView.tsx";
 import {vehicleEditPath} from "@carRentalModule/clients/panel/private/vehicles/index.tsx";
 import VehicleRecordsMenu from "@carRentalModule/clients/panel/private/vehicles/center/actions/vehicleRecordsMenu.tsx";
+import VehicleReadinessMenu from "@carRentalModule/clients/panel/private/vehicles/center/actions/vehicleReadinessMenu.tsx";
 
 type VehicleCardProps = WithLanguageType & {
     vehicle: Vehicle;
@@ -53,7 +54,7 @@ function VehicleCard({
             titlePath="plate"
             innerRef={innerRef}
         >
-            {({entity: row, read}) => (
+            {({entity: row, read, setEntity}) => (
                 <>
                     {/* Vehicles have no separate cover field: the first photo is the cover. */}
                     <div className="-mx-(--density-pad) -mt-(--density-pad) w-[calc(100%+2*var(--density-pad))]">
@@ -70,6 +71,7 @@ function VehicleCard({
                         />
                     </div>
                     <EntityCard.Header titlePath="plate" title={row.plate}>
+                        <VehicleReadinessMenu vehicle={row} onUpdated={setEntity} />
                         <VehicleRecordsMenu vehicleId={row._id} />
                     </EntityCard.Header>
                     <EntityCard.Body>
@@ -102,6 +104,15 @@ function VehicleCard({
                             type="enum"
                             languageKeyCategory="statusValues"
                             value={row.status}
+                        />
+                        <EntityCardRow
+                            icon={IconSparkles}
+                            label={resolveLanguageKey("readiness")}
+                            tooltip={resolveLanguageKey("readiness")}
+                            path="readiness"
+                            type="enum"
+                            languageKeyCategory="readinessValues"
+                            value={row.readiness}
                         />
                     </EntityCard.Body>
                 </>

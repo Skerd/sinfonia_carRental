@@ -1,0 +1,47 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/createRentalReview.tsx",
+  "title": "Shto vlerësim",
+  "description": "Regjistroni një vlerësim për një qira të përfunduar",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "reservationLabel": "Rezervimi",
+    "reservationPlaceholder": "Zgjidhni një rezervim",
+    "ratingLabel": "Vlerësimi",
+    "ratingPlaceholder": "1 deri 5",
+    "commentLabel": "Komenti",
+    "commentPlaceholder": "Çfarë shkroi klienti",
+    "authorNameLabel": "Emri",
+    "authorNamePlaceholder": "Emri i klientit",
+    "isPublishedLabel": "E publikuar"
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhet vlerësimi",
+      "time": 3000
+    },
+    "success": {
+      "title": "Vlerësimi u ruajt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Vlerësimi nuk u ruajt. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Shto vlerësim",
+    "description": "Regjistroni një vlerësim për një qira të përfunduar"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  }
+}

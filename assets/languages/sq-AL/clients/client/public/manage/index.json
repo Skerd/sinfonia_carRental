@@ -23,7 +23,8 @@
   "payment": "Pagesa",
   "paymentChoice": {
     "pay_at_pickup": "Paguaj në marrje",
-    "online": "Paguar online"
+    "online": "Paguar online",
+    "on_account": "Në llogari"
   },
   "paymentStatus": {
     "unpaid": "Ende e papaguar",
@@ -41,5 +42,22 @@
   "keepBooking": "Mbaj rezervimin",
   "cancelBooking": "Anulo këtë rezervim",
   "cancelledNotice": "Rezervimi juaj është anuluar. Çdo rimbursim i detyruar kthehet në mënyrën tuaj origjinale të pagesës.",
-  "priceTitle": "Çmimi"
+  "priceTitle": "Çmimi",
+  "amountDue": "{amount} për t'u paguar",
+  "licenceTitle": "Patenta",
+  "licenceHint": "Shkruani numrin dhe ngarkoni një foto.",
+  "licenceNumber": "Numri i patentës",
+  "saveLicence": "Ruaj patentën",
+  "documentsCount": "{count} skedarë të ngarkuar",
+  "extendTitle": "Mbaje makinën më gjatë",
+  "extendAndPay": "Zgjat dhe paguaj diferencën",
+  "extrasTitle": "Shto diçka para marrjes",
+  "payBalance": "Paguaj balancën",
+  "payTitle": "Paguaj tani",
+  "downloadAgreement": "Shkarko kontratën",
+  "downloadInvoice": "Fatura {number}",
+  "reviewTitle": "Si ishte makina?",
+  "reviewComment": "Pak fjalë",
+  "sendReview": "Dërgo vlerësimin",
+  "reviewThanks": "Faleminderit. Vlerësimi pret të publikohet."
 }

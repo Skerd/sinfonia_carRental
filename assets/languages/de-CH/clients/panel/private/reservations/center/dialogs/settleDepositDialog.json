@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/settleDepositDialog.tsx",
+  "title": "Kaution abrechnen",
+  "description": "Hinterlegt: {held}. Noch offen: {due}. Behalten Sie den offenen Betrag; der Rest wird freigegeben.",
+  "keepLabel": "Von der Kaution behalten",
+  "confirmKeep": "Behalten und Rest freigeben",
+  "confirmRelease": "Kaution freigeben",
+  "cancel": "Zurück"
+}

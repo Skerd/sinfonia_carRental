@@ -1,0 +1,47 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/editRentalReview.tsx",
+  "title": "Edit review",
+  "description": "Change the rating, the comment or whether it is published",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "reservationLabel": "Booking",
+    "reservationPlaceholder": "Select a booking",
+    "ratingLabel": "Rating",
+    "ratingPlaceholder": "1 to 5",
+    "commentLabel": "Comment",
+    "commentPlaceholder": "What the customer wrote",
+    "authorNameLabel": "Name",
+    "authorNamePlaceholder": "Customer name",
+    "isPublishedLabel": "Published"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving changes",
+      "time": 3000
+    },
+    "success": {
+      "title": "Changes saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Changes could not be saved. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Edit review",
+    "description": "Change the rating, the comment or whether it is published"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Save"
+  }
+}

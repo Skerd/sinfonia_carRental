@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/createRentalPromoCode.tsx",
+  "title": "Aggiungi codice promozionale",
+  "description": "Crea uno sconto che i clienti inseriscono alla prenotazione",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "codeLabel": "Codice",
+    "codePlaceholder": "es. ESTATE10",
+    "typeLabel": "Tipo di sconto",
+    "typePlaceholder": "Seleziona un tipo",
+    "type": {
+      "percent": "Percentuale",
+      "fixed": "Importo fisso"
+    },
+    "valueLabel": "Sconto",
+    "valuePlaceholder": "Percentuale o importo",
+    "categoryLabel": "Categoria",
+    "categoryPlaceholder": "Tutte le categorie",
+    "bookableFromLabel": "Prenotabile dal",
+    "bookableFromPlaceholder": "Scegli una data",
+    "bookableUntilLabel": "Prenotabile fino al",
+    "bookableUntilPlaceholder": "Scegli una data",
+    "tripFromLabel": "Ritiri dal",
+    "tripFromPlaceholder": "Scegli una data",
+    "tripUntilLabel": "Ritiri fino al",
+    "tripUntilPlaceholder": "Scegli una data",
+    "minRentalDaysLabel": "Giorni di noleggio minimi",
+    "minRentalDaysPlaceholder": "es. 3",
+    "usageLimitLabel": "Utilizzi totali consentiti",
+    "usageLimitPlaceholder": "Vuoto per nessun limite",
+    "usageLimitPerEmailLabel": "Utilizzi per cliente",
+    "usageLimitPerEmailPlaceholder": "Vuoto per nessun limite",
+    "isActiveLabel": "Attivo",
+    "descriptionLabel": "Nota interna",
+    "descriptionPlaceholder": "Per quale campagna è questo codice"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio del codice promozionale",
+      "time": 3000
+    },
+    "success": {
+      "title": "Codice promozionale aggiunto",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile aggiungere il codice promozionale. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Aggiungi codice promozionale",
+    "description": "Crea uno sconto che i clienti inseriscono alla prenotazione"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

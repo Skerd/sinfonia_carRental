@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/center/cardView/vehicleTransferCard.tsx",
+  "failedTitle": "Überführung konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "fromLocation": "Von",
+  "toLocation": "Nach",
+  "departAt": "Abfahrt",
+  "driver": "Gefahren von",
+  "status": "Status",
+  "statusValues": {
+    "planned": "Geplant",
+    "in_transit": "Unterwegs",
+    "done": "Angekommen",
+    "cancelled": "Abgesagt"
+  }
+}

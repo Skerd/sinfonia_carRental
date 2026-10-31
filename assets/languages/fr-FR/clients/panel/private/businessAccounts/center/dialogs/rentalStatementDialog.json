@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/center/dialogs/rentalStatementDialog.tsx",
+  "title": "Relevé mensuel",
+  "description": "Factures émises pendant le mois choisi.",
+  "month": "Mois",
+  "download": "Télécharger",
+  "cancel": "Annuler"
+}

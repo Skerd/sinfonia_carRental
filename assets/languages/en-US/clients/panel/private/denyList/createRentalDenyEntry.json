@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/createRentalDenyEntry.tsx",
+  "title": "Block a customer",
+  "description": "Refuse bookings and handovers for this email or licence",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "emailLabel": "Email",
+    "emailPlaceholder": "customer@email.com",
+    "licenseNumberLabel": "Licence number",
+    "licenseNumberPlaceholder": "As printed on the licence",
+    "reasonLabel": "Reason",
+    "reasonPlaceholder": "Why this customer is blocked",
+    "isActiveLabel": "Active"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving entry",
+      "time": 3000
+    },
+    "success": {
+      "title": "Customer blocked",
+      "time": 3000
+    },
+    "error": {
+      "title": "The entry could not be added. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Block a customer",
+    "description": "Refuse bookings and handovers for this email or licence"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}

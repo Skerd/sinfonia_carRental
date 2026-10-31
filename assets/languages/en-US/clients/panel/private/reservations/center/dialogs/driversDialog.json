@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/driversDialog.tsx",
+  "cancel": "Back",
+  "confirm": "Save drivers",
+  "title": "Drivers",
+  "description": "Who may drive this car. Licence details can be added up to the handover.",
+  "primary": "Main driver",
+  "additional": "Additional driver",
+  "addDriver": "Add a driver",
+  "remove": "Remove",
+  "firstName": "First name",
+  "lastName": "Last name",
+  "birthDate": "Birth date",
+  "licenseNumber": "Licence number",
+  "licenseCountry": "Issuing country",
+  "licenseIssuedAt": "Licence issued on",
+  "licenseExpiresAt": "Licence valid until",
+  "idDocumentType": "ID document",
+  "idDocumentNumber": "ID document number",
+  "idDocumentTypes": {
+    "passport": "Passport",
+    "national_id": "National ID card",
+    "other": "Other"
+  }
+}

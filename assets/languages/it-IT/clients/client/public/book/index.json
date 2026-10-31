@@ -30,5 +30,16 @@
   "readTerms": "Leggi le condizioni",
   "booking": "Prenotazione in corso…",
   "continueToPayment": "Procedi al pagamento",
-  "confirmBooking": "Conferma prenotazione"
+  "confirmBooking": "Conferma prenotazione",
+  "protectionTitle": "Protezione",
+  "protectionBasic": "Copertura base",
+  "protectionBasicHint": "Inclusa. In caso di danni paghi l'intera franchigia.",
+  "perDay": "al giorno",
+  "protectionExcess": "Franchigia: {amount}",
+  "birthDate": "Data di nascita",
+  "birthDateRequired": "Inserisci la data di nascita del conducente.",
+  "promoLabel": "Codice promozionale",
+  "promoApply": "Applica",
+  "promoInvalid": "Questo codice promozionale non può essere usato per questa prenotazione.",
+  "crossBorder": "Portare l'auto all'estero"
 }

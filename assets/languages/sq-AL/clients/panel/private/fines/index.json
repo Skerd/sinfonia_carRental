@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/index.tsx",
+  "title": "Gjobat",
+  "description": "Gjobat dhe pagesat e rrugës për makinat tuaja, të lidhura me shoferin e asaj kohe",
+  "help": {
+    "ariaLabel": "Rreth gjobave",
+    "title": "Rreth gjobave",
+    "overview": "Shtoni një gjobë kur vjen njoftimi. Rezervimi, marrja dhe kthimi i të cilit përfshijnë orën e shkeljes, gjendet vetë bashkë me shoferin kryesor.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Faturoni klientin për të shtuar gjobën dhe tarifën e trajtimit në rezervim; një kartë e ruajtur faturohet menjëherë.",
+          "Shkarkoni letrën për t'i njoftuar autoritetit shoferin.",
+          "Nëse makina ose ora korrigjohen, përdorni Lidh përsëri."
+        ]
+      }
+    ]
+  },
+  "create": "Shto gjobë",
+  "searchPlaceholder": "Kërkoni gjoba ose shtoni filtra...",
+  "noData": "Ende asnjë gjobë",
+  "failTitle": "Gjobat nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "reference": "Referenca",
+    "vehicle": "Automjeti",
+    "offenceAt": "Data dhe ora e shkeljes",
+    "type": "Lloji",
+    "authority": "Lëshuar nga",
+    "amount": "Shuma",
+    "place": "Vendi",
+    "dueDate": "Paguani ose përgjigjuni deri më",
+    "status": "Statusi",
+    "reservation": "Rezervimi",
+    "driverName": "Shoferi",
+    "chargedAmount": "I faturuar klientit",
+    "attachments": "Skanimi i njoftimit",
+    "notes": "Shënime",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

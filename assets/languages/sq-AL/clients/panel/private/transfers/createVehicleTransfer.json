@@ -1,0 +1,54 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/createVehicleTransfer.tsx",
+  "title": "Planifiko transferim",
+  "description": "Zhvendosni një makinë në një vendndodhje tjetër",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "vehicleLabel": "Automjeti",
+    "vehiclePlaceholder": "Zgjidhni automjetin",
+    "fromLocationLabel": "Nga",
+    "fromLocationPlaceholder": "Zgjidhni vendndodhjen",
+    "toLocationLabel": "Për",
+    "toLocationPlaceholder": "Zgjidhni vendndodhjen",
+    "departAtLabel": "Nisja",
+    "departAtPlaceholder": "Zgjidhni datën dhe orën",
+    "arriveAtLabel": "Mbërritja",
+    "arriveAtPlaceholder": "Zgjidhni datën dhe orën",
+    "driverLabel": "Drejtuar nga",
+    "driverPlaceholder": "Zgjidhni një person",
+    "odometerKmLabel": "Km në mbërritje",
+    "odometerKmPlaceholder": "Lexuar në mbërritje",
+    "notesLabel": "Shënime",
+    "notesPlaceholder": "Shënime të brendshme"
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhet transferimi",
+      "time": 3000
+    },
+    "success": {
+      "title": "Transferimi u planifikua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Transferimi nuk u planifikua. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Planifiko transferim",
+    "description": "Zhvendosni një makinë në një vendndodhje tjetër"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  }
+}

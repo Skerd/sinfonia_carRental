@@ -1,0 +1,45 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/createRentalDenyEntry.tsx",
+  "title": "Blocca un cliente",
+  "description": "Rifiuta prenotazioni e consegne per questa email o patente",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "emailLabel": "Email",
+    "emailPlaceholder": "cliente@email.it",
+    "licenseNumberLabel": "Numero di patente",
+    "licenseNumberPlaceholder": "Come stampato sulla patente",
+    "reasonLabel": "Motivo",
+    "reasonPlaceholder": "Perché questo cliente è bloccato",
+    "isActiveLabel": "Attivo"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio della voce",
+      "time": 3000
+    },
+    "success": {
+      "title": "Cliente bloccato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile aggiungere la voce. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Blocca un cliente",
+    "description": "Rifiuta prenotazioni e consegne per questa email o patente"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

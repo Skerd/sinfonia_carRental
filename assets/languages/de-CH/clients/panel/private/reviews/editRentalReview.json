@@ -1,0 +1,47 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/editRentalReview.tsx",
+  "title": "Bewertung bearbeiten",
+  "description": "Note, Kommentar oder Veröffentlichung ändern",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "reservationLabel": "Buchung",
+    "reservationPlaceholder": "Buchung wählen",
+    "ratingLabel": "Bewertung",
+    "ratingPlaceholder": "1 bis 5",
+    "commentLabel": "Kommentar",
+    "commentPlaceholder": "Was die Kundschaft geschrieben hat",
+    "authorNameLabel": "Name",
+    "authorNamePlaceholder": "Name der Kundschaft",
+    "isPublishedLabel": "Veröffentlicht"
+  },
+  "axios": {
+    "start": {
+      "title": "Änderungen werden gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Änderungen gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Änderungen konnten nicht gespeichert werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Bewertung bearbeiten",
+    "description": "Note, Kommentar oder Veröffentlichung ändern"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Speichern"
+  }
+}

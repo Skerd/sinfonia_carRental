@@ -39,7 +39,9 @@
     "purchasePriceLabel": "Çmimi i blerjes",
     "purchasePricePlaceholder": "p.sh. 24500",
     "imagesLabel": "Fotot",
-    "videosLabel": "Videot"
+    "videosLabel": "Videot",
+    "trackerIdLabel": "Gjurmuesi",
+    "trackerIdPlaceholder": "Id e gjurmuesit"
   },
   "axios": {
     "start": {

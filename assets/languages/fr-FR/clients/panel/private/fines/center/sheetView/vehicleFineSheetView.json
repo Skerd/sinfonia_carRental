@@ -1,0 +1,41 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/sheetView/vehicleFineSheetView.tsx",
+  "lifecycle": "Cycle de vie",
+  "overview": "Aperçu",
+  "vehicleFineSubtitle": "Amende",
+  "reference": "Référence",
+  "vehicle": "Véhicule",
+  "offenceAt": "Date et heure de l'infraction",
+  "type": "Type",
+  "authority": "Émis par",
+  "amount": "Montant",
+  "place": "Lieu",
+  "dueDate": "Payer ou répondre avant le",
+  "status": "Statut",
+  "reservation": "Réservation",
+  "driverName": "Conducteur",
+  "chargedAmount": "Facturé au client",
+  "attachments": "Scan de l'avis",
+  "notes": "Notes",
+  "typeValues": {
+    "speeding": "Excès de vitesse",
+    "parking": "Stationnement",
+    "red_light": "Feu rouge",
+    "toll": "Péage",
+    "other": "Autre"
+  },
+  "statusValues": {
+    "received": "Reçue",
+    "driver_identified": "Conducteur identifié",
+    "charged": "Facturée au client",
+    "paid_by_company": "Payée par nous",
+    "transferred": "Conducteur désigné",
+    "disputed": "Contestée"
+  },
+  "createdAt": "Créé le",
+  "updatedAt": "Mis à jour le",
+  "createdBy": "Créé par",
+  "company": "Entreprise",
+  "deletedAt": "Supprimé le",
+  "deletedBy": "Supprimé par"
+}

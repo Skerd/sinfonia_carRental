@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicles/center/actions/vehicleReadinessMenu.tsx",
+  "markReady": "Mark ready",
+  "markNeedsCheck": "Needs a check",
+  "done": {
+    "ready": "Marked ready",
+    "needs_check": "Marked as needing a check"
+  }
+}

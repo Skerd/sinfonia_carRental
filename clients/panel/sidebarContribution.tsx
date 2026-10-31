@@ -1,21 +1,38 @@
 import {
+    IconBan,
+    IconBuildingBank,
+    IconBuildingStore,
     IconCalendarEvent,
+    IconChartBar,
+    IconRepeat,
+    IconStar,
+    IconLayoutKanban,
+    IconTransfer,
     IconCar,
     IconCarCrash,
     IconEngine,
     IconFileCertificate,
+    IconReceipt2,
     IconShieldCheck,
     IconTool,
 } from "@tabler/icons-react";
 import type {SidebarContribution} from "@coreModule/helpers/types/sidebarContribution.types.ts";
-import type {NavCollapsible, NavGroup, NavItem} from "@coreModule/helpers/types/sidebarNav.types.ts";
+import type {
+    NavCollapsible,
+    NavGroup,
+    NavItem,
+} from "@coreModule/helpers/types/sidebarNav.types.ts";
 import type {ResolveLanguageKey} from "@coreModule/helpers/hocs/withLanguage.tsx";
 
 const carRentalSidebarContribution: SidebarContribution = {
     id: "carRental",
     order: 36,
     getNavGroups(resolveLanguageKey: ResolveLanguageKey): NavGroup[] {
-        const item = (key: string, icon: NavItem["icon"], permission: string): NavItem => ({
+        const item = (
+            key: string,
+            icon: NavItem["icon"],
+            permission: string,
+        ): NavItem => ({
             title: resolveLanguageKey(`menus.carRental.${key}.title`),
             url: `/carRental/${key}`,
             icon,
@@ -34,6 +51,8 @@ const carRentalSidebarContribution: SidebarContribution = {
                 item("damages", IconCarCrash, "vehicledamages"),
                 item("insurance", IconShieldCheck, "vehicleinsurances"),
                 item("documents", IconFileCertificate, "vehicledocuments"),
+                item("fines", IconReceipt2, "vehiclefines"),
+                item("transfers", IconTransfer, "vehicletransfers"),
             ],
         };
         return [
@@ -43,7 +62,22 @@ const carRentalSidebarContribution: SidebarContribution = {
                 usersPermissions: [],
                 atLeastOnePermission: true,
                 items: [
-                    item("reservations", IconCalendarEvent, "rentalreservations"),
+                    item("planner", IconLayoutKanban, "rentalreservations"),
+                    item("counter", IconBuildingStore, "rentalreservations"),
+                    item("reports", IconChartBar, "rentalreservations"),
+                    item(
+                        "businessAccounts",
+                        IconBuildingBank,
+                        "rentalbusinessaccounts",
+                    ),
+                    item("subscriptions", IconRepeat, "rentalsubscriptions"),
+                    item("reviews", IconStar, "rentalreviews"),
+                    item("denyList", IconBan, "rentaldenyentrys"),
+                    item(
+                        "reservations",
+                        IconCalendarEvent,
+                        "rentalreservations",
+                    ),
                     item("vehicles", IconCar, "vehicles"),
                     item("blocks", IconTool, "vehicleblocks"),
                     fleetOps,

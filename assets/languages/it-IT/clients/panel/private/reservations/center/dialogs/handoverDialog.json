@@ -14,5 +14,36 @@
     "full": "Pieno"
   },
   "notesLabel": "Note",
-  "notesPlaceholder": "Graffi esistenti, oggetti nell'auto"
+  "notesPlaceholder": "Graffi esistenti, oggetti nell'auto",
+  "driversMissing": "Ogni conducente deve avere un numero di patente prima che il veicolo parta. Aggiungilo in Conducenti.",
+  "photosLabel": "Foto del veicolo",
+  "photosSelected": "{count} foto selezionate",
+  "damagesLabel": "Danni visti dal cliente",
+  "noDamages": "Nessun danno aperto su questo veicolo.",
+  "signerLabel": "Firmato da",
+  "signatureLabel": "Firma del cliente",
+  "signatureClear": "Cancella",
+  "signatureHint": "Il cliente firma qui il contratto di noleggio.",
+  "declinedLabel": "Il cliente non ha firmato",
+  "area": {
+    "front": "Anteriore",
+    "rear": "Posteriore",
+    "left": "Lato sinistro",
+    "right": "Lato destro",
+    "roof": "Tetto",
+    "interior": "Interno",
+    "windshield": "Parabrezza",
+    "wheels": "Ruote",
+    "underbody": "Sottoscocca",
+    "other": "Altro"
+  },
+  "severity": {
+    "minor": "lieve",
+    "moderate": "medio",
+    "major": "grave"
+  },
+  "notReady": {
+    "needs_cleaning": "Questo veicolo non è stato pulito dall'ultima riconsegna.",
+    "needs_check": "Questo veicolo è stato segnato come da controllare."
+  }
 }

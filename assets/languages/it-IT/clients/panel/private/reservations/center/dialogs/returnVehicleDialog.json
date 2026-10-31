@@ -13,12 +13,36 @@
     "three_quarters": "3/4",
     "full": "Pieno"
   },
-  "damageLabel": "Nuovo danno rilevato",
+  "damageLabel": "Nuovi danni",
   "chargesLabel": "Addebiti extra",
   "chargeLabel": "Addebito",
   "chargePlaceholder": "es. Rifornimento",
   "chargeAmount": "Importo",
   "addCharge": "Aggiungi addebito",
   "removeCharge": "Rimuovi",
-  "notesLabel": "Note"
+  "notesLabel": "Note",
+  "damageDescription": "Cosa è danneggiato",
+  "damageCost": "Costo di riparazione stimato",
+  "addDamage": "Aggiungi danno",
+  "suggestedHint": "Calcolato da km, carburante e ora di riconsegna. Puoi deselezionare o modificare.",
+  "addPreset": "Aggiungi {label}",
+  "photosLabel": "Foto del veicolo",
+  "photosSelected": "{count} foto selezionate",
+  "area": {
+    "front": "Anteriore",
+    "rear": "Posteriore",
+    "left": "Lato sinistro",
+    "right": "Lato destro",
+    "roof": "Tetto",
+    "interior": "Interno",
+    "windshield": "Parabrezza",
+    "wheels": "Ruote",
+    "underbody": "Sottoscocca",
+    "other": "Altro"
+  },
+  "severity": {
+    "minor": "lieve",
+    "moderate": "medio",
+    "major": "grave"
+  }
 }

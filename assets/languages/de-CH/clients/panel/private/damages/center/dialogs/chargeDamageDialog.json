@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/dialogs/chargeDamageDialog.tsx",
+  "title": "Kundschaft belasten",
+  "description": "Fügt die Reparatur dem Betrag hinzu, den die Kundschaft der Buchung {number} schuldet, und informiert sie per E-Mail.",
+  "confirm": "Belastung hinzufügen",
+  "cancel": "Zurück",
+  "amountLabel": "Betrag",
+  "excessHint": "Mit einem Schutzpaket endet die Belastung beim Selbstbehalt der Kundschaft."
+}

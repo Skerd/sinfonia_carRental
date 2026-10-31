@@ -1,0 +1,6 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/actions/vehicleFineMenu.tsx",
+  "matchDriver": "Match driver again",
+  "chargeCustomer": "Charge the customer",
+  "driverLetter": "Download driver letter"
+}

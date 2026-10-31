@@ -1,0 +1,27 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/cardView/vehicleFineCard.tsx",
+  "failedTitle": "Impossible de charger l'amende",
+  "failedDescription": "Touchez pour réessayer.",
+  "vehicle": "Véhicule",
+  "offenceAt": "Date et heure de l'infraction",
+  "type": "Type",
+  "amount": "Montant",
+  "status": "Statut",
+  "reservation": "Réservation",
+  "driverName": "Conducteur",
+  "typeValues": {
+    "speeding": "Excès de vitesse",
+    "parking": "Stationnement",
+    "red_light": "Feu rouge",
+    "toll": "Péage",
+    "other": "Autre"
+  },
+  "statusValues": {
+    "received": "Reçue",
+    "driver_identified": "Conducteur identifié",
+    "charged": "Facturée au client",
+    "paid_by_company": "Payée par nous",
+    "transferred": "Conducteur désigné",
+    "disputed": "Contestée"
+  }
+}

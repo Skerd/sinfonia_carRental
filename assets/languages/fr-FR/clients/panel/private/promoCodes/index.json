@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/index.tsx",
+  "title": "Codes promo",
+  "description": "Remises saisies par les clients lors de la réservation",
+  "help": {
+    "ariaLabel": "À propos des codes promo",
+    "title": "À propos des codes promo",
+    "overview": "Un code promo retire un pourcentage ou un montant fixe des jours de location. Les suppléments, frais et charges ne sont jamais remisés.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Laissez les dates vides pour accepter un code à tout moment.",
+          "Un code est compté à la réservation, il ne peut donc pas être utilisé plus souvent que prévu.",
+          "Désactivez un code pour l'arrêter sans le supprimer."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un code promo",
+  "searchPlaceholder": "Rechercher des codes promo ou ajouter des filtres...",
+  "noData": "Aucun code promo pour l'instant",
+  "failTitle": "Impossible de charger les codes promo",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "code": "Code",
+    "type": "Type de remise",
+    "value": "Remise",
+    "category": "Catégorie",
+    "bookableFrom": "Réservable à partir du",
+    "bookableUntil": "Réservable jusqu'au",
+    "tripFrom": "Prises en charge à partir du",
+    "tripUntil": "Prises en charge jusqu'au",
+    "minRentalDays": "Jours de location minimum",
+    "usageLimit": "Utilisations autorisées au total",
+    "usageLimitPerEmail": "Utilisations par client",
+    "usageCount": "Utilisations",
+    "isActive": "Actif",
+    "description": "Note interne",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/center/cardView/rentalReviewCard.tsx",
+  "failedTitle": "Failed to load review",
+  "failedDescription": "Tap to retry.",
+  "reservation": "Booking",
+  "rating": "Rating",
+  "authorName": "Name",
+  "isPublished": "Published"
+}

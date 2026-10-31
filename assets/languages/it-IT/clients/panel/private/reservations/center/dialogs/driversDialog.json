@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/driversDialog.tsx",
+  "cancel": "Indietro",
+  "confirm": "Salva conducenti",
+  "title": "Conducenti",
+  "description": "Chi può guidare questo veicolo. I dati della patente si possono completare fino alla consegna.",
+  "primary": "Conducente principale",
+  "additional": "Conducente aggiuntivo",
+  "addDriver": "Aggiungi un conducente",
+  "remove": "Rimuovi",
+  "firstName": "Nome",
+  "lastName": "Cognome",
+  "birthDate": "Data di nascita",
+  "licenseNumber": "Numero di patente",
+  "licenseCountry": "Paese di rilascio",
+  "licenseIssuedAt": "Patente rilasciata il",
+  "licenseExpiresAt": "Patente valida fino al",
+  "idDocumentType": "Documento d'identità",
+  "idDocumentNumber": "Numero del documento",
+  "idDocumentTypes": {
+    "passport": "Passaporto",
+    "national_id": "Carta d'identità",
+    "other": "Altro"
+  }
+}

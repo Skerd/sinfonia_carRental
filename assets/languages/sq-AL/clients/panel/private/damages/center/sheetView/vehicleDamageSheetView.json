@@ -40,5 +40,7 @@
   "updatedAt": "Përditësuar më",
   "createdBy": "Krijuar nga",
   "deletedAt": "Fshirë më",
-  "deletedBy": "Fshirë nga"
+  "deletedBy": "Fshirë nga",
+  "chargedAmount": "I faturuar klientit",
+  "chargedAt": "Faturuar më"
 }

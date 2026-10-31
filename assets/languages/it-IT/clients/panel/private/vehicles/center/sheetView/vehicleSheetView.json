@@ -36,5 +36,9 @@
   "nextServiceDueAt": "Prossimo tagliando il",
   "nextServiceDueKm": "Prossimo tagliando a (km)",
   "acquiredAt": "In flotta dal",
-  "purchasePrice": "Prezzo d'acquisto"
+  "purchasePrice": "Prezzo d'acquisto",
+  "trackerId": "Localizzatore",
+  "lastLatitude": "Latitudine",
+  "lastLongitude": "Longitudine",
+  "lastReportedAt": "Ultimo segnale"
 }

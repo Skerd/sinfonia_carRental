@@ -1,0 +1,53 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/createRentalBusinessAccount.tsx",
+  "title": "Shto llogari",
+  "description": "Një kompani që mund të rezervojë në llogari",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "nameLabel": "Emri",
+    "namePlaceholder": "Emri i kompanisë",
+    "vatNumberLabel": "Numri i TVSH-së",
+    "vatNumberPlaceholder": "Numri i TVSH-së",
+    "billingEmailLabel": "Email i faturimit",
+    "billingEmailPlaceholder": "faturat@kompania.al",
+    "addressLabel": "Adresa",
+    "addressPlaceholder": "Adresa e faturimit",
+    "discountPercentLabel": "Zbritje %",
+    "discountPercentPlaceholder": "0",
+    "paymentTermsDaysLabel": "Afati i pagesës (ditë)",
+    "paymentTermsDaysPlaceholder": "30",
+    "isActiveLabel": "Aktiv",
+    "notesLabel": "Shënime",
+    "notesPlaceholder": "Shënime të brendshme"
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhet llogaria",
+      "time": 3000
+    },
+    "success": {
+      "title": "Llogaria u shtua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Llogaria nuk u shtua. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Shto llogari",
+    "description": "Një kompani që mund të rezervojë në llogari"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  }
+}

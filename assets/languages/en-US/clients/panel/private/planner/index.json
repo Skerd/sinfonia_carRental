@@ -1,0 +1,29 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/planner/index.tsx",
+  "from": "Start date",
+  "earlier": "Earlier",
+  "later": "Later",
+  "today": "Today",
+  "span": "Days shown",
+  "days": "{count} days",
+  "location": "Location",
+  "allLocations": "All locations",
+  "category": "Category",
+  "allCategories": "All categories",
+  "car": "Car",
+  "noCars": "No cars match these filters.",
+  "needsTransfer": "The car must be moved to the pickup location",
+  "hint": "Drag a booking onto another car of the same category to move it there. Click it to open the booking.",
+  "moved": "{number} moved to {plate}",
+  "blockReason": {
+    "maintenance": "Maintenance",
+    "repair": "Repair",
+    "transfer": "Transfer",
+    "other": "Blocked"
+  },
+  "readiness": {
+    "ready": "Ready",
+    "needs_cleaning": "Needs cleaning",
+    "needs_check": "Needs a check"
+  }
+}

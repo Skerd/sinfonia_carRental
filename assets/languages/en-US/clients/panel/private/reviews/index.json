@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/index.tsx",
+  "title": "Reviews",
+  "description": "What customers wrote after a rental",
+  "help": {
+    "ariaLabel": "About reviews",
+    "title": "About reviews",
+    "overview": "A customer can leave one review from the manage link after the car is back. It stays hidden until you publish it.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Publish a review to show it.",
+          "A booking can have only one review."
+        ]
+      }
+    ]
+  },
+  "create": "Add review",
+  "searchPlaceholder": "Search reviews or add filters...",
+  "noData": "No reviews yet",
+  "failTitle": "Failed to load reviews",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "reservation": "Booking",
+    "rating": "Rating",
+    "comment": "Comment",
+    "authorName": "Name",
+    "isPublished": "Published",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

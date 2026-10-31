@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/center/cardView/rentalDenyEntryCard.tsx",
+  "failedTitle": "Impossible de charger l'entrée",
+  "failedDescription": "Touchez pour réessayer.",
+  "email": "E-mail",
+  "licenseNumber": "Numéro de permis",
+  "reason": "Motif",
+  "isActive": "Actif"
+}

@@ -2,12 +2,21 @@
   "carRental": {
     "title": "Autovermietung",
     "reservations": {"title": "Reservierungen"},
+    "planner": {"title": "Planung"},
+    "counter": {"title": "Schalter"},
+    "reports": {"title": "Berichte"},
+    "businessAccounts": {"title": "Geschäftskonten"},
+    "subscriptions": {"title": "Abos"},
+    "reviews": {"title": "Bewertungen"},
+    "denyList": {"title": "Sperrliste"},
     "vehicles": {"title": "Flotte"},
     "blocks": {"title": "Fahrzeugsperren"},
     "fleetOps": {"title": "Flottenbetrieb"},
     "maintenance": {"title": "Wartung"},
     "damages": {"title": "Schäden"},
     "insurance": {"title": "Versicherungen"},
+    "fines": {"title": "Bussen"},
+    "transfers": {"title": "Überführungen"},
     "documents": {"title": "Dokumente"}
   },
   "tenancy": {
@@ -16,12 +25,14 @@
         "title": "Autovermietung",
         "booking": {"title": "Online-Buchung"},
         "payment": {"title": "Zahlung und Stornierung"},
+        "fees": {"title": "Gebühren und Zuschläge"},
         "terms": {"title": "Mietbedingungen"},
         "alerts": {"title": "Benachrichtigungen ans Personal"}
       },
       "vehicleCategories": {"title": "Kategorien"},
       "rentalExtras": {"title": "Extras"},
-      "rentalLocations": {"title": "Standorte"}
+      "rentalLocations": {"title": "Standorte"},
+      "rentalPromoCodes": {"title": "Aktionscodes"}
     }
   }
 }

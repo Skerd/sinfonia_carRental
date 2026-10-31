@@ -49,7 +49,9 @@
     "streetLabel": "Street",
     "streetPlaceholder": "Enter street",
     "timezoneLabel": "Time zone",
-    "timezonePlaceholder": "e.g. Europe/Zurich"
+    "timezonePlaceholder": "e.g. Europe/Zurich",
+    "oneWayFeeLabel": "One-way fee for returns here",
+    "oneWayFeePlaceholder": "Empty uses the company's one-way fee"
   },
   "axios": {
     "start": {

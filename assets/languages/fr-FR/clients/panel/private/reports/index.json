@@ -1,0 +1,40 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reports/index.tsx",
+  "title": "Rapports",
+  "description": "Comment la flotte a été utilisée, ce qu'elle a rapporté et ce qu'elle a coûté",
+  "from": "Du",
+  "to": "Au",
+  "location": "Agence",
+  "allLocations": "Toutes les agences",
+  "refresh": "Afficher",
+  "utilisation": "Utilisation",
+  "revenue": "Chiffre d'affaires",
+  "averageDailyRate": "Prix journalier moyen",
+  "revpac": "Chiffre d'affaires par jour-voiture disponible",
+  "leadTime": "Délai de réservation",
+  "days": "jours",
+  "cancellationRate": "Annulations",
+  "noShowRate": "Absences",
+  "lostSearches": "Recherches sans voiture",
+  "revenueByCar": "Chiffre d'affaires par voiture",
+  "noRevenue": "Aucun chiffre d'affaires sur cette période",
+  "car": "Voiture",
+  "maintenance": "Entretien",
+  "repairs": "Réparations",
+  "insurance": "Assurance",
+  "payback": "Retour",
+  "help": {
+    "ariaLabel": "À propos des rapports",
+    "title": "À propos des rapports",
+    "overview": "L'utilisation est les heures louées divisées par les heures où une voiture n'était pas bloquée.",
+    "sections": [
+      {
+        "title": "Lire les chiffres",
+        "items": [
+          "Une recherche sans voiture libre compte comme une demande perdue.",
+          "Le retour est le chiffre d'affaires de la période divisé par le prix d'achat."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/index.tsx",
+  "title": "Überführungen",
+  "description": "Fahrzeuge, die zwischen Ihren Standorten überführt werden",
+  "help": {
+    "ariaLabel": "Über Überführungen",
+    "title": "Über Überführungen",
+    "overview": "Eine Überführung bringt ein Fahrzeug an einen anderen Standort. Unterwegs ist es für Buchungen gesperrt; nach der Ankunft zählt es am neuen Standort.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Abfahrt und Ankunft lassen sich später nicht ändern; sagen Sie die Überführung ab und planen Sie eine neue.",
+          "Der Flottenplan zeigt geplante Überführungen und Buchungen, die ein Fahrzeug von einem anderen Standort brauchen."
+        ]
+      }
+    ]
+  },
+  "create": "Überführung planen",
+  "searchPlaceholder": "Überführungen suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Überführungen",
+  "failTitle": "Überführungen konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "vehicle": "Fahrzeug",
+    "fromLocation": "Von",
+    "toLocation": "Nach",
+    "departAt": "Abfahrt",
+    "arriveAt": "Ankunft",
+    "driver": "Gefahren von",
+    "status": "Status",
+    "odometerKm": "Kilometer bei Ankunft",
+    "notes": "Notizen",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

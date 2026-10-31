@@ -1,0 +1,74 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/createVehicleFine.tsx",
+  "title": "Aggiungi multa",
+  "description": "Registra una multa o un pedaggio arrivato per uno dei tuoi veicoli",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "referenceLabel": "Riferimento",
+    "referencePlaceholder": "Numero sul verbale",
+    "vehicleLabel": "Veicolo",
+    "vehiclePlaceholder": "Seleziona veicolo",
+    "offenceAtLabel": "Data e ora dell'infrazione",
+    "offenceAtPlaceholder": "Scegli una data",
+    "typeLabel": "Tipo",
+    "typePlaceholder": "Seleziona un tipo",
+    "type": {
+      "speeding": "Eccesso di velocità",
+      "parking": "Parcheggio",
+      "red_light": "Semaforo rosso",
+      "toll": "Pedaggio",
+      "other": "Altro"
+    },
+    "authorityLabel": "Emesso da",
+    "authorityPlaceholder": "es. polizia locale",
+    "amountLabel": "Importo",
+    "amountPlaceholder": "Importo del verbale",
+    "placeLabel": "Luogo",
+    "placePlaceholder": "Dove è successo",
+    "dueDateLabel": "Pagare o rispondere entro",
+    "dueDatePlaceholder": "Scegli una data",
+    "statusLabel": "Stato",
+    "statusPlaceholder": "Seleziona stato",
+    "status": {
+      "received": "Ricevuta",
+      "driver_identified": "Conducente identificato",
+      "charged": "Addebitata al cliente",
+      "paid_by_company": "Pagata da noi",
+      "transferred": "Conducente comunicato",
+      "disputed": "Contestata"
+    },
+    "attachmentsLabel": "Scansione del verbale",
+    "notesLabel": "Note",
+    "notesPlaceholder": "Note interne"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio della multa",
+      "time": 3000
+    },
+    "success": {
+      "title": "Multa aggiunta",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile aggiungere la multa. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Aggiungi multa",
+    "description": "Registra una multa o un pedaggio arrivato per uno dei tuoi veicoli"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

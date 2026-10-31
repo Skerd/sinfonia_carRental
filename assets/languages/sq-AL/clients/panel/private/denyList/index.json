@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/index.tsx",
+  "title": "Lista e bllokimit",
+  "description": "Klientë që nuk mund të rezervojnë ose të marrin një makinë",
+  "help": {
+    "ariaLabel": "Rreth listës së bllokimit",
+    "title": "Rreth listës së bllokimit",
+    "overview": "Një email ose numër patente i bllokuar refuzohet kur bëhet rezervimi dhe përsëri në dorëzim.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Jepni një email, një numër patente, ose të dyja.",
+          "Çaktivizoni Aktiv për ta lejuar përsëri klientin pa e fshirë rreshtin."
+        ]
+      }
+    ]
+  },
+  "create": "Shto hyrje",
+  "searchPlaceholder": "Kërkoni në listë ose shtoni filtra...",
+  "noData": "Askush nuk është i bllokuar",
+  "failTitle": "Lista nuk u ngarkua",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "email": "Email",
+    "licenseNumber": "Numri i patentës",
+    "reason": "Arsyeja",
+    "isActive": "Aktiv",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

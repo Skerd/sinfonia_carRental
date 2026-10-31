@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/driversDialog.tsx",
+  "cancel": "Retour",
+  "confirm": "Enregistrer les conducteurs",
+  "title": "Conducteurs",
+  "description": "Qui peut conduire ce véhicule. Les données du permis peuvent être complétées jusqu'à la remise.",
+  "primary": "Conducteur principal",
+  "additional": "Conducteur supplémentaire",
+  "addDriver": "Ajouter un conducteur",
+  "remove": "Retirer",
+  "firstName": "Prénom",
+  "lastName": "Nom",
+  "birthDate": "Date de naissance",
+  "licenseNumber": "Numéro de permis",
+  "licenseCountry": "Pays de délivrance",
+  "licenseIssuedAt": "Permis délivré le",
+  "licenseExpiresAt": "Permis valable jusqu'au",
+  "idDocumentType": "Pièce d'identité",
+  "idDocumentNumber": "Numéro de la pièce d'identité",
+  "idDocumentTypes": {
+    "passport": "Passeport",
+    "national_id": "Carte d'identité",
+    "other": "Autre"
+  }
+}

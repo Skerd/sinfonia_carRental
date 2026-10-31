@@ -1,0 +1,15 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/center/cardView/rentalPromoCodeCard.tsx",
+  "failedTitle": "Kodi promocional nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "type": "Lloji i zbritjes",
+  "value": "Zbritja",
+  "category": "Kategoria",
+  "bookableUntil": "Mund të rezervohet deri më",
+  "usageCount": "Herë të përdorur",
+  "isActive": "Aktiv",
+  "typeValues": {
+    "percent": "Përqindje",
+    "fixed": "Shumë fikse"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/createRentalPromoCode.tsx",
+  "title": "Add promo code",
+  "description": "Create a discount customers can enter when booking",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "codeLabel": "Code",
+    "codePlaceholder": "e.g. SUMMER10",
+    "typeLabel": "Discount type",
+    "typePlaceholder": "Select a type",
+    "type": {
+      "percent": "Percent off",
+      "fixed": "Fixed amount off"
+    },
+    "valueLabel": "Discount",
+    "valuePlaceholder": "Percent or amount",
+    "categoryLabel": "Category",
+    "categoryPlaceholder": "Every category",
+    "bookableFromLabel": "Bookable from",
+    "bookableFromPlaceholder": "Pick a date",
+    "bookableUntilLabel": "Bookable until",
+    "bookableUntilPlaceholder": "Pick a date",
+    "tripFromLabel": "Pickups from",
+    "tripFromPlaceholder": "Pick a date",
+    "tripUntilLabel": "Pickups until",
+    "tripUntilPlaceholder": "Pick a date",
+    "minRentalDaysLabel": "Minimum rental days",
+    "minRentalDaysPlaceholder": "e.g. 3",
+    "usageLimitLabel": "Total uses allowed",
+    "usageLimitPlaceholder": "Empty for no limit",
+    "usageLimitPerEmailLabel": "Uses per customer",
+    "usageLimitPerEmailPlaceholder": "Empty for no limit",
+    "isActiveLabel": "Active",
+    "descriptionLabel": "Internal note",
+    "descriptionPlaceholder": "Which campaign this code is for"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving promo code",
+      "time": 3000
+    },
+    "success": {
+      "title": "Promo code added",
+      "time": 3000
+    },
+    "error": {
+      "title": "Promo code could not be added. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Add promo code",
+    "description": "Create a discount customers can enter when booking"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}

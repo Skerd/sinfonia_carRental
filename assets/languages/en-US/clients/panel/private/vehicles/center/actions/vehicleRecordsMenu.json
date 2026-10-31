@@ -4,5 +4,7 @@
   "maintenance": "Service log",
   "damages": "Damages",
   "insurance": "Insurance",
-  "documents": "Documents"
+  "documents": "Documents",
+  "fines": "Fines",
+  "transfers": "Transfers"
 }

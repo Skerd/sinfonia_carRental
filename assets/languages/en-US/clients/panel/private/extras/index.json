@@ -14,6 +14,13 @@
           "Deactivate an extra to stop offering it; existing bookings keep their price.",
           "Reorder sets the order customers see on the website."
         ]
+      },
+      {
+        "title": "Protection package",
+        "items": [
+          "Choose Protection package for cover such as a lower excess. A booking can include only one.",
+          "Excess is the most the customer pays for damage. That package's deposit is held at pickup."
+        ]
       }
     ]
   },

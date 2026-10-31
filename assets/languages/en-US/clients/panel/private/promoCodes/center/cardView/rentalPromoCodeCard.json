@@ -1,0 +1,15 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/promoCodes/center/cardView/rentalPromoCodeCard.tsx",
+  "failedTitle": "Failed to load promo code",
+  "failedDescription": "Tap to retry.",
+  "type": "Discount type",
+  "value": "Discount",
+  "category": "Category",
+  "bookableUntil": "Bookable until",
+  "usageCount": "Times used",
+  "isActive": "Active",
+  "typeValues": {
+    "percent": "Percent off",
+    "fixed": "Fixed amount off"
+  }
+}

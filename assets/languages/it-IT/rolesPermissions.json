@@ -10,7 +10,14 @@
     "Vehicleinsurances": "Assicurazioni dei veicoli",
     "Vehicledocuments": "Documenti dei veicoli",
     "Vehiclemaintenances": "Manutenzione dei veicoli",
-    "Vehicledamages": "Danni ai veicoli"
+    "Vehicledamages": "Danni ai veicoli",
+    "Rentalpromocodes": "Codici promozionali",
+    "Vehiclefines": "Multe",
+    "Vehicletransfers": "Trasferimenti",
+    "Rentalbusinessaccounts": "Conti aziendali",
+    "Rentaldenyentrys": "Lista di esclusione",
+    "Rentalreviews": "Recensioni",
+    "Rentalsubscriptions": "Abbonamenti"
   },
   "permissions": {
     "Carrentalconfigs": {
@@ -36,7 +43,17 @@
       "termsVersion": "Versione delle condizioni",
       "turnaroundBufferMinutes": "Tempo di ripristino (minuti)",
       "updatedAt": "Aggiornato il",
-      "vatRate": "Aliquota IVA"
+      "vatRate": "Aliquota IVA",
+      "youngDriverUnderAge": "Conducente giovane: sotto questa età",
+      "youngDriverDailyFee": "Supplemento conducente giovane al giorno",
+      "additionalDriverDailyFee": "Supplemento conducente aggiuntivo al giorno",
+      "oneWayFee": "Supplemento sola andata (riconsegna in un'altra sede)",
+      "fuelPricePerQuarter": "Carburante per ogni quarto di serbatoio mancante",
+      "refuelServiceFee": "Costo del servizio di rifornimento",
+      "lateFeePerHour": "Penale per ritardo all'ora",
+      "cleaningFee": "Costo di pulizia",
+      "smokingFee": "Penale fumo",
+      "fineAdminFee": "Spese amministrative per multa"
     },
     "Rentallocations": {
       "address": "Indirizzo",
@@ -46,6 +63,7 @@
       "email": "E-mail",
       "isActive": "È attivo",
       "name": "Nome",
+      "oneWayFee": "Supplemento sola andata",
       "openingHours": "Orari di apertura",
       "phone": "Telefono",
       "pickupAllowed": "Ritiro consentito",
@@ -89,6 +107,7 @@
       "color": "Colore",
       "createdAt": "Creato il",
       "createdBy": "Creato da",
+      "currentLocation": "Ora a",
       "homeLocation": "Sede di riferimento",
       "images": "Foto",
       "make": "Marca",
@@ -99,6 +118,7 @@
       "odometerKm": "Chilometri km",
       "plate": "Targa",
       "purchasePrice": "Prezzo d'acquisto",
+      "readiness": "Prontezza",
       "serviceReminderSentAt": "Promemoria tagliando inviato il",
       "status": "Stato",
       "updatedAt": "Aggiornato il",
@@ -121,8 +141,11 @@
     "Rentalextras": {
       "createdAt": "Creato il",
       "createdBy": "Creato da",
+      "depositAmount": "Deposito con questo pacchetto",
       "description": "Descrizione",
+      "excessAmount": "Franchigia",
       "isActive": "È attivo",
+      "kind": "Tipo",
       "maxQuantity": "Quantità massima",
       "name": "Nome",
       "price": "Prezzo",
@@ -140,6 +163,7 @@
       "category": "Categoria",
       "confirmationSentAt": "Conferma inviata il",
       "contact": "Contatto",
+      "drivers": "Conducenti",
       "createdAt": "Creato il",
       "createdBy": "Creato da",
       "customer": "Cliente",
@@ -167,7 +191,11 @@
       "stripePaymentIntentId": "ID pagamento Stripe",
       "timeline": "Cronologia",
       "updatedAt": "Aggiornato il",
-      "vehicle": "Veicolo"
+      "vehicle": "Veicolo",
+      "needsTransfer": "Serve un trasferimento",
+      "deposit": "Deposito",
+      "agreement": "Contratto",
+      "promoCode": "Codice promozionale"
     },
     "Vehicleinsurances": {
       "attachments": "Allegati",
@@ -222,6 +250,8 @@
     },
     "Vehicledamages": {
       "area": "Zona",
+      "chargedAmount": "Addebitato al cliente",
+      "chargedAt": "Addebitato il",
       "createdAt": "Creato il",
       "createdBy": "Creato da",
       "description": "Descrizione",
@@ -236,6 +266,90 @@
       "updatedAt": "Aggiornato il",
       "vehicle": "Veicolo",
       "vehicledamages": "Danni ai veicoli"
+    },
+    "Rentalpromocodes": {
+      "bookableFrom": "Prenotabile dal",
+      "bookableUntil": "Prenotabile fino al",
+      "category": "Categoria",
+      "code": "Codice",
+      "description": "Nota interna",
+      "isActive": "Attivo",
+      "minRentalDays": "Giorni di noleggio minimi",
+      "rentalpromocodes": "Codici promozionali",
+      "tripFrom": "Ritiri dal",
+      "tripUntil": "Ritiri fino al",
+      "type": "Tipo di sconto",
+      "usageCount": "Volte usato",
+      "usageLimit": "Utilizzi totali consentiti",
+      "usageLimitPerEmail": "Utilizzi per cliente",
+      "value": "Sconto"
+    },
+    "Vehiclefines": {
+      "amount": "Importo",
+      "attachments": "Scansione del verbale",
+      "authority": "Emesso da",
+      "chargedAmount": "Addebitato al cliente",
+      "driverName": "Conducente",
+      "dueDate": "Pagare o rispondere entro",
+      "notes": "Note",
+      "offenceAt": "Data e ora dell'infrazione",
+      "place": "Luogo",
+      "reference": "Riferimento",
+      "reservation": "Prenotazione",
+      "status": "Stato",
+      "type": "Tipo",
+      "vehicle": "Veicolo",
+      "vehiclefines": "Multe"
+    },
+    "Vehicletransfers": {
+      "arriveAt": "Arrivo",
+      "departAt": "Partenza",
+      "driver": "Guidato da",
+      "fromLocation": "Da",
+      "notes": "Note",
+      "odometerKm": "Km all'arrivo",
+      "status": "Stato",
+      "toLocation": "A",
+      "vehicle": "Veicolo",
+      "vehicletransfers": "Trasferimenti"
+    },
+    "Rentalbusinessaccounts": {
+      "address": "Indirizzo",
+      "billingEmail": "Email di fatturazione",
+      "discountPercent": "Sconto %",
+      "isActive": "Attivo",
+      "name": "Nome",
+      "notes": "Note",
+      "paymentTermsDays": "Termini di pagamento (giorni)",
+      "rentalbusinessaccounts": "Conti aziendali",
+      "vatNumber": "Partita IVA"
+    },
+    "Rentaldenyentrys": {
+      "email": "Email",
+      "isActive": "Attivo",
+      "licenseNumber": "Numero di patente",
+      "reason": "Motivo",
+      "rentaldenyentrys": "Lista di esclusione"
+    },
+    "Rentalreviews": {
+      "authorName": "Nome",
+      "comment": "Commento",
+      "isPublished": "Pubblicata",
+      "rating": "Valutazione",
+      "rentalreviews": "Recensioni",
+      "reservation": "Prenotazione"
+    },
+    "Rentalsubscriptions": {
+      "category": "Categoria",
+      "contactName": "Nome del contatto",
+      "email": "Email",
+      "nextRunAt": "Prossima prenotazione",
+      "period": "Periodo",
+      "phone": "Telefono",
+      "pickupLocation": "Luogo di ritiro",
+      "price": "Prezzo per periodo",
+      "rentalsubscriptions": "Abbonamenti",
+      "status": "Stato"
     }
   }
 }

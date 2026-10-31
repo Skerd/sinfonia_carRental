@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/createRentalSubscription.tsx",
+  "title": "Add subscription",
+  "description": "Book the same category on a repeating schedule",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "contactNameLabel": "Contact name",
+    "contactNamePlaceholder": "Who the car is for",
+    "emailLabel": "Email",
+    "emailPlaceholder": "customer@email.com",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "Phone number",
+    "categoryLabel": "Category",
+    "categoryPlaceholder": "Select a category",
+    "pickupLocationLabel": "Pickup location",
+    "pickupLocationPlaceholder": "Select a location",
+    "periodLabel": "Period",
+    "periodPlaceholder": "Select a period",
+    "period": {
+      "week": "Week",
+      "month": "Month"
+    },
+    "priceLabel": "Price per period",
+    "pricePlaceholder": "0.00",
+    "statusLabel": "Status",
+    "statusPlaceholder": "Select status",
+    "status": {
+      "active": "Active",
+      "paused": "Paused",
+      "ended": "Ended"
+    },
+    "nextRunAtLabel": "Next booking",
+    "nextRunAtPlaceholder": "Pick a date",
+    "businessAccountLabel": "Business account",
+    "businessAccountPlaceholder": "Optional"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving subscription",
+      "time": 3000
+    },
+    "success": {
+      "title": "Subscription added",
+      "time": 3000
+    },
+    "error": {
+      "title": "The subscription could not be added. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Add subscription",
+    "description": "Book the same category on a repeating schedule"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}

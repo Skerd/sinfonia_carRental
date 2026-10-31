@@ -45,5 +45,7 @@
   "updatedAt": "Mis à jour le",
   "createdBy": "Créé par",
   "deletedAt": "Supprimé le",
-  "deletedBy": "Supprimé par"
+  "deletedBy": "Supprimé par",
+  "crossBorderAllowed": "Transfrontalier",
+  "crossBorderFee": "Frais transfrontaliers"
 }

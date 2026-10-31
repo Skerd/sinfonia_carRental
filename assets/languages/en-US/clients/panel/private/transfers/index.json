@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/index.tsx",
+  "title": "Transfers",
+  "description": "Cars moved between your locations",
+  "help": {
+    "ariaLabel": "About transfers",
+    "title": "About transfers",
+    "overview": "A transfer moves a car to another location. The car is blocked for bookings while it is on the way, and is counted at its new location once it arrives.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "The leave and arrive times can't be changed later; cancel the transfer and plan a new one instead.",
+          "The fleet planner shows planned transfers and bookings that need a car from another location."
+        ]
+      }
+    ]
+  },
+  "create": "Plan transfer",
+  "searchPlaceholder": "Search transfers or add filters...",
+  "noData": "No transfers yet",
+  "failTitle": "Failed to load transfers",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "vehicle": "Vehicle",
+    "fromLocation": "From",
+    "toLocation": "To",
+    "departAt": "Leaves",
+    "arriveAt": "Arrives",
+    "driver": "Driven by",
+    "status": "Status",
+    "odometerKm": "Km at arrival",
+    "notes": "Notes",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

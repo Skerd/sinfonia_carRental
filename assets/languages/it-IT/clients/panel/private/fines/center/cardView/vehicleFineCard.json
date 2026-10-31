@@ -1,0 +1,27 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/cardView/vehicleFineCard.tsx",
+  "failedTitle": "Impossibile caricare la multa",
+  "failedDescription": "Tocca per riprovare.",
+  "vehicle": "Veicolo",
+  "offenceAt": "Data e ora dell'infrazione",
+  "type": "Tipo",
+  "amount": "Importo",
+  "status": "Stato",
+  "reservation": "Prenotazione",
+  "driverName": "Conducente",
+  "typeValues": {
+    "speeding": "Eccesso di velocità",
+    "parking": "Parcheggio",
+    "red_light": "Semaforo rosso",
+    "toll": "Pedaggio",
+    "other": "Altro"
+  },
+  "statusValues": {
+    "received": "Ricevuta",
+    "driver_identified": "Conducente identificato",
+    "charged": "Addebitata al cliente",
+    "paid_by_company": "Pagata da noi",
+    "transferred": "Conducente comunicato",
+    "disputed": "Contestata"
+  }
+}

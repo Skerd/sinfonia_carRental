@@ -13,12 +13,36 @@
     "three_quarters": "3/4",
     "full": "Full"
   },
-  "damageLabel": "New damage found",
+  "damageLabel": "New damage",
   "chargesLabel": "Extra charges",
   "chargeLabel": "Charge",
   "chargePlaceholder": "e.g. Fuel refill",
   "chargeAmount": "Amount",
   "addCharge": "Add charge",
   "removeCharge": "Remove",
-  "notesLabel": "Notes"
+  "notesLabel": "Notes",
+  "damageDescription": "What is damaged",
+  "damageCost": "Estimated repair cost",
+  "addDamage": "Add damage",
+  "suggestedHint": "Worked out from the km, fuel and return time. Untick or change any of them.",
+  "addPreset": "Add {label}",
+  "photosLabel": "Photos of the car",
+  "photosSelected": "{count} photos selected",
+  "area": {
+    "front": "Front",
+    "rear": "Rear",
+    "left": "Left side",
+    "right": "Right side",
+    "roof": "Roof",
+    "interior": "Interior",
+    "windshield": "Windshield",
+    "wheels": "Wheels",
+    "underbody": "Underbody",
+    "other": "Other"
+  },
+  "severity": {
+    "minor": "minor",
+    "moderate": "moderate",
+    "major": "major"
+  }
 }

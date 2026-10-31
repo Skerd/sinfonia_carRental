@@ -1,0 +1,18 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/transfers/center/dialogs/vehicleTransferDialogs.tsx",
+  "cancel": {
+    "title": "Überführung absagen",
+    "description": "{plate} bleibt, wo es ist, und ist wieder buchbar.",
+    "confirm": "Überführung absagen"
+  },
+  "start": {
+    "title": "Das Fahrzeug fährt los",
+    "description": "Markiert {plate} als unterwegs.",
+    "confirm": "Jetzt losfahren"
+  },
+  "complete": {
+    "title": "Das Fahrzeug ist angekommen",
+    "description": "{plate} zählt ab jetzt am neuen Standort.",
+    "confirm": "Als angekommen markieren"
+  }
+}

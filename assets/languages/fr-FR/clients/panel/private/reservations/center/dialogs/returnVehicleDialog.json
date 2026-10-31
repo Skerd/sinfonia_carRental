@@ -13,12 +13,36 @@
     "three_quarters": "3/4",
     "full": "Plein"
   },
-  "damageLabel": "Nouveau dommage constaté",
+  "damageLabel": "Nouveaux dommages",
   "chargesLabel": "Frais supplémentaires",
   "chargeLabel": "Frais",
   "chargePlaceholder": "p. ex. Plein de carburant",
   "chargeAmount": "Montant",
   "addCharge": "Ajouter un frais",
   "removeCharge": "Supprimer",
-  "notesLabel": "Notes"
+  "notesLabel": "Notes",
+  "damageDescription": "Ce qui est endommagé",
+  "damageCost": "Coût de réparation estimé",
+  "addDamage": "Ajouter un dommage",
+  "suggestedHint": "Calculé à partir des km, du carburant et de l'heure de retour. Décochez ou modifiez au besoin.",
+  "addPreset": "Ajouter : {label}",
+  "photosLabel": "Photos du véhicule",
+  "photosSelected": "{count} photos sélectionnées",
+  "area": {
+    "front": "Avant",
+    "rear": "Arrière",
+    "left": "Côté gauche",
+    "right": "Côté droit",
+    "roof": "Toit",
+    "interior": "Intérieur",
+    "windshield": "Pare-brise",
+    "wheels": "Roues",
+    "underbody": "Soubassement",
+    "other": "Autre"
+  },
+  "severity": {
+    "minor": "léger",
+    "moderate": "moyen",
+    "major": "grave"
+  }
 }

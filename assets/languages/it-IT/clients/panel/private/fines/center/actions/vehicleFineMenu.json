@@ -1,0 +1,6 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/actions/vehicleFineMenu.tsx",
+  "matchDriver": "Abbina di nuovo",
+  "chargeCustomer": "Addebita al cliente",
+  "driverLetter": "Scarica la lettera del conducente"
+}

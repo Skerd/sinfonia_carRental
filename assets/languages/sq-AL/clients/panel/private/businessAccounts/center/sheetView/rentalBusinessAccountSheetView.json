@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/businessAccounts/center/sheetView/rentalBusinessAccountSheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "overview": "Përmbledhje",
+  "rentalBusinessAccountSubtitle": "Llogari biznesi",
+  "name": "Emri",
+  "vatNumber": "Numri i TVSH-së",
+  "billingEmail": "Email i faturimit",
+  "address": "Adresa",
+  "discountPercent": "Zbritje %",
+  "paymentTermsDays": "Afati i pagesës (ditë)",
+  "isActive": "Aktiv",
+  "notes": "Shënime",
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "company": "Kompania",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

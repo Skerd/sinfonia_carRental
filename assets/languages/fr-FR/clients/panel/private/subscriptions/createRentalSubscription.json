@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/subscriptions/createRentalSubscription.tsx",
+  "title": "Ajouter un abonnement",
+  "description": "Réserver la même catégorie selon un calendrier répété",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "contactNameLabel": "Nom du contact",
+    "contactNamePlaceholder": "Pour qui est la voiture",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "client@email.fr",
+    "phoneLabel": "Téléphone",
+    "phonePlaceholder": "Numéro de téléphone",
+    "categoryLabel": "Catégorie",
+    "categoryPlaceholder": "Choisir une catégorie",
+    "pickupLocationLabel": "Lieu de départ",
+    "pickupLocationPlaceholder": "Choisir un lieu",
+    "periodLabel": "Période",
+    "periodPlaceholder": "Choisir une période",
+    "period": {
+      "week": "Semaine",
+      "month": "Mois"
+    },
+    "priceLabel": "Prix par période",
+    "pricePlaceholder": "0.00",
+    "statusLabel": "Statut",
+    "statusPlaceholder": "Choisir un statut",
+    "status": {
+      "active": "Actif",
+      "paused": "En pause",
+      "ended": "Terminé"
+    },
+    "nextRunAtLabel": "Prochaine réservation",
+    "nextRunAtPlaceholder": "Choisir une date",
+    "businessAccountLabel": "Compte entreprise",
+    "businessAccountPlaceholder": "Facultatif"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement de l'abonnement",
+      "time": 3000
+    },
+    "success": {
+      "title": "Abonnement ajouté",
+      "time": 3000
+    },
+    "error": {
+      "title": "L'abonnement n'a pas pu être ajouté. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ajouter un abonnement",
+    "description": "Réserver la même catégorie selon un calendrier répété"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Ajouter"
+  }
+}

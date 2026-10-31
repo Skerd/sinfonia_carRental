@@ -1,0 +1,74 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/createVehicleFine.tsx",
+  "title": "Add fine",
+  "description": "Record a fine or toll that arrived for one of your cars",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "referenceLabel": "Reference",
+    "referencePlaceholder": "Number on the notice",
+    "vehicleLabel": "Vehicle",
+    "vehiclePlaceholder": "Select vehicle",
+    "offenceAtLabel": "Date and time of the offence",
+    "offenceAtPlaceholder": "Pick a date",
+    "typeLabel": "Type",
+    "typePlaceholder": "Select a type",
+    "type": {
+      "speeding": "Speeding",
+      "parking": "Parking",
+      "red_light": "Red light",
+      "toll": "Toll",
+      "other": "Other"
+    },
+    "authorityLabel": "Issued by",
+    "authorityPlaceholder": "e.g. Tirana traffic police",
+    "amountLabel": "Amount",
+    "amountPlaceholder": "Amount on the notice",
+    "placeLabel": "Place",
+    "placePlaceholder": "Where it happened",
+    "dueDateLabel": "Pay or reply by",
+    "dueDatePlaceholder": "Pick a date",
+    "statusLabel": "Status",
+    "statusPlaceholder": "Select status",
+    "status": {
+      "received": "Received",
+      "driver_identified": "Driver identified",
+      "charged": "Charged to customer",
+      "paid_by_company": "Paid by us",
+      "transferred": "Named the driver",
+      "disputed": "Disputed"
+    },
+    "attachmentsLabel": "Scan of the notice",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Internal notes"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving fine",
+      "time": 3000
+    },
+    "success": {
+      "title": "Fine added",
+      "time": 3000
+    },
+    "error": {
+      "title": "The fine could not be added. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Add fine",
+    "description": "Record a fine or toll that arrived for one of your cars"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}

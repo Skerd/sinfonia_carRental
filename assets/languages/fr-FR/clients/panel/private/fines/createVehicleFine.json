@@ -1,0 +1,74 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/createVehicleFine.tsx",
+  "title": "Ajouter une amende",
+  "description": "Enregistrer une amende ou un péage reçu pour un de vos véhicules",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "referenceLabel": "Référence",
+    "referencePlaceholder": "Numéro sur l'avis",
+    "vehicleLabel": "Véhicule",
+    "vehiclePlaceholder": "Choisir un véhicule",
+    "offenceAtLabel": "Date et heure de l'infraction",
+    "offenceAtPlaceholder": "Choisir une date",
+    "typeLabel": "Type",
+    "typePlaceholder": "Choisir un type",
+    "type": {
+      "speeding": "Excès de vitesse",
+      "parking": "Stationnement",
+      "red_light": "Feu rouge",
+      "toll": "Péage",
+      "other": "Autre"
+    },
+    "authorityLabel": "Émis par",
+    "authorityPlaceholder": "p. ex. police municipale",
+    "amountLabel": "Montant",
+    "amountPlaceholder": "Montant de l'avis",
+    "placeLabel": "Lieu",
+    "placePlaceholder": "Lieu de l'infraction",
+    "dueDateLabel": "Payer ou répondre avant le",
+    "dueDatePlaceholder": "Choisir une date",
+    "statusLabel": "Statut",
+    "statusPlaceholder": "Choisir un statut",
+    "status": {
+      "received": "Reçue",
+      "driver_identified": "Conducteur identifié",
+      "charged": "Facturée au client",
+      "paid_by_company": "Payée par nous",
+      "transferred": "Conducteur désigné",
+      "disputed": "Contestée"
+    },
+    "attachmentsLabel": "Scan de l'avis",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Notes internes"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement de l'amende",
+      "time": 3000
+    },
+    "success": {
+      "title": "Amende ajoutée",
+      "time": 3000
+    },
+    "error": {
+      "title": "L'amende n'a pas pu être ajoutée. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ajouter une amende",
+    "description": "Enregistrer une amende ou un péage reçu pour un de vos véhicules"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Ajouter"
+  }
+}

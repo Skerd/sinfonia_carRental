@@ -14,6 +14,12 @@
           "Shtoni festat si ditë pushimi; faqja nuk do të ofrojë marrje ose kthime në ato ditë.",
           "Një vendndodhje me rezervime nuk mund të fshihet; çaktivizojeni në vend të kësaj."
         ]
+      },
+      {
+        "title": "Tarifa e kthimit në një vend tjetër",
+        "items": [
+          "Tarifa aplikohet kur makina kthehet në një vendndodhje tjetër. Përdoret tarifa e vendit të kthimit. Nëse është bosh, përdoret tarifa e kompanisë."
+        ]
       }
     ]
   },

@@ -36,5 +36,9 @@
   "nextServiceDueAt": "Nächster Service am",
   "nextServiceDueKm": "Nächster Service bei (km)",
   "acquiredAt": "In der Flotte seit",
-  "purchasePrice": "Kaufpreis"
+  "purchasePrice": "Kaufpreis",
+  "trackerId": "Tracker",
+  "lastLatitude": "Breitengrad",
+  "lastLongitude": "Längengrad",
+  "lastReportedAt": "Zuletzt gemeldet"
 }

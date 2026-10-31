@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/denyList/index.tsx",
+  "title": "Sperrliste",
+  "description": "Kundschaft, die nicht buchen oder ein Fahrzeug abholen darf",
+  "help": {
+    "ariaLabel": "Über die Sperrliste",
+    "title": "Über die Sperrliste",
+    "overview": "Eine gesperrte E-Mail oder Führerscheinnummer wird bei der Buchung und erneut bei der Übergabe abgelehnt.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Geben Sie eine E-Mail, eine Führerscheinnummer oder beides an.",
+          "Schalten Sie Aktiv aus, um die Person wieder zuzulassen, ohne die Zeile zu löschen."
+        ]
+      }
+    ]
+  },
+  "create": "Eintrag hinzufügen",
+  "searchPlaceholder": "Sperrliste suchen oder Filter hinzufügen...",
+  "noData": "Niemand ist gesperrt",
+  "failTitle": "Sperrliste konnte nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "email": "E-Mail",
+    "licenseNumber": "Führerscheinnummer",
+    "reason": "Grund",
+    "isActive": "Aktiv",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

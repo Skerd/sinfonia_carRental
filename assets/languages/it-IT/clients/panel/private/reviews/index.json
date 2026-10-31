@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/index.tsx",
+  "title": "Recensioni",
+  "description": "Quello che i clienti hanno scritto dopo un noleggio",
+  "help": {
+    "ariaLabel": "Informazioni sulle recensioni",
+    "title": "Informazioni sulle recensioni",
+    "overview": "Un cliente può lasciare una recensione dal link di gestione dopo la riconsegna. Resta nascosta finché non la pubblichi.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Pubblica una recensione per mostrarla.",
+          "Una prenotazione può avere una sola recensione."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi recensione",
+  "searchPlaceholder": "Cerca recensioni o aggiungi filtri...",
+  "noData": "Ancora nessuna recensione",
+  "failTitle": "Impossibile caricare le recensioni",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "reservation": "Prenotazione",
+    "rating": "Valutazione",
+    "comment": "Commento",
+    "authorName": "Nome",
+    "isPublished": "Pubblicata",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

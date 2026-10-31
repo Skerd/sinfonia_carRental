@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/settleDepositDialog.tsx",
+  "title": "Mbyll depozitën",
+  "description": "E bllokuar: {held}. Ende e papaguar: {due}. Mbani shumën e papaguar; pjesa tjetër lirohet.",
+  "keepLabel": "Mbaj nga depozita",
+  "confirmKeep": "Mbaj dhe liro pjesën tjetër",
+  "confirmRelease": "Liro depozitën",
+  "cancel": "Kthehu"
+}

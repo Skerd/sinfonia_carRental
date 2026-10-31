@@ -13,12 +13,36 @@
     "three_quarters": "3/4",
     "full": "Plot"
   },
-  "damageLabel": "U gjet dëmtim i ri",
+  "damageLabel": "Dëmtime të reja",
   "chargesLabel": "Tarifa shtesë",
   "chargeLabel": "Tarifë",
   "chargePlaceholder": "p.sh. Mbushje karburanti",
   "chargeAmount": "Shuma",
   "addCharge": "Shto tarifë",
   "removeCharge": "Hiq",
-  "notesLabel": "Shënime"
+  "notesLabel": "Shënime",
+  "damageDescription": "Çfarë është dëmtuar",
+  "damageCost": "Kosto e vlerësuar e riparimit",
+  "addDamage": "Shto dëmtim",
+  "suggestedHint": "Llogaritur nga km, karburanti dhe ora e kthimit. Mund t'i hiqni ose t'i ndryshoni.",
+  "addPreset": "Shto {label}",
+  "photosLabel": "Fotot e makinës",
+  "photosSelected": "{count} foto të zgjedhura",
+  "area": {
+    "front": "Përpara",
+    "rear": "Mbrapa",
+    "left": "Ana e majtë",
+    "right": "Ana e djathtë",
+    "roof": "Çatia",
+    "interior": "Brenda",
+    "windshield": "Xhami i përparmë",
+    "wheels": "Rrotat",
+    "underbody": "Poshtë",
+    "other": "Tjetër"
+  },
+  "severity": {
+    "minor": "i lehtë",
+    "moderate": "mesatar",
+    "major": "i rëndë"
+  }
 }

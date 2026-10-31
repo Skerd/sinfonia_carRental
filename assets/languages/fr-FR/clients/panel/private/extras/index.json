@@ -14,6 +14,13 @@
           "Désactivez un supplément pour ne plus le proposer ; les réservations existantes gardent leur prix.",
           "Réorganiser définit l'ordre que les clients voient sur le site web."
         ]
+      },
+      {
+        "title": "Formule de protection",
+        "items": [
+          "Choisissez Formule de protection pour une couverture telle qu'une franchise plus basse. Une réservation ne peut en avoir qu'une.",
+          "La franchise est le maximum que le client paie pour un dommage. La caution de cette formule est bloquée au départ."
+        ]
       }
     ]
   },

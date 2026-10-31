@@ -13,6 +13,13 @@
           "Un véhicule avec des réservations à venir ne peut pas être mis en maintenance, retiré ou changé de catégorie tant que ces réservations ne sont pas déplacées sur une autre voiture.",
           "Retirez un véhicule au lieu de le supprimer : son historique reste sur les réservations passées."
         ]
+      },
+      {
+        "title": "Prêt à partir",
+        "items": [
+          "La disponibilité indique si le véhicule peut partir : prêt, à nettoyer ou à contrôler. Chaque retour la passe à nettoyer jusqu'à ce que quelqu'un la marque prête.",
+          "Actuellement à est l'endroit où se trouve le véhicule. Il change quand une location revient et quand un transfert arrive."
+        ]
       }
     ]
   },

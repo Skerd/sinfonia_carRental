@@ -13,6 +13,13 @@
           "Një automjet me rezervime të ardhshme nuk mund të kalojë në mirëmbajtje, të tërhiqet ose të kalojë në një kategori tjetër derisa ato rezervime të zhvendosen në një makinë tjetër.",
           "Tërhiqni një automjet në vend që ta fshini: historia e tij mbetet te rezervimet e kaluara."
         ]
+      },
+      {
+        "title": "Gati për nisje",
+        "items": [
+          "Gatishmëria tregon nëse makina mund të dalë: gati, duhet pastruar ose duhet kontrolluar. Çdo kthim e vendos te duhet pastruar derisa dikush ta shënojë gati.",
+          "Tani në është vendi ku ndodhet makina. Përditësohet kur një qira kthehet dhe kur mbërrin një transferim."
+        ]
       }
     ]
   },

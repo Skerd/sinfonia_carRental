@@ -23,7 +23,8 @@
   "payment": "Zahlung",
   "paymentChoice": {
     "pay_at_pickup": "Bei Abholung bezahlen",
-    "online": "Online bezahlt"
+    "online": "Online bezahlt",
+    "on_account": "Auf Rechnung"
   },
   "paymentStatus": {
     "unpaid": "Noch nicht bezahlt",
@@ -41,5 +42,22 @@
   "keepBooking": "Buchung behalten",
   "cancelBooking": "Diese Buchung stornieren",
   "cancelledNotice": "Ihre Buchung ist storniert. Allfällige Rückerstattungen gehen an Ihr ursprüngliches Zahlungsmittel.",
-  "priceTitle": "Preis"
+  "priceTitle": "Preis",
+  "amountDue": "{amount} noch zu zahlen",
+  "licenceTitle": "Führerschein",
+  "licenceHint": "Geben Sie die Nummer ein und laden Sie ein Foto hoch.",
+  "licenceNumber": "Führerscheinnummer",
+  "saveLicence": "Führerschein speichern",
+  "documentsCount": "{count} Dateien hochgeladen",
+  "extendTitle": "Das Fahrzeug länger behalten",
+  "extendAndPay": "Verlängern und die Differenz zahlen",
+  "extrasTitle": "Vor der Abholung etwas hinzufügen",
+  "payBalance": "Restbetrag zahlen",
+  "payTitle": "Jetzt zahlen",
+  "downloadAgreement": "Vertrag herunterladen",
+  "downloadInvoice": "Rechnung {number}",
+  "reviewTitle": "Wie war das Fahrzeug?",
+  "reviewComment": "Ein paar Worte",
+  "sendReview": "Bewertung senden",
+  "reviewThanks": "Danke. Die Bewertung wartet auf die Veröffentlichung."
 }

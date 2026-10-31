@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/driversDialog.tsx",
+  "cancel": "Kthehu",
+  "confirm": "Ruaj shoferët",
+  "title": "Shoferët",
+  "description": "Kush mund ta drejtojë këtë makinë. Të dhënat e patentës mund të plotësohen deri në dorëzim.",
+  "primary": "Shoferi kryesor",
+  "additional": "Shofer shtesë",
+  "addDriver": "Shto një shofer",
+  "remove": "Hiq",
+  "firstName": "Emri",
+  "lastName": "Mbiemri",
+  "birthDate": "Data e lindjes",
+  "licenseNumber": "Numri i patentës",
+  "licenseCountry": "Shteti i lëshimit",
+  "licenseIssuedAt": "Patenta e lëshuar më",
+  "licenseExpiresAt": "Patenta e vlefshme deri më",
+  "idDocumentType": "Dokumenti i identitetit",
+  "idDocumentNumber": "Numri i dokumentit",
+  "idDocumentTypes": {
+    "passport": "Pasaportë",
+    "national_id": "Kartë identiteti",
+    "other": "Tjetër"
+  }
+}

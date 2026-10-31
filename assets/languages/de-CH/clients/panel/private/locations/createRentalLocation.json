@@ -49,7 +49,9 @@
     "streetLabel": "Strasse",
     "streetPlaceholder": "Strasse eingeben",
     "timezoneLabel": "Zeitzone",
-    "timezonePlaceholder": "z. B. Europe/Zurich"
+    "timezonePlaceholder": "z. B. Europe/Zurich",
+    "oneWayFeeLabel": "Einweggebühr für Rückgaben hier",
+    "oneWayFeePlaceholder": "Leer: Einweggebühr des Unternehmens"
   },
   "axios": {
     "start": {
