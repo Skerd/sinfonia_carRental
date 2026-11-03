@@ -18,7 +18,7 @@ function TransferActionDialog({action, transfer, onClose, onUpdated, resolveLang
             title={resolveLanguageKey(`${action}.title`)}
             description={String(resolveLanguageKey(`${action}.description`)).replace("{plate}", transfer.vehicle?.plate ?? "")}
             confirmLabel={resolveLanguageKey(`${action}.confirm`)}
-            cancelLabel={resolveLanguageKey("cancel")}
+            cancelLabel={resolveLanguageKey("back")}
             loading={loading}
             onClose={onClose}
             onConfirm={() => onFilterChange({_id: transfer._id})}

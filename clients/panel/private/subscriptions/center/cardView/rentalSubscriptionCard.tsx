@@ -46,8 +46,8 @@ function RentalSubscriptionCard({
             sheetEntityProp="rentalSubscription"
             deleteUrl="/api/carRental/rentalSubscription"
             restoreUrl="/api/carRental/rentalSubscription/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="contactName"
             innerRef={innerRef}
         >

@@ -10,6 +10,7 @@ import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {VehicleDocument} from "armonia/src/modules/carRental/api/carRental/private/vehicleDocument/vehicleDocument.dto.ts";
 import VehicleDocumentSheetView from "@carRentalModule/clients/panel/private/documents/center/sheetView/vehicleDocumentSheetView.tsx";
 import {vehicleDocumentEditPath} from "@carRentalModule/clients/panel/private/documents/index.tsx";
+import VehicleDocumentMenu from "@carRentalModule/clients/panel/private/documents/center/actions/vehicleDocumentMenu.tsx";
 
 type VehicleDocumentCardProps = WithLanguageType & {
     vehicleDocument: VehicleDocument;
@@ -46,14 +47,21 @@ function VehicleDocumentCard({
             sheetEntityProp="vehicleDocument"
             deleteUrl="/api/carRental/vehicleDocument"
             restoreUrl="/api/carRental/vehicleDocument/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="vehicle"
             innerRef={innerRef}
+            sheetProps={({entity}) => ({
+                fetchId,
+                actionMenuAllowCustomChildren: true,
+                actionMenuChildren: <VehicleDocumentMenu document={entity} />,
+            })}
         >
             {({entity: row}) => (
                 <>
-                    <EntityCard.Header titlePath="vehicle" title={row.vehicle?.plate} />
+                    <EntityCard.Header titlePath="vehicle" title={row.vehicle?.plate}>
+                        <VehicleDocumentMenu document={row} />
+                    </EntityCard.Header>
                     <EntityCard.Body>
                         <EntityCardRow
                             icon={IconFileCertificate}

@@ -48,8 +48,8 @@ function VehicleFineCard({
             sheetEntityProp="vehicleFine"
             deleteUrl="/api/carRental/vehicleFine"
             restoreUrl="/api/carRental/vehicleFine/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="reference"
             innerRef={innerRef}
             sheetProps={({entity, setAction}) => ({

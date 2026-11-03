@@ -10,6 +10,10 @@ import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {RentalReview} from "armonia/src/modules/carRental/api/carRental/private/rentalReview/rentalReview.dto.ts";
 import RentalReviewSheetView from "@carRentalModule/clients/panel/private/reviews/center/sheetView/rentalReviewSheetView.tsx";
 import {rentalReviewEditPath} from "@carRentalModule/clients/panel/private/reviews/index.tsx";
+import PublishRentalReview from "@carRentalModule/clients/panel/private/reviews/center/actions/publishRentalReview.tsx";
+import UnpublishRentalReview from "@carRentalModule/clients/panel/private/reviews/center/actions/unpublishRentalReview.tsx";
+import PublishRentalReviewDialog from "@carRentalModule/clients/panel/private/reviews/center/dialogs/publishRentalReviewDialog.tsx";
+import UnpublishRentalReviewDialog from "@carRentalModule/clients/panel/private/reviews/center/dialogs/unpublishRentalReviewDialog.tsx";
 
 type RentalReviewCardProps = WithLanguageType & {
     rentalReview: RentalReview;
@@ -17,6 +21,7 @@ type RentalReviewCardProps = WithLanguageType & {
     hideActions?: boolean;
     onDelete?: (deleted?: RentalReview, response?: DeletedData) => void;
     onRestore?: () => void;
+    onPublishedChanged?: (isPublished: boolean) => void;
     sheetOnly?: boolean;
     innerRef?: RefObject<WithAxiosLifecycleRef<RentalReview> | null>;
 };
@@ -28,6 +33,7 @@ function RentalReviewCard({
     hideActions = false,
     onDelete,
     onRestore,
+    onPublishedChanged,
     sheetOnly = false,
     innerRef,
 }: RentalReviewCardProps) {
@@ -46,14 +52,54 @@ function RentalReviewCard({
             sheetEntityProp="rentalReview"
             deleteUrl="/api/carRental/rentalReview"
             restoreUrl="/api/carRental/rentalReview/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="authorName"
             innerRef={innerRef}
-        >
-            {({entity: row}) => (
+            sheetProps={({entity, setEntity}) => ({
+                fetchId,
+                onPublishedChanged: (isPublished: boolean) => {
+                    setEntity({...entity, isPublished});
+                    onPublishedChanged?.(isPublished);
+                },
+                onSheetRowPatched: (row: Partial<RentalReview>) => {
+                    setEntity({...entity, ...row});
+                    if (typeof row.isPublished === "boolean") onPublishedChanged?.(row.isPublished);
+                },
+            })}
+            extraDialogs={({action, setAction, entity, setEntity}) => (
                 <>
-                    <EntityCard.Header titlePath="authorName" title={row.authorName} />
+                    {action === "publishRentalReview" && (
+                        <PublishRentalReviewDialog
+                            open
+                            onClose={() => setAction("")}
+                            entity={entity}
+                            onSuccess={() => {
+                                setEntity({...entity, isPublished: true});
+                                onPublishedChanged?.(true);
+                            }}
+                        />
+                    )}
+                    {action === "unpublishRentalReview" && (
+                        <UnpublishRentalReviewDialog
+                            open
+                            onClose={() => setAction("")}
+                            entity={entity}
+                            onSuccess={() => {
+                                setEntity({...entity, isPublished: false});
+                                onPublishedChanged?.(false);
+                            }}
+                        />
+                    )}
+                </>
+            )}
+        >
+            {({entity: row, setAction}) => (
+                <>
+                    <EntityCard.Header titlePath="authorName" title={row.authorName}>
+                        <PublishRentalReview entity={row} onAction={setAction} />
+                        <UnpublishRentalReview entity={row} onAction={setAction} />
+                    </EntityCard.Header>
                     <EntityCard.Body>
                         <EntityCardRow
                             icon={IconCalendarEvent}

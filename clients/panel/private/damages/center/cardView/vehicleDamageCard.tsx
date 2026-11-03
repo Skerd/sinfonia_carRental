@@ -10,6 +10,7 @@ import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {VehicleDamage} from "armonia/src/modules/carRental/api/carRental/private/vehicleDamage/vehicleDamage.dto.ts";
 import VehicleDamageMenu from "@carRentalModule/clients/panel/private/damages/center/actions/vehicleDamageMenu.tsx";
+import ScheduleRepairDialog from "@carRentalModule/clients/panel/private/damages/center/dialogs/scheduleRepairDialog.tsx";
 import ChargeDamageDialog from "@carRentalModule/clients/panel/private/damages/center/dialogs/chargeDamageDialog.tsx";
 import VehicleDamageSheetView from "@carRentalModule/clients/panel/private/damages/center/sheetView/vehicleDamageSheetView.tsx";
 import {vehicleDamageEditPath} from "@carRentalModule/clients/panel/private/damages/index.tsx";
@@ -49,8 +50,8 @@ function VehicleDamageCard({
             sheetEntityProp="vehicleDamage"
             deleteUrl="/api/carRental/vehicleDamage"
             restoreUrl="/api/carRental/vehicleDamage/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="vehicle"
             innerRef={innerRef}
             sheetProps={({entity, setAction}) => ({
@@ -59,9 +60,12 @@ function VehicleDamageCard({
                 onActionMenuAction: setAction,
                 actionMenuChildren: <VehicleDamageMenu damage={entity} onAction={setAction} />,
             })}
-            extraDialogs={({action, setAction, entity, setEntity}) => (action === "chargeToCustomer" ? (
-                <ChargeDamageDialog damage={entity} onClose={() => setAction("")} onUpdated={(updated: VehicleDamage) => setEntity({...entity, ...updated})} />
-            ) : null)}
+            extraDialogs={({action, setAction, entity, setEntity}) => {
+                const onUpdated = (updated: VehicleDamage) => setEntity({...entity, ...updated});
+                if (action === "chargeToCustomer") return <ChargeDamageDialog damage={entity} onClose={() => setAction("")} onUpdated={onUpdated} />;
+                if (action === "scheduleRepair") return <ScheduleRepairDialog damage={entity} onClose={() => setAction("")} onUpdated={onUpdated} />;
+                return null;
+            }}
         >
             {({entity: row, read, setAction}) => (
                 <>

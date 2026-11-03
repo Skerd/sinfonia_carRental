@@ -10,10 +10,17 @@ import {handleError} from "@coreModule/helpers/general/errors.ts";
 import Header from "@coreModule/components/custom/header.tsx";
 import {readPageHelp} from "@coreModule/components/custom/pageHelp.tsx";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
+import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
-import {NativeSelect} from "@coreModule/components/ui/native-select.tsx";
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@coreModule/components/ui/select.tsx";
 import type {ApiSelectDatum} from "armonia/src/modules/core/types/shared.types.ts";
 import type {
     RentalCounterFormType,
@@ -259,7 +266,7 @@ function RentalCounterPage({
         void apiClient
             .post<{data: ApiSelectDatum[]}>(
                 "/api/carRental/rentalLocation/select",
-                {limit: 100},
+                {page: 1, limit: 100},
             )
             .then((res) => setLocations(res.data.data))
             .catch(() => setLocations([]));
@@ -308,41 +315,50 @@ function RentalCounterPage({
                 description={String(resolveLanguageKey("description"))}
                 help={readPageHelp(resolveLanguageKey)}
             />
-            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-end">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
                 <div className="flex items-center gap-2">
-                    <Input
+                    <DateInput
                         aria-label={String(resolveLanguageKey("date"))}
-                        type="date"
+                        valueFormat="yyyy-MM-dd"
+                        displayFormat="PP"
                         value={date}
-                        onChange={(event) =>
-                            event.target.value && setDate(event.target.value)
-                        }
-                        className="w-full sm:w-40"
+                        onChange={(value) => value && setDate(value)}
+                        className="w-full sm:w-44"
                     />
                     <Button
                         type="button"
                         variant="ghost"
-                        className="h-11"
                         onClick={() => setDate(localToday())}
                     >
                         {resolveLanguageKey("today")}
                     </Button>
                 </div>
-                <NativeSelect
-                    aria-label={String(resolveLanguageKey("location"))}
-                    value={location}
-                    onChange={(event) => setLocation(event.target.value)}
-                    className="w-full sm:w-52"
+                <Select
+                    value={location || "all"}
+                    onValueChange={(value) =>
+                        setLocation(value === "all" ? "" : value)
+                    }
                 >
-                    <option value="">
-                        {resolveLanguageKey("allLocations")}
-                    </option>
-                    {locations.map((entry) => (
-                        <option key={entry.value} value={entry.value}>
-                            {entry.label}
-                        </option>
-                    ))}
-                </NativeSelect>
+                    <SelectTrigger
+                        aria-label={String(resolveLanguageKey("location"))}
+                        className="w-full sm:w-52"
+                    >
+                        <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                        <SelectItem value="all">
+                            {resolveLanguageKey("allLocations")}
+                        </SelectItem>
+                        {locations.map((entry) => (
+                            <SelectItem
+                                key={String(entry.value)}
+                                value={String(entry.value)}
+                            >
+                                {entry.label}
+                            </SelectItem>
+                        ))}
+                    </SelectContent>
+                </Select>
                 <Input
                     aria-label={String(resolveLanguageKey("search"))}
                     value={search}

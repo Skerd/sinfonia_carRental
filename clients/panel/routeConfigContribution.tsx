@@ -63,22 +63,20 @@ import AllRentalSubscriptions from "@carRentalModule/clients/panel/private/subsc
 import CreateRentalSubscription from "@carRentalModule/clients/panel/private/subscriptions/createRentalSubscription.tsx";
 import EditRentalSubscription from "@carRentalModule/clients/panel/private/subscriptions/editRentalSubscription.tsx";
 
-/** `list` gets the URL's query, so a list can open filtered (`?vehicleId=` from a car's records menu). */
+/** `list` gets the URL's query. A car's records menu opens these filtered (`?vehicleId=`). */
 type CrudPages = {
     list: (searchParams: URLSearchParams) => ReactNode;
     create?: () => ReactNode;
     edit?: (entityId: string) => ReactNode;
     idParam: string;
 };
-const vehicleOf = (searchParams: URLSearchParams) =>
-    searchParams.get("vehicleId") ?? undefined;
 
 const PAGES: Record<string, CrudPages> = {
     planner: {list: () => <RentalPlannerPage />, idParam: ""},
     counter: {list: () => <RentalCounterPage />, idParam: ""},
     reports: {list: () => <RentalReportsPage />, idParam: ""},
     reservations: {
-        list: (p) => <AllRentalReservations vehicleId={vehicleOf(p)} />,
+        list: () => <AllRentalReservations />,
         create: () => <CreateRentalReservation />,
         idParam: "rentalReservationId",
     },
@@ -95,37 +93,37 @@ const PAGES: Record<string, CrudPages> = {
         idParam: "vehicleBlockId",
     },
     insurance: {
-        list: (p) => <AllVehicleInsurances vehicleId={vehicleOf(p)} />,
+        list: () => <AllVehicleInsurances />,
         create: () => <CreateVehicleInsurance />,
         edit: (id) => <EditVehicleInsurance entityId={id} />,
         idParam: "vehicleInsuranceId",
     },
     documents: {
-        list: (p) => <AllVehicleDocuments vehicleId={vehicleOf(p)} />,
+        list: () => <AllVehicleDocuments />,
         create: () => <CreateVehicleDocument />,
         edit: (id) => <EditVehicleDocument entityId={id} />,
         idParam: "vehicleDocumentId",
     },
     maintenance: {
-        list: (p) => <AllVehicleMaintenances vehicleId={vehicleOf(p)} />,
+        list: () => <AllVehicleMaintenances />,
         create: () => <CreateVehicleMaintenance />,
         edit: (id) => <EditVehicleMaintenance entityId={id} />,
         idParam: "vehicleMaintenanceId",
     },
     damages: {
-        list: (p) => <AllVehicleDamages vehicleId={vehicleOf(p)} />,
+        list: () => <AllVehicleDamages />,
         create: () => <CreateVehicleDamage />,
         edit: (id) => <EditVehicleDamage entityId={id} />,
         idParam: "vehicleDamageId",
     },
     fines: {
-        list: (p) => <AllVehicleFines vehicleId={vehicleOf(p)} />,
+        list: () => <AllVehicleFines />,
         create: () => <CreateVehicleFine />,
         edit: (id) => <EditVehicleFine entityId={id} />,
         idParam: "vehicleFineId",
     },
     transfers: {
-        list: (p) => <AllVehicleTransfers vehicleId={vehicleOf(p)} />,
+        list: () => <AllVehicleTransfers />,
         create: () => <CreateVehicleTransfer />,
         edit: (id) => <EditVehicleTransfer entityId={id} />,
         idParam: "vehicleTransferId",

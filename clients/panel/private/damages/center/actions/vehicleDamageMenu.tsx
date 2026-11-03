@@ -3,25 +3,43 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
 import {DropdownMenuItem} from "@coreModule/components/ui/dropdown-menu.tsx";
-import {IconReceipt} from "@tabler/icons-react";
+import {IconReceipt, IconTool} from "@tabler/icons-react";
 import type {VehicleDamage} from "armonia/src/modules/carRental/api/carRental/private/vehicleDamage/vehicleDamage.dto.ts";
 
-export type VehicleDamageAction = "chargeToCustomer";
+export type VehicleDamageAction = "scheduleRepair" | "chargeToCustomer";
 
 type Props = WithLanguageType & {
     damage: VehicleDamage;
     onAction: (action: VehicleDamageAction) => void;
 };
 
-/** Charging a damage needs a linked booking and the right to change bookings. */
+/**
+ * An open damage can be sent to repair; one with a linked booking can be charged to that
+ * customer once. Both need the right to change bookings.
+ */
 function VehicleDamageMenu({damage, onAction, resolveLanguageKey}: Props) {
     const {write} = useAccess("rentalreservations");
-    if (damage.deletedAt || !damage.reservation || damage.chargedAmount || !write?.status) return null;
+    if (damage.deletedAt || !write?.status) return null;
+    const open = (action: VehicleDamageAction) => (e: {preventDefault(): void; stopPropagation(): void}) => {
+        e.preventDefault();
+        e.stopPropagation();
+        onAction(action);
+    };
     return (
-        <DropdownMenuItem onClick={(e) => { e.preventDefault(); e.stopPropagation(); onAction("chargeToCustomer"); }}>
-            <IconReceipt size={16} />
-            <p>{resolveLanguageKey("chargeToCustomer")}</p>
-        </DropdownMenuItem>
+        <>
+            {damage.status === "open" && (
+                <DropdownMenuItem onClick={open("scheduleRepair")}>
+                    <IconTool size={16} />
+                    <p>{resolveLanguageKey("scheduleRepair")}</p>
+                </DropdownMenuItem>
+            )}
+            {damage.reservation && !damage.chargedAmount && (
+                <DropdownMenuItem onClick={open("chargeToCustomer")}>
+                    <IconReceipt size={16} />
+                    <p>{resolveLanguageKey("chargeToCustomer")}</p>
+                </DropdownMenuItem>
+            )}
+        </>
     );
 }
 

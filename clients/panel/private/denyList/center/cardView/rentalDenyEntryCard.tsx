@@ -46,8 +46,8 @@ function RentalDenyEntryCard({
             sheetEntityProp="rentalDenyEntry"
             deleteUrl="/api/carRental/rentalDenyEntry"
             restoreUrl="/api/carRental/rentalDenyEntry/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="reason"
             innerRef={innerRef}
         >

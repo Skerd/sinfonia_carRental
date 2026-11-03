@@ -46,8 +46,8 @@ function RentalPromoCodeCard({
             sheetEntityProp="rentalPromoCode"
             deleteUrl="/api/carRental/rentalPromoCode"
             restoreUrl="/api/carRental/rentalPromoCode/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="code"
             innerRef={innerRef}
         >

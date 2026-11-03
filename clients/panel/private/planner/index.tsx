@@ -10,7 +10,7 @@ import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
 import {NativeSelect} from "@coreModule/components/ui/native-select.tsx";
-import type {ApiSelectDatum} from "armonia/src/modules/core/types/shared.types.ts";
+import type {ApiSelectDatum, SelectResponse} from "armonia/src/modules/core/types/shared.types.ts";
 import type {RentalPlannerFormType, RentalPlannerResponse} from "armonia/src/modules/carRental/api/carRental/private/rentalPlanner/rentalPlanner.ts";
 import RentalReservationSheetView from "@carRentalModule/clients/panel/private/reservations/center/sheetView/rentalReservationSheetView.tsx";
 
@@ -46,7 +46,14 @@ function RentalPlannerPage({resolveLanguageKey, languageCode}: WithLanguageType)
     const [dragging, setDragging] = useState<{id: string; categoryId: string} | null>(null);
 
     useEffect(() => {
-        const options = (url: string) => apiClient.post<{data: ApiSelectDatum[]}>(url, {limit: 100}).then((res) => res.data.data).catch(() => []);
+        const options = (url: string): Promise<ApiSelectDatum[]> =>
+            apiClient
+                .post<SelectResponse>(url, {page: 1, limit: 100})
+                .then((res) => res.data.data)
+                .catch((error: unknown) => {
+                    handleError(error, {context: "RentalPlannerOptions"});
+                    return [];
+                });
         void options("/api/carRental/rentalLocation/select").then(setLocations);
         void options("/api/carRental/vehicleCategory/select").then(setCategories);
     }, []);

@@ -1,7 +1,9 @@
+import {useMemo} from "react";
 import {compose} from "redux";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
+import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage from "@coreModule/components/entityPage/pages/entityListPage.tsx";
+import EntityListPage, {type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
 import type {RentalDenyEntry} from "armonia/src/modules/carRental/api/carRental/private/rentalDenyEntry/rentalDenyEntry.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
@@ -13,6 +15,13 @@ export function rentalDenyEntryEditPath(row: {_id: string}) {
 }
 
 function AllRentalDenyEntrys({resolveLanguageKey}: WithLanguageType) {
+    const quickFilters = useMemo<QuickFilterDef[]>(() => [
+        {
+            field: "isActive",
+            label: resolveLanguageKey("fields.isActive"),
+            type: COLUMN_TYPE.BOOLEAN,
+        },
+    ], [resolveLanguageKey]);
     return (
         <EntityListPage<RentalDenyEntry>
             apiUrl="/api/carRental/rentalDenyEntry"
@@ -24,6 +33,7 @@ function AllRentalDenyEntrys({resolveLanguageKey}: WithLanguageType) {
             createLanguageKey="create"
             buildEditPath={rentalDenyEntryEditPath}
             resolveLanguageKey={resolveLanguageKey}
+            quickFilters={quickFilters}
             sheetLanguagePath="src/modules/carRental/clients/panel/private/denyList/center/sheetView/rentalDenyEntrySheetView.tsx"
             cardViewClassName="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             renderSheet={({open, onOpenChange, entity, onDelete, onRestore}) => (

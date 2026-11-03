@@ -2,17 +2,32 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCar, IconCategory, IconMapPin, IconSparkles, IconStatusChange} from "@tabler/icons-react";
+import {IconCar, IconCategory, IconMapPin, IconStatusChange} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
+import {Badge} from "@coreModule/components/ui/badge.tsx";
+import {cn} from "@coreModule/components/lib/utils.ts";
+import DisplayValue from "@coreModule/components/viewEngine/widgets/display/displayValue.tsx";
+import {
+    STATUS_BADGE_DANGER,
+    STATUS_BADGE_SUCCESS,
+    STATUS_BADGE_WARNING,
+} from "@coreModule/components/entityPage/list/entityCard.constants.ts";
 import {AccessGatedGalleryCarousel} from "@coreModule/components/viewEngine/widgets/gallery/galleryCarousel.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {Vehicle} from "armonia/src/modules/carRental/api/carRental/private/vehicle/vehicle.dto.ts";
+import type {VehicleReadiness} from "armonia/src/modules/carRental/api/carRental/private/vehicle/vehicle.schema-def.ts";
 import VehicleSheetView from "@carRentalModule/clients/panel/private/vehicles/center/sheetView/vehicleSheetView.tsx";
 import {vehicleEditPath} from "@carRentalModule/clients/panel/private/vehicles/index.tsx";
 import VehicleRecordsMenu from "@carRentalModule/clients/panel/private/vehicles/center/actions/vehicleRecordsMenu.tsx";
 import VehicleReadinessMenu from "@carRentalModule/clients/panel/private/vehicles/center/actions/vehicleReadinessMenu.tsx";
+
+const READINESS_BADGE: Record<VehicleReadiness, string> = {
+    ready: STATUS_BADGE_SUCCESS,
+    needs_cleaning: STATUS_BADGE_WARNING,
+    needs_check: STATUS_BADGE_DANGER,
+};
 
 type VehicleCardProps = WithLanguageType & {
     vehicle: Vehicle;
@@ -49,8 +64,8 @@ function VehicleCard({
             sheetEntityProp="vehicle"
             deleteUrl="/api/carRental/vehicle"
             restoreUrl="/api/carRental/vehicle/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="plate"
             innerRef={innerRef}
         >
@@ -70,9 +85,22 @@ function VehicleCard({
                             coverAfterFirst
                         />
                     </div>
-                    <EntityCard.Header titlePath="plate" title={row.plate}>
+                    <EntityCard.Header
+                        titlePath="plate"
+                        title={row.plate}
+                        badgesBesideTitle
+                        badges={
+                            <DisplayValue path="readiness" value={row.readiness}>
+                                {() => (
+                                    <Badge variant="outline" className={cn("text-xs", READINESS_BADGE[row.readiness])}>
+                                        {String(resolveLanguageKey(`readinessValues.${row.readiness}`))}
+                                    </Badge>
+                                )}
+                            </DisplayValue>
+                        }
+                    >
                         <VehicleReadinessMenu vehicle={row} onUpdated={setEntity} />
-                        <VehicleRecordsMenu vehicleId={row._id} />
+                        <VehicleRecordsMenu vehicle={row} />
                     </EntityCard.Header>
                     <EntityCard.Body>
                         <EntityCardRow
@@ -104,15 +132,6 @@ function VehicleCard({
                             type="enum"
                             languageKeyCategory="statusValues"
                             value={row.status}
-                        />
-                        <EntityCardRow
-                            icon={IconSparkles}
-                            label={resolveLanguageKey("readiness")}
-                            tooltip={resolveLanguageKey("readiness")}
-                            path="readiness"
-                            type="enum"
-                            languageKeyCategory="readinessValues"
-                            value={row.readiness}
                         />
                     </EntityCard.Body>
                 </>

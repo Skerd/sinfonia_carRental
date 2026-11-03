@@ -3,8 +3,10 @@ import {useNavigate} from "react-router-dom";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
+import {useDismissSheetBeforeMenuNavigate} from "@coreModule/components/viewEngine/sheet/widgets/sheetMenuNavigateDismiss.tsx";
 import {DropdownMenuItem} from "@coreModule/components/ui/dropdown-menu.tsx";
-import {IconCalendarEvent, IconCarCrash, IconEngine, IconFileCertificate, IconReceipt2, IconShieldCheck, IconTransfer} from "@tabler/icons-react";
+import {IconBan, IconCalendarEvent, IconCarCrash, IconEngine, IconFileCertificate, IconReceipt2, IconShieldCheck, IconTransfer} from "@tabler/icons-react";
+import {vehicleRecordsPath, type VehicleScopeTarget} from "@carRentalModule/clients/panel/vehicleScope.ts";
 
 /** Each record list a car links to: page key, access model, icon. */
 const RECORDS = [
@@ -15,13 +17,15 @@ const RECORDS = [
     {key: "documents", model: "vehicledocuments", Icon: IconFileCertificate},
     {key: "fines", model: "vehiclefines", Icon: IconReceipt2},
     {key: "transfers", model: "vehicletransfers", Icon: IconTransfer},
+    {key: "blocks", model: "vehicleblocks", Icon: IconBan},
 ] as const;
 
-type Props = WithLanguageType & {vehicleId: string};
+type Props = WithLanguageType & {vehicle: VehicleScopeTarget};
 
-/** Opens a car's bookings, service log, damages, policies, documents, fines or transfers, each list filtered to that car. */
-function VehicleRecordsMenu({vehicleId, resolveLanguageKey}: Props) {
+/** Opens a car's bookings, service log, damages, policies, documents, fines, transfers or blocks, each list filtered to that car. */
+function VehicleRecordsMenu({vehicle, resolveLanguageKey}: Props) {
     const navigate = useNavigate();
+    const dismissSheetIfHosted = useDismissSheetBeforeMenuNavigate();
     const access = {
         rentalreservations: useAccess("rentalreservations"),
         vehiclemaintenances: useAccess("vehiclemaintenances"),
@@ -30,6 +34,7 @@ function VehicleRecordsMenu({vehicleId, resolveLanguageKey}: Props) {
         vehicledocuments: useAccess("vehicledocuments"),
         vehiclefines: useAccess("vehiclefines"),
         vehicletransfers: useAccess("vehicletransfers"),
+        vehicleblocks: useAccess("vehicleblocks"),
     };
 
     return (
@@ -40,7 +45,8 @@ function VehicleRecordsMenu({vehicleId, resolveLanguageKey}: Props) {
                     onClick={(e) => {
                         e.preventDefault();
                         e.stopPropagation();
-                        navigate(`/carRental/${key}?vehicleId=${vehicleId}`);
+                        dismissSheetIfHosted?.();
+                        navigate(vehicleRecordsPath(key, vehicle, window.location.search));
                     }}
                 >
                     <Icon size={16} />

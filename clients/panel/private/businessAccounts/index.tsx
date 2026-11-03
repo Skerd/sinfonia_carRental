@@ -1,11 +1,12 @@
-import {useState} from "react";
+import {useMemo, useState} from "react";
 import {compose} from "redux";
 import withLanguage, {
     WithLanguageType,
 } from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage from "@coreModule/components/entityPage/pages/entityListPage.tsx";
+import EntityListPage, {type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
+import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators";
 import type {RentalBusinessAccount} from "armonia/src/modules/carRental/api/carRental/private/rentalBusinessAccount/rentalBusinessAccount.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import RentalBusinessAccountCard from "./center/cardView/rentalBusinessAccountCard.tsx";
@@ -20,6 +21,13 @@ export function rentalBusinessAccountEditPath(row: {_id: string}) {
 function AllRentalBusinessAccounts({resolveLanguageKey}: WithLanguageType) {
     const [statementAccount, setStatementAccount] =
         useState<RentalBusinessAccount | null>(null);
+    const quickFilters = useMemo<QuickFilterDef[]>(() => [
+        {
+            field: "isActive",
+            label: resolveLanguageKey("fields.isActive"),
+            type: COLUMN_TYPE.BOOLEAN,
+        },
+    ], [resolveLanguageKey]);
     return (
         <>
             <EntityListPage<RentalBusinessAccount>
@@ -39,6 +47,7 @@ function AllRentalBusinessAccounts({resolveLanguageKey}: WithLanguageType) {
                 createLanguageKey="create"
                 buildEditPath={rentalBusinessAccountEditPath}
                 resolveLanguageKey={resolveLanguageKey}
+                quickFilters={quickFilters}
                 sheetLanguagePath="src/modules/carRental/clients/panel/private/businessAccounts/center/sheetView/rentalBusinessAccountSheetView.tsx"
                 cardViewClassName="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
                 renderSheet={({

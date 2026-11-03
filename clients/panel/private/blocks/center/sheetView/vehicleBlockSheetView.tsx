@@ -41,6 +41,8 @@ function VehicleBlockSheetView({
 
     const entityId = vehicleBlockProp?._id ?? fetchId;
     if (!viewConfig || !entityId) return null;
+    // A transfer's or service's block is changed through that record.
+    const managed = Boolean(sheetData.source);
 
     return (
         <SheetViewRenderer
@@ -54,6 +56,8 @@ function VehicleBlockSheetView({
             resolveLanguageKey={resolveLanguageKey}
             access={access}
             hideActions={hideActions}
+            hideEdit={managed}
+            hideDelete={managed}
             onDelete={onDelete}
             onRestore={onRestore}
             editPath={`/carRental/blocks/edit?vehicleBlockId=${entityId}`}

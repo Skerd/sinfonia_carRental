@@ -9,6 +9,6 @@ export default createGenericCreatePage<CreateRentalReviewFormType>({
     accessModel: "rentalreviews",
     apiUrl: "/api/carRental/rentalReview",
     schema: createRentalReviewFormSchema,
-    defaultValues: {reservation: "", authorName: "", isPublished: false},
+    defaultValues: {reservation: "", authorName: ""},
     submitIcon: <IconPlus />,
 });

@@ -9,6 +9,8 @@ import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {VehicleInsurance} from "armonia/src/modules/carRental/api/carRental/private/vehicleInsurance/vehicleInsurance.dto.ts";
 import VehicleInsuranceSheetView from "@carRentalModule/clients/panel/private/insurance/center/sheetView/vehicleInsuranceSheetView.tsx";
+import VehicleInsuranceMenu from "@carRentalModule/clients/panel/private/insurance/center/actions/vehicleInsuranceMenu.tsx";
+import VehicleInsuranceDialogs from "@carRentalModule/clients/panel/private/insurance/center/dialogs/vehicleInsuranceDialogs.tsx";
 import {vehicleInsuranceEditPath} from "@carRentalModule/clients/panel/private/insurance/index.tsx";
 
 type VehicleInsuranceCardProps = WithLanguageType & {
@@ -46,14 +48,25 @@ function VehicleInsuranceCard({
             sheetEntityProp="vehicleInsurance"
             deleteUrl="/api/carRental/vehicleInsurance"
             restoreUrl="/api/carRental/vehicleInsurance/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="policyNumber"
             innerRef={innerRef}
+            hideEdit={(row) => row.status === "cancelled"}
+            extraDialogs={({action, setAction, entity, setEntity}) => (
+                <VehicleInsuranceDialogs
+                    action={action}
+                    policy={entity}
+                    onClose={() => setAction("")}
+                    onUpdated={(updated) => setEntity({...entity, ...updated})}
+                />
+            )}
         >
-            {({entity: row}) => (
+            {({entity: row, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="policyNumber" title={row.policyNumber} />
+                    <EntityCard.Header titlePath="policyNumber" title={row.policyNumber}>
+                        <VehicleInsuranceMenu policy={row} onAction={setAction} />
+                    </EntityCard.Header>
                     <EntityCard.Body>
                         <EntityCardRow
                             icon={IconCar}

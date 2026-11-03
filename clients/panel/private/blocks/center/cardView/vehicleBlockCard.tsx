@@ -46,10 +46,12 @@ function VehicleBlockCard({
             sheetEntityProp="vehicleBlock"
             deleteUrl="/api/carRental/vehicleBlock"
             restoreUrl="/api/carRental/vehicleBlock/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="vehicle"
             innerRef={innerRef}
+            hideEdit={(row) => Boolean(row.source)}
+            hideDelete={(row) => Boolean(row.source)}
         >
             {({entity: row}) => (
                 <>

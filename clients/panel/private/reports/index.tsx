@@ -30,7 +30,7 @@ import {
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
 import {NativeSelect} from "@coreModule/components/ui/native-select.tsx";
-import type {ApiSelectDatum} from "armonia/src/modules/core/types/shared.types.ts";
+import type {ApiSelectDatum, SelectResponse} from "armonia/src/modules/core/types/shared.types.ts";
 import type {
     RentalReportsFormType,
     RentalReportsResponse,
@@ -64,9 +64,9 @@ function ReportsPage({resolveLanguageKey}: WithLanguageType) {
 
     useEffect(() => {
         apiClient
-            .post<{data: ApiSelectDatum[]}>(
+            .post<SelectResponse>(
                 "/api/carRental/rentalLocation/select",
-                {limit: 100},
+                {page: 1, limit: 100},
             )
             .then((res) => {
                 setLocations(res.data.data ?? []);
@@ -267,6 +267,12 @@ function ReportsPage({resolveLanguageKey}: WithLanguageType) {
                                 <th className="py-2 pr-3">
                                     {resolveLanguageKey("insurance")}
                                 </th>
+                                <th className="py-2 pr-3">
+                                    {resolveLanguageKey("fines")}
+                                </th>
+                                <th className="py-2 pr-3">
+                                    {resolveLanguageKey("recovered")}
+                                </th>
                                 <th className="py-2">
                                     {resolveLanguageKey("payback")}
                                 </th>
@@ -293,6 +299,12 @@ function ReportsPage({resolveLanguageKey}: WithLanguageType) {
                                     </td>
                                     <td className="py-2 pr-3">
                                         {row.insurancePremium}
+                                    </td>
+                                    <td className="py-2 pr-3">
+                                        {row.finesCost}
+                                    </td>
+                                    <td className="py-2 pr-3">
+                                        {row.recovered}
                                     </td>
                                     <td className="py-2">
                                         {row.payback !== undefined

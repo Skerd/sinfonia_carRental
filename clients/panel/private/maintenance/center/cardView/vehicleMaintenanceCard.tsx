@@ -10,6 +10,8 @@ import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {VehicleMaintenance} from "armonia/src/modules/carRental/api/carRental/private/vehicleMaintenance/vehicleMaintenance.dto.ts";
 import VehicleMaintenanceSheetView from "@carRentalModule/clients/panel/private/maintenance/center/sheetView/vehicleMaintenanceSheetView.tsx";
 import {vehicleMaintenanceEditPath} from "@carRentalModule/clients/panel/private/maintenance/index.tsx";
+import VehicleMaintenanceMenu from "@carRentalModule/clients/panel/private/maintenance/center/actions/vehicleMaintenanceMenu.tsx";
+import VehicleMaintenanceDialogs from "@carRentalModule/clients/panel/private/maintenance/center/dialogs/vehicleMaintenanceDialogs.tsx";
 
 type VehicleMaintenanceCardProps = WithLanguageType & {
     vehicleMaintenance: VehicleMaintenance;
@@ -46,14 +48,25 @@ function VehicleMaintenanceCard({
             sheetEntityProp="vehicleMaintenance"
             deleteUrl="/api/carRental/vehicleMaintenance"
             restoreUrl="/api/carRental/vehicleMaintenance/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="vehicle"
             innerRef={innerRef}
+            sheetProps={({entity, setAction}) => ({
+                fetchId,
+                actionMenuAllowCustomChildren: true,
+                onActionMenuAction: setAction,
+                actionMenuChildren: <VehicleMaintenanceMenu record={entity} onAction={setAction} />,
+            })}
+            extraDialogs={({action, setAction, entity, setEntity}) => (
+                <VehicleMaintenanceDialogs action={action} record={entity} onClose={() => setAction("")} onUpdated={(updated: VehicleMaintenance) => setEntity({...entity, ...updated})} />
+            )}
         >
-            {({entity: row}) => (
+            {({entity: row, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="vehicle" title={row.vehicle?.plate} />
+                    <EntityCard.Header titlePath="vehicle" title={row.vehicle?.plate}>
+                        <VehicleMaintenanceMenu record={row} onAction={setAction} />
+                    </EntityCard.Header>
                     <EntityCard.Body>
                         <EntityCardRow
                             icon={IconTool}

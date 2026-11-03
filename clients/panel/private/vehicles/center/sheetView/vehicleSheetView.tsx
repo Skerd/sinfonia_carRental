@@ -8,6 +8,7 @@ import {useViewConfig} from "@coreModule/helpers/hooks/useViewConfig.ts";
 import type {Vehicle} from "armonia/src/modules/carRental/api/carRental/private/vehicle/vehicle.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import VehicleRecordsMenu from "@carRentalModule/clients/panel/private/vehicles/center/actions/vehicleRecordsMenu.tsx";
+import {vehicleCategoryScope, type VehicleScopeTarget} from "@carRentalModule/clients/panel/vehicleScope.ts";
 
 type VehicleSheetViewOwnProps = {
     open: boolean;
@@ -43,6 +44,8 @@ function VehicleSheetView({
     const entityId = vehicleProp?._id ?? fetchId;
     if (!viewConfig || !entityId) return null;
 
+    const category: VehicleScopeTarget["category"] = vehicleCategoryScope(sheetData.category ?? vehicleProp?.category);
+
     return (
         <SheetViewRenderer
             config={viewConfig}
@@ -58,7 +61,17 @@ function VehicleSheetView({
             onDelete={onDelete}
             onRestore={onRestore}
             actionMenuAllowCustomChildren
-            actionMenuChildren={<VehicleRecordsMenu vehicleId={entityId} />}
+            actionMenuChildren={
+                <VehicleRecordsMenu
+                    vehicle={{
+                        _id: entityId,
+                        plate: typeof sheetData.plate === "string" ? sheetData.plate : vehicleProp?.plate,
+                        make: typeof sheetData.make === "string" ? sheetData.make : vehicleProp?.make,
+                        model: typeof sheetData.model === "string" ? sheetData.model : vehicleProp?.model,
+                        category,
+                    }}
+                />
+            }
             editPath={`/carRental/vehicles/edit?vehicleId=${entityId}`}
             onSheetRowPatched={(row) => {
                 setSheetData(row);

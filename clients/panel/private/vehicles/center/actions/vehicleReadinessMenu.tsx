@@ -7,7 +7,7 @@ import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
 import {handleError} from "@coreModule/helpers/general/errors.ts";
 import {DropdownMenuItem} from "@coreModule/components/ui/dropdown-menu.tsx";
 import {IconAlertTriangle, IconSparkles} from "@tabler/icons-react";
-import type {Vehicle} from "armonia/src/modules/carRental/api/carRental/private/vehicle/vehicle.dto.ts";
+import type {SetVehicleReadinessResult, Vehicle} from "armonia/src/modules/carRental/api/carRental/private/vehicle/vehicle.dto.ts";
 import type {VehicleReadiness} from "armonia/src/modules/carRental/api/carRental/private/vehicle/vehicle.schema-def.ts";
 
 type Props = WithLanguageType & {vehicle: Vehicle; onUpdated: (vehicle: Vehicle) => void};
@@ -18,8 +18,8 @@ function VehicleReadinessMenu({vehicle, onUpdated, resolveLanguageKey}: Props) {
     if (vehicle.deletedAt || !write?.status) return null;
     const set = async (readiness: VehicleReadiness) => {
         try {
-            const res = await apiClient.post<Vehicle>("/api/carRental/vehicle/setReadiness", {_id: vehicle._id, readiness});
-            onUpdated({...vehicle, ...res.data});
+            const res = await apiClient.post<SetVehicleReadinessResult>("/api/carRental/vehicle/setReadiness", {_id: vehicle._id, readiness});
+            onUpdated({...vehicle, readiness: res.data.readiness});
             toast.success(String(resolveLanguageKey(`done.${readiness}`)));
         } catch (error) {
             handleError(error, {context: "VehicleReadiness"});
@@ -28,13 +28,13 @@ function VehicleReadinessMenu({vehicle, onUpdated, resolveLanguageKey}: Props) {
     return (
         <>
             {vehicle.readiness !== "ready" ? (
-                <DropdownMenuItem onClick={(e) => { e.preventDefault(); e.stopPropagation(); void set("ready"); }}>
+                <DropdownMenuItem onClick={() => { void set("ready"); }}>
                     <IconSparkles size={16} />
                     <p>{resolveLanguageKey("markReady")}</p>
                 </DropdownMenuItem>
             ) : null}
             {vehicle.readiness !== "needs_check" ? (
-                <DropdownMenuItem onClick={(e) => { e.preventDefault(); e.stopPropagation(); void set("needs_check"); }}>
+                <DropdownMenuItem onClick={() => { void set("needs_check"); }}>
                     <IconAlertTriangle size={16} />
                     <p>{resolveLanguageKey("markNeedsCheck")}</p>
                 </DropdownMenuItem>
