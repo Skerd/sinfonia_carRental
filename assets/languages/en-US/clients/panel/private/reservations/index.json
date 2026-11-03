@@ -34,6 +34,25 @@
   "deleted": "Deleted",
   "active": "Active",
   "fields": {
+    "!enums": {
+      "status": {
+        "held": "Awaiting payment",
+        "confirmed": "Confirmed",
+        "in_progress": "On the road",
+        "completed": "Completed",
+        "cancelled": "Cancelled",
+        "expired": "Expired",
+        "no_show": "No-show"
+      },
+      "paymentStatus": {
+        "unpaid": "Unpaid",
+        "pending": "Payment pending",
+        "paid": "Paid",
+        "partially_refunded": "Partly refunded",
+        "refunded": "Refunded",
+        "failed": "Payment failed"
+      }
+    },
     "number": "Booking",
     "status": "Status",
     "paymentStatus": "Payment",

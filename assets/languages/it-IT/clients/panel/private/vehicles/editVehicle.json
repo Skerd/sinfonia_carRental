@@ -12,6 +12,9 @@
     "6": "Sabato"
   },
   "form": {
+    "vehicleSectionTitle": "Veicolo",
+    "fleetSectionTitle": "Flotta",
+    "photosSectionTitle": "Foto e video",
     "categoryLabel": "Categoria",
     "categoryPlaceholder": "Seleziona categoria",
     "colorLabel": "Colore",
@@ -30,6 +33,11 @@
     "platePlaceholder": "es. ZH 123456",
     "statusLabel": "Stato",
     "statusPlaceholder": "Seleziona stato",
+    "status": {
+      "active": "Attivo",
+      "maintenance": "In manutenzione",
+      "retired": "Ritirato"
+    },
     "vinLabel": "VIN",
     "vinPlaceholder": "Inserisci il VIN",
     "yearLabel": "Anno",

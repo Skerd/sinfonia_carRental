@@ -12,6 +12,9 @@
     "6": "E shtunë"
   },
   "form": {
+    "contactSectionTitle": "Kontakti",
+    "bookingSectionTitle": "Rezervimi",
+    "scheduleSectionTitle": "Orari",
     "contactNameLabel": "Emri i kontaktit",
     "contactNamePlaceholder": "Për kë është makina",
     "emailLabel": "Email",

@@ -19,8 +19,7 @@
     "commentLabel": "Komenti",
     "commentPlaceholder": "Çfarë shkroi klienti",
     "authorNameLabel": "Emri",
-    "authorNamePlaceholder": "Emri i klientit",
-    "isPublishedLabel": "E publikuar"
+    "authorNamePlaceholder": "Emri i klientit"
   },
   "axios": {
     "start": {

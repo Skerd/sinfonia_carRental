@@ -45,9 +45,13 @@
     },
     "status": {
       "scheduled": "Geplant",
-      "completed": "Erledigt",
-      "cancelled": "Abgesagt"
-    }
+      "completed": "Erledigt"
+    },
+    "serviceSectionTitle": "Service",
+    "costSectionTitle": "Kosten und nächster Service",
+    "notesSectionTitle": "Notizen und Dateien",
+    "readyAtLabel": "Fahrzeug zurück am",
+    "readyAtPlaceholder": "Optional: sperrt das Fahrzeug bis dahin"
   },
   "axios": {
     "start": {

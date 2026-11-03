@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/blocks/center/sheetView/vehicleBlockSheetView.tsx",
+  "failedTitle": "Failed to load block",
+  "failedDescription": "Something went wrong while loading this block. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "endAt": "Until",
   "note": "Note",

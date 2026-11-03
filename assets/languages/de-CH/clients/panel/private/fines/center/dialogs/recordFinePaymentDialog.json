@@ -1,0 +1,11 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/dialogs/recordFinePaymentDialog.tsx",
+  "title": "Zahlung erfassen",
+  "descriptionBooking": "Was die Firma der Behörde für die Busse {reference} bezahlt hat. Sie kann weiterhin der Buchung belastet werden.",
+  "descriptionCompany": "Was die Firma der Behörde für die Busse {reference} bezahlt hat. Ohne Buchung bleibt sie Kosten der Firma.",
+  "confirm": "Zahlung speichern",
+  "cancel": "Zurück",
+  "paidAtLabel": "Bezahlt am",
+  "paidAmountLabel": "Bezahlter Betrag",
+  "paymentReferenceLabel": "Zahlungsreferenz"
+}

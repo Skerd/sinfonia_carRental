@@ -45,9 +45,13 @@
     },
     "status": {
       "scheduled": "Scheduled",
-      "completed": "Completed",
-      "cancelled": "Cancelled"
-    }
+      "completed": "Completed"
+    },
+    "serviceSectionTitle": "Service",
+    "costSectionTitle": "Cost and next service",
+    "notesSectionTitle": "Notes and files",
+    "readyAtLabel": "Car back on",
+    "readyAtPlaceholder": "Optional: blocks the car until then"
   },
   "axios": {
     "start": {

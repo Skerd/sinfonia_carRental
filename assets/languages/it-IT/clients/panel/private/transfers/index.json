@@ -24,6 +24,14 @@
   "deleted": "Eliminato",
   "active": "Attivo",
   "fields": {
+    "!enums": {
+      "status": {
+        "planned": "Pianificato",
+        "in_transit": "In viaggio",
+        "done": "Arrivato",
+        "cancelled": "Annullato"
+      }
+    },
     "vehicle": "Veicolo",
     "fromLocation": "Da",
     "toLocation": "A",
@@ -38,6 +46,7 @@
     "createdBy": "Creato da",
     "company": "Azienda",
     "deletedAt": "Eliminato il",
-    "deletedBy": "Eliminato da"
+    "deletedBy": "Eliminato da",
+    "block": "Blocco"
   }
 }

@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/maintenance/center/sheetView/vehicleMaintenanceSheetView.tsx",
+  "failedTitle": "Failed to load record",
+  "failedDescription": "Something went wrong while loading this record. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "overview": "Overview",
   "vehicleMaintenanceSubtitle": "Maintenance",
@@ -33,5 +36,8 @@
   "updatedAt": "Updated at",
   "createdBy": "Created by",
   "deletedAt": "Deleted at",
-  "deletedBy": "Deleted by"
+  "deletedBy": "Deleted by",
+  "readyAt": "Car back on",
+  "nextServiceGroup": "Next service",
+  "damages": "Damages fixed"
 }

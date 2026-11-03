@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/maintenance/center/sheetView/vehicleMaintenanceSheetView.tsx",
+  "failedTitle": "Eintrag konnte nicht geladen werden",
+  "failedDescription": "Beim Laden ist ein Fehler aufgetreten. Klicken Sie, um es erneut zu versuchen.",
+  "failedTooltipDescription": "Klicken, um die Daten erneut zu laden.",
   "lifecycle": "Lebenszyklus",
   "overview": "Übersicht",
   "vehicleMaintenanceSubtitle": "Wartung",
@@ -33,5 +36,8 @@
   "updatedAt": "Aktualisiert am",
   "createdBy": "Erstellt von",
   "deletedAt": "Gelöscht am",
-  "deletedBy": "Gelöscht von"
+  "deletedBy": "Gelöscht von",
+  "readyAt": "Fahrzeug zurück am",
+  "nextServiceGroup": "Nächster Service",
+  "damages": "Behobene Schäden"
 }

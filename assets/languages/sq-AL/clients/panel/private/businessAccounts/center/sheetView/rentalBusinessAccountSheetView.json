@@ -1,7 +1,13 @@
 {
   "path": "src/modules/carRental/clients/panel/private/businessAccounts/center/sheetView/rentalBusinessAccountSheetView.tsx",
+  "failedTitle": "Llogaria nuk u ngarkua",
+  "failedDescription": "Diçka shkoi keq gjatë ngarkimit. Klikoni për të provuar përsëri.",
+  "failedTooltipDescription": "Klikoni për të provuar përsëri ngarkimin e të dhënave.",
   "lifecycle": "Cikli i jetës",
   "overview": "Përmbledhje",
+  "companyGroup": "Kompania",
+  "termsGroup": "Kushtet",
+  "notesGroup": "Shënime",
   "rentalBusinessAccountSubtitle": "Llogari biznesi",
   "name": "Emri",
   "vatNumber": "Numri i TVSH-së",

@@ -24,6 +24,14 @@
   "deleted": "Fshirë",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "planned": "I planifikuar",
+        "in_transit": "Në rrugë",
+        "done": "Mbërriti",
+        "cancelled": "I anuluar"
+      }
+    },
     "vehicle": "Automjeti",
     "fromLocation": "Nga",
     "toLocation": "Për",
@@ -38,6 +46,7 @@
     "createdBy": "Krijuar nga",
     "company": "Kompania",
     "deletedAt": "Fshirë më",
-    "deletedBy": "Fshirë nga"
+    "deletedBy": "Fshirë nga",
+    "block": "Bllokimi"
   }
 }

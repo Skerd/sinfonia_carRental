@@ -1,7 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/insurance/editVehicleInsurance.tsx",
   "title": "Edit policy",
-  "description": "Change dates, coverage or status",
+  "description": "Change dates, coverage or amounts",
+  "cancelledLocked": "This policy is cancelled. Restore it before changing it.",
   "weekday": {
     "0": "Sunday",
     "1": "Monday",
@@ -12,6 +13,11 @@
     "6": "Saturday"
   },
   "form": {
+    "identificationSectionTitle": "Identification",
+    "validitySectionTitle": "Validity",
+    "amountsSectionTitle": "Amounts",
+    "attachmentsSectionTitle": "Attachments",
+    "attachmentsBlankLabel": "",
     "vehicleLabel": "Vehicle",
     "vehiclePlaceholder": "Select vehicle",
     "insurerLabel": "Insurer",
@@ -60,7 +66,7 @@
   },
   "formHeader": {
     "title": "Edit policy",
-    "description": "Change dates, coverage or status"
+    "description": "Change dates, coverage or amounts"
   },
   "formButtons": {
     "cancel": "Cancel",

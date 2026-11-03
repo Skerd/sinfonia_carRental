@@ -10,5 +10,20 @@
     "title": "Charge the customer",
     "description": "Adds the fine and the handling fee to booking {booking} of {driver} and emails them. A saved card is charged now.",
     "confirm": "Charge"
+  },
+  "nominateDriver": {
+    "title": "Name the driver",
+    "description": "Send the driver letter for {driver} to the authority; they pay the fine. The handling fee, if set, is charged to booking {booking}.",
+    "confirm": "Driver named"
+  },
+  "dispute": {
+    "title": "Dispute the fine",
+    "description": "Nothing is charged or reminded while it is contested. Match the driver again if the dispute is lost.",
+    "confirm": "Dispute"
+  },
+  "annul": {
+    "title": "Annul the fine",
+    "description": "The authority dropped the fine. Anything charged to booking {booking} for it is taken back: credited on its invoice and refunded if paid.",
+    "confirm": "Annul"
   }
 }

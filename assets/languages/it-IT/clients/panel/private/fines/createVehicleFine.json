@@ -35,19 +35,12 @@
     "placePlaceholder": "Dove è successo",
     "dueDateLabel": "Pagare o rispondere entro",
     "dueDatePlaceholder": "Scegli una data",
-    "statusLabel": "Stato",
-    "statusPlaceholder": "Seleziona stato",
-    "status": {
-      "received": "Ricevuta",
-      "driver_identified": "Conducente identificato",
-      "charged": "Addebitata al cliente",
-      "paid_by_company": "Pagata da noi",
-      "transferred": "Conducente comunicato",
-      "disputed": "Contestata"
-    },
     "attachmentsLabel": "Scansione del verbale",
     "notesLabel": "Note",
-    "notesPlaceholder": "Note interne"
+    "notesPlaceholder": "Note interne",
+    "offenceSectionTitle": "Infrazione",
+    "authoritySectionTitle": "Autorità e importo",
+    "notesSectionTitle": "Note e file"
   },
   "axios": {
     "start": {

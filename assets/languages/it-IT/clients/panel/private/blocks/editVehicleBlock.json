@@ -12,6 +12,7 @@
     "6": "Sabato"
   },
   "form": {
+    "blockSectionTitle": "Blocco",
     "endAtLabel": "Fino a",
     "endAtPlaceholder": "Inserisci la fine",
     "noteLabel": "Nota",
@@ -21,7 +22,13 @@
     "startAtLabel": "Da",
     "startAtPlaceholder": "Inserisci l'inizio",
     "vehicleLabel": "Veicolo",
-    "vehiclePlaceholder": "Seleziona veicolo"
+    "vehiclePlaceholder": "Seleziona veicolo",
+    "reason": {
+      "maintenance": "Manutenzione",
+      "repair": "Riparazione",
+      "transfer": "Trasferimento",
+      "other": "Altro"
+    }
   },
   "axios": {
     "start": {

@@ -1,7 +1,7 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reviews/editRentalReview.tsx",
   "title": "Ndrysho vlerësimin",
-  "description": "Ndryshoni notën, komentin ose publikimin",
+  "description": "Ndryshoni notën ose komentin",
   "weekday": {
     "0": "E diel",
     "1": "E hënë",
@@ -19,8 +19,7 @@
     "commentLabel": "Komenti",
     "commentPlaceholder": "Çfarë shkroi klienti",
     "authorNameLabel": "Emri",
-    "authorNamePlaceholder": "Emri i klientit",
-    "isPublishedLabel": "E publikuar"
+    "authorNamePlaceholder": "Emri i klientit"
   },
   "axios": {
     "start": {
@@ -38,7 +37,7 @@
   },
   "formHeader": {
     "title": "Ndrysho vlerësimin",
-    "description": "Ndryshoni notën, komentin ose publikimin"
+    "description": "Ndryshoni notën ose komentin"
   },
   "formButtons": {
     "cancel": "Anulo",

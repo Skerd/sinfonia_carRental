@@ -16,8 +16,6 @@
     "vehiclePlaceholder": "Seleziona un veicolo",
     "typeLabel": "Tipo",
     "typePlaceholder": "Seleziona il tipo",
-    "statusLabel": "Stato",
-    "statusPlaceholder": "Seleziona lo stato",
     "serviceDateLabel": "Data dell'intervento",
     "serviceDatePlaceholder": "Scegli una data",
     "odometerKmLabel": "Chilometraggio",
@@ -43,11 +41,9 @@
       "battery": "Batteria",
       "other": "Altro"
     },
-    "status": {
-      "scheduled": "Programmato",
-      "completed": "Completato",
-      "cancelled": "Annullato"
-    }
+    "serviceSectionTitle": "Intervento",
+    "costSectionTitle": "Costo e prossimo tagliando",
+    "notesSectionTitle": "Note e file"
   },
   "axios": {
     "start": {

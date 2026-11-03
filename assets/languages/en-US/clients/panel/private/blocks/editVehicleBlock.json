@@ -12,6 +12,7 @@
     "6": "Saturday"
   },
   "form": {
+    "blockSectionTitle": "Block",
     "endAtLabel": "Until",
     "endAtPlaceholder": "Enter end at",
     "noteLabel": "Note",
@@ -21,7 +22,13 @@
     "startAtLabel": "From",
     "startAtPlaceholder": "Enter start at",
     "vehicleLabel": "Vehicle",
-    "vehiclePlaceholder": "Select vehicle"
+    "vehiclePlaceholder": "Select vehicle",
+    "reason": {
+      "maintenance": "Maintenance",
+      "repair": "Repair",
+      "transfer": "Transfer",
+      "other": "Other"
+    }
   },
   "axios": {
     "start": {

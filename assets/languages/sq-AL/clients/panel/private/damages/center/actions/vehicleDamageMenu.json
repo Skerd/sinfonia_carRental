@@ -1,4 +1,5 @@
 {
   "path": "src/modules/carRental/clients/panel/private/damages/center/actions/vehicleDamageMenu.tsx",
-  "chargeToCustomer": "Faturo klientin"
+  "chargeToCustomer": "Faturo klientin",
+  "scheduleRepair": "Dërgo për riparim"
 }

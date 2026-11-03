@@ -5,14 +5,14 @@
   "help": {
     "ariaLabel": "About insurance",
     "title": "About insurance",
-    "overview": "Each policy belongs to one car. A renewal is a new policy, so the old one stays as history.",
+    "overview": "Each policy belongs to one car. A car is only handed over while a policy covers it until the return.",
     "sections": [
       {
         "title": "On this page",
         "items": [
-          "Staff chosen in the rental settings are notified once, 30 days before a policy expires.",
-          "Policies past their expiry date are marked expired every morning.",
-          "Open a car's menu to see only that car's policies."
+          "Use Renew in the menu: the new record is filled from the old one and linked to it, so the history stays a chain.",
+          "Staff are warned 30 days before an expiry, and again on the day one lapses with no renewal.",
+          "A damage is linked to the policy that covered the car that day, for the claim."
         ]
       }
     ]
@@ -25,6 +25,18 @@
   "deleted": "Deleted",
   "active": "Active",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Active",
+        "expired": "Expired",
+        "cancelled": "Cancelled"
+      },
+      "coverage": {
+        "third_party": "Third party",
+        "partial_casco": "Partial casco",
+        "full_casco": "Full casco"
+      }
+    },
     "vehicle": "Vehicle",
     "insurer": "Insurer",
     "policyNumber": "Policy number",
@@ -40,6 +52,10 @@
     "createdBy": "Created by",
     "company": "Company",
     "deletedAt": "Deleted at",
-    "deletedBy": "Deleted by"
+    "deletedBy": "Deleted by",
+    "supersedes": "Renews",
+    "supersededBy": "Renewed by",
+    "attachments": "Attachments",
+    "expiryReminderSentAt": "Expiry reminder sent"
   }
 }

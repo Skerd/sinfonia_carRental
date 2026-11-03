@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/dialogs/vehicleMaintenanceDialogs.tsx",
+  "back": "Zurück",
+  "complete": {
+    "title": "Das Fahrzeug ist zurück",
+    "description": "{plate} kann ab sofort wieder gebucht werden. Die mit dieser Reparatur behobenen Schäden werden als repariert markiert.",
+    "confirm": "Als erledigt markieren"
+  },
+  "cancel": {
+    "title": "Service absagen",
+    "description": "{plate} ist wieder frei für Buchungen, und die Schäden, die behoben werden sollten, sind wieder offen.",
+    "confirm": "Service absagen"
+  }
+}

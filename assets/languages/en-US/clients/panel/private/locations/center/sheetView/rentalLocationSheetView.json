@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/locations/center/sheetView/rentalLocationSheetView.tsx",
+  "failedTitle": "Failed to load location",
+  "failedDescription": "Something went wrong while loading this location. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "address": "Address",
   "city": "City",

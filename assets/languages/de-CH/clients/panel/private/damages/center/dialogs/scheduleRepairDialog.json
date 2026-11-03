@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/dialogs/scheduleRepairDialog.tsx",
+  "title": "Zur Reparatur",
+  "description": "Erstellt für diesen Schaden eine Reparatur im Wartungsbuch oder fügt ihn einer bereits geplanten Reparatur hinzu.",
+  "confirm": "Zur Reparatur",
+  "cancel": "Zurück",
+  "repairLabel": "Geplante Reparatur",
+  "repairPlaceholder": "Keine: neue Reparatur planen",
+  "serviceDateLabel": "In der Werkstatt ab",
+  "readyAtLabel": "Fahrzeug zurück am",
+  "readyAtHint": "Mit einem Datum kann das Fahrzeug bis dahin nicht gebucht werden. Eine Buchung in dieser Zeit muss zuerst auf ein anderes Fahrzeug.",
+  "providerLabel": "Werkstatt",
+  "costLabel": "Geschätzte Kosten"
+}

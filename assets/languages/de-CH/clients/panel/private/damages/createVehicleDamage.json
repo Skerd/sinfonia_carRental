@@ -24,15 +24,8 @@
     "areaPlaceholder": "Bereich wählen",
     "severityLabel": "Schweregrad",
     "severityPlaceholder": "Schweregrad wählen",
-    "statusLabel": "Status",
-    "statusPlaceholder": "Status wählen",
-    "repairSectionTitle": "Reparatur",
     "estimatedCostLabel": "Geschätzte Kosten",
     "estimatedCostPlaceholder": "z. B. 350",
-    "repairCostLabel": "Reparaturkosten",
-    "repairCostPlaceholder": "z. B. 350",
-    "repairedAtLabel": "Repariert am",
-    "repairedAtPlaceholder": "Datum wählen",
     "descriptionLabel": "Beschreibung",
     "descriptionPlaceholder": "Was gemacht wurde oder was beschädigt ist",
     "photosLabel": "Fotos",
@@ -53,11 +46,14 @@
       "moderate": "Mittel",
       "major": "Schwer"
     },
-    "status": {
-      "open": "Offen",
-      "in_repair": "In Reparatur",
-      "repaired": "Repariert"
-    }
+    "detailsSectionTitle": "Beschreibung und Fotos",
+    "claimSectionTitle": "Versicherungsfall",
+    "insuranceLabel": "Versicherungspolice",
+    "insurancePlaceholder": "Wird aus dem Datum ermittelt (bei Bedarf ändern)",
+    "claimNumberLabel": "Schadennummer",
+    "claimNumberPlaceholder": "z. B. CLM-2026-0142",
+    "insurerPaidAmountLabel": "Von der Versicherung bezahlt",
+    "insurerPaidAmountPlaceholder": "z. B. 800"
   },
   "axios": {
     "start": {

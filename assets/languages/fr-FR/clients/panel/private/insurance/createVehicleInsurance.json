@@ -12,6 +12,11 @@
     "6": "Samedi"
   },
   "form": {
+    "identificationSectionTitle": "Identification",
+    "validitySectionTitle": "Validité",
+    "amountsSectionTitle": "Montants",
+    "attachmentsSectionTitle": "Pièces jointes",
+    "attachmentsBlankLabel": "",
     "vehicleLabel": "Véhicule",
     "vehiclePlaceholder": "Choisir un véhicule",
     "insurerLabel": "Assureur",

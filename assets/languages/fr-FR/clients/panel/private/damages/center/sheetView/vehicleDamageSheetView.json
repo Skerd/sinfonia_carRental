@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/damages/center/sheetView/vehicleDamageSheetView.tsx",
+  "failedTitle": "Impossible de charger le dommage",
+  "failedDescription": "Une erreur s'est produite lors du chargement. Cliquez pour réessayer.",
+  "failedTooltipDescription": "Cliquez pour réessayer de charger les données.",
   "lifecycle": "Cycle de vie",
   "overview": "Aperçu",
   "vehicleDamageSubtitle": "Rapport de dommage",
@@ -42,5 +45,16 @@
   "deletedAt": "Supprimé le",
   "deletedBy": "Supprimé par",
   "chargedAmount": "Facturé au client",
-  "chargedAt": "Facturé le"
+  "chargedAt": "Facturé le",
+  "repairGroup": "Réparation",
+  "recoveryGroup": "Coûts récupérés",
+  "repair": "Réparation",
+  "repairStatusValues": {
+    "scheduled": "Planifié",
+    "completed": "Terminé",
+    "cancelled": "Annulé"
+  },
+  "insurance": "Police d'assurance",
+  "claimNumber": "Numéro de sinistre",
+  "insurerPaidAmount": "Payé par l'assureur"
 }

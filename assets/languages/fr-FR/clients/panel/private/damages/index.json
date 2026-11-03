@@ -5,14 +5,15 @@
   "help": {
     "ariaLabel": "À propos des dommages",
     "title": "À propos des dommages",
-    "overview": "Enregistrez chaque dommage avec des photos et liez-le à la réservation pendant laquelle il est survenu.",
+    "overview": "Enregistrez chaque dommage avec des photos. Il est lié à la réservation pendant laquelle il est survenu et à la police qui couvrait le véhicule ce jour-là.",
     "sections": [
       {
-        "title": "Sur cette page",
+        "title": "Traitement d'un dommage",
         "items": [
-          "La liste des réservations ne montre que celles du véhicule choisi.",
-          "Passez le statut à « Réparé » une fois le véhicule remis en état.",
-          "Le personnel au comptoir peut aussi signaler un dommage."
+          "Le personnel est prévenu de chaque nouveau dommage. Un dommage grave met le véhicule en « À vérifier ».",
+          "« Envoyer en réparation » crée une réparation dans le carnet d'entretien ou ajoute le dommage à une réparation déjà prévue. Avec une date de retour, le véhicule est bloqué jusque-là.",
+          "Une fois la réparation terminée, le dommage passe à « Réparé ». Son coût est celui de la réparation.",
+          "Facturez le client de la réservation (jusqu'à sa franchise) et notez ce que l'assureur a payé ; les deux apparaissent comme récupérés dans les rapports."
         ]
       }
     ]
@@ -25,6 +26,30 @@
   "deleted": "Supprimé",
   "active": "Actif",
   "fields": {
+    "!enums": {
+      "status": {
+        "open": "Ouvert",
+        "in_repair": "En réparation",
+        "repaired": "Réparé"
+      },
+      "severity": {
+        "minor": "Mineur",
+        "moderate": "Modéré",
+        "major": "Grave"
+      },
+      "area": {
+        "front": "Avant",
+        "rear": "Arrière",
+        "left": "Côté gauche",
+        "right": "Côté droit",
+        "roof": "Toit",
+        "interior": "Intérieur",
+        "windshield": "Pare-brise",
+        "wheels": "Roues",
+        "underbody": "Soubassement",
+        "other": "Autre"
+      }
+    },
     "vehicle": "Véhicule",
     "reservation": "Réservation",
     "reportedAt": "Signalé le",
@@ -32,7 +57,6 @@
     "severity": "Gravité",
     "status": "Statut",
     "estimatedCost": "Coût estimé",
-    "repairCost": "Coût de réparation",
     "repairedAt": "Réparé le",
     "description": "Description",
     "createdAt": "Créé le",
@@ -40,6 +64,12 @@
     "createdBy": "Créé par",
     "company": "Entreprise",
     "deletedAt": "Supprimé le",
-    "deletedBy": "Supprimé par"
+    "deletedBy": "Supprimé par",
+    "chargedAmount": "Facturé au client",
+    "chargedAt": "Facturé le",
+    "repair": "Réparation",
+    "insurance": "Police d'assurance",
+    "claimNumber": "Numéro de sinistre",
+    "insurerPaidAmount": "Payé par l'assureur"
   }
 }

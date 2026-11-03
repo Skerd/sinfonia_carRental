@@ -27,7 +27,9 @@
     "odometerKmLabel": "Km à l'arrivée",
     "odometerKmPlaceholder": "Relevé à l'arrivée",
     "notesLabel": "Notes",
-    "notesPlaceholder": "Notes internes"
+    "notesPlaceholder": "Notes internes",
+    "tripSectionTitle": "Trajet",
+    "driverSectionTitle": "Conducteur et notes"
   },
   "axios": {
     "start": {

@@ -5,14 +5,15 @@
   "help": {
     "ariaLabel": "Informazioni sulle multe",
     "title": "Informazioni sulle multe",
-    "overview": "Inserisci una multa quando arriva il verbale. La prenotazione il cui ritiro e riconsegna comprendono l'ora dell'infrazione viene trovata da sola, con il suo conducente principale.",
+    "overview": "Inserisci una multa quando arriva l'avviso. La prenotazione che aveva il veicolo in quel momento viene trovata da sola, con il conducente principale; altrimenti il trasferimento del personale.",
     "sections": [
       {
-        "title": "In questa pagina",
+        "title": "Scegli una strada",
         "items": [
-          "Addebita al cliente per aggiungere multa e spese di gestione alla sua prenotazione; una carta salvata viene addebitata subito.",
-          "Scarica la lettera per comunicare il conducente all'autorità.",
-          "Se il veicolo o l'ora vengono corretti, usa Abbina di nuovo."
+          "Comunica il conducente: invia la lettera all'autorità; paga il conducente e al cliente si addebita solo la commissione.",
+          "Addebita al cliente: multa e commissione vanno sulla prenotazione. Dopo la riconsegna hanno una fattura propria; si addebita la carta salvata, altrimenti il cliente paga dal link della prenotazione.",
+          "«Registra il pagamento» quando l'azienda paga l'autorità. Senza prenotazione da addebitare, la multa resta un costo dell'azienda.",
+          "Contesta una multa; annullala se l'autorità vi rinuncia. Il personale viene avvisato una settimana prima della scadenza di una multa non pagata."
         ]
       }
     ]
@@ -25,6 +26,24 @@
   "deleted": "Eliminato",
   "active": "Attivo",
   "fields": {
+    "!enums": {
+      "status": {
+        "received": "Ricevuta",
+        "driver_identified": "Conducente identificato",
+        "charged": "Addebitata al cliente",
+        "paid_by_company": "Pagata da noi",
+        "transferred": "Conducente comunicato",
+        "disputed": "Contestata",
+        "cancelled": "Annullata"
+      },
+      "type": {
+        "speeding": "Eccesso di velocità",
+        "parking": "Parcheggio",
+        "red_light": "Semaforo rosso",
+        "toll": "Pedaggio",
+        "other": "Altro"
+      }
+    },
     "reference": "Riferimento",
     "vehicle": "Veicolo",
     "offenceAt": "Data e ora dell'infrazione",
@@ -44,6 +63,11 @@
     "createdBy": "Creato da",
     "company": "Azienda",
     "deletedAt": "Eliminato il",
-    "deletedBy": "Eliminato da"
+    "deletedBy": "Eliminato da",
+    "transfer": "Trasferimento",
+    "paidAt": "Pagata il",
+    "paidAmount": "Importo pagato",
+    "paymentReference": "Riferimento del pagamento",
+    "dueReminderSentAt": "Promemoria di scadenza inviato"
   }
 }

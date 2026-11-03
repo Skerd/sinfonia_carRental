@@ -14,5 +14,6 @@
     "title": "Das Fahrzeug ist angekommen",
     "description": "{plate} zählt ab jetzt am neuen Standort.",
     "confirm": "Als angekommen markieren"
-  }
+  },
+  "back": "Zurück"
 }

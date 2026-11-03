@@ -14,5 +14,6 @@
     "title": "Il veicolo è arrivato",
     "description": "Da ora {plate} conta nella nuova sede.",
     "confirm": "Segna come arrivato"
-  }
+  },
+  "back": "Indietro"
 }

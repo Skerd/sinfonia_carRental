@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/vehicles/center/sheetView/vehicleSheetView.tsx",
+  "failedTitle": "Automjeti nuk u ngarkua",
+  "failedDescription": "Diçka shkoi keq gjatë ngarkimit të këtij automjeti. Klikoni për të provuar përsëri.",
+  "failedTooltipDescription": "Klikoni për të provuar përsëri ngarkimin e të dhënave.",
   "lifecycle": "Cikli i jetës",
   "category": "Kategoria",
   "color": "Ngjyra",
@@ -40,5 +43,12 @@
   "trackerId": "Gjurmuesi",
   "lastLatitude": "Gjerësia",
   "lastLongitude": "Gjatësia",
-  "lastReportedAt": "Sinjali i fundit"
+  "lastReportedAt": "Sinjali i fundit",
+  "currentLocation": "Vendndodhja aktuale",
+  "readiness": "Gatishmëria",
+  "readinessValues": {
+    "ready": "Gati",
+    "needs_cleaning": "Duhet pastruar",
+    "needs_check": "Duhet kontrolluar"
+  }
 }

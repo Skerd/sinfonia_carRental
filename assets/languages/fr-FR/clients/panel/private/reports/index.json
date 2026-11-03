@@ -32,9 +32,12 @@
         "title": "Lire les chiffres",
         "items": [
           "Une recherche sans voiture libre compte comme une demande perdue.",
-          "Le retour est le chiffre d'affaires de la période divisé par le prix d'achat."
+          "Le retour est le chiffre d'affaires de la période divisé par le prix d'achat.",
+          "Les réparations sont le coût des fiches de réparation. Les amendes sont celles payées et gardées par l'entreprise. Récupéré est ce que clients et assureurs ont remboursé pour les dommages."
         ]
       }
     ]
-  }
+  },
+  "fines": "Amendes",
+  "recovered": "Récupéré"
 }

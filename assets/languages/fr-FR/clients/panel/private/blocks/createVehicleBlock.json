@@ -12,6 +12,7 @@
     "6": "Samedi"
   },
   "form": {
+    "blockSectionTitle": "Blocage",
     "endAtLabel": "Jusqu'à",
     "endAtPlaceholder": "Saisir la fin",
     "noteLabel": "Note",
@@ -21,7 +22,13 @@
     "startAtLabel": "De",
     "startAtPlaceholder": "Saisir le début",
     "vehicleLabel": "Véhicule",
-    "vehiclePlaceholder": "Choisir un véhicule"
+    "vehiclePlaceholder": "Choisir un véhicule",
+    "reason": {
+      "maintenance": "Maintenance",
+      "repair": "Réparation",
+      "transfer": "Transfert",
+      "other": "Autre"
+    }
   },
   "axios": {
     "start": {

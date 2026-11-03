@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/insurance/center/sheetView/vehicleInsuranceSheetView.tsx",
+  "failedTitle": "Failed to load policy",
+  "failedDescription": "Something went wrong while loading this policy. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "overview": "Overview",
   "vehicleInsuranceSubtitle": "Insurance policy",
@@ -28,5 +31,8 @@
   "updatedAt": "Updated at",
   "createdBy": "Created by",
   "deletedAt": "Deleted at",
-  "deletedBy": "Deleted by"
+  "deletedBy": "Deleted by",
+  "renewalGroup": "Renewals",
+  "supersedes": "Renews",
+  "supersededBy": "Renewed by"
 }

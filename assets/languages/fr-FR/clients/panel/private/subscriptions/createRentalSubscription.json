@@ -12,6 +12,9 @@
     "6": "Samedi"
   },
   "form": {
+    "contactSectionTitle": "Contact",
+    "bookingSectionTitle": "Réservation",
+    "scheduleSectionTitle": "Calendrier",
     "contactNameLabel": "Nom du contact",
     "contactNamePlaceholder": "Pour qui est la voiture",
     "emailLabel": "E-mail",

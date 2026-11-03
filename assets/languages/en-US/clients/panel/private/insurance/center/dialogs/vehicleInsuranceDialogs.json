@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/dialogs/vehicleInsuranceDialogs.tsx",
+  "back": "Back",
+  "cancel": {
+    "title": "Cancel policy",
+    "description": "Policy {policy} stays frozen until it is restored. Dates, coverage and amounts cannot change.",
+    "confirm": "Cancel policy"
+  },
+  "uncancel": {
+    "title": "Restore this policy",
+    "description": "Policy {policy} becomes active again, or expired if the end date has passed.",
+    "confirm": "Restore policy"
+  }
+}

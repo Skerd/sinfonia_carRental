@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/promoCodes/center/sheetView/rentalPromoCodeSheetView.tsx",
+  "failedTitle": "Failed to load promo code",
+  "failedDescription": "Something went wrong while loading this promo code. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "overview": "Overview",
   "rentalPromoCodeSubtitle": "Promo code",

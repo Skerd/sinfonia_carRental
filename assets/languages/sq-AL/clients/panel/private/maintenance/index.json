@@ -5,14 +5,14 @@
   "help": {
     "ariaLabel": "Rreth mirëmbajtjes",
     "title": "Rreth mirëmbajtjes",
-    "overview": "Libri i servisit të çdo automjeti. Regjistrimi i fundit i përfunduar përcakton datën dhe km e servisit të radhës.",
+    "overview": "Libri i servisit i çdo automjeti: servise, riparime dhe kontrolle, me koston e tyre. Servisi i fundit i përfunduar me afat të radhës cakton servisin e radhës të automjetit.",
     "sections": [
       {
         "title": "Në këtë faqe",
         "items": [
-          "Regjistrimet e planifikuara ose të anuluara nuk llogariten për servisin e radhës.",
-          "Stafi i zgjedhur njoftohet 14 ditë ose 1.000 km para servisit të radhës.",
-          "Një kilometrazh më i lartë në regjistrim përditëson atë të automjetit."
+          "Planifikoni një servis si «I planifikuar». Me një datë kthimi, automjeti bllokohet për rezervime deri atëherë.",
+          "Përfundojeni kur automjeti kthehet: bllokimi mbaron dhe dëmtimet e riparuara bëhen «I riparuar». Anulimi e liron automjetin dhe i rihap dëmtimet.",
+          "Stafi i zgjedhur njoftohet 14 ditë ose 1 000 km para servisit të radhës."
         ]
       }
     ]
@@ -25,6 +25,23 @@
   "deleted": "Fshirë",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "scheduled": "I planifikuar",
+        "completed": "I përfunduar",
+        "cancelled": "I anuluar"
+      },
+      "type": {
+        "scheduled_service": "Servis i planifikuar",
+        "oil_change": "Ndërrim vaji",
+        "tires": "Goma",
+        "brakes": "Frenat",
+        "inspection": "Kontroll",
+        "repair": "Riparim",
+        "battery": "Bateria",
+        "other": "Tjetër"
+      }
+    },
     "vehicle": "Automjeti",
     "type": "Lloji",
     "status": "Statusi",
@@ -40,6 +57,10 @@
     "createdBy": "Krijuar nga",
     "company": "Kompania",
     "deletedAt": "Fshirë më",
-    "deletedBy": "Fshirë nga"
+    "deletedBy": "Fshirë nga",
+    "readyAt": "Automjeti kthehet më",
+    "damages": "Dëmtimet e riparuara",
+    "block": "Bllokimi",
+    "attachments": "Bashkëngjitjet"
   }
 }

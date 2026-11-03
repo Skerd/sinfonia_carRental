@@ -32,9 +32,12 @@
         "title": "Die Zahlen lesen",
         "items": [
           "Eine Suche ohne freies Fahrzeug zählt als verlorene Nachfrage.",
-          "Die Amortisation ist der Umsatz des Zeitraums geteilt durch den Kaufpreis."
+          "Die Amortisation ist der Umsatz des Zeitraums geteilt durch den Kaufpreis.",
+          "Reparaturen sind die Kosten der Reparatureinträge. Bussen sind die von der Firma bezahlten und getragenen. Zurückerhalten ist, was Kundschaft und Versicherungen für Schäden zurückgezahlt haben."
         ]
       }
     ]
-  }
+  },
+  "fines": "Bussen",
+  "recovered": "Zurückerhalten"
 }

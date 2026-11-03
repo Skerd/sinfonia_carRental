@@ -24,6 +24,17 @@
   "deleted": "Gelöscht",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Aktiv",
+        "paused": "Pausiert",
+        "ended": "Beendet"
+      },
+      "period": {
+        "week": "Woche",
+        "month": "Monat"
+      }
+    },
     "contactName": "Kontaktname",
     "email": "E-Mail",
     "phone": "Telefon",

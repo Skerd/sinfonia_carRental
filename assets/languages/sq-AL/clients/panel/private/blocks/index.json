@@ -11,7 +11,8 @@
         "title": "Në këtë faqe",
         "items": [
           "Një bllokim nuk mund të mbivendoset me një rezervim; zhvendoseni fillimisht rezervimin në një makinë tjetër.",
-          "Pasi krijohet, periudha e një bllokimi është e fiksuar. Për ta ndryshuar, fshijeni dhe krijoni një të re."
+          "Pasi krijohet, periudha e një bllokimi është e fiksuar. Për ta ndryshuar, fshijeni dhe krijoni një të re.",
+          "Një bllokim i krijuar nga një transferim ose servis i planifikuar ndryshohet atje: mbaron kur automjeti mbërrin ose kthehet dhe hiqet kur anulohet ai regjistrim."
         ]
       }
     ]
@@ -24,6 +25,18 @@
   "deleted": "Fshirë",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "reason": {
+        "maintenance": "Mirëmbajtje",
+        "repair": "Riparim",
+        "transfer": "Transferim",
+        "other": "Tjetër"
+      },
+      "source": {
+        "transfer": "Transferimi",
+        "service": "Servisi"
+      }
+    },
     "vehicle": "Automjeti",
     "startAt": "Nga",
     "endAt": "Deri",
@@ -34,6 +47,7 @@
     "createdBy": "Krijuar nga",
     "company": "Kompania",
     "deletedAt": "Fshirë më",
-    "deletedBy": "Fshirë nga"
+    "deletedBy": "Fshirë nga",
+    "source": "Krijuar nga"
   }
 }

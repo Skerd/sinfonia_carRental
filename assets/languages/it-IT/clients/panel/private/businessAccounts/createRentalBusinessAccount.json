@@ -12,6 +12,9 @@
     "6": "Sabato"
   },
   "form": {
+    "companySectionTitle": "Azienda",
+    "termsSectionTitle": "Condizioni",
+    "notesSectionTitle": "Note",
     "nameLabel": "Nome",
     "namePlaceholder": "Nome dell'azienda",
     "vatNumberLabel": "Partita IVA",

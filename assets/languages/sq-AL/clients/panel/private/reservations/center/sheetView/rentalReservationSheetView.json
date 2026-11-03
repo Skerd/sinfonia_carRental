@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reservations/center/sheetView/rentalReservationSheetView.tsx",
+  "failedTitle": "Rezervimi nuk u ngarkua",
+  "failedDescription": "Diçka shkoi keq gjatë ngarkimit. Klikoni për të provuar përsëri.",
+  "failedTooltipDescription": "Klikoni për të provuar përsëri ngarkimin e të dhënave.",
   "lifecycle": "Cikli i jetës",
   "amountPaid": "Paguar",
   "at": "Kur",
@@ -82,7 +85,8 @@
     "charge_added": "Pagesë e shtuar",
     "deposit_held": "Depozita u bllokua",
     "deposit_captured": "Depozita u mbajt",
-    "deposit_released": "Depozita u lirua"
+    "deposit_released": "Depozita u lirua",
+    "charge_removed": "Faturimi u hoq"
   },
   "createdAt": "Krijuar më",
   "updatedAt": "Përditësuar më",

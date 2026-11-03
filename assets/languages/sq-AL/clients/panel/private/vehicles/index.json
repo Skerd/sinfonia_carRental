@@ -31,6 +31,18 @@
   "deleted": "Fshirë",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Aktiv",
+        "maintenance": "Në mirëmbajtje",
+        "retired": "I tërhequr"
+      },
+      "readiness": {
+        "ready": "Gati",
+        "needs_cleaning": "Duhet pastruar",
+        "needs_check": "Duhet kontrolluar"
+      }
+    },
     "plate": "Targa",
     "make": "Marka",
     "model": "Modeli",
@@ -49,6 +61,16 @@
     "nextServiceDueAt": "Servisi i radhës më",
     "nextServiceDueKm": "Servisi i radhës në (km)",
     "acquiredAt": "Në flotë që nga",
-    "purchasePrice": "Çmimi i blerjes"
+    "purchasePrice": "Çmimi i blerjes",
+    "readiness": "Gatishmëria",
+    "currentLocation": "Vendndodhja aktuale",
+    "trackerId": "ID e gjurmuesit",
+    "lastLatitude": "Gjerësia e fundit",
+    "lastLongitude": "Gjatësia e fundit",
+    "lastReportedAt": "Pozicioni i fundit më",
+    "vin": "VIN",
+    "notes": "Shënime",
+    "images": "Foto",
+    "videos": "Video"
   }
 }

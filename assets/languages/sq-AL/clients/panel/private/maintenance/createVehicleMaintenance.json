@@ -45,9 +45,13 @@
     },
     "status": {
       "scheduled": "I planifikuar",
-      "completed": "I përfunduar",
-      "cancelled": "I anuluar"
-    }
+      "completed": "I përfunduar"
+    },
+    "serviceSectionTitle": "Servisi",
+    "costSectionTitle": "Kostoja dhe servisi i radhës",
+    "notesSectionTitle": "Shënime dhe skedarë",
+    "readyAtLabel": "Automjeti kthehet më",
+    "readyAtPlaceholder": "Opsionale: bllokon automjetin deri atëherë"
   },
   "axios": {
     "start": {

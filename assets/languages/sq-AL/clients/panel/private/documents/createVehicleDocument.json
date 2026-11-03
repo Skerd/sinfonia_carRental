@@ -13,6 +13,7 @@
   },
   "form": {
     "identificationSectionTitle": "Identifikimi",
+    "attachmentsSectionTitle": "Bashkëngjitjet",
     "vehicleLabel": "Automjeti",
     "vehiclePlaceholder": "Zgjidhni automjetin",
     "typeLabel": "Lloji",

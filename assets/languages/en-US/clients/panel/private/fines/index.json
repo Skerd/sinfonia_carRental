@@ -5,14 +5,15 @@
   "help": {
     "ariaLabel": "About traffic fines",
     "title": "About traffic fines",
-    "overview": "Enter a fine when the notice arrives. The booking whose pickup and return cover the time of the offence is found by itself, with its main driver.",
+    "overview": "Enter a fine when the notice arrives. The booking that had the car at that time is found by itself, with its main driver; if none, the staff transfer that had it.",
     "sections": [
       {
-        "title": "On this page",
+        "title": "Choose one way",
         "items": [
-          "Charge the customer to add the fine and the handling fee to their booking; a saved card is charged straight away.",
-          "Download the driver letter to name the driver to the authority.",
-          "If the car or time is corrected, use Match again."
+          "Name the driver: send the driver letter to the authority; the driver pays, and the customer is charged only the handling fee.",
+          "Charge the customer: the fine and the handling fee go on the booking. After the return they get their own invoice; a saved card is charged, otherwise the customer pays from the booking link.",
+          "Record payment when the company pays the authority. With no booking to charge, the fine is kept as the company's cost.",
+          "Dispute a fine you contest; annul it if the authority drops it. Staff are warned a week before an unpaid fine is due."
         ]
       }
     ]
@@ -25,6 +26,24 @@
   "deleted": "Deleted",
   "active": "Active",
   "fields": {
+    "!enums": {
+      "status": {
+        "received": "Received",
+        "driver_identified": "Driver identified",
+        "charged": "Charged to customer",
+        "paid_by_company": "Paid by us",
+        "transferred": "Named the driver",
+        "disputed": "Disputed",
+        "cancelled": "Annulled"
+      },
+      "type": {
+        "speeding": "Speeding",
+        "parking": "Parking",
+        "red_light": "Red light",
+        "toll": "Toll",
+        "other": "Other"
+      }
+    },
     "reference": "Reference",
     "vehicle": "Vehicle",
     "offenceAt": "Date and time of the offence",
@@ -44,6 +63,11 @@
     "createdBy": "Created by",
     "company": "Company",
     "deletedAt": "Deleted at",
-    "deletedBy": "Deleted by"
+    "deletedBy": "Deleted by",
+    "transfer": "Transfer",
+    "paidAt": "Paid on",
+    "paidAmount": "Amount paid",
+    "paymentReference": "Payment reference",
+    "dueReminderSentAt": "Due reminder sent"
   }
 }

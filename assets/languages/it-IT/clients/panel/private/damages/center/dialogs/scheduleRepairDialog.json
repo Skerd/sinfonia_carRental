@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/dialogs/scheduleRepairDialog.tsx",
+  "title": "Manda in riparazione",
+  "description": "Crea una riparazione nella manutenzione per questo danno, o lo aggiunge a una riparazione già programmata per il veicolo.",
+  "confirm": "Invia",
+  "cancel": "Indietro",
+  "repairLabel": "Riparazione programmata",
+  "repairPlaceholder": "Nessuna: programma una nuova riparazione",
+  "serviceDateLabel": "In officina dal",
+  "readyAtLabel": "Veicolo di nuovo pronto il",
+  "readyAtHint": "Con una data, il veicolo non è prenotabile fino ad allora. Una prenotazione in quel periodo va prima spostata su un altro veicolo.",
+  "providerLabel": "Officina",
+  "costLabel": "Costo stimato"
+}

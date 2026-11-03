@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/dialogs/scheduleRepairDialog.tsx",
+  "title": "Envoyer en réparation",
+  "description": "Crée une réparation dans le carnet d'entretien pour ce dommage, ou l'ajoute à une réparation déjà prévue pour le véhicule.",
+  "confirm": "Envoyer",
+  "cancel": "Retour",
+  "repairLabel": "Réparation prévue",
+  "repairPlaceholder": "Aucune : prévoir une nouvelle réparation",
+  "serviceDateLabel": "Au garage à partir du",
+  "readyAtLabel": "Véhicule de retour le",
+  "readyAtHint": "Avec une date, le véhicule ne peut pas être réservé jusque-là. Une réservation sur cette période doit d'abord passer sur un autre véhicule.",
+  "providerLabel": "Garage",
+  "costLabel": "Coût estimé"
+}

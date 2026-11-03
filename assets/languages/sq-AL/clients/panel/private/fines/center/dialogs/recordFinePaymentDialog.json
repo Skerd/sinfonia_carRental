@@ -1,0 +1,11 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/dialogs/recordFinePaymentDialog.tsx",
+  "title": "Regjistro pagesën",
+  "descriptionBooking": "Sa i pagoi kompania autoritetit për gjobën {reference}. Mund t'i faturohet ende rezervimit.",
+  "descriptionCompany": "Sa i pagoi kompania autoritetit për gjobën {reference}. Pa rezervim, mbetet kosto e kompanisë.",
+  "confirm": "Ruaj pagesën",
+  "cancel": "Kthehu",
+  "paidAtLabel": "Paguar më",
+  "paidAmountLabel": "Shuma e paguar",
+  "paymentReferenceLabel": "Referenca e pagesës"
+}

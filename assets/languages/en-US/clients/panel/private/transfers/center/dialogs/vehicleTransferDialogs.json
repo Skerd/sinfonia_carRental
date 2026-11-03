@@ -14,5 +14,6 @@
     "title": "The car has arrived",
     "description": "{plate} counts at the new location from now on.",
     "confirm": "Mark arrived"
-  }
+  },
+  "back": "Back"
 }

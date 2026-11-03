@@ -31,6 +31,18 @@
   "deleted": "Deleted",
   "active": "Active",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Active",
+        "maintenance": "In maintenance",
+        "retired": "Retired"
+      },
+      "readiness": {
+        "ready": "Ready",
+        "needs_cleaning": "Needs cleaning",
+        "needs_check": "Needs a check"
+      }
+    },
     "plate": "Plate",
     "make": "Make",
     "model": "Model",
@@ -49,6 +61,16 @@
     "nextServiceDueAt": "Next service due",
     "nextServiceDueKm": "Next service at (km)",
     "acquiredAt": "In fleet since",
-    "purchasePrice": "Purchase price"
+    "purchasePrice": "Purchase price",
+    "readiness": "Readiness",
+    "currentLocation": "Current location",
+    "trackerId": "Tracker ID",
+    "lastLatitude": "Last latitude",
+    "lastLongitude": "Last longitude",
+    "lastReportedAt": "Last position at",
+    "vin": "VIN",
+    "notes": "Notes",
+    "images": "Photos",
+    "videos": "Videos"
   }
 }

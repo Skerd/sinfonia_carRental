@@ -1,0 +1,5 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/actions/vehicleMaintenanceMenu.tsx",
+  "complete": "Marquer comme terminé",
+  "cancel": "Annuler l'intervention"
+}

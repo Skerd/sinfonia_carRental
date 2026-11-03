@@ -5,14 +5,14 @@
   "help": {
     "ariaLabel": "About maintenance",
     "title": "About maintenance",
-    "overview": "Each car's service book. The latest completed record sets the car's next service date and km.",
+    "overview": "Each car's service book: services, repairs and checks, with their cost. The latest completed service with a next due date sets the car's next service.",
     "sections": [
       {
         "title": "On this page",
         "items": [
-          "Scheduled and cancelled records don't count towards the next service.",
-          "Chosen staff are notified 14 days or 1,000 km before the next service is due.",
-          "A higher odometer reading on a record moves the car's odometer forward."
+          "Plan a service as Scheduled. With a ready date, the car is blocked for bookings until then.",
+          "Complete it when the car is back: the block ends, and the damages it fixed become Repaired. Cancel frees the car and reopens the damages.",
+          "Chosen staff are notified 14 days or 1,000 km before the next service is due."
         ]
       }
     ]
@@ -25,6 +25,23 @@
   "deleted": "Deleted",
   "active": "Active",
   "fields": {
+    "!enums": {
+      "status": {
+        "scheduled": "Scheduled",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      },
+      "type": {
+        "scheduled_service": "Scheduled service",
+        "oil_change": "Oil change",
+        "tires": "Tyres",
+        "brakes": "Brakes",
+        "inspection": "Inspection",
+        "repair": "Repair",
+        "battery": "Battery",
+        "other": "Other"
+      }
+    },
     "vehicle": "Vehicle",
     "type": "Type",
     "status": "Status",
@@ -40,6 +57,10 @@
     "createdBy": "Created by",
     "company": "Company",
     "deletedAt": "Deleted at",
-    "deletedBy": "Deleted by"
+    "deletedBy": "Deleted by",
+    "readyAt": "Car back on",
+    "damages": "Damages fixed",
+    "block": "Block",
+    "attachments": "Attachments"
   }
 }

@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/transfers/center/sheetView/vehicleTransferSheetView.tsx",
+  "failedTitle": "Impossibile caricare il trasferimento",
+  "failedDescription": "Qualcosa è andato storto durante il caricamento. Fare clic per riprovare.",
+  "failedTooltipDescription": "Clicca per riprovare a caricare i dati.",
   "lifecycle": "Ciclo di vita",
   "overview": "Panoramica",
   "vehicleTransferSubtitle": "Trasferimento",

@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/center/dialogs/unpublishRentalReviewDialog.tsx",
+  "title": "Hiq vlerësimin",
+  "description": "Ky vlerësim do të fshihet nga faqja e internetit derisa të publikohet përsëri.",
+  "cancel": "Anulo",
+  "confirm": "Hiq",
+  "busy": "Duke punuar…",
+  "axios": {
+    "start": {
+      "title": "Duke hequr vlerësimin…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Vlerësimi u hoq",
+      "time": 3000
+    },
+    "error": {
+      "title": "Vlerësimi nuk u hoq dot",
+      "time": 3000
+    }
+  }
+}

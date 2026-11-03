@@ -22,6 +22,7 @@
     "charged": "Addebitata al cliente",
     "paid_by_company": "Pagata da noi",
     "transferred": "Conducente comunicato",
-    "disputed": "Contestata"
+    "disputed": "Contestata",
+    "cancelled": "Annullata"
   }
 }

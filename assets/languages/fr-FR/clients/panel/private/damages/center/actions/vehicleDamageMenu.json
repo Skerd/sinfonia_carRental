@@ -1,4 +1,5 @@
 {
   "path": "src/modules/carRental/clients/panel/private/damages/center/actions/vehicleDamageMenu.tsx",
-  "chargeToCustomer": "Facturer le client"
+  "chargeToCustomer": "Facturer le client",
+  "scheduleRepair": "Envoyer en réparation"
 }

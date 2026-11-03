@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/maintenance/center/sheetView/vehicleMaintenanceSheetView.tsx",
+  "failedTitle": "Impossible de charger l'intervention",
+  "failedDescription": "Une erreur s'est produite lors du chargement. Cliquez pour réessayer.",
+  "failedTooltipDescription": "Cliquez pour réessayer de charger les données.",
   "lifecycle": "Cycle de vie",
   "overview": "Aperçu",
   "vehicleMaintenanceSubtitle": "Entretien",
@@ -33,5 +36,8 @@
   "updatedAt": "Mis à jour le",
   "createdBy": "Créé par",
   "deletedAt": "Supprimé le",
-  "deletedBy": "Supprimé par"
+  "deletedBy": "Supprimé par",
+  "readyAt": "Véhicule de retour le",
+  "nextServiceGroup": "Prochain entretien",
+  "damages": "Dommages réparés"
 }

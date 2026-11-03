@@ -31,6 +31,18 @@
   "deleted": "Eliminato",
   "active": "Attivo",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Attivo",
+        "maintenance": "In manutenzione",
+        "retired": "Ritirato"
+      },
+      "readiness": {
+        "ready": "Pronto",
+        "needs_cleaning": "Da pulire",
+        "needs_check": "Da controllare"
+      }
+    },
     "plate": "Targa",
     "make": "Marca",
     "model": "Modello",
@@ -49,6 +61,16 @@
     "nextServiceDueAt": "Prossimo tagliando il",
     "nextServiceDueKm": "Prossimo tagliando a (km)",
     "acquiredAt": "In flotta dal",
-    "purchasePrice": "Prezzo d'acquisto"
+    "purchasePrice": "Prezzo d'acquisto",
+    "readiness": "Prontezza",
+    "currentLocation": "Posizione attuale",
+    "trackerId": "ID del tracker",
+    "lastLatitude": "Ultima latitudine",
+    "lastLongitude": "Ultima longitudine",
+    "lastReportedAt": "Ultima posizione il",
+    "vin": "Telaio (VIN)",
+    "notes": "Note",
+    "images": "Foto",
+    "videos": "Video"
   }
 }

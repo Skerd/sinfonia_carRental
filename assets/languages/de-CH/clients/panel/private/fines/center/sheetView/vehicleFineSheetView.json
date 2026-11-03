@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/fines/center/sheetView/vehicleFineSheetView.tsx",
+  "failedTitle": "Busse konnte nicht geladen werden",
+  "failedDescription": "Beim Laden ist ein Fehler aufgetreten. Klicken Sie, um es erneut zu versuchen.",
+  "failedTooltipDescription": "Klicken, um die Daten erneut zu laden.",
   "lifecycle": "Lebenszyklus",
   "overview": "Übersicht",
   "vehicleFineSubtitle": "Busse",
@@ -30,12 +33,26 @@
     "charged": "Der Kundschaft belastet",
     "paid_by_company": "Von uns bezahlt",
     "transferred": "Fahrer/in gemeldet",
-    "disputed": "Bestritten"
+    "disputed": "Bestritten",
+    "cancelled": "Annulliert"
   },
   "createdAt": "Erstellt am",
   "updatedAt": "Aktualisiert am",
   "createdBy": "Erstellt von",
   "company": "Unternehmen",
   "deletedAt": "Gelöscht am",
-  "deletedBy": "Gelöscht von"
+  "deletedBy": "Gelöscht von",
+  "authorityGroup": "Behörde und Betrag",
+  "driverGroup": "Wer das Fahrzeug hatte",
+  "paymentGroup": "An die Behörde bezahlt",
+  "transfer": "Überführung",
+  "transferStatusValues": {
+    "planned": "Geplant",
+    "in_transit": "Unterwegs",
+    "done": "Angekommen",
+    "cancelled": "Abgesagt"
+  },
+  "paidAt": "Bezahlt am",
+  "paidAmount": "Bezahlter Betrag",
+  "paymentReference": "Zahlungsreferenz"
 }

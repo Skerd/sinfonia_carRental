@@ -5,14 +5,15 @@
   "help": {
     "ariaLabel": "Informazioni sui danni",
     "title": "Informazioni sui danni",
-    "overview": "Registra ogni danno con le foto e collegalo alla prenotazione in cui è avvenuto.",
+    "overview": "Registra ogni danno con le foto. Viene collegato alla prenotazione in cui è avvenuto e alla polizza che copriva il veicolo quel giorno.",
     "sections": [
       {
-        "title": "In questa pagina",
+        "title": "Come si gestisce un danno",
         "items": [
-          "L'elenco delle prenotazioni mostra solo quelle del veicolo scelto.",
-          "Imposta lo stato su «Riparato» quando il veicolo è sistemato.",
-          "Anche il personale al banco può segnalare un danno."
+          "Il personale viene avvisato di ogni nuovo danno. Un danno grave imposta il veicolo su «Da controllare».",
+          "«Manda in riparazione» crea una riparazione nella manutenzione o aggiunge il danno a una già programmata. Con una data di rientro, il veicolo è bloccato fino ad allora.",
+          "Quando la riparazione è completata, il danno diventa «Riparato». Il suo costo è quello della riparazione.",
+          "Addebita il cliente della prenotazione (fino alla franchigia) e annota quanto ha pagato l'assicurazione; entrambi risultano recuperati nei report."
         ]
       }
     ]
@@ -25,6 +26,30 @@
   "deleted": "Eliminato",
   "active": "Attivo",
   "fields": {
+    "!enums": {
+      "status": {
+        "open": "Aperto",
+        "in_repair": "In riparazione",
+        "repaired": "Riparato"
+      },
+      "severity": {
+        "minor": "Lieve",
+        "moderate": "Moderato",
+        "major": "Grave"
+      },
+      "area": {
+        "front": "Anteriore",
+        "rear": "Posteriore",
+        "left": "Lato sinistro",
+        "right": "Lato destro",
+        "roof": "Tetto",
+        "interior": "Interni",
+        "windshield": "Parabrezza",
+        "wheels": "Ruote",
+        "underbody": "Sottoscocca",
+        "other": "Altro"
+      }
+    },
     "vehicle": "Veicolo",
     "reservation": "Prenotazione",
     "reportedAt": "Segnalato il",
@@ -32,7 +57,6 @@
     "severity": "Gravità",
     "status": "Stato",
     "estimatedCost": "Costo stimato",
-    "repairCost": "Costo della riparazione",
     "repairedAt": "Riparato il",
     "description": "Descrizione",
     "createdAt": "Creato il",
@@ -40,6 +64,12 @@
     "createdBy": "Creato da",
     "company": "Azienda",
     "deletedAt": "Eliminato il",
-    "deletedBy": "Eliminato da"
+    "deletedBy": "Eliminato da",
+    "chargedAmount": "Addebitato al cliente",
+    "chargedAt": "Addebitato il",
+    "repair": "Riparazione",
+    "insurance": "Polizza assicurativa",
+    "claimNumber": "Numero del sinistro",
+    "insurerPaidAmount": "Pagato dall'assicurazione"
   }
 }

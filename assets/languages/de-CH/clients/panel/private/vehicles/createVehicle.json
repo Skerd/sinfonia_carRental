@@ -12,6 +12,9 @@
     "6": "Samstag"
   },
   "form": {
+    "vehicleSectionTitle": "Fahrzeug",
+    "fleetSectionTitle": "Flotte",
+    "photosSectionTitle": "Fotos und Videos",
     "categoryLabel": "Kategorie",
     "categoryPlaceholder": "Kategorie auswählen",
     "colorLabel": "Farbe",
@@ -30,6 +33,11 @@
     "platePlaceholder": "z. B. ZH 123456",
     "statusLabel": "Status",
     "statusPlaceholder": "Status auswählen",
+    "status": {
+      "active": "Aktiv",
+      "maintenance": "In Wartung",
+      "retired": "Ausser Betrieb"
+    },
     "vinLabel": "FIN",
     "vinPlaceholder": "FIN eingeben",
     "yearLabel": "Jahr",

@@ -16,8 +16,6 @@
     "vehiclePlaceholder": "Select vehicle",
     "typeLabel": "Type",
     "typePlaceholder": "Select type",
-    "statusLabel": "Status",
-    "statusPlaceholder": "Select status",
     "serviceDateLabel": "Service date",
     "serviceDatePlaceholder": "Pick a date",
     "odometerKmLabel": "Odometer (km)",
@@ -43,11 +41,9 @@
       "battery": "Battery",
       "other": "Other"
     },
-    "status": {
-      "scheduled": "Scheduled",
-      "completed": "Completed",
-      "cancelled": "Cancelled"
-    }
+    "serviceSectionTitle": "Service",
+    "costSectionTitle": "Cost and next service",
+    "notesSectionTitle": "Notes and files"
   },
   "axios": {
     "start": {

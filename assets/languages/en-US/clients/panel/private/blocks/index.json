@@ -11,7 +11,8 @@
         "title": "On this page",
         "items": [
           "A block can't overlap a booking; move the booking to another car first.",
-          "Once created, a block's window is fixed. To change it, delete it and add a new one."
+          "Once created, a block's window is fixed. To change it, delete it and add a new one.",
+          "A block made by a transfer or a scheduled service is changed there: it ends when the car arrives or is back, and goes when that record is cancelled."
         ]
       }
     ]
@@ -24,6 +25,18 @@
   "deleted": "Deleted",
   "active": "Active",
   "fields": {
+    "!enums": {
+      "reason": {
+        "maintenance": "Maintenance",
+        "repair": "Repair",
+        "transfer": "Transfer",
+        "other": "Other"
+      },
+      "source": {
+        "transfer": "Transfer",
+        "service": "Service"
+      }
+    },
     "vehicle": "Vehicle",
     "startAt": "From",
     "endAt": "Until",
@@ -34,6 +47,7 @@
     "createdBy": "Created by",
     "company": "Company",
     "deletedAt": "Deleted at",
-    "deletedBy": "Deleted by"
+    "deletedBy": "Deleted by",
+    "source": "Made by"
   }
 }

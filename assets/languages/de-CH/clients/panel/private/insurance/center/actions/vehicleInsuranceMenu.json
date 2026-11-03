@@ -1,0 +1,6 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/actions/vehicleInsuranceMenu.tsx",
+  "cancel": "Police stornieren",
+  "uncancel": "Police wiederherstellen",
+  "renew": "Erneuern"
+}

@@ -5,14 +5,14 @@
   "help": {
     "ariaLabel": "Über Versicherungen",
     "title": "Über Versicherungen",
-    "overview": "Jede Police gehört zu einem Fahrzeug. Eine Verlängerung ist eine neue Police, die alte bleibt als Verlauf erhalten.",
+    "overview": "Jede Police gehört zu einem Fahrzeug. Ein Fahrzeug wird nur übergeben, solange eine Police es bis zur Rückgabe deckt.",
     "sections": [
       {
         "title": "Auf dieser Seite",
         "items": [
-          "Die in den Vermietungseinstellungen gewählten Mitarbeitenden werden 30 Tage vor Ablauf einmal benachrichtigt.",
-          "Policen nach dem Ablaufdatum werden jeden Morgen als abgelaufen markiert.",
-          "Über das Menü eines Fahrzeugs sehen Sie nur dessen Policen."
+          "Nutzen Sie «Erneuern» im Menü: Der neue Eintrag wird aus dem alten übernommen und mit ihm verknüpft, so bleibt die Historie eine Kette.",
+          "Mitarbeitende werden 30 Tage vor einem Ablauf gewarnt, und nochmals am Tag, an dem einer ohne Erneuerung abläuft.",
+          "Ein Schaden wird für die Schadenmeldung mit der Police verknüpft, die das Fahrzeug an dem Tag deckte."
         ]
       }
     ]
@@ -25,6 +25,18 @@
   "deleted": "Gelöscht",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Aktiv",
+        "expired": "Abgelaufen",
+        "cancelled": "Gekündigt"
+      },
+      "coverage": {
+        "third_party": "Haftpflicht",
+        "partial_casco": "Teilkasko",
+        "full_casco": "Vollkasko"
+      }
+    },
     "vehicle": "Fahrzeug",
     "insurer": "Versicherer",
     "policyNumber": "Policennummer",
@@ -40,6 +52,10 @@
     "createdBy": "Erstellt von",
     "company": "Unternehmen",
     "deletedAt": "Gelöscht am",
-    "deletedBy": "Gelöscht von"
+    "deletedBy": "Gelöscht von",
+    "supersedes": "Erneuert",
+    "supersededBy": "Erneuert durch",
+    "attachments": "Anhänge",
+    "expiryReminderSentAt": "Ablauferinnerung gesendet"
   }
 }

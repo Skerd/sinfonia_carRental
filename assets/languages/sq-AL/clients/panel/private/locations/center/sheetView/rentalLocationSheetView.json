@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/locations/center/sheetView/rentalLocationSheetView.tsx",
+  "failedTitle": "Vendndodhja nuk u ngarkua",
+  "failedDescription": "Diçka shkoi keq gjatë ngarkimit. Klikoni për të provuar përsëri.",
+  "failedTooltipDescription": "Klikoni për të provuar përsëri ngarkimin e të dhënave.",
   "lifecycle": "Cikli i jetës",
   "address": "Adresa",
   "city": "Qyteti",

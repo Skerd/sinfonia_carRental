@@ -11,7 +11,8 @@
         "title": "In questa pagina",
         "items": [
           "Un blocco non può sovrapporsi a una prenotazione; sposta prima la prenotazione su un'altra auto.",
-          "Una volta creato, il periodo di un blocco è fisso. Per cambiarlo, eliminalo e creane uno nuovo."
+          "Una volta creato, il periodo di un blocco è fisso. Per cambiarlo, eliminalo e creane uno nuovo.",
+          "Un blocco creato da un trasferimento o da un intervento programmato si modifica lì: termina quando il veicolo arriva o rientra, e sparisce se quel record viene annullato."
         ]
       }
     ]
@@ -24,6 +25,18 @@
   "deleted": "Eliminato",
   "active": "Attivo",
   "fields": {
+    "!enums": {
+      "reason": {
+        "maintenance": "Manutenzione",
+        "repair": "Riparazione",
+        "transfer": "Trasferimento",
+        "other": "Altro"
+      },
+      "source": {
+        "transfer": "Trasferimento",
+        "service": "Intervento"
+      }
+    },
     "vehicle": "Veicolo",
     "startAt": "Da",
     "endAt": "Fino a",
@@ -34,6 +47,7 @@
     "createdBy": "Creato da",
     "company": "Azienda",
     "deletedAt": "Eliminato il",
-    "deletedBy": "Eliminato da"
+    "deletedBy": "Eliminato da",
+    "source": "Creato da"
   }
 }

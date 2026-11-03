@@ -32,9 +32,12 @@
         "title": "Leximi i shifrave",
         "items": [
           "Një kërkim pa makinë të lirë numërohet si kërkesë e humbur.",
-          "Kthimi është të ardhurat e periudhës pjesëtuar me çmimin e blerjes."
+          "Kthimi është të ardhurat e periudhës pjesëtuar me çmimin e blerjes.",
+          "Riparimet janë kostoja e regjistrimeve të riparimit. Gjobat janë ato që kompania pagoi dhe mbajti. Rikuperuar është ajo që klientët dhe sigurimet paguan për dëmtimet."
         ]
       }
     ]
-  }
+  },
+  "fines": "Gjobat",
+  "recovered": "Rikuperuar"
 }

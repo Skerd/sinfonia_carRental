@@ -5,14 +5,15 @@
   "help": {
     "ariaLabel": "À propos des amendes",
     "title": "À propos des amendes",
-    "overview": "Saisissez une amende à sa réception. La réservation dont le départ et le retour couvrent l'heure de l'infraction est trouvée automatiquement, avec son conducteur principal.",
+    "overview": "Saisissez une amende à réception de l'avis. La réservation qui avait le véhicule à ce moment est trouvée seule, avec son conducteur principal ; sinon, le transfert du personnel.",
     "sections": [
       {
-        "title": "Sur cette page",
+        "title": "Choisissez une voie",
         "items": [
-          "Facturez le client pour ajouter l'amende et les frais de dossier à sa réservation ; une carte enregistrée est débitée tout de suite.",
-          "Téléchargez la lettre de désignation pour indiquer le conducteur à l'autorité.",
-          "Si le véhicule ou l'heure est corrigé, utilisez Rapprocher à nouveau."
+          "Désigner le conducteur : envoyez la lettre à l'autorité ; le conducteur paie, le client n'est facturé que des frais de gestion.",
+          "Facturer le client : l'amende et les frais vont sur la réservation. Après le retour, ils ont leur propre facture ; une carte enregistrée est débitée, sinon le client paie via le lien de réservation.",
+          "« Enregistrer le paiement » quand l'entreprise paie l'autorité. Sans réservation à facturer, l'amende reste un coût de l'entreprise.",
+          "Contestez une amende ; annulez-la si l'autorité l'abandonne. Le personnel est prévenu une semaine avant l'échéance d'une amende impayée."
         ]
       }
     ]
@@ -25,6 +26,24 @@
   "deleted": "Supprimé",
   "active": "Actif",
   "fields": {
+    "!enums": {
+      "status": {
+        "received": "Reçue",
+        "driver_identified": "Conducteur identifié",
+        "charged": "Facturée au client",
+        "paid_by_company": "Payée par nous",
+        "transferred": "Conducteur désigné",
+        "disputed": "Contestée",
+        "cancelled": "Annulée"
+      },
+      "type": {
+        "speeding": "Excès de vitesse",
+        "parking": "Stationnement",
+        "red_light": "Feu rouge",
+        "toll": "Péage",
+        "other": "Autre"
+      }
+    },
     "reference": "Référence",
     "vehicle": "Véhicule",
     "offenceAt": "Date et heure de l'infraction",
@@ -44,6 +63,11 @@
     "createdBy": "Créé par",
     "company": "Entreprise",
     "deletedAt": "Supprimé le",
-    "deletedBy": "Supprimé par"
+    "deletedBy": "Supprimé par",
+    "transfer": "Transfert",
+    "paidAt": "Payée le",
+    "paidAmount": "Montant payé",
+    "paymentReference": "Référence du paiement",
+    "dueReminderSentAt": "Rappel d'échéance envoyé"
   }
 }

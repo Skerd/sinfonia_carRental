@@ -1,7 +1,13 @@
 {
   "path": "src/modules/carRental/clients/panel/private/subscriptions/center/sheetView/rentalSubscriptionSheetView.tsx",
+  "failedTitle": "Failed to load subscription",
+  "failedDescription": "Something went wrong while loading this subscription. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "overview": "Overview",
+  "contactGroup": "Contact",
+  "bookingGroup": "Booking",
+  "scheduleGroup": "Schedule",
   "rentalSubscriptionSubtitle": "Subscription",
   "contactName": "Contact name",
   "email": "Email",

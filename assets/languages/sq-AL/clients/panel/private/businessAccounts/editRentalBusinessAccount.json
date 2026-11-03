@@ -12,6 +12,9 @@
     "6": "E shtunë"
   },
   "form": {
+    "companySectionTitle": "Kompania",
+    "termsSectionTitle": "Kushtet",
+    "notesSectionTitle": "Shënime",
     "nameLabel": "Emri",
     "namePlaceholder": "Emri i kompanisë",
     "vatNumberLabel": "Numri i TVSH-së",

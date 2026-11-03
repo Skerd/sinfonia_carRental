@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/center/dialogs/unpublishRentalReviewDialog.tsx",
+  "title": "Unpublish review",
+  "description": "This review will be hidden from the website until it is published again.",
+  "cancel": "Cancel",
+  "confirm": "Unpublish",
+  "busy": "Working…",
+  "axios": {
+    "start": {
+      "title": "Unpublishing review…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Review unpublished",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not unpublish review",
+      "time": 3000
+    }
+  }
+}

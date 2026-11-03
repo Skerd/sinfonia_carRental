@@ -13,6 +13,7 @@
   },
   "form": {
     "identificationSectionTitle": "Identificazione",
+    "attachmentsSectionTitle": "Allegati",
     "vehicleLabel": "Veicolo",
     "vehiclePlaceholder": "Seleziona un veicolo",
     "typeLabel": "Tipo",

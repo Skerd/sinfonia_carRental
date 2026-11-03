@@ -5,14 +5,14 @@
   "help": {
     "ariaLabel": "À propos de l'entretien",
     "title": "À propos de l'entretien",
-    "overview": "Le carnet d'entretien de chaque véhicule. La dernière intervention terminée fixe la date et le kilométrage du prochain entretien.",
+    "overview": "Le carnet d'entretien de chaque véhicule : entretiens, réparations et contrôles, avec leur coût. Le dernier entretien terminé avec une prochaine échéance fixe le prochain entretien du véhicule.",
     "sections": [
       {
         "title": "Sur cette page",
         "items": [
-          "Les interventions planifiées ou annulées ne comptent pas pour le prochain entretien.",
-          "Le personnel choisi est averti 14 jours ou 1 000 km avant le prochain entretien.",
-          "Un kilométrage plus élevé sur une intervention met à jour celui du véhicule."
+          "Prévoyez un entretien en « Planifié ». Avec une date de retour, le véhicule est bloqué pour les réservations jusque-là.",
+          "Terminez-le au retour du véhicule : le blocage prend fin et les dommages réparés passent à « Réparé ». Annuler libère le véhicule et rouvre les dommages.",
+          "Le personnel choisi est prévenu 14 jours ou 1 000 km avant le prochain entretien."
         ]
       }
     ]
@@ -25,6 +25,23 @@
   "deleted": "Supprimé",
   "active": "Actif",
   "fields": {
+    "!enums": {
+      "status": {
+        "scheduled": "Planifié",
+        "completed": "Terminé",
+        "cancelled": "Annulé"
+      },
+      "type": {
+        "scheduled_service": "Entretien périodique",
+        "oil_change": "Vidange",
+        "tires": "Pneus",
+        "brakes": "Freins",
+        "inspection": "Contrôle",
+        "repair": "Réparation",
+        "battery": "Batterie",
+        "other": "Autre"
+      }
+    },
     "vehicle": "Véhicule",
     "type": "Type",
     "status": "Statut",
@@ -40,6 +57,10 @@
     "createdBy": "Créé par",
     "company": "Entreprise",
     "deletedAt": "Supprimé le",
-    "deletedBy": "Supprimé par"
+    "deletedBy": "Supprimé par",
+    "readyAt": "Véhicule de retour le",
+    "damages": "Dommages réparés",
+    "block": "Blocage",
+    "attachments": "Pièces jointes"
   }
 }

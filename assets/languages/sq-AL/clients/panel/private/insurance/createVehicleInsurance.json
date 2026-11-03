@@ -12,6 +12,11 @@
     "6": "E shtunë"
   },
   "form": {
+    "identificationSectionTitle": "Identifikimi",
+    "validitySectionTitle": "Vlefshmëria",
+    "amountsSectionTitle": "Shumat",
+    "attachmentsSectionTitle": "Bashkëngjitjet",
+    "attachmentsBlankLabel": "",
     "vehicleLabel": "Automjeti",
     "vehiclePlaceholder": "Zgjidhni automjetin",
     "insurerLabel": "Siguruesi",

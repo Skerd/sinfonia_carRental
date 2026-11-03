@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/dialogs/vehicleInsuranceDialogs.tsx",
+  "back": "Zurück",
+  "cancel": {
+    "title": "Police stornieren",
+    "description": "Police {policy} bleibt unverändert, bis sie wiederhergestellt wird. Daten, Deckung und Beträge lassen sich nicht ändern.",
+    "confirm": "Police stornieren"
+  },
+  "uncancel": {
+    "title": "Police wiederherstellen",
+    "description": "Police {policy} wird wieder aktiv, oder abgelaufen, wenn das Enddatum vorbei ist.",
+    "confirm": "Police wiederherstellen"
+  }
+}

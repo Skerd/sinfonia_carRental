@@ -5,14 +5,14 @@
   "help": {
     "ariaLabel": "Rreth dokumenteve",
     "title": "Rreth dokumenteve",
-    "overview": "Ruani këtu dokumentet e çdo automjeti, me skanime. Dokumentet pa datë skadimi nuk krijojnë kujtesë.",
+    "overview": "Mbani këtu dokumentet e çdo automjeti, me skanime. Automjeti nuk dorëzohet nëse regjistrimi, kontrolli teknik, testi i shkarkimeve ose taksa rrugore skadojnë para kthimit.",
     "sections": [
       {
         "title": "Në këtë faqe",
         "items": [
-          "Stafi i zgjedhur njoftohet një herë, 30 ditë para skadimit.",
-          "Dokumentet e skaduara shënohen çdo mëngjes.",
-          "Një dokument më i ri i të njëjtit lloj zëvendëson kujtesën e të vjetrit."
+          "Përdorni «Rinovo» te menyja: regjistrimi i ri plotësohet nga i vjetri dhe lidhet me të, kështu historiku mbetet zinxhir.",
+          "Stafi paralajmërohet 30 ditë para skadimit dhe sërish ditën kur skadon pa rinovim.",
+          "Dokumentet pa datë skadimi nuk shkaktojnë kurrë kujtesë."
         ]
       }
     ]
@@ -25,6 +25,20 @@
   "deleted": "Fshirë",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "I vlefshëm",
+        "expired": "I skaduar"
+      },
+      "type": {
+        "registration": "Leja e qarkullimit",
+        "technical_inspection": "Kontrolli teknik",
+        "emissions_test": "Testi i emetimeve",
+        "road_tax": "Taksa e qarkullimit",
+        "green_card": "Karta jeshile",
+        "other": "Tjetër"
+      }
+    },
     "vehicle": "Automjeti",
     "type": "Lloji",
     "documentNumber": "Numri i dokumentit",
@@ -38,6 +52,10 @@
     "createdBy": "Krijuar nga",
     "company": "Kompania",
     "deletedAt": "Fshirë më",
-    "deletedBy": "Fshirë nga"
+    "deletedBy": "Fshirë nga",
+    "supersedes": "Rinovon",
+    "supersededBy": "Rinovuar nga",
+    "attachments": "Bashkëngjitjet",
+    "expiryReminderSentAt": "Kujtesa e skadimit u dërgua"
   }
 }

@@ -2,5 +2,9 @@
   "path": "src/modules/carRental/clients/panel/private/fines/center/actions/vehicleFineMenu.tsx",
   "matchDriver": "Abbina di nuovo",
   "chargeCustomer": "Addebita al cliente",
-  "driverLetter": "Scarica la lettera del conducente"
+  "driverLetter": "Scarica la lettera del conducente",
+  "nominateDriver": "Comunica il conducente",
+  "recordPayment": "Registra il pagamento",
+  "dispute": "Contesta",
+  "annul": "Annulla la multa"
 }

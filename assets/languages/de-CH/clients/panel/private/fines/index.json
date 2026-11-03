@@ -5,14 +5,15 @@
   "help": {
     "ariaLabel": "Über Bussen",
     "title": "Über Bussen",
-    "overview": "Erfassen Sie eine Busse, wenn sie eintrifft. Die Buchung, deren Abholung und Rückgabe die Tatzeit umfassen, wird mit ihrer Hauptfahrerin oder ihrem Hauptfahrer automatisch gefunden.",
+    "overview": "Erfassen Sie eine Busse, wenn die Mitteilung eintrifft. Die Buchung, die das Fahrzeug zu der Zeit hatte, wird mit ihrem Hauptfahrer automatisch gefunden; sonst die Überführung durch Mitarbeitende.",
     "sections": [
       {
-        "title": "Auf dieser Seite",
+        "title": "Wählen Sie einen Weg",
         "items": [
-          "Belasten Sie die Kundschaft, um Busse und Bearbeitungsgebühr der Buchung hinzuzufügen; eine gespeicherte Karte wird sofort belastet.",
-          "Laden Sie das Fahrerschreiben herunter, um der Behörde die fahrende Person zu melden.",
-          "Wurde Fahrzeug oder Zeit korrigiert, verwenden Sie Erneut zuordnen."
+          "Fahrer/in melden: Senden Sie den Fahrerbrief an die Behörde; die Person bezahlt selbst, die Kundschaft trägt nur die Bearbeitungsgebühr.",
+          "Kundschaft belasten: Busse und Bearbeitungsgebühr kommen auf die Buchung. Nach der Rückgabe erhalten sie eine eigene Rechnung; eine gespeicherte Karte wird belastet, sonst zahlt die Kundschaft über den Buchungslink.",
+          "«Zahlung erfassen», wenn die Firma die Behörde bezahlt. Ohne Buchung zum Belasten bleibt die Busse als Kosten der Firma.",
+          "Bestreiten Sie eine angefochtene Busse; annullieren Sie sie, wenn die Behörde sie fallen lässt. Mitarbeitende werden eine Woche vor Fälligkeit einer unbezahlten Busse gewarnt."
         ]
       }
     ]
@@ -25,6 +26,24 @@
   "deleted": "Gelöscht",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "received": "Erhalten",
+        "driver_identified": "Fahrer/in ermittelt",
+        "charged": "Der Kundschaft belastet",
+        "paid_by_company": "Von uns bezahlt",
+        "transferred": "Fahrer/in gemeldet",
+        "disputed": "Bestritten",
+        "cancelled": "Annulliert"
+      },
+      "type": {
+        "speeding": "Geschwindigkeit",
+        "parking": "Parkieren",
+        "red_light": "Rotlicht",
+        "toll": "Maut",
+        "other": "Anderes"
+      }
+    },
     "reference": "Referenz",
     "vehicle": "Fahrzeug",
     "offenceAt": "Datum und Zeit des Verstosses",
@@ -44,6 +63,11 @@
     "createdBy": "Erstellt von",
     "company": "Unternehmen",
     "deletedAt": "Gelöscht am",
-    "deletedBy": "Gelöscht von"
+    "deletedBy": "Gelöscht von",
+    "transfer": "Überführung",
+    "paidAt": "Bezahlt am",
+    "paidAmount": "Bezahlter Betrag",
+    "paymentReference": "Zahlungsreferenz",
+    "dueReminderSentAt": "Fälligkeitserinnerung gesendet"
   }
 }

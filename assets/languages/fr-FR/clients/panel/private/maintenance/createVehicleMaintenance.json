@@ -45,9 +45,13 @@
     },
     "status": {
       "scheduled": "Planifié",
-      "completed": "Terminé",
-      "cancelled": "Annulé"
-    }
+      "completed": "Terminé"
+    },
+    "serviceSectionTitle": "Intervention",
+    "costSectionTitle": "Coût et prochain entretien",
+    "notesSectionTitle": "Notes et fichiers",
+    "readyAtLabel": "Véhicule de retour le",
+    "readyAtPlaceholder": "Facultatif : bloque le véhicule jusque-là"
   },
   "axios": {
     "start": {

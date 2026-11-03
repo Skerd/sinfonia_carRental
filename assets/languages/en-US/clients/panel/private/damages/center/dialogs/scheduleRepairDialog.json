@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/dialogs/scheduleRepairDialog.tsx",
+  "title": "Send to repair",
+  "description": "Creates a repair in the service log for this damage, or adds it to a repair already planned for the car.",
+  "confirm": "Send to repair",
+  "cancel": "Back",
+  "repairLabel": "Planned repair",
+  "repairPlaceholder": "None: plan a new repair",
+  "serviceDateLabel": "In the garage from",
+  "readyAtLabel": "Car back on",
+  "readyAtHint": "With a date, the car can't be booked until then. A booking in that time must move to another car first.",
+  "providerLabel": "Garage",
+  "costLabel": "Estimated cost"
+}

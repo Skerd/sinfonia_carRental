@@ -16,8 +16,6 @@
     "vehiclePlaceholder": "Zgjidhni automjetin",
     "typeLabel": "Lloji",
     "typePlaceholder": "Zgjidhni llojin",
-    "statusLabel": "Statusi",
-    "statusPlaceholder": "Zgjidhni statusin",
     "serviceDateLabel": "Data e servisit",
     "serviceDatePlaceholder": "Zgjidhni datën",
     "odometerKmLabel": "Kilometrazhi (km)",
@@ -43,11 +41,9 @@
       "battery": "Bateria",
       "other": "Tjetër"
     },
-    "status": {
-      "scheduled": "I planifikuar",
-      "completed": "I përfunduar",
-      "cancelled": "I anuluar"
-    }
+    "serviceSectionTitle": "Servisi",
+    "costSectionTitle": "Kostoja dhe servisi i radhës",
+    "notesSectionTitle": "Shënime dhe skedarë"
   },
   "axios": {
     "start": {

@@ -5,14 +5,15 @@
   "help": {
     "ariaLabel": "Über Schäden",
     "title": "Über Schäden",
-    "overview": "Erfassen Sie jeden Schaden mit Fotos. Verknüpfen Sie ihn mit der Buchung, während der er entstanden ist.",
+    "overview": "Erfassen Sie jeden Schaden mit Fotos. Er wird mit der Buchung verknüpft, in der er entstand, und mit der Police, die das Fahrzeug an dem Tag versicherte.",
     "sections": [
       {
-        "title": "Auf dieser Seite",
+        "title": "So wird ein Schaden bearbeitet",
         "items": [
-          "Die Buchungsliste zeigt nur Buchungen des gewählten Fahrzeugs.",
-          "Setzen Sie den Status auf «Repariert», sobald das Fahrzeug wieder in Ordnung ist.",
-          "Auch Mitarbeitende am Schalter können Schäden erfassen."
+          "Die Mitarbeitenden werden über jeden neuen Schaden informiert. Ein schwerer Schaden setzt das Fahrzeug auf «Prüfung nötig».",
+          "«Zur Reparatur» erstellt eine Reparatur im Wartungsbuch oder fügt den Schaden einer bereits geplanten hinzu. Mit einem Bereitschaftsdatum ist das Fahrzeug bis dahin gesperrt.",
+          "Wenn die Reparatur erledigt ist, wird der Schaden «Repariert». Seine Kosten sind die Kosten der Reparatur.",
+          "Belasten Sie die Kundschaft der Buchung (bis zum Selbstbehalt) und erfassen Sie, was die Versicherung bezahlt hat; beides erscheint in den Berichten als zurückerhalten."
         ]
       }
     ]
@@ -25,6 +26,30 @@
   "deleted": "Gelöscht",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "open": "Offen",
+        "in_repair": "In Reparatur",
+        "repaired": "Repariert"
+      },
+      "severity": {
+        "minor": "Gering",
+        "moderate": "Mittel",
+        "major": "Schwer"
+      },
+      "area": {
+        "front": "Front",
+        "rear": "Heck",
+        "left": "Linke Seite",
+        "right": "Rechte Seite",
+        "roof": "Dach",
+        "interior": "Innenraum",
+        "windshield": "Windschutzscheibe",
+        "wheels": "Räder",
+        "underbody": "Unterboden",
+        "other": "Andere"
+      }
+    },
     "vehicle": "Fahrzeug",
     "reservation": "Buchung",
     "reportedAt": "Gemeldet am",
@@ -32,7 +57,6 @@
     "severity": "Schweregrad",
     "status": "Status",
     "estimatedCost": "Geschätzte Kosten",
-    "repairCost": "Reparaturkosten",
     "repairedAt": "Repariert am",
     "description": "Beschreibung",
     "createdAt": "Erstellt am",
@@ -40,6 +64,12 @@
     "createdBy": "Erstellt von",
     "company": "Unternehmen",
     "deletedAt": "Gelöscht am",
-    "deletedBy": "Gelöscht von"
+    "deletedBy": "Gelöscht von",
+    "chargedAmount": "Der Kundschaft belastet",
+    "chargedAt": "Belastet am",
+    "repair": "Reparatur",
+    "insurance": "Versicherungspolice",
+    "claimNumber": "Schadennummer",
+    "insurerPaidAmount": "Von der Versicherung bezahlt"
   }
 }

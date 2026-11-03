@@ -35,19 +35,12 @@
     "placePlaceholder": "Where it happened",
     "dueDateLabel": "Pay or reply by",
     "dueDatePlaceholder": "Pick a date",
-    "statusLabel": "Status",
-    "statusPlaceholder": "Select status",
-    "status": {
-      "received": "Received",
-      "driver_identified": "Driver identified",
-      "charged": "Charged to customer",
-      "paid_by_company": "Paid by us",
-      "transferred": "Named the driver",
-      "disputed": "Disputed"
-    },
     "attachmentsLabel": "Scan of the notice",
     "notesLabel": "Notes",
-    "notesPlaceholder": "Internal notes"
+    "notesPlaceholder": "Internal notes",
+    "offenceSectionTitle": "Offence",
+    "authoritySectionTitle": "Authority and amount",
+    "notesSectionTitle": "Notes and files"
   },
   "axios": {
     "start": {

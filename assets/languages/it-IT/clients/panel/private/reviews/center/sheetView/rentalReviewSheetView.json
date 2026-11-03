@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reviews/center/sheetView/rentalReviewSheetView.tsx",
+  "failedTitle": "Impossibile caricare la recensione",
+  "failedDescription": "Qualcosa è andato storto durante il caricamento. Fare clic per riprovare.",
+  "failedTooltipDescription": "Clicca per riprovare a caricare i dati.",
   "lifecycle": "Ciclo di vita",
   "overview": "Panoramica",
   "rentalReviewSubtitle": "Recensione",

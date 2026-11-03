@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/transfers/center/sheetView/vehicleTransferSheetView.tsx",
+  "failedTitle": "Impossible de charger le transfert",
+  "failedDescription": "Une erreur s'est produite lors du chargement. Cliquez pour réessayer.",
+  "failedTooltipDescription": "Cliquez pour réessayer de charger les données.",
   "lifecycle": "Cycle de vie",
   "overview": "Aperçu",
   "vehicleTransferSubtitle": "Transfert",

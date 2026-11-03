@@ -35,19 +35,12 @@
     "placePlaceholder": "Lieu de l'infraction",
     "dueDateLabel": "Payer ou répondre avant le",
     "dueDatePlaceholder": "Choisir une date",
-    "statusLabel": "Statut",
-    "statusPlaceholder": "Choisir un statut",
-    "status": {
-      "received": "Reçue",
-      "driver_identified": "Conducteur identifié",
-      "charged": "Facturée au client",
-      "paid_by_company": "Payée par nous",
-      "transferred": "Conducteur désigné",
-      "disputed": "Contestée"
-    },
     "attachmentsLabel": "Scan de l'avis",
     "notesLabel": "Notes",
-    "notesPlaceholder": "Notes internes"
+    "notesPlaceholder": "Notes internes",
+    "offenceSectionTitle": "Infraction",
+    "authoritySectionTitle": "Autorité et montant",
+    "notesSectionTitle": "Notes et fichiers"
   },
   "axios": {
     "start": {

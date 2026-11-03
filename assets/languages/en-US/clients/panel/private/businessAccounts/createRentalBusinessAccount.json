@@ -12,6 +12,9 @@
     "6": "Saturday"
   },
   "form": {
+    "companySectionTitle": "Company",
+    "termsSectionTitle": "Terms",
+    "notesSectionTitle": "Notes",
     "nameLabel": "Name",
     "namePlaceholder": "Company name",
     "vatNumberLabel": "VAT number",

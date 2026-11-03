@@ -5,14 +5,15 @@
   "help": {
     "ariaLabel": "Rreth dëmtimeve",
     "title": "Rreth dëmtimeve",
-    "overview": "Regjistroni çdo dëmtim me foto dhe lidheni me rezervimin gjatë të cilit ndodhi.",
+    "overview": "Regjistroni çdo dëmtim me foto. Lidhet me rezervimin gjatë të cilit ndodhi dhe me policën që mbulonte automjetin atë ditë.",
     "sections": [
       {
-        "title": "Në këtë faqe",
+        "title": "Si trajtohet një dëmtim",
         "items": [
-          "Lista e rezervimeve tregon vetëm rezervimet e automjetit të zgjedhur.",
-          "Vendosni statusin «I riparuar» kur automjeti rregullohet.",
-          "Edhe stafi në sportel mund të raportojë dëmtime."
+          "Stafi njoftohet për çdo dëmtim të ri. Një dëmtim i rëndë e vendos automjetin në «Duhet kontrolluar».",
+          "«Dërgo për riparim» krijon një riparim në mirëmbajtje ose e shton dëmtimin te një riparim i planifikuar. Me një datë kthimi, automjeti bllokohet deri atëherë.",
+          "Kur riparimi përfundon, dëmtimi bëhet «I riparuar». Kostoja e tij është kostoja e riparimit.",
+          "Faturojini klientit të rezervimit (deri te franshiza) dhe shënoni sa pagoi sigurimi; të dyja shfaqen si të rikuperuara te raportet."
         ]
       }
     ]
@@ -25,6 +26,30 @@
   "deleted": "Fshirë",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "open": "I hapur",
+        "in_repair": "Në riparim",
+        "repaired": "I riparuar"
+      },
+      "severity": {
+        "minor": "I lehtë",
+        "moderate": "Mesatar",
+        "major": "I rëndë"
+      },
+      "area": {
+        "front": "Përpara",
+        "rear": "Prapa",
+        "left": "Ana e majtë",
+        "right": "Ana e djathtë",
+        "roof": "Çatia",
+        "interior": "Brendësia",
+        "windshield": "Xhami i përparmë",
+        "wheels": "Rrotat",
+        "underbody": "Pjesa e poshtme",
+        "other": "Tjetër"
+      }
+    },
     "vehicle": "Automjeti",
     "reservation": "Rezervimi",
     "reportedAt": "Raportuar më",
@@ -32,7 +57,6 @@
     "severity": "Rëndësia",
     "status": "Statusi",
     "estimatedCost": "Kosto e vlerësuar",
-    "repairCost": "Kosto e riparimit",
     "repairedAt": "Riparuar më",
     "description": "Përshkrimi",
     "createdAt": "Krijuar më",
@@ -40,6 +64,12 @@
     "createdBy": "Krijuar nga",
     "company": "Kompania",
     "deletedAt": "Fshirë më",
-    "deletedBy": "Fshirë nga"
+    "deletedBy": "Fshirë nga",
+    "chargedAmount": "I faturuar klientit",
+    "chargedAt": "Faturuar më",
+    "repair": "Riparimi",
+    "insurance": "Polica e sigurimit",
+    "claimNumber": "Numri i dëmit",
+    "insurerPaidAmount": "Paguar nga sigurimi"
   }
 }

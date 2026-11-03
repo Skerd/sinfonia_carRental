@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/dialogs/vehicleMaintenanceDialogs.tsx",
+  "back": "Retour",
+  "complete": {
+    "title": "Le véhicule est de retour",
+    "description": "{plate} est de nouveau réservable dès maintenant. Les dommages réparés par cette intervention sont marqués réparés.",
+    "confirm": "Marquer terminé"
+  },
+  "cancel": {
+    "title": "Annuler l'intervention",
+    "description": "{plate} est de nouveau libre pour les réservations, et les dommages à réparer sont rouverts.",
+    "confirm": "Annuler"
+  }
+}

@@ -34,6 +34,25 @@
   "deleted": "Eliminato",
   "active": "Attivo",
   "fields": {
+    "!enums": {
+      "status": {
+        "held": "In attesa di pagamento",
+        "confirmed": "Confermato",
+        "in_progress": "In viaggio",
+        "completed": "Completato",
+        "cancelled": "Annullato",
+        "expired": "Scaduto",
+        "no_show": "Non presentato"
+      },
+      "paymentStatus": {
+        "unpaid": "Non pagato",
+        "pending": "Pagamento in sospeso",
+        "paid": "Pagato",
+        "partially_refunded": "Rimborsato in parte",
+        "refunded": "Rimborsato",
+        "failed": "Pagamento non riuscito"
+      }
+    },
     "number": "Prenotazione",
     "status": "Stato",
     "paymentStatus": "Pagamento",

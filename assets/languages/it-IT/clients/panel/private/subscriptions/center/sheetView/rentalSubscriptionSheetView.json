@@ -1,7 +1,13 @@
 {
   "path": "src/modules/carRental/clients/panel/private/subscriptions/center/sheetView/rentalSubscriptionSheetView.tsx",
+  "failedTitle": "Impossibile caricare l'abbonamento",
+  "failedDescription": "Qualcosa è andato storto durante il caricamento. Fare clic per riprovare.",
+  "failedTooltipDescription": "Clicca per riprovare a caricare i dati.",
   "lifecycle": "Ciclo di vita",
   "overview": "Panoramica",
+  "contactGroup": "Contatto",
+  "bookingGroup": "Prenotazione",
+  "scheduleGroup": "Calendario",
   "rentalSubscriptionSubtitle": "Abbonamento",
   "contactName": "Nome del contatto",
   "email": "Email",

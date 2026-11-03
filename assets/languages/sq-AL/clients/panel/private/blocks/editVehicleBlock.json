@@ -12,6 +12,7 @@
     "6": "E shtunë"
   },
   "form": {
+    "blockSectionTitle": "Bllokimi",
     "endAtLabel": "Deri",
     "endAtPlaceholder": "Shkruani fundin",
     "noteLabel": "Shënim",
@@ -21,7 +22,13 @@
     "startAtLabel": "Nga",
     "startAtPlaceholder": "Shkruani fillimin",
     "vehicleLabel": "Automjeti",
-    "vehiclePlaceholder": "Zgjidh automjetin"
+    "vehiclePlaceholder": "Zgjidh automjetin",
+    "reason": {
+      "maintenance": "Mirëmbajtje",
+      "repair": "Riparim",
+      "transfer": "Transferim",
+      "other": "Tjetër"
+    }
   },
   "axios": {
     "start": {

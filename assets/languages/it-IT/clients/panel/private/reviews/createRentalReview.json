@@ -19,8 +19,7 @@
     "commentLabel": "Commento",
     "commentPlaceholder": "Quello che ha scritto il cliente",
     "authorNameLabel": "Nome",
-    "authorNamePlaceholder": "Nome del cliente",
-    "isPublishedLabel": "Pubblicata"
+    "authorNamePlaceholder": "Nome del cliente"
   },
   "axios": {
     "start": {

@@ -12,6 +12,9 @@
     "6": "Sabato"
   },
   "form": {
+    "contactSectionTitle": "Contatto",
+    "bookingSectionTitle": "Prenotazione",
+    "scheduleSectionTitle": "Calendario",
     "contactNameLabel": "Nome del contatto",
     "contactNamePlaceholder": "Per chi è l'auto",
     "emailLabel": "Email",

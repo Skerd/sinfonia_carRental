@@ -5,14 +5,14 @@
   "help": {
     "ariaLabel": "Über die Wartung",
     "title": "Über die Wartung",
-    "overview": "Das Serviceheft jedes Fahrzeugs. Der zuletzt erledigte Eintrag bestimmt den nächsten fälligen Service des Fahrzeugs.",
+    "overview": "Das Wartungsbuch jedes Fahrzeugs: Services, Reparaturen und Prüfungen mit ihren Kosten. Der letzte erledigte Service mit nächstem Termin bestimmt den nächsten Service des Fahrzeugs.",
     "sections": [
       {
         "title": "Auf dieser Seite",
         "items": [
-          "Geplante und abgesagte Einträge zählen nicht für den nächsten Service.",
-          "Die gewählten Mitarbeitenden werden 14 Tage oder 1000 km vor dem nächsten Service benachrichtigt.",
-          "Ein höherer Kilometerstand im Eintrag wird ins Fahrzeug übernommen."
+          "Planen Sie einen Service als «Geplant». Mit einem Bereitschaftsdatum ist das Fahrzeug bis dahin für Buchungen gesperrt.",
+          "Schliessen Sie ihn ab, wenn das Fahrzeug zurück ist: Die Sperre endet und die behobenen Schäden werden «Repariert». «Absagen» gibt das Fahrzeug frei und öffnet die Schäden wieder.",
+          "Ausgewählte Mitarbeitende werden 14 Tage oder 1000 km vor dem nächsten Service benachrichtigt."
         ]
       }
     ]
@@ -25,6 +25,23 @@
   "deleted": "Gelöscht",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "scheduled": "Geplant",
+        "completed": "Erledigt",
+        "cancelled": "Abgesagt"
+      },
+      "type": {
+        "scheduled_service": "Service",
+        "oil_change": "Ölwechsel",
+        "tires": "Reifen",
+        "brakes": "Bremsen",
+        "inspection": "Kontrolle",
+        "repair": "Reparatur",
+        "battery": "Batterie",
+        "other": "Andere"
+      }
+    },
     "vehicle": "Fahrzeug",
     "type": "Art",
     "status": "Status",
@@ -40,6 +57,10 @@
     "createdBy": "Erstellt von",
     "company": "Unternehmen",
     "deletedAt": "Gelöscht am",
-    "deletedBy": "Gelöscht von"
+    "deletedBy": "Gelöscht von",
+    "readyAt": "Fahrzeug zurück am",
+    "damages": "Behobene Schäden",
+    "block": "Sperre",
+    "attachments": "Anhänge"
   }
 }

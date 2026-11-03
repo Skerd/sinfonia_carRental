@@ -13,6 +13,7 @@
   },
   "form": {
     "identificationSectionTitle": "Identifikation",
+    "attachmentsSectionTitle": "Anhänge",
     "vehicleLabel": "Fahrzeug",
     "vehiclePlaceholder": "Fahrzeug wählen",
     "typeLabel": "Art",

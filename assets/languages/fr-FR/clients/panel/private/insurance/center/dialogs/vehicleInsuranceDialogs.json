@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/dialogs/vehicleInsuranceDialogs.tsx",
+  "back": "Retour",
+  "cancel": {
+    "title": "Annuler la police",
+    "description": "La police {policy} reste figée jusqu'à son rétablissement. Les dates, la couverture et les montants ne peuvent plus changer.",
+    "confirm": "Annuler la police"
+  },
+  "uncancel": {
+    "title": "Rétablir cette police",
+    "description": "La police {policy} redevient active, ou expirée si la date de fin est passée.",
+    "confirm": "Rétablir la police"
+  }
+}

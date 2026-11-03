@@ -31,6 +31,18 @@
   "deleted": "Gelöscht",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Aktiv",
+        "maintenance": "In Wartung",
+        "retired": "Ausser Betrieb"
+      },
+      "readiness": {
+        "ready": "Bereit",
+        "needs_cleaning": "Reinigung nötig",
+        "needs_check": "Kontrolle nötig"
+      }
+    },
     "plate": "Kennzeichen",
     "make": "Marke",
     "model": "Modell",
@@ -49,6 +61,16 @@
     "nextServiceDueAt": "Nächster Service am",
     "nextServiceDueKm": "Nächster Service bei (km)",
     "acquiredAt": "In der Flotte seit",
-    "purchasePrice": "Kaufpreis"
+    "purchasePrice": "Kaufpreis",
+    "readiness": "Bereitschaft",
+    "currentLocation": "Aktueller Standort",
+    "trackerId": "Tracker-ID",
+    "lastLatitude": "Letzter Breitengrad",
+    "lastLongitude": "Letzter Längengrad",
+    "lastReportedAt": "Letzte Position am",
+    "vin": "FIN",
+    "notes": "Notizen",
+    "images": "Fotos",
+    "videos": "Videos"
   }
 }

@@ -10,5 +10,20 @@
     "title": "Kundschaft belasten",
     "description": "Fügt Busse und Bearbeitungsgebühr der Buchung {booking} von {driver} hinzu und informiert per E-Mail. Eine gespeicherte Karte wird sofort belastet.",
     "confirm": "Belasten"
+  },
+  "nominateDriver": {
+    "title": "Fahrer/in melden",
+    "description": "Senden Sie den Fahrerbrief für {driver} an die Behörde; die Person bezahlt die Busse. Die Bearbeitungsgebühr, falls festgelegt, wird der Buchung {booking} belastet.",
+    "confirm": "Gemeldet"
+  },
+  "dispute": {
+    "title": "Busse bestreiten",
+    "description": "Solange sie bestritten ist, wird nichts belastet oder erinnert. Ermitteln Sie die Person erneut, wenn der Einspruch verloren geht.",
+    "confirm": "Bestreiten"
+  },
+  "annul": {
+    "title": "Busse annullieren",
+    "description": "Die Behörde hat die Busse fallen gelassen. Was der Buchung {booking} dafür belastet wurde, wird zurückgenommen: auf der Rechnung gutgeschrieben und, falls bezahlt, zurückerstattet.",
+    "confirm": "Annullieren"
   }
 }

@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/documents/center/sheetView/vehicleDocumentSheetView.tsx",
+  "failedTitle": "Failed to load document",
+  "failedDescription": "Something went wrong while loading this document. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "overview": "Overview",
   "vehicleDocumentSubtitle": "Vehicle document",
@@ -28,5 +31,8 @@
   "updatedAt": "Updated at",
   "createdBy": "Created by",
   "deletedAt": "Deleted at",
-  "deletedBy": "Deleted by"
+  "deletedBy": "Deleted by",
+  "renewalGroup": "Renewals",
+  "supersedes": "Renews",
+  "supersededBy": "Renewed by"
 }

@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reservations/center/sheetView/rentalReservationSheetView.tsx",
+  "failedTitle": "Failed to load reservation",
+  "failedDescription": "Something went wrong while loading this reservation. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "amountPaid": "Paid",
   "at": "When",
@@ -82,7 +85,8 @@
     "charge_added": "Charge added",
     "deposit_held": "Deposit held",
     "deposit_captured": "Deposit kept",
-    "deposit_released": "Deposit released"
+    "deposit_released": "Deposit released",
+    "charge_removed": "Charge removed"
   },
   "createdAt": "Created at",
   "updatedAt": "Updated at",

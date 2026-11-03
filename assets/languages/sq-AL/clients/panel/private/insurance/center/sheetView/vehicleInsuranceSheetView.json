@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/insurance/center/sheetView/vehicleInsuranceSheetView.tsx",
+  "failedTitle": "Polica nuk u ngarkua",
+  "failedDescription": "Diçka shkoi keq gjatë ngarkimit. Klikoni për të provuar përsëri.",
+  "failedTooltipDescription": "Klikoni për të provuar përsëri ngarkimin e të dhënave.",
   "lifecycle": "Cikli i jetës",
   "overview": "Përmbledhje",
   "vehicleInsuranceSubtitle": "Policë sigurimi",
@@ -28,5 +31,8 @@
   "updatedAt": "Përditësuar më",
   "createdBy": "Krijuar nga",
   "deletedAt": "Fshirë më",
-  "deletedBy": "Fshirë nga"
+  "deletedBy": "Fshirë nga",
+  "renewalGroup": "Rinovimet",
+  "supersedes": "Rinovon",
+  "supersededBy": "Rinovuar nga"
 }

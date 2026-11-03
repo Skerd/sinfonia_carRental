@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/dialogs/vehicleMaintenanceDialogs.tsx",
+  "back": "Back",
+  "complete": {
+    "title": "The car is back",
+    "description": "{plate} can be booked again from now. The damages this repair fixed are marked repaired.",
+    "confirm": "Mark completed"
+  },
+  "cancel": {
+    "title": "Cancel the service",
+    "description": "{plate} is free for bookings again, and the damages it was to fix are open again.",
+    "confirm": "Cancel service"
+  }
+}

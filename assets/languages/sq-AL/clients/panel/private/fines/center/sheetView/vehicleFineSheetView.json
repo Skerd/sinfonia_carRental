@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/fines/center/sheetView/vehicleFineSheetView.tsx",
+  "failedTitle": "Gjoba nuk u ngarkua",
+  "failedDescription": "Diçka shkoi keq gjatë ngarkimit. Klikoni për të provuar përsëri.",
+  "failedTooltipDescription": "Klikoni për të provuar përsëri ngarkimin e të dhënave.",
   "lifecycle": "Cikli i jetës",
   "overview": "Përmbledhje",
   "vehicleFineSubtitle": "Gjobë",
@@ -30,12 +33,26 @@
     "charged": "I faturuar klientit",
     "paid_by_company": "E paguar nga ne",
     "transferred": "Shoferi u njoftua",
-    "disputed": "E kundërshtuar"
+    "disputed": "E kundërshtuar",
+    "cancelled": "E anuluar"
   },
   "createdAt": "Krijuar më",
   "updatedAt": "Përditësuar më",
   "createdBy": "Krijuar nga",
   "company": "Kompania",
   "deletedAt": "Fshirë më",
-  "deletedBy": "Fshirë nga"
+  "deletedBy": "Fshirë nga",
+  "authorityGroup": "Autoriteti dhe shuma",
+  "driverGroup": "Kush e kishte automjetin",
+  "paymentGroup": "Paguar autoritetit",
+  "transfer": "Transferimi",
+  "transferStatusValues": {
+    "planned": "I planifikuar",
+    "in_transit": "Në rrugë",
+    "done": "Mbërriti",
+    "cancelled": "I anuluar"
+  },
+  "paidAt": "Paguar më",
+  "paidAmount": "Shuma e paguar",
+  "paymentReference": "Referenca e pagesës"
 }

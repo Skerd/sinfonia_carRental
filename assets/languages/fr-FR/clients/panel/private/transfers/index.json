@@ -24,6 +24,14 @@
   "deleted": "Supprimé",
   "active": "Actif",
   "fields": {
+    "!enums": {
+      "status": {
+        "planned": "Prévu",
+        "in_transit": "En route",
+        "done": "Arrivé",
+        "cancelled": "Annulé"
+      }
+    },
     "vehicle": "Véhicule",
     "fromLocation": "De",
     "toLocation": "Vers",
@@ -38,6 +46,7 @@
     "createdBy": "Créé par",
     "company": "Entreprise",
     "deletedAt": "Supprimé le",
-    "deletedBy": "Supprimé par"
+    "deletedBy": "Supprimé par",
+    "block": "Blocage"
   }
 }

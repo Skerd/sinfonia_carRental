@@ -1,7 +1,7 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reviews/editRentalReview.tsx",
   "title": "Modifier l'avis",
-  "description": "Modifier la note, le commentaire ou la publication",
+  "description": "Modifier la note ou le commentaire",
   "weekday": {
     "0": "Dimanche",
     "1": "Lundi",
@@ -19,8 +19,7 @@
     "commentLabel": "Commentaire",
     "commentPlaceholder": "Ce que le client a écrit",
     "authorNameLabel": "Nom",
-    "authorNamePlaceholder": "Nom du client",
-    "isPublishedLabel": "Publié"
+    "authorNamePlaceholder": "Nom du client"
   },
   "axios": {
     "start": {
@@ -38,7 +37,7 @@
   },
   "formHeader": {
     "title": "Modifier l'avis",
-    "description": "Modifier la note, le commentaire ou la publication"
+    "description": "Modifier la note ou le commentaire"
   },
   "formButtons": {
     "cancel": "Annuler",

@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/center/dialogs/unpublishRentalReviewDialog.tsx",
+  "title": "Veröffentlichung aufheben",
+  "description": "Diese Bewertung wird auf der Website ausgeblendet, bis sie wieder veröffentlicht wird.",
+  "cancel": "Abbrechen",
+  "confirm": "Aufheben",
+  "busy": "Wird ausgeführt…",
+  "axios": {
+    "start": {
+      "title": "Veröffentlichung wird aufgehoben…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Veröffentlichung aufgehoben",
+      "time": 3000
+    },
+    "error": {
+      "title": "Veröffentlichung konnte nicht aufgehoben werden",
+      "time": 3000
+    }
+  }
+}

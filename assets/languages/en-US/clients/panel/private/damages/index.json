@@ -5,14 +5,15 @@
   "help": {
     "ariaLabel": "About damages",
     "title": "About damages",
-    "overview": "Record each damage with photos. Link it to the booking it happened in.",
+    "overview": "Record each damage with photos. It is linked to the booking it happened in and to the policy that covered the car that day.",
     "sections": [
       {
-        "title": "On this page",
+        "title": "How a damage is handled",
         "items": [
-          "The booking list only shows bookings of the chosen car.",
-          "Set the status to Repaired once the car is fixed.",
-          "Counter staff can report damage too."
+          "Staff are notified of each new damage. A major one sets the car to Needs a check.",
+          "Send to repair creates a repair in the service log, or adds the damage to one already planned. With a ready date, the car is blocked until then.",
+          "When the repair is completed, the damage becomes Repaired. Its cost is the repair's cost.",
+          "Charge the customer of the booking (up to their excess) and note what the insurer paid; both show as recovered in Reports."
         ]
       }
     ]
@@ -25,6 +26,30 @@
   "deleted": "Deleted",
   "active": "Active",
   "fields": {
+    "!enums": {
+      "status": {
+        "open": "Open",
+        "in_repair": "In repair",
+        "repaired": "Repaired"
+      },
+      "severity": {
+        "minor": "Minor",
+        "moderate": "Moderate",
+        "major": "Major"
+      },
+      "area": {
+        "front": "Front",
+        "rear": "Rear",
+        "left": "Left side",
+        "right": "Right side",
+        "roof": "Roof",
+        "interior": "Interior",
+        "windshield": "Windshield",
+        "wheels": "Wheels",
+        "underbody": "Underbody",
+        "other": "Other"
+      }
+    },
     "vehicle": "Vehicle",
     "reservation": "Booking",
     "reportedAt": "Reported on",
@@ -32,7 +57,6 @@
     "severity": "Severity",
     "status": "Status",
     "estimatedCost": "Estimated cost",
-    "repairCost": "Repair cost",
     "repairedAt": "Repaired on",
     "description": "Description",
     "createdAt": "Created at",
@@ -40,6 +64,12 @@
     "createdBy": "Created by",
     "company": "Company",
     "deletedAt": "Deleted at",
-    "deletedBy": "Deleted by"
+    "deletedBy": "Deleted by",
+    "chargedAmount": "Charged to customer",
+    "chargedAt": "Charged on",
+    "repair": "Repair",
+    "insurance": "Insurance policy",
+    "claimNumber": "Claim number",
+    "insurerPaidAmount": "Paid by the insurer"
   }
 }

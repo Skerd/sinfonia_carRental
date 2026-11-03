@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/insurance/center/sheetView/vehicleInsuranceSheetView.tsx",
+  "failedTitle": "Impossibile caricare la polizza",
+  "failedDescription": "Qualcosa è andato storto durante il caricamento. Fare clic per riprovare.",
+  "failedTooltipDescription": "Clicca per riprovare a caricare i dati.",
   "lifecycle": "Ciclo di vita",
   "overview": "Panoramica",
   "vehicleInsuranceSubtitle": "Polizza assicurativa",
@@ -28,5 +31,8 @@
   "updatedAt": "Aggiornato il",
   "createdBy": "Creato da",
   "deletedAt": "Eliminato il",
-  "deletedBy": "Eliminato da"
+  "deletedBy": "Eliminato da",
+  "renewalGroup": "Rinnovi",
+  "supersedes": "Rinnova",
+  "supersededBy": "Rinnovato da"
 }

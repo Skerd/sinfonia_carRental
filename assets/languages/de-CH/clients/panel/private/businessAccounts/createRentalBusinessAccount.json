@@ -12,6 +12,9 @@
     "6": "Samstag"
   },
   "form": {
+    "companySectionTitle": "Unternehmen",
+    "termsSectionTitle": "Konditionen",
+    "notesSectionTitle": "Notizen",
     "nameLabel": "Name",
     "namePlaceholder": "Firmenname",
     "vatNumberLabel": "MwSt.-Nummer",

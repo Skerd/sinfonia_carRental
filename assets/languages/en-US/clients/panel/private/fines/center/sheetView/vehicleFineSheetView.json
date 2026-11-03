@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/fines/center/sheetView/vehicleFineSheetView.tsx",
+  "failedTitle": "Failed to load fine",
+  "failedDescription": "Something went wrong while loading this fine. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "overview": "Overview",
   "vehicleFineSubtitle": "Traffic fine",
@@ -30,12 +33,26 @@
     "charged": "Charged to customer",
     "paid_by_company": "Paid by us",
     "transferred": "Named the driver",
-    "disputed": "Disputed"
+    "disputed": "Disputed",
+    "cancelled": "Annulled"
   },
   "createdAt": "Created at",
   "updatedAt": "Updated at",
   "createdBy": "Created by",
   "company": "Company",
   "deletedAt": "Deleted at",
-  "deletedBy": "Deleted by"
+  "deletedBy": "Deleted by",
+  "authorityGroup": "Authority and amount",
+  "driverGroup": "Who had the car",
+  "paymentGroup": "Paid to the authority",
+  "transfer": "Transfer",
+  "transferStatusValues": {
+    "planned": "Planned",
+    "in_transit": "On the way",
+    "done": "Arrived",
+    "cancelled": "Cancelled"
+  },
+  "paidAt": "Paid on",
+  "paidAmount": "Amount paid",
+  "paymentReference": "Payment reference"
 }

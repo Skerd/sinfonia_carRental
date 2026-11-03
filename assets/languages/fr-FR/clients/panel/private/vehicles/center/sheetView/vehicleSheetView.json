@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/vehicles/center/sheetView/vehicleSheetView.tsx",
+  "failedTitle": "Impossible de charger le véhicule",
+  "failedDescription": "Une erreur s'est produite lors du chargement de ce véhicule. Cliquez pour réessayer.",
+  "failedTooltipDescription": "Cliquez pour réessayer de charger les données.",
   "lifecycle": "Cycle de vie",
   "category": "Catégorie",
   "color": "Couleur",
@@ -40,5 +43,12 @@
   "trackerId": "Traceur",
   "lastLatitude": "Latitude",
   "lastLongitude": "Longitude",
-  "lastReportedAt": "Dernier signal"
+  "lastReportedAt": "Dernier signal",
+  "currentLocation": "Emplacement actuel",
+  "readiness": "Disponibilité",
+  "readinessValues": {
+    "ready": "Prêt",
+    "needs_cleaning": "À nettoyer",
+    "needs_check": "À contrôler"
+  }
 }

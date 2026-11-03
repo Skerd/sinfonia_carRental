@@ -31,6 +31,18 @@
   "deleted": "Supprimé",
   "active": "Actif",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Actif",
+        "maintenance": "En maintenance",
+        "retired": "Retiré"
+      },
+      "readiness": {
+        "ready": "Prêt",
+        "needs_cleaning": "À nettoyer",
+        "needs_check": "À contrôler"
+      }
+    },
     "plate": "Plaque",
     "make": "Marque",
     "model": "Modèle",
@@ -49,6 +61,16 @@
     "nextServiceDueAt": "Prochain entretien le",
     "nextServiceDueKm": "Prochain entretien à (km)",
     "acquiredAt": "Dans la flotte depuis",
-    "purchasePrice": "Prix d'achat"
+    "purchasePrice": "Prix d'achat",
+    "readiness": "Disponibilité",
+    "currentLocation": "Emplacement actuel",
+    "trackerId": "ID du traceur",
+    "lastLatitude": "Dernière latitude",
+    "lastLongitude": "Dernière longitude",
+    "lastReportedAt": "Dernière position le",
+    "vin": "VIN",
+    "notes": "Notes",
+    "images": "Photos",
+    "videos": "Vidéos"
   }
 }

@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reviews/center/sheetView/rentalReviewSheetView.tsx",
+  "failedTitle": "Failed to load review",
+  "failedDescription": "Something went wrong while loading this review. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "overview": "Overview",
   "rentalReviewSubtitle": "Review",

@@ -24,15 +24,8 @@
     "areaPlaceholder": "Zgjidhni zonën",
     "severityLabel": "Rëndësia",
     "severityPlaceholder": "Zgjidhni rëndësinë",
-    "statusLabel": "Statusi",
-    "statusPlaceholder": "Zgjidhni statusin",
-    "repairSectionTitle": "Riparimi",
     "estimatedCostLabel": "Kosto e vlerësuar",
     "estimatedCostPlaceholder": "p.sh. 350",
-    "repairCostLabel": "Kosto e riparimit",
-    "repairCostPlaceholder": "p.sh. 350",
-    "repairedAtLabel": "Riparuar më",
-    "repairedAtPlaceholder": "Zgjidhni datën",
     "descriptionLabel": "Përshkrimi",
     "descriptionPlaceholder": "Çfarë u bë ose çfarë është dëmtuar",
     "photosLabel": "Fotot",
@@ -53,11 +46,14 @@
       "moderate": "Mesatar",
       "major": "I rëndë"
     },
-    "status": {
-      "open": "I hapur",
-      "in_repair": "Në riparim",
-      "repaired": "I riparuar"
-    }
+    "detailsSectionTitle": "Përshkrimi dhe fotot",
+    "claimSectionTitle": "Dëmi te sigurimi",
+    "insuranceLabel": "Polica e sigurimit",
+    "insurancePlaceholder": "Gjendet nga data (ndryshojeni nëse duhet)",
+    "claimNumberLabel": "Numri i dëmit",
+    "claimNumberPlaceholder": "p.sh. CLM-2026-0142",
+    "insurerPaidAmountLabel": "Paguar nga sigurimi",
+    "insurerPaidAmountPlaceholder": "p.sh. 800"
   },
   "axios": {
     "start": {

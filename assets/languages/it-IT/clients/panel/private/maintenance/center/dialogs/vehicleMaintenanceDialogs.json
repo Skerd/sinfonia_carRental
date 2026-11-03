@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/dialogs/vehicleMaintenanceDialogs.tsx",
+  "back": "Indietro",
+  "complete": {
+    "title": "Il veicolo è rientrato",
+    "description": "{plate} è di nuovo prenotabile da ora. I danni riparati con questo intervento vengono segnati come riparati.",
+    "confirm": "Segna completato"
+  },
+  "cancel": {
+    "title": "Annulla l'intervento",
+    "description": "{plate} è di nuovo libero per le prenotazioni e i danni da riparare tornano aperti.",
+    "confirm": "Annulla"
+  }
+}

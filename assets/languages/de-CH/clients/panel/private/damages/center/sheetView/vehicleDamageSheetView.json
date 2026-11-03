@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/damages/center/sheetView/vehicleDamageSheetView.tsx",
+  "failedTitle": "Schaden konnte nicht geladen werden",
+  "failedDescription": "Beim Laden ist ein Fehler aufgetreten. Klicken Sie, um es erneut zu versuchen.",
+  "failedTooltipDescription": "Klicken, um die Daten erneut zu laden.",
   "lifecycle": "Lebenszyklus",
   "overview": "Übersicht",
   "vehicleDamageSubtitle": "Schaden",
@@ -42,5 +45,16 @@
   "deletedAt": "Gelöscht am",
   "deletedBy": "Gelöscht von",
   "chargedAmount": "Der Kundschaft belastet",
-  "chargedAt": "Belastet am"
+  "chargedAt": "Belastet am",
+  "repairGroup": "Reparatur",
+  "recoveryGroup": "Zurückerhaltene Kosten",
+  "repair": "Reparatur",
+  "repairStatusValues": {
+    "scheduled": "Geplant",
+    "completed": "Erledigt",
+    "cancelled": "Abgesagt"
+  },
+  "insurance": "Versicherungspolice",
+  "claimNumber": "Schadennummer",
+  "insurerPaidAmount": "Von der Versicherung bezahlt"
 }

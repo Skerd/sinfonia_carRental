@@ -5,14 +5,14 @@
   "help": {
     "ariaLabel": "Rreth sigurimeve",
     "title": "Rreth sigurimeve",
-    "overview": "Çdo policë i përket një automjeti. Rinovimi është një policë e re, kështu që e vjetra mbetet në histori.",
+    "overview": "Çdo policë i përket një automjeti. Automjeti dorëzohet vetëm kur një policë e mbulon deri në kthim.",
     "sections": [
       {
         "title": "Në këtë faqe",
         "items": [
-          "Stafi i zgjedhur në cilësimet e qirasë njoftohet një herë, 30 ditë para skadimit.",
-          "Policat pas datës së skadimit shënohen të skaduara çdo mëngjes.",
-          "Hapni menunë e një automjeti për të parë vetëm policat e tij."
+          "Përdorni «Rinovo» te menyja: regjistrimi i ri plotësohet nga i vjetri dhe lidhet me të, kështu historiku mbetet zinxhir.",
+          "Stafi paralajmërohet 30 ditë para skadimit dhe sërish ditën kur skadon pa rinovim.",
+          "Një dëmtim lidhet me policën që mbulonte automjetin atë ditë, për dëmin te sigurimi."
         ]
       }
     ]
@@ -25,6 +25,18 @@
   "deleted": "Fshirë",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Aktive",
+        "expired": "E skaduar",
+        "cancelled": "E anuluar"
+      },
+      "coverage": {
+        "third_party": "Përgjegjësi civile",
+        "partial_casco": "Kasko e pjesshme",
+        "full_casco": "Kasko e plotë"
+      }
+    },
     "vehicle": "Automjeti",
     "insurer": "Siguruesi",
     "policyNumber": "Numri i policës",
@@ -40,6 +52,10 @@
     "createdBy": "Krijuar nga",
     "company": "Kompania",
     "deletedAt": "Fshirë më",
-    "deletedBy": "Fshirë nga"
+    "deletedBy": "Fshirë nga",
+    "supersedes": "Rinovon",
+    "supersededBy": "Rinovuar nga",
+    "attachments": "Bashkëngjitjet",
+    "expiryReminderSentAt": "Kujtesa e skadimit u dërgua"
   }
 }

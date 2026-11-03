@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/center/dialogs/publishRentalReviewDialog.tsx",
+  "title": "Publier l'avis",
+  "description": "Cet avis apparaîtra sur le site.",
+  "cancel": "Annuler",
+  "confirm": "Publier",
+  "busy": "En cours…",
+  "axios": {
+    "start": {
+      "title": "Publication de l'avis…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Avis publié",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible de publier l'avis",
+      "time": 3000
+    }
+  }
+}

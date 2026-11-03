@@ -45,9 +45,13 @@
     },
     "status": {
       "scheduled": "Programmato",
-      "completed": "Completato",
-      "cancelled": "Annullato"
-    }
+      "completed": "Completato"
+    },
+    "serviceSectionTitle": "Intervento",
+    "costSectionTitle": "Costo e prossimo tagliando",
+    "notesSectionTitle": "Note e file",
+    "readyAtLabel": "Veicolo di nuovo pronto il",
+    "readyAtPlaceholder": "Facoltativo: blocca il veicolo fino ad allora"
   },
   "axios": {
     "start": {

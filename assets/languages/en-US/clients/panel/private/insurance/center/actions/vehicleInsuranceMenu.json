@@ -1,0 +1,6 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/actions/vehicleInsuranceMenu.tsx",
+  "cancel": "Cancel policy",
+  "uncancel": "Restore policy",
+  "renew": "Renew"
+}

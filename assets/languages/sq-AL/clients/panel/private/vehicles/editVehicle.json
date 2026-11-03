@@ -12,6 +12,9 @@
     "6": "E shtunë"
   },
   "form": {
+    "vehicleSectionTitle": "Automjeti",
+    "fleetSectionTitle": "Flota",
+    "photosSectionTitle": "Foto dhe video",
     "categoryLabel": "Kategoria",
     "categoryPlaceholder": "Zgjidh kategorinë",
     "colorLabel": "Ngjyra",
@@ -30,6 +33,11 @@
     "platePlaceholder": "p.sh. ZH 123456",
     "statusLabel": "Statusi",
     "statusPlaceholder": "Zgjidh statusin",
+    "status": {
+      "active": "Aktiv",
+      "maintenance": "Në mirëmbajtje",
+      "retired": "I tërhequr"
+    },
     "vinLabel": "VIN",
     "vinPlaceholder": "Shkruani VIN-in",
     "yearLabel": "Viti",

@@ -1,0 +1,6 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/actions/vehicleInsuranceMenu.tsx",
+  "cancel": "Annulla la polizza",
+  "uncancel": "Ripristina la polizza",
+  "renew": "Rinnova"
+}

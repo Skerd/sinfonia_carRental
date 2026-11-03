@@ -14,5 +14,6 @@
     "title": "Makina mbërriti",
     "description": "Që tani {plate} numërohet në vendndodhjen e re.",
     "confirm": "Shëno si të mbërritur"
-  }
+  },
+  "back": "Kthehu"
 }

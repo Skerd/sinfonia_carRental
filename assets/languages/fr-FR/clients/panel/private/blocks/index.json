@@ -11,7 +11,8 @@
         "title": "Sur cette page",
         "items": [
           "Un blocage ne peut pas chevaucher une réservation ; déplacez d'abord la réservation sur une autre voiture.",
-          "Une fois créé, la période d'un blocage est figée. Pour la modifier, supprimez-le et créez-en un nouveau."
+          "Une fois créé, la période d'un blocage est figée. Pour la modifier, supprimez-le et créez-en un nouveau.",
+          "Un blocage créé par un transfert ou un entretien planifié se modifie là-bas : il prend fin à l'arrivée ou au retour du véhicule, et disparaît si cet enregistrement est annulé."
         ]
       }
     ]
@@ -24,6 +25,18 @@
   "deleted": "Supprimé",
   "active": "Actif",
   "fields": {
+    "!enums": {
+      "reason": {
+        "maintenance": "Maintenance",
+        "repair": "Réparation",
+        "transfer": "Transfert",
+        "other": "Autre"
+      },
+      "source": {
+        "transfer": "Transfert",
+        "service": "Entretien"
+      }
+    },
     "vehicle": "Véhicule",
     "startAt": "De",
     "endAt": "Jusqu'à",
@@ -34,6 +47,7 @@
     "createdBy": "Créé par",
     "company": "Entreprise",
     "deletedAt": "Supprimé le",
-    "deletedBy": "Supprimé par"
+    "deletedBy": "Supprimé par",
+    "source": "Créé par"
   }
 }

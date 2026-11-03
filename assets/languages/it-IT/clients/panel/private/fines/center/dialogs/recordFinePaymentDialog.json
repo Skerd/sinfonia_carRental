@@ -1,0 +1,11 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/dialogs/recordFinePaymentDialog.tsx",
+  "title": "Registra il pagamento",
+  "descriptionBooking": "Quanto l'azienda ha pagato all'autorità per la multa {reference}. Si può ancora addebitare alla prenotazione.",
+  "descriptionCompany": "Quanto l'azienda ha pagato all'autorità per la multa {reference}. Senza prenotazione resta un costo dell'azienda.",
+  "confirm": "Salva",
+  "cancel": "Indietro",
+  "paidAtLabel": "Pagata il",
+  "paidAmountLabel": "Importo pagato",
+  "paymentReferenceLabel": "Riferimento del pagamento"
+}

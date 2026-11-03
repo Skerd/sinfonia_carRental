@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/dialogs/vehicleInsuranceDialogs.tsx",
+  "back": "Indietro",
+  "cancel": {
+    "title": "Annulla la polizza",
+    "description": "La polizza {policy} resta bloccata finché non viene ripristinata. Date, copertura e importi non si possono modificare.",
+    "confirm": "Annulla la polizza"
+  },
+  "uncancel": {
+    "title": "Ripristina questa polizza",
+    "description": "La polizza {policy} torna attiva, oppure scaduta se la data di fine è passata.",
+    "confirm": "Ripristina la polizza"
+  }
+}

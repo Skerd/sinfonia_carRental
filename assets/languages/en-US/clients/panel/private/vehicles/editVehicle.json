@@ -12,10 +12,13 @@
     "6": "Saturday"
   },
   "form": {
+    "vehicleSectionTitle": "Vehicle",
+    "fleetSectionTitle": "Fleet",
+    "photosSectionTitle": "Photos and videos",
     "categoryLabel": "Category",
     "categoryPlaceholder": "Select category",
     "colorLabel": "Colour",
-    "colorPlaceholder": "Enter color",
+    "colorPlaceholder": "e.g. White",
     "homeLocationLabel": "Home location",
     "homeLocationPlaceholder": "Select location",
     "makeLabel": "Make",
@@ -25,15 +28,20 @@
     "notesLabel": "Notes",
     "notesPlaceholder": "Internal notes",
     "odometerKmLabel": "Odometer (km)",
-    "odometerKmPlaceholder": "Enter odometer km",
+    "odometerKmPlaceholder": "e.g. 45200",
     "plateLabel": "Registration plate",
     "platePlaceholder": "e.g. ZH 123456",
     "statusLabel": "Status",
     "statusPlaceholder": "Select status",
+    "status": {
+      "active": "Active",
+      "maintenance": "In maintenance",
+      "retired": "Retired"
+    },
     "vinLabel": "VIN",
-    "vinPlaceholder": "Enter vin",
+    "vinPlaceholder": "Enter VIN",
     "yearLabel": "Year",
-    "yearPlaceholder": "Enter year",
+    "yearPlaceholder": "e.g. 2022",
     "acquiredAtLabel": "In fleet since",
     "acquiredAtPlaceholder": "Pick a date",
     "purchasePriceLabel": "Purchase price",
@@ -41,7 +49,7 @@
     "imagesLabel": "Photos",
     "videosLabel": "Videos",
     "trackerIdLabel": "Tracker",
-    "trackerIdPlaceholder": "Tracker id"
+    "trackerIdPlaceholder": "Tracker ID"
   },
   "axios": {
     "start": {

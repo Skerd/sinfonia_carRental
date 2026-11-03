@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/maintenance/center/sheetView/vehicleMaintenanceSheetView.tsx",
+  "failedTitle": "Regjistrimi nuk u ngarkua",
+  "failedDescription": "Diçka shkoi keq gjatë ngarkimit. Klikoni për të provuar përsëri.",
+  "failedTooltipDescription": "Klikoni për të provuar përsëri ngarkimin e të dhënave.",
   "lifecycle": "Cikli i jetës",
   "overview": "Përmbledhje",
   "vehicleMaintenanceSubtitle": "Mirëmbajtje",
@@ -33,5 +36,8 @@
   "updatedAt": "Përditësuar më",
   "createdBy": "Krijuar nga",
   "deletedAt": "Fshirë më",
-  "deletedBy": "Fshirë nga"
+  "deletedBy": "Fshirë nga",
+  "readyAt": "Automjeti kthehet më",
+  "nextServiceGroup": "Servisi i radhës",
+  "damages": "Dëmtimet e riparuara"
 }

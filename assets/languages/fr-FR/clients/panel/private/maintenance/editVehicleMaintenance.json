@@ -16,8 +16,6 @@
     "vehiclePlaceholder": "Choisir un véhicule",
     "typeLabel": "Type",
     "typePlaceholder": "Choisir le type",
-    "statusLabel": "Statut",
-    "statusPlaceholder": "Choisir le statut",
     "serviceDateLabel": "Date de l'intervention",
     "serviceDatePlaceholder": "Choisir une date",
     "odometerKmLabel": "Kilométrage",
@@ -43,11 +41,9 @@
       "battery": "Batterie",
       "other": "Autre"
     },
-    "status": {
-      "scheduled": "Planifié",
-      "completed": "Terminé",
-      "cancelled": "Annulé"
-    }
+    "serviceSectionTitle": "Intervention",
+    "costSectionTitle": "Coût et prochain entretien",
+    "notesSectionTitle": "Notes et fichiers"
   },
   "axios": {
     "start": {

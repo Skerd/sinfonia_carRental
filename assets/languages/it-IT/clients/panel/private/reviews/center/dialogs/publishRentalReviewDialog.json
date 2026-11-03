@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/center/dialogs/publishRentalReviewDialog.tsx",
+  "title": "Pubblica recensione",
+  "description": "Questa recensione comparirà sul sito.",
+  "cancel": "Annulla",
+  "confirm": "Pubblica",
+  "busy": "Operazione in corso…",
+  "axios": {
+    "start": {
+      "title": "Pubblicazione della recensione…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Recensione pubblicata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile pubblicare la recensione",
+      "time": 3000
+    }
+  }
+}

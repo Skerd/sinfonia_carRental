@@ -5,14 +5,15 @@
   "help": {
     "ariaLabel": "Rreth gjobave",
     "title": "Rreth gjobave",
-    "overview": "Shtoni një gjobë kur vjen njoftimi. Rezervimi, marrja dhe kthimi i të cilit përfshijnë orën e shkeljes, gjendet vetë bashkë me shoferin kryesor.",
+    "overview": "Regjistroni gjobën kur vjen njoftimi. Rezervimi që kishte automjetin në atë kohë gjendet vetë, me shoferin kryesor; përndryshe transferimi i stafit.",
     "sections": [
       {
-        "title": "Në këtë faqe",
+        "title": "Zgjidhni një rrugë",
         "items": [
-          "Faturoni klientin për të shtuar gjobën dhe tarifën e trajtimit në rezervim; një kartë e ruajtur faturohet menjëherë.",
-          "Shkarkoni letrën për t'i njoftuar autoritetit shoferin.",
-          "Nëse makina ose ora korrigjohen, përdorni Lidh përsëri."
+          "Njoftoni shoferin: dërgojini letrën autoritetit; paguan shoferi dhe klientit i faturohet vetëm tarifa e trajtimit.",
+          "Faturojini klientit: gjoba dhe tarifa shkojnë te rezervimi. Pas kthimit marrin faturë të veçantë; karta e ruajtur debitohet, përndryshe klienti paguan nga lidhja e rezervimit.",
+          "«Regjistro pagesën» kur kompania paguan autoritetin. Pa rezervim për ta faturuar, gjoba mbetet kosto e kompanisë.",
+          "Kundërshtoni një gjobë; anulojeni nëse autoriteti e heq. Stafi paralajmërohet një javë para afatit të një gjobe të papaguar."
         ]
       }
     ]
@@ -25,6 +26,24 @@
   "deleted": "Fshirë",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "received": "E marrë",
+        "driver_identified": "Shoferi u identifikua",
+        "charged": "I faturuar klientit",
+        "paid_by_company": "E paguar nga ne",
+        "transferred": "Shoferi u njoftua",
+        "disputed": "E kundërshtuar",
+        "cancelled": "E anuluar"
+      },
+      "type": {
+        "speeding": "Shpejtësi",
+        "parking": "Parkim",
+        "red_light": "Semafor i kuq",
+        "toll": "Pagesë rruge",
+        "other": "Tjetër"
+      }
+    },
     "reference": "Referenca",
     "vehicle": "Automjeti",
     "offenceAt": "Data dhe ora e shkeljes",
@@ -44,6 +63,11 @@
     "createdBy": "Krijuar nga",
     "company": "Kompania",
     "deletedAt": "Fshirë më",
-    "deletedBy": "Fshirë nga"
+    "deletedBy": "Fshirë nga",
+    "transfer": "Transferimi",
+    "paidAt": "Paguar më",
+    "paidAmount": "Shuma e paguar",
+    "paymentReference": "Referenca e pagesës",
+    "dueReminderSentAt": "Kujtesa e afatit u dërgua"
   }
 }

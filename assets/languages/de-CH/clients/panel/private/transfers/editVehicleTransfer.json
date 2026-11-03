@@ -27,7 +27,9 @@
     "odometerKmLabel": "Kilometer bei Ankunft",
     "odometerKmPlaceholder": "Bei Ankunft ablesen",
     "notesLabel": "Notizen",
-    "notesPlaceholder": "Interne Notizen"
+    "notesPlaceholder": "Interne Notizen",
+    "tripSectionTitle": "Fahrt",
+    "driverSectionTitle": "Fahrer/in und Notizen"
   },
   "axios": {
     "start": {

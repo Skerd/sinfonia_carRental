@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/transfers/center/sheetView/vehicleTransferSheetView.tsx",
+  "failedTitle": "Failed to load transfer",
+  "failedDescription": "Something went wrong while loading this transfer. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "overview": "Overview",
   "vehicleTransferSubtitle": "Transfer",

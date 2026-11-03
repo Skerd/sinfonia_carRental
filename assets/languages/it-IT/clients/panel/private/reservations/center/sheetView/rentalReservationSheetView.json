@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reservations/center/sheetView/rentalReservationSheetView.tsx",
+  "failedTitle": "Impossibile caricare la prenotazione",
+  "failedDescription": "Qualcosa è andato storto durante il caricamento. Fare clic per riprovare.",
+  "failedTooltipDescription": "Clicca per riprovare a caricare i dati.",
   "lifecycle": "Ciclo di vita",
   "amountPaid": "Pagato",
   "at": "Quando",
@@ -82,7 +85,8 @@
     "charge_added": "Addebito aggiunto",
     "deposit_held": "Deposito bloccato",
     "deposit_captured": "Deposito trattenuto",
-    "deposit_released": "Deposito sbloccato"
+    "deposit_released": "Deposito sbloccato",
+    "charge_removed": "Addebito rimosso"
   },
   "createdAt": "Creato il",
   "updatedAt": "Aggiornato il",

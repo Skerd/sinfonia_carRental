@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/maintenance/center/sheetView/vehicleMaintenanceSheetView.tsx",
+  "failedTitle": "Impossibile caricare l'intervento",
+  "failedDescription": "Qualcosa è andato storto durante il caricamento. Fare clic per riprovare.",
+  "failedTooltipDescription": "Clicca per riprovare a caricare i dati.",
   "lifecycle": "Ciclo di vita",
   "overview": "Panoramica",
   "vehicleMaintenanceSubtitle": "Manutenzione",
@@ -33,5 +36,8 @@
   "updatedAt": "Aggiornato il",
   "createdBy": "Creato da",
   "deletedAt": "Eliminato il",
-  "deletedBy": "Eliminato da"
+  "deletedBy": "Eliminato da",
+  "readyAt": "Veicolo di nuovo pronto il",
+  "nextServiceGroup": "Prossimo tagliando",
+  "damages": "Danni riparati"
 }

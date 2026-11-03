@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/vehicles/center/sheetView/vehicleSheetView.tsx",
+  "failedTitle": "Failed to load vehicle",
+  "failedDescription": "Something went wrong while loading this vehicle. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "category": "Category",
   "color": "Color",
@@ -40,5 +43,12 @@
   "trackerId": "Tracker",
   "lastLatitude": "Latitude",
   "lastLongitude": "Longitude",
-  "lastReportedAt": "Last reported"
+  "lastReportedAt": "Last reported",
+  "currentLocation": "Current location",
+  "readiness": "Readiness",
+  "readinessValues": {
+    "ready": "Ready",
+    "needs_cleaning": "Needs cleaning",
+    "needs_check": "Needs a check"
+  }
 }

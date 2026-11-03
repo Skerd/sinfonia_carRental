@@ -24,6 +24,17 @@
   "deleted": "Fshirë",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Aktiv",
+        "paused": "Në pauzë",
+        "ended": "Përfunduar"
+      },
+      "period": {
+        "week": "Javë",
+        "month": "Muaj"
+      }
+    },
     "contactName": "Emri i kontaktit",
     "email": "Email",
     "phone": "Telefoni",

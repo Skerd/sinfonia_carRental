@@ -5,14 +5,14 @@
   "help": {
     "ariaLabel": "À propos des documents",
     "title": "À propos des documents",
-    "overview": "Conservez ici les papiers de chaque véhicule, avec leurs scans. Un document sans échéance ne déclenche aucun rappel.",
+    "overview": "Gardez ici les papiers de chaque véhicule, avec les scans. Un véhicule n'est pas remis si son immatriculation, son contrôle, son test antipollution ou sa taxe routière expirent avant le retour.",
     "sections": [
       {
         "title": "Sur cette page",
         "items": [
-          "Le personnel choisi est averti une fois, 30 jours avant l'échéance.",
-          "Les documents échus sont marqués chaque matin.",
-          "Un document plus récent du même type remplace le rappel de l'ancien."
+          "Utilisez « Renouveler » dans le menu : le nouvel enregistrement reprend l'ancien et y est lié, l'historique reste ainsi une chaîne.",
+          "Le personnel est prévenu 30 jours avant une échéance, puis le jour où elle expire sans renouvellement.",
+          "Les documents sans date d'expiration ne déclenchent jamais de rappel."
         ]
       }
     ]
@@ -25,6 +25,20 @@
   "deleted": "Supprimé",
   "active": "Actif",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Valide",
+        "expired": "Expiré"
+      },
+      "type": {
+        "registration": "Certificat d'immatriculation",
+        "technical_inspection": "Contrôle technique",
+        "emissions_test": "Contrôle antipollution",
+        "road_tax": "Taxe de circulation",
+        "green_card": "Carte verte",
+        "other": "Autre"
+      }
+    },
     "vehicle": "Véhicule",
     "type": "Type",
     "documentNumber": "Numéro du document",
@@ -38,6 +52,10 @@
     "createdBy": "Créé par",
     "company": "Entreprise",
     "deletedAt": "Supprimé le",
-    "deletedBy": "Supprimé par"
+    "deletedBy": "Supprimé par",
+    "supersedes": "Renouvelle",
+    "supersededBy": "Renouvelé par",
+    "attachments": "Pièces jointes",
+    "expiryReminderSentAt": "Rappel d'échéance envoyé"
   }
 }

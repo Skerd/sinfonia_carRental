@@ -22,6 +22,7 @@
     "charged": "Facturée au client",
     "paid_by_company": "Payée par nous",
     "transferred": "Conducteur désigné",
-    "disputed": "Contestée"
+    "disputed": "Contestée",
+    "cancelled": "Annulée"
   }
 }

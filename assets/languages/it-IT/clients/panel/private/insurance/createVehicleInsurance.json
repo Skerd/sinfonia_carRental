@@ -12,6 +12,11 @@
     "6": "Sabato"
   },
   "form": {
+    "identificationSectionTitle": "Identificazione",
+    "validitySectionTitle": "Validità",
+    "amountsSectionTitle": "Importi",
+    "attachmentsSectionTitle": "Allegati",
+    "attachmentsBlankLabel": "",
     "vehicleLabel": "Veicolo",
     "vehiclePlaceholder": "Seleziona un veicolo",
     "insurerLabel": "Assicuratore",

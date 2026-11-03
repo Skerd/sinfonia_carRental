@@ -1,0 +1,5 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/actions/vehicleMaintenanceMenu.tsx",
+  "complete": "Als erledigt markieren",
+  "cancel": "Service absagen"
+}

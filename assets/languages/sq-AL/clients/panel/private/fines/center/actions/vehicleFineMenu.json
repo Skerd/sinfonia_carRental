@@ -2,5 +2,9 @@
   "path": "src/modules/carRental/clients/panel/private/fines/center/actions/vehicleFineMenu.tsx",
   "matchDriver": "Lidh përsëri",
   "chargeCustomer": "Faturo klientin",
-  "driverLetter": "Shkarko letrën e shoferit"
+  "driverLetter": "Shkarko letrën e shoferit",
+  "nominateDriver": "Njofto shoferin",
+  "recordPayment": "Regjistro pagesën",
+  "dispute": "Kundërshto",
+  "annul": "Anulo gjobën"
 }

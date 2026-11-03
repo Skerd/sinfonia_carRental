@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/fines/center/sheetView/vehicleFineSheetView.tsx",
+  "failedTitle": "Impossible de charger l'amende",
+  "failedDescription": "Une erreur s'est produite lors du chargement. Cliquez pour réessayer.",
+  "failedTooltipDescription": "Cliquez pour réessayer de charger les données.",
   "lifecycle": "Cycle de vie",
   "overview": "Aperçu",
   "vehicleFineSubtitle": "Amende",
@@ -30,12 +33,26 @@
     "charged": "Facturée au client",
     "paid_by_company": "Payée par nous",
     "transferred": "Conducteur désigné",
-    "disputed": "Contestée"
+    "disputed": "Contestée",
+    "cancelled": "Annulée"
   },
   "createdAt": "Créé le",
   "updatedAt": "Mis à jour le",
   "createdBy": "Créé par",
   "company": "Entreprise",
   "deletedAt": "Supprimé le",
-  "deletedBy": "Supprimé par"
+  "deletedBy": "Supprimé par",
+  "authorityGroup": "Autorité et montant",
+  "driverGroup": "Qui avait le véhicule",
+  "paymentGroup": "Payée à l'autorité",
+  "transfer": "Transfert",
+  "transferStatusValues": {
+    "planned": "Prévu",
+    "in_transit": "En route",
+    "done": "Arrivé",
+    "cancelled": "Annulé"
+  },
+  "paidAt": "Payée le",
+  "paidAmount": "Montant payé",
+  "paymentReference": "Référence du paiement"
 }

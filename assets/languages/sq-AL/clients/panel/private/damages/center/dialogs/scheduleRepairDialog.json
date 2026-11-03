@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/damages/center/dialogs/scheduleRepairDialog.tsx",
+  "title": "Dërgo për riparim",
+  "description": "Krijon një riparim në mirëmbajtje për këtë dëmtim, ose e shton te një riparim i planifikuar për automjetin.",
+  "confirm": "Dërgo",
+  "cancel": "Kthehu",
+  "repairLabel": "Riparim i planifikuar",
+  "repairPlaceholder": "Asnjë: planifiko riparim të ri",
+  "serviceDateLabel": "Në autoservis nga",
+  "readyAtLabel": "Automjeti kthehet më",
+  "readyAtHint": "Me një datë, automjeti nuk mund të rezervohet deri atëherë. Një rezervim në atë kohë duhet kaluar më parë në një automjet tjetër.",
+  "providerLabel": "Autoservisi",
+  "costLabel": "Kosto e vlerësuar"
+}

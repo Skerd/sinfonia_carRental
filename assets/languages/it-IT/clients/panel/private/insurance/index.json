@@ -5,14 +5,14 @@
   "help": {
     "ariaLabel": "Informazioni sulle assicurazioni",
     "title": "Informazioni sulle assicurazioni",
-    "overview": "Ogni polizza appartiene a un veicolo. Un rinnovo è una nuova polizza: quella vecchia resta nello storico.",
+    "overview": "Ogni polizza appartiene a un veicolo. Un veicolo viene consegnato solo se una polizza lo copre fino alla riconsegna.",
     "sections": [
       {
         "title": "In questa pagina",
         "items": [
-          "Il personale scelto nelle impostazioni di noleggio viene avvisato una volta, 30 giorni prima della scadenza.",
-          "Le polizze oltre la scadenza vengono segnate come scadute ogni mattina.",
-          "Apri il menu di un veicolo per vedere solo le sue polizze."
+          "Usa «Rinnova» nel menu: il nuovo record riprende il vecchio ed è collegato a esso, così lo storico resta una catena.",
+          "Il personale viene avvisato 30 giorni prima di una scadenza, e di nuovo il giorno in cui scade senza rinnovo.",
+          "Un danno viene collegato alla polizza che copriva il veicolo quel giorno, per la denuncia."
         ]
       }
     ]
@@ -25,6 +25,18 @@
   "deleted": "Eliminato",
   "active": "Attivo",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Attiva",
+        "expired": "Scaduta",
+        "cancelled": "Annullata"
+      },
+      "coverage": {
+        "third_party": "RC auto",
+        "partial_casco": "Kasko parziale",
+        "full_casco": "Kasko completa"
+      }
+    },
     "vehicle": "Veicolo",
     "insurer": "Assicuratore",
     "policyNumber": "Numero di polizza",
@@ -40,6 +52,10 @@
     "createdBy": "Creato da",
     "company": "Azienda",
     "deletedAt": "Eliminato il",
-    "deletedBy": "Eliminato da"
+    "deletedBy": "Eliminato da",
+    "supersedes": "Rinnova",
+    "supersededBy": "Rinnovato da",
+    "attachments": "Allegati",
+    "expiryReminderSentAt": "Promemoria di scadenza inviato"
   }
 }

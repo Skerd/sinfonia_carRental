@@ -13,6 +13,7 @@
   },
   "form": {
     "identificationSectionTitle": "Identification",
+    "attachmentsSectionTitle": "Pièces jointes",
     "vehicleLabel": "Véhicule",
     "vehiclePlaceholder": "Choisir un véhicule",
     "typeLabel": "Type",

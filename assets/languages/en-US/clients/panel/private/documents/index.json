@@ -5,14 +5,14 @@
   "help": {
     "ariaLabel": "About vehicle documents",
     "title": "About vehicle documents",
-    "overview": "Keep each car's papers here, with scans. Documents without an expiry date never trigger a reminder.",
+    "overview": "Keep each car's papers here, with scans. A car is not handed over while its registration, inspection, emissions test or road tax runs out before the return.",
     "sections": [
       {
         "title": "On this page",
         "items": [
-          "Chosen staff are notified once, 30 days before a document expires.",
-          "Expired documents are marked every morning.",
-          "A newer document of the same type takes over the old one's reminder."
+          "Use Renew in the menu: the new record is filled from the old one and linked to it, so the history stays a chain.",
+          "Staff are warned 30 days before an expiry, and again on the day one lapses with no renewal.",
+          "Documents without an expiry date never trigger a reminder."
         ]
       }
     ]
@@ -25,6 +25,20 @@
   "deleted": "Deleted",
   "active": "Active",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Valid",
+        "expired": "Expired"
+      },
+      "type": {
+        "registration": "Registration",
+        "technical_inspection": "Technical inspection",
+        "emissions_test": "Emissions test",
+        "road_tax": "Road tax",
+        "green_card": "Green card",
+        "other": "Other"
+      }
+    },
     "vehicle": "Vehicle",
     "type": "Type",
     "documentNumber": "Document number",
@@ -38,6 +52,10 @@
     "createdBy": "Created by",
     "company": "Company",
     "deletedAt": "Deleted at",
-    "deletedBy": "Deleted by"
+    "deletedBy": "Deleted by",
+    "supersedes": "Renews",
+    "supersededBy": "Renewed by",
+    "attachments": "Attachments",
+    "expiryReminderSentAt": "Expiry reminder sent"
   }
 }

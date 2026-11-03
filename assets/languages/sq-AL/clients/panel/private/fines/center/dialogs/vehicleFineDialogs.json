@@ -10,5 +10,20 @@
     "title": "Faturo klientin",
     "description": "Shton gjobën dhe tarifën e trajtimit në rezervimin {booking} të {driver} dhe e njofton me email. Një kartë e ruajtur faturohet menjëherë.",
     "confirm": "Faturo"
+  },
+  "nominateDriver": {
+    "title": "Njofto shoferin",
+    "description": "Dërgojini autoritetit letrën për {driver}; gjobën e paguan shoferi. Tarifa e trajtimit, nëse është caktuar, i faturohet rezervimit {booking}.",
+    "confirm": "Shoferi u njoftua"
+  },
+  "dispute": {
+    "title": "Kundërshto gjobën",
+    "description": "Asgjë nuk faturohet e as nuk kujtohet gjatë kundërshtimit. Gjeni sërish shoferin nëse kundërshtimi humbet.",
+    "confirm": "Kundërshto"
+  },
+  "annul": {
+    "title": "Anulo gjobën",
+    "description": "Autoriteti e hoqi gjobën. Çfarë iu faturua rezervimit {booking} për të kthehet: kreditohet në faturë dhe rimbursohet nëse është paguar.",
+    "confirm": "Anulo"
   }
 }

@@ -1,7 +1,13 @@
 {
   "path": "src/modules/carRental/clients/panel/private/businessAccounts/center/sheetView/rentalBusinessAccountSheetView.tsx",
+  "failedTitle": "Konto konnte nicht geladen werden",
+  "failedDescription": "Beim Laden ist ein Fehler aufgetreten. Klicken Sie, um es erneut zu versuchen.",
+  "failedTooltipDescription": "Klicken, um die Daten erneut zu laden.",
   "lifecycle": "Lebenszyklus",
   "overview": "Übersicht",
+  "companyGroup": "Unternehmen",
+  "termsGroup": "Konditionen",
+  "notesGroup": "Notizen",
   "rentalBusinessAccountSubtitle": "Geschäftskonto",
   "name": "Name",
   "vatNumber": "MwSt.-Nummer",

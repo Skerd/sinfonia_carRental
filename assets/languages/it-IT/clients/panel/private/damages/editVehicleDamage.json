@@ -24,15 +24,8 @@
     "areaPlaceholder": "Seleziona la zona",
     "severityLabel": "Gravità",
     "severityPlaceholder": "Seleziona la gravità",
-    "statusLabel": "Stato",
-    "statusPlaceholder": "Seleziona lo stato",
-    "repairSectionTitle": "Riparazione",
     "estimatedCostLabel": "Costo stimato",
     "estimatedCostPlaceholder": "es. 350",
-    "repairCostLabel": "Costo della riparazione",
-    "repairCostPlaceholder": "es. 350",
-    "repairedAtLabel": "Riparato il",
-    "repairedAtPlaceholder": "Scegli una data",
     "descriptionLabel": "Descrizione",
     "descriptionPlaceholder": "Cosa è stato fatto o cosa è danneggiato",
     "photosLabel": "Foto",
@@ -53,11 +46,14 @@
       "moderate": "Moderato",
       "major": "Grave"
     },
-    "status": {
-      "open": "Aperto",
-      "in_repair": "In riparazione",
-      "repaired": "Riparato"
-    }
+    "detailsSectionTitle": "Descrizione e foto",
+    "claimSectionTitle": "Denuncia di sinistro",
+    "insuranceLabel": "Polizza assicurativa",
+    "insurancePlaceholder": "Trovata dalla data (cambia se serve)",
+    "claimNumberLabel": "Numero del sinistro",
+    "claimNumberPlaceholder": "es. CLM-2026-0142",
+    "insurerPaidAmountLabel": "Pagato dall'assicurazione",
+    "insurerPaidAmountPlaceholder": "es. 800"
   },
   "axios": {
     "start": {

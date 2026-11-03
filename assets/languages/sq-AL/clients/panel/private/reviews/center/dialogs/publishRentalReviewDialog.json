@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/reviews/center/dialogs/publishRentalReviewDialog.tsx",
+  "title": "Publiko vlerësimin",
+  "description": "Ky vlerësim do të shfaqet në faqen e internetit.",
+  "cancel": "Anulo",
+  "confirm": "Publiko",
+  "busy": "Duke punuar…",
+  "axios": {
+    "start": {
+      "title": "Duke publikuar vlerësimin…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Vlerësimi u publikua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Vlerësimi nuk u publikua dot",
+      "time": 3000
+    }
+  }
+}

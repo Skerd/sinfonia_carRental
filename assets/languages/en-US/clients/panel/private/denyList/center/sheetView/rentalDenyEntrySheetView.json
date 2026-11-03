@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/denyList/center/sheetView/rentalDenyEntrySheetView.tsx",
+  "failedTitle": "Failed to load the entry",
+  "failedDescription": "Something went wrong while loading the entry. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "overview": "Overview",
   "rentalDenyEntrySubtitle": "Deny list entry",

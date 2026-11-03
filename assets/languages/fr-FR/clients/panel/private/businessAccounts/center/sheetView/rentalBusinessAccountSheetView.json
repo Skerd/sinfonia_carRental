@@ -1,7 +1,13 @@
 {
   "path": "src/modules/carRental/clients/panel/private/businessAccounts/center/sheetView/rentalBusinessAccountSheetView.tsx",
+  "failedTitle": "Impossible de charger le compte",
+  "failedDescription": "Une erreur s'est produite lors du chargement. Cliquez pour réessayer.",
+  "failedTooltipDescription": "Cliquez pour réessayer de charger les données.",
   "lifecycle": "Cycle de vie",
   "overview": "Aperçu",
+  "companyGroup": "Entreprise",
+  "termsGroup": "Conditions",
+  "notesGroup": "Notes",
   "rentalBusinessAccountSubtitle": "Compte entreprise",
   "name": "Nom",
   "vatNumber": "Numéro de TVA",

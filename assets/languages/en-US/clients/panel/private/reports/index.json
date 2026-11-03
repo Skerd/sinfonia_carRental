@@ -32,9 +32,12 @@
         "title": "Reading the numbers",
         "items": [
           "A search with no free car is counted as lost demand.",
-          "Payback is the window's revenue divided by the car's purchase price."
+          "Payback is the window's revenue divided by the car's purchase price.",
+          "Repairs are the repair records' cost. Fines are those the company paid and kept. Recovered is what customers and insurers paid back for damage."
         ]
       }
     ]
-  }
+  },
+  "fines": "Fines",
+  "recovered": "Recovered"
 }

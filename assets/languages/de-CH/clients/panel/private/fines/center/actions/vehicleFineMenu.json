@@ -2,5 +2,9 @@
   "path": "src/modules/carRental/clients/panel/private/fines/center/actions/vehicleFineMenu.tsx",
   "matchDriver": "Erneut zuordnen",
   "chargeCustomer": "Kundschaft belasten",
-  "driverLetter": "Fahrerschreiben herunterladen"
+  "driverLetter": "Fahrerschreiben herunterladen",
+  "nominateDriver": "Fahrer/in melden",
+  "recordPayment": "Zahlung erfassen",
+  "dispute": "Bestreiten",
+  "annul": "Annullieren"
 }

@@ -11,7 +11,8 @@
         "title": "Auf dieser Seite",
         "items": [
           "Eine Sperre darf keine Buchung überschneiden; verschieben Sie die Buchung zuerst auf ein anderes Auto.",
-          "Nach dem Erstellen ist der Zeitraum einer Sperre fest. Um ihn zu ändern, löschen Sie sie und erstellen Sie eine neue."
+          "Nach dem Erstellen ist der Zeitraum einer Sperre fest. Um ihn zu ändern, löschen Sie sie und erstellen Sie eine neue.",
+          "Eine Sperre aus einer Überführung oder einem geplanten Service wird dort geändert: Sie endet, wenn das Fahrzeug ankommt oder zurück ist, und entfällt, wenn der Eintrag storniert wird."
         ]
       }
     ]
@@ -24,6 +25,18 @@
   "deleted": "Gelöscht",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "reason": {
+        "maintenance": "Wartung",
+        "repair": "Reparatur",
+        "transfer": "Überführung",
+        "other": "Andere"
+      },
+      "source": {
+        "transfer": "Überführung",
+        "service": "Service"
+      }
+    },
     "vehicle": "Fahrzeug",
     "startAt": "Von",
     "endAt": "Bis",
@@ -34,6 +47,7 @@
     "createdBy": "Erstellt von",
     "company": "Unternehmen",
     "deletedAt": "Gelöscht am",
-    "deletedBy": "Gelöscht von"
+    "deletedBy": "Gelöscht von",
+    "source": "Erstellt durch"
   }
 }

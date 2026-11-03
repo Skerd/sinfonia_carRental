@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/maintenance/center/dialogs/vehicleMaintenanceDialogs.tsx",
+  "back": "Kthehu",
+  "complete": {
+    "title": "Automjeti u kthye",
+    "description": "{plate} mund të rezervohet sërish që tani. Dëmtimet e riparuara me këtë servis shënohen si të riparuara.",
+    "confirm": "Shëno të përfunduar"
+  },
+  "cancel": {
+    "title": "Anulo servisin",
+    "description": "{plate} është sërish i lirë për rezervime dhe dëmtimet që do riparoheshin janë sërish të hapura.",
+    "confirm": "Anulo"
+  }
+}

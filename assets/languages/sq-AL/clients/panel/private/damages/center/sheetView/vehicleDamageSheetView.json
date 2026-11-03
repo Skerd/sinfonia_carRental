@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/damages/center/sheetView/vehicleDamageSheetView.tsx",
+  "failedTitle": "Dëmtimi nuk u ngarkua",
+  "failedDescription": "Diçka shkoi keq gjatë ngarkimit. Klikoni për të provuar përsëri.",
+  "failedTooltipDescription": "Klikoni për të provuar përsëri ngarkimin e të dhënave.",
   "lifecycle": "Cikli i jetës",
   "overview": "Përmbledhje",
   "vehicleDamageSubtitle": "Raport dëmtimi",
@@ -42,5 +45,16 @@
   "deletedAt": "Fshirë më",
   "deletedBy": "Fshirë nga",
   "chargedAmount": "I faturuar klientit",
-  "chargedAt": "Faturuar më"
+  "chargedAt": "Faturuar më",
+  "repairGroup": "Riparimi",
+  "recoveryGroup": "Kostot e rikuperuara",
+  "repair": "Riparimi",
+  "repairStatusValues": {
+    "scheduled": "I planifikuar",
+    "completed": "I përfunduar",
+    "cancelled": "I anuluar"
+  },
+  "insurance": "Polica e sigurimit",
+  "claimNumber": "Numri i dëmit",
+  "insurerPaidAmount": "Paguar nga sigurimi"
 }

@@ -10,5 +10,20 @@
     "title": "Facturer le client",
     "description": "Ajoute l'amende et les frais de dossier à la réservation {booking} de {driver} et l'informe par e-mail. Une carte enregistrée est débitée tout de suite.",
     "confirm": "Facturer"
+  },
+  "nominateDriver": {
+    "title": "Désigner le conducteur",
+    "description": "Envoyez la lettre pour {driver} à l'autorité ; le conducteur paie l'amende. Les frais de gestion, s'ils sont définis, sont facturés sur la réservation {booking}.",
+    "confirm": "Conducteur désigné"
+  },
+  "dispute": {
+    "title": "Contester l'amende",
+    "description": "Rien n'est facturé ni rappelé pendant la contestation. Retrouvez le conducteur si la contestation échoue.",
+    "confirm": "Contester"
+  },
+  "annul": {
+    "title": "Annuler l'amende",
+    "description": "L'autorité a abandonné l'amende. Ce qui a été facturé sur la réservation {booking} est repris : crédité sur sa facture et remboursé si payé.",
+    "confirm": "Annuler l'amende"
   }
 }

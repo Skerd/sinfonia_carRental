@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/insurance/center/dialogs/vehicleInsuranceDialogs.tsx",
+  "back": "Kthehu",
+  "cancel": {
+    "title": "Anulo policën",
+    "description": "Polica {policy} mbetet e ngrirë derisa të rikthehet. Datat, mbulimi dhe shumat nuk ndryshohen.",
+    "confirm": "Anulo policën"
+  },
+  "uncancel": {
+    "title": "Rikthe këtë policë",
+    "description": "Polica {policy} bëhet aktive përsëri, ose e skaduar nëse data e mbarimit ka kaluar.",
+    "confirm": "Rikthe policën"
+  }
+}

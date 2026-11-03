@@ -14,5 +14,6 @@
     "title": "Le véhicule est arrivé",
     "description": "{plate} compte désormais dans la nouvelle agence.",
     "confirm": "Marquer comme arrivé"
-  }
+  },
+  "back": "Retour"
 }

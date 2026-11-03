@@ -1,7 +1,7 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reviews/editRentalReview.tsx",
   "title": "Edit review",
-  "description": "Change the rating, the comment or whether it is published",
+  "description": "Change the rating or the comment",
   "weekday": {
     "0": "Sunday",
     "1": "Monday",
@@ -19,8 +19,7 @@
     "commentLabel": "Comment",
     "commentPlaceholder": "What the customer wrote",
     "authorNameLabel": "Name",
-    "authorNamePlaceholder": "Customer name",
-    "isPublishedLabel": "Published"
+    "authorNamePlaceholder": "Customer name"
   },
   "axios": {
     "start": {
@@ -38,7 +37,7 @@
   },
   "formHeader": {
     "title": "Edit review",
-    "description": "Change the rating, the comment or whether it is published"
+    "description": "Change the rating or the comment"
   },
   "formButtons": {
     "cancel": "Cancel",

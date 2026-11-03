@@ -35,19 +35,12 @@
     "placePlaceholder": "Wo es passiert ist",
     "dueDateLabel": "Zahlen oder antworten bis",
     "dueDatePlaceholder": "Datum wählen",
-    "statusLabel": "Status",
-    "statusPlaceholder": "Status wählen",
-    "status": {
-      "received": "Erhalten",
-      "driver_identified": "Fahrer/in ermittelt",
-      "charged": "Der Kundschaft belastet",
-      "paid_by_company": "Von uns bezahlt",
-      "transferred": "Fahrer/in gemeldet",
-      "disputed": "Bestritten"
-    },
     "attachmentsLabel": "Scan der Busse",
     "notesLabel": "Notizen",
-    "notesPlaceholder": "Interne Notizen"
+    "notesPlaceholder": "Interne Notizen",
+    "offenceSectionTitle": "Verstoss",
+    "authoritySectionTitle": "Behörde und Betrag",
+    "notesSectionTitle": "Notizen und Dateien"
   },
   "axios": {
     "start": {

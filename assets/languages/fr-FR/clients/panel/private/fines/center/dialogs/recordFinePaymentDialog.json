@@ -1,0 +1,11 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/dialogs/recordFinePaymentDialog.tsx",
+  "title": "Enregistrer le paiement",
+  "descriptionBooking": "Ce que l'entreprise a payé à l'autorité pour l'amende {reference}. Elle peut encore être facturée sur la réservation.",
+  "descriptionCompany": "Ce que l'entreprise a payé à l'autorité pour l'amende {reference}. Sans réservation, elle reste un coût de l'entreprise.",
+  "confirm": "Enregistrer",
+  "cancel": "Retour",
+  "paidAtLabel": "Payée le",
+  "paidAmountLabel": "Montant payé",
+  "paymentReferenceLabel": "Référence du paiement"
+}

@@ -5,14 +5,14 @@
   "help": {
     "ariaLabel": "Informazioni sulla manutenzione",
     "title": "Informazioni sulla manutenzione",
-    "overview": "Il libretto di manutenzione di ogni veicolo. L'ultimo intervento completato fissa data e chilometri del prossimo.",
+    "overview": "Il libretto di ogni veicolo: tagliandi, riparazioni e controlli, con il loro costo. L'ultimo intervento completato con una prossima scadenza fissa il prossimo tagliando del veicolo.",
     "sections": [
       {
         "title": "In questa pagina",
         "items": [
-          "Gli interventi programmati o annullati non contano per il prossimo tagliando.",
-          "Il personale scelto viene avvisato 14 giorni o 1.000 km prima del prossimo intervento.",
-          "Un chilometraggio più alto sull'intervento aggiorna quello del veicolo."
+          "Programma un intervento come «Programmato». Con una data di rientro, il veicolo è bloccato per le prenotazioni fino ad allora.",
+          "Completalo quando il veicolo rientra: il blocco termina e i danni riparati diventano «Riparato». Annulla libera il veicolo e riapre i danni.",
+          "Il personale scelto viene avvisato 14 giorni o 1.000 km prima del prossimo tagliando."
         ]
       }
     ]
@@ -25,6 +25,23 @@
   "deleted": "Eliminato",
   "active": "Attivo",
   "fields": {
+    "!enums": {
+      "status": {
+        "scheduled": "Programmato",
+        "completed": "Completato",
+        "cancelled": "Annullato"
+      },
+      "type": {
+        "scheduled_service": "Tagliando",
+        "oil_change": "Cambio olio",
+        "tires": "Pneumatici",
+        "brakes": "Freni",
+        "inspection": "Controllo",
+        "repair": "Riparazione",
+        "battery": "Batteria",
+        "other": "Altro"
+      }
+    },
     "vehicle": "Veicolo",
     "type": "Tipo",
     "status": "Stato",
@@ -40,6 +57,10 @@
     "createdBy": "Creato da",
     "company": "Azienda",
     "deletedAt": "Eliminato il",
-    "deletedBy": "Eliminato da"
+    "deletedBy": "Eliminato da",
+    "readyAt": "Veicolo di nuovo pronto il",
+    "damages": "Danni riparati",
+    "block": "Blocco",
+    "attachments": "Allegati"
   }
 }

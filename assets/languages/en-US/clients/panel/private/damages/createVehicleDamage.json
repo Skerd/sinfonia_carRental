@@ -24,15 +24,8 @@
     "areaPlaceholder": "Select area",
     "severityLabel": "Severity",
     "severityPlaceholder": "Select severity",
-    "statusLabel": "Status",
-    "statusPlaceholder": "Select status",
-    "repairSectionTitle": "Repair",
     "estimatedCostLabel": "Estimated cost",
     "estimatedCostPlaceholder": "e.g. 350",
-    "repairCostLabel": "Repair cost",
-    "repairCostPlaceholder": "e.g. 350",
-    "repairedAtLabel": "Repaired on",
-    "repairedAtPlaceholder": "Pick a date",
     "descriptionLabel": "Description",
     "descriptionPlaceholder": "What was done, or what is damaged",
     "photosLabel": "Photos",
@@ -53,11 +46,14 @@
       "moderate": "Moderate",
       "major": "Major"
     },
-    "status": {
-      "open": "Open",
-      "in_repair": "In repair",
-      "repaired": "Repaired"
-    }
+    "detailsSectionTitle": "Description and photos",
+    "claimSectionTitle": "Insurance claim",
+    "insuranceLabel": "Insurance policy",
+    "insurancePlaceholder": "Found from the date (change if needed)",
+    "claimNumberLabel": "Claim number",
+    "claimNumberPlaceholder": "e.g. CLM-2026-0142",
+    "insurerPaidAmountLabel": "Paid by the insurer",
+    "insurerPaidAmountPlaceholder": "e.g. 800"
   },
   "axios": {
     "start": {

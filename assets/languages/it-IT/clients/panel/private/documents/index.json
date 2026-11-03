@@ -5,14 +5,14 @@
   "help": {
     "ariaLabel": "Informazioni sui documenti",
     "title": "Informazioni sui documenti",
-    "overview": "Conserva qui i documenti di ogni veicolo, con le scansioni. I documenti senza scadenza non generano promemoria.",
+    "overview": "Conserva qui i documenti di ogni veicolo, con le scansioni. Un veicolo non viene consegnato se libretto, revisione, test emissioni o bollo scadono prima della riconsegna.",
     "sections": [
       {
         "title": "In questa pagina",
         "items": [
-          "Il personale scelto viene avvisato una volta, 30 giorni prima della scadenza.",
-          "I documenti scaduti vengono segnati ogni mattina.",
-          "Un documento più recente dello stesso tipo sostituisce il promemoria del vecchio."
+          "Usa «Rinnova» nel menu: il nuovo record riprende il vecchio ed è collegato a esso, così lo storico resta una catena.",
+          "Il personale viene avvisato 30 giorni prima di una scadenza, e di nuovo il giorno in cui scade senza rinnovo.",
+          "I documenti senza data di scadenza non generano mai un promemoria."
         ]
       }
     ]
@@ -25,6 +25,20 @@
   "deleted": "Eliminato",
   "active": "Attivo",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Valido",
+        "expired": "Scaduto"
+      },
+      "type": {
+        "registration": "Libretto di circolazione",
+        "technical_inspection": "Revisione",
+        "emissions_test": "Controllo emissioni",
+        "road_tax": "Bollo auto",
+        "green_card": "Carta verde",
+        "other": "Altro"
+      }
+    },
     "vehicle": "Veicolo",
     "type": "Tipo",
     "documentNumber": "Numero del documento",
@@ -38,6 +52,10 @@
     "createdBy": "Creato da",
     "company": "Azienda",
     "deletedAt": "Eliminato il",
-    "deletedBy": "Eliminato da"
+    "deletedBy": "Eliminato da",
+    "supersedes": "Rinnova",
+    "supersededBy": "Rinnovato da",
+    "attachments": "Allegati",
+    "expiryReminderSentAt": "Promemoria di scadenza inviato"
   }
 }

@@ -12,6 +12,7 @@
     "6": "Samstag"
   },
   "form": {
+    "blockSectionTitle": "Sperre",
     "endAtLabel": "Bis",
     "endAtPlaceholder": "Ende eingeben",
     "noteLabel": "Notiz",
@@ -21,7 +22,13 @@
     "startAtLabel": "Von",
     "startAtPlaceholder": "Beginn eingeben",
     "vehicleLabel": "Fahrzeug",
-    "vehiclePlaceholder": "Fahrzeug auswählen"
+    "vehiclePlaceholder": "Fahrzeug auswählen",
+    "reason": {
+      "maintenance": "Wartung",
+      "repair": "Reparatur",
+      "transfer": "Überführung",
+      "other": "Andere"
+    }
   },
   "axios": {
     "start": {

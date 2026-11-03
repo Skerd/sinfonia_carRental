@@ -32,9 +32,12 @@
         "title": "Leggere i numeri",
         "items": [
           "Una ricerca senza un'auto libera conta come domanda persa.",
-          "Il rientro è il ricavo del periodo diviso per il prezzo di acquisto."
+          "Il rientro è il ricavo del periodo diviso per il prezzo di acquisto.",
+          "Le riparazioni sono il costo delle schede di riparazione. Le multe sono quelle pagate e tenute dall'azienda. Recuperato è quanto clienti e assicurazioni hanno rimborsato per i danni."
         ]
       }
     ]
-  }
+  },
+  "fines": "Multe",
+  "recovered": "Recuperato"
 }

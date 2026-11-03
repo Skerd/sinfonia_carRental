@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/damages/center/sheetView/vehicleDamageSheetView.tsx",
+  "failedTitle": "Failed to load damage",
+  "failedDescription": "Something went wrong while loading this damage. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "overview": "Overview",
   "vehicleDamageSubtitle": "Damage report",
@@ -42,5 +45,16 @@
   "deletedAt": "Deleted at",
   "deletedBy": "Deleted by",
   "chargedAmount": "Charged to customer",
-  "chargedAt": "Charged on"
+  "chargedAt": "Charged on",
+  "repairGroup": "Repair",
+  "recoveryGroup": "Costs recovered",
+  "repair": "Repair",
+  "repairStatusValues": {
+    "scheduled": "Scheduled",
+    "completed": "Completed",
+    "cancelled": "Cancelled"
+  },
+  "insurance": "Insurance policy",
+  "claimNumber": "Claim number",
+  "insurerPaidAmount": "Paid by the insurer"
 }

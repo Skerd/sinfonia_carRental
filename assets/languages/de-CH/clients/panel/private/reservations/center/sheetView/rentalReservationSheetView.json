@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reservations/center/sheetView/rentalReservationSheetView.tsx",
+  "failedTitle": "Reservierung konnte nicht geladen werden",
+  "failedDescription": "Beim Laden ist ein Fehler aufgetreten. Klicken Sie, um es erneut zu versuchen.",
+  "failedTooltipDescription": "Klicken, um die Daten erneut zu laden.",
   "lifecycle": "Lebenszyklus",
   "amountPaid": "Bezahlt",
   "at": "Wann",
@@ -82,7 +85,8 @@
     "charge_added": "Belastung hinzugefügt",
     "deposit_held": "Kaution hinterlegt",
     "deposit_captured": "Kaution behalten",
-    "deposit_released": "Kaution freigegeben"
+    "deposit_released": "Kaution freigegeben",
+    "charge_removed": "Belastung entfernt"
   },
   "createdAt": "Erstellt am",
   "updatedAt": "Aktualisiert am",

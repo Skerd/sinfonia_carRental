@@ -1,5 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/categories/center/sheetView/vehicleCategorySheetView.tsx",
+  "failedTitle": "Failed to load category",
+  "failedDescription": "Something went wrong while loading this category. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "dailyRate": "Daily rate",
   "depositAmount": "Deposit",

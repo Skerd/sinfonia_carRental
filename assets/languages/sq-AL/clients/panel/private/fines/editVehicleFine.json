@@ -35,19 +35,12 @@
     "placePlaceholder": "Ku ndodhi",
     "dueDateLabel": "Paguani ose përgjigjuni deri më",
     "dueDatePlaceholder": "Zgjidhni një datë",
-    "statusLabel": "Statusi",
-    "statusPlaceholder": "Zgjidhni statusin",
-    "status": {
-      "received": "E marrë",
-      "driver_identified": "Shoferi u identifikua",
-      "charged": "I faturuar klientit",
-      "paid_by_company": "E paguar nga ne",
-      "transferred": "Shoferi u njoftua",
-      "disputed": "E kundërshtuar"
-    },
     "attachmentsLabel": "Skanimi i njoftimit",
     "notesLabel": "Shënime",
-    "notesPlaceholder": "Shënime të brendshme"
+    "notesPlaceholder": "Shënime të brendshme",
+    "offenceSectionTitle": "Shkelja",
+    "authoritySectionTitle": "Autoriteti dhe shuma",
+    "notesSectionTitle": "Shënime dhe skedarë"
   },
   "axios": {
     "start": {

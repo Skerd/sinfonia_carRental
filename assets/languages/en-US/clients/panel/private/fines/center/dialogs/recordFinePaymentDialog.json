@@ -1,0 +1,11 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/fines/center/dialogs/recordFinePaymentDialog.tsx",
+  "title": "Record payment",
+  "descriptionBooking": "What the company paid the authority for fine {reference}. It can still be charged to the booking.",
+  "descriptionCompany": "What the company paid the authority for fine {reference}. With no booking, it stays the company's cost.",
+  "confirm": "Save payment",
+  "cancel": "Back",
+  "paidAtLabel": "Paid on",
+  "paidAmountLabel": "Amount paid",
+  "paymentReferenceLabel": "Payment reference"
+}

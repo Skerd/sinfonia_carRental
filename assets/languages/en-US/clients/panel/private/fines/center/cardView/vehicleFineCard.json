@@ -22,6 +22,7 @@
     "charged": "Charged to customer",
     "paid_by_company": "Paid by us",
     "transferred": "Named the driver",
-    "disputed": "Disputed"
+    "disputed": "Disputed",
+    "cancelled": "Annulled"
   }
 }

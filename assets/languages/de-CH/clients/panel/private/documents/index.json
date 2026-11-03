@@ -5,14 +5,14 @@
   "help": {
     "ariaLabel": "Über Fahrzeugdokumente",
     "title": "Über Fahrzeugdokumente",
-    "overview": "Bewahren Sie die Papiere jedes Fahrzeugs mit Scans auf. Dokumente ohne Ablaufdatum lösen keine Erinnerung aus.",
+    "overview": "Bewahren Sie hier die Papiere jedes Fahrzeugs mit Scans auf. Ein Fahrzeug wird nicht übergeben, wenn Zulassung, Prüfung, Abgastest oder Strassensteuer vor der Rückgabe ablaufen.",
     "sections": [
       {
         "title": "Auf dieser Seite",
         "items": [
-          "Die gewählten Mitarbeitenden werden 30 Tage vor Ablauf einmal benachrichtigt.",
-          "Abgelaufene Dokumente werden jeden Morgen markiert.",
-          "Ein neues Dokument derselben Art ersetzt die Erinnerung an das alte."
+          "Nutzen Sie «Erneuern» im Menü: Der neue Eintrag wird aus dem alten übernommen und mit ihm verknüpft, so bleibt die Historie eine Kette.",
+          "Mitarbeitende werden 30 Tage vor einem Ablauf gewarnt, und nochmals am Tag, an dem einer ohne Erneuerung abläuft.",
+          "Dokumente ohne Ablaufdatum lösen nie eine Erinnerung aus."
         ]
       }
     ]
@@ -25,6 +25,20 @@
   "deleted": "Gelöscht",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "active": "Gültig",
+        "expired": "Abgelaufen"
+      },
+      "type": {
+        "registration": "Fahrzeugausweis",
+        "technical_inspection": "Fahrzeugprüfung",
+        "emissions_test": "Abgaswartung",
+        "road_tax": "Motorfahrzeugsteuer",
+        "green_card": "Grüne Karte",
+        "other": "Andere"
+      }
+    },
     "vehicle": "Fahrzeug",
     "type": "Art",
     "documentNumber": "Dokumentnummer",
@@ -38,6 +52,10 @@
     "createdBy": "Erstellt von",
     "company": "Unternehmen",
     "deletedAt": "Gelöscht am",
-    "deletedBy": "Gelöscht von"
+    "deletedBy": "Gelöscht von",
+    "supersedes": "Erneuert",
+    "supersededBy": "Erneuert durch",
+    "attachments": "Anhänge",
+    "expiryReminderSentAt": "Ablauferinnerung gesendet"
   }
 }

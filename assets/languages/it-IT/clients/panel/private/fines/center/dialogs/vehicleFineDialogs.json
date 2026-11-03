@@ -10,5 +10,20 @@
     "title": "Addebita al cliente",
     "description": "Aggiunge multa e spese di gestione alla prenotazione {booking} di {driver} e lo avvisa per e-mail. Una carta salvata viene addebitata subito.",
     "confirm": "Addebita"
+  },
+  "nominateDriver": {
+    "title": "Comunica il conducente",
+    "description": "Invia la lettera per {driver} all'autorità; paga il conducente. La commissione, se impostata, viene addebitata alla prenotazione {booking}.",
+    "confirm": "Conducente comunicato"
+  },
+  "dispute": {
+    "title": "Contesta la multa",
+    "description": "Nulla viene addebitato o ricordato durante la contestazione. Cerca di nuovo il conducente se la contestazione è respinta.",
+    "confirm": "Contesta"
+  },
+  "annul": {
+    "title": "Annulla la multa",
+    "description": "L'autorità ha ritirato la multa. Quanto addebitato alla prenotazione {booking} viene stornato: accreditato sulla fattura e rimborsato se pagato.",
+    "confirm": "Annulla"
   }
 }
