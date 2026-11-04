@@ -66,7 +66,7 @@ function AllVehicleCategories({resolveLanguageKey}: WithLanguageType) {
                         vehicleCategory={entity}
                         onDelete={onDelete}
                         onRestore={onRestore}
-                        onSheetRowPatched={(row) => {
+                        onSheetRowPatched={(row: Partial<VehicleCategory>) => {
                             listRef.current?.updateRow?.(entity._id, row);
                         }}
                     />

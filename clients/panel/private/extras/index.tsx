@@ -82,7 +82,7 @@ function AllRentalExtras({resolveLanguageKey}: WithLanguageType) {
                     onDelete={onDelete}
                     onRestore={onRestore}
                     onActiveChanged={(isActive: boolean) => listRef.current?.updateRow?.(entity._id, {isActive})}
-                    onSheetRowPatched={(row) => listRef.current?.updateRow?.(entity._id, row)}
+                    onSheetRowPatched={(row: Partial<RentalExtra>) => listRef.current?.updateRow?.(entity._id, row)}
                 />
             )}
             renderCard={(row, onDelete, onRestore, listRef) => (

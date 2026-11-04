@@ -34,7 +34,6 @@ function AllRentalBusinessAccounts({resolveLanguageKey}: WithLanguageType) {
                 rowActionMenu={{allowMenuForCustomChildren: true}}
                 renderActionMenuChildren={(account) => (
                     <RentalBusinessAccountMenu
-                        account={account}
                         onAction={() => setStatementAccount(account)}
                     />
                 )}

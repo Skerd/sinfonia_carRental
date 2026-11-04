@@ -69,7 +69,6 @@ function RentalBusinessAccountSheetView({
                 actionMenuChildren={
                     rentalBusinessAccountProp ? (
                         <RentalBusinessAccountMenu
-                            account={rentalBusinessAccountProp}
                             onAction={() => setStatementOpen(true)}
                         />
                     ) : null

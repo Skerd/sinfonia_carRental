@@ -64,13 +64,12 @@ function RentalBusinessAccountCard({
             failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="name"
             innerRef={innerRef}
-            sheetProps={({entity, setAction}) => ({
+            sheetProps={({setAction}) => ({
                 fetchId,
                 actionMenuAllowCustomChildren: true,
                 onActionMenuAction: setAction,
                 actionMenuChildren: (
                     <RentalBusinessAccountMenu
-                        account={entity}
                         onAction={setAction}
                     />
                 ),
@@ -88,7 +87,6 @@ function RentalBusinessAccountCard({
                 <>
                     <EntityCard.Header titlePath="name" title={row.name}>
                         <RentalBusinessAccountMenu
-                            account={row}
                             onAction={setAction}
                         />
                     </EntityCard.Header>
