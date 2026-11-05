@@ -1,0 +1,5 @@
+{
+  "modules": {
+    "carRental": "Noleggio auto: le prenotazioni restano con importi e pagamenti ma perdono i contatti del noleggiatore; patenti, numeri dei documenti, scansioni e firme vengono cancellati definitivamente e una carta salvata non può più essere addebitata. La lista di esclusione resta."
+  }
+}

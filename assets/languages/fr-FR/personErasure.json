@@ -1,0 +1,5 @@
+{
+  "modules": {
+    "carRental": "Location de voitures : les réservations restent avec leurs montants et paiements mais perdent les coordonnées du locataire ; permis, numéros d'identité, scans et signatures sont supprimés définitivement, et une carte enregistrée ne peut plus être débitée. La liste d'exclusion est conservée."
+  }
+}

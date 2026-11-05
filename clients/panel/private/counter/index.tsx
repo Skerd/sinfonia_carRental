@@ -319,8 +319,7 @@ function RentalCounterPage({
                 <div className="flex items-center gap-2">
                     <DateInput
                         aria-label={String(resolveLanguageKey("date"))}
-                        valueFormat="yyyy-MM-dd"
-                        displayFormat="PP"
+                        valueFormat="YYYY-MM-DD"
                         value={date}
                         onChange={(value) => value && setDate(value)}
                         className="w-full sm:w-44"

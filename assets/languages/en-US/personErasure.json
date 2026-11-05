@@ -1,0 +1,5 @@
+{
+  "modules": {
+    "carRental": "Car rental: reservations stay with their amounts and payments but lose the renter's contact details; driver licences, ID numbers, scans and signatures are deleted for good, and a saved card can no longer be charged. The deny list is kept."
+  }
+}
