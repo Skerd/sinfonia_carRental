@@ -31,8 +31,8 @@ function RentalDenyEntrySheetView({
     fetchId,
 }: RentalDenyEntrySheetViewOwnProps & WithLanguageType) {
     const [sheetData, setSheetData] = useState<Record<string, unknown>>(rentalDenyEntryProp || {_id: fetchId});
-    const access = useAccess("rentaldenyentrys");
-    const viewConfig = useViewConfig("rentaldenyentrys", "sheet");
+    const access = useAccess("rentaldenyentries");
+    const viewConfig = useViewConfig("rentaldenyentries", "sheet");
 
     useEffect(() => {
         if (!rentalDenyEntryProp) return;
@@ -67,5 +67,5 @@ function RentalDenyEntrySheetView({
 
 export default compose(
     withLanguage("src/modules/carRental/clients/panel/private/denyList/center/sheetView/rentalDenyEntrySheetView.tsx"),
-    withDebug(true, true, "rentaldenyentrys"),
+    withDebug(true, true, "rentaldenyentries"),
 )(RentalDenyEntrySheetView);

@@ -15,7 +15,7 @@
     "Vehiclefines": "Amendes",
     "Vehicletransfers": "Transferts",
     "Rentalbusinessaccounts": "Comptes entreprise",
-    "Rentaldenyentrys": "Liste d'exclusion",
+    "Rentaldenyentries": "Liste d'exclusion",
     "Rentalreviews": "Avis",
     "Rentalsubscriptions": "Abonnements"
   },
@@ -341,12 +341,12 @@
       "rentalbusinessaccounts": "Comptes entreprise",
       "vatNumber": "Numéro de TVA"
     },
-    "Rentaldenyentrys": {
+    "Rentaldenyentries": {
       "email": "E-mail",
       "isActive": "Actif",
       "licenseNumber": "Numéro de permis",
       "reason": "Motif",
-      "rentaldenyentrys": "Liste d'exclusion"
+      "rentaldenyentries": "Liste d'exclusion"
     },
     "Rentalreviews": {
       "authorName": "Nom",

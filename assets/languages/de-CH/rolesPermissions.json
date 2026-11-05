@@ -15,7 +15,7 @@
     "Vehiclefines": "Bussen",
     "Vehicletransfers": "Überführungen",
     "Rentalbusinessaccounts": "Geschäftskonten",
-    "Rentaldenyentrys": "Sperrliste",
+    "Rentaldenyentries": "Sperrliste",
     "Rentalreviews": "Bewertungen",
     "Rentalsubscriptions": "Abos"
   },
@@ -341,12 +341,12 @@
       "rentalbusinessaccounts": "Geschäftskonten",
       "vatNumber": "MwSt.-Nummer"
     },
-    "Rentaldenyentrys": {
+    "Rentaldenyentries": {
       "email": "E-Mail",
       "isActive": "Aktiv",
       "licenseNumber": "Führerscheinnummer",
       "reason": "Grund",
-      "rentaldenyentrys": "Sperrliste"
+      "rentaldenyentries": "Sperrliste"
     },
     "Rentalreviews": {
       "authorName": "Name",

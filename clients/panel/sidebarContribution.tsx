@@ -72,7 +72,7 @@ const carRentalSidebarContribution: SidebarContribution = {
                     ),
                     item("subscriptions", IconRepeat, "rentalsubscriptions"),
                     item("reviews", IconStar, "rentalreviews"),
-                    item("denyList", IconBan, "rentaldenyentrys"),
+                    item("denyList", IconBan, "rentaldenyentries"),
                     item(
                         "reservations",
                         IconCalendarEvent,

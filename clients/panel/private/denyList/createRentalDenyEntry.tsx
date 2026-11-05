@@ -5,8 +5,8 @@ import type {CreateRentalDenyEntryFormType} from "armonia/src/modules/carRental/
 
 export default createGenericCreatePage<CreateRentalDenyEntryFormType>({
     languagePath: "src/modules/carRental/clients/panel/private/denyList/createRentalDenyEntry.tsx",
-    collectionName: "rentaldenyentrys",
-    accessModel: "rentaldenyentrys",
+    collectionName: "rentaldenyentries",
+    accessModel: "rentaldenyentries",
     apiUrl: "/api/carRental/rentalDenyEntry",
     schema: createRentalDenyEntryFormSchema,
     defaultValues: {reason: "", isActive: true},

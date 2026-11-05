@@ -6,8 +6,8 @@ import type {RentalDenyEntry} from "armonia/src/modules/carRental/api/carRental/
 
 export default createGenericEditPage<RentalDenyEntry, EditRentalDenyEntryFormType>({
     languagePath: "src/modules/carRental/clients/panel/private/denyList/editRentalDenyEntry.tsx",
-    collectionName: "rentaldenyentrys",
-    accessModel: "rentaldenyentrys",
+    collectionName: "rentaldenyentries",
+    accessModel: "rentaldenyentries",
     apiUrl: "/api/carRental/rentalDenyEntry",
     schema: editRentalDenyEntryFormSchema,
     mapEntityData: (data) => data,

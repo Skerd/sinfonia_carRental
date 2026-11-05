@@ -15,7 +15,7 @@
     "Vehiclefines": "Gjobat",
     "Vehicletransfers": "Transferimet",
     "Rentalbusinessaccounts": "Llogaritë e biznesit",
-    "Rentaldenyentrys": "Lista e bllokimit",
+    "Rentaldenyentries": "Lista e bllokimit",
     "Rentalreviews": "Vlerësimet",
     "Rentalsubscriptions": "Abonimet"
   },
@@ -341,12 +341,12 @@
       "rentalbusinessaccounts": "Llogaritë e biznesit",
       "vatNumber": "Numri i TVSH-së"
     },
-    "Rentaldenyentrys": {
+    "Rentaldenyentries": {
       "email": "Email",
       "isActive": "Aktiv",
       "licenseNumber": "Numri i patentës",
       "reason": "Arsyeja",
-      "rentaldenyentrys": "Lista e bllokimit"
+      "rentaldenyentries": "Lista e bllokimit"
     },
     "Rentalreviews": {
       "authorName": "Emri",

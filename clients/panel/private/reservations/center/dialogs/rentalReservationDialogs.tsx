@@ -9,6 +9,7 @@ import ExtendReservationDialog from "./extendReservationDialog.tsx";
 import DriversDialog from "./driversDialog.tsx";
 import DepositDialog from "./depositDialog.tsx";
 import SettleDepositDialog from "./settleDepositDialog.tsx";
+import FullReservation from "./fullReservation.tsx";
 
 /** The dialog for the action picked in a reservation's menu. */
 export default function RentalReservationDialogs({
@@ -25,13 +26,14 @@ export default function RentalReservationDialogs({
     const props = {reservation, onClose, onUpdated};
     switch (action) {
         case "recordPayment": return <RecordPaymentDialog {...props} />;
-        case "handover": return <HandoverDialog {...props} />;
+        // Drivers are identity data a list row leaves out (SEC-06): these two start from the whole reservation.
+        case "handover": return <FullReservation filter={{_id: reservation._id}}>{(full) => <HandoverDialog {...props} reservation={full} />}</FullReservation>;
         case "returnVehicle": return <ReturnVehicleDialog {...props} />;
         case "cancel": return <CancelReservationDialog {...props} />;
         case "noShow": return <NoShowDialog {...props} />;
         case "reassignVehicle": return <ReassignVehicleDialog {...props} />;
         case "extend": return <ExtendReservationDialog {...props} />;
-        case "drivers": return <DriversDialog {...props} />;
+        case "drivers": return <FullReservation filter={{_id: reservation._id}}>{(full) => <DriversDialog {...props} reservation={full} />}</FullReservation>;
         case "takeDeposit": return <DepositDialog {...props} />;
         case "settleDeposit": return <SettleDepositDialog {...props} />;
         default: return null;

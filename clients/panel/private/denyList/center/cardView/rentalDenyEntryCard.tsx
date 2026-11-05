@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconAlertTriangle, IconBan, IconId, IconMail} from "@tabler/icons-react";
+import {IconAlertTriangle, IconBan, IconMail} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -33,7 +33,7 @@ function RentalDenyEntryCard({
 }: RentalDenyEntryCardProps) {
     return (
         <EntityCard
-            resource="rentaldenyentrys"
+            resource="rentaldenyentries"
             entity={rentalDenyEntry}
             fetchId={fetchId}
             singleUrl="/api/carRental/rentalDenyEntry/single"
@@ -63,13 +63,6 @@ function RentalDenyEntryCard({
                             value={row.email}
                         />
                         <EntityCardRow
-                            icon={IconId}
-                            label={resolveLanguageKey("licenseNumber")}
-                            tooltip={resolveLanguageKey("licenseNumber")}
-                            path="licenseNumber"
-                            value={row.licenseNumber}
-                        />
-                        <EntityCardRow
                             icon={IconAlertTriangle}
                             label={resolveLanguageKey("reason")}
                             tooltip={resolveLanguageKey("reason")}
@@ -92,5 +85,5 @@ function RentalDenyEntryCard({
 
 export default compose(
     withLanguage("src/modules/carRental/clients/panel/private/denyList/center/cardView/rentalDenyEntryCard.tsx"),
-    withDebug(true, true, "rentaldenyentrys"),
+    withDebug(true, true, "rentaldenyentries"),
 )(RentalDenyEntryCard);

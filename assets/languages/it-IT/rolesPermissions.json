@@ -15,7 +15,7 @@
     "Vehiclefines": "Multe",
     "Vehicletransfers": "Trasferimenti",
     "Rentalbusinessaccounts": "Conti aziendali",
-    "Rentaldenyentrys": "Lista di esclusione",
+    "Rentaldenyentries": "Lista di esclusione",
     "Rentalreviews": "Recensioni",
     "Rentalsubscriptions": "Abbonamenti"
   },
@@ -341,12 +341,12 @@
       "rentalbusinessaccounts": "Conti aziendali",
       "vatNumber": "Partita IVA"
     },
-    "Rentaldenyentrys": {
+    "Rentaldenyentries": {
       "email": "Email",
       "isActive": "Attivo",
       "licenseNumber": "Numero di patente",
       "reason": "Motivo",
-      "rentaldenyentrys": "Lista di esclusione"
+      "rentaldenyentries": "Lista di esclusione"
     },
     "Rentalreviews": {
       "authorName": "Nome",

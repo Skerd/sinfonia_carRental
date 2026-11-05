@@ -15,7 +15,7 @@
     "Vehiclefines": "Traffic fines",
     "Vehicletransfers": "Transfers",
     "Rentalbusinessaccounts": "Business accounts",
-    "Rentaldenyentrys": "Deny list",
+    "Rentaldenyentries": "Deny list",
     "Rentalreviews": "Reviews",
     "Rentalsubscriptions": "Subscriptions"
   },
@@ -341,12 +341,12 @@
       "rentalbusinessaccounts": "Business accounts",
       "vatNumber": "VAT number"
     },
-    "Rentaldenyentrys": {
+    "Rentaldenyentries": {
       "email": "Email",
       "isActive": "Active",
       "licenseNumber": "Licence number",
       "reason": "Reason",
-      "rentaldenyentrys": "Deny list"
+      "rentaldenyentries": "Deny list"
     },
     "Rentalreviews": {
       "authorName": "Name",

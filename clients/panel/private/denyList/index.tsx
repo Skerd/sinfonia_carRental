@@ -25,9 +25,9 @@ function AllRentalDenyEntrys({resolveLanguageKey}: WithLanguageType) {
     return (
         <EntityListPage<RentalDenyEntry>
             apiUrl="/api/carRental/rentalDenyEntry"
-            collectionName="rentaldenyentrys"
-            accessModel="rentaldenyentrys"
-            tableConfigKey="rentaldenyentrys"
+            collectionName="rentaldenyentries"
+            accessModel="rentaldenyentries"
+            tableConfigKey="rentaldenyentries"
             createPath="/carRental/denyList/create"
             createIcon={<IconPlus />}
             createLanguageKey="create"
@@ -52,5 +52,5 @@ function AllRentalDenyEntrys({resolveLanguageKey}: WithLanguageType) {
 
 export default compose(
     withLanguage("src/modules/carRental/clients/panel/private/denyList/index.tsx"),
-    withDebug(true, true, "rentaldenyentrys"),
+    withDebug(true, true, "rentaldenyentries"),
 )(AllRentalDenyEntrys);
