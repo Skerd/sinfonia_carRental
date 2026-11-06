@@ -3,7 +3,7 @@ import {compose} from "redux";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage, {type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
+import EntityListPage, {EntityListCreateButton, EntityListHeader, type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
 import type {RentalDenyEntry} from "armonia/src/modules/carRental/api/carRental/private/rentalDenyEntry/rentalDenyEntry.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
@@ -28,9 +28,15 @@ function AllRentalDenyEntrys({resolveLanguageKey}: WithLanguageType) {
             collectionName="rentaldenyentries"
             accessModel="rentaldenyentries"
             tableConfigKey="rentaldenyentries"
-            createPath="/carRental/denyList/create"
-            createIcon={<IconPlus />}
-            createLanguageKey="create"
+            header={(ctx) => (
+                <EntityListHeader ctx={ctx}>
+                    <EntityListCreateButton
+                        ctx={ctx}
+                        path="/carRental/denyList/create"
+                        icon={<IconPlus />}
+                    />
+                </EntityListHeader>
+            )}
             buildEditPath={rentalDenyEntryEditPath}
             resolveLanguageKey={resolveLanguageKey}
             quickFilters={quickFilters}

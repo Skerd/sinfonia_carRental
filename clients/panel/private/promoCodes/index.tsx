@@ -1,7 +1,7 @@
 import {compose} from "redux";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage from "@coreModule/components/entityPage/pages/entityListPage.tsx";
+import EntityListPage, {EntityListCreateButton, EntityListHeader} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
 import type {RentalPromoCode} from "armonia/src/modules/carRental/api/carRental/private/rentalPromoCode/rentalPromoCode.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
@@ -19,9 +19,15 @@ function AllRentalPromoCodes({resolveLanguageKey}: WithLanguageType) {
             collectionName="rentalpromocodes"
             accessModel="rentalpromocodes"
             tableConfigKey="rentalpromocodes"
-            createPath="/tenancy/systemSettings/rentalPromoCodes/create"
-            createIcon={<IconPlus />}
-            createLanguageKey="create"
+            header={(ctx) => (
+                <EntityListHeader ctx={ctx}>
+                    <EntityListCreateButton
+                        ctx={ctx}
+                        path="/tenancy/systemSettings/rentalPromoCodes/create"
+                        icon={<IconPlus />}
+                    />
+                </EntityListHeader>
+            )}
             buildEditPath={rentalPromoCodeEditPath}
             resolveLanguageKey={resolveLanguageKey}
             sheetLanguagePath="src/modules/carRental/clients/panel/private/promoCodes/center/sheetView/rentalPromoCodeSheetView.tsx"

@@ -4,7 +4,7 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators";
 import {RENTAL_SUBSCRIPTION_PERIODS, RENTAL_SUBSCRIPTION_STATUSS} from "armonia/src/modules/carRental/api/carRental/private/rentalSubscription/rentalSubscription.schema-def.ts";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage, {type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
+import EntityListPage, {EntityListCreateButton, EntityListHeader, type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
 import type {RentalSubscription} from "armonia/src/modules/carRental/api/carRental/private/rentalSubscription/rentalSubscription.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
@@ -54,9 +54,15 @@ function AllRentalSubscriptions({resolveLanguageKey}: WithLanguageType) {
             collectionName="rentalsubscriptions"
             accessModel="rentalsubscriptions"
             tableConfigKey="rentalsubscriptions"
-            createPath="/carRental/subscriptions/create"
-            createIcon={<IconPlus />}
-            createLanguageKey="create"
+            header={(ctx) => (
+                <EntityListHeader ctx={ctx}>
+                    <EntityListCreateButton
+                        ctx={ctx}
+                        path="/carRental/subscriptions/create"
+                        icon={<IconPlus />}
+                    />
+                </EntityListHeader>
+            )}
             buildEditPath={rentalSubscriptionEditPath}
             resolveLanguageKey={resolveLanguageKey}
             quickFilters={quickFilters}

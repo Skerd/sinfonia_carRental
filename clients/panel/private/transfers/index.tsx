@@ -4,7 +4,7 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators";
 import {VEHICLE_TRANSFER_STATUSS} from "armonia/src/modules/carRental/api/carRental/private/vehicleTransfer/vehicleTransfer.schema-def.ts";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage, {type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
+import EntityListPage, {EntityListCreateButton, EntityListHeader, type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
 import type {VehicleTransfer} from "armonia/src/modules/carRental/api/carRental/private/vehicleTransfer/vehicleTransfer.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
@@ -49,12 +49,13 @@ function AllVehicleTransfers({resolveLanguageKey}: WithLanguageType) {
             collectionName="vehicletransfers"
             accessModel="vehicletransfers"
             tableConfigKey="vehicletransfers"
-            createPath={scope.createPath}
-            createIcon={<IconPlus />}
-            createLanguageKey="create"
+            header={(ctx) => (
+                <EntityListHeader ctx={ctx} title={scope.headerTitle}>
+                    <EntityListCreateButton ctx={ctx} path={scope.createPath} icon={<IconPlus />} />
+                </EntityListHeader>
+            )}
             buildEditPath={vehicleTransferEditPath}
             resolveLanguageKey={resolveLanguageKey}
-            headerTitle={scope.headerTitle}
             extraFilters={scope.extraFilters}
             quickFilters={quickFilters}
             sheetLanguagePath="src/modules/carRental/clients/panel/private/transfers/center/sheetView/vehicleTransferSheetView.tsx"

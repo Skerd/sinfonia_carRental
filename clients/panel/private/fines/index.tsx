@@ -4,7 +4,7 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators";
 import {VEHICLE_FINE_STATUSS, VEHICLE_FINE_TYPES} from "armonia/src/modules/carRental/api/carRental/private/vehicleFine/vehicleFine.schema-def.ts";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage, {type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
+import EntityListPage, {EntityListCreateButton, EntityListHeader, type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
 import type {VehicleFine} from "armonia/src/modules/carRental/api/carRental/private/vehicleFine/vehicleFine.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
@@ -46,12 +46,13 @@ function AllVehicleFines({resolveLanguageKey}: WithLanguageType) {
             collectionName="vehiclefines"
             accessModel="vehiclefines"
             tableConfigKey="vehiclefines"
-            createPath={scope.createPath}
-            createIcon={<IconPlus />}
-            createLanguageKey="create"
+            header={(ctx) => (
+                <EntityListHeader ctx={ctx} title={scope.headerTitle}>
+                    <EntityListCreateButton ctx={ctx} path={scope.createPath} icon={<IconPlus />} />
+                </EntityListHeader>
+            )}
             buildEditPath={vehicleFineEditPath}
             resolveLanguageKey={resolveLanguageKey}
-            headerTitle={scope.headerTitle}
             extraFilters={scope.extraFilters}
             quickFilters={quickFilters}
             sheetLanguagePath="src/modules/carRental/clients/panel/private/fines/center/sheetView/vehicleFineSheetView.tsx"

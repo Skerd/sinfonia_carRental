@@ -4,7 +4,7 @@ import withLanguage, {
     WithLanguageType,
 } from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage, {type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
+import EntityListPage, {EntityListCreateButton, EntityListHeader, type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
 import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators";
 import type {RentalBusinessAccount} from "armonia/src/modules/carRental/api/carRental/private/rentalBusinessAccount/rentalBusinessAccount.dto.ts";
@@ -41,9 +41,15 @@ function AllRentalBusinessAccounts({resolveLanguageKey}: WithLanguageType) {
                 collectionName="rentalbusinessaccounts"
                 accessModel="rentalbusinessaccounts"
                 tableConfigKey="rentalbusinessaccounts"
-                createPath="/carRental/businessAccounts/create"
-                createIcon={<IconPlus />}
-                createLanguageKey="create"
+                header={(ctx) => (
+                    <EntityListHeader ctx={ctx}>
+                        <EntityListCreateButton
+                            ctx={ctx}
+                            path="/carRental/businessAccounts/create"
+                            icon={<IconPlus />}
+                        />
+                    </EntityListHeader>
+                )}
                 buildEditPath={rentalBusinessAccountEditPath}
                 resolveLanguageKey={resolveLanguageKey}
                 quickFilters={quickFilters}

@@ -4,7 +4,7 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators";
 import {VEHICLE_MAINTENANCE_STATUSES, VEHICLE_MAINTENANCE_TYPES} from "armonia/src/modules/carRental/api/carRental/private/vehicleMaintenance/vehicleMaintenance.schema-def.ts";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage, {type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
+import EntityListPage, {EntityListCreateButton, EntityListHeader, type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
 import type {VehicleMaintenance} from "armonia/src/modules/carRental/api/carRental/private/vehicleMaintenance/vehicleMaintenance.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
@@ -46,12 +46,13 @@ function AllVehicleMaintenances({resolveLanguageKey}: WithLanguageType) {
             collectionName="vehiclemaintenances"
             accessModel="vehiclemaintenances"
             tableConfigKey="vehiclemaintenances"
-            createPath={scope.createPath}
-            createIcon={<IconPlus />}
-            createLanguageKey="create"
+            header={(ctx) => (
+                <EntityListHeader ctx={ctx} title={scope.headerTitle}>
+                    <EntityListCreateButton ctx={ctx} path={scope.createPath} icon={<IconPlus />} />
+                </EntityListHeader>
+            )}
             buildEditPath={vehicleMaintenanceEditPath}
             resolveLanguageKey={resolveLanguageKey}
-            headerTitle={scope.headerTitle}
             extraFilters={scope.extraFilters}
             quickFilters={quickFilters}
             sheetLanguagePath="src/modules/carRental/clients/panel/private/maintenance/center/sheetView/vehicleMaintenanceSheetView.tsx"
