@@ -1,4 +1,4 @@
-import {Save} from "lucide-react";
+import {IconDeviceFloppy} from "@tabler/icons-react";
 import {createGenericEditPage} from "@coreModule/components/entityPage/pages/createGenericEditPage.tsx";
 import {editRentalExtraFormSchema} from "armonia/src/modules/carRental/api/carRental/private/rentalExtra/editRentalExtra.form.validator.ts";
 import type {EditRentalExtraFormType} from "armonia/src/modules/carRental/api/carRental/private/rentalExtra/rentalExtra.schema-def.ts";
@@ -10,5 +10,5 @@ export default createGenericEditPage<RentalExtra, EditRentalExtraFormType>({
     accessModel: "rentalextras",
     apiUrl: "/api/carRental/rentalExtra",
     schema: editRentalExtraFormSchema,
-    submitIcon: <Save />,
+    submitIcon: <IconDeviceFloppy />,
 });

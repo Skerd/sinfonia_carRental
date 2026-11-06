@@ -5,7 +5,7 @@ import {Elements} from "@stripe/react-stripe-js";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withAxios, {WithAxiosType} from "@coreModule/helpers/hocs/withAxios.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import type {RentalDepositResponse, RentalReservation} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.dto.ts";
 import type {TakeRentalDepositFormType} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.schema-def.ts";
 import {RENTAL_CARD_HOLD_MAX_DAYS} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.constants.ts";
@@ -13,6 +13,9 @@ import ReservationActionDialogShell from "./reservationActionDialogShell.tsx";
 import DepositCardForm from "./depositCardForm.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
 import {Label} from "@coreModule/components/ui/label.tsx";
+import {RadioGroup, RadioGroupItem} from "@coreModule/components/ui/radio-group.tsx";
+
+const REFRESH_DEPOSIT_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalReservation/refreshDeposit"};
 
 type Props = WithLanguageType & WithAxiosType<{data: RentalDepositResponse}, TakeRentalDepositFormType> & {
     reservation: RentalReservation;
@@ -39,11 +42,14 @@ function DepositDialog({reservation, onClose, onUpdated, resolveLanguageKey, onF
         },
     }));
 
-    const confirmed = async () => {
-        const res = await apiClient.post<RentalReservation>("/api/carRental/rentalReservation/refreshDeposit", {_id: reservation._id});
-        onUpdated(res.data);
-        onClose();
-    };
+    // Re-reads the deposit after Stripe confirms the card on the client.
+    const [refreshCount, setRefreshCount] = useState(0);
+    useHttpRequest<RentalReservation>(REFRESH_DEPOSIT_REQUEST, {_id: reservation._id}, refreshCount, true, {
+        success: (updated) => {
+            onUpdated(updated);
+            onClose();
+        },
+    });
     const savesCard = reservation.pricing.rentalDays > RENTAL_CARD_HOLD_MAX_DAYS;
 
     if (card && stripePromise) {
@@ -62,7 +68,7 @@ function DepositDialog({reservation, onClose, onUpdated, resolveLanguageKey, onF
                     <DepositCardForm
                         kind={card.kind}
                         confirmLabel={String(resolveLanguageKey(card.kind === "payment" ? "confirmHold" : "confirmSave"))}
-                        onConfirmed={() => void confirmed()}
+                        onConfirmed={() => setRefreshCount((count) => count + 1)}
                         onError={setCardError}
                     />
                 </Elements>
@@ -86,14 +92,19 @@ function DepositDialog({reservation, onClose, onUpdated, resolveLanguageKey, onF
                 <Label htmlFor="rental-deposit-amount">{resolveLanguageKey("amountLabel")}</Label>
                 <Input id="rental-deposit-amount" type="number" min={0} step="any" value={amount} onChange={(e) => setAmount(e.target.value)} disabled={loading} />
             </div>
-            <div className="flex flex-col gap-2">
+            <RadioGroup
+                className="flex flex-col gap-2"
+                value={method}
+                onValueChange={(value) => setMethod(value === "cash" ? "cash" : "card")}
+                disabled={loading}
+            >
                 {(["card", "cash"] as const).map((choice) => (
                     <label key={choice} className="flex items-center gap-2 text-sm">
-                        <input type="radio" name="rental-deposit-method" checked={method === choice} onChange={() => setMethod(choice)} disabled={loading} />
+                        <RadioGroupItem value={choice} />
                         {resolveLanguageKey(`method.${choice}`)}
                     </label>
                 ))}
-            </div>
+            </RadioGroup>
         </ReservationActionDialogShell>
     );
 }

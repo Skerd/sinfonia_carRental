@@ -1,4 +1,4 @@
-import {Save} from "lucide-react";
+import {IconDeviceFloppy} from "@tabler/icons-react";
 import {createGenericEditPage} from "@coreModule/components/entityPage/pages/createGenericEditPage.tsx";
 import {editVehicleInsuranceFormSchema} from "armonia/src/modules/carRental/api/carRental/private/vehicleInsurance/editVehicleInsurance.form.validator.ts";
 import type {EditVehicleInsuranceFormType} from "armonia/src/modules/carRental/api/carRental/private/vehicleInsurance/vehicleInsurance.schema-def.ts";
@@ -42,5 +42,5 @@ export default createGenericEditPage<VehicleInsurance, EditVehicleInsuranceFormT
     mapSubmitPayload: ({status: _status, ...rest}) => rest,
     renderChildren: (_form, entity, {resolveLanguageKey}) =>
         entity?.status === "cancelled" ? <p className="text-sm text-muted-foreground">{resolveLanguageKey("cancelledLocked")}</p> : null,
-    submitIcon: <Save />,
+    submitIcon: <IconDeviceFloppy />,
 });

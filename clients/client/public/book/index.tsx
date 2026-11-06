@@ -7,7 +7,7 @@ import {Elements} from "@stripe/react-stripe-js";
 import withLanguage, {
     WithLanguageType,
 } from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {
     handleError,
     normalizeError,
@@ -42,8 +42,14 @@ import RentalStripePayment from "./rentalStripePayment.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
 import {NativeSelect} from "@coreModule/components/ui/native-select.tsx";
+import {Checkbox} from "@coreModule/components/ui/checkbox.tsx";
+import {RadioGroup, RadioGroupItem} from "@coreModule/components/ui/radio-group.tsx";
 
+const QUOTE_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/quote"};
+const BOOK_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/book"};
 const CONTACT_KEYS = ["firstName", "lastName", "email", "phone"] as const;
+/** RadioGroup value for "no extra protection" (protection ids are ObjectIds, so it never collides). */
+const BASIC_PROTECTION = "basic";
 type ContactKey = (typeof CONTACT_KEYS)[number];
 type Contact = BookRentalFormType["contact"];
 
@@ -109,7 +115,6 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
         useState<RentalPaymentChoice | null>(null);
     const [acceptTerms, setAcceptTerms] = useState(false);
     const [crossBorder, setCrossBorder] = useState(false);
-    const [submitting, setSubmitting] = useState(false);
     const [formError, setFormError] = useState<string | null>(null);
     // One key per booking attempt: a retried request after a lost response returns the same reservation.
     const idempotencyKey = useRef(generateUUID());
@@ -124,49 +129,10 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
         [publishableKey],
     );
 
+    const [quoteCount, setQuoteCount] = useState(0);
     useEffect(() => {
         if (!trip || !category) return;
-        const controller = new AbortController();
-        setQuoteError(null);
-        const body: QuoteRentalFormType = {
-            ...trip,
-            category: category._id,
-            extras,
-            ...(birthDate ? {driverBirthDate: birthDate} : {}),
-            ...(promoCode ? {promoCode} : {}),
-            ...(crossBorder ? {crossBorder: true} : {}),
-        };
-        apiClient
-            .post<RentalQuoteResponse>(
-                "/api/carRental/rentalStorefront/quote",
-                body,
-                {signal: controller.signal},
-            )
-            .then((res) => setQuote(res.data.data))
-            .catch((e) => {
-                if (controller.signal.aborted) return;
-                const error = normalizeError(e);
-                // A code that doesn't apply is dropped, and the trip is priced without it.
-                if (promoCode && error.code?.startsWith("rental_promo_code")) {
-                    setPromoError(
-                        error.displayMessage ??
-                            String(resolveLanguageKey("promoInvalid")),
-                    );
-                    setPromoCode("");
-                    return;
-                }
-                // The birth date is checked against the minimum age at booking, not while pricing.
-                if (error.code === "rental_driver_too_young") {
-                    setBirthDateError(error.displayMessage ?? null);
-                    return;
-                }
-                setQuote(null);
-                setQuoteError(
-                    error.displayMessage ??
-                        String(resolveLanguageKey("quoteFailed")),
-                );
-            });
-        return () => controller.abort();
+        setQuoteCount((count) => count + 1);
         // The quote depends only on the trip, the category, the extras, the driver's age, the promo code and explicit refreshes.
     }, [
         tripKey,
@@ -177,6 +143,66 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
         quoteVersion,
         crossBorder,
     ]);
+    const quoteBody: QuoteRentalFormType | Record<string, never> = trip && category ? {
+        ...trip,
+        category: category._id,
+        extras,
+        ...(birthDate ? {driverBirthDate: birthDate} : {}),
+        ...(promoCode ? {promoCode} : {}),
+        ...(crossBorder ? {crossBorder: true} : {}),
+    } : {};
+    useHttpRequest<RentalQuoteResponse>(QUOTE_REQUEST, quoteBody, quoteCount, true, {
+        start: () => setQuoteError(null),
+        success: (response) => setQuote(response.data),
+        error: (e) => {
+            const error = normalizeError(e);
+            // A code that doesn't apply is dropped, and the trip is priced without it.
+            if (promoCode && error.code?.startsWith("rental_promo_code")) {
+                setPromoError(
+                    error.displayMessage ??
+                        String(resolveLanguageKey("promoInvalid")),
+                );
+                setPromoCode("");
+                return;
+            }
+            // The birth date is checked against the minimum age at booking, not while pricing.
+            if (error.code === "rental_driver_too_young") {
+                setBirthDateError(error.displayMessage ?? null);
+                return;
+            }
+            setQuote(null);
+            setQuoteError(
+                error.displayMessage ??
+                    String(resolveLanguageKey("quoteFailed")),
+            );
+        },
+    });
+
+    const [booking, setBooking] = useState<{body: BookRentalFormType | Record<string, never>; count: number}>({body: {}, count: 0});
+    const {loading: submitting} = useHttpRequest<RentalBookingResponse>(BOOK_REQUEST, booking.body, booking.count, true, {
+        success: ({data}) => {
+            if (data.payment) {
+                setPendingPayment({...data.payment, token: data.manageToken});
+            } else {
+                navigate(manageUrl(base, data.manageToken, false));
+            }
+        },
+        error: (e) => {
+            const error = handleError(e, {context: "RentalBook"});
+            if (!error) return;
+            // A rejected request created nothing, so the next attempt is a new booking.
+            if (error.status && error.status < 500)
+                idempotencyKey.current = generateUUID();
+            if (error.code === "rental_price_changed")
+                setQuoteVersion((v) => v + 1);
+            if (error.code === "rental_driver_too_young")
+                setBirthDateError(error.displayMessage ?? null);
+            setFormError(
+                error.displayMessage ??
+                    String(resolveLanguageKey("bookingFailed")),
+            );
+        },
+    });
 
     if (!config) return null;
     if (!trip || !category || !pickupLocation || !returnLocation) {
@@ -196,7 +222,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
         clearFieldError(key);
     };
 
-    const submit = async (event: FormEvent) => {
+    const submit = (event: FormEvent) => {
         event.preventDefault();
         setFormError(null);
         const parsed = rentalContactFormSchema(languageCode).safeParse(contact);
@@ -226,36 +252,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
             expectedTotal: quote.grandTotal,
             idempotencyKey: idempotencyKey.current,
         };
-        setSubmitting(true);
-        try {
-            const {data} = (
-                await apiClient.post<RentalBookingResponse>(
-                    "/api/carRental/rentalStorefront/book",
-                    body,
-                )
-            ).data;
-            if (data.payment) {
-                setPendingPayment({...data.payment, token: data.manageToken});
-            } else {
-                navigate(manageUrl(base, data.manageToken, false));
-            }
-        } catch (e) {
-            const error = handleError(e, {context: "RentalBook"});
-            if (!error) return;
-            // A rejected request created nothing, so the next attempt is a new booking.
-            if (error.status && error.status < 500)
-                idempotencyKey.current = generateUUID();
-            if (error.code === "rental_price_changed")
-                setQuoteVersion((v) => v + 1);
-            if (error.code === "rental_driver_too_young")
-                setBirthDateError(error.displayMessage ?? null);
-            setFormError(
-                error.displayMessage ??
-                    String(resolveLanguageKey("bookingFailed")),
-            );
-        } finally {
-            setSubmitting(false);
-        }
+        setBooking((current) => ({body, count: current.count + 1}));
     };
 
     const summary = (
@@ -431,68 +428,62 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                         <h2 className="font-display font-bold tracking-tight text-lg">
                             {resolveLanguageKey("protectionTitle")}
                         </h2>
-                        <label className="flex items-start gap-3">
-                            <input
-                                type="radio"
-                                name="protection"
-                                checked={!protectionId}
-                                onChange={() => setProtectionId("")}
-                            />
-                            <span>
-                                <span className="font-medium">
-                                    {resolveLanguageKey("protectionBasic")}
-                                </span>
-                                <span className="block text-sm text-muted-foreground">
-                                    {resolveLanguageKey("protectionBasicHint")}
-                                </span>
-                            </span>
-                        </label>
-                        {protections.map((protection) => (
-                            <label
-                                key={protection._id}
-                                className="flex items-start gap-3"
-                            >
-                                <input
-                                    type="radio"
-                                    name="protection"
-                                    checked={protectionId === protection._id}
-                                    onChange={() =>
-                                        setProtectionId(protection._id)
-                                    }
-                                />
+                        <RadioGroup
+                            value={protectionId || BASIC_PROTECTION}
+                            onValueChange={(value) => setProtectionId(value === BASIC_PROTECTION ? "" : value)}
+                            className="contents"
+                        >
+                            <label className="flex items-start gap-3">
+                                <RadioGroupItem value={BASIC_PROTECTION} className="mt-1" />
                                 <span>
                                     <span className="font-medium">
-                                        {protection.name}
+                                        {resolveLanguageKey("protectionBasic")}
                                     </span>
-                                    <span className="text-sm text-muted-foreground">
-                                        {" · "}
-                                        {formatMoney(protection.price)}
-                                        {protection.pricing === "per_day"
-                                            ? ` ${resolveLanguageKey("perDay")}`
-                                            : ""}
+                                    <span className="block text-sm text-muted-foreground">
+                                        {resolveLanguageKey("protectionBasicHint")}
                                     </span>
-                                    {protection.excessAmount !== undefined ? (
-                                        <span className="block text-sm text-muted-foreground">
-                                            {String(
-                                                resolveLanguageKey(
-                                                    "protectionExcess",
-                                                ),
-                                            ).replace(
-                                                "{amount}",
-                                                formatMoney(
-                                                    protection.excessAmount,
-                                                ),
-                                            )}
-                                        </span>
-                                    ) : null}
-                                    {protection.description ? (
-                                        <span className="block text-sm text-muted-foreground">
-                                            {protection.description}
-                                        </span>
-                                    ) : null}
                                 </span>
                             </label>
-                        ))}
+                            {protections.map((protection) => (
+                                <label
+                                    key={protection._id}
+                                    className="flex items-start gap-3"
+                                >
+                                    <RadioGroupItem value={protection._id} className="mt-1" />
+                                    <span>
+                                        <span className="font-medium">
+                                            {protection.name}
+                                        </span>
+                                        <span className="text-sm text-muted-foreground">
+                                            {" · "}
+                                            {formatMoney(protection.price)}
+                                            {protection.pricing === "per_day"
+                                                ? ` ${resolveLanguageKey("perDay")}`
+                                                : ""}
+                                        </span>
+                                        {protection.excessAmount !== undefined ? (
+                                            <span className="block text-sm text-muted-foreground">
+                                                {String(
+                                                    resolveLanguageKey(
+                                                        "protectionExcess",
+                                                    ),
+                                                ).replace(
+                                                    "{amount}",
+                                                    formatMoney(
+                                                        protection.excessAmount,
+                                                    ),
+                                                )}
+                                            </span>
+                                        ) : null}
+                                        {protection.description ? (
+                                            <span className="block text-sm text-muted-foreground">
+                                                {protection.description}
+                                            </span>
+                                        ) : null}
+                                    </span>
+                                </label>
+                            ))}
+                        </RadioGroup>
                     </section>
                 ) : null}
 
@@ -609,12 +600,10 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                     </label>
                     {category.crossBorderAllowed ? (
                         <label className="flex items-start gap-3 sm:col-span-2">
-                            <input
-                                type="checkbox"
+                            <Checkbox
+                                className="mt-1"
                                 checked={crossBorder}
-                                onChange={(event) =>
-                                    setCrossBorder(event.target.checked)
-                                }
+                                onCheckedChange={(checked) => setCrossBorder(checked === true)}
                             />
                             <span>
                                 <span className="font-medium">
@@ -642,58 +631,50 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                     <h2 className="font-display font-bold tracking-tight text-lg">
                         {resolveLanguageKey("paymentTitle")}
                     </h2>
-                    {atPickupAllowed ? (
-                        <label className="flex items-start gap-3">
-                            <input
-                                type="radio"
-                                name="paymentChoice"
-                                checked={choice === "pay_at_pickup"}
-                                onChange={() =>
-                                    setPaymentChoice("pay_at_pickup")
-                                }
-                                disabled={!onlineAllowed}
-                            />
-                            <span>
-                                <span className="font-medium">
-                                    {resolveLanguageKey("payAtPickup")}
+                    <RadioGroup
+                        value={choice}
+                        onValueChange={(value) => setPaymentChoice(value === "online" ? "online" : "pay_at_pickup")}
+                        className="contents"
+                    >
+                        {atPickupAllowed ? (
+                            <label className="flex items-start gap-3">
+                                <RadioGroupItem value="pay_at_pickup" className="mt-1" disabled={!onlineAllowed} />
+                                <span>
+                                    <span className="font-medium">
+                                        {resolveLanguageKey("payAtPickup")}
+                                    </span>
+                                    <span className="block text-sm text-muted-foreground">
+                                        {resolveLanguageKey("payAtPickupHint")}
+                                    </span>
                                 </span>
-                                <span className="block text-sm text-muted-foreground">
-                                    {resolveLanguageKey("payAtPickupHint")}
+                            </label>
+                        ) : null}
+                        {config.paymentPolicy !== "pay_at_pickup" ? (
+                            <label className="flex items-start gap-3">
+                                <RadioGroupItem value="online" className="mt-1" disabled={!onlineAllowed} />
+                                <span>
+                                    <span className="font-medium">
+                                        {resolveLanguageKey("payOnline")}
+                                    </span>
+                                    <span className="block text-sm text-muted-foreground">
+                                        {resolveLanguageKey(
+                                            config.onlinePaymentAvailable
+                                                ? "payOnlineHint"
+                                                : "payOnlineUnavailable",
+                                        )}
+                                    </span>
                                 </span>
-                            </span>
-                        </label>
-                    ) : null}
-                    {config.paymentPolicy !== "pay_at_pickup" ? (
-                        <label className="flex items-start gap-3">
-                            <input
-                                type="radio"
-                                name="paymentChoice"
-                                checked={choice === "online"}
-                                onChange={() => setPaymentChoice("online")}
-                                disabled={!onlineAllowed}
-                            />
-                            <span>
-                                <span className="font-medium">
-                                    {resolveLanguageKey("payOnline")}
-                                </span>
-                                <span className="block text-sm text-muted-foreground">
-                                    {resolveLanguageKey(
-                                        config.onlinePaymentAvailable
-                                            ? "payOnlineHint"
-                                            : "payOnlineUnavailable",
-                                    )}
-                                </span>
-                            </span>
-                        </label>
-                    ) : null}
+                            </label>
+                        ) : null}
+                    </RadioGroup>
                 </section>
 
                 <section className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-4">
                     <label className="flex items-start gap-3 text-sm">
-                        <input
-                            type="checkbox"
+                        <Checkbox
+                            className="mt-0.5"
                             checked={acceptTerms}
-                            onChange={(e) => setAcceptTerms(e.target.checked)}
+                            onCheckedChange={(checked) => setAcceptTerms(checked === true)}
                         />
                         <span>
                             {resolveLanguageKey("acceptTerms")}{" "}

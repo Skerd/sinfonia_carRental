@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {Dialog, DialogFrame} from "@coreModule/components/ui/dialog.tsx";
+import {Button} from "@coreModule/components/ui/button.tsx";
 import {compose} from "redux";
 import {IconChevronLeft, IconChevronRight, IconPhoto, IconPlayerPlayFilled, IconX} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
@@ -42,7 +43,8 @@ function RentalCategoryMedia({category, coverClassName, resolveLanguageKey}: Pro
 
     return (
         <>
-            <button
+            <Button
+                variant="bare"
                 type="button"
                 onClick={() => open(0)}
                 className={`group relative block overflow-hidden ${coverClassName}`}
@@ -57,7 +59,7 @@ function RentalCategoryMedia({category, coverClassName, resolveLanguageKey}: Pro
                     {category.videos.length ? <IconPlayerPlayFilled size={12} aria-hidden /> : <IconPhoto size={13} aria-hidden />}
                     {label}
                 </span>
-            </button>
+            </Button>
 
             {/* A media viewer: dark in both themes, like the photos it frames. */}
             <Dialog open={isOpen} onOpenChange={setIsOpen}>
@@ -73,14 +75,15 @@ function RentalCategoryMedia({category, coverClassName, resolveLanguageKey}: Pro
                                 <p className="text-sm text-white/70 tabular-nums">
                                     {index + 1} / {items.length}
                                 </p>
-                                <button
+                                <Button
+                                    variant="bare"
                                     type="button"
                                     onClick={() => setIsOpen(false)}
                                     className={ROUND_BUTTON}
                                     aria-label={String(resolveLanguageKey("close"))}
                                 >
                                     <IconX size={18} aria-hidden />
-                                </button>
+                                </Button>
                             </div>
                             <div className="relative flex aspect-[16/10] items-center justify-center bg-black">
                                 {current.kind === "image" ? (
@@ -91,22 +94,24 @@ function RentalCategoryMedia({category, coverClassName, resolveLanguageKey}: Pro
                                 )}
                                 {items.length > 1 ? (
                                     <>
-                                        <button
+                                        <Button
+                                            variant="bare"
                                             type="button"
                                             onClick={() => setIndex((index - 1 + items.length) % items.length)}
                                             className={`${ROUND_BUTTON} absolute left-3 top-1/2 -translate-y-1/2`}
                                             aria-label={String(resolveLanguageKey("previous"))}
                                         >
                                             <IconChevronLeft size={20} aria-hidden />
-                                        </button>
-                                        <button
+                                        </Button>
+                                        <Button
+                                            variant="bare"
                                             type="button"
                                             onClick={() => setIndex((index + 1) % items.length)}
                                             className={`${ROUND_BUTTON} absolute right-3 top-1/2 -translate-y-1/2`}
                                             aria-label={String(resolveLanguageKey("next"))}
                                         >
                                             <IconChevronRight size={20} aria-hidden />
-                                        </button>
+                                        </Button>
                                     </>
                                 ) : null}
                             </div>
@@ -114,7 +119,8 @@ function RentalCategoryMedia({category, coverClassName, resolveLanguageKey}: Pro
                                 <ul className="flex gap-2 overflow-x-auto p-3">
                                     {items.map((item, at) => (
                                         <li key={item.src} className="shrink-0">
-                                            <button
+                                            <Button
+                                                variant="bare"
                                                 type="button"
                                                 onClick={() => setIndex(at)}
                                                 aria-current={at === index}
@@ -128,7 +134,7 @@ function RentalCategoryMedia({category, coverClassName, resolveLanguageKey}: Pro
                                                         <IconPlayerPlayFilled size={18} aria-hidden />
                                                     </span>
                                                 )}
-                                            </button>
+                                            </Button>
                                         </li>
                                     ))}
                                 </ul>

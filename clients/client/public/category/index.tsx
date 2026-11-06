@@ -1,21 +1,21 @@
 import {useEffect, useState} from "react";
 import {compose} from "redux";
 import {Link, useNavigate, useParams, useSearchParams} from "react-router-dom";
-import type {LucideIcon} from "lucide-react";
-import {Cog, DoorOpen, Fuel, Luggage, Users} from "lucide-react";
+import {type TablerIcon, IconSettings, IconDoorEnter, IconGasStation, IconLuggage, IconUsers} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
-import {normalizeError} from "@coreModule/helpers/general/errors.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import DetailPage, {DetailFacts, DetailHeading, DetailPrice, DetailSection, DetailSpecs, DetailStatus, DetailText} from "@coreModule/clients/portal/shared/detailPage.tsx";
 import DetailGallery from "@coreModule/clients/portal/shared/detailGallery.tsx";
 import PortalProviderCard from "@coreModule/clients/portal/shared/portalProviderCard.tsx";
 import type {QuoteRentalFormType} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.forms.ts";
-import type {RentalQuote, RentalQuoteResponse} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.response.types.ts";
+import type {RentalQuoteResponse} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.response.types.ts";
 import {useRentalConfig} from "../shared/rentalConfigContext.tsx";
 import RentalSearchForm from "../shared/rentalSearchForm.tsx";
 import {tripFromSearch, tripToSearch, type RentalTripParams} from "../shared/rentalTripParams.ts";
+
+const QUOTE_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/quote"};
 
 const LANGUAGE_PATH = "src/modules/carRental/clients/client/public/category/index.tsx";
 
@@ -28,31 +28,19 @@ function CategoryPage({resolveLanguageKey}: WithLanguageType) {
     const category = config?.categories.find((entry) => entry._id === categoryId);
     const initial = tripFromSearch(params);
     const [trip, setTrip] = useState<RentalTripParams | null>(initial);
-    const [quote, setQuote] = useState<RentalQuote | null>(null);
-    const [quoteError, setQuoteError] = useState<string | null>(null);
     const tripKey = trip ? tripToSearch(trip) : "";
-
+    const returnsBeforePickup = !!trip && `${trip.returnDate}T${trip.returnTime}` <= `${trip.pickupDate}T${trip.pickupTime}`;
+    const quotable = !!trip && !!category && !!trip.pickupLocation && !returnsBeforePickup;
+    const [quoteCount, setQuoteCount] = useState(0);
     useEffect(() => {
-        if (!trip || !category) return;
-        const returnsBeforePickup = `${trip.returnDate}T${trip.returnTime}` <= `${trip.pickupDate}T${trip.pickupTime}`;
-        if (!trip.pickupLocation || returnsBeforePickup) {
-            setQuote(null);
-            setQuoteError(null);
-            return;
-        }
-        const controller = new AbortController();
-        setQuoteError(null);
-        const body: QuoteRentalFormType = {...trip, category: category._id, extras: []};
-        apiClient
-            .post<RentalQuoteResponse>("/api/carRental/rentalStorefront/quote", body, {signal: controller.signal})
-            .then((res) => setQuote(res.data.data))
-            .catch((e) => {
-                if (controller.signal.aborted) return;
-                setQuote(null);
-                setQuoteError(normalizeError(e).displayMessage ?? resolveLanguageKey("quoteFailed"));
-            });
-        return () => controller.abort();
+        if (quotable) setQuoteCount((count) => count + 1);
     }, [tripKey, category?._id]);
+    const quoteBody: QuoteRentalFormType | Record<string, never> = trip && category ? {...trip, category: category._id, extras: []} : {};
+    const quoteRequest = useHttpRequest<RentalQuoteResponse>(QUOTE_REQUEST, quoteBody, quoteCount);
+    const quote = quotable && !quoteRequest.error ? quoteRequest.data?.data ?? null : null;
+    const quoteError = quotable && quoteRequest.error
+        ? quoteRequest.error.message || quoteRequest.error.error || String(resolveLanguageKey("quoteFailed"))
+        : null;
 
     if (loading) {
         return (
@@ -78,12 +66,12 @@ function CategoryPage({resolveLanguageKey}: WithLanguageType) {
     }
 
     const facts = [
-        {icon: Users, label: resolveLanguageKey("facts.seats"), value: String(category.seats)},
-        category.doors != null && {icon: DoorOpen, label: resolveLanguageKey("facts.doors"), value: String(category.doors)},
-        category.luggage != null && {icon: Luggage, label: resolveLanguageKey("facts.bags"), value: String(category.luggage)},
-        {icon: Cog, label: resolveLanguageKey("facts.transmission"), value: resolveLanguageKey(`transmission.${category.transmission}`)},
-        {icon: Fuel, label: resolveLanguageKey("facts.fuel"), value: resolveLanguageKey(`fuel.${category.fuelType}`)},
-    ].filter((fact): fact is {icon: LucideIcon; label: string; value: string} => Boolean(fact));
+        {icon: IconUsers, label: resolveLanguageKey("facts.seats"), value: String(category.seats)},
+        category.doors != null && {icon: IconDoorEnter, label: resolveLanguageKey("facts.doors"), value: String(category.doors)},
+        category.luggage != null && {icon: IconLuggage, label: resolveLanguageKey("facts.bags"), value: String(category.luggage)},
+        {icon: IconSettings, label: resolveLanguageKey("facts.transmission"), value: resolveLanguageKey(`transmission.${category.transmission}`)},
+        {icon: IconGasStation, label: resolveLanguageKey("facts.fuel"), value: resolveLanguageKey(`fuel.${category.fuelType}`)},
+    ].filter((fact): fact is {icon: TablerIcon; label: string; value: string} => Boolean(fact));
 
     const specs = [
         {label: resolveLanguageKey("deposit"), value: formatMoney(category.depositAmount)},

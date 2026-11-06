@@ -1,11 +1,11 @@
-import {useState} from "react";
+import {useImperativeHandle, useState} from "react";
 import {compose} from "redux";
-import {LoaderCircle} from "lucide-react";
+import {IconLoader2} from "@tabler/icons-react";
 import withLanguage, {
     WithLanguageType,
 } from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import withAxios, {WithAxiosType} from "@coreModule/helpers/hocs/withAxios.tsx";
 import {handleError} from "@coreModule/helpers/general/errors.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
@@ -20,7 +20,9 @@ import {
 } from "@coreModule/components/ui/dialog.tsx";
 import type {RentalBusinessAccount} from "armonia/src/modules/carRental/api/carRental/private/rentalBusinessAccount/rentalBusinessAccount.dto.ts";
 
-type Props = WithLanguageType & {
+type StatementRequest = {businessAccount: string; month: string};
+
+type Props = WithLanguageType & WithAxiosType<Blob, StatementRequest> & {
     account: Pick<RentalBusinessAccount, "_id" | "name">;
     onClose: () => void;
 };
@@ -31,35 +33,22 @@ function thisMonth() {
 }
 
 /** Month picker for one account. The list already says which account this is. */
-function RentalStatementDialog({account, onClose, resolveLanguageKey}: Props) {
+function RentalStatementDialog({account, onClose, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
     const [month, setMonth] = useState(thisMonth);
-    const [loading, setLoading] = useState(false);
+    useImperativeHandle(innerRef, () => ({
+        success: (pdf) => {
+            const href = URL.createObjectURL(pdf);
+            const link = document.createElement("a");
+            link.href = href;
+            link.download = `statement-${month}.pdf`;
+            link.click();
+            setTimeout(() => URL.revokeObjectURL(href), 60_000);
+            onClose();
+        },
+        error: (error) => handleError(error, {context: "RentalStatement", showToast: true}),
+    }));
 
-    const download = () => {
-        setLoading(true);
-        apiClient
-            .post(
-                "/api/carRental/rentalStatement",
-                {businessAccount: account._id, month},
-                {responseType: "blob"},
-            )
-            .then((res) => {
-                const href = URL.createObjectURL(res.data);
-                const link = document.createElement("a");
-                link.href = href;
-                link.download = `statement-${month}.pdf`;
-                link.click();
-                setTimeout(() => URL.revokeObjectURL(href), 60_000);
-                onClose();
-            })
-            .catch((error) =>
-                handleError(error, {
-                    context: "RentalStatement",
-                    showToast: true,
-                }),
-            )
-            .finally(() => setLoading(false));
-    };
+    const download = () => onFilterChange({businessAccount: account._id, month});
 
     return (
         <Dialog open onOpenChange={(next) => !loading && !next && onClose()}>
@@ -100,7 +89,7 @@ function RentalStatementDialog({account, onClose, resolveLanguageKey}: Props) {
                         onClick={download}
                     >
                         {loading ? (
-                            <LoaderCircle className="animate-spin" />
+                            <IconLoader2 className="animate-spin" />
                         ) : null}
                         {resolveLanguageKey("download")}
                     </Button>
@@ -114,5 +103,6 @@ export default compose(
     withLanguage(
         "src/modules/carRental/clients/panel/private/businessAccounts/center/dialogs/rentalStatementDialog.tsx",
     ),
+    withAxios<Blob, StatementRequest>({method: "POST", url: "/api/carRental/rentalStatement", data: {}, responseType: "blob"}, true),
     withDebug(true, true, "rentalbusinessaccounts"),
 )(RentalStatementDialog);

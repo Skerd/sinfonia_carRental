@@ -5,7 +5,7 @@ import withLanguage, {
 } from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {handleError} from "@coreModule/helpers/general/errors.ts";
 import Header from "@coreModule/components/custom/header.tsx";
 import {readPageHelp} from "@coreModule/components/custom/pageHelp.tsx";
@@ -40,6 +40,8 @@ type CounterAction =
     | "returnVehicle";
 type Column = "pickups" | "returns" | "overdue";
 
+const LOCATIONS_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalLocation/select"};
+const COUNTER_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalCounter"};
 const COLUMNS: Column[] = ["pickups", "returns", "overdue"];
 
 /** The desk's calendar day, not UTC: the date input speaks the browser's local date. */
@@ -165,13 +167,14 @@ function CounterCard({
                     {plate || resolveLanguageKey("noCar")}
                 </p>
             </div>
-            <button
+            <Button
                 type="button"
+                variant="bare"
                 className="w-fit text-sm text-muted-foreground underline-offset-2 hover:underline"
                 onClick={() => onOpen(reservation._id)}
             >
                 {reservation.number}
-            </button>
+            </Button>
             <div className="flex flex-wrap gap-1.5">
                 {reservation.needsTransfer ? (
                     <Badge variant="outline">
@@ -253,50 +256,26 @@ function RentalCounterPage({
     const [date, setDate] = useState(localToday);
     const [location, setLocation] = useState("");
     const [search, setSearch] = useState("");
-    const [locations, setLocations] = useState<ApiSelectDatum[]>([]);
-    const [board, setBoard] = useState<Board | null>(null);
-    const [loading, setLoading] = useState(false);
     const [active, setActive] = useState<{
         action: CounterAction;
         reservation: RentalReservation;
     } | null>(null);
     const [openId, setOpenId] = useState<string | null>(null);
 
-    useEffect(() => {
-        void apiClient
-            .post<{data: ApiSelectDatum[]}>(
-                "/api/carRental/rentalLocation/select",
-                {page: 1, limit: 100},
-            )
-            .then((res) => setLocations(res.data.data))
-            .catch(() => setLocations([]));
-    }, []);
+    const locationsRequest = useHttpRequest<{data: ApiSelectDatum[]}>(LOCATIONS_REQUEST, {page: 1, limit: 100}, 1);
+    const locations: ApiSelectDatum[] = locationsRequest.error ? [] : locationsRequest.data?.data ?? [];
 
-    const load = useCallback(async () => {
-        setLoading(true);
-        try {
-            const body: RentalCounterFormType = {
-                date,
-                ...(location ? {location} : {}),
-            };
-            setBoard(
-                (
-                    await apiClient.post<RentalCounterResponse>(
-                        "/api/carRental/rentalCounter",
-                        body,
-                    )
-                ).data.data,
-            );
-        } catch (error) {
-            handleError(error, {context: "RentalCounter"});
-        } finally {
-            setLoading(false);
-        }
-    }, [date, location]);
-
+    const [boardCount, setBoardCount] = useState(0);
+    const load = useCallback(() => setBoardCount((count) => count + 1), []);
     useEffect(() => {
-        void load();
-    }, [load]);
+        load();
+    }, [date, location, load]);
+    const counterBody: RentalCounterFormType = {date, ...(location ? {location} : {})};
+    const boardRequest = useHttpRequest<RentalCounterResponse>(COUNTER_REQUEST, counterBody, boardCount, true, {
+        error: (error) => handleError(error, {context: "RentalCounter"}),
+    });
+    const board: Board | null = boardRequest.data?.data ?? null;
+    const loading = boardRequest.loading;
 
     const needle = search.trim().toLocaleLowerCase();
     const matches = (reservation: RentalReservation) => {
@@ -424,7 +403,7 @@ function RentalCounterPage({
                     reservation={active.reservation}
                     onClose={() => {
                         setActive(null);
-                        void load();
+                        load();
                     }}
                     onUpdated={(updated) =>
                         setActive((current) =>

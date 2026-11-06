@@ -1,5 +1,5 @@
-import {createContext, useContext, useEffect, useMemo, useState, type ReactNode} from "react";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import {createContext, useContext, useMemo, type ReactNode} from "react";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 import type {RentalStorefrontConfigResponse} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.response.types.ts";
 
@@ -20,28 +20,12 @@ const RentalConfigContext = createContext<RentalConfigContextValue>({
     formatMoney: () => "",
 });
 
+const CONFIG_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/config"};
+
 /** Loads the business, locations, categories and rules once for the whole site. */
 export function RentalConfigProvider({children}: {children: ReactNode}) {
-    const [config, setConfig] = useState<RentalConfig | null>(null);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        let cancelled = false;
-        apiClient
-            .post<RentalStorefrontConfigResponse>("/api/carRental/rentalStorefront/config", {})
-            .then((res) => {
-                if (!cancelled) setConfig(res.data.data);
-            })
-            .catch(() => {
-                if (!cancelled) setConfig(null);
-            })
-            .finally(() => {
-                if (!cancelled) setLoading(false);
-            });
-        return () => {
-            cancelled = true;
-        };
-    }, []);
+    const {data, loading} = useHttpRequest<RentalStorefrontConfigResponse>(CONFIG_REQUEST, {}, 1);
+    const config = data?.data ?? null;
 
     const value = useMemo<RentalConfigContextValue>(() => ({
         config,

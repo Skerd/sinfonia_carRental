@@ -3,7 +3,7 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
 import {DropdownMenuItem} from "@coreModule/components/ui/dropdown-menu.tsx";
-import {EyeOff} from "lucide-react";
+import {IconEyeOff} from "@tabler/icons-react";
 import type {RentalReview} from "armonia/src/modules/carRental/api/carRental/private/rentalReview/rentalReview.dto.ts";
 
 type UnpublishRentalReviewProps = WithLanguageType & {
@@ -19,7 +19,7 @@ function UnpublishRentalReview({entity, resolveLanguageKey, onAction}: Unpublish
 
     return (
         <DropdownMenuItem onClick={() => onAction("unpublishRentalReview")}>
-            <EyeOff className="text-destructive" size={16} />
+            <IconEyeOff className="text-destructive" size={16} />
             {resolveLanguageKey("title")}
         </DropdownMenuItem>
     );

@@ -1,9 +1,9 @@
-import {useEffect, useImperativeHandle, useState} from "react";
+import {useImperativeHandle, useState} from "react";
 import {compose} from "redux";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withAxios, {WithAxiosType} from "@coreModule/helpers/hocs/withAxios.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import type {RentalOpenDamage, RentalReservation} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.dto.ts";
 import ReservationActionDialogShell from "./reservationActionDialogShell.tsx";
 import {Checkbox} from "@coreModule/components/ui/checkbox.tsx";
@@ -14,6 +14,7 @@ import {SimpleSelect} from "@coreModule/components/viewEngine/widgets/inputs/sim
 import SignaturePad from "@coreModule/components/custom/inputs/signaturePad.tsx";
 import type {HandoverRentalReservationFormType} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.schema-def.ts";
 
+const OPEN_DAMAGES_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalReservation/openDamages"};
 const FUEL_LEVELS = ["empty", "quarter", "half", "three_quarters", "full"];
 
 type Props = WithLanguageType & WithAxiosType<RentalReservation, HandoverRentalReservationFormType> & {
@@ -40,16 +41,14 @@ function HandoverDialog({reservation, onClose, onUpdated, resolveLanguageKey, on
     const [readiness, setReadiness] = useState<string | undefined>();
     useImperativeHandle(innerRef, () => ({success: (data) => { onUpdated(data); onClose(); }}));
 
-    useEffect(() => {
-        apiClient
-            .post<{data: RentalOpenDamage[]; readiness?: string}>("/api/carRental/rentalReservation/openDamages", {_id: reservation._id})
-            .then((res) => {
-                setDamages(res.data.data);
-                setReadiness(res.data.readiness);
-                setAcknowledged(new Set(res.data.data.map((damage) => damage._id)));
-            })
-            .catch(() => setDamages([]));
-    }, [reservation._id]);
+    useHttpRequest<{data: RentalOpenDamage[]; readiness?: string}>(OPEN_DAMAGES_REQUEST, {_id: reservation._id}, 1, true, {
+        success: (response) => {
+            setDamages(response.data);
+            setReadiness(response.readiness);
+            setAcknowledged(new Set(response.data.map((damage) => damage._id)));
+        },
+        error: () => setDamages([]),
+    });
 
     // The server refuses the handover in this case; the hint saves a round trip.
     const driversIncomplete = !reservation.drivers?.length || reservation.drivers.some((driver) => !driver.licenseNumber);

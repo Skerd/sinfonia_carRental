@@ -7,7 +7,8 @@ import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx"
 import withLanguage, {
     WithLanguageType,
 } from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest, type RequestPayload} from "@coreModule/helpers/hooks/useHttpRequest.ts";
+import {downloadFromApi} from "@coreModule/helpers/media/downloadFromApi.ts";
 import {
     handleError,
     normalizeError,
@@ -27,6 +28,14 @@ import RentalStripePayment from "../book/rentalStripePayment.tsx";
 
 /** After paying, the webhook confirms the booking; check again for this long before giving up. */
 const PAYMENT_POLL_MS = 2500;
+const MANAGE_URL = "/api/carRental/rentalStorefront/manage";
+const MANAGE_REQUEST: HttpRequest = {method: "POST", url: MANAGE_URL};
+const CANCEL_REQUEST: HttpRequest = {method: "POST", url: `${MANAGE_URL}/cancel`};
+/** The guest's changes (driver, documents, extend, extras, pay, review): the path is set per action. */
+const MANAGE_ACTION_REQUEST: HttpRequest = {method: "POST", url: MANAGE_URL};
+
+/** What a manage action does with its answer: most show the updated booking, `pay` only opens the card form. */
+type ManageAction = "update" | "pay" | "review";
 const PAYMENT_POLL_ATTEMPTS = 24;
 
 const STATUS_TONE: Record<PublicRentalReservation["status"], string> = {
@@ -50,9 +59,7 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
     const [error, setError] = useState<string | null>(null);
     const [attempt, setAttempt] = useState(0);
     const [confirmingCancel, setConfirmingCancel] = useState(false);
-    const [cancelling, setCancelling] = useState(false);
     const [cancelled, setCancelled] = useState(false);
-    const [busy, setBusy] = useState(false);
     const [returnDate, setReturnDate] = useState("");
     const [returnTime, setReturnTime] = useState("10:00");
     const [licenseNumber, setLicenseNumber] = useState("");
@@ -69,45 +76,34 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
     );
 
     const reload = () => setAttempt((n) => n + 1);
-    const run = async (task: () => Promise<void>) => {
-        setBusy(true);
-        try {
-            await task();
-        } catch (e) {
-            handleError(e, {context: "RentalManage", showToast: true});
-        } finally {
-            setBusy(false);
-        }
-    };
-    const download = async (url: string, body: object, filename: string) => {
-        const res = await apiClient.post(url, body, {responseType: "blob"});
-        const href = URL.createObjectURL(res.data);
-        const link = document.createElement("a");
-        link.href = href;
-        link.download = filename;
-        link.click();
-        URL.revokeObjectURL(href);
-    };
+    const [action, setAction] = useState<{kind: ManageAction; path: string; body: RequestPayload; count: number}>(
+        {kind: "update", path: "", body: {}, count: 0},
+    );
+    const actionRequest = useHttpRequest<PublicRentalChangeResponse>(MANAGE_ACTION_REQUEST, action.body, action.count, true, {
+        success: (response) => {
+            if (action.kind === "review") {
+                setReviewSaved(true);
+                return;
+            }
+            if (action.kind === "update") setReservation(response.data);
+            if (response.payment?.clientSecret) setPayment(response.payment);
+        },
+        error: (e) => handleError(e, {context: "RentalManage", showToast: true}),
+    }, {url: `${MANAGE_URL}/${action.path}`});
+    const run = (kind: ManageAction, path: string, body: RequestPayload) =>
+        setAction((current) => ({kind, path, body, count: current.count + 1}));
+    const busy = actionRequest.loading;
+    const download = (path: string, body: Record<string, unknown>, fileName: string) =>
+        downloadFromApi({method: "post", url: `${MANAGE_URL}/${path}`, data: body, fileName});
 
+    const [loadCount, setLoadCount] = useState(0);
     useEffect(() => {
-        if (!token || cancelled) return;
-        const controller = new AbortController();
-        apiClient
-            .post<PublicRentalReservationResponse>(
-                "/api/carRental/rentalStorefront/manage",
-                {token},
-                {signal: controller.signal},
-            )
-            .then((res) => setReservation(res.data.data))
-            .catch((e) => {
-                if (!controller.signal.aborted)
-                    setError(
-                        normalizeError(e).displayMessage ??
-                            String(resolveLanguageKey("loadFailed")),
-                    );
-            });
-        return () => controller.abort();
+        if (token && !cancelled) setLoadCount((count) => count + 1);
     }, [token, attempt, cancelled]);
+    useHttpRequest<PublicRentalReservationResponse>(MANAGE_REQUEST, {token}, loadCount, true, {
+        success: (response) => setReservation(response.data),
+        error: (e) => setError(normalizeError(e).displayMessage ?? String(resolveLanguageKey("loadFailed"))),
+    });
 
     const waitingForPayment =
         justPaid &&
@@ -122,27 +118,21 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
         return () => window.clearTimeout(timer);
     }, [waitingForPayment, attempt]);
 
-    const cancel = async () => {
-        setCancelling(true);
-        try {
-            const res = await apiClient.post<PublicRentalReservationResponse>(
-                "/api/carRental/rentalStorefront/manage/cancel",
-                {token},
-            );
+    const [cancelCount, setCancelCount] = useState(0);
+    const {loading: cancelling} = useHttpRequest<PublicRentalReservationResponse>(CANCEL_REQUEST, {token}, cancelCount, true, {
+        success: (response) => {
             // The link stops working once the booking is cancelled; keep showing what came back.
             setCancelled(true);
-            setReservation(res.data.data);
+            setReservation(response.data);
             setConfirmingCancel(false);
-        } catch (e) {
-            handleError(e, {
-                context: "RentalManageCancel",
-                showToast: true,
-                fallbackMessage: String(resolveLanguageKey("cancelFailed")),
-            });
-        } finally {
-            setCancelling(false);
-        }
-    };
+        },
+        error: (e) => handleError(e, {
+            context: "RentalManageCancel",
+            showToast: true,
+            fallbackMessage: String(resolveLanguageKey("cancelFailed")),
+        }),
+    });
+    const cancel = () => setCancelCount((count) => count + 1);
 
     if (!token || error) {
         return (
@@ -338,14 +328,7 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                             type="button"
                             disabled={busy || !licenseNumber}
                             onClick={() =>
-                                void run(async () => {
-                                    const res =
-                                        await apiClient.post<PublicRentalReservationResponse>(
-                                            "/api/carRental/rentalStorefront/manage/driver",
-                                            {token, licenseNumber},
-                                        );
-                                    setReservation(res.data.data);
-                                })
+                                run("update", "driver", {token, licenseNumber})
                             }
                         >
                             {resolveLanguageKey("saveLicence")}
@@ -357,17 +340,9 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                             onChange={(event) => {
                                 const files = event.target.files;
                                 if (!files?.length) return;
-                                void run(async () => {
-                                    const body = new FormData();
-                                    for (const file of files)
-                                        body.append("files", file);
-                                    const res =
-                                        await apiClient.post<PublicRentalReservationResponse>(
-                                            `/api/carRental/rentalStorefront/manage/documents?token=${encodeURIComponent(token)}`,
-                                            body,
-                                        );
-                                    setReservation(res.data.data);
-                                });
+                                const body = new FormData();
+                                for (const file of files) body.append("files", file);
+                                run("update", `documents?token=${encodeURIComponent(token)}`, body);
                             }}
                         />
                     </section>
@@ -397,21 +372,7 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                             type="button"
                             disabled={busy || !returnDate}
                             onClick={() =>
-                                void run(async () => {
-                                    const res =
-                                        await apiClient.post<PublicRentalChangeResponse>(
-                                            "/api/carRental/rentalStorefront/manage/extend",
-                                            {
-                                                token,
-                                                returnDate,
-                                                returnTime,
-                                                pay: true,
-                                            },
-                                        );
-                                    setReservation(res.data.data);
-                                    if (res.data.payment?.clientSecret)
-                                        setPayment(res.data.payment);
-                                })
+                                run("update", "extend", {token, returnDate, returnTime, pay: true})
                             }
                         >
                             {resolveLanguageKey("extendAndPay")}
@@ -437,22 +398,12 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                                     variant="outline"
                                     disabled={busy}
                                     onClick={() =>
-                                        void run(async () => {
-                                            const extras = [
-                                                ...reservation.extras.map(
-                                                    (line) => ({
-                                                        extra: line.extraId,
-                                                        quantity: line.quantity,
-                                                    }),
-                                                ),
+                                        run("update", "extras", {
+                                            token,
+                                            extras: [
+                                                ...reservation.extras.map((line) => ({extra: line.extraId, quantity: line.quantity})),
                                                 {extra: extra._id, quantity: 1},
-                                            ];
-                                            const res =
-                                                await apiClient.post<PublicRentalReservationResponse>(
-                                                    "/api/carRental/rentalStorefront/manage/extras",
-                                                    {token, extras},
-                                                );
-                                            setReservation(res.data.data);
+                                            ],
                                         })
                                     }
                                 >
@@ -467,15 +418,7 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                         size="lg"
                         disabled={busy}
                         onClick={() =>
-                            void run(async () => {
-                                const res =
-                                    await apiClient.post<PublicRentalChangeResponse>(
-                                        "/api/carRental/rentalStorefront/manage/pay",
-                                        {token},
-                                    );
-                                if (res.data.payment?.clientSecret)
-                                    setPayment(res.data.payment);
-                            })
+                            run("pay", "pay", {token})
                         }
                     >
                         {resolveLanguageKey("payBalance")}
@@ -487,13 +430,7 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                         variant="outline"
                         disabled={busy}
                         onClick={() =>
-                            void run(() =>
-                                download(
-                                    "/api/carRental/rentalStorefront/manage/agreement",
-                                    {token},
-                                    `${reservation.number}.pdf`,
-                                ),
-                            )
+                            void download("agreement", {token}, `${reservation.number}.pdf`)
                         }
                     >
                         {resolveLanguageKey("downloadAgreement")}
@@ -506,13 +443,7 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                         variant="outline"
                         disabled={busy}
                         onClick={() =>
-                            void run(() =>
-                                download(
-                                    "/api/carRental/rentalStorefront/manage/invoice",
-                                    {token, invoiceId: invoice.id},
-                                    `${invoice.number}.pdf`,
-                                ),
-                            )
+                            void download("invoice", {token, invoiceId: invoice.id}, `${invoice.number}.pdf`)
                         }
                     >
                         {String(resolveLanguageKey("downloadInvoice")).replace(
@@ -544,17 +475,7 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                             type="button"
                             disabled={busy}
                             onClick={() =>
-                                void run(async () => {
-                                    await apiClient.post(
-                                        "/api/carRental/rentalStorefront/manage/review",
-                                        {
-                                            token,
-                                            rating: Number(rating),
-                                            ...(comment ? {comment} : {}),
-                                        },
-                                    );
-                                    setReviewSaved(true);
-                                })
+                                run("review", "review", {token, rating: Number(rating), ...(comment ? {comment} : {})})
                             }
                         >
                             {resolveLanguageKey("sendReview")}
@@ -596,7 +517,7 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                                     type="button"
                                     className="bg-destructive hover:bg-destructive/90"
                                     disabled={cancelling}
-                                    onClick={() => void cancel()}
+                                    onClick={cancel}
                                 >
                                     {resolveLanguageKey(
                                         cancelling

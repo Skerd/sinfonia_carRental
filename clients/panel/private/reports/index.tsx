@@ -12,7 +12,7 @@ import withLanguage, {
     WithLanguageType,
 } from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {handleError} from "@coreModule/helpers/general/errors.ts";
 import Header from "@coreModule/components/custom/header.tsx";
 import {readPageHelp} from "@coreModule/components/custom/pageHelp.tsx";
@@ -35,6 +35,7 @@ import type {
     RentalReportsFormType,
     RentalReportsResponse,
 } from "armonia/src/modules/carRental/api/carRental/private/rentalReports/rentalReports.ts";
+import {Table} from "@coreModule/components/ui/table/table.tsx";
 
 type Report = RentalReportsResponse["data"];
 
@@ -50,6 +51,9 @@ function monthStart(): string {
     return `${today.slice(0, 8)}01`;
 }
 
+const LOCATIONS_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalLocation/select"};
+const REPORT_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalReports"};
+
 function percent(value: number): string {
     return `${Math.round(value * 100)}%`;
 }
@@ -58,43 +62,22 @@ function ReportsPage({resolveLanguageKey}: WithLanguageType) {
     const [from, setFrom] = useState(monthStart);
     const [to, setTo] = useState(localToday);
     const [location, setLocation] = useState("");
-    const [locations, setLocations] = useState<ApiSelectDatum[]>([]);
-    const [report, setReport] = useState<Report | null>(null);
-    const [loading, setLoading] = useState(true);
+    const locationsRequest = useHttpRequest<SelectResponse>(LOCATIONS_REQUEST, {page: 1, limit: 100}, 1, true, {
+        error: (error) => handleError(error, {context: "RentalReportsLocations"}),
+    });
+    const locations: ApiSelectDatum[] = locationsRequest.data?.data ?? [];
 
-    useEffect(() => {
-        apiClient
-            .post<SelectResponse>(
-                "/api/carRental/rentalLocation/select",
-                {page: 1, limit: 100},
-            )
-            .then((res) => {
-                setLocations(res.data.data ?? []);
-            })
-            .catch((error) =>
-                handleError(error, {context: "RentalReportsLocations"}),
-            );
-    }, []);
-
-    const load = useCallback(() => {
-        setLoading(true);
-        const body: RentalReportsFormType = {
-            from,
-            to,
-            ...(location ? {location} : {}),
-        };
-        apiClient
-            .post<RentalReportsResponse>("/api/carRental/rentalReports", body)
-            .then((res) => {
-                setReport(res.data.data);
-            })
-            .catch((error) => handleError(error, {context: "RentalReports"}))
-            .finally(() => setLoading(false));
-    }, [from, to, location]);
-
+    const [reportCount, setReportCount] = useState(0);
+    const load = useCallback(() => setReportCount((count) => count + 1), []);
     useEffect(() => {
         load();
-    }, [load]);
+    }, [from, to, location, load]);
+    const reportBody: RentalReportsFormType = {from, to, ...(location ? {location} : {})};
+    const reportRequest = useHttpRequest<RentalReportsResponse>(REPORT_REQUEST, reportBody, reportCount, true, {
+        error: (error) => handleError(error, {context: "RentalReports"}),
+    });
+    const report: Report | null = reportRequest.data?.data ?? null;
+    const loading = reportRequest.loading || reportCount === 0;
 
     const chartConfig = useMemo(
         () =>
@@ -246,7 +229,7 @@ function ReportsPage({resolveLanguageKey}: WithLanguageType) {
             </DashboardWidgetCard>
             {report ? (
                 <div className="overflow-x-auto">
-                    <table className="w-full text-sm">
+                    <Table bare className="w-full text-sm">
                         <thead>
                             <tr className="text-left text-muted-foreground">
                                 <th className="py-2 pr-3">
@@ -314,7 +297,7 @@ function ReportsPage({resolveLanguageKey}: WithLanguageType) {
                                 </tr>
                             ))}
                         </tbody>
-                    </table>
+                    </Table>
                 </div>
             ) : null}
         </div>

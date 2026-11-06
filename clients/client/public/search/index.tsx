@@ -3,8 +3,7 @@ import {compose} from "redux";
 import {Link, useSearchParams} from "react-router-dom";
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
-import {normalizeError} from "@coreModule/helpers/general/errors.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import type {RentalSearchResponse} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.response.types.ts";
 import {useRentalConfig} from "../shared/rentalConfigContext.tsx";
@@ -14,7 +13,7 @@ import RentalCategoryMedia from "../shared/rentalCategoryMedia.tsx";
 import {tripFromSearch, tripToSearch} from "../shared/rentalTripParams.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 
-type Results = RentalSearchResponse["data"]["results"];
+const SEARCH_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/search"};
 
 function SearchPage({resolveLanguageKey}: WithLanguageType) {
     const base = useSectionBase();
@@ -22,23 +21,14 @@ function SearchPage({resolveLanguageKey}: WithLanguageType) {
     const {formatMoney} = useRentalConfig();
     const trip = tripFromSearch(params);
     const tripKey = trip ? tripToSearch(trip) : "";
-    const [results, setResults] = useState<Results | null>(null);
-    const [error, setError] = useState<string | null>(null);
-
+    const [searchCount, setSearchCount] = useState(0);
+    // The trip is fully described by its query string.
     useEffect(() => {
-        if (!trip) return;
-        const controller = new AbortController();
-        setResults(null);
-        setError(null);
-        apiClient
-            .post<RentalSearchResponse>("/api/carRental/rentalStorefront/search", trip, {signal: controller.signal})
-            .then((res) => setResults(res.data.data.results))
-            .catch((e) => {
-                if (!controller.signal.aborted) setError(normalizeError(e).displayMessage ?? String(resolveLanguageKey("searchFailed")));
-            });
-        return () => controller.abort();
-        // The trip is fully described by its query string.
+        if (trip) setSearchCount((count) => count + 1);
     }, [tripKey]);
+    const search = useHttpRequest<RentalSearchResponse>(SEARCH_REQUEST, trip ?? {}, searchCount);
+    const results = search.loading || search.error ? null : search.data?.data.results ?? null;
+    const error = search.error ? search.error.message || search.error.error || String(resolveLanguageKey("searchFailed")) : null;
 
     return (
         <div className="flex flex-col gap-10">

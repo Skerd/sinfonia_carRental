@@ -14,6 +14,7 @@ import {Input} from "@coreModule/components/ui/input.tsx";
 import {NativeSelect} from "@coreModule/components/ui/native-select.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import type {RentalStorefrontLocation} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.response.types.ts";
+import {Checkbox} from "@coreModule/components/ui/checkbox.tsx";
 
 const TIME_STEP = 30;
 
@@ -255,7 +256,7 @@ function RentalSearchForm({
                 </label>
             ) : (
                 <label className={cn("flex items-center gap-2 text-sm text-muted-foreground", !stacked && "sm:col-span-2 sm:self-end sm:pb-3")}>
-                    <input type="checkbox" checked={differentReturn} onChange={(e) => setDifferentReturn(e.target.checked)} />
+                    <Checkbox checked={differentReturn} onCheckedChange={(checked) => setDifferentReturn(checked === true)} />
                     {resolveLanguageKey("differentReturn")}
                 </label>
             )}
@@ -270,7 +271,7 @@ function RentalSearchForm({
                     <div className="grid grid-cols-[minmax(0,1fr)_7.75rem]">
                         <Popover>
                             <PopoverTrigger asChild>
-                                <button type="button" className="flex flex-col gap-3 px-4 py-3 text-left transition-colors hover:bg-muted/50">
+                                <Button type="button" variant="bare" className="flex flex-col gap-3 px-4 py-3 text-left transition-colors hover:bg-muted/50">
                                     <span className="flex min-w-0 flex-col gap-0.5">
                                         <span className="text-[11px] font-semibold tracking-[0.14em] text-muted-foreground uppercase">{resolveLanguageKey("pickupDate")}</span>
                                         <span className="flex items-center gap-1 truncate text-sm font-semibold">
@@ -285,7 +286,7 @@ function RentalSearchForm({
                                             <IconChevronDown className="size-3.5 shrink-0 text-muted-foreground" aria-hidden />
                                         </span>
                                     </span>
-                                </button>
+                                </Button>
                             </PopoverTrigger>
                             <PopoverContent align="start" className="w-[min(calc(100vw-2rem),20.5rem)] p-2">
                                 <Calendar

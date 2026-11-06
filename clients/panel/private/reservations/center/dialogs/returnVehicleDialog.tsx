@@ -3,7 +3,7 @@ import {compose} from "redux";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withAxios, {WithAxiosType} from "@coreModule/helpers/hocs/withAxios.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import type {RentalReservation, RentalReturnChargesPreview} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.dto.ts";
 import type {RentalPriceLineCode} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.constants.ts";
 import {VEHICLE_DAMAGE_AREAS, VEHICLE_DAMAGE_SEVERITIES} from "armonia/src/modules/carRental/api/carRental/private/vehicleDamage/vehicleDamage.schema-def.ts";
@@ -18,6 +18,7 @@ import type {ReturnRentalReservationFormType} from "armonia/src/modules/carRenta
 
 const FUEL_LEVELS = ["empty", "quarter", "half", "three_quarters", "full"];
 const PREVIEW_DELAY_MS = 400;
+const PREVIEW_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalReservation/previewReturnCharges"};
 
 type Charge = {label: string; amount: string; code?: RentalPriceLineCode; include: boolean};
 type NewDamage = {area: string; severity: string; description: string; estimatedCost: string; photos: File[]};
@@ -46,27 +47,23 @@ function ReturnVehicleDialog({reservation, onClose, onUpdated, resolveLanguageKe
 
     const startKm = reservation.handover?.odometerKm ?? 0;
     const readingValid = odometerKm !== "" && Number(odometerKm) >= startKm;
+    const [previewCount, setPreviewCount] = useState(0);
 
     useEffect(() => {
         if (!readingValid) {
             setSuggested([]);
             return;
         }
-        const timer = setTimeout(() => {
-            apiClient
-                .post<{data: RentalReturnChargesPreview}>("/api/carRental/rentalReservation/previewReturnCharges", {
-                    _id: reservation._id,
-                    odometerKm: Number(odometerKm),
-                    fuelLevel,
-                })
-                .then((res) => {
-                    setSuggested(res.data.data.suggested.map((charge) => ({label: charge.label, amount: String(charge.amount), code: charge.code, include: true})));
-                    setPresets(res.data.data.presets);
-                })
-                .catch(() => setSuggested([]));
-        }, PREVIEW_DELAY_MS);
+        const timer = setTimeout(() => setPreviewCount((count) => count + 1), PREVIEW_DELAY_MS);
         return () => clearTimeout(timer);
     }, [reservation._id, odometerKm, fuelLevel, readingValid]);
+    useHttpRequest<{data: RentalReturnChargesPreview}>(PREVIEW_REQUEST, {_id: reservation._id, odometerKm: Number(odometerKm), fuelLevel}, previewCount, true, {
+        success: (response) => {
+            setSuggested(response.data.suggested.map((charge) => ({label: charge.label, amount: String(charge.amount), code: charge.code, include: true})));
+            setPresets(response.data.presets);
+        },
+        error: () => setSuggested([]),
+    });
 
     const all = [...suggested, ...charges];
     const validCharges = all.every((charge) => !charge.include || (charge.label.trim() && charge.amount !== "" && Number(charge.amount) >= 0));

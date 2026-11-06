@@ -1,5 +1,5 @@
 import type {ReactNode} from "react";
-import {LoaderCircle} from "lucide-react";
+import {IconLoader2} from "@tabler/icons-react";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle} from "@coreModule/components/ui/dialog.tsx";
 
@@ -40,7 +40,7 @@ export default function ReservationActionDialogShell({
                 <DialogFooter className="gap-2 px-4 py-4 sm:gap-2">
                     <Button type="button" variant="outline" onClick={onClose} disabled={loading}>{cancelLabel}</Button>
                     <Button type="button" variant={destructive ? "destructive" : "default"} disabled={loading || !canConfirm} onClick={onConfirm}>
-                        {loading ? <LoaderCircle className="animate-spin" /> : null}
+                        {loading ? <IconLoader2 className="animate-spin" /> : null}
                         {confirmLabel}
                     </Button>
                 </DialogFooter>

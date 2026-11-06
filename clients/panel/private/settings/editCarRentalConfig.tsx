@@ -1,4 +1,4 @@
-import {Save} from "lucide-react";
+import {IconDeviceFloppy} from "@tabler/icons-react";
 import {createGenericEditPage} from "@coreModule/components/entityPage/pages/createGenericEditPage.tsx";
 import {FORM_EXTRAS_OBJECT_ID_CHIP_LABEL_REFS} from "@coreModule/components/custom/inputs/objectIdChipsInput.tsx";
 import {editCarRentalConfigFormSchema} from "armonia/src/modules/carRental/api/carRental/private/carRentalConfig/editCarRentalConfig.form.validator.ts";
@@ -56,5 +56,5 @@ export default createGenericEditPage<CarRentalConfig, EditCarRentalConfigFormTyp
             [openSectionFlag()]: true,
         };
     },
-    submitIcon: <Save />,
+    submitIcon: <IconDeviceFloppy />,
 });

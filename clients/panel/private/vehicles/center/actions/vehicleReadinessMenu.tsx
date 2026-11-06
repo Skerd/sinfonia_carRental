@@ -3,7 +3,7 @@ import {toast} from "sonner";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import {requestFromApi} from "@coreModule/helpers/apiClient/requestFromApi.ts";
 import {handleError} from "@coreModule/helpers/general/errors.ts";
 import {DropdownMenuItem} from "@coreModule/components/ui/dropdown-menu.tsx";
 import {IconAlertTriangle, IconSparkles} from "@tabler/icons-react";
@@ -18,8 +18,11 @@ function VehicleReadinessMenu({vehicle, onUpdated, resolveLanguageKey}: Props) {
     if (vehicle.deletedAt || !write?.status) return null;
     const set = async (readiness: VehicleReadiness) => {
         try {
-            const res = await apiClient.post<SetVehicleReadinessResult>("/api/carRental/vehicle/setReadiness", {_id: vehicle._id, readiness});
-            onUpdated({...vehicle, readiness: res.data.readiness});
+            // Outlives the menu; silent here because the catch below reports it, as before.
+            const result = await requestFromApi<SetVehicleReadinessResult>({
+                method: "post", url: "/api/carRental/vehicle/setReadiness", data: {_id: vehicle._id, readiness}, silent: true,
+            });
+            onUpdated({...vehicle, readiness: result.readiness});
             toast.success(String(resolveLanguageKey(`done.${readiness}`)));
         } catch (error) {
             handleError(error, {context: "VehicleReadiness"});

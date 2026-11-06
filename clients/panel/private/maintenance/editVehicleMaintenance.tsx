@@ -1,4 +1,4 @@
-import {Save} from "lucide-react";
+import {IconDeviceFloppy} from "@tabler/icons-react";
 import {createGenericEditPage} from "@coreModule/components/entityPage/pages/createGenericEditPage.tsx";
 import {editVehicleMaintenanceFormSchema} from "armonia/src/modules/carRental/api/carRental/private/vehicleMaintenance/editVehicleMaintenance.form.validator.ts";
 import type {EditVehicleMaintenanceFormType} from "armonia/src/modules/carRental/api/carRental/private/vehicleMaintenance/vehicleMaintenance.schema-def.ts";
@@ -11,5 +11,5 @@ export default createGenericEditPage<VehicleMaintenance, EditVehicleMaintenanceF
     apiUrl: "/api/carRental/vehicleMaintenance",
     schema: editVehicleMaintenanceFormSchema,
     mapEntityData: (data) => ({...data, vehicle: data.vehicle?._id}),
-    submitIcon: <Save />,
+    submitIcon: <IconDeviceFloppy />,
 });

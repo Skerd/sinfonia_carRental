@@ -1,4 +1,4 @@
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useState} from "react";
 import {
     DndContext,
     KeyboardSensor,
@@ -17,8 +17,8 @@ import {
 } from "@dnd-kit/sortable";
 import {CSS} from "@dnd-kit/utilities";
 import type {VehicleCategory} from "armonia/src/modules/carRental/api/carRental/private/vehicleCategory/vehicleCategory.dto.ts";
-import type {TableResponse} from "armonia/src/modules/core/types/shared.types.ts";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
+import useAllPages from "@coreModule/helpers/hooks/useAllPages.ts";
 import {
     Dialog,
     DialogContent,
@@ -42,6 +42,9 @@ type ReorderVehicleCategoriesModalProps = {
 };
 
 const LIST_PAGE_SIZE = 200;
+const LIST_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/vehicleCategory"};
+const LIST_BODY = {sortBy: "sortOrder", sortOrder: "asc"};
+const REORDER_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/vehicleCategory/reorder"};
 
 function SortableCategoryRow({category, index}: {category: VehicleCategory; index: number}) {
     const {attributes, listeners, setNodeRef, transform, transition, isDragging} = useSortable({id: category._id});
@@ -55,14 +58,15 @@ function SortableCategoryRow({category, index}: {category: VehicleCategory; inde
                 isDragging && "opacity-60 shadow-md",
             )}
         >
-            <button
+            <Button
                 type="button"
+                variant="bare"
                 className="cursor-grab text-muted-foreground active:cursor-grabbing"
                 {...attributes}
                 {...listeners}
             >
                 <IconGripVertical size={18} />
-            </button>
+            </Button>
             <div className="min-w-0 flex-1">
                 <p className="truncate text-sm font-medium">{category.name}</p>
                 <p className="truncate text-xs text-muted-foreground">{category.slug}</p>
@@ -79,58 +83,32 @@ export default function ReorderVehicleCategoriesModal({
     onSuccess,
 }: ReorderVehicleCategoriesModalProps) {
     const rk = (key: string) => String(resolveLanguageKey(key) ?? key);
-    const resolveLanguageKeyRef = useRef(resolveLanguageKey);
-    resolveLanguageKeyRef.current = resolveLanguageKey;
-    const [categories, setCategories] = useState<VehicleCategory[]>([]);
-    const [loading, setLoading] = useState(false);
-    const [saving, setSaving] = useState(false);
+    /** The dragged order; null until the user moves something, so the loaded order shows. */
+    const [ordered, setOrdered] = useState<VehicleCategory[] | null>(null);
 
     const sensors = useSensors(
         useSensor(PointerSensor),
         useSensor(KeyboardSensor, {coordinateGetter: sortableKeyboardCoordinates}),
     );
 
+    const [loadCount, setLoadCount] = useState(0);
     useEffect(() => {
         if (!open) return;
-        let cancelled = false;
-        setLoading(true);
-        void (async () => {
-            try {
-                const loaded: VehicleCategory[] = [];
-                let offset = 0;
-                let total = 0;
-                do {
-                    const res = await apiClient.post<TableResponse<VehicleCategory>>("/api/carRental/vehicleCategory", {
-                        offset,
-                        limit: LIST_PAGE_SIZE,
-                        sortBy: "sortOrder",
-                        sortOrder: "asc",
-                    });
-                    const page = res.data.data;
-                    total = res.data.total;
-                    loaded.push(...page);
-                    offset += page.length;
-                    if (page.length === 0) break;
-                } while (offset < total);
-                if (!cancelled) setCategories(loaded);
-            } catch {
-                if (!cancelled) {
-                    toast.error(String(resolveLanguageKeyRef.current("loadError") ?? "Failed to load categories."));
-                    setCategories([]);
-                }
-            } finally {
-                if (!cancelled) setLoading(false);
-            }
-        })();
-        return () => {
-            cancelled = true;
-        };
+        setOrdered(null);
+        setLoadCount((count) => count + 1);
     }, [open]);
+    const all = useAllPages<VehicleCategory>(LIST_REQUEST, LIST_BODY, loadCount, {pageSize: LIST_PAGE_SIZE});
+    useEffect(() => {
+        if (all.error) toast.error(String(resolveLanguageKey("loadError") ?? "Failed to load categories."));
+    }, [all.error]);
+    const categories = ordered ?? all.rows;
+    const loading = all.loading;
 
     const handleDragEnd = (event: DragEndEvent) => {
         const {active, over} = event;
         if (!over || active.id === over.id) return;
-        setCategories((items) => {
+        setOrdered((current) => {
+            const items = current ?? categories;
             const oldIndex = items.findIndex((category) => category._id === active.id);
             const newIndex = items.findIndex((category) => category._id === over.id);
             if (oldIndex < 0 || newIndex < 0) return items;
@@ -138,21 +116,16 @@ export default function ReorderVehicleCategoriesModal({
         });
     };
 
-    const handleSave = async () => {
-        setSaving(true);
-        try {
-            await apiClient.post("/api/carRental/vehicleCategory/reorder", {
-                orderedIds: categories.map((category) => category._id),
-            });
+    const [saveCount, setSaveCount] = useState(0);
+    const {loading: saving} = useHttpRequest(REORDER_REQUEST, {orderedIds: categories.map((category) => category._id)}, saveCount, true, {
+        success: () => {
             toast.success(rk("saveSuccess"));
             onSuccess?.();
             onOpenChange(false);
-        } catch {
-            toast.error(rk("saveError"));
-        } finally {
-            setSaving(false);
-        }
-    };
+        },
+        error: () => toast.error(rk("saveError")),
+    });
+    const handleSave = () => setSaveCount((count) => count + 1);
 
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
@@ -182,7 +155,7 @@ export default function ReorderVehicleCategoriesModal({
                     <Button type="button" variant="outline" onClick={() => onOpenChange(false)} disabled={saving}>
                         {rk("cancel")}
                     </Button>
-                    <Button type="button" onClick={() => void handleSave()} disabled={saving || loading || categories.length === 0}>
+                    <Button type="button" onClick={handleSave} disabled={saving || loading || categories.length === 0}>
                         {saving ? rk("saving") : rk("save")}
                     </Button>
                 </DialogFooter>

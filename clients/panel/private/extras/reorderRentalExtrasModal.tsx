@@ -1,4 +1,4 @@
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useState} from "react";
 import {
     DndContext,
     KeyboardSensor,
@@ -17,8 +17,8 @@ import {
 } from "@dnd-kit/sortable";
 import {CSS} from "@dnd-kit/utilities";
 import type {RentalExtra} from "armonia/src/modules/carRental/api/carRental/private/rentalExtra/rentalExtra.dto.ts";
-import type {TableResponse} from "armonia/src/modules/core/types/shared.types.ts";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
+import useAllPages from "@coreModule/helpers/hooks/useAllPages.ts";
 import {
     Dialog,
     DialogContent,
@@ -42,6 +42,9 @@ type ReorderRentalExtrasModalProps = {
 };
 
 const LIST_PAGE_SIZE = 200;
+const LIST_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalExtra"};
+const LIST_BODY = {sortBy: "sortOrder", sortOrder: "asc"};
+const REORDER_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalExtra/reorder"};
 
 function SortableExtraRow({extra, index}: {extra: RentalExtra; index: number}) {
     const {attributes, listeners, setNodeRef, transform, transition, isDragging} = useSortable({id: extra._id});
@@ -55,14 +58,15 @@ function SortableExtraRow({extra, index}: {extra: RentalExtra; index: number}) {
                 isDragging && "opacity-60 shadow-md",
             )}
         >
-            <button
+            <Button
                 type="button"
+                variant="bare"
                 className="cursor-grab text-muted-foreground active:cursor-grabbing"
                 {...attributes}
                 {...listeners}
             >
                 <IconGripVertical size={18} />
-            </button>
+            </Button>
             <div className="min-w-0 flex-1">
                 <p className="truncate text-sm font-medium">{extra.name}</p>
                 <p className="truncate text-xs text-muted-foreground">{extra.price}</p>
@@ -79,58 +83,32 @@ export default function ReorderRentalExtrasModal({
     onSuccess,
 }: ReorderRentalExtrasModalProps) {
     const rk = (key: string) => String(resolveLanguageKey(key) ?? key);
-    const resolveLanguageKeyRef = useRef(resolveLanguageKey);
-    resolveLanguageKeyRef.current = resolveLanguageKey;
-    const [extras, setExtras] = useState<RentalExtra[]>([]);
-    const [loading, setLoading] = useState(false);
-    const [saving, setSaving] = useState(false);
+    /** The dragged order; null until the user moves something, so the loaded order shows. */
+    const [ordered, setOrdered] = useState<RentalExtra[] | null>(null);
 
     const sensors = useSensors(
         useSensor(PointerSensor),
         useSensor(KeyboardSensor, {coordinateGetter: sortableKeyboardCoordinates}),
     );
 
+    const [loadCount, setLoadCount] = useState(0);
     useEffect(() => {
         if (!open) return;
-        let cancelled = false;
-        setLoading(true);
-        void (async () => {
-            try {
-                const loaded: RentalExtra[] = [];
-                let offset = 0;
-                let total = 0;
-                do {
-                    const res = await apiClient.post<TableResponse<RentalExtra>>("/api/carRental/rentalExtra", {
-                        offset,
-                        limit: LIST_PAGE_SIZE,
-                        sortBy: "sortOrder",
-                        sortOrder: "asc",
-                    });
-                    const page = res.data.data;
-                    total = res.data.total;
-                    loaded.push(...page);
-                    offset += page.length;
-                    if (page.length === 0) break;
-                } while (offset < total);
-                if (!cancelled) setExtras(loaded);
-            } catch {
-                if (!cancelled) {
-                    toast.error(String(resolveLanguageKeyRef.current("loadError") ?? "Failed to load extras."));
-                    setExtras([]);
-                }
-            } finally {
-                if (!cancelled) setLoading(false);
-            }
-        })();
-        return () => {
-            cancelled = true;
-        };
+        setOrdered(null);
+        setLoadCount((count) => count + 1);
     }, [open]);
+    const all = useAllPages<RentalExtra>(LIST_REQUEST, LIST_BODY, loadCount, {pageSize: LIST_PAGE_SIZE});
+    useEffect(() => {
+        if (all.error) toast.error(String(resolveLanguageKey("loadError") ?? "Failed to load extras."));
+    }, [all.error]);
+    const extras = ordered ?? all.rows;
+    const loading = all.loading;
 
     const handleDragEnd = (event: DragEndEvent) => {
         const {active, over} = event;
         if (!over || active.id === over.id) return;
-        setExtras((items) => {
+        setOrdered((current) => {
+            const items = current ?? extras;
             const oldIndex = items.findIndex((extra) => extra._id === active.id);
             const newIndex = items.findIndex((extra) => extra._id === over.id);
             if (oldIndex < 0 || newIndex < 0) return items;
@@ -138,21 +116,16 @@ export default function ReorderRentalExtrasModal({
         });
     };
 
-    const handleSave = async () => {
-        setSaving(true);
-        try {
-            await apiClient.post("/api/carRental/rentalExtra/reorder", {
-                orderedIds: extras.map((extra) => extra._id),
-            });
+    const [saveCount, setSaveCount] = useState(0);
+    const {loading: saving} = useHttpRequest(REORDER_REQUEST, {orderedIds: extras.map((extra) => extra._id)}, saveCount, true, {
+        success: () => {
             toast.success(rk("saveSuccess"));
             onSuccess?.();
             onOpenChange(false);
-        } catch {
-            toast.error(rk("saveError"));
-        } finally {
-            setSaving(false);
-        }
-    };
+        },
+        error: () => toast.error(rk("saveError")),
+    });
+    const handleSave = () => setSaveCount((count) => count + 1);
 
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
@@ -182,7 +155,7 @@ export default function ReorderRentalExtrasModal({
                     <Button type="button" variant="outline" onClick={() => onOpenChange(false)} disabled={saving}>
                         {rk("cancel")}
                     </Button>
-                    <Button type="button" onClick={() => void handleSave()} disabled={saving || loading || extras.length === 0}>
+                    <Button type="button" onClick={handleSave} disabled={saving || loading || extras.length === 0}>
                         {saving ? rk("saving") : rk("save")}
                     </Button>
                 </DialogFooter>

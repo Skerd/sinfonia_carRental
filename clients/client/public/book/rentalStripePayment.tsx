@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {compose} from "redux";
 import {toast} from "sonner";
-import {Lock} from "lucide-react";
+import {IconLock} from "@tabler/icons-react";
 import {PaymentElement, useElements, useStripe} from "@stripe/react-stripe-js";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
@@ -48,7 +48,7 @@ function RentalStripePayment({clientSecret, returnPath, onPaid, resolveLanguageK
         <div className="flex flex-col gap-5">
             <PaymentElement />
             <Button size="lg" type="button" onClick={() => void handlePay()} disabled={!stripe || submitting} >
-                <Lock className="h-4 w-4" aria-hidden />
+                <IconLock className="h-4 w-4" aria-hidden />
                 {resolveLanguageKey(submitting ? "processing" : "pay")}
             </Button>
         </div>

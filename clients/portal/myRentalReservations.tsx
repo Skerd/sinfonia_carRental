@@ -1,8 +1,7 @@
 import {compose} from "redux";
-import {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
@@ -11,18 +10,13 @@ import type {RentalMyReservationsResponse} from "armonia/src/modules/carRental/a
 import {formatAtLocation} from "@carRentalModule/clients/client/public/shared/rentalTripParams.ts";
 import {useCompanyLink} from "@coreModule/clients/portal/shared/sectionBase.tsx";
 
+const MINE_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/mine"};
+
 /** The portal account's reservations at every rental company; each opens the company's manage page. */
 function MyRentalReservations({resolveLanguageKey, languageCode}: WithLanguageType) {
     const companyLink = useCompanyLink();
-    const [rows, setRows] = useState<RentalMyReservationsResponse["data"] | null>(null);
-
-    useEffect(() => {
-        let cancelled = false;
-        apiClient.post<RentalMyReservationsResponse>("/api/carRental/rentalStorefront/mine", {})
-            .then((res) => { if (!cancelled) setRows(res.data.data); })
-            .catch(() => { if (!cancelled) setRows([]); });
-        return () => { cancelled = true; };
-    }, []);
+    const mine = useHttpRequest<RentalMyReservationsResponse>(MINE_REQUEST, {}, 1);
+    const rows = mine.error ? [] : mine.data?.data ?? null;
 
     if (rows === null) return <Loader />;
     if (rows.length === 0) return <p className="text-muted-foreground">{resolveLanguageKey("none")}</p>;

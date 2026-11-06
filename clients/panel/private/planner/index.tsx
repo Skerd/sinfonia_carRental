@@ -4,7 +4,7 @@ import {toast} from "sonner";
 import {IconChevronLeft, IconChevronRight, IconTruckDelivery} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {handleError} from "@coreModule/helpers/general/errors.ts";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
@@ -13,9 +13,15 @@ import {NativeSelect} from "@coreModule/components/ui/native-select.tsx";
 import type {ApiSelectDatum, SelectResponse} from "armonia/src/modules/core/types/shared.types.ts";
 import type {RentalPlannerFormType, RentalPlannerResponse} from "armonia/src/modules/carRental/api/carRental/private/rentalPlanner/rentalPlanner.ts";
 import RentalReservationSheetView from "@carRentalModule/clients/panel/private/reservations/center/sheetView/rentalReservationSheetView.tsx";
+import {cn} from "@coreModule/components/lib/utils.ts";
 
 type Planner = RentalPlannerResponse["data"];
 const SPANS = [7, 14, 30];
+const LOCATIONS_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalLocation/select"};
+const CATEGORIES_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/vehicleCategory/select"};
+const PLANNER_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalPlanner"};
+const REASSIGN_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalReservation/reassignVehicle"};
+const SELECT_BODY = {page: 1, limit: 100};
 const DAY_MS = 24 * 3600 * 1000;
 /** Status colours: the same tones the reservation list uses. */
 const STATUS_CLASS: Record<string, string> = {
@@ -38,40 +44,36 @@ function RentalPlannerPage({resolveLanguageKey, languageCode}: WithLanguageType)
     const [days, setDays] = useState(14);
     const [location, setLocation] = useState("");
     const [category, setCategory] = useState("");
-    const [locations, setLocations] = useState<ApiSelectDatum[]>([]);
-    const [categories, setCategories] = useState<ApiSelectDatum[]>([]);
-    const [planner, setPlanner] = useState<Planner | null>(null);
-    const [loading, setLoading] = useState(false);
     const [openReservation, setOpenReservation] = useState<string | null>(null);
     const [dragging, setDragging] = useState<{id: string; categoryId: string} | null>(null);
 
-    useEffect(() => {
-        const options = (url: string): Promise<ApiSelectDatum[]> =>
-            apiClient
-                .post<SelectResponse>(url, {page: 1, limit: 100})
-                .then((res) => res.data.data)
-                .catch((error: unknown) => {
-                    handleError(error, {context: "RentalPlannerOptions"});
-                    return [];
-                });
-        void options("/api/carRental/rentalLocation/select").then(setLocations);
-        void options("/api/carRental/vehicleCategory/select").then(setCategories);
-    }, []);
+    const optionsLifecycle = {error: (error: unknown) => handleError(error, {context: "RentalPlannerOptions"})};
+    const locationsRequest = useHttpRequest<SelectResponse>(LOCATIONS_REQUEST, SELECT_BODY, 1, true, optionsLifecycle);
+    const categoriesRequest = useHttpRequest<SelectResponse>(CATEGORIES_REQUEST, SELECT_BODY, 1, true, optionsLifecycle);
+    const locations: ApiSelectDatum[] = locationsRequest.data?.data ?? [];
+    const categories: ApiSelectDatum[] = categoriesRequest.data?.data ?? [];
 
-    const load = useCallback(async () => {
-        setLoading(true);
-        try {
-            const body: RentalPlannerFormType = {from, days, ...(location ? {location} : {}), ...(category ? {category} : {})};
-            setPlanner((await apiClient.post<RentalPlannerResponse>("/api/carRental/rentalPlanner", body)).data.data);
-        } catch (error) {
-            handleError(error, {context: "RentalPlanner"});
-        } finally {
-            setLoading(false);
-        }
-    }, [from, days, location, category]);
+    const [plannerCount, setPlannerCount] = useState(0);
+    const load = useCallback(() => setPlannerCount((count) => count + 1), []);
     useEffect(() => {
-        void load();
-    }, [load]);
+        load();
+    }, [from, days, location, category, load]);
+    const plannerBody: RentalPlannerFormType = {from, days, ...(location ? {location} : {}), ...(category ? {category} : {})};
+    const plannerRequest = useHttpRequest<RentalPlannerResponse>(PLANNER_REQUEST, plannerBody, plannerCount, true, {
+        error: (error) => handleError(error, {context: "RentalPlanner"}),
+    });
+    const planner: Planner | null = plannerRequest.data?.data ?? null;
+    const loading = plannerRequest.loading;
+
+    // A dropped bar moves the reservation to that car; the toast names both.
+    const [move, setMove] = useState({payload: {_id: "", vehicle: ""}, message: "", count: 0});
+    useHttpRequest(REASSIGN_REQUEST, move.payload, move.count, true, {
+        success: () => {
+            toast.success(move.message);
+            load();
+        },
+        error: (error) => handleError(error, {context: "RentalPlannerReassign"}),
+    });
 
     const start = planner ? new Date(planner.from).getTime() : 0;
     const span = planner ? new Date(planner.to).getTime() - start : 1;
@@ -86,20 +88,18 @@ function RentalPlannerPage({resolveLanguageKey, languageCode}: WithLanguageType)
     }), [from, days, languageCode]);
     const formatTime = (iso: string) => new Intl.DateTimeFormat(languageCode, {timeZone: planner?.timezone, dateStyle: "short", timeStyle: "short"}).format(new Date(iso));
 
-    const drop = async (event: DragEvent<HTMLDivElement>, vehicle: Planner["vehicles"][number]) => {
+    const drop = (event: DragEvent<HTMLDivElement>, vehicle: Planner["vehicles"][number]) => {
         event.preventDefault();
         const moving = dragging;
         setDragging(null);
         if (!moving || moving.categoryId !== vehicle.categoryId) return;
         const reservation = planner?.reservations.find((entry) => entry._id === moving.id);
         if (!reservation || reservation.vehicle === vehicle._id) return;
-        try {
-            await apiClient.post("/api/carRental/rentalReservation/reassignVehicle", {_id: moving.id, vehicle: vehicle._id});
-            toast.success(String(resolveLanguageKey("moved")).replace("{number}", reservation.number).replace("{plate}", vehicle.plate));
-            await load();
-        } catch (error) {
-            handleError(error, {context: "RentalPlannerReassign"});
-        }
+        setMove((current) => ({
+            payload: {_id: moving.id, vehicle: vehicle._id},
+            message: String(resolveLanguageKey("moved")).replace("{number}", reservation.number).replace("{plate}", vehicle.plate),
+            count: current.count + 1,
+        }));
     };
 
     let lastCategory = "";
@@ -162,7 +162,7 @@ function RentalPlannerPage({resolveLanguageKey, languageCode}: WithLanguageType)
                                             className="relative h-12"
                                             style={{backgroundImage: `repeating-linear-gradient(to right, transparent, transparent calc(100% / ${days} - 1px), var(--border) calc(100% / ${days} - 1px), var(--border) calc(100% / ${days}))`}}
                                             onDragOver={(event) => canDrop && event.preventDefault()}
-                                            onDrop={(event) => void drop(event, vehicle)}
+                                            onDrop={(event) => drop(event, vehicle)}
                                         >
                                             {planner.blocks.filter((block) => block.vehicle === vehicle._id).map((block) => (
                                                 <div
@@ -175,20 +175,21 @@ function RentalPlannerPage({resolveLanguageKey, languageCode}: WithLanguageType)
                                                 </div>
                                             ))}
                                             {planner.reservations.filter((entry) => entry.vehicle === vehicle._id).map((entry) => (
-                                                <button
+                                                <Button
                                                     key={entry._id}
                                                     type="button"
+                                                    variant="bare"
                                                     draggable={entry.status === "held" || entry.status === "confirmed"}
                                                     onDragStart={() => setDragging({id: entry._id, categoryId: vehicle.categoryId})}
                                                     onDragEnd={() => setDragging(null)}
                                                     onClick={() => setOpenReservation(entry._id)}
-                                                    className={`absolute top-1 bottom-1 flex items-center gap-1 overflow-hidden rounded-sm px-1.5 text-left text-xs whitespace-nowrap focus-visible:outline-2 focus-visible:outline-ring ${STATUS_CLASS[entry.status] ?? "bg-muted"}`}
+                                                    className={cn("absolute top-1 bottom-1 flex items-center gap-1 overflow-hidden rounded-sm px-1.5 text-left text-xs whitespace-nowrap focus-visible:outline-2 focus-visible:outline-ring", STATUS_CLASS[entry.status] ?? "bg-muted")}
                                                     style={position(entry.pickupAt, entry.returnAt)}
                                                     title={`${entry.number} · ${entry.customer} · ${formatTime(entry.pickupAt)} – ${formatTime(entry.returnAt)}${entry.needsTransfer ? ` · ${resolveLanguageKey("needsTransfer")}` : ""}`}
                                                 >
                                                     {entry.needsTransfer ? <IconTruckDelivery size={14} aria-label={String(resolveLanguageKey("needsTransfer"))} /> : null}
                                                     <span className="truncate">{entry.customer}</span>
-                                                </button>
+                                                </Button>
                                             ))}
                                         </div>
                                     </div>

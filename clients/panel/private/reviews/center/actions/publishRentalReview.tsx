@@ -3,7 +3,7 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
 import {DropdownMenuItem} from "@coreModule/components/ui/dropdown-menu.tsx";
-import {Globe} from "lucide-react";
+import {IconWorld} from "@tabler/icons-react";
 import type {RentalReview} from "armonia/src/modules/carRental/api/carRental/private/rentalReview/rentalReview.dto.ts";
 
 type PublishRentalReviewProps = WithLanguageType & {
@@ -19,7 +19,7 @@ function PublishRentalReview({entity, resolveLanguageKey, onAction}: PublishRent
 
     return (
         <DropdownMenuItem onClick={() => onAction("publishRentalReview")}>
-            <Globe className="text-success" size={16} />
+            <IconWorld className="text-success" size={16} />
             {resolveLanguageKey("title")}
         </DropdownMenuItem>
     );

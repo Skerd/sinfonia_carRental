@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {Lock} from "lucide-react";
+import {IconLock} from "@tabler/icons-react";
 import {PaymentElement, useElements, useStripe} from "@stripe/react-stripe-js";
 import {Button} from "@coreModule/components/ui/button.tsx";
 
@@ -41,7 +41,7 @@ export default function DepositCardForm({kind, confirmLabel, onConfirmed, onErro
         <div className="flex flex-col gap-4">
             <PaymentElement />
             <Button type="button" onClick={() => void confirm()} disabled={!stripe || submitting}>
-                <Lock className="h-4 w-4" aria-hidden />
+                <IconLock className="h-4 w-4" aria-hidden />
                 {confirmLabel}
             </Button>
         </div>
