@@ -19,7 +19,7 @@ const QUOTE_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalS
 
 const LANGUAGE_PATH = "src/modules/carRental/clients/client/public/category/index.tsx";
 
-function CategoryPage({resolveLanguageKey}: WithLanguageType) {
+function CategoryPage({resolveLanguageKey, currentLanguage}: WithLanguageType) {
     const base = useSectionBase();
     const {categoryId = ""} = useParams();
     const [params] = useSearchParams();
@@ -42,7 +42,9 @@ function CategoryPage({resolveLanguageKey}: WithLanguageType) {
         ? quoteRequest.error.message || quoteRequest.error.error || String(resolveLanguageKey("quoteFailed"))
         : null;
 
-    if (loading) {
+    /* The facts and specs are keyed by their translated labels, which are all "" until this page's
+       dictionary arrives; rendering them then gave React duplicate keys (TD-F33). */
+    if (loading || !currentLanguage) {
         return (
             <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr]" aria-busy="true" aria-label={resolveLanguageKey("loading")}>
                 <div className="aspect-[4/3] animate-pulse rounded-3xl bg-muted" />
