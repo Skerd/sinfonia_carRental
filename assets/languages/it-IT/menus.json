@@ -2,7 +2,7 @@
   "carRental": {
     "title": "Noleggio auto",
     "reservations": {"title": "Prenotazioni"},
-    "planner": {"title": "Planner"},
+    "planner": {"title": "Pianificazione"},
     "counter": {"title": "Banco"},
     "reports": {"title": "Report"},
     "businessAccounts": {"title": "Conti aziendali"},
