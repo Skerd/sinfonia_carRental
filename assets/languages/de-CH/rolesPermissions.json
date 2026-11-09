@@ -53,7 +53,8 @@
       "lateFeePerHour": "Gebühr pro Stunde verspätete Rückgabe",
       "cleaningFee": "Reinigungsgebühr",
       "smokingFee": "Rauchergebühr",
-      "fineAdminFee": "Bearbeitungsgebühr pro Busse"
+      "fineAdminFee": "Bearbeitungsgebühr pro Busse",
+      "ensure": "Einstellungen anlegen, falls sie fehlen"
     },
     "Rentallocations": {
       "address": "Adresse",
@@ -70,7 +71,9 @@
       "rentallocations": "Mietstandorte",
       "returnAllowed": "Rückgabe erlaubt",
       "timezone": "Zeitzone",
-      "updatedAt": "Aktualisiert am"
+      "updatedAt": "Aktualisiert am",
+      "activate": "Aktivieren",
+      "deactivate": "Deaktivieren"
     },
     "Vehiclecategories": {
       "createdAt": "Erstellt am",
@@ -98,7 +101,10 @@
       "vehiclecategories": "Fahrzeugkategorien",
       "videos": "Videos",
       "weekendDailyRate": "Tagespreis am Wochenende",
-      "weeklyRate": "Wochenpreis"
+      "weeklyRate": "Wochenpreis",
+      "showOnWebsite": "Auf der Website anzeigen",
+      "hideFromWebsite": "Auf der Website ausblenden",
+      "reorder": "Neu anordnen"
     },
     "Vehicles": {
       "acquiredAt": "In der Flotte seit",
@@ -125,7 +131,8 @@
       "vehicles": "Fahrzeuge",
       "videos": "Videos",
       "vin": "FIN",
-      "year": "Jahr"
+      "year": "Jahr",
+      "setReadiness": "Einsatzbereitschaft festlegen"
     },
     "Vehicleblocks": {
       "createdAt": "Erstellt am",
@@ -153,7 +160,10 @@
       "pricing": "Preisgestaltung",
       "rentalextras": "Miet-Extras",
       "sortOrder": "Sortierung",
-      "updatedAt": "Aktualisiert am"
+      "updatedAt": "Aktualisiert am",
+      "activate": "Aktivieren",
+      "deactivate": "Deaktivieren",
+      "reorder": "Neu anordnen"
     },
     "Rentalreservations": {
       "amountPaid": "Bezahlter Betrag",
@@ -196,7 +206,19 @@
       "needsTransfer": "Überführung nötig",
       "deposit": "Kaution",
       "agreement": "Mietvertrag",
-      "promoCode": "Aktionscode"
+      "promoCode": "Aktionscode",
+      "recordPayment": "Zahlung erfassen",
+      "saveDrivers": "Fahrer speichern",
+      "openDamages": "Offene Schäden ansehen",
+      "takeDeposit": "Kaution einziehen",
+      "refreshDeposit": "Kaution aktualisieren",
+      "settleDeposit": "Kaution abrechnen",
+      "previewReturnCharges": "Rückgabekosten ansehen",
+      "returnVehicle": "Fahrzeug zurücknehmen",
+      "cancel": "Stornieren",
+      "noShow": "Als nicht erschienen markieren",
+      "reassignVehicle": "Fahrzeug neu zuweisen",
+      "extend": "Verlängern"
     },
     "Vehicleinsurances": {
       "attachments": "Anhänge",
@@ -216,7 +238,9 @@
       "updatedAt": "Aktualisiert am",
       "validFrom": "Gültig ab",
       "vehicle": "Fahrzeug",
-      "vehicleinsurances": "Fahrzeugversicherungen"
+      "vehicleinsurances": "Fahrzeugversicherungen",
+      "cancel": "Stornieren",
+      "uncancel": "Wiederherstellen"
     },
     "Vehicledocuments": {
       "attachments": "Anhänge",
@@ -254,7 +278,9 @@
       "type": "Art",
       "updatedAt": "Aktualisiert am",
       "vehicle": "Fahrzeug",
-      "vehiclemaintenances": "Fahrzeugwartung"
+      "vehiclemaintenances": "Fahrzeugwartung",
+      "complete": "Abschliessen",
+      "cancel": "Stornieren"
     },
     "Vehicledamages": {
       "area": "Bereich",
@@ -276,7 +302,9 @@
       "status": "Status",
       "updatedAt": "Aktualisiert am",
       "vehicle": "Fahrzeug",
-      "vehicledamages": "Fahrzeugschäden"
+      "vehicledamages": "Fahrzeugschäden",
+      "scheduleRepair": "Reparatur planen",
+      "chargeToCustomer": "Dem Kunden verrechnen"
     },
     "Rentalpromocodes": {
       "bookableFrom": "Buchbar ab",
@@ -316,7 +344,13 @@
       "transfer": "Überführung",
       "type": "Art",
       "vehicle": "Fahrzeug",
-      "vehiclefines": "Bussen"
+      "vehiclefines": "Bussen",
+      "matchDriver": "Fahrer zuordnen",
+      "chargeCustomer": "Dem Kunden belasten",
+      "nominateDriver": "Fahrer benennen",
+      "recordPayment": "Zahlung erfassen",
+      "dispute": "Bestreiten",
+      "annul": "Annullieren"
     },
     "Vehicletransfers": {
       "arriveAt": "Ankunft",
@@ -328,7 +362,10 @@
       "status": "Status",
       "toLocation": "Nach",
       "vehicle": "Fahrzeug",
-      "vehicletransfers": "Überführungen"
+      "vehicletransfers": "Überführungen",
+      "start": "Starten",
+      "complete": "Abschliessen",
+      "cancel": "Stornieren"
     },
     "Rentalbusinessaccounts": {
       "address": "Adresse",
@@ -354,7 +391,9 @@
       "isPublished": "Veröffentlicht",
       "rating": "Bewertung",
       "rentalreviews": "Bewertungen",
-      "reservation": "Buchung"
+      "reservation": "Buchung",
+      "publish": "Veröffentlichen",
+      "unpublish": "Veröffentlichung zurückziehen"
     },
     "Rentalsubscriptions": {
       "category": "Kategorie",

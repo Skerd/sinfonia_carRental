@@ -53,7 +53,8 @@
       "lateFeePerHour": "Frais de retard par heure",
       "cleaningFee": "Frais de nettoyage",
       "smokingFee": "Frais fumeur",
-      "fineAdminFee": "Frais de dossier par amende"
+      "fineAdminFee": "Frais de dossier par amende",
+      "ensure": "Créer les paramètres s'ils manquent"
     },
     "Rentallocations": {
       "address": "Adresse",
@@ -70,7 +71,9 @@
       "rentallocations": "Sites de location",
       "returnAllowed": "Retour autorisé",
       "timezone": "Fuseau horaire",
-      "updatedAt": "Mis à jour le"
+      "updatedAt": "Mis à jour le",
+      "activate": "Activer",
+      "deactivate": "Désactiver"
     },
     "Vehiclecategories": {
       "createdAt": "Créé le",
@@ -98,7 +101,10 @@
       "vehiclecategories": "Catégories de véhicules",
       "videos": "Vidéos",
       "weekendDailyRate": "Tarif journalier le week-end",
-      "weeklyRate": "Tarif hebdomadaire"
+      "weeklyRate": "Tarif hebdomadaire",
+      "showOnWebsite": "Afficher sur le site",
+      "hideFromWebsite": "Masquer du site",
+      "reorder": "Réordonner"
     },
     "Vehicles": {
       "acquiredAt": "Dans la flotte depuis",
@@ -125,7 +131,8 @@
       "vehicles": "Véhicules",
       "videos": "Vidéos",
       "vin": "VIN",
-      "year": "Année"
+      "year": "Année",
+      "setReadiness": "Définir la disponibilité"
     },
     "Vehicleblocks": {
       "createdAt": "Créé le",
@@ -153,7 +160,10 @@
       "pricing": "Tarification",
       "rentalextras": "Suppléments de location",
       "sortOrder": "Ordre de tri",
-      "updatedAt": "Mis à jour le"
+      "updatedAt": "Mis à jour le",
+      "activate": "Activer",
+      "deactivate": "Désactiver",
+      "reorder": "Réordonner"
     },
     "Rentalreservations": {
       "amountPaid": "Montant payé",
@@ -196,7 +206,19 @@
       "needsTransfer": "Transfert nécessaire",
       "deposit": "Caution",
       "agreement": "Contrat",
-      "promoCode": "Code promo"
+      "promoCode": "Code promo",
+      "recordPayment": "Enregistrer un paiement",
+      "saveDrivers": "Enregistrer les conducteurs",
+      "openDamages": "Voir les dommages ouverts",
+      "takeDeposit": "Encaisser la caution",
+      "refreshDeposit": "Actualiser la caution",
+      "settleDeposit": "Solder la caution",
+      "previewReturnCharges": "Aperçu des frais de retour",
+      "returnVehicle": "Restituer le véhicule",
+      "cancel": "Annuler",
+      "noShow": "Marquer comme absent",
+      "reassignVehicle": "Réattribuer le véhicule",
+      "extend": "Prolonger"
     },
     "Vehicleinsurances": {
       "attachments": "Pièces jointes",
@@ -216,7 +238,9 @@
       "updatedAt": "Mis à jour le",
       "validFrom": "Valable dès le",
       "vehicle": "Véhicule",
-      "vehicleinsurances": "Assurances des véhicules"
+      "vehicleinsurances": "Assurances des véhicules",
+      "cancel": "Annuler",
+      "uncancel": "Rétablir"
     },
     "Vehicledocuments": {
       "attachments": "Pièces jointes",
@@ -254,7 +278,9 @@
       "type": "Type",
       "updatedAt": "Mis à jour le",
       "vehicle": "Véhicule",
-      "vehiclemaintenances": "Entretien des véhicules"
+      "vehiclemaintenances": "Entretien des véhicules",
+      "complete": "Terminer",
+      "cancel": "Annuler"
     },
     "Vehicledamages": {
       "area": "Zone",
@@ -276,7 +302,9 @@
       "status": "Statut",
       "updatedAt": "Mis à jour le",
       "vehicle": "Véhicule",
-      "vehicledamages": "Dommages des véhicules"
+      "vehicledamages": "Dommages des véhicules",
+      "scheduleRepair": "Planifier la réparation",
+      "chargeToCustomer": "Facturer au client"
     },
     "Rentalpromocodes": {
       "bookableFrom": "Réservable à partir du",
@@ -316,7 +344,13 @@
       "transfer": "Transfert",
       "type": "Type",
       "vehicle": "Véhicule",
-      "vehiclefines": "Amendes"
+      "vehiclefines": "Amendes",
+      "matchDriver": "Identifier le conducteur",
+      "chargeCustomer": "Facturer au client",
+      "nominateDriver": "Désigner le conducteur",
+      "recordPayment": "Enregistrer un paiement",
+      "dispute": "Contester",
+      "annul": "Annuler"
     },
     "Vehicletransfers": {
       "arriveAt": "Arrivée",
@@ -328,7 +362,10 @@
       "status": "Statut",
       "toLocation": "Vers",
       "vehicle": "Véhicule",
-      "vehicletransfers": "Transferts"
+      "vehicletransfers": "Transferts",
+      "start": "Démarrer",
+      "complete": "Terminer",
+      "cancel": "Annuler"
     },
     "Rentalbusinessaccounts": {
       "address": "Adresse",
@@ -354,7 +391,9 @@
       "isPublished": "Publié",
       "rating": "Note",
       "rentalreviews": "Avis",
-      "reservation": "Réservation"
+      "reservation": "Réservation",
+      "publish": "Publier",
+      "unpublish": "Dépublier"
     },
     "Rentalsubscriptions": {
       "category": "Catégorie",

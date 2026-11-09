@@ -53,7 +53,8 @@
       "lateFeePerHour": "Late return fee per hour",
       "cleaningFee": "Cleaning fee",
       "smokingFee": "Smoking fee",
-      "fineAdminFee": "Admin fee per traffic fine"
+      "fineAdminFee": "Admin fee per traffic fine",
+      "ensure": "Create settings if missing"
     },
     "Rentallocations": {
       "address": "Address",
@@ -70,7 +71,9 @@
       "rentallocations": "Rental locations",
       "returnAllowed": "Return allowed",
       "timezone": "Timezone",
-      "updatedAt": "Updated at"
+      "updatedAt": "Updated at",
+      "activate": "Activate",
+      "deactivate": "Deactivate"
     },
     "Vehiclecategories": {
       "createdAt": "Created at",
@@ -98,7 +101,10 @@
       "vehiclecategories": "Vehicle categories",
       "videos": "Videos",
       "weekendDailyRate": "Weekend daily rate",
-      "weeklyRate": "Weekly rate"
+      "weeklyRate": "Weekly rate",
+      "showOnWebsite": "Show on website",
+      "hideFromWebsite": "Hide from website",
+      "reorder": "Reorder"
     },
     "Vehicles": {
       "acquiredAt": "In fleet since",
@@ -125,7 +131,8 @@
       "vehicles": "Vehicles",
       "videos": "Videos",
       "vin": "Vin",
-      "year": "Year"
+      "year": "Year",
+      "setReadiness": "Set readiness"
     },
     "Vehicleblocks": {
       "createdAt": "Created at",
@@ -153,7 +160,10 @@
       "pricing": "Pricing",
       "rentalextras": "Rental extras",
       "sortOrder": "Sort order",
-      "updatedAt": "Updated at"
+      "updatedAt": "Updated at",
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "reorder": "Reorder"
     },
     "Rentalreservations": {
       "amountPaid": "Amount paid",
@@ -196,7 +206,19 @@
       "needsTransfer": "Needs a transfer",
       "deposit": "Deposit",
       "agreement": "Agreement",
-      "promoCode": "Promo code"
+      "promoCode": "Promo code",
+      "recordPayment": "Record payment",
+      "saveDrivers": "Save drivers",
+      "openDamages": "View open damages",
+      "takeDeposit": "Take deposit",
+      "refreshDeposit": "Refresh deposit",
+      "settleDeposit": "Settle deposit",
+      "previewReturnCharges": "Preview return charges",
+      "returnVehicle": "Return vehicle",
+      "cancel": "Cancel",
+      "noShow": "Mark as no-show",
+      "reassignVehicle": "Reassign vehicle",
+      "extend": "Extend"
     },
     "Vehicleinsurances": {
       "attachments": "Attachments",
@@ -216,7 +238,9 @@
       "updatedAt": "Updated at",
       "validFrom": "Valid from",
       "vehicle": "Vehicle",
-      "vehicleinsurances": "Vehicle insurance"
+      "vehicleinsurances": "Vehicle insurance",
+      "cancel": "Cancel",
+      "uncancel": "Reinstate"
     },
     "Vehicledocuments": {
       "attachments": "Attachments",
@@ -254,7 +278,9 @@
       "type": "Type",
       "updatedAt": "Updated at",
       "vehicle": "Vehicle",
-      "vehiclemaintenances": "Vehicle maintenance"
+      "vehiclemaintenances": "Vehicle maintenance",
+      "complete": "Complete",
+      "cancel": "Cancel"
     },
     "Vehicledamages": {
       "area": "Area",
@@ -276,7 +302,9 @@
       "status": "Status",
       "updatedAt": "Updated at",
       "vehicle": "Vehicle",
-      "vehicledamages": "Vehicle damages"
+      "vehicledamages": "Vehicle damages",
+      "scheduleRepair": "Schedule repair",
+      "chargeToCustomer": "Charge to the customer"
     },
     "Rentalpromocodes": {
       "bookableFrom": "Bookable from",
@@ -316,7 +344,13 @@
       "transfer": "Transfer",
       "type": "Type",
       "vehicle": "Vehicle",
-      "vehiclefines": "Traffic fines"
+      "vehiclefines": "Traffic fines",
+      "matchDriver": "Match the driver",
+      "chargeCustomer": "Charge the customer",
+      "nominateDriver": "Nominate the driver",
+      "recordPayment": "Record payment",
+      "dispute": "Dispute",
+      "annul": "Annul"
     },
     "Vehicletransfers": {
       "arriveAt": "Arrives",
@@ -328,7 +362,10 @@
       "status": "Status",
       "toLocation": "To",
       "vehicle": "Vehicle",
-      "vehicletransfers": "Transfers"
+      "vehicletransfers": "Transfers",
+      "start": "Start",
+      "complete": "Complete",
+      "cancel": "Cancel"
     },
     "Rentalbusinessaccounts": {
       "address": "Address",
@@ -354,7 +391,9 @@
       "isPublished": "Published",
       "rating": "Rating",
       "rentalreviews": "Reviews",
-      "reservation": "Booking"
+      "reservation": "Booking",
+      "publish": "Publish",
+      "unpublish": "Unpublish"
     },
     "Rentalsubscriptions": {
       "category": "Category",
