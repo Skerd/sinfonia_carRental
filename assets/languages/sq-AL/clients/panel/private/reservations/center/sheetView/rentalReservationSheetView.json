@@ -11,7 +11,7 @@
   "currency": "Monedha",
   "customer": "Klienti",
   "depositAmount": "Depozita",
-  "email": "Email",
+  "email": "Emaili",
   "event": "Ngjarja",
   "firstName": "Emri",
   "grandTotal": "Totali",
@@ -82,11 +82,11 @@
     "expired": "Mbajtja skadoi",
     "no_show": "Mosparaqitje",
     "refunded": "Rimbursuar",
-    "charge_added": "Pagesë e shtuar",
+    "charge_added": "Tarifa u shtua",
     "deposit_held": "Depozita u bllokua",
     "deposit_captured": "Depozita u mbajt",
     "deposit_released": "Depozita u lirua",
-    "charge_removed": "Faturimi u hoq"
+    "charge_removed": "Tarifa u hoq"
   },
   "createdAt": "Krijuar më",
   "updatedAt": "Përditësuar më",

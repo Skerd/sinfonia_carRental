@@ -5,13 +5,13 @@
   "help": {
     "ariaLabel": "À propos des amendes",
     "title": "À propos des amendes",
-    "overview": "Saisissez une amende à réception de l'avis. La réservation qui avait le véhicule à ce moment est trouvée seule, avec son conducteur principal ; sinon, le transfert du personnel.",
+    "overview": "Saisissez une amende à réception de l'avis. La réservation qui avait le véhicule à ce moment est retrouvée automatiquement, avec son conducteur principal ; à défaut, le transfert du personnel qui l'avait.",
     "sections": [
       {
         "title": "Choisissez une voie",
         "items": [
-          "Désigner le conducteur : envoyez la lettre à l'autorité ; le conducteur paie, le client n'est facturé que des frais de gestion.",
-          "Facturer le client : l'amende et les frais vont sur la réservation. Après le retour, ils ont leur propre facture ; une carte enregistrée est débitée, sinon le client paie via le lien de réservation.",
+          "Désigner le conducteur : envoyez la lettre à l'autorité ; le conducteur paie, le client n'est facturé que des frais de dossier.",
+          "Facturer le client : l'amende et les frais de dossier sont ajoutés à la réservation. Après le retour, ils ont leur propre facture ; une carte enregistrée est débitée, sinon le client paie via le lien de réservation.",
           "« Enregistrer le paiement » quand l'entreprise paie l'autorité. Sans réservation à facturer, l'amende reste un coût de l'entreprise.",
           "Contestez une amende ; annulez-la si l'autorité l'abandonne. Le personnel est prévenu une semaine avant l'échéance d'une amende impayée."
         ]

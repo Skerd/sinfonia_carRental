@@ -25,7 +25,7 @@
     "severityLabel": "Gravité",
     "severityPlaceholder": "Choisir la gravité",
     "estimatedCostLabel": "Coût estimé",
-    "estimatedCostPlaceholder": "ex. 350",
+    "estimatedCostPlaceholder": "p. ex. 350",
     "descriptionLabel": "Description",
     "descriptionPlaceholder": "Ce qui a été fait ou ce qui est endommagé",
     "photosLabel": "Photos",
@@ -51,9 +51,9 @@
     "insuranceLabel": "Police d'assurance",
     "insurancePlaceholder": "Trouvée d'après la date (à changer si besoin)",
     "claimNumberLabel": "Numéro de sinistre",
-    "claimNumberPlaceholder": "ex. CLM-2026-0142",
+    "claimNumberPlaceholder": "p. ex. CLM-2026-0142",
     "insurerPaidAmountLabel": "Payé par l'assureur",
-    "insurerPaidAmountPlaceholder": "ex. 800"
+    "insurerPaidAmountPlaceholder": "p. ex. 800"
   },
   "axios": {
     "start": {

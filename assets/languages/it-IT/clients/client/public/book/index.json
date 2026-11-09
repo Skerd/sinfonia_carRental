@@ -9,7 +9,7 @@
   "return": "Riconsegna",
   "freeCancellation": "Cancellazione gratuita fino a {hours} ore prima del ritiro.",
   "payTitle": "Paga la tua prenotazione",
-  "payHint": "La tua auto è trattenuta per qualche minuto mentre paghi. Una volta completato il pagamento, ti inviamo la conferma via e-mail.",
+  "payHint": "La tua auto è riservata per qualche minuto mentre paghi. Una volta completato il pagamento, ti inviamo la conferma via e-mail.",
   "changeSearch": "Cambia date o auto",
   "extrasTitle": "Extra",
   "driverTitle": "Conducente principale",

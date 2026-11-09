@@ -8,9 +8,9 @@
     "overview": "Regjistroni gjobën kur vjen njoftimi. Rezervimi që kishte automjetin në atë kohë gjendet vetë, me shoferin kryesor; përndryshe transferimi i stafit.",
     "sections": [
       {
-        "title": "Zgjidhni një rrugë",
+        "title": "Zgjidhni një mënyrë",
         "items": [
-          "Njoftoni shoferin: dërgojini letrën autoritetit; paguan shoferi dhe klientit i faturohet vetëm tarifa e trajtimit.",
+          "Deklaroni shoferin: dërgojini autoritetit letrën e shoferit; paguan shoferi dhe klientit i faturohet vetëm tarifa e trajtimit.",
           "Faturojini klientit: gjoba dhe tarifa shkojnë te rezervimi. Pas kthimit marrin faturë të veçantë; karta e ruajtur debitohet, përndryshe klienti paguan nga lidhja e rezervimit.",
           "«Regjistro pagesën» kur kompania paguan autoritetin. Pa rezervim për ta faturuar, gjoba mbetet kosto e kompanisë.",
           "Kundërshtoni një gjobë; anulojeni nëse autoriteti e heq. Stafi paralajmërohet një javë para afatit të një gjobe të papaguar."
@@ -32,12 +32,12 @@
         "driver_identified": "Shoferi u identifikua",
         "charged": "I faturuar klientit",
         "paid_by_company": "E paguar nga ne",
-        "transferred": "Shoferi u njoftua",
+        "transferred": "Shoferi u deklarua",
         "disputed": "E kundërshtuar",
         "cancelled": "E anuluar"
       },
       "type": {
-        "speeding": "Shpejtësi",
+        "speeding": "Tejkalim shpejtësie",
         "parking": "Parkim",
         "red_light": "Semafor i kuq",
         "toll": "Pagesë rruge",

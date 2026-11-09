@@ -10,8 +10,8 @@
       {
         "title": "So wird ein Schaden bearbeitet",
         "items": [
-          "Die Mitarbeitenden werden über jeden neuen Schaden informiert. Ein schwerer Schaden setzt das Fahrzeug auf «Prüfung nötig».",
-          "«Zur Reparatur» erstellt eine Reparatur im Wartungsbuch oder fügt den Schaden einer bereits geplanten hinzu. Mit einem Bereitschaftsdatum ist das Fahrzeug bis dahin gesperrt.",
+          "Die Mitarbeitenden werden über jeden neuen Schaden informiert. Ein schwerer Schaden setzt das Fahrzeug auf «Kontrolle nötig».",
+          "«Zur Reparatur schicken» erstellt eine Reparatur im Wartungsbuch oder fügt den Schaden einer bereits geplanten hinzu. Mit einem Bereitschaftsdatum ist das Fahrzeug bis dahin gesperrt.",
           "Wenn die Reparatur erledigt ist, wird der Schaden «Repariert». Seine Kosten sind die Kosten der Reparatur.",
           "Belasten Sie die Kundschaft der Buchung (bis zum Selbstbehalt) und erfassen Sie, was die Versicherung bezahlt hat; beides erscheint in den Berichten als zurückerhalten."
         ]

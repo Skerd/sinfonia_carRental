@@ -3,7 +3,7 @@
   "failedTitle": "Konto konnte nicht geladen werden",
   "failedDescription": "Zum erneuten Versuch tippen.",
   "name": "Name",
-  "vatNumber": "MwSt.-Nummer",
+  "vatNumber": "Fahrer/innen fehlen",
   "discountPercent": "Rabatt %",
   "isActive": "Aktiv",
   "statement": "Monatsabrechnung"

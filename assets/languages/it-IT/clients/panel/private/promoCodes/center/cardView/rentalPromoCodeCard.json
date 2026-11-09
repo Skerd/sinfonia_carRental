@@ -9,7 +9,7 @@
   "usageCount": "Volte usato",
   "isActive": "Attivo",
   "typeValues": {
-    "percent": "Percentuale",
+    "percent": "Sconto percentuale",
     "fixed": "Importo fisso"
   }
 }

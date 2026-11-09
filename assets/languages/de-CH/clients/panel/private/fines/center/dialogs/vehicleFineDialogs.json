@@ -2,7 +2,7 @@
   "path": "src/modules/carRental/clients/panel/private/fines/center/dialogs/vehicleFineDialogs.tsx",
   "cancel": "Zurück",
   "matchDriver": {
-    "title": "Erneut zuordnen",
+    "title": "Fahrer/in erneut zuordnen",
     "description": "Sucht die Buchung, die das Fahrzeug zur Tatzeit hatte, nachdem Fahrzeug oder Zeit korrigiert wurden.",
     "confirm": "Zuordnen"
   },
@@ -13,8 +13,8 @@
   },
   "nominateDriver": {
     "title": "Fahrer/in melden",
-    "description": "Senden Sie den Fahrerbrief für {driver} an die Behörde; die Person bezahlt die Busse. Die Bearbeitungsgebühr, falls festgelegt, wird der Buchung {booking} belastet.",
-    "confirm": "Gemeldet"
+    "description": "Senden Sie das Fahrerschreiben für {driver} an die Behörde; die Person bezahlt die Busse. Die Bearbeitungsgebühr, falls festgelegt, wird der Buchung {booking} belastet.",
+    "confirm": "Fahrer/in gemeldet"
   },
   "dispute": {
     "title": "Busse bestreiten",

@@ -17,7 +17,7 @@
   "minRentalDays": "Ditë minimale qiraje",
   "usageLimit": "Përdorime gjithsej",
   "usageLimitPerEmail": "Përdorime për klient",
-  "usageCount": "Herë të përdorur",
+  "usageCount": "Numri i përdorimeve",
   "isActive": "Aktiv",
   "description": "Shënim i brendshëm",
   "typeValues": {

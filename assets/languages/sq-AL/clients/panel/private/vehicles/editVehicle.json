@@ -49,7 +49,7 @@
     "imagesLabel": "Fotot",
     "videosLabel": "Videot",
     "trackerIdLabel": "Gjurmuesi",
-    "trackerIdPlaceholder": "Id e gjurmuesit"
+    "trackerIdPlaceholder": "ID e gjurmuesit"
   },
   "axios": {
     "start": {

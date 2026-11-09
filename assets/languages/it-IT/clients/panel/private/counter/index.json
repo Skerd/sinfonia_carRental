@@ -37,7 +37,7 @@
   "help": {
     "ariaLabel": "Informazioni sul banco",
     "title": "Informazioni sul banco",
-    "overview": "Il banco per un giorno. I ritiri sono prenotazioni confermate che partono quel giorno. Le riconsegne sono le auto attese quel giorno. I ritardi avrebbero già dovuto tornare.",
+    "overview": "Il banco per un giorno. I ritiri sono prenotazioni confermate che partono quel giorno. Le riconsegne sono le auto attese quel giorno. Le auto in ritardo avrebbero già dovuto rientrare.",
     "sections": [
       {
         "title": "Al banco",

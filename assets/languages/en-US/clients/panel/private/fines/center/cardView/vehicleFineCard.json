@@ -3,7 +3,7 @@
   "failedTitle": "Failed to load fine",
   "failedDescription": "Tap to retry.",
   "vehicle": "Vehicle",
-  "offenceAt": "Date and time of the offence",
+  "offenceAt": "Date and time of the offense",
   "type": "Type",
   "amount": "Amount",
   "status": "Status",

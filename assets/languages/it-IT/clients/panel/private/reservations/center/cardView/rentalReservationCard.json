@@ -6,7 +6,7 @@
   "statusValues": {
     "active": "Attivo",
     "maintenance": "In manutenzione",
-    "retired": "Ritirato",
+    "retired": "Dismesso",
     "held": "In attesa di pagamento",
     "confirmed": "Confermato",
     "in_progress": "In viaggio",

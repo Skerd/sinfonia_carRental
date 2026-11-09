@@ -17,7 +17,7 @@
     "typeLabel": "Tipo di sconto",
     "typePlaceholder": "Seleziona un tipo",
     "type": {
-      "percent": "Percentuale",
+      "percent": "Sconto percentuale",
       "fixed": "Importo fisso"
     },
     "valueLabel": "Sconto",

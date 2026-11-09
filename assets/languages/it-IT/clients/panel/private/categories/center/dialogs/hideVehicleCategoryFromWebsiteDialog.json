@@ -6,7 +6,7 @@
   "confirm": "Nascondi dal sito web",
   "busy": "In corso…",
   "axios": {
-    "start": {"title": "Nascondendo la categoria dal sito web…", "time": 3000},
+    "start": {"title": "Rimozione della categoria dal sito web…", "time": 3000},
     "success": {"title": "La categoria è nascosta dal sito web", "time": 3000},
     "error": {"title": "Impossibile nascondere la categoria dal sito web", "time": 3000}
   }

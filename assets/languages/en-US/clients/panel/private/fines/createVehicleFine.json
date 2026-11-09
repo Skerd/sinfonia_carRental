@@ -16,7 +16,7 @@
     "referencePlaceholder": "Number on the notice",
     "vehicleLabel": "Vehicle",
     "vehiclePlaceholder": "Select vehicle",
-    "offenceAtLabel": "Date and time of the offence",
+    "offenceAtLabel": "Date and time of the offense",
     "offenceAtPlaceholder": "Pick a date",
     "typeLabel": "Type",
     "typePlaceholder": "Select a type",
@@ -38,7 +38,7 @@
     "attachmentsLabel": "Scan of the notice",
     "notesLabel": "Notes",
     "notesPlaceholder": "Internal notes",
-    "offenceSectionTitle": "Offence",
+    "offenceSectionTitle": "Offense",
     "authoritySectionTitle": "Authority and amount",
     "notesSectionTitle": "Notes and files"
   },

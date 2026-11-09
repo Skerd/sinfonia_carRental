@@ -19,7 +19,7 @@
   },
   "create": "Ajouter une intervention",
   "searchPlaceholder": "Rechercher des entretiens ou ajouter des filtres...",
-  "noData": "Aucun entretiens pour l'instant",
+  "noData": "Aucun entretien pour l'instant",
   "failTitle": "Impossible de charger les entretiens",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
   "deleted": "Supprimé",

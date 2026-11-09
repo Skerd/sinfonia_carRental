@@ -17,7 +17,7 @@
       {
         "title": "Prêt à partir",
         "items": [
-          "La disponibilité indique si le véhicule peut partir : prêt, à nettoyer ou à contrôler. Chaque retour la passe à nettoyer jusqu'à ce que quelqu'un la marque prête.",
+          "La disponibilité indique si le véhicule peut partir : prêt, à nettoyer ou à contrôler. Chaque retour la passe à « à nettoyer » jusqu'à ce que quelqu'un marque le véhicule comme prêt.",
           "Actuellement à est l'endroit où se trouve le véhicule. Il change quand une location revient et quand un transfert arrive."
         ]
       }

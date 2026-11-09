@@ -13,12 +13,12 @@
   },
   "nominateDriver": {
     "title": "Comunica il conducente",
-    "description": "Invia la lettera per {driver} all'autorità; paga il conducente. La commissione, se impostata, viene addebitata alla prenotazione {booking}.",
+    "description": "Invia all'autorità la lettera per {driver}: sarà il conducente a pagare la multa. La commissione, se impostata, viene addebitata alla prenotazione {booking}.",
     "confirm": "Conducente comunicato"
   },
   "dispute": {
     "title": "Contesta la multa",
-    "description": "Nulla viene addebitato o ricordato durante la contestazione. Cerca di nuovo il conducente se la contestazione è respinta.",
+    "description": "Nulla viene addebitato o ricordato durante la contestazione. Abbina di nuovo il conducente se la contestazione è respinta.",
     "confirm": "Contesta"
   },
   "annul": {

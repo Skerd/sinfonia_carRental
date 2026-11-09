@@ -18,7 +18,7 @@
   "chargeLabel": "Frais",
   "chargePlaceholder": "p. ex. Plein de carburant",
   "chargeAmount": "Montant",
-  "addCharge": "Ajouter un frais",
+  "addCharge": "Ajouter des frais",
   "removeCharge": "Supprimer",
   "notesLabel": "Notes",
   "damageDescription": "Ce qui est endommagé",
@@ -41,8 +41,8 @@
     "other": "Autre"
   },
   "severity": {
-    "minor": "léger",
-    "moderate": "moyen",
+    "minor": "mineur",
+    "moderate": "modéré",
     "major": "grave"
   }
 }

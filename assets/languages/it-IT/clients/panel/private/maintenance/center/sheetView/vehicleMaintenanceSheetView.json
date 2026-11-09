@@ -10,7 +10,7 @@
   "type": "Tipo",
   "status": "Stato",
   "serviceDate": "Data dell'intervento",
-  "odometerKm": "Chilometraggio",
+  "odometerKm": "Chilometraggio (km)",
   "provider": "Officina",
   "cost": "Costo",
   "description": "Descrizione",

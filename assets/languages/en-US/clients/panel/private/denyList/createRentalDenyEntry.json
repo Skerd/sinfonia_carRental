@@ -1,7 +1,7 @@
 {
   "path": "src/modules/carRental/clients/panel/private/denyList/createRentalDenyEntry.tsx",
   "title": "Block a customer",
-  "description": "Refuse bookings and handovers for this email or licence",
+  "description": "Refuse bookings and handovers for this email or license",
   "weekday": {
     "0": "Sunday",
     "1": "Monday",
@@ -14,8 +14,8 @@
   "form": {
     "emailLabel": "Email",
     "emailPlaceholder": "customer@email.com",
-    "licenseNumberLabel": "Licence number",
-    "licenseNumberPlaceholder": "As printed on the licence",
+    "licenseNumberLabel": "License number",
+    "licenseNumberPlaceholder": "As printed on the license",
     "reasonLabel": "Reason",
     "reasonPlaceholder": "Why this customer is blocked",
     "isActiveLabel": "Active"
@@ -36,7 +36,7 @@
   },
   "formHeader": {
     "title": "Block a customer",
-    "description": "Refuse bookings and handovers for this email or licence"
+    "description": "Refuse bookings and handovers for this email or license"
   },
   "formButtons": {
     "cancel": "Cancel",

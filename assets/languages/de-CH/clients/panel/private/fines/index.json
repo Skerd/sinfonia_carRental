@@ -10,8 +10,8 @@
       {
         "title": "Wählen Sie einen Weg",
         "items": [
-          "Fahrer/in melden: Senden Sie den Fahrerbrief an die Behörde; die Person bezahlt selbst, die Kundschaft trägt nur die Bearbeitungsgebühr.",
-          "Kundschaft belasten: Busse und Bearbeitungsgebühr kommen auf die Buchung. Nach der Rückgabe erhalten sie eine eigene Rechnung; eine gespeicherte Karte wird belastet, sonst zahlt die Kundschaft über den Buchungslink.",
+          "Fahrer/in melden: Senden Sie das Fahrerschreiben an die Behörde; die Person bezahlt selbst, die Kundschaft trägt nur die Bearbeitungsgebühr.",
+          "Kundschaft belasten: Busse und Bearbeitungsgebühr kommen auf die Buchung. Nach der Rückgabe erhalten diese eine eigene Rechnung; eine gespeicherte Karte wird belastet, sonst zahlt die Kundschaft über den Buchungslink.",
           "«Zahlung erfassen», wenn die Firma die Behörde bezahlt. Ohne Buchung zum Belasten bleibt die Busse als Kosten der Firma.",
           "Bestreiten Sie eine angefochtene Busse; annullieren Sie sie, wenn die Behörde sie fallen lässt. Mitarbeitende werden eine Woche vor Fälligkeit einer unbezahlten Busse gewarnt."
         ]
@@ -37,7 +37,7 @@
         "cancelled": "Annulliert"
       },
       "type": {
-        "speeding": "Geschwindigkeit",
+        "speeding": "Geschwindigkeitsüberschreitung",
         "parking": "Parkieren",
         "red_light": "Rotlicht",
         "toll": "Maut",

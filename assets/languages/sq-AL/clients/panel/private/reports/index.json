@@ -1,6 +1,6 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reports/index.tsx",
-  "title": "Raporte",
+  "title": "Raportet",
   "description": "Si u përdor flota, sa fitoi dhe sa kushtoi",
   "from": "Nga",
   "to": "Deri",
@@ -11,7 +11,7 @@
   "revenue": "Të ardhurat",
   "averageDailyRate": "Tarifa mesatare ditore",
   "revpac": "Të ardhura për ditë-makinë të lirë",
-  "leadTime": "Koha para rezervimit",
+  "leadTime": "Koha nga rezervimi te marrja",
   "days": "ditë",
   "cancellationRate": "Anulimet",
   "noShowRate": "Mosparaqitjet",
@@ -22,17 +22,17 @@
   "maintenance": "Mirëmbajtja",
   "repairs": "Riparimet",
   "insurance": "Sigurimi",
-  "payback": "Kthimi",
+  "payback": "Kthimi i investimit",
   "help": {
     "ariaLabel": "Rreth raporteve",
     "title": "Rreth raporteve",
-    "overview": "Shfrytëzimi është orët e qirasë pjesëtuar me orët kur makina nuk ishte e bllokuar.",
+    "overview": "Shfrytëzimi është orët e qirasë pjesëtuar me orët kur makina nuk ishte e bllokuar. Të ardhurat janë totali i rezervimeve që filluan në këtë periudhë.",
     "sections": [
       {
         "title": "Leximi i shifrave",
         "items": [
           "Një kërkim pa makinë të lirë numërohet si kërkesë e humbur.",
-          "Kthimi është të ardhurat e periudhës pjesëtuar me çmimin e blerjes.",
+          "Kthimi i investimit është të ardhurat e periudhës pjesëtuar me çmimin e blerjes së automjetit.",
           "Riparimet janë kostoja e regjistrimeve të riparimit. Gjobat janë ato që kompania pagoi dhe mbajti. Rikuperuar është ajo që klientët dhe sigurimet paguan për dëmtimet."
         ]
       }

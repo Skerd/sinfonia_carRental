@@ -26,7 +26,7 @@
   "fields": {
     "reservation": "Réservation",
     "rating": "Note",
-    "comment": "Commentaire",
+    "comment": "Frais de carburant par quart de réservoir manquant",
     "authorName": "Nom",
     "isPublished": "Publié",
     "createdAt": "Créé le",

@@ -1,5 +1,5 @@
 {
   "modules": {
-    "carRental": "Autovermietung: Reservierungen bleiben mit Beträgen und Zahlungen erhalten, verlieren aber die Kontaktdaten des Mieters; Führerscheine, Ausweisnummern, Scans und Unterschriften werden endgültig gelöscht, und eine gespeicherte Karte kann nicht mehr belastet werden. Die Sperrliste bleibt bestehen."
+    "carRental": "Autovermietung: Reservierungen bleiben mit Beträgen und Zahlungen erhalten, verlieren aber die Kontaktdaten des Mieters; Führerausweise, Ausweisnummern, Scans und Unterschriften werden endgültig gelöscht, und eine gespeicherte Karte kann nicht mehr belastet werden. Die Sperrliste bleibt bestehen."
   }
 }

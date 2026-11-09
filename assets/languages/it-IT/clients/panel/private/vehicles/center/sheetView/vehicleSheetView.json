@@ -10,7 +10,7 @@
   "make": "Marca",
   "model": "Modello",
   "notes": "Note",
-  "odometerKm": "Chilometri (km)",
+  "odometerKm": "Chilometraggio (km)",
   "overview": "Panoramica",
   "plate": "Targa",
   "status": "Stato",
@@ -20,7 +20,7 @@
   "statusValues": {
     "active": "Attivo",
     "maintenance": "In manutenzione",
-    "retired": "Ritirato",
+    "retired": "Dismesso",
     "held": "In attesa di pagamento",
     "confirmed": "Confermato",
     "in_progress": "In viaggio",
@@ -44,8 +44,8 @@
   "lastLatitude": "Latitudine",
   "lastLongitude": "Longitudine",
   "lastReportedAt": "Ultimo segnale",
-  "currentLocation": "Posizione attuale",
-  "readiness": "Prontezza",
+  "currentLocation": "Sede attuale",
+  "readiness": "Stato di preparazione",
   "readinessValues": {
     "ready": "Pronto",
     "needs_cleaning": "Da pulire",

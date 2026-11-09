@@ -1,6 +1,6 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/returnVehicleDialog.tsx",
-  "cancel": "Mbrapa",
+  "cancel": "Kthehu",
   "confirm": "Përfundo qiranë",
   "title": "Merr makinën mbrapsht",
   "description": "Regjistroni kilometrat dhe nivelin e karburantit dhe shtoni tarifat shtesë. Ato i shtohen totalit që detyrohet klienti.",
@@ -30,14 +30,14 @@
   "photosSelected": "{count} foto të zgjedhura",
   "area": {
     "front": "Përpara",
-    "rear": "Mbrapa",
+    "rear": "Prapa",
     "left": "Ana e majtë",
     "right": "Ana e djathtë",
     "roof": "Çatia",
-    "interior": "Brenda",
+    "interior": "Brendësia",
     "windshield": "Xhami i përparmë",
     "wheels": "Rrotat",
-    "underbody": "Poshtë",
+    "underbody": "Pjesa e poshtme",
     "other": "Tjetër"
   },
   "severity": {

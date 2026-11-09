@@ -4,7 +4,7 @@
   "failedDescription": "Prekni për të provuar përsëri.",
   "type": "Lloji",
   "serviceDate": "Data e servisit",
-  "odometerKm": "Kilometrazhi (km)",
+  "odometerKm": "Kilometrat (km)",
   "cost": "Kostoja",
   "status": "Statusi",
   "typeValues": {

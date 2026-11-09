@@ -5,7 +5,7 @@
   "help": {
     "ariaLabel": "Rreth dokumenteve",
     "title": "Rreth dokumenteve",
-    "overview": "Mbani këtu dokumentet e çdo automjeti, me skanime. Automjeti nuk dorëzohet nëse regjistrimi, kontrolli teknik, testi i shkarkimeve ose taksa rrugore skadojnë para kthimit.",
+    "overview": "Mbani këtu dokumentet e çdo automjeti, me skanime. Automjeti nuk dorëzohet nëse leja e qarkullimit, kontrolli teknik, testi i emetimeve ose taksa e qarkullimit skadojnë para kthimit.",
     "sections": [
       {
         "title": "Në këtë faqe",
@@ -20,7 +20,7 @@
   "create": "Shto dokument",
   "searchPlaceholder": "Kërkoni dokumente ose shtoni filtra...",
   "noData": "Ende pa dokumente",
-  "failTitle": "Dokumente nuk u ngarkuan",
+  "failTitle": "Dokumentet nuk u ngarkuan",
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
   "deleted": "Fshirë",
   "active": "Aktiv",

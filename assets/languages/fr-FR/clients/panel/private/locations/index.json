@@ -12,13 +12,13 @@
         "items": [
           "Définissez le fuseau horaire IANA (par exemple Europe/Zurich) pour que les réservations restent correctes lors des changements d'heure.",
           "Ajoutez les jours fériés comme jours de fermeture ; le site web n'y proposera ni prise ni retour ces jours-là.",
-          "Un site avec des réservations ne peut pas être supprimé ; désactivez-le plutôt."
+          "Une agence avec des réservations ne peut pas être supprimée ; désactivez-la plutôt."
         ]
       },
       {
         "title": "Frais d'aller simple",
         "items": [
-          "Des frais d'aller simple s'appliquent quand le véhicule revient dans une autre agence. Les frais de l'agence de retour sont utilisés. S'ils sont vides, les frais de la société s'appliquent."
+          "Des frais d'aller simple s'appliquent quand le véhicule revient dans une autre agence. Les frais de l'agence de retour sont utilisés. S'ils sont vides, les frais de l'entreprise s'appliquent."
         ]
       }
     ]

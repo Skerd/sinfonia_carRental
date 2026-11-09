@@ -21,7 +21,7 @@
           "Chaque conducteur doit avoir un numéro de permis encore valable le jour du retour. Sans cela, le véhicule ne part pas.",
           "Prenez la caution avant la remise : en espèces, par blocage de carte pour une location d'une semaine ou moins, ou par carte enregistrée au-delà. Réglez-la au retour.",
           "La remise envoie le contrat par e-mail. Téléchargez-le à nouveau dans le menu de la réservation.",
-          "La reprise propose les frais de carburant, de retard et de nettoyage d'après les relevés. Modifiez-les avant de confirmer. Un dommage nouveau est enregistré sur le véhicule."
+          "La reprise propose les frais de carburant, de retard et de nettoyage d'après les relevés. Modifiez-les avant de confirmer. Un dommage constaté à ce moment est enregistré sur le véhicule."
         ]
       }
     ]
@@ -37,11 +37,11 @@
     "!enums": {
       "status": {
         "held": "En attente de paiement",
-        "confirmed": "Confirmé",
+        "confirmed": "Confirmée",
         "in_progress": "En route",
-        "completed": "Terminé",
-        "cancelled": "Annulé",
-        "expired": "Expiré",
+        "completed": "Terminée",
+        "cancelled": "Annulée",
+        "expired": "Expirée",
         "no_show": "Absent"
       },
       "paymentStatus": {

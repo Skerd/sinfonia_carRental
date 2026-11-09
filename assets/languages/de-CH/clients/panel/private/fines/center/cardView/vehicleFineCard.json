@@ -10,7 +10,7 @@
   "reservation": "Buchung",
   "driverName": "Fahrer/in",
   "typeValues": {
-    "speeding": "Geschwindigkeit",
+    "speeding": "Geschwindigkeitsüberschreitung",
     "parking": "Parkieren",
     "red_light": "Rotlicht",
     "toll": "Maut",

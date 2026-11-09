@@ -15,7 +15,7 @@
   },
   "notesLabel": "Notes",
   "notesPlaceholder": "Existing scratches, items in the car",
-  "driversMissing": "Every driver needs a licence number before the car leaves. Add it under Drivers.",
+  "driversMissing": "Every driver needs a license number before the car leaves. Add it under Drivers.",
   "photosLabel": "Photos of the car",
   "photosSelected": "{count} photos selected",
   "damagesLabel": "Damage the customer has seen",

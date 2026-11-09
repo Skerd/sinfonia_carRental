@@ -6,7 +6,7 @@
   "value": "Zbritja",
   "category": "Kategoria",
   "bookableUntil": "Mund të rezervohet deri më",
-  "usageCount": "Herë të përdorur",
+  "usageCount": "Numri i përdorimeve",
   "isActive": "Aktiv",
   "typeValues": {
     "percent": "Përqindje",

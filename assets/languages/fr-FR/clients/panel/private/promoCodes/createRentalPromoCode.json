@@ -40,7 +40,7 @@
     "usageLimitPerEmailPlaceholder": "Vide pour illimité",
     "isActiveLabel": "Actif",
     "descriptionLabel": "Note interne",
-    "descriptionPlaceholder": "Pour quelle campagne est ce code"
+    "descriptionPlaceholder": "Campagne à laquelle ce code est destiné"
   },
   "axios": {
     "start": {

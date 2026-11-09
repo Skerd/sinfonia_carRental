@@ -42,7 +42,7 @@
       "on_account": "En compte"
     },
     "paymentChoiceLabel": "Paiement",
-    "paymentChoicePlaceholder": "Comment c'est payé",
+    "paymentChoicePlaceholder": "Mode de paiement",
     "phoneLabel": "Téléphone",
     "phonePlaceholder": "Saisir le téléphone",
     "pickupDateLabel": "Date de prise en charge",

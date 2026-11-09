@@ -12,13 +12,13 @@
     "confirm": "Faturo"
   },
   "nominateDriver": {
-    "title": "Njofto shoferin",
+    "title": "Deklaro shoferin",
     "description": "Dërgojini autoritetit letrën për {driver}; gjobën e paguan shoferi. Tarifa e trajtimit, nëse është caktuar, i faturohet rezervimit {booking}.",
-    "confirm": "Shoferi u njoftua"
+    "confirm": "Shoferi u deklarua"
   },
   "dispute": {
     "title": "Kundërshto gjobën",
-    "description": "Asgjë nuk faturohet e as nuk kujtohet gjatë kundërshtimit. Gjeni sërish shoferin nëse kundërshtimi humbet.",
+    "description": "Asgjë nuk faturohet e as nuk kujtohet gjatë kundërshtimit. Lidhni përsëri shoferin nëse kundërshtimi humbet.",
     "confirm": "Kundërshto"
   },
   "annul": {

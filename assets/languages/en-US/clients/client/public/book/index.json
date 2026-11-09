@@ -19,7 +19,7 @@
         "email": "Email",
         "phone": "Phone"
     },
-    "minDriverAge": "The driver must be at least {age} years old and show a valid licence at pick-up.",
+    "minDriverAge": "The driver must be at least {age} years old and show a valid license at pick-up.",
     "paymentTitle": "Payment",
     "payAtPickup": "Pay at pick-up",
     "payAtPickupHint": "Nothing is charged now; you pay at the desk.",

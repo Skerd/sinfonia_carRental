@@ -10,7 +10,7 @@
   "reservation": "Rezervimi",
   "driverName": "Shoferi",
   "typeValues": {
-    "speeding": "Shpejtësi",
+    "speeding": "Tejkalim shpejtësie",
     "parking": "Parkim",
     "red_light": "Semafor i kuq",
     "toll": "Pagesë rruge",
@@ -21,7 +21,7 @@
     "driver_identified": "Shoferi u identifikua",
     "charged": "I faturuar klientit",
     "paid_by_company": "E paguar nga ne",
-    "transferred": "Shoferi u njoftua",
+    "transferred": "Shoferi u deklarua",
     "disputed": "E kundërshtuar",
     "cancelled": "E anuluar"
   }

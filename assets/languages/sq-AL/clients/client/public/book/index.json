@@ -16,7 +16,7 @@
   "contact": {
     "firstName": "Emri",
     "lastName": "Mbiemri",
-    "email": "Email",
+    "email": "Emaili",
     "phone": "Telefoni"
   },
   "minDriverAge": "Shoferi duhet të jetë të paktën {age} vjeç dhe të tregojë një patentë të vlefshme në marrje.",
@@ -41,5 +41,5 @@
   "promoLabel": "Kodi promocional",
   "promoApply": "Apliko",
   "promoInvalid": "Ky kod promocional nuk mund të përdoret për këtë rezervim.",
-  "crossBorder": "Ta nxjerr makinën jashtë vendit"
+  "crossBorder": "Nxjerrja e makinës jashtë vendit"
 }

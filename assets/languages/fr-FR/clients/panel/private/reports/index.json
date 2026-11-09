@@ -22,17 +22,17 @@
   "maintenance": "Entretien",
   "repairs": "Réparations",
   "insurance": "Assurance",
-  "payback": "Retour",
+  "payback": "Amortissement",
   "help": {
     "ariaLabel": "À propos des rapports",
     "title": "À propos des rapports",
-    "overview": "L'utilisation est les heures louées divisées par les heures où une voiture n'était pas bloquée.",
+    "overview": "Le taux d'utilisation correspond aux heures louées divisées par les heures où le véhicule n'était pas bloqué. Le chiffre d'affaires est le total des réservations ayant commencé sur la période.",
     "sections": [
       {
         "title": "Lire les chiffres",
         "items": [
           "Une recherche sans voiture libre compte comme une demande perdue.",
-          "Le retour est le chiffre d'affaires de la période divisé par le prix d'achat.",
+          "L'amortissement est le chiffre d'affaires de la période divisé par le prix d'achat du véhicule.",
           "Les réparations sont le coût des fiches de réparation. Les amendes sont celles payées et gardées par l'entreprise. Récupéré est ce que clients et assureurs ont remboursé pour les dommages."
         ]
       }

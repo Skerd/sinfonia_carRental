@@ -20,7 +20,7 @@
   },
   "create": "Signaler un dommage",
   "searchPlaceholder": "Rechercher des dommages ou ajouter des filtres...",
-  "noData": "Aucun dommages pour l'instant",
+  "noData": "Aucun dommage pour l'instant",
   "failTitle": "Impossible de charger les dommages",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
   "deleted": "Supprimé",

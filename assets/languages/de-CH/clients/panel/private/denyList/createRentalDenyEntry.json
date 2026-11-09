@@ -1,7 +1,7 @@
 {
   "path": "src/modules/carRental/clients/panel/private/denyList/createRentalDenyEntry.tsx",
   "title": "Kundschaft sperren",
-  "description": "Buchungen und Übergaben für diese E-Mail oder diesen Führerschein ablehnen",
+  "description": "Buchungen und Übergaben für diese E-Mail oder diesen Führerausweis ablehnen",
   "weekday": {
     "0": "Sonntag",
     "1": "Montag",
@@ -14,8 +14,8 @@
   "form": {
     "emailLabel": "E-Mail",
     "emailPlaceholder": "kunde@email.ch",
-    "licenseNumberLabel": "Führerscheinnummer",
-    "licenseNumberPlaceholder": "Wie auf dem Führerschein",
+    "licenseNumberLabel": "Führerausweisnummer",
+    "licenseNumberPlaceholder": "Wie auf dem Führerausweis",
     "reasonLabel": "Grund",
     "reasonPlaceholder": "Warum diese Kundschaft gesperrt ist",
     "isActiveLabel": "Aktiv"
@@ -36,7 +36,7 @@
   },
   "formHeader": {
     "title": "Kundschaft sperren",
-    "description": "Buchungen und Übergaben für diese E-Mail oder diesen Führerschein ablehnen"
+    "description": "Buchungen und Übergaben für diese E-Mail oder diesen Führerausweis ablehnen"
   },
   "formButtons": {
     "cancel": "Abbrechen",

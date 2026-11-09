@@ -5,7 +5,7 @@
   "help": {
     "ariaLabel": "Über Geschäftskonten",
     "title": "Über Geschäftskonten",
-    "overview": "Ein Geschäftskonto wird statt der fahrenden Person in Rechnung gestellt. Der Rabatt ist eine Zeile der Buchung, und Rechnungen verwenden Name, MwSt.-Nummer und Adresse.",
+    "overview": "Ein Geschäftskonto wird statt der fahrenden Person in Rechnung gestellt. Der Rabatt ist eine Zeile der Buchung, und Rechnungen verwenden Name, MWST-Nummer und Adresse.",
     "sections": [
       {
         "title": "Auf dieser Seite",
@@ -25,7 +25,7 @@
   "active": "Aktiv",
   "fields": {
     "name": "Name",
-    "vatNumber": "MwSt.-Nummer",
+    "vatNumber": "Fahrer/innen fehlen",
     "billingEmail": "Rechnungs-E-Mail",
     "address": "Adresse",
     "discountPercent": "Rabatt %",

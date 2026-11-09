@@ -4,7 +4,7 @@
   "complete": {
     "title": "Il veicolo è rientrato",
     "description": "{plate} è di nuovo prenotabile da ora. I danni riparati con questo intervento vengono segnati come riparati.",
-    "confirm": "Segna completato"
+    "confirm": "Segna come completato"
   },
   "cancel": {
     "title": "Annulla l'intervento",

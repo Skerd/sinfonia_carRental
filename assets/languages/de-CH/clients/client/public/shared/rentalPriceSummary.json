@@ -1,6 +1,6 @@
 {
-  "vat": "MwSt.",
-  "vatIncluded": "Inkl. MwSt.",
+  "vat": "MWST",
+  "vatIncluded": "Inkl. MWST",
   "total": "Total",
   "deposit": "Kaution bei Abholung (rückerstattbar)"
 }

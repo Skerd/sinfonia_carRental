@@ -22,17 +22,17 @@
   "maintenance": "Manutenzione",
   "repairs": "Riparazioni",
   "insurance": "Assicurazione",
-  "payback": "Rientro",
+  "payback": "Rientro dell'investimento",
   "help": {
     "ariaLabel": "Informazioni sui report",
     "title": "Informazioni sui report",
-    "overview": "L'utilizzo è le ore noleggiate divise per le ore in cui un'auto non era bloccata.",
+    "overview": "L'utilizzo è dato dalle ore noleggiate divise per le ore in cui un'auto non era bloccata. I ricavi sono il totale delle prenotazioni iniziate nel periodo.",
     "sections": [
       {
         "title": "Leggere i numeri",
         "items": [
           "Una ricerca senza un'auto libera conta come domanda persa.",
-          "Il rientro è il ricavo del periodo diviso per il prezzo di acquisto.",
+          "Il rientro dell'investimento è il ricavo del periodo diviso per il prezzo di acquisto dell'auto.",
           "Le riparazioni sono il costo delle schede di riparazione. Le multe sono quelle pagate e tenute dall'azienda. Recuperato è quanto clienti e assicurazioni hanno rimborsato per i danni."
         ]
       }

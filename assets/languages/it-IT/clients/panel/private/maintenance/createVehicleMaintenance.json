@@ -20,7 +20,7 @@
     "statusPlaceholder": "Seleziona lo stato",
     "serviceDateLabel": "Data dell'intervento",
     "serviceDatePlaceholder": "Scegli una data",
-    "odometerKmLabel": "Chilometraggio",
+    "odometerKmLabel": "Chilometraggio (km)",
     "odometerKmPlaceholder": "es. 45000",
     "providerLabel": "Officina",
     "providerPlaceholder": "Nome dell'officina",

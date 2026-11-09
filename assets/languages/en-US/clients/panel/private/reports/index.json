@@ -7,7 +7,7 @@
   "location": "Branch",
   "allLocations": "All branches",
   "refresh": "Show",
-  "utilisation": "Utilisation",
+  "utilisation": "Utilization",
   "revenue": "Revenue",
   "averageDailyRate": "Average daily rate",
   "revpac": "Revenue per available car-day",
@@ -26,7 +26,7 @@
   "help": {
     "ariaLabel": "About reports",
     "title": "About reports",
-    "overview": "Utilisation is rented hours divided by the hours a car was not blocked. Revenue is the total of bookings that started in the window.",
+    "overview": "Utilization is rented hours divided by the hours a car was not blocked. Revenue is the total of bookings that started in the window.",
     "sections": [
       {
         "title": "Reading the numbers",

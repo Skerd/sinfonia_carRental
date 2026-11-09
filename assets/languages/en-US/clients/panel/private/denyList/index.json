@@ -5,12 +5,12 @@
   "help": {
     "ariaLabel": "About the deny list",
     "title": "About the deny list",
-    "overview": "A blocked email or licence number is refused when a booking is made and again at handover.",
+    "overview": "A blocked email or license number is refused when a booking is made and again at handover.",
     "sections": [
       {
         "title": "On this page",
         "items": [
-          "Give an email, a licence number, or both.",
+          "Give an email, a license number, or both.",
           "Turn Active off to allow that customer again without deleting the row."
         ]
       }
@@ -25,7 +25,7 @@
   "active": "Active",
   "fields": {
     "email": "Email",
-    "licenseNumber": "Licence number",
+    "licenseNumber": "License number",
     "reason": "Reason",
     "isActive": "Active",
     "createdAt": "Created at",

@@ -96,9 +96,9 @@
   "drivers": "Drivers",
   "role": "Role",
   "birthDate": "Birth date",
-  "licenseNumber": "Licence number",
+  "licenseNumber": "License number",
   "licenseCountry": "Issued in",
-  "licenseExpiresAt": "Licence valid until",
+  "licenseExpiresAt": "License valid until",
   "driverRole": {
     "primary": "Main driver",
     "additional": "Additional driver"

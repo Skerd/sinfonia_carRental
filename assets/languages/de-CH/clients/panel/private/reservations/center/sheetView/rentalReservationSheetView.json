@@ -2,7 +2,7 @@
   "path": "src/modules/carRental/clients/panel/private/reservations/center/sheetView/rentalReservationSheetView.tsx",
   "failedTitle": "Reservierung konnte nicht geladen werden",
   "failedDescription": "Beim Laden ist ein Fehler aufgetreten. Klicken Sie, um es erneut zu versuchen.",
-  "failedTooltipDescription": "Klicken, um die Daten erneut zu laden.",
+  "failedTooltipDescription": "Klicken Sie, um die Daten erneut zu laden.",
   "lifecycle": "Lebenszyklus",
   "amountPaid": "Bezahlt",
   "at": "Wann",
@@ -37,7 +37,7 @@
   "timeline": "Verlauf",
   "total": "Total",
   "unitPrice": "Stückpreis",
-  "vatAmount": "MwSt.",
+  "vatAmount": "MWST",
   "vehicle": "Fahrzeug",
   "paymentChoiceValues": {
     "pay_at_pickup": "Bei Abholung",
@@ -118,7 +118,7 @@
     "full": "Voll"
   },
   "deposit": "Kaution",
-  "deposit_method": "Genommen als",
+  "deposit_method": "Hinterlegt als",
   "deposit_status": "Status der Kaution",
   "deposit_amount": "Hinterlegte Kaution",
   "deposit_capturedAmount": "Behalten",

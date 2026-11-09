@@ -10,15 +10,15 @@
       {
         "title": "In questa pagina",
         "items": [
-          "Un veicolo con prenotazioni future non può essere messo in manutenzione, ritirato o spostato in un'altra categoria finché quelle prenotazioni non vengono spostate su un'altra auto.",
-          "Ritira un veicolo invece di eliminarlo: la sua storia resta sulle prenotazioni passate."
+          "Un veicolo con prenotazioni future non può essere messo in manutenzione, dismesso o spostato in un'altra categoria finché quelle prenotazioni non vengono spostate su un'altra auto.",
+          "Dismetti un veicolo invece di eliminarlo: la sua cronologia resta sulle prenotazioni passate."
         ]
       },
       {
         "title": "Pronto a uscire",
         "items": [
-          "La prontezza dice se l'auto può uscire: pronto, da pulire o da controllare. Ogni riconsegna la imposta su da pulire finché qualcuno non la segna pronta.",
-          "Ora a è dove si trova l'auto. Si aggiorna quando un noleggio torna e quando arriva un trasferimento."
+          "Lo stato di preparazione indica se l'auto può uscire: pronta, da pulire o da controllare. Ogni riconsegna lo imposta su da pulire finché qualcuno non la segna come pronta.",
+          "«Ora presso» indica dove si trova l'auto. Si aggiorna quando un noleggio rientra e quando arriva un trasferimento."
         ]
       }
     ]
@@ -35,7 +35,7 @@
       "status": {
         "active": "Attivo",
         "maintenance": "In manutenzione",
-        "retired": "Ritirato"
+        "retired": "Dismesso"
       },
       "readiness": {
         "ready": "Pronto",
@@ -51,7 +51,7 @@
     "status": "Stato",
     "year": "Anno",
     "color": "Colore",
-    "odometerKm": "Chilometri (km)",
+    "odometerKm": "Chilometraggio (km)",
     "createdAt": "Creato il",
     "updatedAt": "Aggiornato il",
     "createdBy": "Creato da",
@@ -62,9 +62,9 @@
     "nextServiceDueKm": "Prossimo tagliando a (km)",
     "acquiredAt": "In flotta dal",
     "purchasePrice": "Prezzo d'acquisto",
-    "readiness": "Prontezza",
-    "currentLocation": "Posizione attuale",
-    "trackerId": "ID del tracker",
+    "readiness": "Stato di preparazione",
+    "currentLocation": "Sede attuale",
+    "trackerId": "ID del localizzatore",
     "lastLatitude": "Ultima latitudine",
     "lastLongitude": "Ultima longitudine",
     "lastReportedAt": "Ultima posizione il",

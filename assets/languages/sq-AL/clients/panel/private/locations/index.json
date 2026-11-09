@@ -18,7 +18,7 @@
       {
         "title": "Tarifa e kthimit në një vend tjetër",
         "items": [
-          "Tarifa aplikohet kur makina kthehet në një vendndodhje tjetër. Përdoret tarifa e vendit të kthimit. Nëse është bosh, përdoret tarifa e kompanisë."
+          "Tarifa e kthimit në një vend tjetër zbatohet kur makina kthehet në një vendndodhje tjetër. Përdoret tarifa e vendit të kthimit. Nëse ajo është bosh, përdoret tarifa e kompanisë."
         ]
       }
     ]
@@ -34,7 +34,7 @@
     "name": "Emri",
     "timezone": "Zona kohore",
     "phone": "Telefoni",
-    "email": "Email",
+    "email": "Emaili",
     "pickupAllowed": "Marrje këtu",
     "returnAllowed": "Kthime këtu",
     "isActive": "Aktiv",

@@ -11,7 +11,7 @@
         "title": "Si trajtohet një dëmtim",
         "items": [
           "Stafi njoftohet për çdo dëmtim të ri. Një dëmtim i rëndë e vendos automjetin në «Duhet kontrolluar».",
-          "«Dërgo për riparim» krijon një riparim në mirëmbajtje ose e shton dëmtimin te një riparim i planifikuar. Me një datë kthimi, automjeti bllokohet deri atëherë.",
+          "«Dërgo për riparim» krijon një riparim në mirëmbajtje ose e shton dëmtimin te një riparim i planifikuar. Me një datë gatishmërie, automjeti bllokohet deri atëherë.",
           "Kur riparimi përfundon, dëmtimi bëhet «I riparuar». Kostoja e tij është kostoja e riparimit.",
           "Faturojini klientit të rezervimit (deri te franshiza) dhe shënoni sa pagoi sigurimi; të dyja shfaqen si të rikuperuara te raportet."
         ]
@@ -21,7 +21,7 @@
   "create": "Raporto dëmtim",
   "searchPlaceholder": "Kërkoni dëmtime ose shtoni filtra...",
   "noData": "Ende pa dëmtime",
-  "failTitle": "Dëmtime nuk u ngarkuan",
+  "failTitle": "Dëmtimet nuk u ngarkuan",
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
   "deleted": "Fshirë",
   "active": "Aktiv",
@@ -54,7 +54,7 @@
     "reservation": "Rezervimi",
     "reportedAt": "Raportuar më",
     "area": "Zona",
-    "severity": "Rëndësia",
+    "severity": "Ashpërsia",
     "status": "Statusi",
     "estimatedCost": "Kosto e vlerësuar",
     "repairedAt": "Riparuar më",

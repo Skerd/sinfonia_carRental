@@ -4,7 +4,7 @@
   "failedDescription": "Tocca per riprovare.",
   "type": "Tipo",
   "serviceDate": "Data dell'intervento",
-  "odometerKm": "Chilometraggio",
+  "odometerKm": "Chilometraggio (km)",
   "cost": "Costo",
   "status": "Stato",
   "typeValues": {

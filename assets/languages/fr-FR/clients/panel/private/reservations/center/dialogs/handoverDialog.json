@@ -38,8 +38,8 @@
     "other": "Autre"
   },
   "severity": {
-    "minor": "léger",
-    "moderate": "moyen",
+    "minor": "mineur",
+    "moderate": "modéré",
     "major": "grave"
   },
   "notReady": {

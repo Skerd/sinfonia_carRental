@@ -6,7 +6,7 @@
   "confirm": "Mostra sul sito web",
   "busy": "In corso…",
   "axios": {
-    "start": {"title": "Visualizzazione della categoria sul sito web…", "time": 3000},
+    "start": {"title": "Pubblicazione della categoria sul sito web…", "time": 3000},
     "success": {"title": "La categoria è visibile sul sito web", "time": 3000},
     "error": {"title": "Impossibile mostrare la categoria sul sito web", "time": 3000}
   }

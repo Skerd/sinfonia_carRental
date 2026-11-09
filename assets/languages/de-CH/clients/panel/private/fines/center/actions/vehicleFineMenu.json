@@ -1,6 +1,6 @@
 {
   "path": "src/modules/carRental/clients/panel/private/fines/center/actions/vehicleFineMenu.tsx",
-  "matchDriver": "Erneut zuordnen",
+  "matchDriver": "Fahrer/in erneut zuordnen",
   "chargeCustomer": "Kundschaft belasten",
   "driverLetter": "Fahrerschreiben herunterladen",
   "nominateDriver": "Fahrer/in melden",

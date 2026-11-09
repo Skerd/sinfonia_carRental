@@ -1,6 +1,6 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/cancelReservationDialog.tsx",
-  "cancel": "Mbrapa",
+  "cancel": "Kthehu",
   "confirm": "Anulo rezervimin",
   "title": "Anulo këtë rezervim",
   "description": "Makina lirohet përsëri dhe ajo që ka paguar klienti rimbursohet. Klienti merr një email.",

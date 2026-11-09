@@ -21,7 +21,7 @@
     "typeLabel": "Art",
     "typePlaceholder": "Art wählen",
     "type": {
-      "speeding": "Geschwindigkeit",
+      "speeding": "Geschwindigkeitsüberschreitung",
       "parking": "Parkieren",
       "red_light": "Rotlicht",
       "toll": "Maut",

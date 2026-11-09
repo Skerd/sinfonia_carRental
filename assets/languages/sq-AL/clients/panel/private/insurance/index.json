@@ -12,7 +12,7 @@
         "items": [
           "Përdorni «Rinovo» te menyja: regjistrimi i ri plotësohet nga i vjetri dhe lidhet me të, kështu historiku mbetet zinxhir.",
           "Stafi paralajmërohet 30 ditë para skadimit dhe sërish ditën kur skadon pa rinovim.",
-          "Një dëmtim lidhet me policën që mbulonte automjetin atë ditë, për dëmin te sigurimi."
+          "Një dëmtim lidhet me policën që mbulonte automjetin atë ditë, për kërkesën për dëmshpërblim."
         ]
       }
     ]
@@ -20,7 +20,7 @@
   "create": "Shto policë",
   "searchPlaceholder": "Kërkoni sigurime ose shtoni filtra...",
   "noData": "Ende pa sigurime",
-  "failTitle": "Sigurime nuk u ngarkuan",
+  "failTitle": "Sigurimet nuk u ngarkuan",
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
   "deleted": "Fshirë",
   "active": "Aktiv",

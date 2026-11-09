@@ -48,8 +48,8 @@
       "youngDriverDailyFee": "Frais jeune conducteur par jour",
       "additionalDriverDailyFee": "Frais de conducteur supplémentaire par jour",
       "oneWayFee": "Frais d'aller simple (retour dans une autre agence)",
-      "fuelPricePerQuarter": "Carburant par quart de réservoir manquant",
-      "refuelServiceFee": "Frais de service de remplissage",
+      "fuelPricePerQuarter": "Frais de carburant par quart de réservoir manquant",
+      "refuelServiceFee": "Frais de ravitaillement",
       "lateFeePerHour": "Frais de retard par heure",
       "cleaningFee": "Frais de nettoyage",
       "smokingFee": "Frais fumeur",
@@ -121,7 +121,7 @@
       "nextServiceDueAt": "Prochain entretien le",
       "nextServiceDueKm": "Prochain entretien à (km)",
       "notes": "Notes",
-      "odometerKm": "Kilométrage km",
+      "odometerKm": "Kilométrage (km)",
       "plate": "Plaque",
       "purchasePrice": "Prix d'achat",
       "readiness": "Disponibilité",
@@ -304,7 +304,7 @@
       "vehicle": "Véhicule",
       "vehicledamages": "Dommages des véhicules",
       "scheduleRepair": "Planifier la réparation",
-      "chargeToCustomer": "Facturer au client"
+      "chargeToCustomer": "Facturer le client"
     },
     "Rentalpromocodes": {
       "bookableFrom": "Réservable à partir du",
@@ -346,7 +346,7 @@
       "vehicle": "Véhicule",
       "vehiclefines": "Amendes",
       "matchDriver": "Identifier le conducteur",
-      "chargeCustomer": "Facturer au client",
+      "chargeCustomer": "Facturer le client",
       "nominateDriver": "Désigner le conducteur",
       "recordPayment": "Enregistrer un paiement",
       "dispute": "Contester",

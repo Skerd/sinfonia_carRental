@@ -24,7 +24,7 @@
   "deleted": "Fshirë",
   "active": "Aktiv",
   "fields": {
-    "email": "Email",
+    "email": "Emaili",
     "licenseNumber": "Numri i patentës",
     "reason": "Arsyeja",
     "isActive": "Aktiv",

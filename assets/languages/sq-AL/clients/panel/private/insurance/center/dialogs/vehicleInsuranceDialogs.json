@@ -3,7 +3,7 @@
   "back": "Kthehu",
   "cancel": {
     "title": "Anulo policën",
-    "description": "Polica {policy} mbetet e ngrirë derisa të rikthehet. Datat, mbulimi dhe shumat nuk ndryshohen.",
+    "description": "Polica {policy} mbetet e ngrirë derisa të rikthehet. Datat, mbulimi dhe shumat nuk mund të ndryshohen.",
     "confirm": "Anulo policën"
   },
   "uncancel": {

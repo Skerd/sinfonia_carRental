@@ -1,6 +1,6 @@
 {
   "path": "src/modules/carRental/clients/panel/private/reservations/center/dialogs/handoverDialog.tsx",
-  "cancel": "Mbrapa",
+  "cancel": "Kthehu",
   "confirm": "Dorëzo",
   "title": "Dorëzo makinën",
   "description": "Regjistroni kilometrat dhe nivelin e karburantit kur klienti niset.",
@@ -27,14 +27,14 @@
   "declinedLabel": "Klienti nuk nënshkroi",
   "area": {
     "front": "Përpara",
-    "rear": "Mbrapa",
+    "rear": "Prapa",
     "left": "Ana e majtë",
     "right": "Ana e djathtë",
     "roof": "Çatia",
-    "interior": "Brenda",
+    "interior": "Brendësia",
     "windshield": "Xhami i përparmë",
     "wheels": "Rrotat",
-    "underbody": "Poshtë",
+    "underbody": "Pjesa e poshtme",
     "other": "Tjetër"
   },
   "severity": {

@@ -46,7 +46,7 @@
     },
     "reference": "Reference",
     "vehicle": "Vehicle",
-    "offenceAt": "Date and time of the offence",
+    "offenceAt": "Date and time of the offense",
     "type": "Type",
     "authority": "Issued by",
     "amount": "Amount",

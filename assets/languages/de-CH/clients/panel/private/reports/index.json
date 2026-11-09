@@ -26,7 +26,7 @@
   "help": {
     "ariaLabel": "Über Berichte",
     "title": "Über Berichte",
-    "overview": "Die Auslastung ist die vermietete Zeit geteilt durch die Zeit, in der ein Fahrzeug nicht blockiert war.",
+    "overview": "Die Auslastung ist die vermietete Zeit geteilt durch die Zeit, in der ein Fahrzeug nicht gesperrt war. Der Umsatz ist die Summe der Buchungen, die im Zeitraum begonnen haben.",
     "sections": [
       {
         "title": "Die Zahlen lesen",

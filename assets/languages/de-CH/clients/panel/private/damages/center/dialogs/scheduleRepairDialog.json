@@ -1,8 +1,8 @@
 {
   "path": "src/modules/carRental/clients/panel/private/damages/center/dialogs/scheduleRepairDialog.tsx",
-  "title": "Zur Reparatur",
+  "title": "Zur Reparatur schicken",
   "description": "Erstellt für diesen Schaden eine Reparatur im Wartungsbuch oder fügt ihn einer bereits geplanten Reparatur hinzu.",
-  "confirm": "Zur Reparatur",
+  "confirm": "Zur Reparatur schicken",
   "cancel": "Zurück",
   "repairLabel": "Geplante Reparatur",
   "repairPlaceholder": "Keine: neue Reparatur planen",

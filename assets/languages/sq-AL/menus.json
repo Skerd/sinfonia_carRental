@@ -2,9 +2,9 @@
   "carRental": {
     "title": "Qiraja e makinave",
     "reservations": {"title": "Rezervimet"},
-    "planner": {"title": "Plani"},
+    "planner": {"title": "Planifikuesi"},
     "counter": {"title": "Sporteli"},
-    "reports": {"title": "Raporte"},
+    "reports": {"title": "Raportet"},
     "businessAccounts": {"title": "Llogaritë e biznesit"},
     "subscriptions": {"title": "Abonimet"},
     "reviews": {"title": "Vlerësimet"},

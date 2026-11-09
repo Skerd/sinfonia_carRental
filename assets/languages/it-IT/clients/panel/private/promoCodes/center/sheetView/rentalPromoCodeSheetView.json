@@ -21,7 +21,7 @@
   "isActive": "Attivo",
   "description": "Nota interna",
   "typeValues": {
-    "percent": "Percentuale",
+    "percent": "Sconto percentuale",
     "fixed": "Importo fisso"
   },
   "createdAt": "Creato il",

@@ -4,7 +4,7 @@
   "confirm": "Concludi noleggio",
   "title": "Ritira l'auto",
   "description": "Registra chilometri e livello del carburante e aggiungi eventuali addebiti extra. Si sommano al totale dovuto dal cliente.",
-  "odometerLabel": "Chilometri (km)",
+  "odometerLabel": "Chilometraggio (km)",
   "fuelLabel": "Livello carburante",
   "fuel": {
     "empty": "Vuoto",
@@ -42,7 +42,7 @@
   },
   "severity": {
     "minor": "lieve",
-    "moderate": "medio",
+    "moderate": "moderato",
     "major": "grave"
   }
 }

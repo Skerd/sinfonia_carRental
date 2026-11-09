@@ -50,9 +50,9 @@
   "recoveryGroup": "Coûts récupérés",
   "repair": "Réparation",
   "repairStatusValues": {
-    "scheduled": "Planifié",
-    "completed": "Terminé",
-    "cancelled": "Annulé"
+    "scheduled": "Planifiée",
+    "completed": "Terminée",
+    "cancelled": "Annulée"
   },
   "insurance": "Police d'assurance",
   "claimNumber": "Numéro de sinistre",

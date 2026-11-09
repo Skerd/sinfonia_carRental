@@ -4,7 +4,7 @@
   "confirm": "Consegna",
   "title": "Consegna l'auto",
   "description": "Registra chilometri e livello del carburante quando il cliente parte.",
-  "odometerLabel": "Chilometri (km)",
+  "odometerLabel": "Chilometraggio (km)",
   "fuelLabel": "Livello carburante",
   "fuel": {
     "empty": "Vuoto",
@@ -39,7 +39,7 @@
   },
   "severity": {
     "minor": "lieve",
-    "moderate": "medio",
+    "moderate": "moderato",
     "major": "grave"
   },
   "notReady": {

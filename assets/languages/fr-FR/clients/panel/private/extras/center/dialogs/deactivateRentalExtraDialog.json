@@ -1,21 +1,21 @@
 {
   "path": "src/modules/carRental/clients/panel/private/extras/center/dialogs/deactivateRentalExtraDialog.tsx",
-  "title": "Désactiver l'extra",
-  "description": "Cet extra ne sera plus proposé tant qu'il n'est pas réactivé.",
+  "title": "Désactiver le supplément",
+  "description": "Ce supplément ne sera plus proposé tant qu'il n'est pas réactivé.",
   "cancel": "Annuler",
   "confirm": "Désactiver",
   "busy": "En cours…",
   "axios": {
     "start": {
-      "title": "Désactivation de l'extra…",
+      "title": "Désactivation du supplément…",
       "time": 3000
     },
     "success": {
-      "title": "Extra désactivé",
+      "title": "Supplément désactivé",
       "time": 3000
     },
     "error": {
-      "title": "Impossible de désactiver l'extra",
+      "title": "Impossible de désactiver le supplément",
       "time": 3000
     }
   }

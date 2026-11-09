@@ -2,7 +2,7 @@
   "path": "src/modules/carRental/clients/panel/private/insurance/editVehicleInsurance.tsx",
   "title": "Modifica polizza",
   "description": "Modifica date, copertura o importi",
-  "cancelledLocked": "Questa polizza è annullata. Ripristinatela prima di modificarla.",
+  "cancelledLocked": "Questa polizza è annullata. Ripristinala prima di modificarla.",
   "weekday": {
     "0": "Domenica",
     "1": "Lunedì",

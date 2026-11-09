@@ -1,21 +1,21 @@
 {
   "path": "src/modules/carRental/clients/panel/private/extras/center/dialogs/deactivateRentalExtraDialog.tsx",
-  "title": "Çaktivizo ekstrën",
-  "description": "Kjo ekstra nuk do të ofrohet më derisa të aktivizohet përsëri.",
+  "title": "Çaktivizo shtesën",
+  "description": "Kjo shtesë nuk do të ofrohet më derisa të aktivizohet përsëri.",
   "cancel": "Anulo",
   "confirm": "Çaktivizo",
   "busy": "Duke punuar…",
   "axios": {
     "start": {
-      "title": "Duke çaktivizuar ekstrën…",
+      "title": "Duke çaktivizuar shtesën…",
       "time": 3000
     },
     "success": {
-      "title": "Ekstra u çaktivizua",
+      "title": "Shtesa u çaktivizua",
       "time": 3000
     },
     "error": {
-      "title": "Ekstra nuk u çaktivizua dot",
+      "title": "Shtesa nuk u çaktivizua dot",
       "time": 3000
     }
   }

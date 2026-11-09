@@ -9,7 +9,7 @@
   "statusValues": {
     "active": "Attivo",
     "maintenance": "In manutenzione",
-    "retired": "Ritirato",
+    "retired": "Dismesso",
     "held": "In attesa di pagamento",
     "confirmed": "Confermato",
     "in_progress": "In viaggio",
@@ -18,7 +18,7 @@
     "expired": "Scaduto",
     "no_show": "Non presentato"
   },
-  "readiness": "Prontezza",
+  "readiness": "Stato di preparazione",
   "readinessValues": {
     "ready": "Pronto",
     "needs_cleaning": "Da pulire",

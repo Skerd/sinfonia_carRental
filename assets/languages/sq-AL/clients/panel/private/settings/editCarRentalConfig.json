@@ -1,7 +1,7 @@
 {
   "path": "src/modules/carRental/clients/panel/private/settings/editCarRentalConfig.tsx",
   "title": "Cilësimet e qirasë së makinave",
-  "description": "Vlen për këtë qira.",
+  "description": "Vlen për këtë kompani qiraje.",
   "form": {
     "additionalDriverDailyFeeLabel": "Tarifa e shoferit shtesë në ditë",
     "additionalDriverDailyFeePlaceholder": "",
@@ -17,11 +17,11 @@
     "fineAdminFeePlaceholder": "",
     "freeCancellationHoursLabel": "Anulim falas deri në (orë para marrjes)",
     "freeCancellationHoursPlaceholder": "",
-    "fuelPricePerQuarterLabel": "Karburanti për çdo çerek rezervuari që mungon",
+    "fuelPricePerQuarterLabel": "Tarifa e karburantit për çdo çerek rezervuari që mungon",
     "fuelPricePerQuarterPlaceholder": "",
     "guestBookingAllowedLabel": "Lejo rezervimin pa llogari",
     "guestBookingAllowedPlaceholder": "",
-    "holdMinutesLabel": "Mbaje gjatë pagesës online (minuta)",
+    "holdMinutesLabel": "Mbajtja gjatë pagesës online (minuta)",
     "holdMinutesPlaceholder": "",
     "lateFeePerHourLabel": "Tarifa e vonesës për orë",
     "lateFeePerHourPlaceholder": "",
@@ -57,7 +57,7 @@
     "refuelServiceFeePlaceholder": "",
     "removeUser": "Hiq",
     "selectUser": "Zgjidh një person",
-    "smokingFeeLabel": "Tarifa e duhanit",
+    "smokingFeeLabel": "Tarifa për pirjen e duhanit",
     "smokingFeePlaceholder": "",
     "termsSectionTitle": "Kushtet e qirasë",
     "termsTextLabel": "Kushtet e qirasë",
@@ -89,7 +89,7 @@
   },
   "formHeader": {
     "title": "Cilësimet e qirasë së makinave",
-    "description": "Vlen për këtë qira."
+    "description": "Vlen për këtë kompani qiraje."
   },
   "formButtons": {
     "cancel": "Anulo",
