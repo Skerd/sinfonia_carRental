@@ -407,15 +407,5 @@
       "rentalsubscriptions": "Abbonamenti",
       "status": "Stato"
     }
-  },
-  "roles": {
-    "rental_manager": {
-      "name": "Responsabile noleggio",
-      "description": "Gestisce l'attività di noleggio: impostazioni, sedi, flotta, prezzi, extra e ogni prenotazione."
-    },
-    "rental_agent": {
-      "name": "Addetto al noleggio",
-      "description": "Lavora al banco: prenota, consegna e ritira le auto, registra pagamenti e danni, blocca le auto per la manutenzione. Non può modificare prezzi o impostazioni."
-    }
   }
 }
