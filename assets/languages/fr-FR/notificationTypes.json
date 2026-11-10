@@ -1,0 +1,67 @@
+{
+  "carRental": {
+    "title": "Location de voitures",
+    "codes": {
+      "RENTAL_RESERVATION_NEW": {
+        "title": "Nouvelle réservation de location",
+        "message": "Nouvelle réservation de location {number} ({category})"
+      },
+      "RENTAL_RESERVATION_CANCELLED": {
+        "title": "Réservation annulée par le client",
+        "message": "La réservation de location {number} a été annulée par le client"
+      },
+      "VEHICLE_INSURANCE_EXPIRING": {
+        "title": "Assurance arrivant à échéance",
+        "message": "L'assurance {policy} ({insurer}) de {plate} expire le {expiresOn}"
+      },
+      "VEHICLE_DOCUMENT_EXPIRING": {
+        "title": "Document du véhicule arrivant à échéance",
+        "message": "Un document de {plate} expire le {expiresOn}",
+        "variants": {
+          "registration": "La carte grise de {plate} expire le {expiresOn}",
+          "technical_inspection": "Le contrôle technique de {plate} expire le {expiresOn}",
+          "emissions_test": "Le contrôle antipollution de {plate} expire le {expiresOn}",
+          "road_tax": "La taxe de circulation de {plate} expire le {expiresOn}",
+          "green_card": "La carte verte de {plate} expire le {expiresOn}"
+        }
+      },
+      "VEHICLE_SERVICE_DUE": {
+        "title": "Entretien à prévoir",
+        "message": "{plate} doit passer à l'entretien",
+        "variants": {
+          "date": "{plate} doit passer à l'entretien avant le {dueOn}",
+          "km": "{plate} doit passer à l'entretien à {dueKm} km",
+          "dateAndKm": "{plate} doit passer à l'entretien avant le {dueOn} ou à {dueKm} km"
+        }
+      },
+      "VEHICLE_INSURANCE_EXPIRED": {
+        "title": "Assurance expirée",
+        "message": "L'assurance {policy} de {plate} a expiré sans renouvellement : le véhicule ne peut pas être remis"
+      },
+      "VEHICLE_DOCUMENT_EXPIRED": {
+        "title": "Document du véhicule expiré",
+        "message": "Un document de {plate} a expiré sans renouvellement",
+        "variants": {
+          "registration": "La carte grise de {plate} a expiré sans renouvellement",
+          "technical_inspection": "Le contrôle technique de {plate} a expiré sans renouvellement",
+          "emissions_test": "Le contrôle antipollution de {plate} a expiré sans renouvellement",
+          "road_tax": "La taxe de circulation de {plate} a expiré sans renouvellement",
+          "green_card": "La carte verte de {plate} a expiré sans renouvellement"
+        }
+      },
+      "VEHICLE_DAMAGE_REPORTED": {
+        "title": "Dommage signalé",
+        "message": "Nouveau dommage signalé sur {plate}",
+        "variants": {
+          "minor": "Nouveau dommage mineur signalé sur {plate}",
+          "moderate": "Nouveau dommage modéré signalé sur {plate}",
+          "major": "Nouveau dommage important signalé sur {plate}"
+        }
+      },
+      "VEHICLE_FINE_DUE": {
+        "title": "Amende à payer",
+        "message": "L'amende {reference} ({authority}) de {plate} est due le {dueOn} et n'est pas payée"
+      }
+    }
+  }
+}

@@ -1,3 +1,4 @@
+import {addCalendarDays, companyToday} from "@coreModule/helpers/general/dateTime.ts";
 import type {SearchRentalFormType} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.forms.ts";
 
 /** A trip as the site keeps it: in the URL, so search results and booking pages can be shared and reloaded. */
@@ -18,12 +19,12 @@ export function tripToSearch(trip: RentalTripParams): string {
     return params.toString();
 }
 
-/** `YYYY-MM-DD` of the day `daysAhead` from today, in the browser's calendar (a starting suggestion only). */
-export function dateInDays(daysAhead: number): string {
-    const date = new Date();
-    date.setDate(date.getDate() + daysAhead);
-    const pad = (n: number) => String(n).padStart(2, "0");
-    return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
+/**
+ * `YYYY-MM-DD` of the day `daysAhead` from today at a rental location, in its own `timeZone` (GLB-09); the visitor's
+ * zone only while no location is known yet (a starting suggestion, which the location's hours then correct).
+ */
+export function dateInDays(daysAhead: number, timeZone?: string): string {
+    return addCalendarDays(companyToday(timeZone ?? Intl.DateTimeFormat().resolvedOptions().timeZone), daysAhead);
 }
 
 /** An instant shown as the local date and time at the place it happens. */

@@ -407,5 +407,15 @@
       "rentalsubscriptions": "Subscriptions",
       "status": "Status"
     }
+  },
+  "roles": {
+    "rental_manager": {
+      "name": "Rental Manager",
+      "description": "Runs the rental business: settings, locations, fleet, prices, extras and every reservation."
+    },
+    "rental_agent": {
+      "name": "Rental Agent",
+      "description": "Works the counter: books, hands over and takes back cars, records payments and damage, blocks cars for maintenance. Cannot change prices or settings."
+    }
   }
 }

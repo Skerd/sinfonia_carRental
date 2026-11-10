@@ -1,0 +1,67 @@
+{
+  "carRental": {
+    "title": "Autovermietung",
+    "codes": {
+      "RENTAL_RESERVATION_NEW": {
+        "title": "Neue Mietbuchung",
+        "message": "Neue Mietbuchung {number} ({category})"
+      },
+      "RENTAL_RESERVATION_CANCELLED": {
+        "title": "Buchung vom Kunden storniert",
+        "message": "Mietbuchung {number} wurde vom Kunden storniert"
+      },
+      "VEHICLE_INSURANCE_EXPIRING": {
+        "title": "Versicherung läuft ab",
+        "message": "Versicherung {policy} ({insurer}) von {plate} läuft am {expiresOn} ab"
+      },
+      "VEHICLE_DOCUMENT_EXPIRING": {
+        "title": "Fahrzeugdokument läuft ab",
+        "message": "Ein Dokument von {plate} läuft am {expiresOn} ab",
+        "variants": {
+          "registration": "Der Fahrzeugausweis von {plate} läuft am {expiresOn} ab",
+          "technical_inspection": "Die Motorfahrzeugkontrolle von {plate} läuft am {expiresOn} ab",
+          "emissions_test": "Die Abgaswartung von {plate} läuft am {expiresOn} ab",
+          "road_tax": "Die Motorfahrzeugsteuer von {plate} läuft am {expiresOn} ab",
+          "green_card": "Die grüne Versicherungskarte von {plate} läuft am {expiresOn} ab"
+        }
+      },
+      "VEHICLE_SERVICE_DUE": {
+        "title": "Service fällig",
+        "message": "{plate} muss zum Service",
+        "variants": {
+          "date": "{plate} muss bis {dueOn} zum Service",
+          "km": "{plate} muss bei {dueKm} km zum Service",
+          "dateAndKm": "{plate} muss bis {dueOn} oder bei {dueKm} km zum Service"
+        }
+      },
+      "VEHICLE_INSURANCE_EXPIRED": {
+        "title": "Versicherung abgelaufen",
+        "message": "Versicherung {policy} von {plate} ist abgelaufen und wurde nicht erneuert: das Fahrzeug kann nicht übergeben werden"
+      },
+      "VEHICLE_DOCUMENT_EXPIRED": {
+        "title": "Fahrzeugdokument abgelaufen",
+        "message": "Ein Dokument von {plate} ist abgelaufen und wurde nicht erneuert",
+        "variants": {
+          "registration": "Der Fahrzeugausweis von {plate} ist abgelaufen und wurde nicht erneuert",
+          "technical_inspection": "Die Motorfahrzeugkontrolle von {plate} ist abgelaufen und wurde nicht erneuert",
+          "emissions_test": "Die Abgaswartung von {plate} ist abgelaufen und wurde nicht erneuert",
+          "road_tax": "Die Motorfahrzeugsteuer von {plate} ist abgelaufen und wurde nicht erneuert",
+          "green_card": "Die grüne Versicherungskarte von {plate} ist abgelaufen und wurde nicht erneuert"
+        }
+      },
+      "VEHICLE_DAMAGE_REPORTED": {
+        "title": "Schaden gemeldet",
+        "message": "Neuer Schaden an {plate} gemeldet",
+        "variants": {
+          "minor": "Neuer leichter Schaden an {plate} gemeldet",
+          "moderate": "Neuer mittlerer Schaden an {plate} gemeldet",
+          "major": "Neuer schwerer Schaden an {plate} gemeldet"
+        }
+      },
+      "VEHICLE_FINE_DUE": {
+        "title": "Busse fällig",
+        "message": "Busse {reference} ({authority}) von {plate} ist am {dueOn} fällig und nicht bezahlt"
+      }
+    }
+  }
+}

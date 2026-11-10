@@ -407,5 +407,15 @@
       "rentalsubscriptions": "Abos",
       "status": "Status"
     }
+  },
+  "roles": {
+    "rental_manager": {
+      "name": "Leitung Autovermietung",
+      "description": "Führt das Vermietungsgeschäft: Einstellungen, Standorte, Flotte, Preise, Extras und jede Reservierung."
+    },
+    "rental_agent": {
+      "name": "Vermietungsmitarbeiter",
+      "description": "Arbeitet am Schalter: bucht, übergibt und nimmt Autos zurück, erfasst Zahlungen und Schäden, sperrt Autos für die Wartung. Kann keine Preise oder Einstellungen ändern."
+    }
   }
 }

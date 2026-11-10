@@ -1,0 +1,67 @@
+{
+  "carRental": {
+    "title": "Car rental",
+    "codes": {
+      "RENTAL_RESERVATION_NEW": {
+        "title": "New rental booking",
+        "message": "New rental booking {number} ({category})"
+      },
+      "RENTAL_RESERVATION_CANCELLED": {
+        "title": "Booking cancelled by the customer",
+        "message": "Rental booking {number} was cancelled by the customer"
+      },
+      "VEHICLE_INSURANCE_EXPIRING": {
+        "title": "Insurance expiring",
+        "message": "Insurance {policy} ({insurer}) of {plate} expires on {expiresOn}"
+      },
+      "VEHICLE_DOCUMENT_EXPIRING": {
+        "title": "Car document expiring",
+        "message": "A document of {plate} expires on {expiresOn}",
+        "variants": {
+          "registration": "The registration of {plate} expires on {expiresOn}",
+          "technical_inspection": "The technical inspection of {plate} expires on {expiresOn}",
+          "emissions_test": "The emissions test of {plate} expires on {expiresOn}",
+          "road_tax": "The road tax of {plate} expires on {expiresOn}",
+          "green_card": "The green card of {plate} expires on {expiresOn}"
+        }
+      },
+      "VEHICLE_SERVICE_DUE": {
+        "title": "Service due",
+        "message": "{plate} is due for service",
+        "variants": {
+          "date": "{plate} is due for service by {dueOn}",
+          "km": "{plate} is due for service at {dueKm} km",
+          "dateAndKm": "{plate} is due for service by {dueOn} or at {dueKm} km"
+        }
+      },
+      "VEHICLE_INSURANCE_EXPIRED": {
+        "title": "Insurance expired",
+        "message": "Insurance {policy} of {plate} has expired with no renewal: the car cannot be handed over"
+      },
+      "VEHICLE_DOCUMENT_EXPIRED": {
+        "title": "Car document expired",
+        "message": "A document of {plate} has expired with no renewal",
+        "variants": {
+          "registration": "The registration of {plate} has expired with no renewal",
+          "technical_inspection": "The technical inspection of {plate} has expired with no renewal",
+          "emissions_test": "The emissions test of {plate} has expired with no renewal",
+          "road_tax": "The road tax of {plate} has expired with no renewal",
+          "green_card": "The green card of {plate} has expired with no renewal"
+        }
+      },
+      "VEHICLE_DAMAGE_REPORTED": {
+        "title": "Damage reported",
+        "message": "New damage reported on {plate}",
+        "variants": {
+          "minor": "New minor damage reported on {plate}",
+          "moderate": "New moderate damage reported on {plate}",
+          "major": "New major damage reported on {plate}"
+        }
+      },
+      "VEHICLE_FINE_DUE": {
+        "title": "Fine due",
+        "message": "Fine {reference} ({authority}) of {plate} is due on {dueOn} and not paid"
+      }
+    }
+  }
+}

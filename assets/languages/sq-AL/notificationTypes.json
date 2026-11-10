@@ -1,0 +1,67 @@
+{
+  "carRental": {
+    "title": "Qiraja e makinave",
+    "codes": {
+      "RENTAL_RESERVATION_NEW": {
+        "title": "Rezervim i ri qiraje",
+        "message": "Rezervim i ri qiraje {number} ({category})"
+      },
+      "RENTAL_RESERVATION_CANCELLED": {
+        "title": "Rezervimi u anulua nga klienti",
+        "message": "Rezervimi i qirasë {number} u anulua nga klienti"
+      },
+      "VEHICLE_INSURANCE_EXPIRING": {
+        "title": "Sigurimi po skadon",
+        "message": "Sigurimi {policy} ({insurer}) i {plate} skadon më {expiresOn}"
+      },
+      "VEHICLE_DOCUMENT_EXPIRING": {
+        "title": "Dokumenti i makinës po skadon",
+        "message": "Një dokument i {plate} skadon më {expiresOn}",
+        "variants": {
+          "registration": "Leja e qarkullimit e {plate} skadon më {expiresOn}",
+          "technical_inspection": "Kontrolli teknik i {plate} skadon më {expiresOn}",
+          "emissions_test": "Kontrolli i shkarkimeve i {plate} skadon më {expiresOn}",
+          "road_tax": "Taksa rrugore e {plate} skadon më {expiresOn}",
+          "green_card": "Karta jeshile e {plate} skadon më {expiresOn}"
+        }
+      },
+      "VEHICLE_SERVICE_DUE": {
+        "title": "Servisi është në afat",
+        "message": "{plate} duhet të shkojë në servis",
+        "variants": {
+          "date": "{plate} duhet të shkojë në servis deri më {dueOn}",
+          "km": "{plate} duhet të shkojë në servis në {dueKm} km",
+          "dateAndKm": "{plate} duhet të shkojë në servis deri më {dueOn} ose në {dueKm} km"
+        }
+      },
+      "VEHICLE_INSURANCE_EXPIRED": {
+        "title": "Sigurimi ka skaduar",
+        "message": "Sigurimi {policy} i {plate} ka skaduar pa u rinovuar: makina nuk mund të dorëzohet"
+      },
+      "VEHICLE_DOCUMENT_EXPIRED": {
+        "title": "Dokumenti i makinës ka skaduar",
+        "message": "Një dokument i {plate} ka skaduar pa u rinovuar",
+        "variants": {
+          "registration": "Leja e qarkullimit e {plate} ka skaduar pa u rinovuar",
+          "technical_inspection": "Kontrolli teknik i {plate} ka skaduar pa u rinovuar",
+          "emissions_test": "Kontrolli i shkarkimeve i {plate} ka skaduar pa u rinovuar",
+          "road_tax": "Taksa rrugore e {plate} ka skaduar pa u rinovuar",
+          "green_card": "Karta jeshile e {plate} ka skaduar pa u rinovuar"
+        }
+      },
+      "VEHICLE_DAMAGE_REPORTED": {
+        "title": "U raportua dëmtim",
+        "message": "U raportua dëmtim i ri në {plate}",
+        "variants": {
+          "minor": "U raportua dëmtim i lehtë i ri në {plate}",
+          "moderate": "U raportua dëmtim i mesëm i ri në {plate}",
+          "major": "U raportua dëmtim i rëndë i ri në {plate}"
+        }
+      },
+      "VEHICLE_FINE_DUE": {
+        "title": "Gjoba në afat",
+        "message": "Gjoba {reference} ({authority}) e {plate} skadon më {dueOn} dhe nuk është paguar"
+      }
+    }
+  }
+}

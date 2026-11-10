@@ -122,9 +122,9 @@ function RentalSearchForm({
     const [trip, setTrip] = useState<RentalTripParams>(() => initial ?? {
         pickupLocation: pickupLocations[0]?._id ?? "",
         returnLocation: pickupLocations[0]?._id ?? "",
-        pickupDate: dateInDays(1),
+        pickupDate: dateInDays(1, pickupLocations[0]?.timezone),
         pickupTime: "10:00",
-        returnDate: dateInDays(4),
+        returnDate: dateInDays(4, pickupLocations[0]?.timezone),
         returnTime: "10:00",
     });
     const [differentReturn, setDifferentReturn] = useState(() => !!initial && initial.returnLocation !== initial.pickupLocation);
@@ -138,7 +138,7 @@ function RentalSearchForm({
     const maxAdvanceDays = config?.maxAdvanceDays ?? 90;
     const maxRentalDays = config?.maxRentalDays ?? 30;
     const minRentalHours = config?.minRentalHours ?? 1;
-    const today = pickupLocation ? locationNow(pickupLocation.timezone).date : dateInDays(0);
+    const today = dateInDays(0, (pickupLocation ?? pickupLocations[0])?.timezone);
     const lastReturn = useMemo(() => {
         const date = parseDay(today);
         date.setDate(date.getDate() + maxAdvanceDays + maxRentalDays);
@@ -335,7 +335,7 @@ function RentalSearchForm({
                 <>
                     <label className="flex flex-col gap-1.5">
                         <span className="text-sm font-medium">{resolveLanguageKey("pickupDate")}</span>
-                        <Input type="date" value={trip.pickupDate} min={dateInDays(0)} onChange={(e) => update({pickupDate: e.target.value})} required />
+                        <Input type="date" value={trip.pickupDate} min={today} onChange={(e) => update({pickupDate: e.target.value})} required />
                     </label>
                     <label className="flex flex-col gap-1.5">
                         <span className="text-sm font-medium">{resolveLanguageKey("pickupTime")}</span>

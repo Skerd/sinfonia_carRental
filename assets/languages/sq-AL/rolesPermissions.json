@@ -407,5 +407,15 @@
       "rentalsubscriptions": "Abonimet",
       "status": "Statusi"
     }
+  },
+  "roles": {
+    "rental_manager": {
+      "name": "Menaxher i qirasë",
+      "description": "Drejton biznesin e qirasë: cilësimet, pikat, flotën, çmimet, shtesat dhe çdo rezervim."
+    },
+    "rental_agent": {
+      "name": "Agjent i qirasë",
+      "description": "Punon në sportel: rezervon, dorëzon dhe merr mbrapsht makinat, regjistron pagesat dhe dëmet, bllokon makinat për mirëmbajtje. Nuk mund të ndryshojë çmimet ose cilësimet."
+    }
   }
 }

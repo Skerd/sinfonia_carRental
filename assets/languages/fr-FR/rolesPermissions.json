@@ -407,5 +407,15 @@
       "rentalsubscriptions": "Abonnements",
       "status": "Statut"
     }
+  },
+  "roles": {
+    "rental_manager": {
+      "name": "Responsable de location",
+      "description": "Dirige l'activité de location : paramètres, agences, flotte, tarifs, options et chaque réservation."
+    },
+    "rental_agent": {
+      "name": "Agent de location",
+      "description": "Travaille au comptoir : réserve, remet et reprend les voitures, enregistre les paiements et les dommages, bloque les voitures pour l'entretien. Ne peut pas modifier les tarifs ni les paramètres."
+    }
   }
 }

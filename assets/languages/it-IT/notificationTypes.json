@@ -1,0 +1,67 @@
+{
+  "carRental": {
+    "title": "Autonoleggio",
+    "codes": {
+      "RENTAL_RESERVATION_NEW": {
+        "title": "Nuova prenotazione di noleggio",
+        "message": "Nuova prenotazione di noleggio {number} ({category})"
+      },
+      "RENTAL_RESERVATION_CANCELLED": {
+        "title": "Prenotazione annullata dal cliente",
+        "message": "La prenotazione di noleggio {number} è stata annullata dal cliente"
+      },
+      "VEHICLE_INSURANCE_EXPIRING": {
+        "title": "Assicurazione in scadenza",
+        "message": "L'assicurazione {policy} ({insurer}) di {plate} scade il {expiresOn}"
+      },
+      "VEHICLE_DOCUMENT_EXPIRING": {
+        "title": "Documento del veicolo in scadenza",
+        "message": "Un documento di {plate} scade il {expiresOn}",
+        "variants": {
+          "registration": "La carta di circolazione di {plate} scade il {expiresOn}",
+          "technical_inspection": "La revisione di {plate} scade il {expiresOn}",
+          "emissions_test": "Il controllo delle emissioni di {plate} scade il {expiresOn}",
+          "road_tax": "La tassa di circolazione di {plate} scade il {expiresOn}",
+          "green_card": "La carta verde di {plate} scade il {expiresOn}"
+        }
+      },
+      "VEHICLE_SERVICE_DUE": {
+        "title": "Tagliando in scadenza",
+        "message": "{plate} deve fare il tagliando",
+        "variants": {
+          "date": "{plate} deve fare il tagliando entro il {dueOn}",
+          "km": "{plate} deve fare il tagliando a {dueKm} km",
+          "dateAndKm": "{plate} deve fare il tagliando entro il {dueOn} o a {dueKm} km"
+        }
+      },
+      "VEHICLE_INSURANCE_EXPIRED": {
+        "title": "Assicurazione scaduta",
+        "message": "L'assicurazione {policy} di {plate} è scaduta senza rinnovo: il veicolo non può essere consegnato"
+      },
+      "VEHICLE_DOCUMENT_EXPIRED": {
+        "title": "Documento del veicolo scaduto",
+        "message": "Un documento di {plate} è scaduto senza rinnovo",
+        "variants": {
+          "registration": "La carta di circolazione di {plate} è scaduta senza rinnovo",
+          "technical_inspection": "La revisione di {plate} è scaduta senza rinnovo",
+          "emissions_test": "Il controllo delle emissioni di {plate} è scaduto senza rinnovo",
+          "road_tax": "La tassa di circolazione di {plate} è scaduta senza rinnovo",
+          "green_card": "La carta verde di {plate} è scaduta senza rinnovo"
+        }
+      },
+      "VEHICLE_DAMAGE_REPORTED": {
+        "title": "Danno segnalato",
+        "message": "Nuovo danno segnalato su {plate}",
+        "variants": {
+          "minor": "Nuovo danno lieve segnalato su {plate}",
+          "moderate": "Nuovo danno moderato segnalato su {plate}",
+          "major": "Nuovo danno grave segnalato su {plate}"
+        }
+      },
+      "VEHICLE_FINE_DUE": {
+        "title": "Multa in scadenza",
+        "message": "La multa {reference} ({authority}) di {plate} scade il {dueOn} e non è pagata"
+      }
+    }
+  }
+}
