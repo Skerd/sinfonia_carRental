@@ -21,8 +21,8 @@ function CarRentalSettingsGate({resolveLanguageKey}: WithLanguageType) {
 
     if (error) return <SimpleError title={String(resolveLanguageKey("loadError"))} />;
     if (!config) return <Loader />;
-    const sectionTitle = String(resolveLanguageKey(`menus.tenancy.systemSettings.carRentalConfig.${section}.title`));
-    return <EditCarRentalConfig key={section} entityId={config._id} entityName={sectionTitle} />;
+    // The route crumbs already end with the section, so the page publishes no extra title (it would repeat it).
+    return <EditCarRentalConfig key={section} entityId={config._id} />;
 }
 
 export default compose(

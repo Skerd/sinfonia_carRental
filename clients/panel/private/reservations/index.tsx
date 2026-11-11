@@ -92,13 +92,14 @@ function AllRentalReservations({resolveLanguageKey}: WithLanguageType) {
                     onUpdated={(updated) => listRef.current?.updateRow?.(entity._id, updated)}
                 />
             )}
-            renderSheet={({open, onOpenChange, entity, onDelete, onRestore}) => (
+            renderSheet={({open, onOpenChange, entity, onDelete, onRestore, listRef}) => (
                 <RentalReservationSheetView
                     open={open}
                     onOpenChange={onOpenChange}
                     rentalReservation={entity}
                     onDelete={onDelete}
                     onRestore={onRestore}
+                    onSheetRowPatched={(row: Partial<RentalReservation>) => listRef.current?.updateRow?.(entity._id, row)}
                 />
             )}
             renderCard={(row, onDelete, onRestore) => (

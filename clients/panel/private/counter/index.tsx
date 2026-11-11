@@ -417,6 +417,7 @@ function RentalCounterPage({
                     open
                     onOpenChange={(open: boolean) => !open && setOpenId(null)}
                     fetchId={openId}
+                    onSheetRowPatched={load}
                 />
             ) : null}
         </div>

@@ -7,6 +7,8 @@ import SheetViewRenderer from "@coreModule/components/viewEngine/SheetViewRender
 import {useViewConfig} from "@coreModule/helpers/hooks/useViewConfig.ts";
 import type {RentalReservation} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
+import RentalReservationMenu, {type RentalReservationAction} from "@carRentalModule/clients/panel/private/reservations/center/actions/rentalReservationMenu.tsx";
+import RentalReservationDialogs from "@carRentalModule/clients/panel/private/reservations/center/dialogs/rentalReservationDialogs.tsx";
 
 type RentalReservationSheetViewOwnProps = {
     open: boolean;
@@ -19,6 +21,7 @@ type RentalReservationSheetViewOwnProps = {
     fetchId?: string;
 };
 
+/** Reservations change only through their lifecycle actions, so the sheet owns that menu and has no Edit. */
 function RentalReservationSheetView({
     open,
     onOpenChange,
@@ -31,8 +34,13 @@ function RentalReservationSheetView({
     fetchId,
 }: RentalReservationSheetViewOwnProps & WithLanguageType) {
     const [sheetData, setSheetData] = useState<Record<string, unknown>>(rentalReservationProp || {_id: fetchId});
+    const [action, setAction] = useState("");
     const access = useAccess("rentalreservations");
     const viewConfig = useViewConfig("rentalreservations", "sheet");
+
+    useEffect(() => {
+        if (!open) setAction("");
+    }, [open]);
 
     useEffect(() => {
         if (!rentalReservationProp) return;
@@ -41,27 +49,42 @@ function RentalReservationSheetView({
 
     const entityId = rentalReservationProp?._id ?? fetchId;
     if (!viewConfig || !entityId) return null;
+    const reservation = sheetData as RentalReservation;
+    const patched = (row: Partial<RentalReservation>) => {
+        setSheetData((current) => ({...current, ...row}));
+        onSheetRowPatched?.(row);
+    };
 
     return (
-        <SheetViewRenderer
-            config={viewConfig}
-            url="/api/carRental/rentalReservation/single"
-            fetchId={fetchId ?? entityId}
-            onDataFetched={(data) => setSheetData(data)}
-            data={sheetData}
-            open={open}
-            onOpenChange={onOpenChange}
-            resolveLanguageKey={resolveLanguageKey}
-            access={access}
-            hideActions={hideActions}
-            onDelete={onDelete}
-            onRestore={onRestore}
-            editPath={""}
-            onSheetRowPatched={(row) => {
-                setSheetData(row);
-                onSheetRowPatched?.(row as Partial<RentalReservation>);
-            }}
-        />
+        <>
+            <SheetViewRenderer
+                config={viewConfig}
+                url="/api/carRental/rentalReservation/single"
+                fetchId={fetchId ?? entityId}
+                onDataFetched={(data) => setSheetData(data)}
+                data={sheetData}
+                open={open}
+                onOpenChange={onOpenChange}
+                resolveLanguageKey={resolveLanguageKey}
+                access={access}
+                hideActions={hideActions}
+                hideEdit
+                onDelete={onDelete}
+                onRestore={onRestore}
+                editPath=""
+                onSheetRowPatched={(row) => patched(row as Partial<RentalReservation>)}
+                actionMenuAllowCustomChildren
+                actionMenuChildren={reservation.status ? <RentalReservationMenu reservation={reservation} onAction={(next: RentalReservationAction) => setAction(next)} /> : null}
+            />
+            {action ? (
+                <RentalReservationDialogs
+                    action={action}
+                    reservation={reservation}
+                    onClose={() => setAction("")}
+                    onUpdated={patched}
+                />
+            ) : null}
+        </>
     );
 }
 

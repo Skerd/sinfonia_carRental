@@ -52,11 +52,9 @@ function RentalReservationCard({
             failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="number"
             innerRef={innerRef}
-            sheetProps={({entity, setAction}) => ({
+            sheetProps={({entity, setEntity}) => ({
                 fetchId,
-                actionMenuAllowCustomChildren: true,
-                onActionMenuAction: setAction,
-                actionMenuChildren: <RentalReservationMenu reservation={entity} onAction={setAction} />,
+                onSheetRowPatched: (row: Partial<RentalReservation>) => setEntity({...entity, ...row}),
             })}
             extraDialogs={({action, setAction, entity, setEntity}) => (
                 <RentalReservationDialogs

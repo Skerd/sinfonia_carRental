@@ -201,7 +201,7 @@ function RentalPlannerPage({resolveLanguageKey, languageCode}: WithLanguageType)
             ) : null}
             <p className="text-xs text-muted-foreground">{resolveLanguageKey("hint")}</p>
             {openReservation ? (
-                <RentalReservationSheetView open onOpenChange={(open: boolean) => !open && setOpenReservation(null)} fetchId={openReservation} />
+                <RentalReservationSheetView open onOpenChange={(open: boolean) => !open && setOpenReservation(null)} fetchId={openReservation} onSheetRowPatched={load} />
             ) : null}
         </div>
     );
