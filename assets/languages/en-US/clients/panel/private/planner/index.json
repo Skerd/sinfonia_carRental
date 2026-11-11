@@ -13,7 +13,7 @@
   "car": "Car",
   "noCars": "No cars match these filters.",
   "needsTransfer": "The car must be moved to the pickup location",
-  "hint": "Drag a booking onto another car of the same category to move it there. Click it to open the booking.",
+  "hint": "Drag a booking onto another car of its class to move it; the bar shows whether it fits. Click a booking to open it.",
   "moved": "{number} moved to {plate}",
   "blockReason": {
     "maintenance": "Maintenance",
@@ -25,5 +25,30 @@
     "ready": "Ready",
     "needs_cleaning": "Needs cleaning",
     "needs_check": "Needs a check"
+  },
+  "title": "Planner",
+  "description": "Every car and its bookings, day by day",
+  "help": {
+    "ariaLabel": "About the planner",
+    "title": "About the planner",
+    "overview": "One row per car, grouped by class. Bars are bookings in their status colour; hatched bars are blocks (service, repair, transfer)."
+  },
+  "legend": "Legend",
+  "blockedLegend": "Blocked",
+  "drop": {
+    "free": "Free, drop to move here",
+    "sameCar": "Already on this car",
+    "otherCategory": "Another class: a booking stays in its class",
+    "overlap": "Overlaps another booking on this car",
+    "blocked": "The car is blocked then"
+  },
+  "statusValues": {
+    "held": "Awaiting payment",
+    "confirmed": "Confirmed",
+    "in_progress": "On the road",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "expired": "Expired",
+    "no_show": "No-show"
   }
 }

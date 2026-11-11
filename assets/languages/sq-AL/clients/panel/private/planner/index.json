@@ -13,7 +13,7 @@
   "car": "Makina",
   "noCars": "Asnjë makinë nuk përputhet me këta filtra.",
   "needsTransfer": "Makina duhet çuar te vendi i marrjes",
-  "hint": "Tërhiqni një rezervim mbi një makinë tjetër të së njëjtës kategori për ta zhvendosur. Klikoni për ta hapur.",
+  "hint": "Tërhiqeni një rezervim mbi një makinë tjetër të së njëjtës kategori; shiriti tregon nëse përshtatet. Klikoni një rezervim për ta hapur.",
   "moved": "{number} u zhvendos te {plate}",
   "blockReason": {
     "maintenance": "Mirëmbajtje",
@@ -25,5 +25,30 @@
     "ready": "Gati",
     "needs_cleaning": "Duhet pastruar",
     "needs_check": "Duhet kontrolluar"
+  },
+  "title": "Planifikuesi",
+  "description": "Çdo makinë dhe rezervimet e saj, ditë pas dite",
+  "help": {
+    "ariaLabel": "Rreth planifikuesit",
+    "title": "Rreth planifikuesit",
+    "overview": "Një rresht për çdo makinë, sipas kategorisë. Shiritat janë rezervime me ngjyrën e statusit; shiritat me viza janë bllokime (mirëmbajtje, riparim, transferim)."
+  },
+  "legend": "Legjenda",
+  "blockedLegend": "E bllokuar",
+  "drop": {
+    "free": "E lirë, lëshojeni këtu",
+    "sameCar": "Tashmë në këtë makinë",
+    "otherCategory": "Kategori tjetër: rezervimi mbetet në kategorinë e vet",
+    "overlap": "Mbivendoset me një rezervim tjetër",
+    "blocked": "Makina është e bllokuar atëherë"
+  },
+  "statusValues": {
+    "held": "Në pritje të pagesës",
+    "confirmed": "Konfirmuar",
+    "in_progress": "Në rrugë",
+    "completed": "Përfunduar",
+    "cancelled": "Anuluar",
+    "expired": "Skaduar",
+    "no_show": "Mosparaqitje"
   }
 }

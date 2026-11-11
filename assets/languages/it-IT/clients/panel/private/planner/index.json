@@ -13,7 +13,7 @@
   "car": "Veicolo",
   "noCars": "Nessun veicolo corrisponde a questi filtri.",
   "needsTransfer": "Il veicolo va portato alla sede di ritiro",
-  "hint": "Trascina una prenotazione su un altro veicolo della stessa categoria per spostarla. Fai clic per aprirla.",
+  "hint": "Trascina una prenotazione su un'altra auto della sua categoria; la barra mostra se ci sta. Fai clic su una prenotazione per aprirla.",
   "moved": "{number} spostata su {plate}",
   "blockReason": {
     "maintenance": "Manutenzione",
@@ -25,5 +25,30 @@
     "ready": "Pronto",
     "needs_cleaning": "Da pulire",
     "needs_check": "Da controllare"
+  },
+  "title": "Pianificazione",
+  "description": "Ogni auto e le sue prenotazioni, giorno per giorno",
+  "help": {
+    "ariaLabel": "Informazioni sul planner",
+    "title": "Informazioni sul planner",
+    "overview": "Una riga per auto, raggruppate per categoria. Le barre sono prenotazioni nel colore del loro stato; quelle tratteggiate sono blocchi (manutenzione, riparazione, trasferimento)."
+  },
+  "legend": "Legenda",
+  "blockedLegend": "Bloccata",
+  "drop": {
+    "free": "Libera, rilascia qui",
+    "sameCar": "Già su questa auto",
+    "otherCategory": "Altra categoria: una prenotazione resta nella sua categoria",
+    "overlap": "Si sovrappone a un'altra prenotazione",
+    "blocked": "L'auto è bloccata in quel periodo"
+  },
+  "statusValues": {
+    "held": "In attesa di pagamento",
+    "confirmed": "Confermato",
+    "in_progress": "In viaggio",
+    "completed": "Completato",
+    "cancelled": "Annullato",
+    "expired": "Scaduto",
+    "no_show": "Non presentato"
   }
 }

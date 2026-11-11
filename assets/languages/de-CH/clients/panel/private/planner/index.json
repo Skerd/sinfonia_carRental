@@ -13,7 +13,7 @@
   "car": "Fahrzeug",
   "noCars": "Keine Fahrzeuge für diese Filter.",
   "needsTransfer": "Das Fahrzeug muss an den Abholort gebracht werden",
-  "hint": "Ziehen Sie eine Buchung auf ein anderes Fahrzeug derselben Kategorie, um sie zu verschieben. Klicken Sie, um sie zu öffnen.",
+  "hint": "Ziehen Sie eine Buchung auf ein anderes Auto ihrer Klasse; der Balken zeigt, ob sie passt. Klicken Sie eine Buchung an, um sie zu öffnen.",
   "moved": "{number} auf {plate} verschoben",
   "blockReason": {
     "maintenance": "Wartung",
@@ -25,5 +25,30 @@
     "ready": "Bereit",
     "needs_cleaning": "Reinigung nötig",
     "needs_check": "Kontrolle nötig"
+  },
+  "title": "Planung",
+  "description": "Jedes Auto und seine Buchungen, Tag für Tag",
+  "help": {
+    "ariaLabel": "Über den Planer",
+    "title": "Über den Planer",
+    "overview": "Eine Zeile pro Auto, nach Klasse gruppiert. Balken sind Buchungen in der Farbe ihres Status; schraffierte Balken sind Sperren (Wartung, Reparatur, Überführung)."
+  },
+  "legend": "Legende",
+  "blockedLegend": "Gesperrt",
+  "drop": {
+    "free": "Frei, hier ablegen",
+    "sameCar": "Bereits auf diesem Auto",
+    "otherCategory": "Andere Klasse: eine Buchung bleibt in ihrer Klasse",
+    "overlap": "Überschneidet sich mit einer anderen Buchung",
+    "blocked": "Das Auto ist dann gesperrt"
+  },
+  "statusValues": {
+    "held": "Wartet auf Zahlung",
+    "confirmed": "Bestätigt",
+    "in_progress": "Unterwegs",
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert",
+    "expired": "Abgelaufen",
+    "no_show": "Nicht erschienen"
   }
 }

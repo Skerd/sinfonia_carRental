@@ -7,7 +7,7 @@
   "location": "Standort",
   "allLocations": "Alle Standorte",
   "search": "Suche",
-  "searchPlaceholder": "Kennzeichen oder Buchungsnummer",
+  "searchPlaceholder": "Name, Kennzeichen oder Buchungsnummer",
   "pickups": "Abholungen",
   "returns": "Rückgaben",
   "overdue": "Überfällig",

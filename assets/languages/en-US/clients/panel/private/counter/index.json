@@ -7,7 +7,7 @@
   "location": "Location",
   "allLocations": "All locations",
   "search": "Search",
-  "searchPlaceholder": "Plate or booking number",
+  "searchPlaceholder": "Name, plate or booking number",
   "pickups": "Pickups",
   "returns": "Returns",
   "overdue": "Overdue",

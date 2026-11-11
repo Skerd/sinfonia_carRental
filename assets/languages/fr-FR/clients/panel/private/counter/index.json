@@ -7,7 +7,7 @@
   "location": "Agence",
   "allLocations": "Toutes les agences",
   "search": "Recherche",
-  "searchPlaceholder": "Plaque ou numéro de réservation",
+  "searchPlaceholder": "Nom, plaque ou numéro de réservation",
   "pickups": "Départs",
   "returns": "Retours",
   "overdue": "En retard",

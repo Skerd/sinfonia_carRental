@@ -31,6 +31,7 @@ import type {
 import type {RentalReservation} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.dto.ts";
 import type {RentalDepositStatus} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.constants.ts";
 import RentalReservationDialogs from "@carRentalModule/clients/panel/private/reservations/center/dialogs/rentalReservationDialogs.tsx";
+import {DATE_FORMATS, formatDate} from "@coreModule/helpers/general/dateTime.ts";
 import RentalReservationSheetView from "@carRentalModule/clients/panel/private/reservations/center/sheetView/rentalReservationSheetView.tsx";
 
 type Board = RentalCounterResponse["data"];
@@ -89,25 +90,18 @@ function counterActions(
     return actions;
 }
 
-function formatWhen(
-    iso: string,
-    timezone: string,
-    languageCode: string,
-    withDate: boolean,
-) {
-    return new Intl.DateTimeFormat(languageCode, {
-        timeZone: timezone,
-        ...(withDate
-            ? {dateStyle: "medium", timeStyle: "short"}
-            : {timeStyle: "short"}),
-    }).format(new Date(iso));
+const TIME: Intl.DateTimeFormatOptions = {hour: "2-digit", minute: "2-digit"};
+const DAY_AND_TIME: Intl.DateTimeFormatOptions = {...DATE_FORMATS.mediumDate, ...TIME};
+
+/** The pickup or return time at the branch, in the language picked in the app (GLB-09). */
+function formatWhen(iso: string, timezone: string, withDate: boolean) {
+    return formatDate(iso, {timeZone: timezone, format: withDate ? DAY_AND_TIME : TIME});
 }
 
 type CardProps = {
     reservation: RentalReservation;
     column: Column;
     timezone: string;
-    languageCode: string;
     resolveLanguageKey: WithLanguageType["resolveLanguageKey"];
     canMove: boolean;
     canTakePayment: boolean;
@@ -119,7 +113,6 @@ function CounterCard({
     reservation,
     column,
     timezone,
-    languageCode,
     resolveLanguageKey,
     canMove,
     canTakePayment,
@@ -146,7 +139,6 @@ function CounterCard({
                         {formatWhen(
                             when,
                             timezone,
-                            languageCode,
                             column === "overdue",
                         )}
                     </p>
@@ -242,7 +234,6 @@ function CounterCard({
  */
 function RentalCounterPage({
     resolveLanguageKey,
-    languageCode,
 }: WithLanguageType) {
     const {write} = useAccess("rentalreservations");
     const canMove = !!write?.status;
@@ -277,10 +268,9 @@ function RentalCounterPage({
     const matches = (reservation: RentalReservation) => {
         if (!needle) return true;
         const plate = reservation.vehicle?.plate ?? "";
-        return (
-            plate.toLocaleLowerCase().includes(needle) ||
-            reservation.number.toLocaleLowerCase().includes(needle)
-        );
+        // The desk asks for a name as often as for a plate or a booking number.
+        const name = `${reservation.contact.firstName} ${reservation.contact.lastName}`;
+        return [plate, reservation.number, name].some((text) => text.toLocaleLowerCase().includes(needle));
     };
 
     return (
@@ -363,7 +353,6 @@ function RentalCounterPage({
                                               reservation={reservation}
                                               column={column}
                                               timezone={board.timezone}
-                                              languageCode={languageCode}
                                               resolveLanguageKey={
                                                   resolveLanguageKey
                                               }
