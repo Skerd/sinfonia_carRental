@@ -39,5 +39,8 @@
   "createdBy": "Creato da",
   "deletedAt": "Eliminato il",
   "deletedBy": "Eliminato da",
-  "oneWayFee": "Supplemento sola andata"
+  "oneWayFee": "Supplemento sola andata",
+  "closed": "Chiuso",
+  "compactView": "Compatta",
+  "cardsView": "Schede"
 }

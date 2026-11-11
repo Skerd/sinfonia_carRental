@@ -50,5 +50,102 @@
     "ready": "Bereit",
     "needs_cleaning": "Reinigung nötig",
     "needs_check": "Kontrolle nötig"
-  }
+  },
+  "reservationStatus": {
+    "active": "Aktiv",
+    "maintenance": "In Wartung",
+    "retired": "Ausser Betrieb",
+    "held": "Wartet auf Zahlung",
+    "confirmed": "Bestätigt",
+    "in_progress": "Unterwegs",
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert",
+    "expired": "Abgelaufen",
+    "no_show": "Nicht erschienen"
+  },
+  "damageStatus": {
+    "open": "Offen",
+    "in_repair": "In Reparatur",
+    "repaired": "Repariert"
+  },
+  "areaValues": {
+    "front": "Front",
+    "rear": "Heck",
+    "left": "Linke Seite",
+    "right": "Rechte Seite",
+    "roof": "Dach",
+    "interior": "Innenraum",
+    "windshield": "Windschutzscheibe",
+    "wheels": "Räder",
+    "underbody": "Unterboden",
+    "other": "Andere"
+  },
+  "severityValues": {
+    "minor": "Gering",
+    "moderate": "Mittel",
+    "major": "Schwer"
+  },
+  "maintenanceType": {
+    "scheduled_service": "Service",
+    "oil_change": "Ölwechsel",
+    "tires": "Reifen",
+    "brakes": "Bremsen",
+    "inspection": "Kontrolle",
+    "repair": "Reparatur",
+    "battery": "Batterie",
+    "other": "Andere"
+  },
+  "documentType": {
+    "registration": "Fahrzeugausweis",
+    "technical_inspection": "Fahrzeugprüfung",
+    "emissions_test": "Abgaswartung",
+    "road_tax": "Motorfahrzeugsteuer",
+    "green_card": "Grüne Karte",
+    "other": "Andere"
+  },
+  "documentStatus": {
+    "active": "Gültig",
+    "expired": "Abgelaufen"
+  },
+  "coverage": {
+    "third_party": "Haftpflicht",
+    "partial_casco": "Teilkasko",
+    "full_casco": "Vollkasko"
+  },
+  "insuranceStatus": {
+    "active": "Aktiv",
+    "expired": "Abgelaufen",
+    "cancelled": "Gekündigt"
+  },
+  "fineType": {
+    "speeding": "Geschwindigkeitsüberschreitung",
+    "parking": "Parkieren",
+    "red_light": "Rotlicht",
+    "toll": "Maut",
+    "other": "Anderes"
+  },
+  "fineStatus": {
+    "received": "Erhalten",
+    "driver_identified": "Fahrer/in ermittelt",
+    "charged": "Der Kundschaft belastet",
+    "paid_by_company": "Von uns bezahlt",
+    "transferred": "Fahrer/in gemeldet",
+    "disputed": "Bestritten",
+    "cancelled": "Annulliert"
+  },
+  "blockReason": {
+    "maintenance": "Wartung",
+    "repair": "Reparatur",
+    "transfer": "Überführung",
+    "other": "Andere"
+  },
+  "reservationsGroup": "Reservierungen",
+  "damagesGroup": "Schäden",
+  "maintenanceGroup": "Wartung",
+  "documentsGroup": "Dokumente",
+  "insurancesGroup": "Versicherungen",
+  "finesGroup": "Bussen",
+  "blocksGroup": "Fahrzeugsperren",
+  "compactView": "Kompakt",
+  "cardsView": "Karten"
 }

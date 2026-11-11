@@ -134,5 +134,8 @@
     "released": "Freigegeben",
     "failed": "Fehlgeschlagen"
   },
-  "needsTransfer": "Überführung nötig"
+  "needsTransfer": "Überführung nötig",
+  "priceLines": "Preisaufstellung",
+  "compactView": "Kompakt",
+  "cardsView": "Karten"
 }

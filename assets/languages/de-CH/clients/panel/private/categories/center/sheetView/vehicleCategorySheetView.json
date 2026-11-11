@@ -50,5 +50,7 @@
   "deletedAt": "Gelöscht am",
   "deletedBy": "Gelöscht von",
   "crossBorderAllowed": "Grenzübertritt",
-  "crossBorderFee": "Gebühr Grenzübertritt"
+  "crossBorderFee": "Gebühr Grenzübertritt",
+  "compactView": "Kompakt",
+  "cardsView": "Karten"
 }

@@ -54,6 +54,14 @@ const RentalDenyEntrySheetViewLazy = lazy(
     () => import("@carRentalModule/clients/panel/private/denyList/center/sheetView/rentalDenyEntrySheetView.tsx"),
 );
 
+// Reference cards for the vehicle hub (`#ReferencesRender`); lazy, as they pull in their sheets.
+const RentalReservationCardLazy = lazy(() => import("@carRentalModule/clients/panel/private/reservations/center/cardView/rentalReservationCard.tsx"));
+const VehicleMaintenanceCardLazy = lazy(() => import("@carRentalModule/clients/panel/private/maintenance/center/cardView/vehicleMaintenanceCard.tsx"));
+const VehicleDocumentCardLazy = lazy(() => import("@carRentalModule/clients/panel/private/documents/center/cardView/vehicleDocumentCard.tsx"));
+const VehicleInsuranceCardLazy = lazy(() => import("@carRentalModule/clients/panel/private/insurance/center/cardView/vehicleInsuranceCard.tsx"));
+const VehicleFineCardLazy = lazy(() => import("@carRentalModule/clients/panel/private/fines/center/cardView/vehicleFineCard.tsx"));
+const VehicleBlockCardLazy = lazy(() => import("@carRentalModule/clients/panel/private/blocks/center/cardView/vehicleBlockCard.tsx"));
+
 const carRentalWidgetContribution: WidgetContribution = {
     id: "carRental",
     order: 40,
@@ -76,9 +84,21 @@ const carRentalWidgetContribution: WidgetContribution = {
         "#RentalReviewSheetView": RentalReviewSheetViewLazy,
         "#RentalDenyEntrySheetView": RentalDenyEntrySheetViewLazy,
         "#VehicleDamageCard": VehicleDamageCard,
+        "#RentalReservationCard": RentalReservationCardLazy,
+        "#VehicleMaintenanceCard": VehicleMaintenanceCardLazy,
+        "#VehicleDocumentCard": VehicleDocumentCardLazy,
+        "#VehicleInsuranceCard": VehicleInsuranceCardLazy,
+        "#VehicleFineCard": VehicleFineCardLazy,
+        "#VehicleBlockCard": VehicleBlockCardLazy,
     },
     referencesDefaultItemProps: {
         "#VehicleDamageCard": "vehicleDamage",
+        "#RentalReservationCard": "rentalReservation",
+        "#VehicleMaintenanceCard": "vehicleMaintenance",
+        "#VehicleDocumentCard": "vehicleDocument",
+        "#VehicleInsuranceCard": "vehicleInsurance",
+        "#VehicleFineCard": "vehicleFine",
+        "#VehicleBlockCard": "vehicleBlock",
     },
     auditSinglePostHints: {
         "#VehicleSheetView": {url: "/api/carRental/vehicle/single", labelFields: ["plate"]},

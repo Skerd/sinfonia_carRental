@@ -50,5 +50,7 @@
   "deletedAt": "Fshirë më",
   "deletedBy": "Fshirë nga",
   "crossBorderAllowed": "Jashtë vendit",
-  "crossBorderFee": "Tarifa jashtë vendit"
+  "crossBorderFee": "Tarifa jashtë vendit",
+  "compactView": "Kompakte",
+  "cardsView": "Karta"
 }

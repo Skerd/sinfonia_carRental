@@ -39,5 +39,8 @@
   "createdBy": "Créé par",
   "deletedAt": "Supprimé le",
   "deletedBy": "Supprimé par",
-  "oneWayFee": "Frais d'aller simple"
+  "oneWayFee": "Frais d'aller simple",
+  "closed": "Fermé",
+  "compactView": "Compact",
+  "cardsView": "Cartes"
 }

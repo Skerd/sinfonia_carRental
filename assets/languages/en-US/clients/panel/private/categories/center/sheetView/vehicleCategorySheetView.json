@@ -50,5 +50,7 @@
   "deletedAt": "Deleted at",
   "deletedBy": "Deleted by",
   "crossBorderAllowed": "Cross-border",
-  "crossBorderFee": "Cross-border fee"
+  "crossBorderFee": "Cross-border fee",
+  "compactView": "Compact",
+  "cardsView": "Cards"
 }

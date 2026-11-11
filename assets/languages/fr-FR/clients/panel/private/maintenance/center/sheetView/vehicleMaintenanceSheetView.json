@@ -39,5 +39,24 @@
   "deletedBy": "Supprimé par",
   "readyAt": "Véhicule de retour le",
   "nextServiceGroup": "Prochain entretien",
-  "damages": "Dommages réparés"
+  "damages": "Dommages réparés",
+  "areaValues": {
+    "front": "Avant",
+    "rear": "Arrière",
+    "left": "Côté gauche",
+    "right": "Côté droit",
+    "roof": "Toit",
+    "interior": "Intérieur",
+    "windshield": "Pare-brise",
+    "wheels": "Roues",
+    "underbody": "Soubassement",
+    "other": "Autre"
+  },
+  "severityValues": {
+    "minor": "Mineur",
+    "moderate": "Modéré",
+    "major": "Grave"
+  },
+  "compactView": "Compact",
+  "cardsView": "Cartes"
 }

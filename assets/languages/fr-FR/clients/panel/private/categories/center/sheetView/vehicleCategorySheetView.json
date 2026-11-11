@@ -50,5 +50,7 @@
   "deletedAt": "Supprimé le",
   "deletedBy": "Supprimé par",
   "crossBorderAllowed": "Transfrontalier",
-  "crossBorderFee": "Frais transfrontaliers"
+  "crossBorderFee": "Frais transfrontaliers",
+  "compactView": "Compact",
+  "cardsView": "Cartes"
 }

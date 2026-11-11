@@ -134,5 +134,8 @@
     "released": "Released",
     "failed": "Failed"
   },
-  "needsTransfer": "Needs a transfer"
+  "needsTransfer": "Needs a transfer",
+  "priceLines": "Price breakdown",
+  "compactView": "Compact",
+  "cardsView": "Cards"
 }

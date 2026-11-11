@@ -39,5 +39,8 @@
   "createdBy": "Created by",
   "deletedAt": "Deleted at",
   "deletedBy": "Deleted by",
-  "oneWayFee": "One-way fee"
+  "oneWayFee": "One-way fee",
+  "closed": "Closed",
+  "compactView": "Compact",
+  "cardsView": "Cards"
 }

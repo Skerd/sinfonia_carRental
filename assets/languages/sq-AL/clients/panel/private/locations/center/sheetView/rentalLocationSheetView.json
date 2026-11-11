@@ -39,5 +39,8 @@
   "createdBy": "Krijuar nga",
   "deletedAt": "Fshirë më",
   "deletedBy": "Fshirë nga",
-  "oneWayFee": "Tarifa e kthimit diku tjetër"
+  "oneWayFee": "Tarifa e kthimit diku tjetër",
+  "closed": "Mbyllur",
+  "compactView": "Kompakte",
+  "cardsView": "Karta"
 }

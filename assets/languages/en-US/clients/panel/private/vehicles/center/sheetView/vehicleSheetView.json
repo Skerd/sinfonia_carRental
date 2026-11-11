@@ -50,5 +50,102 @@
     "ready": "Ready",
     "needs_cleaning": "Needs cleaning",
     "needs_check": "Needs a check"
-  }
+  },
+  "reservationStatus": {
+    "active": "Active",
+    "maintenance": "In maintenance",
+    "retired": "Retired",
+    "held": "Awaiting payment",
+    "confirmed": "Confirmed",
+    "in_progress": "On the road",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "expired": "Expired",
+    "no_show": "No-show"
+  },
+  "damageStatus": {
+    "open": "Open",
+    "in_repair": "In repair",
+    "repaired": "Repaired"
+  },
+  "areaValues": {
+    "front": "Front",
+    "rear": "Rear",
+    "left": "Left side",
+    "right": "Right side",
+    "roof": "Roof",
+    "interior": "Interior",
+    "windshield": "Windshield",
+    "wheels": "Wheels",
+    "underbody": "Underbody",
+    "other": "Other"
+  },
+  "severityValues": {
+    "minor": "Minor",
+    "moderate": "Moderate",
+    "major": "Major"
+  },
+  "maintenanceType": {
+    "scheduled_service": "Scheduled service",
+    "oil_change": "Oil change",
+    "tires": "Tires",
+    "brakes": "Brakes",
+    "inspection": "Inspection",
+    "repair": "Repair",
+    "battery": "Battery",
+    "other": "Other"
+  },
+  "documentType": {
+    "registration": "Registration",
+    "technical_inspection": "Technical inspection",
+    "emissions_test": "Emissions test",
+    "road_tax": "Road tax",
+    "green_card": "Green card",
+    "other": "Other"
+  },
+  "documentStatus": {
+    "active": "Valid",
+    "expired": "Expired"
+  },
+  "coverage": {
+    "third_party": "Third party",
+    "partial_casco": "Partial casco",
+    "full_casco": "Full casco"
+  },
+  "insuranceStatus": {
+    "active": "Active",
+    "expired": "Expired",
+    "cancelled": "Cancelled"
+  },
+  "fineType": {
+    "speeding": "Speeding",
+    "parking": "Parking",
+    "red_light": "Red light",
+    "toll": "Toll",
+    "other": "Other"
+  },
+  "fineStatus": {
+    "received": "Received",
+    "driver_identified": "Driver identified",
+    "charged": "Charged to customer",
+    "paid_by_company": "Paid by us",
+    "transferred": "Named the driver",
+    "disputed": "Disputed",
+    "cancelled": "Annulled"
+  },
+  "blockReason": {
+    "maintenance": "Maintenance",
+    "repair": "Repair",
+    "transfer": "Transfer",
+    "other": "Other"
+  },
+  "reservationsGroup": "Reservations",
+  "damagesGroup": "Damages",
+  "maintenanceGroup": "Maintenance",
+  "documentsGroup": "Documents",
+  "insurancesGroup": "Insurance",
+  "finesGroup": "Fines",
+  "blocksGroup": "Vehicle blocks",
+  "compactView": "Compact",
+  "cardsView": "Cards"
 }

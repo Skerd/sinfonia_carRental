@@ -134,5 +134,8 @@
     "released": "Sbloccato",
     "failed": "Non riuscito"
   },
-  "needsTransfer": "Serve un trasferimento"
+  "needsTransfer": "Serve un trasferimento",
+  "priceLines": "Dettaglio prezzi",
+  "compactView": "Compatta",
+  "cardsView": "Schede"
 }

@@ -50,5 +50,7 @@
   "deletedAt": "Eliminato il",
   "deletedBy": "Eliminato da",
   "crossBorderAllowed": "Estero",
-  "crossBorderFee": "Supplemento estero"
+  "crossBorderFee": "Supplemento estero",
+  "compactView": "Compatta",
+  "cardsView": "Schede"
 }

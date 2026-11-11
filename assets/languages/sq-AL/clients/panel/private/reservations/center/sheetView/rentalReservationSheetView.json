@@ -134,5 +134,8 @@
     "released": "E liruar",
     "failed": "Dështoi"
   },
-  "needsTransfer": "Duhet transferim"
+  "needsTransfer": "Duhet transferim",
+  "priceLines": "Zbërthimi i çmimit",
+  "compactView": "Kompakte",
+  "cardsView": "Karta"
 }

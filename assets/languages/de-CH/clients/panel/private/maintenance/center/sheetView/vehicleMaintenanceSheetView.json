@@ -39,5 +39,24 @@
   "deletedBy": "Gelöscht von",
   "readyAt": "Fahrzeug zurück am",
   "nextServiceGroup": "Nächster Service",
-  "damages": "Behobene Schäden"
+  "damages": "Behobene Schäden",
+  "areaValues": {
+    "front": "Front",
+    "rear": "Heck",
+    "left": "Linke Seite",
+    "right": "Rechte Seite",
+    "roof": "Dach",
+    "interior": "Innenraum",
+    "windshield": "Windschutzscheibe",
+    "wheels": "Räder",
+    "underbody": "Unterboden",
+    "other": "Andere"
+  },
+  "severityValues": {
+    "minor": "Gering",
+    "moderate": "Mittel",
+    "major": "Schwer"
+  },
+  "compactView": "Kompakt",
+  "cardsView": "Karten"
 }

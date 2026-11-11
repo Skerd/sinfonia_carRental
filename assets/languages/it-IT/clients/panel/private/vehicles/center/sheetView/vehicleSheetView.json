@@ -50,5 +50,102 @@
     "ready": "Pronto",
     "needs_cleaning": "Da pulire",
     "needs_check": "Da controllare"
-  }
+  },
+  "reservationStatus": {
+    "active": "Attivo",
+    "maintenance": "In manutenzione",
+    "retired": "Dismesso",
+    "held": "In attesa di pagamento",
+    "confirmed": "Confermato",
+    "in_progress": "In viaggio",
+    "completed": "Completato",
+    "cancelled": "Annullato",
+    "expired": "Scaduto",
+    "no_show": "Non presentato"
+  },
+  "damageStatus": {
+    "open": "Aperto",
+    "in_repair": "In riparazione",
+    "repaired": "Riparato"
+  },
+  "areaValues": {
+    "front": "Anteriore",
+    "rear": "Posteriore",
+    "left": "Lato sinistro",
+    "right": "Lato destro",
+    "roof": "Tetto",
+    "interior": "Interni",
+    "windshield": "Parabrezza",
+    "wheels": "Ruote",
+    "underbody": "Sottoscocca",
+    "other": "Altro"
+  },
+  "severityValues": {
+    "minor": "Lieve",
+    "moderate": "Moderato",
+    "major": "Grave"
+  },
+  "maintenanceType": {
+    "scheduled_service": "Tagliando",
+    "oil_change": "Cambio olio",
+    "tires": "Pneumatici",
+    "brakes": "Freni",
+    "inspection": "Controllo",
+    "repair": "Riparazione",
+    "battery": "Batteria",
+    "other": "Altro"
+  },
+  "documentType": {
+    "registration": "Libretto di circolazione",
+    "technical_inspection": "Revisione",
+    "emissions_test": "Controllo emissioni",
+    "road_tax": "Bollo auto",
+    "green_card": "Carta verde",
+    "other": "Altro"
+  },
+  "documentStatus": {
+    "active": "Valido",
+    "expired": "Scaduto"
+  },
+  "coverage": {
+    "third_party": "RC auto",
+    "partial_casco": "Kasko parziale",
+    "full_casco": "Kasko completa"
+  },
+  "insuranceStatus": {
+    "active": "Attiva",
+    "expired": "Scaduta",
+    "cancelled": "Annullata"
+  },
+  "fineType": {
+    "speeding": "Eccesso di velocità",
+    "parking": "Parcheggio",
+    "red_light": "Semaforo rosso",
+    "toll": "Pedaggio",
+    "other": "Altro"
+  },
+  "fineStatus": {
+    "received": "Ricevuta",
+    "driver_identified": "Conducente identificato",
+    "charged": "Addebitata al cliente",
+    "paid_by_company": "Pagata da noi",
+    "transferred": "Conducente comunicato",
+    "disputed": "Contestata",
+    "cancelled": "Annullata"
+  },
+  "blockReason": {
+    "maintenance": "Manutenzione",
+    "repair": "Riparazione",
+    "transfer": "Trasferimento",
+    "other": "Altro"
+  },
+  "reservationsGroup": "Prenotazioni",
+  "damagesGroup": "Danni",
+  "maintenanceGroup": "Manutenzione",
+  "documentsGroup": "Documenti",
+  "insurancesGroup": "Assicurazioni",
+  "finesGroup": "Multe",
+  "blocksGroup": "Blocchi veicolo",
+  "compactView": "Compatta",
+  "cardsView": "Schede"
 }

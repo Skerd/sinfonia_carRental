@@ -50,5 +50,102 @@
     "ready": "Gati",
     "needs_cleaning": "Duhet pastruar",
     "needs_check": "Duhet kontrolluar"
-  }
+  },
+  "reservationStatus": {
+    "active": "Aktiv",
+    "maintenance": "Në mirëmbajtje",
+    "retired": "I tërhequr",
+    "held": "Në pritje të pagesës",
+    "confirmed": "Konfirmuar",
+    "in_progress": "Në rrugë",
+    "completed": "Përfunduar",
+    "cancelled": "Anuluar",
+    "expired": "Skaduar",
+    "no_show": "Mosparaqitje"
+  },
+  "damageStatus": {
+    "open": "I hapur",
+    "in_repair": "Në riparim",
+    "repaired": "I riparuar"
+  },
+  "areaValues": {
+    "front": "Përpara",
+    "rear": "Prapa",
+    "left": "Ana e majtë",
+    "right": "Ana e djathtë",
+    "roof": "Çatia",
+    "interior": "Brendësia",
+    "windshield": "Xhami i përparmë",
+    "wheels": "Rrotat",
+    "underbody": "Pjesa e poshtme",
+    "other": "Tjetër"
+  },
+  "severityValues": {
+    "minor": "I lehtë",
+    "moderate": "Mesatar",
+    "major": "I rëndë"
+  },
+  "maintenanceType": {
+    "scheduled_service": "Servis i planifikuar",
+    "oil_change": "Ndërrim vaji",
+    "tires": "Goma",
+    "brakes": "Frenat",
+    "inspection": "Kontroll",
+    "repair": "Riparim",
+    "battery": "Bateria",
+    "other": "Tjetër"
+  },
+  "documentType": {
+    "registration": "Leja e qarkullimit",
+    "technical_inspection": "Kontrolli teknik",
+    "emissions_test": "Testi i emetimeve",
+    "road_tax": "Taksa e qarkullimit",
+    "green_card": "Karta jeshile",
+    "other": "Tjetër"
+  },
+  "documentStatus": {
+    "active": "I vlefshëm",
+    "expired": "I skaduar"
+  },
+  "coverage": {
+    "third_party": "Përgjegjësi civile",
+    "partial_casco": "Kasko e pjesshme",
+    "full_casco": "Kasko e plotë"
+  },
+  "insuranceStatus": {
+    "active": "Aktive",
+    "expired": "E skaduar",
+    "cancelled": "E anuluar"
+  },
+  "fineType": {
+    "speeding": "Tejkalim shpejtësie",
+    "parking": "Parkim",
+    "red_light": "Semafor i kuq",
+    "toll": "Pagesë rruge",
+    "other": "Tjetër"
+  },
+  "fineStatus": {
+    "received": "E marrë",
+    "driver_identified": "Shoferi u identifikua",
+    "charged": "I faturuar klientit",
+    "paid_by_company": "E paguar nga ne",
+    "transferred": "Shoferi u deklarua",
+    "disputed": "E kundërshtuar",
+    "cancelled": "E anuluar"
+  },
+  "blockReason": {
+    "maintenance": "Mirëmbajtje",
+    "repair": "Riparim",
+    "transfer": "Transferim",
+    "other": "Tjetër"
+  },
+  "reservationsGroup": "Rezervimet",
+  "damagesGroup": "Dëmtimet",
+  "maintenanceGroup": "Mirëmbajtja",
+  "documentsGroup": "Dokumentet",
+  "insurancesGroup": "Sigurimet",
+  "finesGroup": "Gjobat",
+  "blocksGroup": "Bllokimet e automjeteve",
+  "compactView": "Kompakte",
+  "cardsView": "Karta"
 }

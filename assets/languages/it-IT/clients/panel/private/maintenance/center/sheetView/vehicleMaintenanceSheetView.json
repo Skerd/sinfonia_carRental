@@ -39,5 +39,24 @@
   "deletedBy": "Eliminato da",
   "readyAt": "Veicolo di nuovo pronto il",
   "nextServiceGroup": "Prossimo tagliando",
-  "damages": "Danni riparati"
+  "damages": "Danni riparati",
+  "areaValues": {
+    "front": "Anteriore",
+    "rear": "Posteriore",
+    "left": "Lato sinistro",
+    "right": "Lato destro",
+    "roof": "Tetto",
+    "interior": "Interni",
+    "windshield": "Parabrezza",
+    "wheels": "Ruote",
+    "underbody": "Sottoscocca",
+    "other": "Altro"
+  },
+  "severityValues": {
+    "minor": "Lieve",
+    "moderate": "Moderato",
+    "major": "Grave"
+  },
+  "compactView": "Compatta",
+  "cardsView": "Schede"
 }

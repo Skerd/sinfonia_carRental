@@ -39,5 +39,8 @@
   "createdBy": "Erstellt von",
   "deletedAt": "Gelöscht am",
   "deletedBy": "Gelöscht von",
-  "oneWayFee": "Einweggebühr"
+  "oneWayFee": "Einweggebühr",
+  "closed": "Geschlossen",
+  "compactView": "Kompakt",
+  "cardsView": "Karten"
 }

@@ -50,5 +50,102 @@
     "ready": "Prêt",
     "needs_cleaning": "À nettoyer",
     "needs_check": "À contrôler"
-  }
+  },
+  "reservationStatus": {
+    "active": "Actif",
+    "maintenance": "En maintenance",
+    "retired": "Retiré",
+    "held": "En attente de paiement",
+    "confirmed": "Confirmée",
+    "in_progress": "En route",
+    "completed": "Terminée",
+    "cancelled": "Annulée",
+    "expired": "Expirée",
+    "no_show": "Absent"
+  },
+  "damageStatus": {
+    "open": "Ouvert",
+    "in_repair": "En réparation",
+    "repaired": "Réparé"
+  },
+  "areaValues": {
+    "front": "Avant",
+    "rear": "Arrière",
+    "left": "Côté gauche",
+    "right": "Côté droit",
+    "roof": "Toit",
+    "interior": "Intérieur",
+    "windshield": "Pare-brise",
+    "wheels": "Roues",
+    "underbody": "Soubassement",
+    "other": "Autre"
+  },
+  "severityValues": {
+    "minor": "Mineur",
+    "moderate": "Modéré",
+    "major": "Grave"
+  },
+  "maintenanceType": {
+    "scheduled_service": "Entretien périodique",
+    "oil_change": "Vidange",
+    "tires": "Pneus",
+    "brakes": "Freins",
+    "inspection": "Contrôle",
+    "repair": "Réparation",
+    "battery": "Batterie",
+    "other": "Autre"
+  },
+  "documentType": {
+    "registration": "Certificat d'immatriculation",
+    "technical_inspection": "Contrôle technique",
+    "emissions_test": "Contrôle antipollution",
+    "road_tax": "Taxe de circulation",
+    "green_card": "Carte verte",
+    "other": "Autre"
+  },
+  "documentStatus": {
+    "active": "Valide",
+    "expired": "Expiré"
+  },
+  "coverage": {
+    "third_party": "Responsabilité civile",
+    "partial_casco": "Casco partielle",
+    "full_casco": "Casco complète"
+  },
+  "insuranceStatus": {
+    "active": "Active",
+    "expired": "Expirée",
+    "cancelled": "Résiliée"
+  },
+  "fineType": {
+    "speeding": "Excès de vitesse",
+    "parking": "Stationnement",
+    "red_light": "Feu rouge",
+    "toll": "Péage",
+    "other": "Autre"
+  },
+  "fineStatus": {
+    "received": "Reçue",
+    "driver_identified": "Conducteur identifié",
+    "charged": "Facturée au client",
+    "paid_by_company": "Payée par nous",
+    "transferred": "Conducteur désigné",
+    "disputed": "Contestée",
+    "cancelled": "Annulée"
+  },
+  "blockReason": {
+    "maintenance": "Maintenance",
+    "repair": "Réparation",
+    "transfer": "Transfert",
+    "other": "Autre"
+  },
+  "reservationsGroup": "Réservations",
+  "damagesGroup": "Dommages",
+  "maintenanceGroup": "Entretien",
+  "documentsGroup": "Documents",
+  "insurancesGroup": "Assurances",
+  "finesGroup": "Amendes",
+  "blocksGroup": "Blocages de véhicules",
+  "compactView": "Compact",
+  "cardsView": "Cartes"
 }

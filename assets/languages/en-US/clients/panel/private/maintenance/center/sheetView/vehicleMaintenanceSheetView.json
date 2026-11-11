@@ -39,5 +39,24 @@
   "deletedBy": "Deleted by",
   "readyAt": "Car back on",
   "nextServiceGroup": "Next service",
-  "damages": "Damages fixed"
+  "damages": "Damages fixed",
+  "areaValues": {
+    "front": "Front",
+    "rear": "Rear",
+    "left": "Left side",
+    "right": "Right side",
+    "roof": "Roof",
+    "interior": "Interior",
+    "windshield": "Windshield",
+    "wheels": "Wheels",
+    "underbody": "Underbody",
+    "other": "Other"
+  },
+  "severityValues": {
+    "minor": "Minor",
+    "moderate": "Moderate",
+    "major": "Major"
+  },
+  "compactView": "Compact",
+  "cardsView": "Cards"
 }
