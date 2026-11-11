@@ -12,6 +12,7 @@ import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
 import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
 import dayjs from "dayjs";
+import {companyToday} from "@coreModule/helpers/general/dateTime.ts";
 import {Label} from "@coreModule/components/ui/label.tsx";
 import {SimpleSelect} from "@coreModule/components/viewEngine/widgets/inputs/simpleSelect.tsx";
 
@@ -48,6 +49,7 @@ type Props = WithLanguageType & WithAxiosType<RentalReservation, SaveRentalDrive
 /** Who may drive: the first row is the main driver, the others are additional drivers. */
 function DriversDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     const [rows, setRows] = useState<DriverRow[]>(() => initialRows(reservation));
+    const returnDay = reservation.snapshot?.timezone ? companyToday(reservation.snapshot.timezone, new Date(reservation.returnAt)) : undefined;
     // Missing required fields are pointed out once Save was pressed, not while typing.
     const [showMissing, setShowMissing] = useState(false);
     useImperativeHandle(innerRef, () => ({success: (data) => { onUpdated(data); onClose(); }}));
@@ -113,6 +115,8 @@ function DriversDialog({reservation, onClose, onUpdated, resolveLanguageKey, onF
                                                 value={row[key]}
                                                 onChange={(value) => update(index, key, value)}
                                                 maxDate={PAST_FIELDS.includes(key) ? dayjs().format("YYYY-MM-DD") : undefined}
+                                                // A licence must stay valid until the car comes back (checked again by the server).
+                                                minDate={key === "licenseExpiresAt" ? returnDay : undefined}
                                                 disabled={loading}
                                             />
                                         ) : (
