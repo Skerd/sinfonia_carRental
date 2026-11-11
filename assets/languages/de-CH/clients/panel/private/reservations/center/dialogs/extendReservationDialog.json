@@ -5,5 +5,22 @@
   "title": "Die Miete verlängern",
   "description": "Neues Rückgabedatum und neue Rückgabezeit, in der Ortszeit des Rückgabestandorts",
   "returnDateLabel": "Neues Rückgabedatum",
-  "returnTimeLabel": "Neue Rückgabezeit"
+  "returnTimeLabel": "Neue Rückgabezeit",
+  "axios": {
+    "start": {
+      "title": "Miete wird verlängert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Miete verlängert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Verlängerung nicht möglich",
+      "time": 5000
+    }
+  },
+  "freeUntil": "Das Auto ist frei bis {until}.",
+  "freeOpenEnded": "Keine spätere Buchung oder Sperre auf diesem Auto.",
+  "notLater": "Wählen Sie eine spätere Rückgabe als die aktuelle."
 }

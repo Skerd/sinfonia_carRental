@@ -6,5 +6,19 @@
   "description": "Makina lirohet përsëri dhe ajo që ka paguar klienti rimbursohet. Klienti merr një email.",
   "applyFeeLabel": "Mbaj tarifën e anulimit",
   "reasonLabel": "Arsyeja",
-  "reasonPlaceholder": "Pse anulohet?"
+  "reasonPlaceholder": "Pse anulohet?",
+  "axios": {
+    "start": {
+      "title": "Duke anuluar…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Rezervimi u anulua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Nuk u anulua dot",
+      "time": 5000
+    }
+  }
 }

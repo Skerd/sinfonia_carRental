@@ -6,5 +6,19 @@
   "description": "Das Auto wird wieder frei und das Bezahlte wird zurückerstattet. Der Kunde erhält eine E-Mail.",
   "applyFeeLabel": "Stornogebühr behalten",
   "reasonLabel": "Grund",
-  "reasonPlaceholder": "Warum wird storniert?"
+  "reasonPlaceholder": "Warum wird storniert?",
+  "axios": {
+    "start": {
+      "title": "Wird storniert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Buchung storniert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Stornierung nicht möglich",
+      "time": 5000
+    }
+  }
 }

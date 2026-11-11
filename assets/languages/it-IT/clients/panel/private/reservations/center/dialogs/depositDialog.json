@@ -16,5 +16,19 @@
   "confirmHold": "Blocca deposito",
   "confirmSave": "Salva carta",
   "close": "Chiudi",
-  "cancel": "Indietro"
+  "cancel": "Indietro",
+  "axios": {
+    "start": {
+      "title": "Deposito in corso…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Deposito preso",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile prendere il deposito",
+      "time": 5000
+    }
+  }
 }

@@ -5,5 +5,19 @@
   "confirm": "Add charge",
   "cancel": "Back",
   "amountLabel": "Amount",
-  "excessHint": "With a protection package, the charge stops at the customer's excess."
+  "excessHint": "With a protection package, the charge stops at the customer's excess.",
+  "axios": {
+    "start": {
+      "title": "Charging the damage…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Damage charged",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not charge the damage",
+      "time": 5000
+    }
+  }
 }

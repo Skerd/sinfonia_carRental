@@ -10,5 +10,19 @@
     "title": "Rétablir cette police",
     "description": "La police {policy} redevient active, ou expirée si la date de fin est passée.",
     "confirm": "Rétablir la police"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Enregistré",
+      "time": 3000
+    },
+    "error": {
+      "title": "Échec de l'enregistrement",
+      "time": 5000
+    }
   }
 }

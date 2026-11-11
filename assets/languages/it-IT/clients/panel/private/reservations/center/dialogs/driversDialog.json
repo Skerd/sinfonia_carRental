@@ -21,5 +21,20 @@
     "passport": "Passaporto",
     "national_id": "Carta d'identità",
     "other": "Altro"
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio conducenti…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Conducenti salvati",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare i conducenti",
+      "time": 5000
+    }
+  },
+  "required": "Obbligatorio"
 }

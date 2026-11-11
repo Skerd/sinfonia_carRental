@@ -25,5 +25,19 @@
     "title": "Busse annullieren",
     "description": "Die Behörde hat die Busse fallen gelassen. Was der Buchung {booking} dafür belastet wurde, wird zurückgenommen: auf der Rechnung gutgeschrieben und, falls bezahlt, zurückerstattet.",
     "confirm": "Annullieren"
+  },
+  "axios": {
+    "start": {
+      "title": "Wird gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Konnte nicht gespeichert werden",
+      "time": 5000
+    }
   }
 }

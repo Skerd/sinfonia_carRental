@@ -5,5 +5,19 @@
   "keepLabel": "Mbaj nga depozita",
   "confirmKeep": "Mbaj dhe liro pjesën tjetër",
   "confirmRelease": "Liro depozitën",
-  "cancel": "Kthehu"
+  "cancel": "Kthehu",
+  "axios": {
+    "start": {
+      "title": "Duke shlyer depozitën…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Depozita u shlye",
+      "time": 3000
+    },
+    "error": {
+      "title": "Depozita nuk u shlye dot",
+      "time": 5000
+    }
+  }
 }

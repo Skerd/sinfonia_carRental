@@ -10,5 +10,19 @@
   "readyAtLabel": "Fahrzeug zurück am",
   "readyAtHint": "Mit einem Datum kann das Fahrzeug bis dahin nicht gebucht werden. Eine Buchung in dieser Zeit muss zuerst auf ein anderes Fahrzeug.",
   "providerLabel": "Werkstatt",
-  "costLabel": "Geschätzte Kosten"
+  "costLabel": "Geschätzte Kosten",
+  "axios": {
+    "start": {
+      "title": "Wird zur Reparatur geschickt…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Reparatur geplant",
+      "time": 3000
+    },
+    "error": {
+      "title": "Reparatur konnte nicht geplant werden",
+      "time": 5000
+    }
+  }
 }

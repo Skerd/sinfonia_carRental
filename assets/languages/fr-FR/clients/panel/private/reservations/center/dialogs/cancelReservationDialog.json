@@ -6,5 +6,19 @@
   "description": "La voiture redevient libre et ce que le client a payé est remboursé. Le client reçoit un e-mail.",
   "applyFeeLabel": "Garder les frais d'annulation",
   "reasonLabel": "Motif",
-  "reasonPlaceholder": "Pourquoi est-ce annulé ?"
+  "reasonPlaceholder": "Pourquoi est-ce annulé ?",
+  "axios": {
+    "start": {
+      "title": "Annulation…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Réservation annulée",
+      "time": 3000
+    },
+    "error": {
+      "title": "Annulation impossible",
+      "time": 5000
+    }
+  }
 }

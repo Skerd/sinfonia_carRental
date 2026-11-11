@@ -5,5 +5,19 @@
   "keepLabel": "Von der Kaution behalten",
   "confirmKeep": "Behalten und Rest freigeben",
   "confirmRelease": "Kaution freigeben",
-  "cancel": "Zurück"
+  "cancel": "Zurück",
+  "axios": {
+    "start": {
+      "title": "Kaution wird abgerechnet…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Kaution abgerechnet",
+      "time": 3000
+    },
+    "error": {
+      "title": "Kaution konnte nicht abgerechnet werden",
+      "time": 5000
+    }
+  }
 }

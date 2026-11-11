@@ -17,7 +17,7 @@ type Props = WithLanguageType & WithAxiosType<RentalReservation, CancelRentalRes
 };
 
 /** Staff cancellation. What was paid is refunded, minus the policy fee only when asked. */
-function CancelReservationDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
+function CancelReservationDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     const [reason, setReason] = useState("");
     const [applyFee, setApplyFee] = useState(false);
     useImperativeHandle(innerRef, () => ({success: (data) => { onUpdated(data); onClose(); }}));
@@ -29,6 +29,7 @@ function CancelReservationDialog({reservation, onClose, onUpdated, resolveLangua
             confirmLabel={resolveLanguageKey("confirm")}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}
+            error={error?.message}
             destructive
             onClose={onClose}
             onConfirm={() => onFilterChange({_id: reservation._id, applyCancellationFee: applyFee, ...(reason.trim() ? {reason: reason.trim()} : {})})}

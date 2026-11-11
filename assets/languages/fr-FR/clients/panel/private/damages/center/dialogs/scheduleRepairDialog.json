@@ -10,5 +10,19 @@
   "readyAtLabel": "Véhicule de retour le",
   "readyAtHint": "Avec une date, le véhicule ne peut pas être réservé jusque-là. Une réservation sur cette période doit d'abord passer sur un autre véhicule.",
   "providerLabel": "Garage",
-  "costLabel": "Coût estimé"
+  "costLabel": "Coût estimé",
+  "axios": {
+    "start": {
+      "title": "Envoi en réparation…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Réparation planifiée",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible de planifier la réparation",
+      "time": 5000
+    }
+  }
 }

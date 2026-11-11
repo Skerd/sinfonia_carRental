@@ -25,5 +25,19 @@
     "title": "Anulo gjobën",
     "description": "Autoriteti e hoqi gjobën. Çfarë iu faturua rezervimit {booking} për të kthehet: kreditohet në faturë dhe rimbursohet nëse është paguar.",
     "confirm": "Anulo"
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur…",
+      "time": 3000
+    },
+    "success": {
+      "title": "U ruajt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Nuk u ruajt dot",
+      "time": 5000
+    }
   }
 }

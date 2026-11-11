@@ -5,5 +5,22 @@
   "title": "Prolonger la location",
   "description": "Nouvelle date et heure de retour, à l'heure locale du site de retour",
   "returnDateLabel": "Nouvelle date de retour",
-  "returnTimeLabel": "Nouvelle heure de retour"
+  "returnTimeLabel": "Nouvelle heure de retour",
+  "axios": {
+    "start": {
+      "title": "Prolongation…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Location prolongée",
+      "time": 3000
+    },
+    "error": {
+      "title": "Prolongation impossible",
+      "time": 5000
+    }
+  },
+  "freeUntil": "La voiture est libre jusqu'au {until}.",
+  "freeOpenEnded": "Aucune réservation ni blocage ultérieur sur cette voiture.",
+  "notLater": "Choisissez un retour plus tardif que l'actuel."
 }

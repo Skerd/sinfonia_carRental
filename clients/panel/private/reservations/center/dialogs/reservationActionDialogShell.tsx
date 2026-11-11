@@ -13,6 +13,7 @@ export default function ReservationActionDialogShell({
     canConfirm = true,
     destructive = false,
     contentClassName = "sm:max-w-md",
+    error,
     onConfirm,
     onClose,
     children,
@@ -25,6 +26,8 @@ export default function ReservationActionDialogShell({
     canConfirm?: boolean;
     destructive?: boolean;
     contentClassName?: string;
+    /** Why the server refused the last try, shown above the buttons (the toast says it too, but goes away). */
+    error?: string | null;
     onConfirm: () => void;
     onClose: () => void;
     children?: ReactNode;
@@ -37,6 +40,7 @@ export default function ReservationActionDialogShell({
                     <DialogDescription>{description}</DialogDescription>
                 </DialogHeader>
                 {children ? <div className="flex flex-col gap-4 px-4">{children}</div> : null}
+                {error ? <p role="alert" className="mx-4 rounded-md bg-destructive/10 px-3 py-2 text-sm text-destructive">{error}</p> : null}
                 <DialogFooter className="gap-2 px-4 py-4 sm:gap-2">
                     <Button type="button" variant="outline" onClick={onClose} disabled={loading}>{cancelLabel}</Button>
                     <Button type="button" variant={destructive ? "destructive" : "default"} disabled={loading || !canConfirm} onClick={onConfirm}>

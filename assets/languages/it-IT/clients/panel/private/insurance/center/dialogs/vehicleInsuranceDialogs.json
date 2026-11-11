@@ -10,5 +10,19 @@
     "title": "Ripristina questa polizza",
     "description": "La polizza {policy} torna attiva, oppure scaduta se la data di fine è passata.",
     "confirm": "Ripristina la polizza"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Salvato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare",
+      "time": 5000
+    }
   }
 }

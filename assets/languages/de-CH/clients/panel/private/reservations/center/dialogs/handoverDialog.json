@@ -45,5 +45,21 @@
   "notReady": {
     "needs_cleaning": "Dieses Fahrzeug wurde seit der letzten Rückgabe nicht gereinigt.",
     "needs_check": "Dieses Fahrzeug wurde als kontrollbedürftig markiert."
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Übergabe läuft…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Auto übergeben",
+      "time": 3000
+    },
+    "error": {
+      "title": "Übergabe nicht möglich",
+      "time": 5000
+    }
+  },
+  "addPhotos": "Fotos hinzufügen",
+  "photosChosen": "Fotos"
 }

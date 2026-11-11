@@ -12,6 +12,7 @@ import {Label} from "@coreModule/components/ui/label.tsx";
 import {Textarea} from "@coreModule/components/ui/textarea.tsx";
 import {SimpleSelect} from "@coreModule/components/viewEngine/widgets/inputs/simpleSelect.tsx";
 import SignaturePad from "@coreModule/components/custom/inputs/signaturePad.tsx";
+import MultiLocalFilePicker from "@coreModule/components/viewEngine/widgets/media/multiLocalFilePicker.tsx";
 import type {HandoverRentalReservationFormType} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.schema-def.ts";
 
 const OPEN_DAMAGES_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalReservation/openDamages"};
@@ -28,7 +29,7 @@ type Props = WithLanguageType & WithAxiosType<RentalReservation, HandoverRentalR
  * the customer has seen, and their signature on the rental agreement. Every driver
  * needs a licence first.
  */
-function HandoverDialog({reservation, onClose, onUpdated, resolveLanguageKey, onPost, innerRef, loading}: Props) {
+function HandoverDialog({reservation, onClose, onUpdated, resolveLanguageKey, onPost, innerRef, loading, error}: Props) {
     const [odometerKm, setOdometerKm] = useState("");
     const [fuelLevel, setFuelLevel] = useState("full");
     const [notes, setNotes] = useState("");
@@ -66,6 +67,7 @@ function HandoverDialog({reservation, onClose, onUpdated, resolveLanguageKey, on
             confirmLabel={resolveLanguageKey("confirm")}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}
+            error={error?.message}
             canConfirm={odometerKm !== "" && Number(odometerKm) >= 0 && (declined || !!signature)}
             contentClassName="sm:max-w-xl"
             onClose={onClose}
@@ -99,17 +101,17 @@ function HandoverDialog({reservation, onClose, onUpdated, resolveLanguageKey, on
                     </div>
                 </div>
                 <div className="flex flex-col gap-2">
-                    <Label htmlFor="rental-handover-photos">{resolveLanguageKey("photosLabel")}</Label>
-                    <Input
-                        id="rental-handover-photos"
-                        type="file"
-                        accept="image/*"
-                        capture="environment"
-                        multiple
-                        onChange={(e) => setPhotos(Array.from(e.target.files ?? []))}
+                    <Label>{resolveLanguageKey("photosLabel")}</Label>
+                    <MultiLocalFilePicker
+                        files={photos}
+                        onFilesChange={setPhotos}
+                        resolveLanguageKey={resolveLanguageKey}
                         disabled={loading}
+                        maxFiles={12}
+                        accept="image/*"
+                        addFileKey="addPhotos"
+                        filesSelectedKey="photosChosen"
                     />
-                    {photos.length ? <p className="text-xs text-muted-foreground">{String(resolveLanguageKey("photosSelected")).replace("{count}", String(photos.length))}</p> : null}
                 </div>
                 <div className="flex flex-col gap-2">
                     <Label>{resolveLanguageKey("damagesLabel")}</Label>

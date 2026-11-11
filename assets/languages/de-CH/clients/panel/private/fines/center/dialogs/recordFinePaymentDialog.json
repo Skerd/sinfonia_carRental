@@ -7,5 +7,19 @@
   "cancel": "Zurück",
   "paidAtLabel": "Bezahlt am",
   "paidAmountLabel": "Bezahlter Betrag",
-  "paymentReferenceLabel": "Zahlungsreferenz"
+  "paymentReferenceLabel": "Zahlungsreferenz",
+  "axios": {
+    "start": {
+      "title": "Zahlung wird erfasst…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Zahlung erfasst",
+      "time": 3000
+    },
+    "error": {
+      "title": "Zahlung konnte nicht erfasst werden",
+      "time": 5000
+    }
+  }
 }

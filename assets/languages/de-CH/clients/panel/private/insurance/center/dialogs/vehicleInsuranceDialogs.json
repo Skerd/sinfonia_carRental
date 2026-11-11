@@ -10,5 +10,19 @@
     "title": "Police wiederherstellen",
     "description": "Police {policy} wird wieder aktiv, oder abgelaufen, wenn das Enddatum vorbei ist.",
     "confirm": "Police wiederherstellen"
+  },
+  "axios": {
+    "start": {
+      "title": "Wird gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Konnte nicht gespeichert werden",
+      "time": 5000
+    }
   }
 }

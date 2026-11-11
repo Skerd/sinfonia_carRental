@@ -6,5 +6,19 @@
   "description": "Denaro incassato al banco (contanti o terminale carte). Si aggiunge a quanto pagato dal cliente.",
   "amountLabel": "Importo",
   "noteLabel": "Nota",
-  "notePlaceholder": "es. Terminale carte, ricevuta 1042"
+  "notePlaceholder": "es. Terminale carte, ricevuta 1042",
+  "axios": {
+    "start": {
+      "title": "Registrazione pagamento…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Pagamento registrato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile registrare il pagamento",
+      "time": 5000
+    }
+  }
 }

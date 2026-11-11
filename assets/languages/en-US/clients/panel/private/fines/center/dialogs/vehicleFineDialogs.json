@@ -25,5 +25,19 @@
     "title": "Annul the fine",
     "description": "The authority dropped the fine. Anything charged to booking {booking} for it is taken back: credited on its invoice and refunded if paid.",
     "confirm": "Annul"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not save",
+      "time": 5000
+    }
   }
 }

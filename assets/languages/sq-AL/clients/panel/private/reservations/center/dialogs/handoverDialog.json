@@ -45,5 +45,21 @@
   "notReady": {
     "needs_cleaning": "Kjo makinë nuk është pastruar që nga kthimi i fundit.",
     "needs_check": "Kjo makinë u shënua që duhet kontrolluar."
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Duke dorëzuar…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Makina u dorëzua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Nuk u dorëzua dot",
+      "time": 5000
+    }
+  },
+  "addPhotos": "Shtoni foto",
+  "photosChosen": "foto"
 }

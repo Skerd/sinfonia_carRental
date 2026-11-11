@@ -10,5 +10,19 @@
   "readyAtLabel": "Car back on",
   "readyAtHint": "With a date, the car can't be booked until then. A booking in that time must move to another car first.",
   "providerLabel": "Garage",
-  "costLabel": "Estimated cost"
+  "costLabel": "Estimated cost",
+  "axios": {
+    "start": {
+      "title": "Sending to repair…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Repair scheduled",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not schedule the repair",
+      "time": 5000
+    }
+  }
 }

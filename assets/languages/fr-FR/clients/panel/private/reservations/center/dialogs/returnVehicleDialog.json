@@ -44,5 +44,21 @@
     "minor": "mineur",
     "moderate": "modéré",
     "major": "grave"
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Retour en cours…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Voiture reprise",
+      "time": 3000
+    },
+    "error": {
+      "title": "Retour impossible",
+      "time": 5000
+    }
+  },
+  "addPhotos": "Ajouter des photos",
+  "photosChosen": "photos"
 }

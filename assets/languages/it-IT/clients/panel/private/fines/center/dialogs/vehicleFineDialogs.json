@@ -25,5 +25,19 @@
     "title": "Annulla la multa",
     "description": "L'autorità ha ritirato la multa. Quanto addebitato alla prenotazione {booking} viene stornato: accreditato sulla fattura e rimborsato se pagato.",
     "confirm": "Annulla"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Salvato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare",
+      "time": 5000
+    }
   }
 }

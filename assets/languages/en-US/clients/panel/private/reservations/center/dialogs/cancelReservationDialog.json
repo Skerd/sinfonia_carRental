@@ -6,5 +6,19 @@
   "description": "The car becomes free again and what the customer paid is refunded. The customer gets an email.",
   "applyFeeLabel": "Keep the cancellation fee",
   "reasonLabel": "Reason",
-  "reasonPlaceholder": "Why is it cancelled?"
+  "reasonPlaceholder": "Why is it cancelled?",
+  "axios": {
+    "start": {
+      "title": "Cancelling…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Booking cancelled",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not cancel",
+      "time": 5000
+    }
+  }
 }

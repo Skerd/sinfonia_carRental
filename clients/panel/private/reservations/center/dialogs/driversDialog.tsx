@@ -10,12 +10,18 @@ import {RENTAL_DRIVERS_MAX_ITEMS, RENTAL_ID_DOCUMENT_TYPES} from "armonia/src/mo
 import ReservationActionDialogShell from "./reservationActionDialogShell.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
+import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
+import dayjs from "dayjs";
 import {Label} from "@coreModule/components/ui/label.tsx";
 import {SimpleSelect} from "@coreModule/components/viewEngine/widgets/inputs/simpleSelect.tsx";
 
 /** The inputs per driver, in form order; the ID document type is a select after them. */
 const INPUT_FIELDS = ["firstName", "lastName", "birthDate", "licenseNumber", "licenseCountry", "licenseIssuedAt", "licenseExpiresAt", "idDocumentNumber"] as const;
 const DATE_FIELDS: readonly string[] = ["birthDate", "licenseIssuedAt", "licenseExpiresAt"];
+/** What the server requires of every driver; the rest is filled in when the licence is checked at the counter. */
+const REQUIRED_FIELDS: readonly string[] = ["firstName", "lastName", "birthDate"];
+/** Birth and licence-issue days lie in the past; an upper bound only, the server checks age and validity. */
+const PAST_FIELDS: readonly string[] = ["birthDate", "licenseIssuedAt"];
 type DriverRow = Record<(typeof INPUT_FIELDS)[number] | "idDocumentType", string>;
 
 const emptyRow = (firstName = "", lastName = ""): DriverRow => ({
@@ -40,15 +46,24 @@ type Props = WithLanguageType & WithAxiosType<RentalReservation, SaveRentalDrive
 };
 
 /** Who may drive: the first row is the main driver, the others are additional drivers. */
-function DriversDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
+function DriversDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     const [rows, setRows] = useState<DriverRow[]>(() => initialRows(reservation));
+    // Missing required fields are pointed out once Save was pressed, not while typing.
+    const [showMissing, setShowMissing] = useState(false);
     useImperativeHandle(innerRef, () => ({success: (data) => { onUpdated(data); onClose(); }}));
 
     const update = (index: number, key: keyof DriverRow, value: string) =>
         setRows((current) => current.map((row, i) => (i === index ? {...row, [key]: value} : row)));
     const complete = rows.every((row) => row.firstName.trim() && row.lastName.trim() && row.birthDate);
 
-    const submit = () => onFilterChange({
+    const submit = () => {
+        if (!complete) {
+            setShowMissing(true);
+            return;
+        }
+        save();
+    };
+    const save = () => onFilterChange({
         _id: reservation._id,
         drivers: rows.map((row, index) => {
             const filled = Object.fromEntries(Object.entries(row).map(([key, value]) => [key, value.trim()]).filter(([, value]) => value !== ""));
@@ -63,7 +78,8 @@ function DriversDialog({reservation, onClose, onUpdated, resolveLanguageKey, onF
             confirmLabel={resolveLanguageKey("confirm")}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}
-            canConfirm={complete}
+            error={error?.message}
+            canConfirm
             contentClassName="sm:max-w-2xl"
             onClose={onClose}
             onConfirm={submit}
@@ -81,18 +97,31 @@ function DriversDialog({reservation, onClose, onUpdated, resolveLanguageKey, onF
                             ) : null}
                         </div>
                         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                            {INPUT_FIELDS.map((key) => (
-                                <div key={key} className="flex flex-col gap-2">
-                                    <Label htmlFor={`rental-driver-${index}-${key}`}>{resolveLanguageKey(key)}</Label>
-                                    <Input
-                                        id={`rental-driver-${index}-${key}`}
-                                        type={DATE_FIELDS.includes(key) ? "date" : "text"}
-                                        value={row[key]}
-                                        onChange={(e) => update(index, key, e.target.value)}
-                                        disabled={loading}
-                                    />
-                                </div>
-                            ))}
+                            {INPUT_FIELDS.map((key) => {
+                                const id = `rental-driver-${index}-${key}`;
+                                const missing = showMissing && REQUIRED_FIELDS.includes(key) && !row[key].trim();
+                                return (
+                                    <div key={key} className="flex flex-col gap-2">
+                                        <Label htmlFor={id}>
+                                            {resolveLanguageKey(key)}
+                                            {REQUIRED_FIELDS.includes(key) ? <span className="text-destructive" aria-hidden>*</span> : null}
+                                        </Label>
+                                        {DATE_FIELDS.includes(key) ? (
+                                            <DateInput
+                                                id={id}
+                                                valueFormat="YYYY-MM-DD"
+                                                value={row[key]}
+                                                onChange={(value) => update(index, key, value)}
+                                                maxDate={PAST_FIELDS.includes(key) ? dayjs().format("YYYY-MM-DD") : undefined}
+                                                disabled={loading}
+                                            />
+                                        ) : (
+                                            <Input id={id} value={row[key]} onChange={(e) => update(index, key, e.target.value)} disabled={loading} aria-invalid={missing || undefined} />
+                                        )}
+                                        {missing ? <p className="text-xs text-destructive">{resolveLanguageKey("required")}</p> : null}
+                                    </div>
+                                );
+                            })}
                             <div className="flex flex-col gap-2">
                                 <Label>{resolveLanguageKey("idDocumentType")}</Label>
                                 <SimpleSelect

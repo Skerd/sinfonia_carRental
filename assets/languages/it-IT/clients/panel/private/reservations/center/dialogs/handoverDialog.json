@@ -45,5 +45,21 @@
   "notReady": {
     "needs_cleaning": "Questo veicolo non è stato pulito dall'ultima riconsegna.",
     "needs_check": "Questo veicolo è stato segnato come da controllare."
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Consegna in corso…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Auto consegnata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile consegnare",
+      "time": 5000
+    }
+  },
+  "addPhotos": "Aggiungi foto",
+  "photosChosen": "foto"
 }

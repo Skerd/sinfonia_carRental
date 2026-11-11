@@ -5,5 +5,19 @@
   "confirm": "Shto pagesën",
   "cancel": "Kthehu",
   "amountLabel": "Shuma",
-  "excessHint": "Me paketë mbrojtjeje, pagesa ndalet te franshiza e klientit."
+  "excessHint": "Me paketë mbrojtjeje, pagesa ndalet te franshiza e klientit.",
+  "axios": {
+    "start": {
+      "title": "Duke ngarkuar dëmin…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Dëmi u ngarkua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Dëmi nuk u ngarkua dot",
+      "time": 5000
+    }
+  }
 }

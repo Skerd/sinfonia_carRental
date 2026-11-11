@@ -14,6 +14,10 @@ vi.mock("@coreModule/helpers/hocs/withLanguage.tsx", () => ({
     default: () => (Wrapped: ComponentType<Record<string, unknown>>) =>
         (props: Record<string, unknown>) => <Wrapped {...props} resolveLanguageKey={(key: string) => key}/>,
 }));
+// The shared date picker needs the app's store; this test is about which reservation the dialog starts from.
+vi.mock("@coreModule/components/custom/inputs/dateInput.tsx", () => ({
+    DateInput: ({id, value}: {id?: string; value?: string}) => <input id={id} value={value ?? ""} readOnly />,
+}));
 vi.mock("@coreModule/helpers/hocs/withDebug.tsx", () => ({
     default: () => (Wrapped: ComponentType<Record<string, unknown>>) => Wrapped,
 }));

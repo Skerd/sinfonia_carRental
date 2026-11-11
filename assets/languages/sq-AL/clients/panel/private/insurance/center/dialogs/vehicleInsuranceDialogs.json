@@ -10,5 +10,19 @@
     "title": "Rikthe këtë policë",
     "description": "Polica {policy} bëhet aktive përsëri, ose e skaduar nëse data e mbarimit ka kaluar.",
     "confirm": "Rikthe policën"
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur…",
+      "time": 3000
+    },
+    "success": {
+      "title": "U ruajt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Nuk u ruajt dot",
+      "time": 5000
+    }
   }
 }

@@ -19,7 +19,7 @@ type Props = WithLanguageType & WithAxiosType<VehicleFine, RecordVehicleFinePaym
 };
 
 /** What the company paid the authority, and when: it can differ from the fine (early discount, late surcharge). */
-function RecordFinePaymentDialog({fine, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
+function RecordFinePaymentDialog({fine, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     // The company's today, not the browser's UTC day (GLB-09).
     const today = companyToday(useCompanyTimeZone());
     const [paidAt, setPaidAt] = useState(today);
@@ -34,6 +34,7 @@ function RecordFinePaymentDialog({fine, onClose, onUpdated, resolveLanguageKey, 
             confirmLabel={resolveLanguageKey("confirm")}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}
+            error={error?.message}
             canConfirm={!!paidAt && paidAmount !== "" && Number(paidAmount) >= 0}
             onClose={onClose}
             onConfirm={() => onFilterChange({_id: fine._id, paidAt, paidAmount: Number(paidAmount), ...(paymentReference ? {paymentReference} : {})})}

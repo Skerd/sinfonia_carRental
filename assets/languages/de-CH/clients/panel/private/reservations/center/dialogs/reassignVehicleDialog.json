@@ -5,5 +5,26 @@
   "title": "Das Auto wechseln",
   "description": "Wählen Sie ein anderes Auto derselben Kategorie. Es muss für die ganze Buchung frei sein.",
   "vehicleLabel": "Auto",
-  "vehiclePlaceholder": "Auto auswählen"
+  "vehiclePlaceholder": "Auto auswählen",
+  "axios": {
+    "start": {
+      "title": "Auto wird gewechselt…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Auto gewechselt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Auto konnte nicht gewechselt werden",
+      "time": 5000
+    }
+  },
+  "loadingCars": "Freie Autos werden gesucht…",
+  "noFreeCars": "Kein anderes Auto dieser Klasse ist für die ganze Buchung frei.",
+  "readiness": {
+    "ready": "Bereit",
+    "needs_cleaning": "Muss gereinigt werden",
+    "needs_check": "Muss geprüft werden"
+  }
 }

@@ -21,7 +21,7 @@ type Props = WithLanguageType & WithAxiosType<VehicleDamage, ScheduleVehicleDama
  * Sends the car to repair: a new repair record (the car is blocked until the ready time),
  * or a repair already planned for this car, so several damages share one garage visit.
  */
-function ScheduleRepairDialog({damage, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
+function ScheduleRepairDialog({damage, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     const [repair, setRepair] = useState("");
     const [serviceDate, setServiceDate] = useState("");
     const [readyAt, setReadyAt] = useState("");
@@ -46,6 +46,7 @@ function ScheduleRepairDialog({damage, onClose, onUpdated, resolveLanguageKey, o
             confirmLabel={resolveLanguageKey("confirm")}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}
+            error={error?.message}
             canConfirm={!!repair || !!serviceDate}
             onClose={onClose}
             onConfirm={submit}

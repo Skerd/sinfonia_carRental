@@ -6,5 +6,19 @@
   "description": "Am Schalter erhaltenes Geld (bar oder per Kartenterminal). Es wird zu dem addiert, was der Kunde bezahlt hat.",
   "amountLabel": "Betrag",
   "noteLabel": "Notiz",
-  "notePlaceholder": "z. B. Kartenterminal, Beleg 1042"
+  "notePlaceholder": "z. B. Kartenterminal, Beleg 1042",
+  "axios": {
+    "start": {
+      "title": "Zahlung wird erfasst…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Zahlung erfasst",
+      "time": 3000
+    },
+    "error": {
+      "title": "Zahlung konnte nicht erfasst werden",
+      "time": 5000
+    }
+  }
 }

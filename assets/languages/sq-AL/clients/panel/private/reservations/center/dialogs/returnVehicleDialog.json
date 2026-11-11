@@ -44,5 +44,21 @@
     "minor": "i lehtë",
     "moderate": "mesatar",
     "major": "i rëndë"
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Duke marrë makinën…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Makina u kthye",
+      "time": 3000
+    },
+    "error": {
+      "title": "Makina nuk u kthye dot",
+      "time": 5000
+    }
+  },
+  "addPhotos": "Shtoni foto",
+  "photosChosen": "foto"
 }

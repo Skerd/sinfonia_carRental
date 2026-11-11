@@ -11,7 +11,7 @@ type DialogProps = {record: VehicleMaintenance; onClose: () => void; onUpdated: 
 type Props = WithLanguageType & WithAxiosType<VehicleMaintenance, {_id: string}> & DialogProps & {action: VehicleMaintenanceAction};
 
 /** Confirms completing or cancelling a service; the dictionary holds the title, text and button per action. */
-function MaintenanceActionDialog({action, record, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
+function MaintenanceActionDialog({action, record, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     useImperativeHandle(innerRef, () => ({success: (data) => { onUpdated(data); onClose(); }}));
     return (
         <ReservationActionDialogShell
@@ -20,6 +20,7 @@ function MaintenanceActionDialog({action, record, onClose, onUpdated, resolveLan
             confirmLabel={resolveLanguageKey(`${action}.confirm`)}
             cancelLabel={resolveLanguageKey("back")}
             loading={loading}
+            error={error?.message}
             destructive={action === "cancel"}
             onClose={onClose}
             onConfirm={() => onFilterChange({_id: record._id})}

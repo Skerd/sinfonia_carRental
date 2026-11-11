@@ -11,7 +11,7 @@ type DialogProps = {transfer: VehicleTransfer; onClose: () => void; onUpdated: (
 type Props = WithLanguageType & WithAxiosType<VehicleTransfer, {_id: string}> & DialogProps & {action: VehicleTransferAction};
 
 /** Confirms one transfer action; the dictionary holds the title, text and button per action. */
-function TransferActionDialog({action, transfer, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
+function TransferActionDialog({action, transfer, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     useImperativeHandle(innerRef, () => ({success: (data) => { onUpdated(data); onClose(); }}));
     return (
         <ReservationActionDialogShell
@@ -20,6 +20,7 @@ function TransferActionDialog({action, transfer, onClose, onUpdated, resolveLang
             confirmLabel={resolveLanguageKey(`${action}.confirm`)}
             cancelLabel={resolveLanguageKey("back")}
             loading={loading}
+            error={error?.message}
             onClose={onClose}
             onConfirm={() => onFilterChange({_id: transfer._id})}
         />

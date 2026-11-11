@@ -21,5 +21,20 @@
     "passport": "Passeport",
     "national_id": "Carte d'identité",
     "other": "Autre"
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement des conducteurs…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Conducteurs enregistrés",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible d'enregistrer les conducteurs",
+      "time": 5000
+    }
+  },
+  "required": "Obligatoire"
 }

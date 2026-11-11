@@ -21,5 +21,20 @@
     "passport": "Pasaportë",
     "national_id": "Kartë identiteti",
     "other": "Tjetër"
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur shoferët…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Shoferët u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Shoferët nuk u ruajtën dot",
+      "time": 5000
+    }
+  },
+  "required": "I detyrueshëm"
 }

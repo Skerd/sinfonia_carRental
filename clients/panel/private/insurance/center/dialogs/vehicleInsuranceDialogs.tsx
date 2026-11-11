@@ -11,7 +11,7 @@ type DialogProps = {policy: VehicleInsurance; onClose: () => void; onUpdated: (u
 type Props = WithLanguageType & WithAxiosType<VehicleInsurance, {_id: string}> & DialogProps & {action: VehicleInsuranceAction};
 
 /** Confirms cancel or restore. The dictionary holds the title, text and button per action. */
-function InsuranceActionDialog({action, policy, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
+function InsuranceActionDialog({action, policy, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     useImperativeHandle(innerRef, () => ({success: (data) => { onUpdated(data); onClose(); }}));
     return (
         <ReservationActionDialogShell
@@ -20,6 +20,7 @@ function InsuranceActionDialog({action, policy, onClose, onUpdated, resolveLangu
             confirmLabel={resolveLanguageKey(`${action}.confirm`)}
             cancelLabel={resolveLanguageKey("back")}
             loading={loading}
+            error={error?.message}
             destructive={action === "cancel"}
             onClose={onClose}
             onConfirm={() => onFilterChange({_id: policy._id})}

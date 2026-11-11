@@ -44,5 +44,21 @@
     "minor": "lieve",
     "moderate": "moderato",
     "major": "grave"
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Ritiro in corso…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Auto ritirata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile ritirare",
+      "time": 5000
+    }
+  },
+  "addPhotos": "Aggiungi foto",
+  "photosChosen": "foto"
 }

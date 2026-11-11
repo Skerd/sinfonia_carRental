@@ -6,5 +6,19 @@
   "description": "L'auto torna libera e quanto pagato dal cliente viene rimborsato. Il cliente riceve un'e-mail.",
   "applyFeeLabel": "Trattieni la penale",
   "reasonLabel": "Motivo",
-  "reasonPlaceholder": "Perché viene annullata?"
+  "reasonPlaceholder": "Perché viene annullata?",
+  "axios": {
+    "start": {
+      "title": "Annullamento…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Prenotazione annullata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile annullare",
+      "time": 5000
+    }
+  }
 }

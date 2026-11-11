@@ -3,5 +3,19 @@
   "cancel": "Back",
   "confirm": "Mark no-show",
   "title": "Mark as no-show",
-  "description": "The customer did not come to pick up the car. The booking closes and the car is free again. Payments are kept."
+  "description": "The customer did not come to pick up the car. The booking closes and the car is free again. Payments are kept.",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Marked as no-show",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not save",
+      "time": 5000
+    }
+  }
 }

@@ -21,5 +21,20 @@
     "passport": "Passport",
     "national_id": "National ID card",
     "other": "Other"
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Saving the drivers…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Drivers saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not save the drivers",
+      "time": 5000
+    }
+  },
+  "required": "Required"
 }

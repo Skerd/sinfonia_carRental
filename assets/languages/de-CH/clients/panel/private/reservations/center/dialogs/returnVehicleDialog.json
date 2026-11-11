@@ -44,5 +44,21 @@
     "minor": "leicht",
     "moderate": "mittel",
     "major": "schwer"
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Rücknahme läuft…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Auto zurückgenommen",
+      "time": 3000
+    },
+    "error": {
+      "title": "Rücknahme nicht möglich",
+      "time": 5000
+    }
+  },
+  "addPhotos": "Fotos hinzufügen",
+  "photosChosen": "Fotos"
 }

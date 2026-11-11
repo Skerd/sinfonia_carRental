@@ -5,5 +5,19 @@
   "keepLabel": "Retenir sur la caution",
   "confirmKeep": "Retenir et libérer le reste",
   "confirmRelease": "Libérer la caution",
-  "cancel": "Retour"
+  "cancel": "Retour",
+  "axios": {
+    "start": {
+      "title": "Règlement de la caution…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Caution réglée",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible de régler la caution",
+      "time": 5000
+    }
+  }
 }

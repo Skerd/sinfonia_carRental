@@ -10,5 +10,19 @@
     "title": "Service absagen",
     "description": "{plate} ist wieder frei für Buchungen, und die Schäden, die behoben werden sollten, sind wieder offen.",
     "confirm": "Service absagen"
+  },
+  "axios": {
+    "start": {
+      "title": "Wird gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Konnte nicht gespeichert werden",
+      "time": 5000
+    }
   }
 }

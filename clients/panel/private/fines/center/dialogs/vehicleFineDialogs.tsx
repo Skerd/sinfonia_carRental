@@ -13,7 +13,7 @@ type ConfirmAction = Exclude<VehicleFineAction, "recordPayment">;
 type Props = WithLanguageType & WithAxiosType<VehicleFine, {_id: string}> & DialogProps & {action: ConfirmAction};
 
 /** Confirms one fine action; the dictionary holds the title, text and button per action. */
-function FineActionDialog({action, fine, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
+function FineActionDialog({action, fine, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     useImperativeHandle(innerRef, () => ({success: (data) => { onUpdated(data); onClose(); }}));
     return (
         <ReservationActionDialogShell
@@ -22,6 +22,7 @@ function FineActionDialog({action, fine, onClose, onUpdated, resolveLanguageKey,
             confirmLabel={resolveLanguageKey(`${action}.confirm`)}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}
+            error={error?.message}
             destructive={action === "annul"}
             onClose={onClose}
             onConfirm={() => onFilterChange({_id: fine._id})}

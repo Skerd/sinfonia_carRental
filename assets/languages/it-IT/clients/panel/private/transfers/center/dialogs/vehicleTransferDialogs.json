@@ -15,5 +15,19 @@
     "description": "Da ora {plate} conta nella nuova sede.",
     "confirm": "Segna come arrivato"
   },
-  "back": "Indietro"
+  "back": "Indietro",
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Salvato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare",
+      "time": 5000
+    }
+  }
 }

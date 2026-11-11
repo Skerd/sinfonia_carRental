@@ -15,5 +15,19 @@
     "description": "{plate} zählt ab jetzt am neuen Standort.",
     "confirm": "Als angekommen markieren"
   },
-  "back": "Zurück"
+  "back": "Zurück",
+  "axios": {
+    "start": {
+      "title": "Wird gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Konnte nicht gespeichert werden",
+      "time": 5000
+    }
+  }
 }

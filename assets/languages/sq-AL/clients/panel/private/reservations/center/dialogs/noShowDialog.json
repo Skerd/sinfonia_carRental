@@ -3,5 +3,19 @@
   "cancel": "Kthehu",
   "confirm": "Shëno mosparaqitje",
   "title": "Shëno si mosparaqitje",
-  "description": "Klienti nuk erdhi të marrë makinën. Rezervimi mbyllet dhe makina lirohet përsëri. Pagesat ruhen."
+  "description": "Klienti nuk erdhi të marrë makinën. Rezervimi mbyllet dhe makina lirohet përsëri. Pagesat ruhen.",
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur…",
+      "time": 3000
+    },
+    "success": {
+      "title": "U shënua si mosparaqitje",
+      "time": 3000
+    },
+    "error": {
+      "title": "Nuk u ruajt dot",
+      "time": 5000
+    }
+  }
 }

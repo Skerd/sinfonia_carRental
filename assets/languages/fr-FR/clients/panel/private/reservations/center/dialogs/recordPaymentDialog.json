@@ -6,5 +6,19 @@
   "description": "Argent encaissé au comptoir (espèces ou terminal de carte). Il s'ajoute à ce que le client a payé.",
   "amountLabel": "Montant",
   "noteLabel": "Note",
-  "notePlaceholder": "p. ex. Terminal de carte, reçu 1042"
+  "notePlaceholder": "p. ex. Terminal de carte, reçu 1042",
+  "axios": {
+    "start": {
+      "title": "Enregistrement du paiement…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Paiement enregistré",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible d'enregistrer le paiement",
+      "time": 5000
+    }
+  }
 }

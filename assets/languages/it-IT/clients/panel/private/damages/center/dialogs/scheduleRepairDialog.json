@@ -10,5 +10,19 @@
   "readyAtLabel": "Veicolo di nuovo pronto il",
   "readyAtHint": "Con una data, il veicolo non è prenotabile fino ad allora. Una prenotazione in quel periodo va prima spostata su un altro veicolo.",
   "providerLabel": "Officina",
-  "costLabel": "Costo stimato"
+  "costLabel": "Costo stimato",
+  "axios": {
+    "start": {
+      "title": "Invio in riparazione…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Riparazione pianificata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile pianificare la riparazione",
+      "time": 5000
+    }
+  }
 }

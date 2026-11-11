@@ -45,5 +45,21 @@
   "notReady": {
     "needs_cleaning": "Ce véhicule n'a pas été nettoyé depuis son dernier retour.",
     "needs_check": "Ce véhicule a été marqué comme à contrôler."
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Remise en cours…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Voiture remise",
+      "time": 3000
+    },
+    "error": {
+      "title": "Remise impossible",
+      "time": 5000
+    }
+  },
+  "addPhotos": "Ajouter des photos",
+  "photosChosen": "photos"
 }

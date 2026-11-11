@@ -12,7 +12,7 @@ type Props = WithLanguageType & WithAxiosType<RentalReservation, {_id: string}> 
     onUpdated: (updated: RentalReservation) => void;
 };
 
-function NoShowDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
+function NoShowDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     useImperativeHandle(innerRef, () => ({success: (data) => { onUpdated(data); onClose(); }}));
     return (
         <ReservationActionDialogShell
@@ -21,6 +21,7 @@ function NoShowDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFi
             confirmLabel={resolveLanguageKey("confirm")}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}
+            error={error?.message}
             destructive
             onClose={onClose}
             onConfirm={() => onFilterChange({_id: reservation._id})}

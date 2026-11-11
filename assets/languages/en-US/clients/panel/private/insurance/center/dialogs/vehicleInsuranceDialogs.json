@@ -10,5 +10,19 @@
     "title": "Restore this policy",
     "description": "Policy {policy} becomes active again, or expired if the end date has passed.",
     "confirm": "Restore policy"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not save",
+      "time": 5000
+    }
   }
 }

@@ -21,5 +21,20 @@
     "passport": "Pass",
     "national_id": "Identitätskarte",
     "other": "Anderes"
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Fahrer werden gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Fahrer gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Fahrer konnten nicht gespeichert werden",
+      "time": 5000
+    }
+  },
+  "required": "Pflichtfeld"
 }

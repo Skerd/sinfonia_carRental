@@ -16,5 +16,19 @@
   "confirmHold": "Blloko depozitën",
   "confirmSave": "Ruaj kartën",
   "close": "Mbyll",
-  "cancel": "Kthehu"
+  "cancel": "Kthehu",
+  "axios": {
+    "start": {
+      "title": "Duke marrë depozitën…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Depozita u mor",
+      "time": 3000
+    },
+    "error": {
+      "title": "Depozita nuk u mor dot",
+      "time": 5000
+    }
+  }
 }

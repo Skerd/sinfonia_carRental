@@ -44,5 +44,21 @@
     "minor": "minor",
     "moderate": "moderate",
     "major": "major"
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Taking the car back…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Car taken back",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not take the car back",
+      "time": 5000
+    }
+  },
+  "addPhotos": "Add photos",
+  "photosChosen": "photos"
 }

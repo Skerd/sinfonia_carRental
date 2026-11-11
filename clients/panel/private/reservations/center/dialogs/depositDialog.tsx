@@ -28,7 +28,7 @@ type Props = WithLanguageType & WithAxiosType<{data: RentalDepositResponse}, Tak
  * customer here: a hold for rentals of up to a week, otherwise a card saved for
  * later charges.
  */
-function DepositDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
+function DepositDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     const [method, setMethod] = useState<"card" | "cash">("card");
     const [amount, setAmount] = useState(String(reservation.pricing.depositAmount || ""));
     const [card, setCard] = useState<NonNullable<RentalDepositResponse["payment"]> | null>(null);
@@ -84,6 +84,7 @@ function DepositDialog({reservation, onClose, onUpdated, resolveLanguageKey, onF
             confirmLabel={resolveLanguageKey(method === "cash" ? "confirmCash" : "continueCard")}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}
+            error={error?.message}
             canConfirm={amount !== "" && Number(amount) > 0}
             onClose={onClose}
             onConfirm={() => onFilterChange({_id: reservation._id, method, amount: Number(amount)})}

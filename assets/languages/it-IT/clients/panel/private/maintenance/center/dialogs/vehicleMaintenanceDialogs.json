@@ -10,5 +10,19 @@
     "title": "Annulla l'intervento",
     "description": "{plate} è di nuovo libero per le prenotazioni e i danni da riparare tornano aperti.",
     "confirm": "Annulla"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Salvato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare",
+      "time": 5000
+    }
   }
 }

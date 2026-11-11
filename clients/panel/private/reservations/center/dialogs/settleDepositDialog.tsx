@@ -18,7 +18,7 @@ type Props = WithLanguageType & WithAxiosType<RentalReservation, SettleRentalDep
 };
 
 /** Keeps what the customer still owes from the deposit and releases the rest. */
-function SettleDepositDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
+function SettleDepositDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     // Exact money at the currency's own decimals (GLB-08), shown with its currency (UX-07).
     const currency = reservation.pricing?.currency;
     const decimals = currency?.decimalPlaces ?? 2;
@@ -36,6 +36,7 @@ function SettleDepositDialog({reservation, onClose, onUpdated, resolveLanguageKe
             confirmLabel={resolveLanguageKey(Number(keep) > 0 ? "confirmKeep" : "confirmRelease")}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}
+            error={error?.message}
             canConfirm={keep !== "" && Number(keep) >= 0 && toMinor(Number(keep), decimals) <= toMinor(most, decimals)}
             onClose={onClose}
             onConfirm={() => onFilterChange({_id: reservation._id, keepAmount: Number(keep)})}

@@ -16,5 +16,19 @@
   "confirmHold": "Hold deposit",
   "confirmSave": "Save card",
   "close": "Close",
-  "cancel": "Back"
+  "cancel": "Back",
+  "axios": {
+    "start": {
+      "title": "Taking the deposit…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Deposit taken",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not take the deposit",
+      "time": 5000
+    }
+  }
 }

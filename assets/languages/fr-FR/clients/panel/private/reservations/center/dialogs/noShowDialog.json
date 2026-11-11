@@ -3,5 +3,19 @@
   "cancel": "Retour",
   "confirm": "Marquer absent",
   "title": "Marquer comme absent",
-  "description": "Le client n'est pas venu chercher la voiture. La réservation est clôturée et la voiture redevient libre. Les paiements sont conservés."
+  "description": "Le client n'est pas venu chercher la voiture. La réservation est clôturée et la voiture redevient libre. Les paiements sont conservés.",
+  "axios": {
+    "start": {
+      "title": "Enregistrement…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Marquée non présentée",
+      "time": 3000
+    },
+    "error": {
+      "title": "Échec de l'enregistrement",
+      "time": 5000
+    }
+  }
 }

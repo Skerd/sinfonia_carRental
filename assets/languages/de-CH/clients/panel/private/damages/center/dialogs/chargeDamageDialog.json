@@ -5,5 +5,19 @@
   "confirm": "Belastung hinzufügen",
   "cancel": "Zurück",
   "amountLabel": "Betrag",
-  "excessHint": "Mit einem Schutzpaket endet die Belastung beim Selbstbehalt der Kundschaft."
+  "excessHint": "Mit einem Schutzpaket endet die Belastung beim Selbstbehalt der Kundschaft.",
+  "axios": {
+    "start": {
+      "title": "Schaden wird belastet…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Schaden belastet",
+      "time": 3000
+    },
+    "error": {
+      "title": "Schaden konnte nicht belastet werden",
+      "time": 5000
+    }
+  }
 }

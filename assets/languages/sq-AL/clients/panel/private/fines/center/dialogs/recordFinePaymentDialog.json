@@ -7,5 +7,19 @@
   "cancel": "Kthehu",
   "paidAtLabel": "Paguar më",
   "paidAmountLabel": "Shuma e paguar",
-  "paymentReferenceLabel": "Referenca e pagesës"
+  "paymentReferenceLabel": "Referenca e pagesës",
+  "axios": {
+    "start": {
+      "title": "Duke regjistruar pagesën…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Pagesa u regjistrua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Pagesa nuk u regjistrua dot",
+      "time": 5000
+    }
+  }
 }

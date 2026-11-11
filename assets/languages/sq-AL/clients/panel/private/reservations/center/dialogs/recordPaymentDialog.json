@@ -6,5 +6,19 @@
   "description": "Para të marra në sportel (para në dorë ose terminal kartash). I shtohen asaj që ka paguar klienti.",
   "amountLabel": "Shuma",
   "noteLabel": "Shënim",
-  "notePlaceholder": "p.sh. Terminal kartash, fatura 1042"
+  "notePlaceholder": "p.sh. Terminal kartash, fatura 1042",
+  "axios": {
+    "start": {
+      "title": "Duke regjistruar pagesën…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Pagesa u regjistrua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Pagesa nuk u regjistrua dot",
+      "time": 5000
+    }
+  }
 }

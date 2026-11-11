@@ -16,5 +16,19 @@
   "confirmHold": "Bloquer la caution",
   "confirmSave": "Enregistrer la carte",
   "close": "Fermer",
-  "cancel": "Retour"
+  "cancel": "Retour",
+  "axios": {
+    "start": {
+      "title": "Prise de la caution…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Caution prise",
+      "time": 3000
+    },
+    "error": {
+      "title": "Caution impossible",
+      "time": 5000
+    }
+  }
 }

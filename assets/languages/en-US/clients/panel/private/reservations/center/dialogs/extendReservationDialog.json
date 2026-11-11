@@ -5,5 +5,22 @@
   "title": "Extend the rental",
   "description": "New return date and time, in the return location's local time",
   "returnDateLabel": "New return date",
-  "returnTimeLabel": "New return time"
+  "returnTimeLabel": "New return time",
+  "axios": {
+    "start": {
+      "title": "Extending the rental…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Rental extended",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not extend",
+      "time": 5000
+    }
+  },
+  "freeUntil": "The car is free until {until}.",
+  "freeOpenEnded": "No later booking or block on this car.",
+  "notLater": "Pick a return later than the current one."
 }

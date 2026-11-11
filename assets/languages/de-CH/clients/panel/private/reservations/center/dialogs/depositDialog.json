@@ -16,5 +16,19 @@
   "confirmHold": "Kaution reservieren",
   "confirmSave": "Karte speichern",
   "close": "Schliessen",
-  "cancel": "Zurück"
+  "cancel": "Zurück",
+  "axios": {
+    "start": {
+      "title": "Kaution wird genommen…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Kaution genommen",
+      "time": 3000
+    },
+    "error": {
+      "title": "Kaution nicht möglich",
+      "time": 5000
+    }
+  }
 }

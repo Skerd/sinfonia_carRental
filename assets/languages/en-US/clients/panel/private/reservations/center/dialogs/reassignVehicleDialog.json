@@ -5,5 +5,26 @@
   "title": "Change the car",
   "description": "Pick another car of the same category. It must be free for the whole booking.",
   "vehicleLabel": "Car",
-  "vehiclePlaceholder": "Select a car"
+  "vehiclePlaceholder": "Select a car",
+  "axios": {
+    "start": {
+      "title": "Changing the car…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Car changed",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not change the car",
+      "time": 5000
+    }
+  },
+  "loadingCars": "Finding free cars…",
+  "noFreeCars": "No other car of this class is free for the whole booking.",
+  "readiness": {
+    "ready": "Ready",
+    "needs_cleaning": "Needs cleaning",
+    "needs_check": "Needs a check"
+  }
 }

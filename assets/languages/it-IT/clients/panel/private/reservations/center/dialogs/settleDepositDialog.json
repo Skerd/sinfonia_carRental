@@ -5,5 +5,19 @@
   "keepLabel": "Trattieni dal deposito",
   "confirmKeep": "Trattieni e sblocca il resto",
   "confirmRelease": "Sblocca deposito",
-  "cancel": "Indietro"
+  "cancel": "Indietro",
+  "axios": {
+    "start": {
+      "title": "Saldo del deposito…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Deposito saldato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile saldare il deposito",
+      "time": 5000
+    }
+  }
 }

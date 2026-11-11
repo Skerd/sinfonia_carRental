@@ -14,6 +14,7 @@ import {Label} from "@coreModule/components/ui/label.tsx";
 import {Textarea} from "@coreModule/components/ui/textarea.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {SimpleSelect} from "@coreModule/components/viewEngine/widgets/inputs/simpleSelect.tsx";
+import MultiLocalFilePicker from "@coreModule/components/viewEngine/widgets/media/multiLocalFilePicker.tsx";
 import type {ReturnRentalReservationFormType} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.schema-def.ts";
 
 const FUEL_LEVELS = ["empty", "quarter", "half", "three_quarters", "full"];
@@ -34,7 +35,7 @@ type Props = WithLanguageType & WithAxiosType<RentalReservation, ReturnRentalRes
  * Km, fuel and lateness charges are worked out from the readings; staff can untick
  * or change them, add the preset fees, or add their own.
  */
-function ReturnVehicleDialog({reservation, onClose, onUpdated, resolveLanguageKey, onPost, innerRef, loading}: Props) {
+function ReturnVehicleDialog({reservation, onClose, onUpdated, resolveLanguageKey, onPost, innerRef, loading, error}: Props) {
     const [odometerKm, setOdometerKm] = useState("");
     const [fuelLevel, setFuelLevel] = useState("full");
     const [notes, setNotes] = useState("");
@@ -115,6 +116,7 @@ function ReturnVehicleDialog({reservation, onClose, onUpdated, resolveLanguageKe
             confirmLabel={resolveLanguageKey("confirm")}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}
+            error={error?.message}
             canConfirm={readingValid && validCharges && validDamages}
             contentClassName="sm:max-w-xl"
             onClose={onClose}
@@ -155,17 +157,17 @@ function ReturnVehicleDialog({reservation, onClose, onUpdated, resolveLanguageKe
                     </div>
                 </div>
                 <div className="flex flex-col gap-2">
-                    <Label htmlFor="rental-return-photos">{resolveLanguageKey("photosLabel")}</Label>
-                    <Input
-                        id="rental-return-photos"
-                        type="file"
-                        accept="image/*"
-                        capture="environment"
-                        multiple
-                        onChange={(e) => setPhotos(Array.from(e.target.files ?? []))}
+                    <Label>{resolveLanguageKey("photosLabel")}</Label>
+                    <MultiLocalFilePicker
+                        files={photos}
+                        onFilesChange={setPhotos}
+                        resolveLanguageKey={resolveLanguageKey}
                         disabled={loading}
+                        maxFiles={12}
+                        accept="image/*"
+                        addFileKey="addPhotos"
+                        filesSelectedKey="photosChosen"
                     />
-                    {photos.length ? <p className="text-xs text-muted-foreground">{String(resolveLanguageKey("photosSelected")).replace("{count}", String(photos.length))}</p> : null}
                 </div>
                 <div className="flex flex-col gap-2">
                     <Label>{resolveLanguageKey("damageLabel")}</Label>
@@ -205,14 +207,15 @@ function ReturnVehicleDialog({reservation, onClose, onUpdated, resolveLanguageKe
                                     onChange={(e) => updateDamage(index, {estimatedCost: e.target.value})}
                                     disabled={loading}
                                 />
-                                <Input
-                                    aria-label={String(resolveLanguageKey("photosLabel"))}
-                                    type="file"
-                                    accept="image/*"
-                                    capture="environment"
-                                    multiple
-                                    onChange={(e) => updateDamage(index, {photos: Array.from(e.target.files ?? [])})}
+                                <MultiLocalFilePicker
+                                    files={damage.photos}
+                                    onFilesChange={(next: File[]) => updateDamage(index, {photos: next})}
+                                    resolveLanguageKey={resolveLanguageKey}
                                     disabled={loading}
+                                    maxFiles={6}
+                                    accept="image/*"
+                                    addFileKey="addPhotos"
+                                    filesSelectedKey="photosChosen"
                                 />
                             </div>
                             <Button type="button" variant="ghost" className="self-start" onClick={() => setNewDamages(newDamages.filter((_, i) => i !== index))} disabled={loading}>

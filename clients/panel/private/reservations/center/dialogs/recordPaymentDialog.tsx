@@ -16,7 +16,7 @@ type Props = WithLanguageType & WithAxiosType<RentalReservation, RecordRentalPay
 };
 
 /** Money taken at the counter. Defaults to what is still due. */
-function RecordPaymentDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
+function RecordPaymentDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     const due = Math.max(0, (reservation.pricing?.grandTotal ?? 0) - (reservation.amountPaid ?? 0));
     const [amount, setAmount] = useState(String(due));
     const [note, setNote] = useState("");
@@ -30,6 +30,7 @@ function RecordPaymentDialog({reservation, onClose, onUpdated, resolveLanguageKe
             confirmLabel={resolveLanguageKey("confirm")}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}
+            error={error?.message}
             canConfirm={value > 0 && value <= due + 0.005}
             onClose={onClose}
             onConfirm={() => onFilterChange({_id: reservation._id, amount: value, ...(note.trim() ? {note: note.trim()} : {})})}

@@ -15,5 +15,19 @@
     "description": "{plate} counts at the new location from now on.",
     "confirm": "Mark arrived"
   },
-  "back": "Back"
+  "back": "Back",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not save",
+      "time": 5000
+    }
+  }
 }

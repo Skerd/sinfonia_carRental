@@ -5,5 +5,19 @@
   "confirm": "Ajouter les frais",
   "cancel": "Retour",
   "amountLabel": "Montant",
-  "excessHint": "Avec une formule de protection, les frais s'arrêtent à la franchise du client."
+  "excessHint": "Avec une formule de protection, les frais s'arrêtent à la franchise du client.",
+  "axios": {
+    "start": {
+      "title": "Facturation du dommage…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Dommage facturé",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible de facturer le dommage",
+      "time": 5000
+    }
+  }
 }

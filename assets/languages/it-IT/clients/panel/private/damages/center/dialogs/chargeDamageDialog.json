@@ -5,5 +5,19 @@
   "confirm": "Aggiungi addebito",
   "cancel": "Indietro",
   "amountLabel": "Importo",
-  "excessHint": "Con un pacchetto di protezione, l'addebito si ferma alla franchigia del cliente."
+  "excessHint": "Con un pacchetto di protezione, l'addebito si ferma alla franchigia del cliente.",
+  "axios": {
+    "start": {
+      "title": "Addebito del danno…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Danno addebitato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile addebitare il danno",
+      "time": 5000
+    }
+  }
 }

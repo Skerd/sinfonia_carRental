@@ -10,5 +10,19 @@
   "readyAtLabel": "Automjeti kthehet më",
   "readyAtHint": "Me një datë, automjeti nuk mund të rezervohet deri atëherë. Një rezervim në atë kohë duhet kaluar më parë në një automjet tjetër.",
   "providerLabel": "Autoservisi",
-  "costLabel": "Kosto e vlerësuar"
+  "costLabel": "Kosto e vlerësuar",
+  "axios": {
+    "start": {
+      "title": "Duke dërguar për riparim…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Riparimi u planifikua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Riparimi nuk u planifikua dot",
+      "time": 5000
+    }
+  }
 }

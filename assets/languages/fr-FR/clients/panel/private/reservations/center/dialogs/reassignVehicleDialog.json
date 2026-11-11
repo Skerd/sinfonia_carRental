@@ -5,5 +5,26 @@
   "title": "Changer la voiture",
   "description": "Choisissez une autre voiture de la même catégorie. Elle doit être libre pendant toute la réservation.",
   "vehicleLabel": "Voiture",
-  "vehiclePlaceholder": "Choisir une voiture"
+  "vehiclePlaceholder": "Choisir une voiture",
+  "axios": {
+    "start": {
+      "title": "Changement de voiture…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Voiture changée",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible de changer de voiture",
+      "time": 5000
+    }
+  },
+  "loadingCars": "Recherche des voitures libres…",
+  "noFreeCars": "Aucune autre voiture de cette catégorie n'est libre pour toute la réservation.",
+  "readiness": {
+    "ready": "Prête",
+    "needs_cleaning": "À nettoyer",
+    "needs_check": "À contrôler"
+  }
 }

@@ -5,5 +5,19 @@
   "keepLabel": "Keep from the deposit",
   "confirmKeep": "Keep and release the rest",
   "confirmRelease": "Release deposit",
-  "cancel": "Back"
+  "cancel": "Back",
+  "axios": {
+    "start": {
+      "title": "Settling the deposit…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Deposit settled",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not settle the deposit",
+      "time": 5000
+    }
+  }
 }

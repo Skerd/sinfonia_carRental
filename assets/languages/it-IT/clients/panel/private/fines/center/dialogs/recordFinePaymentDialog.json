@@ -7,5 +7,19 @@
   "cancel": "Indietro",
   "paidAtLabel": "Pagata il",
   "paidAmountLabel": "Importo pagato",
-  "paymentReferenceLabel": "Riferimento del pagamento"
+  "paymentReferenceLabel": "Riferimento del pagamento",
+  "axios": {
+    "start": {
+      "title": "Registrazione pagamento…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Pagamento registrato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile registrare il pagamento",
+      "time": 5000
+    }
+  }
 }

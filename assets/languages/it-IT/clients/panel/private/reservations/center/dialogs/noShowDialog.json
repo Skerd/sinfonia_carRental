@@ -3,5 +3,19 @@
   "cancel": "Indietro",
   "confirm": "Segna non presentato",
   "title": "Segna come non presentato",
-  "description": "Il cliente non si è presentato al ritiro. La prenotazione si chiude e l'auto torna libera. I pagamenti restano."
+  "description": "Il cliente non si è presentato al ritiro. La prenotazione si chiude e l'auto torna libera. I pagamenti restano.",
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Segnata come mancata presentazione",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare",
+      "time": 5000
+    }
+  }
 }

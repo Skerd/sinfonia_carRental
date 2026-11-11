@@ -5,5 +5,22 @@
   "title": "Zgjat qiranë",
   "description": "Data dhe ora e re e kthimit, në orën lokale të vendndodhjes së kthimit",
   "returnDateLabel": "Data e re e kthimit",
-  "returnTimeLabel": "Ora e re e kthimit"
+  "returnTimeLabel": "Ora e re e kthimit",
+  "axios": {
+    "start": {
+      "title": "Duke zgjatur qiranë…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Qiraja u zgjat",
+      "time": 3000
+    },
+    "error": {
+      "title": "Nuk u zgjat dot",
+      "time": 5000
+    }
+  },
+  "freeUntil": "Makina është e lirë deri më {until}.",
+  "freeOpenEnded": "Asnjë rezervim apo bllokim i mëvonshëm për këtë makinë.",
+  "notLater": "Zgjidhni një kthim më vonë se ai aktual."
 }

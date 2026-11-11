@@ -45,5 +45,21 @@
   "notReady": {
     "needs_cleaning": "This car has not been cleaned since its last return.",
     "needs_check": "This car was marked as needing a check."
-  }
+  },
+  "axios": {
+    "start": {
+      "title": "Handing over…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Car handed over",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not hand over",
+      "time": 5000
+    }
+  },
+  "addPhotos": "Add photos",
+  "photosChosen": "photos"
 }

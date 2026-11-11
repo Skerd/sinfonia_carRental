@@ -10,5 +10,19 @@
     "title": "Anulo servisin",
     "description": "{plate} është sërish i lirë për rezervime dhe dëmtimet që do riparoheshin janë sërish të hapura.",
     "confirm": "Anulo"
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur…",
+      "time": 3000
+    },
+    "success": {
+      "title": "U ruajt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Nuk u ruajt dot",
+      "time": 5000
+    }
   }
 }

@@ -10,5 +10,19 @@
     "title": "Cancel the service",
     "description": "{plate} is free for bookings again, and the damages it was to fix are open again.",
     "confirm": "Cancel service"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not save",
+      "time": 5000
+    }
   }
 }

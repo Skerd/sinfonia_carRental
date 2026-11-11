@@ -7,5 +7,19 @@
   "cancel": "Back",
   "paidAtLabel": "Paid on",
   "paidAmountLabel": "Amount paid",
-  "paymentReferenceLabel": "Payment reference"
+  "paymentReferenceLabel": "Payment reference",
+  "axios": {
+    "start": {
+      "title": "Recording the payment…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Payment recorded",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not record the payment",
+      "time": 5000
+    }
+  }
 }

@@ -16,7 +16,7 @@ type Props = WithLanguageType & WithAxiosType<VehicleDamage, ChargeVehicleDamage
 };
 
 /** Adds the repair to what the customer of the linked booking owes, capped at their excess. */
-function ChargeDamageDialog({damage, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
+function ChargeDamageDialog({damage, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     const [amount, setAmount] = useState(String(damage.repair?.cost ?? damage.estimatedCost ?? ""));
     useImperativeHandle(innerRef, () => ({success: (data) => { onUpdated(data); onClose(); }}));
 
@@ -27,6 +27,7 @@ function ChargeDamageDialog({damage, onClose, onUpdated, resolveLanguageKey, onF
             confirmLabel={resolveLanguageKey("confirm")}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}
+            error={error?.message}
             canConfirm={amount !== "" && Number(amount) > 0}
             onClose={onClose}
             onConfirm={() => onFilterChange({_id: damage._id, amount: Number(amount)})}

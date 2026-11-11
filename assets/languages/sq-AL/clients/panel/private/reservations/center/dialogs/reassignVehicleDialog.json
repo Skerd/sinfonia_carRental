@@ -5,5 +5,26 @@
   "title": "Ndrysho makinën",
   "description": "Zgjidhni një makinë tjetër të së njëjtës kategori. Duhet të jetë e lirë për gjithë rezervimin.",
   "vehicleLabel": "Makina",
-  "vehiclePlaceholder": "Zgjidh një makinë"
+  "vehiclePlaceholder": "Zgjidh një makinë",
+  "axios": {
+    "start": {
+      "title": "Duke ndërruar makinën…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Makina u ndërrua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Makina nuk u ndërrua dot",
+      "time": 5000
+    }
+  },
+  "loadingCars": "Duke kërkuar makina të lira…",
+  "noFreeCars": "Asnjë makinë tjetër e kësaj kategorie nuk është e lirë për gjithë rezervimin.",
+  "readiness": {
+    "ready": "Gati",
+    "needs_cleaning": "Duhet pastruar",
+    "needs_check": "Duhet kontrolluar"
+  }
 }

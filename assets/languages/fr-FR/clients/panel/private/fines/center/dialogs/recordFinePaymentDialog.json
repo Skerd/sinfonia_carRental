@@ -7,5 +7,19 @@
   "cancel": "Retour",
   "paidAtLabel": "Payée le",
   "paidAmountLabel": "Montant payé",
-  "paymentReferenceLabel": "Référence du paiement"
+  "paymentReferenceLabel": "Référence du paiement",
+  "axios": {
+    "start": {
+      "title": "Enregistrement du paiement…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Paiement enregistré",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible d'enregistrer le paiement",
+      "time": 5000
+    }
+  }
 }
