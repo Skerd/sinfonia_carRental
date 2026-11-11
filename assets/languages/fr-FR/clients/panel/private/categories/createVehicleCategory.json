@@ -55,7 +55,7 @@
     "mileagePolicyLabel": "Kilométrage",
     "mileagePolicyPlaceholder": "Choisir la politique de kilométrage",
     "nameLabel": "Nom",
-    "namePlaceholder": "p. ex. Aéroport de Zurich",
+    "namePlaceholder": "p. ex. Compacte",
     "pricingSectionTitle": "Prix",
     "rateSeasonsSectionTitle": "Tarifs saisonniers",
     "removeFeature": "Retirer l'équipement",
@@ -77,7 +77,14 @@
     "videosLabel": "Vidéos",
     "crossBorderAllowedLabel": "Transfrontalier autorisé",
     "crossBorderFeeLabel": "Frais transfrontaliers",
-    "crossBorderFeePlaceholder": "0.00"
+    "crossBorderFeePlaceholder": "0.00",
+    "basicsSectionTitle": "Informations de base",
+    "mediaSectionTitle": "Photos et vidéos",
+    "visibilitySectionTitle": "Visibilité",
+    "amountCurrencyDescription": "Dans la devise de location (Configurations › Location de voitures › Réservation en ligne).",
+    "slugDescription": "Facultatif. Laissé vide, il est créé à partir du nom.",
+    "isPublicLabel": "Visible sur le site",
+    "isPublicDescription": "Désactivée, cette catégorie disparaît de la réservation en ligne ; le comptoir peut toujours la réserver."
   },
   "axios": {
     "start": {

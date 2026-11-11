@@ -40,7 +40,8 @@
     "notesPlaceholder": "Shënime të brendshme",
     "offenceSectionTitle": "Shkelja",
     "authoritySectionTitle": "Autoriteti dhe shuma",
-    "notesSectionTitle": "Shënime dhe skedarë"
+    "notesSectionTitle": "Shënime dhe skedarë",
+    "amountCurrencyDescription": "Në monedhën e qirasë (Konfigurimet › Qiraja e makinave › Rezervim online)."
   },
   "axios": {
     "start": {

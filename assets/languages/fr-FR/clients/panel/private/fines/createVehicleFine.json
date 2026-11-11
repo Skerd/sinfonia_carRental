@@ -40,7 +40,8 @@
     "notesPlaceholder": "Notes internes",
     "offenceSectionTitle": "Infraction",
     "authoritySectionTitle": "Autorité et montant",
-    "notesSectionTitle": "Notes et fichiers"
+    "notesSectionTitle": "Notes et fichiers",
+    "amountCurrencyDescription": "Dans la devise de location (Configurations › Location de voitures › Réservation en ligne)."
   },
   "axios": {
     "start": {

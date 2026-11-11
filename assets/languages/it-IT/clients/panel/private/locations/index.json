@@ -10,7 +10,7 @@
       {
         "title": "In questa pagina",
         "items": [
-          "Imposta il fuso orario IANA (ad esempio Europe/Zurich) perché le prenotazioni restino corrette con il cambio dell'ora.",
+          "Imposta il fuso orario IANA (ad esempio Europe/Tirane) perché le prenotazioni restino corrette con il cambio dell'ora.",
           "Aggiungi i giorni festivi come chiusure; in quei giorni il sito non offrirà ritiri né riconsegne.",
           "Una sede con prenotazioni non può essere eliminata; disattivala invece."
         ]

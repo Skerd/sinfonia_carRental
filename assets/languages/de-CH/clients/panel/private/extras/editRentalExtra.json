@@ -15,7 +15,7 @@
     "depositAmountLabel": "Kaution mit diesem Paket",
     "depositAmountPlaceholder": "Leer lassen, um die Kaution der Kategorie zu behalten",
     "descriptionLabel": "Beschreibung",
-    "descriptionPlaceholder": "Was Kunden über diese Kategorie wissen sollten",
+    "descriptionPlaceholder": "Was Kunden über dieses Extra wissen sollten",
     "excessAmountLabel": "Selbstbehalt (nur Schutzpaket)",
     "excessAmountPlaceholder": "Höchstbetrag, den die Kundschaft bei Schäden zahlt",
     "kind": {
@@ -27,7 +27,7 @@
     "maxQuantityLabel": "Höchstens pro Buchung",
     "maxQuantityPlaceholder": "Höchstmenge eingeben",
     "nameLabel": "Name",
-    "namePlaceholder": "z. B. Flughafen Zürich",
+    "namePlaceholder": "z. B. Kindersitz",
     "priceLabel": "Preis",
     "pricePlaceholder": "Preis eingeben",
     "pricing": {
@@ -37,7 +37,11 @@
     "pricingLabel": "Verrechnet",
     "pricingPlaceholder": "Verrechnungsart auswählen",
     "sortOrderLabel": "Sortierung",
-    "sortOrderPlaceholder": "Sortierung eingeben"
+    "sortOrderPlaceholder": "Sortierung eingeben",
+    "basicsSectionTitle": "Grunddaten",
+    "pricingSectionTitle": "Preise",
+    "visibilitySectionTitle": "Sichtbarkeit",
+    "amountCurrencyDescription": "In der Mietwährung (Konfigurationen › Autovermietung › Online-Buchung)."
   },
   "axios": {
     "start": {

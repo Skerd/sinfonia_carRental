@@ -15,7 +15,7 @@
     "depositAmountLabel": "Depozita me këtë paketë",
     "depositAmountPlaceholder": "Lëreni bosh për të mbajtur depozitën e kategorisë",
     "descriptionLabel": "Përshkrimi",
-    "descriptionPlaceholder": "Çfarë duhet të dinë klientët për këtë kategori",
+    "descriptionPlaceholder": "Çfarë duhet të dinë klientët për këtë shtesë",
     "excessAmountLabel": "Franshiza (vetëm mbrojtje)",
     "excessAmountPlaceholder": "Shuma maksimale që klienti paguan për dëmtime",
     "kind": {
@@ -27,7 +27,7 @@
     "maxQuantityLabel": "Më së shumti për rezervim",
     "maxQuantityPlaceholder": "Shkruani sasinë maksimale",
     "nameLabel": "Emri",
-    "namePlaceholder": "p.sh. Aeroporti i Cyrihut",
+    "namePlaceholder": "p.sh. Karrige për fëmijë",
     "priceLabel": "Çmimi",
     "pricePlaceholder": "Shkruani çmimin",
     "pricing": {
@@ -37,7 +37,11 @@
     "pricingLabel": "Faturuar",
     "pricingPlaceholder": "Zgjidh si faturohet",
     "sortOrderLabel": "Renditja",
-    "sortOrderPlaceholder": "Shkruani renditjen"
+    "sortOrderPlaceholder": "Shkruani renditjen",
+    "basicsSectionTitle": "Të dhënat bazë",
+    "pricingSectionTitle": "Çmimet",
+    "visibilitySectionTitle": "Dukshmëria",
+    "amountCurrencyDescription": "Në monedhën e qirasë (Konfigurimet › Qiraja e makinave › Rezervim online)."
   },
   "axios": {
     "start": {

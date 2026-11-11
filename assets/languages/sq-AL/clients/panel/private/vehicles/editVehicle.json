@@ -30,7 +30,7 @@
     "odometerKmLabel": "Kilometrat (km)",
     "odometerKmPlaceholder": "Shkruani kilometrat",
     "plateLabel": "Targa e regjistrimit",
-    "platePlaceholder": "p.sh. ZH 123456",
+    "platePlaceholder": "p.sh. AA 123 BB",
     "statusLabel": "Statusi",
     "statusPlaceholder": "Zgjidh statusin",
     "status": {
@@ -49,7 +49,8 @@
     "imagesLabel": "Fotot",
     "videosLabel": "Videot",
     "trackerIdLabel": "Gjurmuesi",
-    "trackerIdPlaceholder": "ID e gjurmuesit"
+    "trackerIdPlaceholder": "ID e gjurmuesit",
+    "amountCurrencyDescription": "Në monedhën e qirasë (Konfigurimet › Qiraja e makinave › Rezervim online)."
   },
   "axios": {
     "start": {

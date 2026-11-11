@@ -15,7 +15,7 @@
     "depositAmountLabel": "Deposito con questo pacchetto",
     "depositAmountPlaceholder": "Lascia vuoto per mantenere il deposito della categoria",
     "descriptionLabel": "Descrizione",
-    "descriptionPlaceholder": "Cosa dovrebbero sapere i clienti su questa categoria",
+    "descriptionPlaceholder": "Cosa devono sapere i clienti su questo extra",
     "excessAmountLabel": "Franchigia (solo protezione)",
     "excessAmountPlaceholder": "Importo massimo che il cliente paga per i danni",
     "kind": {
@@ -27,7 +27,7 @@
     "maxQuantityLabel": "Massimo per prenotazione",
     "maxQuantityPlaceholder": "Inserisci la quantità massima",
     "nameLabel": "Nome",
-    "namePlaceholder": "es. Aeroporto di Zurigo",
+    "namePlaceholder": "ad es. Seggiolino per bambini",
     "priceLabel": "Prezzo",
     "pricePlaceholder": "Inserisci il prezzo",
     "pricing": {
@@ -37,7 +37,11 @@
     "pricingLabel": "Addebitato",
     "pricingPlaceholder": "Seleziona come viene addebitato",
     "sortOrderLabel": "Ordinamento",
-    "sortOrderPlaceholder": "Inserisci l'ordinamento"
+    "sortOrderPlaceholder": "Inserisci l'ordinamento",
+    "basicsSectionTitle": "Dati principali",
+    "pricingSectionTitle": "Prezzi",
+    "visibilitySectionTitle": "Visibilità",
+    "amountCurrencyDescription": "Nella valuta del noleggio (Configurazioni › Noleggio auto › Prenotazione online)."
   },
   "axios": {
     "start": {

@@ -55,7 +55,7 @@
     "mileagePolicyLabel": "Kilometer",
     "mileagePolicyPlaceholder": "Kilometerregelung auswählen",
     "nameLabel": "Name",
-    "namePlaceholder": "z. B. Flughafen Zürich",
+    "namePlaceholder": "z. B. Kompaktklasse",
     "pricingSectionTitle": "Preise",
     "rateSeasonsSectionTitle": "Saisonpreise",
     "removeFeature": "Ausstattung entfernen",
@@ -77,7 +77,14 @@
     "videosLabel": "Videos",
     "crossBorderAllowedLabel": "Grenzübertritt erlaubt",
     "crossBorderFeeLabel": "Gebühr Grenzübertritt",
-    "crossBorderFeePlaceholder": "0.00"
+    "crossBorderFeePlaceholder": "0.00",
+    "basicsSectionTitle": "Grunddaten",
+    "mediaSectionTitle": "Fotos und Videos",
+    "visibilitySectionTitle": "Sichtbarkeit",
+    "amountCurrencyDescription": "In der Mietwährung (Konfigurationen › Autovermietung › Online-Buchung).",
+    "slugDescription": "Optional. Leer gelassen, wird er aus dem Namen gebildet.",
+    "isPublicLabel": "Auf der Website sichtbar",
+    "isPublicDescription": "Aus blendet diese Klasse in der Online-Buchung aus; am Schalter bleibt sie buchbar."
   },
   "axios": {
     "start": {

@@ -30,7 +30,7 @@
     "odometerKmLabel": "Kilometerstand (km)",
     "odometerKmPlaceholder": "z. B. 45200",
     "plateLabel": "Kennzeichen",
-    "platePlaceholder": "z. B. ZH 123456",
+    "platePlaceholder": "z. B. AA 123 BB",
     "statusLabel": "Status",
     "statusPlaceholder": "Status auswählen",
     "status": {
@@ -49,7 +49,8 @@
     "imagesLabel": "Fotos",
     "videosLabel": "Videos",
     "trackerIdLabel": "Tracker",
-    "trackerIdPlaceholder": "Tracker-ID"
+    "trackerIdPlaceholder": "Tracker-ID",
+    "amountCurrencyDescription": "In der Mietwährung (Konfigurationen › Autovermietung › Online-Buchung)."
   },
   "axios": {
     "start": {

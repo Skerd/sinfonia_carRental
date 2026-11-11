@@ -40,7 +40,11 @@
     "usageLimitPerEmailPlaceholder": "Bosh për pa kufi",
     "isActiveLabel": "Aktiv",
     "descriptionLabel": "Shënim i brendshëm",
-    "descriptionPlaceholder": "Për cilën fushatë është ky kod"
+    "descriptionPlaceholder": "Për cilën fushatë është ky kod",
+    "discountSectionTitle": "Zbritja",
+    "datesSectionTitle": "Datat",
+    "limitsSectionTitle": "Kufijtë",
+    "visibilitySectionTitle": "Dukshmëria"
   },
   "axios": {
     "start": {

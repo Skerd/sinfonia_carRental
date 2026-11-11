@@ -43,7 +43,8 @@
     "nextRunAtLabel": "Next booking",
     "nextRunAtPlaceholder": "Pick a date",
     "businessAccountLabel": "Business account",
-    "businessAccountPlaceholder": "Optional"
+    "businessAccountPlaceholder": "Optional",
+    "amountCurrencyDescription": "In the rental currency (Configurations › Car rental › Online booking)."
   },
   "axios": {
     "start": {

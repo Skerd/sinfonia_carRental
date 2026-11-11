@@ -15,7 +15,7 @@
     "depositAmountLabel": "Caution avec cette formule",
     "depositAmountPlaceholder": "Laisser vide pour garder la caution de la catégorie",
     "descriptionLabel": "Description",
-    "descriptionPlaceholder": "Ce que les clients doivent savoir sur cette catégorie",
+    "descriptionPlaceholder": "Ce que les clients doivent savoir sur cette option",
     "excessAmountLabel": "Franchise (protection uniquement)",
     "excessAmountPlaceholder": "Montant maximal payé par le client en cas de dommage",
     "kind": {
@@ -27,7 +27,7 @@
     "maxQuantityLabel": "Maximum par réservation",
     "maxQuantityPlaceholder": "Saisir la quantité maximale",
     "nameLabel": "Nom",
-    "namePlaceholder": "p. ex. Aéroport de Zurich",
+    "namePlaceholder": "p. ex. Siège enfant",
     "priceLabel": "Prix",
     "pricePlaceholder": "Saisir le prix",
     "pricing": {
@@ -37,7 +37,11 @@
     "pricingLabel": "Facturé",
     "pricingPlaceholder": "Choisir le mode de facturation",
     "sortOrderLabel": "Ordre de tri",
-    "sortOrderPlaceholder": "Saisir l'ordre de tri"
+    "sortOrderPlaceholder": "Saisir l'ordre de tri",
+    "basicsSectionTitle": "Informations de base",
+    "pricingSectionTitle": "Prix",
+    "visibilitySectionTitle": "Visibilité",
+    "amountCurrencyDescription": "Dans la devise de location (Configurations › Location de voitures › Réservation en ligne)."
   },
   "axios": {
     "start": {

@@ -18,7 +18,9 @@
     "licenseNumberPlaceholder": "Tel qu'imprimé sur le permis",
     "reasonLabel": "Motif",
     "reasonPlaceholder": "Pourquoi ce client est bloqué",
-    "isActiveLabel": "Actif"
+    "isActiveLabel": "Actif",
+    "personSectionTitle": "Personne",
+    "statusSectionTitle": "Statut"
   },
   "axios": {
     "start": {

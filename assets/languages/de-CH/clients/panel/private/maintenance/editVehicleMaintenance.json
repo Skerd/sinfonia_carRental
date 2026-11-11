@@ -43,7 +43,8 @@
     },
     "serviceSectionTitle": "Service",
     "costSectionTitle": "Kosten und nächster Service",
-    "notesSectionTitle": "Notizen und Dateien"
+    "notesSectionTitle": "Notizen und Dateien",
+    "amountCurrencyDescription": "In der Mietwährung (Konfigurationen › Autovermietung › Online-Buchung)."
   },
   "axios": {
     "start": {

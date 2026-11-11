@@ -43,7 +43,8 @@
     "nextRunAtLabel": "Prochaine réservation",
     "nextRunAtPlaceholder": "Choisir une date",
     "businessAccountLabel": "Compte entreprise",
-    "businessAccountPlaceholder": "Facultatif"
+    "businessAccountPlaceholder": "Facultatif",
+    "amountCurrencyDescription": "Dans la devise de location (Configurations › Location de voitures › Réservation en ligne)."
   },
   "axios": {
     "start": {

@@ -8,6 +8,9 @@ import type {RecordVehicleFinePaymentFormType} from "armonia/src/modules/carRent
 import ReservationActionDialogShell from "@carRentalModule/clients/panel/private/reservations/center/dialogs/reservationActionDialogShell.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
 import {Label} from "@coreModule/components/ui/label.tsx";
+import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
+import {companyToday} from "@coreModule/helpers/general/dateTime.ts";
+import {useCompanyTimeZone} from "@coreModule/helpers/hooks/useCompanyTimeZone.ts";
 
 type Props = WithLanguageType & WithAxiosType<VehicleFine, RecordVehicleFinePaymentFormType> & {
     fine: VehicleFine;
@@ -17,7 +20,9 @@ type Props = WithLanguageType & WithAxiosType<VehicleFine, RecordVehicleFinePaym
 
 /** What the company paid the authority, and when: it can differ from the fine (early discount, late surcharge). */
 function RecordFinePaymentDialog({fine, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
-    const [paidAt, setPaidAt] = useState(new Date().toISOString().slice(0, 10));
+    // The company's today, not the browser's UTC day (GLB-09).
+    const today = companyToday(useCompanyTimeZone());
+    const [paidAt, setPaidAt] = useState(today);
     const [paidAmount, setPaidAmount] = useState(String(fine.amount));
     const [paymentReference, setPaymentReference] = useState("");
     useImperativeHandle(innerRef, () => ({success: (data) => { onUpdated(data); onClose(); }}));
@@ -36,7 +41,7 @@ function RecordFinePaymentDialog({fine, onClose, onUpdated, resolveLanguageKey, 
             <div className="grid grid-cols-2 gap-3">
                 <div className="flex flex-col gap-2">
                     <Label htmlFor="rental-fine-paid-at">{resolveLanguageKey("paidAtLabel")}</Label>
-                    <Input id="rental-fine-paid-at" type="date" value={paidAt} onChange={(e) => setPaidAt(e.target.value)} disabled={loading} />
+                    <DateInput id="rental-fine-paid-at" valueFormat="YYYY-MM-DD" value={paidAt} onChange={setPaidAt} maxDate={today} clearable={false} disabled={loading} />
                 </div>
                 <div className="flex flex-col gap-2">
                     <Label htmlFor="rental-fine-paid-amount">{resolveLanguageKey("paidAmountLabel")}{fine.currency?.abbreviation ? ` (${fine.currency.abbreviation})` : ""}</Label>

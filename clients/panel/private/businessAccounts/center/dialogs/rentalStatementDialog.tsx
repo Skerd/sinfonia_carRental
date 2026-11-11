@@ -8,7 +8,6 @@ import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import withAxios, {WithAxiosType} from "@coreModule/helpers/hocs/withAxios.tsx";
 import {handleError} from "@coreModule/helpers/general/errors.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
-import {Input} from "@coreModule/components/ui/input.tsx";
 import {Label} from "@coreModule/components/ui/label.tsx";
 import {
     Dialog,
@@ -18,6 +17,9 @@ import {
     DialogHeader,
     DialogTitle,
 } from "@coreModule/components/ui/dialog.tsx";
+import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
+import {companyToday} from "@coreModule/helpers/general/dateTime.ts";
+import {useCompanyTimeZone} from "@coreModule/helpers/hooks/useCompanyTimeZone.ts";
 import type {RentalBusinessAccount} from "armonia/src/modules/carRental/api/carRental/private/rentalBusinessAccount/rentalBusinessAccount.dto.ts";
 
 type StatementRequest = {businessAccount: string; month: string};
@@ -27,14 +29,11 @@ type Props = WithLanguageType & WithAxiosType<Blob, StatementRequest> & {
     onClose: () => void;
 };
 
-function thisMonth() {
-    const now = new Date();
-    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
-}
-
 /** Month picker for one account. The list already says which account this is. */
 function RentalStatementDialog({account, onClose, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
-    const [month, setMonth] = useState(thisMonth);
+    // The company's current month (GLB-09).
+    const companyZone = useCompanyTimeZone();
+    const [month, setMonth] = useState(() => companyToday(companyZone).slice(0, 7));
     useImperativeHandle(innerRef, () => ({
         success: (pdf) => {
             const href = URL.createObjectURL(pdf);
@@ -66,11 +65,14 @@ function RentalStatementDialog({account, onClose, resolveLanguageKey, onFilterCh
                     <Label htmlFor="rental-statement-month">
                         {resolveLanguageKey("month")}
                     </Label>
-                    <Input
+                    {/* Any day picks its month; the field reads as the month (UX-08). */}
+                    <DateInput
                         id="rental-statement-month"
-                        type="month"
+                        valueFormat="YYYY-MM"
+                        displayFormat="MMMM YYYY"
                         value={month}
-                        onChange={(event) => setMonth(event.target.value)}
+                        onChange={(value) => value && setMonth(value)}
+                        clearable={false}
                         disabled={loading}
                     />
                 </div>

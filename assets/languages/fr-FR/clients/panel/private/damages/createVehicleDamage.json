@@ -53,7 +53,8 @@
     "claimNumberLabel": "Numéro de sinistre",
     "claimNumberPlaceholder": "p. ex. CLM-2026-0142",
     "insurerPaidAmountLabel": "Payé par l'assureur",
-    "insurerPaidAmountPlaceholder": "p. ex. 800"
+    "insurerPaidAmountPlaceholder": "p. ex. 800",
+    "amountCurrencyDescription": "Dans la devise de location (Configurations › Location de voitures › Réservation en ligne)."
   },
   "axios": {
     "start": {

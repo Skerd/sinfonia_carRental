@@ -43,7 +43,8 @@
     },
     "serviceSectionTitle": "Servisi",
     "costSectionTitle": "Kostoja dhe servisi i radhës",
-    "notesSectionTitle": "Shënime dhe skedarë"
+    "notesSectionTitle": "Shënime dhe skedarë",
+    "amountCurrencyDescription": "Në monedhën e qirasë (Konfigurimet › Qiraja e makinave › Rezervim online)."
   },
   "axios": {
     "start": {

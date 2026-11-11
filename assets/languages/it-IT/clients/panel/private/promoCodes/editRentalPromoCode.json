@@ -40,7 +40,11 @@
     "usageLimitPerEmailPlaceholder": "Vuoto per nessun limite",
     "isActiveLabel": "Attivo",
     "descriptionLabel": "Nota interna",
-    "descriptionPlaceholder": "Per quale campagna è questo codice"
+    "descriptionPlaceholder": "Per quale campagna è questo codice",
+    "discountSectionTitle": "Sconto",
+    "datesSectionTitle": "Date",
+    "limitsSectionTitle": "Limiti",
+    "visibilitySectionTitle": "Visibilità"
   },
   "axios": {
     "start": {

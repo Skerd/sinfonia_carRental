@@ -55,7 +55,7 @@
     "mileagePolicyLabel": "Chilometraggio",
     "mileagePolicyPlaceholder": "Seleziona regola chilometrica",
     "nameLabel": "Nome",
-    "namePlaceholder": "es. Aeroporto di Zurigo",
+    "namePlaceholder": "ad es. Compatta",
     "pricingSectionTitle": "Prezzi",
     "rateSeasonsSectionTitle": "Tariffe stagionali",
     "removeFeature": "Rimuovi dotazione",
@@ -77,7 +77,14 @@
     "videosLabel": "Video",
     "crossBorderAllowedLabel": "Estero consentito",
     "crossBorderFeeLabel": "Supplemento estero",
-    "crossBorderFeePlaceholder": "0.00"
+    "crossBorderFeePlaceholder": "0.00",
+    "basicsSectionTitle": "Dati principali",
+    "mediaSectionTitle": "Foto e video",
+    "visibilitySectionTitle": "Visibilità",
+    "amountCurrencyDescription": "Nella valuta del noleggio (Configurazioni › Noleggio auto › Prenotazione online).",
+    "slugDescription": "Facoltativo. Se vuoto, viene creato dal nome.",
+    "isPublicLabel": "Visibile sul sito",
+    "isPublicDescription": "Disattivata, la categoria non appare nella prenotazione online; al banco resta prenotabile."
   },
   "axios": {
     "start": {

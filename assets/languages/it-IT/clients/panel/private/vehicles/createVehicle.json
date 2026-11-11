@@ -30,7 +30,7 @@
     "odometerKmLabel": "Chilometraggio (km)",
     "odometerKmPlaceholder": "es. 45200",
     "plateLabel": "Targa",
-    "platePlaceholder": "es. ZH 123456",
+    "platePlaceholder": "ad es. AA 123 BB",
     "statusLabel": "Stato",
     "statusPlaceholder": "Seleziona stato",
     "status": {
@@ -49,7 +49,8 @@
     "imagesLabel": "Foto",
     "videosLabel": "Video",
     "trackerIdLabel": "Localizzatore",
-    "trackerIdPlaceholder": "ID del localizzatore"
+    "trackerIdPlaceholder": "ID del localizzatore",
+    "amountCurrencyDescription": "Nella valuta del noleggio (Configurazioni › Noleggio auto › Prenotazione online)."
   },
   "axios": {
     "start": {

@@ -19,7 +19,8 @@
     "commentLabel": "Commento",
     "commentPlaceholder": "Quello che ha scritto il cliente",
     "authorNameLabel": "Nome",
-    "authorNamePlaceholder": "Nome del cliente"
+    "authorNamePlaceholder": "Nome del cliente",
+    "reviewSectionTitle": "Recensione"
   },
   "axios": {
     "start": {

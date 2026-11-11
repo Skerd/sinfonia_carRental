@@ -30,7 +30,7 @@
     "odometerKmLabel": "Odometer (km)",
     "odometerKmPlaceholder": "e.g. 45200",
     "plateLabel": "Registration plate",
-    "platePlaceholder": "e.g. ZH 123456",
+    "platePlaceholder": "e.g. AA 123 BB",
     "statusLabel": "Status",
     "statusPlaceholder": "Select status",
     "status": {
@@ -49,7 +49,8 @@
     "imagesLabel": "Photos",
     "videosLabel": "Videos",
     "trackerIdLabel": "Tracker",
-    "trackerIdPlaceholder": "Tracker ID"
+    "trackerIdPlaceholder": "Tracker ID",
+    "amountCurrencyDescription": "In the rental currency (Configurations › Car rental › Online booking)."
   },
   "axios": {
     "start": {

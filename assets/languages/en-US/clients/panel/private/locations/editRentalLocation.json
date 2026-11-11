@@ -37,7 +37,7 @@
     "longitudeLabel": "Longitude",
     "longitudePlaceholder": "Enter longitude",
     "nameLabel": "Name",
-    "namePlaceholder": "e.g. Zurich Airport",
+    "namePlaceholder": "e.g. Tirana Airport (TIA)",
     "openingHoursSectionTitle": "Opening hours",
     "phoneLabel": "Phone",
     "phonePlaceholder": "Enter phone",
@@ -49,9 +49,12 @@
     "streetLabel": "Street",
     "streetPlaceholder": "Enter street",
     "timezoneLabel": "Time zone",
-    "timezonePlaceholder": "e.g. Europe/Zurich",
+    "timezonePlaceholder": "e.g. Europe/Tirane",
     "oneWayFeeLabel": "One-way fee for returns here",
-    "oneWayFeePlaceholder": "Empty uses the company's one-way fee"
+    "oneWayFeePlaceholder": "Empty uses the company's one-way fee",
+    "basicsSectionTitle": "Basics",
+    "pickupsSectionTitle": "Pickups and returns",
+    "amountCurrencyDescription": "In the rental currency (Configurations › Car rental › Online booking)."
   },
   "axios": {
     "start": {

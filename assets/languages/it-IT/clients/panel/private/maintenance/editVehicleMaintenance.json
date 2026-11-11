@@ -43,7 +43,8 @@
     },
     "serviceSectionTitle": "Intervento",
     "costSectionTitle": "Costo e prossimo tagliando",
-    "notesSectionTitle": "Note e file"
+    "notesSectionTitle": "Note e file",
+    "amountCurrencyDescription": "Nella valuta del noleggio (Configurazioni › Noleggio auto › Prenotazione online)."
   },
   "axios": {
     "start": {

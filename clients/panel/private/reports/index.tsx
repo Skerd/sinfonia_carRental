@@ -28,28 +28,18 @@ import {
     type ChartConfig,
 } from "@coreModule/components/ui/chart.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
-import {Input} from "@coreModule/components/ui/input.tsx";
 import {NativeSelect} from "@coreModule/components/ui/native-select.tsx";
 import type {ApiSelectDatum, SelectResponse} from "armonia/src/modules/core/types/shared.types.ts";
 import type {
     RentalReportsFormType,
     RentalReportsResponse,
 } from "armonia/src/modules/carRental/api/carRental/private/rentalReports/rentalReports.ts";
+import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
+import {companyToday} from "@coreModule/helpers/general/dateTime.ts";
+import {useCompanyTimeZone} from "@coreModule/helpers/hooks/useCompanyTimeZone.ts";
 import {Table} from "@coreModule/components/ui/table/table.tsx";
 
 type Report = RentalReportsResponse["data"];
-
-function localToday(): string {
-    const now = new Date();
-    const month = String(now.getMonth() + 1).padStart(2, "0");
-    const day = String(now.getDate()).padStart(2, "0");
-    return `${now.getFullYear()}-${month}-${day}`;
-}
-
-function monthStart(): string {
-    const today = localToday();
-    return `${today.slice(0, 8)}01`;
-}
 
 const LOCATIONS_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalLocation/select"};
 const REPORT_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalReports"};
@@ -59,8 +49,10 @@ function percent(value: number): string {
 }
 
 function ReportsPage({resolveLanguageKey}: WithLanguageType) {
-    const [from, setFrom] = useState(monthStart);
-    const [to, setTo] = useState(localToday);
+    // This month so far, in the company's calendar (GLB-09).
+    const companyZone = useCompanyTimeZone();
+    const [from, setFrom] = useState(() => `${companyToday(companyZone).slice(0, 8)}01`);
+    const [to, setTo] = useState(() => companyToday(companyZone));
     const [location, setLocation] = useState("");
     const locationsRequest = useHttpRequest<SelectResponse>(LOCATIONS_REQUEST, {page: 1, limit: 100}, 1, true, {
         error: (error) => handleError(error, {context: "RentalReportsLocations"}),
@@ -104,18 +96,22 @@ function ReportsPage({resolveLanguageKey}: WithLanguageType) {
             <div className="flex flex-wrap items-end gap-3">
                 <label className="flex flex-col gap-1 text-sm">
                     {resolveLanguageKey("from")}
-                    <Input
-                        type="date"
+                    <DateInput
+                        valueFormat="YYYY-MM-DD"
                         value={from}
-                        onChange={(event) => setFrom(event.target.value)}
+                        onChange={(value) => value && setFrom(value)}
+                        clearable={false}
+                        className="w-48"
                     />
                 </label>
                 <label className="flex flex-col gap-1 text-sm">
                     {resolveLanguageKey("to")}
-                    <Input
-                        type="date"
+                    <DateInput
+                        valueFormat="YYYY-MM-DD"
                         value={to}
-                        onChange={(event) => setTo(event.target.value)}
+                        onChange={(value) => value && setTo(value)}
+                        clearable={false}
+                        className="w-48"
                     />
                 </label>
                 <label className="flex flex-col gap-1 text-sm">

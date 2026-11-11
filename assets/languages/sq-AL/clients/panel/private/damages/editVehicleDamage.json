@@ -53,7 +53,8 @@
     "claimNumberLabel": "Numri i dëmit",
     "claimNumberPlaceholder": "p.sh. CLM-2026-0142",
     "insurerPaidAmountLabel": "Paguar nga sigurimi",
-    "insurerPaidAmountPlaceholder": "p.sh. 800"
+    "insurerPaidAmountPlaceholder": "p.sh. 800",
+    "amountCurrencyDescription": "Në monedhën e qirasë (Konfigurimet › Qiraja e makinave › Rezervim online)."
   },
   "axios": {
     "start": {

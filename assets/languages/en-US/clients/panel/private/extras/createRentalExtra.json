@@ -15,7 +15,7 @@
     "depositAmountLabel": "Deposit with this package",
     "depositAmountPlaceholder": "Leave empty to keep the category deposit",
     "descriptionLabel": "Description",
-    "descriptionPlaceholder": "What customers should know about this category",
+    "descriptionPlaceholder": "What customers should know about this extra",
     "excessAmountLabel": "Excess (protection only)",
     "excessAmountPlaceholder": "Most the customer pays for damage",
     "kind": {
@@ -27,7 +27,7 @@
     "maxQuantityLabel": "Most per booking",
     "maxQuantityPlaceholder": "Enter max quantity",
     "nameLabel": "Name",
-    "namePlaceholder": "e.g. Zurich Airport",
+    "namePlaceholder": "e.g. Child seat",
     "priceLabel": "Price",
     "pricePlaceholder": "Enter price",
     "pricing": {
@@ -37,7 +37,11 @@
     "pricingLabel": "Charged",
     "pricingPlaceholder": "Select how it is charged",
     "sortOrderLabel": "Sort order",
-    "sortOrderPlaceholder": "Enter sort order"
+    "sortOrderPlaceholder": "Enter sort order",
+    "basicsSectionTitle": "Basics",
+    "pricingSectionTitle": "Prices",
+    "visibilitySectionTitle": "Visibility",
+    "amountCurrencyDescription": "In the rental currency (Configurations › Car rental › Online booking)."
   },
   "axios": {
     "start": {

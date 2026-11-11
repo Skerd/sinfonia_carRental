@@ -53,7 +53,8 @@
     "claimNumberLabel": "Claim number",
     "claimNumberPlaceholder": "e.g. CLM-2026-0142",
     "insurerPaidAmountLabel": "Paid by the insurer",
-    "insurerPaidAmountPlaceholder": "e.g. 800"
+    "insurerPaidAmountPlaceholder": "e.g. 800",
+    "amountCurrencyDescription": "In the rental currency (Configurations › Car rental › Online booking)."
   },
   "axios": {
     "start": {

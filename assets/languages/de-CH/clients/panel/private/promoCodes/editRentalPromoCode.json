@@ -40,7 +40,11 @@
     "usageLimitPerEmailPlaceholder": "Leer für unbegrenzt",
     "isActiveLabel": "Aktiv",
     "descriptionLabel": "Interne Notiz",
-    "descriptionPlaceholder": "Für welche Aktion der Code ist"
+    "descriptionPlaceholder": "Für welche Aktion der Code ist",
+    "discountSectionTitle": "Rabatt",
+    "datesSectionTitle": "Daten",
+    "limitsSectionTitle": "Grenzen",
+    "visibilitySectionTitle": "Sichtbarkeit"
   },
   "axios": {
     "start": {

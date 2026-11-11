@@ -48,7 +48,8 @@
       "active": "Active",
       "expired": "Expired",
       "cancelled": "Cancelled"
-    }
+    },
+    "amountCurrencyDescription": "In the rental currency (Configurations › Car rental › Online booking)."
   },
   "axios": {
     "start": {

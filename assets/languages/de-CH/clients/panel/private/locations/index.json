@@ -10,7 +10,7 @@
       {
         "title": "Auf dieser Seite",
         "items": [
-          "Legen Sie die IANA-Zeitzone fest (zum Beispiel Europe/Zurich), damit Buchungen bei der Sommerzeitumstellung korrekt bleiben.",
+          "Legen Sie die IANA-Zeitzone fest (zum Beispiel Europe/Tirane), damit Buchungen bei der Sommerzeitumstellung korrekt bleiben.",
           "Fügen Sie Ruhetage für Feiertage hinzu; die Website bietet an diesen Tagen keine Abholungen oder Rückgaben an.",
           "Ein Standort mit Buchungen kann nicht gelöscht werden; deaktivieren Sie ihn stattdessen."
         ]

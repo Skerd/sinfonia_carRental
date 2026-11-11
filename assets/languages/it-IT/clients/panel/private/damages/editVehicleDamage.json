@@ -53,7 +53,8 @@
     "claimNumberLabel": "Numero del sinistro",
     "claimNumberPlaceholder": "es. CLM-2026-0142",
     "insurerPaidAmountLabel": "Pagato dall'assicurazione",
-    "insurerPaidAmountPlaceholder": "es. 800"
+    "insurerPaidAmountPlaceholder": "es. 800",
+    "amountCurrencyDescription": "Nella valuta del noleggio (Configurazioni › Noleggio auto › Prenotazione online)."
   },
   "axios": {
     "start": {

@@ -40,7 +40,8 @@
     "notesPlaceholder": "Note interne",
     "offenceSectionTitle": "Infrazione",
     "authoritySectionTitle": "Autorità e importo",
-    "notesSectionTitle": "Note e file"
+    "notesSectionTitle": "Note e file",
+    "amountCurrencyDescription": "Nella valuta del noleggio (Configurazioni › Noleggio auto › Prenotazione online)."
   },
   "axios": {
     "start": {

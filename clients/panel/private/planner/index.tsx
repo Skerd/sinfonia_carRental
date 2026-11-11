@@ -10,11 +10,11 @@ import {useCompanyTimeZone} from "@coreModule/helpers/hooks/useCompanyTimeZone.t
 import {companyToday} from "@coreModule/helpers/general/dateTime.ts";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
-import {Input} from "@coreModule/components/ui/input.tsx";
 import {NativeSelect} from "@coreModule/components/ui/native-select.tsx";
 import type {ApiSelectDatum, SelectResponse} from "armonia/src/modules/core/types/shared.types.ts";
 import type {RentalPlannerFormType, RentalPlannerResponse} from "armonia/src/modules/carRental/api/carRental/private/rentalPlanner/rentalPlanner.ts";
 import RentalReservationSheetView from "@carRentalModule/clients/panel/private/reservations/center/sheetView/rentalReservationSheetView.tsx";
+import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
 import {cn} from "@coreModule/components/lib/utils.ts";
 
 type Planner = RentalPlannerResponse["data"];
@@ -113,7 +113,14 @@ function RentalPlannerPage({resolveLanguageKey, languageCode}: WithLanguageType)
                     <Button type="button" variant="outline" size="icon" aria-label={String(resolveLanguageKey("earlier"))} onClick={() => setFrom(shiftDay(from, -days))}>
                         <IconChevronLeft size={16} />
                     </Button>
-                    <Input aria-label={String(resolveLanguageKey("from"))} type="date" value={from} onChange={(e) => e.target.value && setFrom(e.target.value)} className="w-40" />
+                    <DateInput
+                        aria-label={String(resolveLanguageKey("from"))}
+                        valueFormat="YYYY-MM-DD"
+                        value={from}
+                        onChange={(value) => value && setFrom(value)}
+                        clearable={false}
+                        className="w-56"
+                    />
                     <Button type="button" variant="outline" size="icon" aria-label={String(resolveLanguageKey("later"))} onClick={() => setFrom(shiftDay(from, days))}>
                         <IconChevronRight size={16} />
                     </Button>

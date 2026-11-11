@@ -8,6 +8,7 @@ import type {ScheduleVehicleDamageRepairFormType} from "armonia/src/modules/carR
 import ReservationActionDialogShell from "@carRentalModule/clients/panel/private/reservations/center/dialogs/reservationActionDialogShell.tsx";
 import {ApiSelect} from "@coreModule/components/viewEngine/widgets/inputs/apiSelect/apiSelect.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
+import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
 import {Label} from "@coreModule/components/ui/label.tsx";
 
 type Props = WithLanguageType & WithAxiosType<VehicleDamage, ScheduleVehicleDamageRepairFormType> & {
@@ -67,11 +68,11 @@ function ScheduleRepairDialog({damage, onClose, onUpdated, resolveLanguageKey, o
                     <div className="grid grid-cols-2 gap-3">
                         <div className="flex flex-col gap-2">
                             <Label htmlFor="rental-repair-date">{resolveLanguageKey("serviceDateLabel")}</Label>
-                            <Input id="rental-repair-date" type="datetime-local" value={serviceDate} onChange={(e) => setServiceDate(e.target.value)} disabled={loading} />
+                            <DateInput id="rental-repair-date" valueFormat="YYYY-MM-DD[T]HH:mm" value={serviceDate} onChange={setServiceDate} disabled={loading} />
                         </div>
                         <div className="flex flex-col gap-2">
                             <Label htmlFor="rental-repair-ready">{resolveLanguageKey("readyAtLabel")}</Label>
-                            <Input id="rental-repair-ready" type="datetime-local" value={readyAt} onChange={(e) => setReadyAt(e.target.value)} disabled={loading} />
+                            <DateInput id="rental-repair-ready" valueFormat="YYYY-MM-DD[T]HH:mm" value={readyAt} onChange={setReadyAt} minDate={serviceDate ? serviceDate.slice(0, 10) : undefined} disabled={loading} />
                         </div>
                     </div>
                     <p className="text-xs text-muted-foreground">{resolveLanguageKey("readyAtHint")}</p>

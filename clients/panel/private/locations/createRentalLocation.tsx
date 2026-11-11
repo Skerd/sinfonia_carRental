@@ -9,6 +9,7 @@ export default createGenericCreatePage<CreateRentalLocationFormType>({
     accessModel: "rentallocations",
     apiUrl: "/api/carRental/rentalLocation",
     schema: createRentalLocationFormSchema,
-    defaultValues: {name: "", timezone: "Europe/Zurich", pickupAllowed: true, returnAllowed: true, openingHours: [], closures: []},
+    // A new location starts in the company's time zone (UX-06, GLB-09).
+    defaultValues: (_params, {timeZone}) => ({name: "", timezone: timeZone, pickupAllowed: true, returnAllowed: true, openingHours: [], closures: []}),
     submitIcon: <IconPlus />,
 });

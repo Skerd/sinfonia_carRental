@@ -37,7 +37,7 @@
     "longitudeLabel": "Gjatësia gjeografike",
     "longitudePlaceholder": "Shkruani gjatësinë gjeografike",
     "nameLabel": "Emri",
-    "namePlaceholder": "p.sh. Aeroporti i Cyrihut",
+    "namePlaceholder": "p.sh. Aeroporti i Tiranës (TIA)",
     "openingHoursSectionTitle": "Orari i punës",
     "phoneLabel": "Telefoni",
     "phonePlaceholder": "Shkruani telefonin",
@@ -49,9 +49,12 @@
     "streetLabel": "Rruga",
     "streetPlaceholder": "Shkruani rrugën",
     "timezoneLabel": "Zona kohore",
-    "timezonePlaceholder": "p.sh. Europe/Zurich",
+    "timezonePlaceholder": "p.sh. Europe/Tirane",
     "oneWayFeeLabel": "Tarifa e kthimit këtu nga një vendndodhje tjetër",
-    "oneWayFeePlaceholder": "Bosh: tarifa e kompanisë"
+    "oneWayFeePlaceholder": "Bosh: tarifa e kompanisë",
+    "basicsSectionTitle": "Të dhënat bazë",
+    "pickupsSectionTitle": "Marrjet dhe kthimet",
+    "amountCurrencyDescription": "Në monedhën e qirasë (Konfigurimet › Qiraja e makinave › Rezervim online)."
   },
   "axios": {
     "start": {

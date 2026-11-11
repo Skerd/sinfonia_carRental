@@ -51,7 +51,8 @@
     "costSectionTitle": "Coût et prochain entretien",
     "notesSectionTitle": "Notes et fichiers",
     "readyAtLabel": "Véhicule de retour le",
-    "readyAtPlaceholder": "Facultatif : bloque le véhicule jusque-là"
+    "readyAtPlaceholder": "Facultatif : bloque le véhicule jusque-là",
+    "amountCurrencyDescription": "Dans la devise de location (Configurations › Location de voitures › Réservation en ligne)."
   },
   "axios": {
     "start": {

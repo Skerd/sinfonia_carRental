@@ -51,7 +51,8 @@
     "costSectionTitle": "Costo e prossimo tagliando",
     "notesSectionTitle": "Note e file",
     "readyAtLabel": "Veicolo di nuovo pronto il",
-    "readyAtPlaceholder": "Facoltativo: blocca il veicolo fino ad allora"
+    "readyAtPlaceholder": "Facoltativo: blocca il veicolo fino ad allora",
+    "amountCurrencyDescription": "Nella valuta del noleggio (Configurazioni › Noleggio auto › Prenotazione online)."
   },
   "axios": {
     "start": {

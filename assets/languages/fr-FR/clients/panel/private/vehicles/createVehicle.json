@@ -30,7 +30,7 @@
     "odometerKmLabel": "Kilométrage (km)",
     "odometerKmPlaceholder": "Saisir le kilométrage",
     "plateLabel": "Plaque d'immatriculation",
-    "platePlaceholder": "p. ex. ZH 123456",
+    "platePlaceholder": "p. ex. AA 123 BB",
     "statusLabel": "Statut",
     "statusPlaceholder": "Choisir un statut",
     "status": {
@@ -49,7 +49,8 @@
     "imagesLabel": "Photos",
     "videosLabel": "Vidéos",
     "trackerIdLabel": "Traceur",
-    "trackerIdPlaceholder": "Identifiant du traceur"
+    "trackerIdPlaceholder": "Identifiant du traceur",
+    "amountCurrencyDescription": "Dans la devise de location (Configurations › Location de voitures › Réservation en ligne)."
   },
   "axios": {
     "start": {

@@ -43,7 +43,8 @@
     },
     "serviceSectionTitle": "Intervention",
     "costSectionTitle": "Coût et prochain entretien",
-    "notesSectionTitle": "Notes et fichiers"
+    "notesSectionTitle": "Notes et fichiers",
+    "amountCurrencyDescription": "Dans la devise de location (Configurations › Location de voitures › Réservation en ligne)."
   },
   "axios": {
     "start": {

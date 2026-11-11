@@ -47,7 +47,8 @@
       "active": "Aktive",
       "expired": "E skaduar",
       "cancelled": "E anuluar"
-    }
+    },
+    "amountCurrencyDescription": "Në monedhën e qirasë (Konfigurimet › Qiraja e makinave › Rezervim online)."
   },
   "axios": {
     "start": {

@@ -19,7 +19,8 @@
     "commentLabel": "Komenti",
     "commentPlaceholder": "Çfarë shkroi klienti",
     "authorNameLabel": "Emri",
-    "authorNamePlaceholder": "Emri i klientit"
+    "authorNamePlaceholder": "Emri i klientit",
+    "reviewSectionTitle": "Vlerësimi"
   },
   "axios": {
     "start": {

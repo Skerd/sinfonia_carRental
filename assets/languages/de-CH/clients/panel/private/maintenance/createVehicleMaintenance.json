@@ -51,7 +51,8 @@
     "costSectionTitle": "Kosten und nächster Service",
     "notesSectionTitle": "Notizen und Dateien",
     "readyAtLabel": "Fahrzeug zurück am",
-    "readyAtPlaceholder": "Optional: sperrt das Fahrzeug bis dahin"
+    "readyAtPlaceholder": "Optional: sperrt das Fahrzeug bis dahin",
+    "amountCurrencyDescription": "In der Mietwährung (Konfigurationen › Autovermietung › Online-Buchung)."
   },
   "axios": {
     "start": {

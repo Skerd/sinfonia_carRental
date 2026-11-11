@@ -43,7 +43,8 @@
     "nextRunAtLabel": "Prossima prenotazione",
     "nextRunAtPlaceholder": "Scegli una data",
     "businessAccountLabel": "Conto aziendale",
-    "businessAccountPlaceholder": "Facoltativo"
+    "businessAccountPlaceholder": "Facoltativo",
+    "amountCurrencyDescription": "Nella valuta del noleggio (Configurazioni › Noleggio auto › Prenotazione online)."
   },
   "axios": {
     "start": {

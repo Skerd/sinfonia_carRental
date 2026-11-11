@@ -51,7 +51,8 @@
     "costSectionTitle": "Kostoja dhe servisi i radhës",
     "notesSectionTitle": "Shënime dhe skedarë",
     "readyAtLabel": "Automjeti kthehet më",
-    "readyAtPlaceholder": "Opsionale: bllokon automjetin deri atëherë"
+    "readyAtPlaceholder": "Opsionale: bllokon automjetin deri atëherë",
+    "amountCurrencyDescription": "Në monedhën e qirasë (Konfigurimet › Qiraja e makinave › Rezervim online)."
   },
   "axios": {
     "start": {

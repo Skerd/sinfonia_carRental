@@ -18,7 +18,9 @@
     "licenseNumberPlaceholder": "Wie auf dem Führerausweis",
     "reasonLabel": "Grund",
     "reasonPlaceholder": "Warum diese Kundschaft gesperrt ist",
-    "isActiveLabel": "Aktiv"
+    "isActiveLabel": "Aktiv",
+    "personSectionTitle": "Person",
+    "statusSectionTitle": "Status"
   },
   "axios": {
     "start": {

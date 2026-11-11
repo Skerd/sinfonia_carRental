@@ -53,7 +53,8 @@
     "claimNumberLabel": "Schadennummer",
     "claimNumberPlaceholder": "z. B. CLM-2026-0142",
     "insurerPaidAmountLabel": "Von der Versicherung bezahlt",
-    "insurerPaidAmountPlaceholder": "z. B. 800"
+    "insurerPaidAmountPlaceholder": "z. B. 800",
+    "amountCurrencyDescription": "In der Mietwährung (Konfigurationen › Autovermietung › Online-Buchung)."
   },
   "axios": {
     "start": {

@@ -9,6 +9,6 @@ export default createGenericCreatePage<CreateVehicleCategoryFormType>({
     accessModel: "vehiclecategories",
     apiUrl: "/api/carRental/vehicleCategory",
     schema: createVehicleCategoryFormSchema,
-    defaultValues: {name: "", slug: "", seats: 5, transmission: "manual", fuelType: "petrol", dailyRate: 0, mileagePolicy: "unlimited", isPublic: true, features: [], rateSeasons: []},
+    defaultValues: {name: "", slug: "", seats: 5, transmission: "manual", fuelType: "petrol", mileagePolicy: "unlimited", isPublic: true, features: [], rateSeasons: []},
     submitIcon: <IconPlus />,
 });

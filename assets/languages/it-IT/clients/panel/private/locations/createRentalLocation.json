@@ -37,7 +37,7 @@
     "longitudeLabel": "Longitudine",
     "longitudePlaceholder": "Inserisci la longitudine",
     "nameLabel": "Nome",
-    "namePlaceholder": "es. Aeroporto di Zurigo",
+    "namePlaceholder": "ad es. Aeroporto di Tirana (TIA)",
     "openingHoursSectionTitle": "Orari di apertura",
     "phoneLabel": "Telefono",
     "phonePlaceholder": "Inserisci il telefono",
@@ -49,9 +49,12 @@
     "streetLabel": "Via",
     "streetPlaceholder": "Inserisci la via",
     "timezoneLabel": "Fuso orario",
-    "timezonePlaceholder": "es. Europe/Zurich",
+    "timezonePlaceholder": "ad es. Europe/Tirane",
     "oneWayFeeLabel": "Supplemento sola andata per riconsegne qui",
-    "oneWayFeePlaceholder": "Vuoto: supplemento dell'azienda"
+    "oneWayFeePlaceholder": "Vuoto: supplemento dell'azienda",
+    "basicsSectionTitle": "Dati principali",
+    "pickupsSectionTitle": "Ritiri e riconsegne",
+    "amountCurrencyDescription": "Nella valuta del noleggio (Configurazioni › Noleggio auto › Prenotazione online)."
   },
   "axios": {
     "start": {

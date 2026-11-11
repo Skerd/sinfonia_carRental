@@ -43,7 +43,8 @@
     },
     "serviceSectionTitle": "Service",
     "costSectionTitle": "Cost and next service",
-    "notesSectionTitle": "Notes and files"
+    "notesSectionTitle": "Notes and files",
+    "amountCurrencyDescription": "In the rental currency (Configurations › Car rental › Online booking)."
   },
   "axios": {
     "start": {

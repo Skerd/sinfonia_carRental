@@ -10,7 +10,7 @@
       {
         "title": "On this page",
         "items": [
-          "Set the IANA time zone (for example Europe/Zurich) so bookings stay correct across daylight-saving changes.",
+          "Set the IANA time zone (for example Europe/Tirane) so bookings stay correct across daylight-saving changes.",
           "Add closed days for holidays; the website won't offer pickups or returns on them.",
           "A location with bookings can't be deleted; deactivate it instead."
         ]

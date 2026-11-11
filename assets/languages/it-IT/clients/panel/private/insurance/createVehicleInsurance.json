@@ -47,7 +47,8 @@
       "active": "Attiva",
       "expired": "Scaduta",
       "cancelled": "Annullata"
-    }
+    },
+    "amountCurrencyDescription": "Nella valuta del noleggio (Configurazioni › Noleggio auto › Prenotazione online)."
   },
   "axios": {
     "start": {

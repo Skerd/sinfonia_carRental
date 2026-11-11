@@ -18,7 +18,9 @@
     "licenseNumberPlaceholder": "Siç është në patentë",
     "reasonLabel": "Arsyeja",
     "reasonPlaceholder": "Pse ky klient është i bllokuar",
-    "isActiveLabel": "Aktiv"
+    "isActiveLabel": "Aktiv",
+    "personSectionTitle": "Personi",
+    "statusSectionTitle": "Statusi"
   },
   "axios": {
     "start": {

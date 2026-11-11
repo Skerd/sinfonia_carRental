@@ -37,7 +37,7 @@
     "longitudeLabel": "Längengrad",
     "longitudePlaceholder": "Längengrad eingeben",
     "nameLabel": "Name",
-    "namePlaceholder": "z. B. Flughafen Zürich",
+    "namePlaceholder": "z. B. Flughafen Tirana (TIA)",
     "openingHoursSectionTitle": "Öffnungszeiten",
     "phoneLabel": "Telefon",
     "phonePlaceholder": "Telefon eingeben",
@@ -49,9 +49,12 @@
     "streetLabel": "Strasse",
     "streetPlaceholder": "Strasse eingeben",
     "timezoneLabel": "Zeitzone",
-    "timezonePlaceholder": "z. B. Europe/Zurich",
+    "timezonePlaceholder": "z. B. Europe/Tirane",
     "oneWayFeeLabel": "Einweggebühr für Rückgaben hier",
-    "oneWayFeePlaceholder": "Leer: Einweggebühr des Unternehmens"
+    "oneWayFeePlaceholder": "Leer: Einweggebühr des Unternehmens",
+    "basicsSectionTitle": "Grunddaten",
+    "pickupsSectionTitle": "Abholung und Rückgabe",
+    "amountCurrencyDescription": "In der Mietwährung (Konfigurationen › Autovermietung › Online-Buchung)."
   },
   "axios": {
     "start": {

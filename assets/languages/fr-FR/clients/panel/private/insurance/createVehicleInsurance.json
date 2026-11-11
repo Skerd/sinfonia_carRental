@@ -47,7 +47,8 @@
       "active": "Active",
       "expired": "Expirée",
       "cancelled": "Résiliée"
-    }
+    },
+    "amountCurrencyDescription": "Dans la devise de location (Configurations › Location de voitures › Réservation en ligne)."
   },
   "axios": {
     "start": {

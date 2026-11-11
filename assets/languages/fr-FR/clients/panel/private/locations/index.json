@@ -10,7 +10,7 @@
       {
         "title": "Sur cette page",
         "items": [
-          "Définissez le fuseau horaire IANA (par exemple Europe/Zurich) pour que les réservations restent correctes lors des changements d'heure.",
+          "Définissez le fuseau horaire IANA (par exemple Europe/Tirane) pour que les réservations restent correctes lors des changements d'heure.",
           "Ajoutez les jours fériés comme jours de fermeture ; le site web n'y proposera ni prise ni retour ces jours-là.",
           "Une agence avec des réservations ne peut pas être supprimée ; désactivez-la plutôt."
         ]

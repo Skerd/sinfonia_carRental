@@ -43,7 +43,8 @@
     "nextRunAtLabel": "Rezervimi tjetër",
     "nextRunAtPlaceholder": "Zgjidhni një datë",
     "businessAccountLabel": "Llogari biznesi",
-    "businessAccountPlaceholder": "Opsionale"
+    "businessAccountPlaceholder": "Opsionale",
+    "amountCurrencyDescription": "Në monedhën e qirasë (Konfigurimet › Qiraja e makinave › Rezervim online)."
   },
   "axios": {
     "start": {

@@ -43,7 +43,8 @@
     "nextRunAtLabel": "Nächste Buchung",
     "nextRunAtPlaceholder": "Datum wählen",
     "businessAccountLabel": "Geschäftskonto",
-    "businessAccountPlaceholder": "Optional"
+    "businessAccountPlaceholder": "Optional",
+    "amountCurrencyDescription": "In der Mietwährung (Konfigurationen › Autovermietung › Online-Buchung)."
   },
   "axios": {
     "start": {

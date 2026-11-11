@@ -50,7 +50,7 @@
     "minDriverAgeLabel": "Minimum driver age",
     "minDriverAgePlaceholder": "e.g. 21",
     "nameLabel": "Name",
-    "namePlaceholder": "e.g. Zurich Airport",
+    "namePlaceholder": "e.g. Compact",
     "pricingSectionTitle": "Prices",
     "rateSeasonsSectionTitle": "Seasonal prices",
     "removeFeature": "Remove feature",
@@ -77,7 +77,14 @@
     "weekendDailyRateLabel": "Weekend daily rate",
     "weekendDailyRatePlaceholder": "e.g. 59",
     "weeklyRateLabel": "Weekly rate",
-    "weeklyRatePlaceholder": "e.g. 280"
+    "weeklyRatePlaceholder": "e.g. 280",
+    "basicsSectionTitle": "Basics",
+    "mediaSectionTitle": "Photos and videos",
+    "visibilitySectionTitle": "Visibility",
+    "amountCurrencyDescription": "In the rental currency (Configurations › Car rental › Online booking).",
+    "slugDescription": "Optional. Left empty, it is made from the name.",
+    "isPublicLabel": "Shown on the website",
+    "isPublicDescription": "Off hides this class from online booking; the desk can still book it."
   },
   "axios": {
     "start": {

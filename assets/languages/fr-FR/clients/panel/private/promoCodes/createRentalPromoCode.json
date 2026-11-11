@@ -40,7 +40,11 @@
     "usageLimitPerEmailPlaceholder": "Vide pour illimité",
     "isActiveLabel": "Actif",
     "descriptionLabel": "Note interne",
-    "descriptionPlaceholder": "Campagne à laquelle ce code est destiné"
+    "descriptionPlaceholder": "Campagne à laquelle ce code est destiné",
+    "discountSectionTitle": "Remise",
+    "datesSectionTitle": "Dates",
+    "limitsSectionTitle": "Limites",
+    "visibilitySectionTitle": "Visibilité"
   },
   "axios": {
     "start": {

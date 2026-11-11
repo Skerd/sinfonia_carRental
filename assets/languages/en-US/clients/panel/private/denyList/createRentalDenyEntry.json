@@ -18,7 +18,9 @@
     "licenseNumberPlaceholder": "As printed on the license",
     "reasonLabel": "Reason",
     "reasonPlaceholder": "Why this customer is blocked",
-    "isActiveLabel": "Active"
+    "isActiveLabel": "Active",
+    "personSectionTitle": "Person",
+    "statusSectionTitle": "Status"
   },
   "axios": {
     "start": {

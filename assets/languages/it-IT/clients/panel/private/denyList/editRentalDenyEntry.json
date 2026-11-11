@@ -18,7 +18,9 @@
     "licenseNumberPlaceholder": "Come stampato sulla patente",
     "reasonLabel": "Motivo",
     "reasonPlaceholder": "Perché questo cliente è bloccato",
-    "isActiveLabel": "Attivo"
+    "isActiveLabel": "Attivo",
+    "personSectionTitle": "Persona",
+    "statusSectionTitle": "Stato"
   },
   "axios": {
     "start": {

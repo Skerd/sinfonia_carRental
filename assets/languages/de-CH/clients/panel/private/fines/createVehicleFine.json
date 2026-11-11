@@ -28,7 +28,7 @@
       "other": "Anderes"
     },
     "authorityLabel": "Ausgestellt von",
-    "authorityPlaceholder": "z. B. Stadtpolizei Zürich",
+    "authorityPlaceholder": "z. B. Verkehrspolizei Tirana",
     "amountLabel": "Betrag",
     "amountPlaceholder": "Betrag auf der Busse",
     "placeLabel": "Ort",
@@ -40,7 +40,8 @@
     "notesPlaceholder": "Interne Notizen",
     "offenceSectionTitle": "Verstoss",
     "authoritySectionTitle": "Behörde und Betrag",
-    "notesSectionTitle": "Notizen und Dateien"
+    "notesSectionTitle": "Notizen und Dateien",
+    "amountCurrencyDescription": "In der Mietwährung (Konfigurationen › Autovermietung › Online-Buchung)."
   },
   "axios": {
     "start": {

@@ -48,7 +48,8 @@
       "active": "Aktiv",
       "expired": "Abgelaufen",
       "cancelled": "Gekündigt"
-    }
+    },
+    "amountCurrencyDescription": "In der Mietwährung (Konfigurationen › Autovermietung › Online-Buchung)."
   },
   "axios": {
     "start": {
