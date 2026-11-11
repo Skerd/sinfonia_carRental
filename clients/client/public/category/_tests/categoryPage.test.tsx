@@ -110,4 +110,20 @@ describe("public car page", () => {
         const duplicateKeyWarnings = consoleError.mock.calls.filter((call) => String(call[0]).includes("same key"));
         expect(duplicateKeyWarnings).toEqual([]);
     });
+
+    it("opens a class by its web address, as the site's links now point (P9.8)", async () => {
+        render(
+            <Provider store={store}>
+                <MemoryRouter initialEntries={[`/compact?${TRIP}`]}>
+                    <RentalConfigProvider>
+                        <Routes>
+                            <Route path="/:categoryId" element={<CategoryPage />} />
+                        </Routes>
+                    </RentalConfigProvider>
+                </MemoryRouter>
+            </Provider>,
+        );
+
+        expect(await screen.findByText("Free for these dates")).toBeInTheDocument();
+    });
 });

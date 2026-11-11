@@ -7,11 +7,12 @@
   "returnDate": "Rückgabedatum",
   "returnTime": "Rückgabezeit",
   "returnBeforePickup": "Die Rückgabe muss nach der Abholung liegen.",
-    "search": "Autos anzeigen",
-    "noTimesLeft": "Keine Zeiten mehr an diesem Tag.",
-    "period": {
-        "morning": "Vormittag",
-        "afternoon": "Nachmittag",
-        "evening": "Abend"
-    }
+  "search": "Autos anzeigen",
+  "noTimesLeft": "Keine Zeiten mehr an diesem Tag.",
+  "period": {
+    "morning": "Vormittag",
+    "afternoon": "Nachmittag",
+    "evening": "Abend"
+  },
+  "greyedDays": "Graue Tage: die Filiale ist geschlossen, oder der Tag ist vorbei oder mehr als {days} Tage entfernt."
 }

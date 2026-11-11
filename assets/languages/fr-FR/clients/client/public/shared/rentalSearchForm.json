@@ -7,11 +7,12 @@
   "returnDate": "Date de retour",
   "returnTime": "Heure de retour",
   "returnBeforePickup": "Le retour doit être après la prise en charge.",
-    "search": "Afficher les voitures",
-    "noTimesLeft": "Plus d'horaires ce jour-là.",
-    "period": {
-        "morning": "Matin",
-        "afternoon": "Après-midi",
-        "evening": "Soir"
-    }
+  "search": "Afficher les voitures",
+  "noTimesLeft": "Plus d'horaires ce jour-là.",
+  "period": {
+    "morning": "Matin",
+    "afternoon": "Après-midi",
+    "evening": "Soir"
+  },
+  "greyedDays": "Jours grisés : l'agence est fermée, ou le jour est passé ou à plus de {days} jours."
 }

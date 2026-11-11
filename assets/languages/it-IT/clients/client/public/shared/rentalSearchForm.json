@@ -7,11 +7,12 @@
   "returnDate": "Data di riconsegna",
   "returnTime": "Ora di riconsegna",
   "returnBeforePickup": "La riconsegna deve essere dopo il ritiro.",
-    "search": "Mostra auto",
-    "noTimesLeft": "Nessun orario rimasto in questo giorno.",
-    "period": {
-        "morning": "Mattina",
-        "afternoon": "Pomeriggio",
-        "evening": "Sera"
-    }
+  "search": "Mostra auto",
+  "noTimesLeft": "Nessun orario rimasto in questo giorno.",
+  "period": {
+    "morning": "Mattina",
+    "afternoon": "Pomeriggio",
+    "evening": "Sera"
+  },
+  "greyedDays": "Giorni in grigio: la sede è chiusa, oppure il giorno è passato o oltre {days} giorni."
 }

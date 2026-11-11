@@ -1,17 +1,18 @@
 {
-    "pickupLocation": "Pick-up location",
-    "returnLocation": "Return location",
-    "differentReturn": "Return to a different location",
-    "pickupDate": "Pick-up date",
-    "pickupTime": "Pick-up time",
-    "returnDate": "Return date",
-    "returnTime": "Return time",
-    "returnBeforePickup": "The return must be after the pick-up.",
-    "search": "Show cars",
-    "noTimesLeft": "No times left this day.",
-    "period": {
-        "morning": "Morning",
-        "afternoon": "Afternoon",
-        "evening": "Evening"
-    }
+  "pickupLocation": "Pick-up location",
+  "returnLocation": "Return location",
+  "differentReturn": "Return to a different location",
+  "pickupDate": "Pick-up date",
+  "pickupTime": "Pick-up time",
+  "returnDate": "Return date",
+  "returnTime": "Return time",
+  "returnBeforePickup": "The return must be after the pick-up.",
+  "search": "Show cars",
+  "noTimesLeft": "No times left this day.",
+  "period": {
+    "morning": "Morning",
+    "afternoon": "Afternoon",
+    "evening": "Evening"
+  },
+  "greyedDays": "Greyed days: the branch is closed, or the day is past or more than {days} days ahead."
 }

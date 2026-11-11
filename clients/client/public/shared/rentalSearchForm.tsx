@@ -10,10 +10,10 @@ import {Calendar} from "@coreModule/components/ui/calendar.tsx";
 import {Popover, PopoverContent, PopoverTrigger} from "@coreModule/components/ui/popover.tsx";
 import {useRentalConfig} from "./rentalConfigContext.tsx";
 import {dateInDays, tripToSearch, type RentalTripParams} from "./rentalTripParams.ts";
-import {Input} from "@coreModule/components/ui/input.tsx";
 import {NativeSelect} from "@coreModule/components/ui/native-select.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import type {RentalStorefrontLocation} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.response.types.ts";
+import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
 import {Checkbox} from "@coreModule/components/ui/checkbox.tsx";
 
 const TIME_STEP = 30;
@@ -305,6 +305,10 @@ function RentalSearchForm({
                                     className="bg-transparent p-1 [--cell-size:--spacing(8)]"
                                     classNames={calendarClassNames}
                                 />
+                                {/* Why a day cannot be picked: the branch is closed then, or it is outside the booking window. */}
+                                <p className="px-2 pb-1 text-xs text-muted-foreground">
+                                    {String(resolveLanguageKey("greyedDays")).replace("{days}", String(maxAdvanceDays))}
+                                </p>
                             </PopoverContent>
                         </Popover>
                         <div className="flex flex-col border-l">
@@ -335,19 +339,19 @@ function RentalSearchForm({
                 <>
                     <label className="flex flex-col gap-1.5">
                         <span className="text-sm font-medium">{resolveLanguageKey("pickupDate")}</span>
-                        <Input type="date" value={trip.pickupDate} min={today} onChange={(e) => update({pickupDate: e.target.value})} required />
+                        <DateInput valueFormat="YYYY-MM-DD" value={trip.pickupDate} minDate={today} onChange={(value) => update({pickupDate: value})} clearable={false} />
                     </label>
                     <label className="flex flex-col gap-1.5">
                         <span className="text-sm font-medium">{resolveLanguageKey("pickupTime")}</span>
-                        <Input type="time" value={trip.pickupTime} step={900} onChange={(e) => update({pickupTime: e.target.value})} required />
+                        <DateInput timeOnly valueFormat="HH:mm" value={trip.pickupTime} onChange={(value) => update({pickupTime: value})} clearable={false} />
                     </label>
                     <label className="flex flex-col gap-1.5">
                         <span className="text-sm font-medium">{resolveLanguageKey("returnDate")}</span>
-                        <Input type="date" value={trip.returnDate} min={trip.pickupDate} onChange={(e) => update({returnDate: e.target.value})} required aria-invalid={returnsBeforePickup || undefined} />
+                        <DateInput valueFormat="YYYY-MM-DD" value={trip.returnDate} minDate={trip.pickupDate} onChange={(value) => update({returnDate: value})} clearable={false} />
                     </label>
                     <label className="flex flex-col gap-1.5">
                         <span className="text-sm font-medium">{resolveLanguageKey("returnTime")}</span>
-                        <Input type="time" value={trip.returnTime} step={900} onChange={(e) => update({returnTime: e.target.value})} required aria-invalid={returnsBeforePickup || undefined} />
+                        <DateInput timeOnly valueFormat="HH:mm" value={trip.returnTime} onChange={(value) => update({returnTime: value})} clearable={false} />
                     </label>
                 </>
             )}

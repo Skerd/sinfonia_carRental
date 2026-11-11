@@ -27,7 +27,7 @@ function HomePage({resolveLanguageKey}: WithLanguageType) {
                     <ul className="grid gap-x-4 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-6">
                         {config.categories.map((category) => (
                             <li key={category._id}>
-                                <Link to={`${base}/categories/${category._id}`} className="group flex flex-col gap-3 rounded-2xl outline-none focus-visible:ring-3 focus-visible:ring-ring/50">
+                                <Link to={`${base}/categories/${category.slug || category._id}`} className="group flex flex-col gap-3 rounded-2xl outline-none focus-visible:ring-3 focus-visible:ring-ring/50">
                                     {category.images[0] ? (
                                         <img src={category.images[0]} alt="" className="aspect-[4/5] w-full rounded-2xl object-cover" loading="lazy" />
                                     ) : (

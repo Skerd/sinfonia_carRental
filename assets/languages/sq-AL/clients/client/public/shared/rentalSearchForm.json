@@ -7,11 +7,12 @@
   "returnDate": "Data e kthimit",
   "returnTime": "Ora e kthimit",
   "returnBeforePickup": "Kthimi duhet të jetë pas marrjes.",
-    "search": "Shfaq makinat",
-    "noTimesLeft": "Nuk ka orare të mbetura këtë ditë.",
-    "period": {
-        "morning": "Mëngjes",
-        "afternoon": "Pasdite",
-        "evening": "Mbrëmje"
-    }
+  "search": "Shfaq makinat",
+  "noTimesLeft": "Nuk ka orare të mbetura këtë ditë.",
+  "period": {
+    "morning": "Mëngjes",
+    "afternoon": "Pasdite",
+    "evening": "Mbrëmje"
+  },
+  "greyedDays": "Ditët gri: zyra është e mbyllur, ose dita ka kaluar ose është më shumë se {days} ditë larg."
 }

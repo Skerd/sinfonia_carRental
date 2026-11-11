@@ -1,3 +1,4 @@
+import dayjs from "dayjs";
 import {useEffect, useMemo, useRef, useState, type FormEvent} from "react";
 import {compose} from "redux";
 import {Link, useNavigate, useParams, useSearchParams} from "react-router-dom";
@@ -43,6 +44,7 @@ import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
 import {NativeSelect} from "@coreModule/components/ui/native-select.tsx";
 import {Checkbox} from "@coreModule/components/ui/checkbox.tsx";
+import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
 import {RadioGroup, RadioGroupItem} from "@coreModule/components/ui/radio-group.tsx";
 
 const QUOTE_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/quote"};
@@ -65,6 +67,7 @@ function manageUrl(base: string, token: string, paid: boolean): string {
 
 function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
     const base = useSectionBase();
+    // A class opens by its web address (slug); links made with its id still open it.
     const {categoryId = ""} = useParams();
     const [params] = useSearchParams();
     const navigate = useNavigate();
@@ -72,7 +75,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
     const trip = tripFromSearch(params);
     const tripKey = trip ? tripToSearch(trip) : "";
     const category = config?.categories.find(
-        (entry) => entry._id === categoryId,
+        (entry) => entry.slug === categoryId || entry._id === categoryId,
     );
     const pickupLocation = config?.locations.find(
         (location) => location._id === trip?.pickupLocation,
@@ -416,7 +419,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                         className="h-auto p-0 text-sm"
                     >
                         <Link
-                            to={`${base}/categories/${category._id}?${tripKey}`}
+                            to={`${base}/categories/${category.slug || category._id}?${tripKey}`}
                         >
                             {resolveLanguageKey("changeSearch")}
                         </Link>
@@ -582,15 +585,15 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                         <span className="text-sm font-medium">
                             {resolveLanguageKey("birthDate")}
                         </span>
-                        <Input
-                            type="date"
-                            autoComplete="bday"
+                        <DateInput
+                            valueFormat="YYYY-MM-DD"
                             value={birthDate}
-                            onChange={(e) => {
-                                setBirthDate(e.target.value);
+                            // An upper bound only (no birthday in the future); the server checks the driver's age.
+                            maxDate={dayjs().format("YYYY-MM-DD")}
+                            onChange={(value) => {
+                                setBirthDate(value);
                                 setBirthDateError(null);
                             }}
-                            aria-invalid={!!birthDateError || undefined}
                         />
                         {birthDateError ? (
                             <span className="text-sm text-destructive">

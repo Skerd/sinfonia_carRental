@@ -21,11 +21,12 @@ const LANGUAGE_PATH = "src/modules/carRental/clients/client/public/category/inde
 
 function CategoryPage({resolveLanguageKey, currentLanguage}: WithLanguageType) {
     const base = useSectionBase();
+    // A class opens by its web address (slug); links made with its id still open it.
     const {categoryId = ""} = useParams();
     const [params] = useSearchParams();
     const navigate = useNavigate();
     const {config, loading, formatMoney} = useRentalConfig();
-    const category = config?.categories.find((entry) => entry._id === categoryId);
+    const category = config?.categories.find((entry) => entry.slug === categoryId || entry._id === categoryId);
     const initial = tripFromSearch(params);
     const [trip, setTrip] = useState<RentalTripParams | null>(initial);
     const tripKey = trip ? tripToSearch(trip) : "";
@@ -88,7 +89,7 @@ function CategoryPage({resolveLanguageKey, currentLanguage}: WithLanguageType) {
 
     const continueToBook = (next: RentalTripParams) => {
         if (!quote) return;
-        navigate(`${base}/book/${category._id}?${tripToSearch(next)}`);
+        navigate(`${base}/book/${category.slug || category._id}?${tripToSearch(next)}`);
     };
 
     return (

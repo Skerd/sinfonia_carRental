@@ -70,7 +70,7 @@ function SearchPage({resolveLanguageKey}: WithLanguageType) {
                                                 {quote.pricesIncludeVat && quote.vatRate > 0 ? ` · ${resolveLanguageKey("vatIncluded")}` : ""}
                                             </p>
                                             {available ? (
-                                                <Button asChild size="lg"><Link to={`${base}/book/${category._id}?${tripKey}`}>{resolveLanguageKey("choose")}</Link></Button>
+                                                <Button asChild size="lg"><Link to={`${base}/book/${category.slug || category._id}?${tripKey}`}>{resolveLanguageKey("choose")}</Link></Button>
                                             ) : (
                                                 <span className="text-sm font-medium text-destructive">{resolveLanguageKey("soldOut")}</span>
                                             )}

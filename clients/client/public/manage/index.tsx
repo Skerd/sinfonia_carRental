@@ -24,6 +24,7 @@ import {formatAtLocation} from "../shared/rentalTripParams.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
 import type {PublicRentalChangeResponse} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.response.types.ts";
+import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
 import RentalStripePayment from "../book/rentalStripePayment.tsx";
 
 /** After paying, the webhook confirms the booking; check again for this long before giving up. */
@@ -353,19 +354,20 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                             {resolveLanguageKey("extendTitle")}
                         </h2>
                         <div className="flex flex-wrap gap-3">
-                            <Input
-                                type="date"
+                            <DateInput
+                                valueFormat="YYYY-MM-DD"
                                 value={returnDate}
-                                onChange={(event) =>
-                                    setReturnDate(event.target.value)
-                                }
+                                onChange={setReturnDate}
+                                clearable={false}
+                                className="w-56"
                             />
-                            <Input
-                                type="time"
+                            <DateInput
+                                timeOnly
+                                valueFormat="HH:mm"
                                 value={returnTime}
-                                onChange={(event) =>
-                                    setReturnTime(event.target.value)
-                                }
+                                onChange={setReturnTime}
+                                clearable={false}
+                                className="w-32"
                             />
                         </div>
                         <Button
