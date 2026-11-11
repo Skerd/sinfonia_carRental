@@ -6,6 +6,8 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {handleError} from "@coreModule/helpers/general/errors.ts";
+import {useCompanyTimeZone} from "@coreModule/helpers/hooks/useCompanyTimeZone.ts";
+import {companyToday} from "@coreModule/helpers/general/dateTime.ts";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
@@ -32,7 +34,6 @@ const STATUS_CLASS: Record<string, string> = {
 };
 const READINESS_CLASS: Record<string, string> = {ready: "bg-emerald-500", needs_cleaning: "bg-amber-500", needs_check: "bg-red-500"};
 
-const today = () => new Date().toISOString().slice(0, 10);
 const shiftDay = (day: string, days: number) => new Date(new Date(`${day}T00:00:00Z`).getTime() + days * DAY_MS).toISOString().slice(0, 10);
 
 /**
@@ -40,7 +41,9 @@ const shiftDay = (day: string, days: number) => new Date(new Date(`${day}T00:00:
  * booking onto another car of the same category to move it there; click it to open it.
  */
 function RentalPlannerPage({resolveLanguageKey, languageCode}: WithLanguageType) {
-    const [from, setFrom] = useState(today());
+    // The company's calendar day (GLB-09), not UTC.
+    const companyZone = useCompanyTimeZone();
+    const [from, setFrom] = useState(() => companyToday(companyZone));
     const [days, setDays] = useState(14);
     const [location, setLocation] = useState("");
     const [category, setCategory] = useState("");
@@ -114,7 +117,7 @@ function RentalPlannerPage({resolveLanguageKey, languageCode}: WithLanguageType)
                     <Button type="button" variant="outline" size="icon" aria-label={String(resolveLanguageKey("later"))} onClick={() => setFrom(shiftDay(from, days))}>
                         <IconChevronRight size={16} />
                     </Button>
-                    <Button type="button" variant="ghost" onClick={() => setFrom(today())}>{resolveLanguageKey("today")}</Button>
+                    <Button type="button" variant="ghost" onClick={() => setFrom(companyToday(companyZone))}>{resolveLanguageKey("today")}</Button>
                 </div>
                 <NativeSelect aria-label={String(resolveLanguageKey("span"))} value={days} onChange={(e) => setDays(Number(e.target.value))} className="w-32">
                     {SPANS.map((value) => <option key={value} value={value}>{String(resolveLanguageKey("days")).replace("{count}", String(value))}</option>)}

@@ -1,4 +1,6 @@
 import {useCallback, useEffect, useState} from "react";
+import {useCompanyTimeZone} from "@coreModule/helpers/hooks/useCompanyTimeZone.ts";
+import {companyToday} from "@coreModule/helpers/general/dateTime.ts";
 import {compose} from "redux";
 import withLanguage, {
     WithLanguageType,
@@ -43,14 +45,6 @@ type Column = "pickups" | "returns" | "overdue";
 const LOCATIONS_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalLocation/select"};
 const COUNTER_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalCounter"};
 const COLUMNS: Column[] = ["pickups", "returns", "overdue"];
-
-/** The desk's calendar day, not UTC: the date input speaks the browser's local date. */
-function localToday() {
-    const now = new Date();
-    const month = String(now.getMonth() + 1).padStart(2, "0");
-    const day = String(now.getDate()).padStart(2, "0");
-    return `${now.getFullYear()}-${month}-${day}`;
-}
 
 function driversIncomplete(reservation: RentalReservation) {
     return (
@@ -253,7 +247,9 @@ function RentalCounterPage({
     const {write} = useAccess("rentalreservations");
     const canMove = !!write?.status;
     const canTakePayment = !!write?.amountPaid;
-    const [date, setDate] = useState(localToday);
+    // The company's calendar day (GLB-09), not the browser's or UTC.
+    const companyZone = useCompanyTimeZone();
+    const [date, setDate] = useState(() => companyToday(companyZone));
     const [location, setLocation] = useState("");
     const [search, setSearch] = useState("");
     const [active, setActive] = useState<{
@@ -306,7 +302,7 @@ function RentalCounterPage({
                     <Button
                         type="button"
                         variant="ghost"
-                        onClick={() => setDate(localToday())}
+                        onClick={() => setDate(companyToday(companyZone))}
                     >
                         {resolveLanguageKey("today")}
                     </Button>

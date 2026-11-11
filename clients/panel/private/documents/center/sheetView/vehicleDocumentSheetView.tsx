@@ -7,6 +7,7 @@ import SheetViewRenderer from "@coreModule/components/viewEngine/SheetViewRender
 import {useViewConfig} from "@coreModule/helpers/hooks/useViewConfig.ts";
 import type {VehicleDocument} from "armonia/src/modules/carRental/api/carRental/private/vehicleDocument/vehicleDocument.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
+import VehicleDocumentMenu from "@carRentalModule/clients/panel/private/documents/center/actions/vehicleDocumentMenu.tsx";
 
 type VehicleDocumentSheetViewOwnProps = {
     open: boolean;
@@ -41,6 +42,11 @@ function VehicleDocumentSheetView({
 
     const entityId = vehicleDocumentProp?._id ?? fetchId;
     if (!viewConfig || !entityId) return null;
+    const record = sheetData as VehicleDocument;
+    const patched = (row: Partial<VehicleDocument>) => {
+        setSheetData((current) => ({...current, ...row}));
+        onSheetRowPatched?.(row);
+    };
 
     return (
         <SheetViewRenderer
@@ -57,10 +63,10 @@ function VehicleDocumentSheetView({
             onDelete={onDelete}
             onRestore={onRestore}
             editPath={`/carRental/documents/edit?vehicleDocumentId=${entityId}`}
-            onSheetRowPatched={(row) => {
-                setSheetData(row);
-                onSheetRowPatched?.(row as Partial<VehicleDocument>);
-            }}
+            onSheetRowPatched={(row) => patched(row as Partial<VehicleDocument>)}
+            // The sheet carries its own actions wherever it opens (list, table, linked record), not only from its card.
+            actionMenuAllowCustomChildren
+            actionMenuChildren={record.status ? <VehicleDocumentMenu document={record} /> : null}
         />
     );
 }

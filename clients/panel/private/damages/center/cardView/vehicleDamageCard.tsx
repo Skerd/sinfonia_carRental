@@ -54,12 +54,7 @@ function VehicleDamageCard({
             failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="vehicle"
             innerRef={innerRef}
-            sheetProps={({entity, setAction}) => ({
-                fetchId,
-                actionMenuAllowCustomChildren: true,
-                onActionMenuAction: setAction,
-                actionMenuChildren: <VehicleDamageMenu damage={entity} onAction={setAction} />,
-            })}
+            sheetProps={() => ({fetchId})}
             extraDialogs={({action, setAction, entity, setEntity}) => {
                 const onUpdated = (updated: VehicleDamage) => setEntity({...entity, ...updated});
                 if (action === "chargeToCustomer") return <ChargeDamageDialog damage={entity} onClose={() => setAction("")} onUpdated={onUpdated} />;

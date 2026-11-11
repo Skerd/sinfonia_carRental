@@ -51,11 +51,7 @@ function VehicleDocumentCard({
             failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="vehicle"
             innerRef={innerRef}
-            sheetProps={({entity}) => ({
-                fetchId,
-                actionMenuAllowCustomChildren: true,
-                actionMenuChildren: <VehicleDocumentMenu document={entity} />,
-            })}
+            sheetProps={() => ({fetchId})}
         >
             {({entity: row}) => (
                 <>

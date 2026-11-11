@@ -52,12 +52,7 @@ function VehicleTransferCard({
             failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="vehicle"
             innerRef={innerRef}
-            sheetProps={({entity, setAction}) => ({
-                fetchId,
-                actionMenuAllowCustomChildren: true,
-                onActionMenuAction: setAction,
-                actionMenuChildren: <VehicleTransferMenu transfer={entity} onAction={setAction} />,
-            })}
+            sheetProps={() => ({fetchId})}
             extraDialogs={({action, setAction, entity, setEntity}) => (
                 <VehicleTransferDialogs action={action} transfer={entity} onClose={() => setAction("")} onUpdated={(updated: VehicleTransfer) => setEntity({...entity, ...updated})} />
             )}

@@ -52,12 +52,7 @@ function VehicleFineCard({
             failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="reference"
             innerRef={innerRef}
-            sheetProps={({entity, setAction}) => ({
-                fetchId,
-                actionMenuAllowCustomChildren: true,
-                onActionMenuAction: setAction,
-                actionMenuChildren: <VehicleFineMenu fine={entity} onAction={setAction} />,
-            })}
+            sheetProps={() => ({fetchId})}
             extraDialogs={({action, setAction, entity, setEntity}) => (
                 <VehicleFineDialogs action={action} fine={entity} onClose={() => setAction("")} onUpdated={(updated: VehicleFine) => setEntity({...entity, ...updated})} />
             )}

@@ -52,12 +52,7 @@ function VehicleMaintenanceCard({
             failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="vehicle"
             innerRef={innerRef}
-            sheetProps={({entity, setAction}) => ({
-                fetchId,
-                actionMenuAllowCustomChildren: true,
-                onActionMenuAction: setAction,
-                actionMenuChildren: <VehicleMaintenanceMenu record={entity} onAction={setAction} />,
-            })}
+            sheetProps={() => ({fetchId})}
             extraDialogs={({action, setAction, entity, setEntity}) => (
                 <VehicleMaintenanceDialogs action={action} record={entity} onClose={() => setAction("")} onUpdated={(updated: VehicleMaintenance) => setEntity({...entity, ...updated})} />
             )}
