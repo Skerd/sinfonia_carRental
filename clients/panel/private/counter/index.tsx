@@ -287,7 +287,7 @@ function RentalCounterPage({
                         valueFormat="YYYY-MM-DD"
                         value={date}
                         onChange={(value) => value && setDate(value)}
-                        className="w-full sm:w-44"
+                        className="w-full sm:w-56"
                     />
                     <Button
                         type="button"
