@@ -89,7 +89,7 @@ function DepositDialog({reservation, onClose, onUpdated, resolveLanguageKey, onF
             onConfirm={() => onFilterChange({_id: reservation._id, method, amount: Number(amount)})}
         >
             <div className="flex flex-col gap-2">
-                <Label htmlFor="rental-deposit-amount">{resolveLanguageKey("amountLabel")}</Label>
+                <Label htmlFor="rental-deposit-amount">{resolveLanguageKey("amountLabel")}{reservation.pricing.currency?.abbreviation ? ` (${reservation.pricing.currency.abbreviation})` : ""}</Label>
                 <Input id="rental-deposit-amount" type="number" min={0} step="any" value={amount} onChange={(e) => setAmount(e.target.value)} disabled={loading} />
             </div>
             <RadioGroup

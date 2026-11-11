@@ -8,6 +8,8 @@ import type {SettleRentalDepositFormType} from "armonia/src/modules/carRental/ap
 import ReservationActionDialogShell from "./reservationActionDialogShell.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
 import {Label} from "@coreModule/components/ui/label.tsx";
+import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
+import {roundToCurrency, subtractMoney, toMinor} from "armonia/src/modules/core/helpers/money.ts";
 
 type Props = WithLanguageType & WithAxiosType<RentalReservation, SettleRentalDepositFormType> & {
     reservation: RentalReservation;
@@ -17,24 +19,29 @@ type Props = WithLanguageType & WithAxiosType<RentalReservation, SettleRentalDep
 
 /** Keeps what the customer still owes from the deposit and releases the rest. */
 function SettleDepositDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
+    // Exact money at the currency's own decimals (GLB-08), shown with its currency (UX-07).
+    const currency = reservation.pricing?.currency;
+    const decimals = currency?.decimalPlaces ?? 2;
+    const money = (amount: number) => (currency?.abbreviation ? formatCurrency(amount, currency.abbreviation) : String(amount));
     const held = reservation.deposit?.amount ?? 0;
-    const due = Math.max(0, (reservation.pricing?.grandTotal ?? 0) - (reservation.amountPaid ?? 0));
-    const [keep, setKeep] = useState(String(Math.round(Math.min(held, due) * 100) / 100));
+    const due = Math.max(0, subtractMoney(reservation.pricing?.grandTotal ?? 0, reservation.amountPaid ?? 0, decimals));
+    const most = Math.min(held, due);
+    const [keep, setKeep] = useState(String(roundToCurrency(most, decimals)));
     useImperativeHandle(innerRef, () => ({success: (data) => { onUpdated(data); onClose(); }}));
 
     return (
         <ReservationActionDialogShell
             title={resolveLanguageKey("title")}
-            description={String(resolveLanguageKey("description")).replace("{held}", String(held)).replace("{due}", String(due))}
+            description={String(resolveLanguageKey("description")).replace("{held}", money(held)).replace("{due}", money(due))}
             confirmLabel={resolveLanguageKey(Number(keep) > 0 ? "confirmKeep" : "confirmRelease")}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}
-            canConfirm={keep !== "" && Number(keep) >= 0 && Number(keep) <= Math.min(held, due) + 0.005}
+            canConfirm={keep !== "" && Number(keep) >= 0 && toMinor(Number(keep), decimals) <= toMinor(most, decimals)}
             onClose={onClose}
             onConfirm={() => onFilterChange({_id: reservation._id, keepAmount: Number(keep)})}
         >
             <div className="flex flex-col gap-2">
-                <Label htmlFor="rental-deposit-keep">{resolveLanguageKey("keepLabel")}</Label>
+                <Label htmlFor="rental-deposit-keep">{resolveLanguageKey("keepLabel")}{currency?.abbreviation ? ` (${currency.abbreviation})` : ""}</Label>
                 <Input id="rental-deposit-keep" type="number" min={0} step="any" value={keep} onChange={(e) => setKeep(e.target.value)} disabled={loading} />
             </div>
         </ReservationActionDialogShell>

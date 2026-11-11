@@ -33,8 +33,10 @@ export function RentalConfigProvider({children}: {children: ReactNode}) {
         unavailable: !loading && !config,
         formatMoney: (amount) => {
             if (amount == null || Number.isNaN(amount)) return "";
+            // At the currency's own decimals (D90): two for the euro, none for the yen.
             const code = config?.currency.abbreviation;
-            return code ? formatCurrency(amount, code, {minimumFractionDigits: 2, maximumFractionDigits: 2}) : amount.toFixed(2);
+            const digits = config?.currency.decimalPlaces ?? 2;
+            return code ? formatCurrency(amount, code, {minimumFractionDigits: digits, maximumFractionDigits: digits}) : amount.toFixed(digits);
         },
     }), [config, loading]);
 

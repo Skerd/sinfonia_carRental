@@ -39,7 +39,7 @@ function RecordFinePaymentDialog({fine, onClose, onUpdated, resolveLanguageKey, 
                     <Input id="rental-fine-paid-at" type="date" value={paidAt} onChange={(e) => setPaidAt(e.target.value)} disabled={loading} />
                 </div>
                 <div className="flex flex-col gap-2">
-                    <Label htmlFor="rental-fine-paid-amount">{resolveLanguageKey("paidAmountLabel")}</Label>
+                    <Label htmlFor="rental-fine-paid-amount">{resolveLanguageKey("paidAmountLabel")}{fine.currency?.abbreviation ? ` (${fine.currency.abbreviation})` : ""}</Label>
                     <Input id="rental-fine-paid-amount" type="number" min={0} step="any" value={paidAmount} onChange={(e) => setPaidAmount(e.target.value)} disabled={loading} />
                 </div>
             </div>
