@@ -50,5 +50,7 @@
     "cancelled": "Annulée",
     "expired": "Expirée",
     "no_show": "Absent"
-  }
+  },
+  "customRange": "Période personnalisée",
+  "until": "Jusqu'au"
 }

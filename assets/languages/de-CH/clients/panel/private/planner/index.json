@@ -50,5 +50,7 @@
     "cancelled": "Storniert",
     "expired": "Abgelaufen",
     "no_show": "Nicht erschienen"
-  }
+  },
+  "customRange": "Eigener Zeitraum",
+  "until": "Bis"
 }

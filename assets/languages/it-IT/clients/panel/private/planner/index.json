@@ -50,5 +50,7 @@
     "cancelled": "Annullato",
     "expired": "Scaduto",
     "no_show": "Non presentato"
-  }
+  },
+  "customRange": "Intervallo personalizzato",
+  "until": "Fino al"
 }

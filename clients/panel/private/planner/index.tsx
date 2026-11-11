@@ -12,7 +12,7 @@ import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {NativeSelect} from "@coreModule/components/ui/native-select.tsx";
 import type {ApiSelectDatum, SelectResponse} from "armonia/src/modules/core/types/shared.types.ts";
-import type {RentalPlannerFormType, RentalPlannerResponse} from "armonia/src/modules/carRental/api/carRental/private/rentalPlanner/rentalPlanner.ts";
+import {RENTAL_PLANNER_MAX_DAYS, type RentalPlannerFormType, type RentalPlannerResponse} from "armonia/src/modules/carRental/api/carRental/private/rentalPlanner/rentalPlanner.ts";
 import RentalReservationSheetView from "@carRentalModule/clients/panel/private/reservations/center/sheetView/rentalReservationSheetView.tsx";
 import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
 import {cn} from "@coreModule/components/lib/utils.ts";
@@ -23,6 +23,8 @@ import {useTableConfig} from "@coreModule/helpers/hooks/useTableConfig.ts";
 
 type Planner = RentalPlannerResponse["data"];
 const SPANS = [7, 14, 30];
+/** The select's value for "pick an end day yourself". */
+const RANGE = "range";
 const LOCATIONS_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalLocation/select"};
 const CATEGORIES_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/vehicleCategory/select"};
 const PLANNER_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalPlanner"};
@@ -54,6 +56,13 @@ function RentalPlannerPage({resolveLanguageKey}: WithLanguageType) {
     const companyZone = useCompanyTimeZone();
     const [from, setFrom] = useState(() => companyToday(companyZone));
     const [days, setDays] = useState(14);
+    // A custom range keeps `days` as its length, so the arrows still step one range at a time.
+    const [customRange, setCustomRange] = useState(false);
+    const until = shiftDay(from, days - 1);
+    const setUntil = (day: string) => {
+        const length = Math.round((Date.parse(`${day}T00:00:00Z`) - Date.parse(`${from}T00:00:00Z`)) / DAY_MS) + 1;
+        setDays(Math.min(RENTAL_PLANNER_MAX_DAYS, Math.max(1, length)));
+    };
     const [location, setLocation] = useState("");
     const [category, setCategory] = useState("");
     const [openReservation, setOpenReservation] = useState<string | null>(null);
@@ -183,9 +192,31 @@ function RentalPlannerPage({resolveLanguageKey}: WithLanguageType) {
                     </Button>
                     <Button type="button" variant="ghost" onClick={() => setFrom(companyToday(companyZone))}>{resolveLanguageKey("today")}</Button>
                 </div>
-                <NativeSelect aria-label={String(resolveLanguageKey("span"))} value={days} onChange={(e) => setDays(Number(e.target.value))} className="w-32">
+                <NativeSelect
+                    aria-label={String(resolveLanguageKey("span"))}
+                    value={customRange ? RANGE : days}
+                    onChange={(e) => {
+                        const next = e.target.value;
+                        setCustomRange(next === RANGE);
+                        if (next !== RANGE) setDays(Number(next));
+                    }}
+                    className="w-40"
+                >
                     {SPANS.map((value) => <option key={value} value={value}>{String(resolveLanguageKey("days")).replace("{count}", String(value))}</option>)}
+                    <option value={RANGE}>{resolveLanguageKey("customRange")}</option>
                 </NativeSelect>
+                {customRange ? (
+                    <DateInput
+                        aria-label={String(resolveLanguageKey("until"))}
+                        valueFormat="YYYY-MM-DD"
+                        value={until}
+                        onChange={(value) => value && setUntil(value)}
+                        minDate={from}
+                        maxDate={shiftDay(from, RENTAL_PLANNER_MAX_DAYS - 1)}
+                        clearable={false}
+                        className="w-56"
+                    />
+                ) : null}
                 <NativeSelect aria-label={String(resolveLanguageKey("location"))} value={location} onChange={(e) => setLocation(e.target.value)} className="w-48">
                     <option value="">{resolveLanguageKey("allLocations")}</option>
                     {locations.map((entry) => <option key={entry.value} value={entry.value}>{entry.label}</option>)}
@@ -197,10 +228,31 @@ function RentalPlannerPage({resolveLanguageKey}: WithLanguageType) {
                 {loading ? <Loader /> : null}
             </div>
 
+            {/* What the colours, the hatched bars and the dots mean, and how to move a booking. */}
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted-foreground" aria-label={String(resolveLanguageKey("legend"))}>
+                {SHOWN_STATUSES.map((status) => (
+                    <span key={status} className="flex items-center gap-1.5">
+                        <span className={cn("h-3 w-5 rounded-sm", statusClass(status))} aria-hidden />
+                        {resolveLanguageKey(`statusValues.${status}`)}
+                    </span>
+                ))}
+                <span className="flex items-center gap-1.5">
+                    <span className="h-3 w-5 rounded-sm border border-dashed border-muted-foreground/60 bg-[repeating-linear-gradient(45deg,transparent,transparent_2px,var(--muted)_2px,var(--muted)_4px)]" aria-hidden />
+                    {resolveLanguageKey("blockedLegend")}
+                </span>
+                {Object.entries(READINESS_CLASS).map(([readiness, className]) => (
+                    <span key={readiness} className="flex items-center gap-1.5">
+                        <span className={cn("h-2 w-2 rounded-full", className)} aria-hidden />
+                        {resolveLanguageKey(`readiness.${readiness}`)}
+                    </span>
+                ))}
+                <span>{resolveLanguageKey("hint")}</span>
+            </div>
             {planner && !planner.vehicles.length ? <p className="text-sm text-muted-foreground">{resolveLanguageKey("noCars")}</p> : null}
             {planner?.vehicles.length ? (
                 <div className="overflow-x-auto rounded-md border">
-                    <div className="min-w-[900px]">
+                    {/* Long ranges widen the grid instead of squeezing the day columns. */}
+                    <div style={{minWidth: Math.max(900, 180 + days * 36)}}>
                         <div className="grid grid-cols-[180px_1fr] border-b bg-muted/50 text-xs text-muted-foreground">
                             <div className="px-2 py-1.5">{resolveLanguageKey("car")}</div>
                             <div className="grid" style={{gridTemplateColumns: `repeat(${days}, minmax(0, 1fr))`}}>
@@ -260,7 +312,9 @@ function RentalPlannerPage({resolveLanguageKey}: WithLanguageType) {
                                                     }}
                                                     onDragEnd={endDrag}
                                                     onClick={() => setOpenReservation(entry._id)}
-                                                    className={cn("absolute top-1 bottom-1 flex items-center gap-1 overflow-hidden rounded-sm px-1.5 text-left text-xs whitespace-nowrap focus-visible:outline-2 focus-visible:outline-ring", statusClass(entry.status), dragging?.id === entry._id && "opacity-40")}
+                                                    className={cn("absolute top-1 bottom-1 flex items-center gap-1 overflow-hidden rounded-sm px-1.5 text-left text-xs whitespace-nowrap focus-visible:outline-2 focus-visible:outline-ring", statusClass(entry.status), dragging?.id === entry._id && "opacity-40",
+                                                        // A grab hand on the bookings that can be dragged to another car; the rest only open.
+                                                        entry.status === "held" || entry.status === "confirmed" ? "cursor-grab active:cursor-grabbing" : "cursor-pointer")}
                                                     style={position(entry.pickupAt, entry.returnAt)}
                                                     title={`${entry.customer} · ${resolveLanguageKey(`statusValues.${entry.status}`)} · ${formatTime(entry.pickupAt)} – ${formatTime(entry.returnAt)} · ${entry.number}${entry.needsTransfer ? ` · ${resolveLanguageKey("needsTransfer")}` : ""}`}
                                                 >
@@ -280,26 +334,6 @@ function RentalPlannerPage({resolveLanguageKey}: WithLanguageType) {
                     </div>
                 </div>
             ) : null}
-            {/* What the colours, the hatched bars and the dots mean, and how to move a booking. */}
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted-foreground" aria-label={String(resolveLanguageKey("legend"))}>
-                {SHOWN_STATUSES.map((status) => (
-                    <span key={status} className="flex items-center gap-1.5">
-                        <span className={cn("h-3 w-5 rounded-sm", statusClass(status))} aria-hidden />
-                        {resolveLanguageKey(`statusValues.${status}`)}
-                    </span>
-                ))}
-                <span className="flex items-center gap-1.5">
-                    <span className="h-3 w-5 rounded-sm border border-dashed border-muted-foreground/60 bg-[repeating-linear-gradient(45deg,transparent,transparent_2px,var(--muted)_2px,var(--muted)_4px)]" aria-hidden />
-                    {resolveLanguageKey("blockedLegend")}
-                </span>
-                {Object.entries(READINESS_CLASS).map(([readiness, className]) => (
-                    <span key={readiness} className="flex items-center gap-1.5">
-                        <span className={cn("h-2 w-2 rounded-full", className)} aria-hidden />
-                        {resolveLanguageKey(`readiness.${readiness}`)}
-                    </span>
-                ))}
-                <span>{resolveLanguageKey("hint")}</span>
-            </div>
             {openReservation ? (
                 <RentalReservationSheetView open onOpenChange={(open: boolean) => !open && setOpenReservation(null)} fetchId={openReservation} onSheetRowPatched={load} />
             ) : null}

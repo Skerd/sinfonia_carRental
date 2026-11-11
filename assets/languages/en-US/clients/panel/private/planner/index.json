@@ -50,5 +50,7 @@
     "cancelled": "Cancelled",
     "expired": "Expired",
     "no_show": "No-show"
-  }
+  },
+  "customRange": "Custom range",
+  "until": "Until"
 }

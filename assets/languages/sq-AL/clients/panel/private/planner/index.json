@@ -50,5 +50,7 @@
     "cancelled": "Anuluar",
     "expired": "Skaduar",
     "no_show": "Mosparaqitje"
-  }
+  },
+  "customRange": "Interval i zgjedhur",
+  "until": "Deri më"
 }
