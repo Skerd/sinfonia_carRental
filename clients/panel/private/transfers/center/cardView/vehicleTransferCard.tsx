@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCalendarEvent, IconMapPin, IconMapPinFilled, IconStatusChange, IconUser} from "@tabler/icons-react";
+import {IconCalendarEvent, IconUser} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -12,6 +12,7 @@ import VehicleTransferMenu from "@carRentalModule/clients/panel/private/transfer
 import VehicleTransferDialogs from "@carRentalModule/clients/panel/private/transfers/center/dialogs/vehicleTransferDialogs.tsx";
 import VehicleTransferSheetView from "@carRentalModule/clients/panel/private/transfers/center/sheetView/vehicleTransferSheetView.tsx";
 import {vehicleTransferEditPath} from "@carRentalModule/clients/panel/private/transfers/index.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 
 type VehicleTransferCardProps = WithLanguageType & {
     vehicleTransfer: VehicleTransfer;
@@ -59,24 +60,15 @@ function VehicleTransferCard({
         >
             {({entity: row, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="vehicle" title={row.vehicle?.plate}>
+                    <EntityCard.Header titlePath="fromLocation"
+                        title={[row.fromLocation?.name, row.toLocation?.name].filter(Boolean).join(" → ")}
+                        subtitlePath="vehicle"
+                        subtitle={row.vehicle?.plate}
+                        badgesBesideTitle
+                        badges={<StatusBadge tableConfigKey="vehicletransfers" field="status" value={row.status} label={String(resolveLanguageKey(`statusValues.${row.status}`))} />}>
                         <VehicleTransferMenu transfer={row} onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
-                        <EntityCardRow
-                            icon={IconMapPin}
-                            label={resolveLanguageKey("fromLocation")}
-                            tooltip={resolveLanguageKey("fromLocation")}
-                            path="fromLocation"
-                            value={row.fromLocation?.name}
-                        />
-                        <EntityCardRow
-                            icon={IconMapPinFilled}
-                            label={resolveLanguageKey("toLocation")}
-                            tooltip={resolveLanguageKey("toLocation")}
-                            path="toLocation"
-                            value={row.toLocation?.name}
-                        />
                         <EntityCardRow
                             icon={IconCalendarEvent}
                             label={resolveLanguageKey("departAt")}
@@ -91,15 +83,6 @@ function VehicleTransferCard({
                             tooltip={resolveLanguageKey("driver")}
                             path="driver"
                             value={row.driver?.name}
-                        />
-                        <EntityCardRow
-                            icon={IconStatusChange}
-                            label={resolveLanguageKey("status")}
-                            tooltip={resolveLanguageKey("status")}
-                            path="status"
-                            type="enum"
-                            languageKeyCategory="statusValues"
-                            value={row.status}
                         />
                     </EntityCard.Body>
                 </>

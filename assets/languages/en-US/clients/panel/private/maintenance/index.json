@@ -17,7 +17,7 @@
       }
     ]
   },
-  "create": "Add record",
+  "create": "Add maintenance",
   "searchPlaceholder": "Search maintenance or add filters...",
   "noData": "No maintenance yet",
   "failTitle": "Failed to load maintenance",

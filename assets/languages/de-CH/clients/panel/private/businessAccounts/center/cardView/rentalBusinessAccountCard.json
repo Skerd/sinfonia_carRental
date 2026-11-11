@@ -6,5 +6,6 @@
   "vatNumber": "Fahrer/innen fehlen",
   "discountPercent": "Rabatt %",
   "isActive": "Aktiv",
-  "statement": "Monatsabrechnung"
+  "statement": "Monatsabrechnung",
+  "inactive": "Inaktiv"
 }

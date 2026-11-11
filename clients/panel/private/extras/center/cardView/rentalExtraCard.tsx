@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCash, IconReceipt, IconToggleRight} from "@tabler/icons-react";
+import {IconCash, IconReceipt} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -14,6 +14,8 @@ import ActivateRentalExtra from "@carRentalModule/clients/panel/private/extras/c
 import DeactivateRentalExtra from "@carRentalModule/clients/panel/private/extras/center/actions/deactivateRentalExtra.tsx";
 import ActivateRentalExtraDialog from "@carRentalModule/clients/panel/private/extras/center/dialogs/activateRentalExtraDialog.tsx";
 import DeactivateRentalExtraDialog from "@carRentalModule/clients/panel/private/extras/center/dialogs/deactivateRentalExtraDialog.tsx";
+import {Badge} from "@coreModule/components/ui/badge.tsx";
+import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 
 type RentalExtraCardProps = WithLanguageType & {
     rentalExtra: RentalExtra;
@@ -96,7 +98,10 @@ function RentalExtraCard({
         >
             {({entity: row, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="name" title={row.name}>
+                    <EntityCard.Header titlePath="name"
+                        title={row.name}
+                        badgesBesideTitle
+                        badges={!row.isActive ? <Badge variant="outline" className="text-xs">{String(resolveLanguageKey("inactive"))}</Badge> : null}>
                         <ActivateRentalExtra entity={row} onAction={setAction} />
                         <DeactivateRentalExtra entity={row} onAction={setAction} />
                     </EntityCard.Header>
@@ -106,8 +111,7 @@ function RentalExtraCard({
                             label={resolveLanguageKey("price")}
                             tooltip={resolveLanguageKey("price")}
                             path="price"
-                            type="number"
-                            value={row.price}
+                            value={row.currency?.abbreviation && row.price != null ? formatCurrency(row.price, row.currency.abbreviation) : row.price}
                         />
                         <EntityCardRow
                             icon={IconReceipt}
@@ -117,14 +121,6 @@ function RentalExtraCard({
                             type="enum"
                             languageKeyCategory="pricingValues"
                             value={row.pricing}
-                        />
-                        <EntityCardRow
-                            icon={IconToggleRight}
-                            label={resolveLanguageKey("isActive")}
-                            tooltip={resolveLanguageKey("isActive")}
-                            path="isActive"
-                            type="boolean"
-                            value={row.isActive}
                         />
                     </EntityCard.Body>
                 </>

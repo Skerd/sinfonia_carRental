@@ -1,6 +1,6 @@
 {
   "path": "src/modules/carRental/clients/panel/private/documents/index.tsx",
-  "title": "Dokumentet e automjeteve",
+  "title": "Dokumentet",
   "description": "Lejet, kontrollet dhe taksat me skadimin e tyre",
   "help": {
     "ariaLabel": "Rreth dokumenteve",

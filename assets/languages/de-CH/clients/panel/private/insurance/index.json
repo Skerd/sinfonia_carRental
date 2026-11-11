@@ -17,7 +17,7 @@
       }
     ]
   },
-  "create": "Police hinzufügen",
+  "create": "Versicherung hinzufügen",
   "searchPlaceholder": "Versicherungen suchen oder Filter hinzufügen...",
   "noData": "Noch keine Versicherungen",
   "failTitle": "Versicherungen konnten nicht geladen werden",

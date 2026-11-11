@@ -5,5 +5,6 @@
   "reservation": "Buchung",
   "rating": "Bewertung",
   "authorName": "Name",
-  "isPublished": "Veröffentlicht"
+  "isPublished": "Veröffentlicht",
+  "notPublished": "Nicht veröffentlicht"
 }

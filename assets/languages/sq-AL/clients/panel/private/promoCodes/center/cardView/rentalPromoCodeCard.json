@@ -11,5 +11,6 @@
   "typeValues": {
     "percent": "Përqindje",
     "fixed": "Shumë fikse"
-  }
+  },
+  "inactive": "Joaktiv"
 }

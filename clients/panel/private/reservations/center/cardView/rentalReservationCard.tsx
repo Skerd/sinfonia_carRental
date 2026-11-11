@@ -2,7 +2,11 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCalendarEvent, IconCar, IconCreditCard, IconStatusChange, IconUser} from "@tabler/icons-react";
+import {IconCalendarEvent, IconCar, IconCreditCard} from "@tabler/icons-react";
+import {formatTimeRange} from "@coreModule/helpers/general/dateTime.ts";
+import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
+import {useCompanyTimeZone} from "@coreModule/helpers/hooks/useCompanyTimeZone.ts";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -32,6 +36,8 @@ function RentalReservationCard({
     sheetOnly = false,
     innerRef,
 }: RentalReservationCardProps) {
+    // Pickup and return as the company reads its calendar (GLB-09).
+    const companyZone = useCompanyTimeZone();
     return (
         <EntityCard
             resource="rentalreservations"
@@ -67,49 +73,41 @@ function RentalReservationCard({
         >
             {({entity: row, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="number" title={row.number}>
+                    {/* The customer is who the desk looks for; the booking number is the subtitle (UX-01). */}
+                    <EntityCard.Header
+                        titlePath="contact"
+                        title={`${row.contact.firstName} ${row.contact.lastName}`.trim()}
+                        subtitlePath="number"
+                        subtitle={row.number}
+                        badgesBesideTitle
+                        badges={<StatusBadge tableConfigKey="rentalreservations" field="status" value={row.status} label={String(resolveLanguageKey(`statusValues.${row.status}`))} />}
+                    >
                         <RentalReservationMenu reservation={row} onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
                         <EntityCardRow
-                            icon={IconStatusChange}
-                            label={resolveLanguageKey("status")}
-                            tooltip={resolveLanguageKey("status")}
-                            path="status"
-                            type="enum"
-                            languageKeyCategory="statusValues"
-                            value={row.status}
-                        />
-                        <EntityCardRow
                             icon={IconCalendarEvent}
-                            label={resolveLanguageKey("pickupAt")}
-                            tooltip={resolveLanguageKey("pickupAt")}
+                            label={resolveLanguageKey("when")}
+                            tooltip={resolveLanguageKey("when")}
                             path="pickupAt"
-                            type="dateTime"
-                            value={row.pickupAt}
+                            value={formatTimeRange(row.pickupAt, row.returnAt, companyZone)}
                         />
                         <EntityCardRow
                             icon={IconCar}
-                            label={resolveLanguageKey("vehicle")}
-                            tooltip={resolveLanguageKey("vehicle")}
-                            path="vehicle"
-                            value={row.vehicle?.plate}
-                        />
-                        <EntityCardRow
-                            icon={IconUser}
-                            label={resolveLanguageKey("contact")}
-                            tooltip={resolveLanguageKey("contact")}
-                            path="contact"
-                            value={`${row.contact.firstName} ${row.contact.lastName}`}
+                            label={resolveLanguageKey("car")}
+                            tooltip={resolveLanguageKey("car")}
+                            path="category"
+                            value={[row.category?.name, row.vehicle ? `${row.vehicle.make} ${row.vehicle.model} · ${row.vehicle.plate}` : ""].filter(Boolean).join(" · ")}
                         />
                         <EntityCardRow
                             icon={IconCreditCard}
-                            label={resolveLanguageKey("paymentStatus")}
-                            tooltip={resolveLanguageKey("paymentStatus")}
-                            path="paymentStatus"
-                            type="enum"
-                            languageKeyCategory="paymentStatusValues"
-                            value={row.paymentStatus}
+                            label={resolveLanguageKey("total")}
+                            tooltip={resolveLanguageKey("total")}
+                            path="pricing"
+                            value={[
+                                row.pricing.currency?.abbreviation ? formatCurrency(row.pricing.grandTotal, row.pricing.currency.abbreviation) : String(row.pricing.grandTotal),
+                                String(resolveLanguageKey(`paymentStatusValues.${row.paymentStatus}`)),
+                            ].join(" · ")}
                         />
                     </EntityCard.Body>
                 </>

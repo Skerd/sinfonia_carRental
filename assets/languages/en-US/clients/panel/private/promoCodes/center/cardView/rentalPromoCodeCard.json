@@ -11,5 +11,6 @@
   "typeValues": {
     "percent": "Percent off",
     "fixed": "Fixed amount off"
-  }
+  },
+  "inactive": "Inactive"
 }

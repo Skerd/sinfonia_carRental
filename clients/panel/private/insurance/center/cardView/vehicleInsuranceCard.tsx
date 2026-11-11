@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconBuildingBank, IconCalendarDue, IconCar, IconShieldCheck, IconStatusChange} from "@tabler/icons-react";
+import {IconCalendarDue, IconCar, IconShieldCheck} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -12,6 +12,7 @@ import VehicleInsuranceSheetView from "@carRentalModule/clients/panel/private/in
 import VehicleInsuranceMenu from "@carRentalModule/clients/panel/private/insurance/center/actions/vehicleInsuranceMenu.tsx";
 import VehicleInsuranceDialogs from "@carRentalModule/clients/panel/private/insurance/center/dialogs/vehicleInsuranceDialogs.tsx";
 import {vehicleInsuranceEditPath} from "@carRentalModule/clients/panel/private/insurance/index.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 
 type VehicleInsuranceCardProps = WithLanguageType & {
     vehicleInsurance: VehicleInsurance;
@@ -64,7 +65,12 @@ function VehicleInsuranceCard({
         >
             {({entity: row, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="policyNumber" title={row.policyNumber}>
+                    <EntityCard.Header titlePath="insurer"
+                        title={row.insurer}
+                        subtitlePath="policyNumber"
+                        subtitle={row.policyNumber}
+                        badgesBesideTitle
+                        badges={<StatusBadge tableConfigKey="vehicleinsurances" field="status" value={row.status} label={String(resolveLanguageKey(`statusValues.${row.status}`))} />}>
                         <VehicleInsuranceMenu policy={row} onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
@@ -74,13 +80,6 @@ function VehicleInsuranceCard({
                             tooltip={resolveLanguageKey("vehicle")}
                             path="vehicle"
                             value={row.vehicle?.plate}
-                        />
-                        <EntityCardRow
-                            icon={IconBuildingBank}
-                            label={resolveLanguageKey("insurer")}
-                            tooltip={resolveLanguageKey("insurer")}
-                            path="insurer"
-                            value={row.insurer}
                         />
                         <EntityCardRow
                             icon={IconShieldCheck}
@@ -98,15 +97,6 @@ function VehicleInsuranceCard({
                             path="expiresAt"
                             type="date"
                             value={row.expiresAt}
-                        />
-                        <EntityCardRow
-                            icon={IconStatusChange}
-                            label={resolveLanguageKey("status")}
-                            tooltip={resolveLanguageKey("status")}
-                            path="status"
-                            type="enum"
-                            languageKeyCategory="statusValues"
-                            value={row.status}
                         />
                     </EntityCard.Body>
                 </>

@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCalendarEvent, IconStar, IconUser, IconWorld} from "@tabler/icons-react";
+import {IconCalendarEvent, IconStar} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -14,6 +14,7 @@ import PublishRentalReview from "@carRentalModule/clients/panel/private/reviews/
 import UnpublishRentalReview from "@carRentalModule/clients/panel/private/reviews/center/actions/unpublishRentalReview.tsx";
 import PublishRentalReviewDialog from "@carRentalModule/clients/panel/private/reviews/center/dialogs/publishRentalReviewDialog.tsx";
 import UnpublishRentalReviewDialog from "@carRentalModule/clients/panel/private/reviews/center/dialogs/unpublishRentalReviewDialog.tsx";
+import {Badge} from "@coreModule/components/ui/badge.tsx";
 
 type RentalReviewCardProps = WithLanguageType & {
     rentalReview: RentalReview;
@@ -96,7 +97,10 @@ function RentalReviewCard({
         >
             {({entity: row, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="authorName" title={row.authorName}>
+                    <EntityCard.Header titlePath="authorName"
+                        title={row.authorName}
+                        badgesBesideTitle
+                        badges={!row.isPublished ? <Badge variant="outline" className="text-xs">{String(resolveLanguageKey("notPublished"))}</Badge> : null}>
                         <PublishRentalReview entity={row} onAction={setAction} />
                         <UnpublishRentalReview entity={row} onAction={setAction} />
                     </EntityCard.Header>
@@ -113,22 +117,7 @@ function RentalReviewCard({
                             label={resolveLanguageKey("rating")}
                             tooltip={resolveLanguageKey("rating")}
                             path="rating"
-                            type="number"
-                            value={row.rating}
-                        />
-                        <EntityCardRow
-                            icon={IconUser}
-                            label={resolveLanguageKey("authorName")}
-                            tooltip={resolveLanguageKey("authorName")}
-                            path="authorName"
-                            value={row.authorName}
-                        />
-                        <EntityCardRow
-                            icon={IconWorld}
-                            label={resolveLanguageKey("isPublished")}
-                            tooltip={resolveLanguageKey("isPublished")}
-                            path="isPublished"
-                            value={row.isPublished}
+                            value={"★".repeat(Math.round(row.rating)) + "☆".repeat(Math.max(0, 5 - Math.round(row.rating)))}
                         />
                     </EntityCard.Body>
                 </>

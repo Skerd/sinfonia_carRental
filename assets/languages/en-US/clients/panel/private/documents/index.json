@@ -1,6 +1,6 @@
 {
   "path": "src/modules/carRental/clients/panel/private/documents/index.tsx",
-  "title": "Vehicle documents",
+  "title": "Documents",
   "description": "Registrations, inspections and taxes with their expiry",
   "help": {
     "ariaLabel": "About vehicle documents",

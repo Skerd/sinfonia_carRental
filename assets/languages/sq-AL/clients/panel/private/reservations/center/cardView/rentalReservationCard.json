@@ -26,5 +26,8 @@
     "partially_refunded": "Rimbursuar pjesërisht",
     "refunded": "Rimbursuar",
     "failed": "Pagesa dështoi"
-  }
+  },
+  "when": "Kur",
+  "car": "Makina",
+  "total": "Totali"
 }

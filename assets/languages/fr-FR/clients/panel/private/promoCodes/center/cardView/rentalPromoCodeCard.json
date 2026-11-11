@@ -11,5 +11,6 @@
   "typeValues": {
     "percent": "Pourcentage",
     "fixed": "Montant fixe"
-  }
+  },
+  "inactive": "Inactif"
 }

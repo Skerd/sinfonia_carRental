@@ -26,5 +26,8 @@
     "partially_refunded": "Teilweise erstattet",
     "refunded": "Erstattet",
     "failed": "Zahlung fehlgeschlagen"
-  }
+  },
+  "when": "Wann",
+  "car": "Auto",
+  "total": "Total"
 }

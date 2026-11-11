@@ -17,7 +17,7 @@
       }
     ]
   },
-  "create": "Aggiungi intervento",
+  "create": "Aggiungi manutenzione",
   "searchPlaceholder": "Cerca interventi o aggiungi filtri...",
   "noData": "Ancora nessun intervento",
   "failTitle": "Impossibile caricare gli interventi",

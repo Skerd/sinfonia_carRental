@@ -1,6 +1,6 @@
 {
   "path": "src/modules/carRental/clients/panel/private/documents/index.tsx",
-  "title": "Documents des véhicules",
+  "title": "Documents",
   "description": "Certificats, contrôles et taxes avec leur échéance",
   "help": {
     "ariaLabel": "À propos des documents",

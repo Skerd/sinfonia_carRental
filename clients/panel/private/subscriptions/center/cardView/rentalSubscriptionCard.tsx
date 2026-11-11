@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCash, IconCategory, IconRepeat, IconStatusChange, IconUser} from "@tabler/icons-react";
+import {IconCash, IconCategory, IconRepeat} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -10,6 +10,8 @@ import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {RentalSubscription} from "armonia/src/modules/carRental/api/carRental/private/rentalSubscription/rentalSubscription.dto.ts";
 import RentalSubscriptionSheetView from "@carRentalModule/clients/panel/private/subscriptions/center/sheetView/rentalSubscriptionSheetView.tsx";
 import {rentalSubscriptionEditPath} from "@carRentalModule/clients/panel/private/subscriptions/index.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
+import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 
 type RentalSubscriptionCardProps = WithLanguageType & {
     rentalSubscription: RentalSubscription;
@@ -53,15 +55,11 @@ function RentalSubscriptionCard({
         >
             {({entity: row}) => (
                 <>
-                    <EntityCard.Header titlePath="contactName" title={row.contactName} />
+                    <EntityCard.Header titlePath="contactName"
+                        title={row.contactName}
+                        badgesBesideTitle
+                        badges={<StatusBadge tableConfigKey="rentalsubscriptions" field="status" value={row.status} label={String(resolveLanguageKey(`statusValues.${row.status}`))} />} />
                     <EntityCard.Body>
-                        <EntityCardRow
-                            icon={IconUser}
-                            label={resolveLanguageKey("contactName")}
-                            tooltip={resolveLanguageKey("contactName")}
-                            path="contactName"
-                            value={row.contactName}
-                        />
                         <EntityCardRow
                             icon={IconCategory}
                             label={resolveLanguageKey("category")}
@@ -83,17 +81,7 @@ function RentalSubscriptionCard({
                             label={resolveLanguageKey("price")}
                             tooltip={resolveLanguageKey("price")}
                             path="price"
-                            type="number"
-                            value={row.price}
-                        />
-                        <EntityCardRow
-                            icon={IconStatusChange}
-                            label={resolveLanguageKey("status")}
-                            tooltip={resolveLanguageKey("status")}
-                            path="status"
-                            type="enum"
-                            languageKeyCategory="statusValues"
-                            value={row.status}
+                            value={row.currency?.abbreviation && row.price != null ? formatCurrency(row.price, row.currency.abbreviation) : row.price}
                         />
                     </EntityCard.Body>
                 </>

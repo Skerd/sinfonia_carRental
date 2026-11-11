@@ -4,6 +4,8 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
 import SheetViewRenderer from "@coreModule/components/viewEngine/SheetViewRenderer.tsx";
+import SheetNameTitle from "@coreModule/components/entityPage/sheet/sheetNameTitle.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 import {useViewConfig} from "@coreModule/helpers/hooks/useViewConfig.ts";
 import type {VehicleInsurance} from "armonia/src/modules/carRental/api/carRental/private/vehicleInsurance/vehicleInsurance.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
@@ -51,6 +53,7 @@ function VehicleInsuranceSheetView({
 
     const entityId = vehicleInsuranceProp?._id ?? fetchId;
     if (!viewConfig || !entityId) return null;
+    const record = sheetData as VehicleInsurance;
 
     return (
         <>
@@ -66,6 +69,9 @@ function VehicleInsuranceSheetView({
             open={open}
             onOpenChange={onOpenChange}
             resolveLanguageKey={resolveLanguageKey}
+            // Named the way people say it, with its code as a badge and its status in tone (UX-01, UX-02).
+            headerTitle={<SheetNameTitle name={record.insurer ?? ""} code={record.policyNumber} typeLabel={String(resolveLanguageKey("vehicleInsuranceSubtitle"))} />}
+            headerDescription={<StatusBadge tableConfigKey="vehicleinsurances" field="status" value={record.status} label={String(resolveLanguageKey(`statusValues.${record.status}`))} />}
             access={access}
             hideActions={hideActions}
             hideEdit={policy?.status === "cancelled"}

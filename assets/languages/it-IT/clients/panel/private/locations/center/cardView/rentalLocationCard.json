@@ -5,5 +5,7 @@
   "timezone": "Fuso orario",
   "phone": "Telefono",
   "pickupAllowed": "Ritiri qui",
-  "isActive": "Attivo"
+  "isActive": "Attivo",
+  "inactive": "Inattivo",
+  "noPickups": "Nessun ritiro"
 }

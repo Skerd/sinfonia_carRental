@@ -5,5 +5,7 @@
   "timezone": "Fuseau horaire",
   "phone": "Téléphone",
   "pickupAllowed": "Prises en charge ici",
-  "isActive": "Actif"
+  "isActive": "Actif",
+  "inactive": "Inactif",
+  "noPickups": "Pas de retrait"
 }

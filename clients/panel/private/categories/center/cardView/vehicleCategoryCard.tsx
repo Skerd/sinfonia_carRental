@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {ReactNode, RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconArmchair, IconCash, IconHash, IconManualGearbox, IconWorld, IconWorldOff} from "@tabler/icons-react";
+import {IconArmchair, IconCash, IconManualGearbox, IconWorldOff} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import {accessFieldPathExists} from "@coreModule/helpers/context/accessContext.tsx";
@@ -16,6 +16,7 @@ import ShowVehicleCategoryOnWebsite from "@carRentalModule/clients/panel/private
 import HideVehicleCategoryFromWebsite from "@carRentalModule/clients/panel/private/categories/center/actions/hideVehicleCategoryFromWebsite.tsx";
 import ShowVehicleCategoryOnWebsiteDialog from "@carRentalModule/clients/panel/private/categories/center/dialogs/showVehicleCategoryOnWebsiteDialog.tsx";
 import HideVehicleCategoryFromWebsiteDialog from "@carRentalModule/clients/panel/private/categories/center/dialogs/hideVehicleCategoryFromWebsiteDialog.tsx";
+import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 
 type VehicleCategoryCardProps = WithLanguageType & {
     vehicleCategory: VehicleCategory;
@@ -120,8 +121,7 @@ function VehicleCategoryCard({
                             label={resolveLanguageKey("dailyRate")}
                             tooltip={resolveLanguageKey("dailyRate")}
                             path="dailyRate"
-                            type="number"
-                            value={row.dailyRate}
+                            value={row.currency?.abbreviation && row.dailyRate != null ? formatCurrency(row.dailyRate, row.currency.abbreviation) : row.dailyRate}
                         />
                         <EntityCardRow
                             icon={IconArmchair}
@@ -140,24 +140,6 @@ function VehicleCategoryCard({
                             languageKeyCategory="transmissionValues"
                             value={row.transmission}
                         />
-                        <EntityCardRow
-                            icon={IconHash}
-                            label={resolveLanguageKey("sortOrder")}
-                            tooltip={resolveLanguageKey("sortOrder")}
-                            path="sortOrder"
-                            type="number"
-                            value={row.sortOrder}
-                        />
-                        {row.isPublic ? (
-                            <EntityCardRow
-                                icon={IconWorld}
-                                label={resolveLanguageKey("isPublic")}
-                                tooltip={resolveLanguageKey("isPublic")}
-                                path="isPublic"
-                                type="boolean"
-                                value={row.isPublic}
-                            />
-                        ) : null}
                     </EntityCard.Body>
                 </>
             )}

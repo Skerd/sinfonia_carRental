@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCalendarEvent, IconTool} from "@tabler/icons-react";
+import {IconCalendarEvent} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -55,17 +55,11 @@ function VehicleBlockCard({
         >
             {({entity: row}) => (
                 <>
-                    <EntityCard.Header titlePath="vehicle" title={row.vehicle?.plate} />
+                    <EntityCard.Header titlePath="reason"
+                        title={String(resolveLanguageKey(`reasonValues.${row.reason}`))}
+                        subtitlePath="vehicle"
+                        subtitle={row.vehicle?.plate} />
                     <EntityCard.Body>
-                        <EntityCardRow
-                            icon={IconTool}
-                            label={resolveLanguageKey("reason")}
-                            tooltip={resolveLanguageKey("reason")}
-                            path="reason"
-                            type="enum"
-                            languageKeyCategory="reasonValues"
-                            value={row.reason}
-                        />
                         <EntityCardRow
                             icon={IconCalendarEvent}
                             label={resolveLanguageKey("startAt")}

@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCalendarEvent, IconCash, IconGauge, IconStatusChange, IconTool} from "@tabler/icons-react";
+import {IconCalendarEvent, IconCash, IconGauge} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -12,6 +12,8 @@ import VehicleMaintenanceSheetView from "@carRentalModule/clients/panel/private/
 import {vehicleMaintenanceEditPath} from "@carRentalModule/clients/panel/private/maintenance/index.tsx";
 import VehicleMaintenanceMenu from "@carRentalModule/clients/panel/private/maintenance/center/actions/vehicleMaintenanceMenu.tsx";
 import VehicleMaintenanceDialogs from "@carRentalModule/clients/panel/private/maintenance/center/dialogs/vehicleMaintenanceDialogs.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
+import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 
 type VehicleMaintenanceCardProps = WithLanguageType & {
     vehicleMaintenance: VehicleMaintenance;
@@ -59,19 +61,15 @@ function VehicleMaintenanceCard({
         >
             {({entity: row, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="vehicle" title={row.vehicle?.plate}>
+                    <EntityCard.Header titlePath="type"
+                        title={String(resolveLanguageKey(`typeValues.${row.type}`))}
+                        subtitlePath="vehicle"
+                        subtitle={row.vehicle?.plate}
+                        badgesBesideTitle
+                        badges={<StatusBadge tableConfigKey="vehiclemaintenances" field="status" value={row.status} label={String(resolveLanguageKey(`statusValues.${row.status}`))} />}>
                         <VehicleMaintenanceMenu record={row} onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
-                        <EntityCardRow
-                            icon={IconTool}
-                            label={resolveLanguageKey("type")}
-                            tooltip={resolveLanguageKey("type")}
-                            path="type"
-                            type="enum"
-                            languageKeyCategory="typeValues"
-                            value={row.type}
-                        />
                         <EntityCardRow
                             icon={IconCalendarEvent}
                             label={resolveLanguageKey("serviceDate")}
@@ -93,17 +91,7 @@ function VehicleMaintenanceCard({
                             label={resolveLanguageKey("cost")}
                             tooltip={resolveLanguageKey("cost")}
                             path="cost"
-                            type="number"
-                            value={row.cost}
-                        />
-                        <EntityCardRow
-                            icon={IconStatusChange}
-                            label={resolveLanguageKey("status")}
-                            tooltip={resolveLanguageKey("status")}
-                            path="status"
-                            type="enum"
-                            languageKeyCategory="statusValues"
-                            value={row.status}
+                            value={row.currency?.abbreviation && row.cost != null ? formatCurrency(row.cost, row.currency.abbreviation) : row.cost}
                         />
                     </EntityCard.Body>
                 </>

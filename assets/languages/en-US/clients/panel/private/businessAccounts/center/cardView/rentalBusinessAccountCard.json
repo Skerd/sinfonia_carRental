@@ -6,5 +6,6 @@
   "vatNumber": "VAT number",
   "discountPercent": "Discount %",
   "isActive": "Active",
-  "statement": "Monthly statement"
+  "statement": "Monthly statement",
+  "inactive": "Inactive"
 }

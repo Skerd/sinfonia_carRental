@@ -4,13 +4,7 @@ import withLanguage, {
     WithLanguageType,
 } from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {
-    IconBuildingBank,
-    IconCircleCheck,
-    IconDiscount,
-    IconFileTypePdf,
-    IconReceipt,
-} from "@tabler/icons-react";
+import {IconDiscount, IconFileTypePdf, IconReceipt} from "@tabler/icons-react";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
@@ -21,6 +15,7 @@ import RentalBusinessAccountSheetView from "@carRentalModule/clients/panel/priva
 import RentalBusinessAccountMenu from "@carRentalModule/clients/panel/private/businessAccounts/center/actions/rentalBusinessAccountMenu.tsx";
 import RentalStatementDialog from "@carRentalModule/clients/panel/private/businessAccounts/center/dialogs/rentalStatementDialog.tsx";
 import {rentalBusinessAccountEditPath} from "@carRentalModule/clients/panel/private/businessAccounts/index.tsx";
+import {Badge} from "@coreModule/components/ui/badge.tsx";
 
 type RentalBusinessAccountCardProps = WithLanguageType & {
     rentalBusinessAccount: RentalBusinessAccount;
@@ -85,19 +80,15 @@ function RentalBusinessAccountCard({
         >
             {({entity: row, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="name" title={row.name}>
+                    <EntityCard.Header titlePath="name"
+                        title={row.name}
+                        badgesBesideTitle
+                        badges={!row.isActive ? <Badge variant="outline" className="text-xs">{String(resolveLanguageKey("inactive"))}</Badge> : null}>
                         <RentalBusinessAccountMenu
                             onAction={setAction}
                         />
                     </EntityCard.Header>
                     <EntityCard.Body>
-                        <EntityCardRow
-                            icon={IconBuildingBank}
-                            label={resolveLanguageKey("name")}
-                            tooltip={resolveLanguageKey("name")}
-                            path="name"
-                            value={row.name}
-                        />
                         <EntityCardRow
                             icon={IconReceipt}
                             label={resolveLanguageKey("vatNumber")}
@@ -112,13 +103,6 @@ function RentalBusinessAccountCard({
                             path="discountPercent"
                             type="number"
                             value={row.discountPercent}
-                        />
-                        <EntityCardRow
-                            icon={IconCircleCheck}
-                            label={resolveLanguageKey("isActive")}
-                            tooltip={resolveLanguageKey("isActive")}
-                            path="isActive"
-                            value={row.isActive}
                         />
                     </EntityCard.Body>
                     <Button

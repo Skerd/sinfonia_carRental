@@ -17,7 +17,7 @@
       }
     ]
   },
-  "create": "Eintrag hinzufügen",
+  "create": "Wartung hinzufügen",
   "searchPlaceholder": "Wartungseinträge suchen oder Filter hinzufügen...",
   "noData": "Noch keine Wartungseinträge",
   "failTitle": "Wartungseinträge konnten nicht geladen werden",

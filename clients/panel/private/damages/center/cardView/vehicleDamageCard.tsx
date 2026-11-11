@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconAlertTriangle, IconCalendarEvent, IconCarCrash, IconStatusChange} from "@tabler/icons-react";
+import {IconCalendarEvent} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import {AccessGatedGalleryCarousel} from "@coreModule/components/viewEngine/widgets/gallery/galleryCarousel.tsx";
@@ -14,6 +14,7 @@ import ScheduleRepairDialog from "@carRentalModule/clients/panel/private/damages
 import ChargeDamageDialog from "@carRentalModule/clients/panel/private/damages/center/dialogs/chargeDamageDialog.tsx";
 import VehicleDamageSheetView from "@carRentalModule/clients/panel/private/damages/center/sheetView/vehicleDamageSheetView.tsx";
 import {vehicleDamageEditPath} from "@carRentalModule/clients/panel/private/damages/index.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 
 type VehicleDamageCardProps = WithLanguageType & {
     vehicleDamage: VehicleDamage;
@@ -79,28 +80,15 @@ function VehicleDamageCard({
                             />
                         </div>
                     ) : null}
-                    <EntityCard.Header titlePath="vehicle" title={row.vehicle?.plate}>
+                    <EntityCard.Header titlePath="area"
+                        title={[String(resolveLanguageKey(`areaValues.${row.area}`)), String(resolveLanguageKey(`severityValues.${row.severity}`))].join(" · ")}
+                        subtitlePath="vehicle"
+                        subtitle={row.vehicle?.plate}
+                        badgesBesideTitle
+                        badges={<StatusBadge tableConfigKey="vehicledamages" field="status" value={row.status} label={String(resolveLanguageKey(`statusValues.${row.status}`))} />}>
                         <VehicleDamageMenu damage={row} onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
-                        <EntityCardRow
-                            icon={IconCarCrash}
-                            label={resolveLanguageKey("area")}
-                            tooltip={resolveLanguageKey("area")}
-                            path="area"
-                            type="enum"
-                            languageKeyCategory="areaValues"
-                            value={row.area}
-                        />
-                        <EntityCardRow
-                            icon={IconAlertTriangle}
-                            label={resolveLanguageKey("severity")}
-                            tooltip={resolveLanguageKey("severity")}
-                            path="severity"
-                            type="enum"
-                            languageKeyCategory="severityValues"
-                            value={row.severity}
-                        />
                         <EntityCardRow
                             icon={IconCalendarEvent}
                             label={resolveLanguageKey("reportedAt")}
@@ -108,15 +96,6 @@ function VehicleDamageCard({
                             path="reportedAt"
                             type="dateTime"
                             value={row.reportedAt}
-                        />
-                        <EntityCardRow
-                            icon={IconStatusChange}
-                            label={resolveLanguageKey("status")}
-                            tooltip={resolveLanguageKey("status")}
-                            path="status"
-                            type="enum"
-                            languageKeyCategory="statusValues"
-                            value={row.status}
                         />
                     </EntityCard.Body>
                 </>

@@ -5,5 +5,7 @@
   "timezone": "Timezone",
   "phone": "Phone",
   "pickupAllowed": "Pickups here",
-  "isActive": "Active"
+  "isActive": "Active",
+  "inactive": "Inactive",
+  "noPickups": "No pickups"
 }

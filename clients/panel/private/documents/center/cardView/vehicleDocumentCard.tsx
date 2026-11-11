@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCalendarDue, IconFileCertificate, IconHash, IconStatusChange} from "@tabler/icons-react";
+import {IconCalendarDue, IconHash} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -11,6 +11,7 @@ import type {VehicleDocument} from "armonia/src/modules/carRental/api/carRental/
 import VehicleDocumentSheetView from "@carRentalModule/clients/panel/private/documents/center/sheetView/vehicleDocumentSheetView.tsx";
 import {vehicleDocumentEditPath} from "@carRentalModule/clients/panel/private/documents/index.tsx";
 import VehicleDocumentMenu from "@carRentalModule/clients/panel/private/documents/center/actions/vehicleDocumentMenu.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 
 type VehicleDocumentCardProps = WithLanguageType & {
     vehicleDocument: VehicleDocument;
@@ -55,19 +56,15 @@ function VehicleDocumentCard({
         >
             {({entity: row}) => (
                 <>
-                    <EntityCard.Header titlePath="vehicle" title={row.vehicle?.plate}>
+                    <EntityCard.Header titlePath="type"
+                        title={String(resolveLanguageKey(`typeValues.${row.type}`))}
+                        subtitlePath="vehicle"
+                        subtitle={row.vehicle?.plate}
+                        badgesBesideTitle
+                        badges={<StatusBadge tableConfigKey="vehicledocuments" field="status" value={row.status} label={String(resolveLanguageKey(`statusValues.${row.status}`))} />}>
                         <VehicleDocumentMenu document={row} />
                     </EntityCard.Header>
                     <EntityCard.Body>
-                        <EntityCardRow
-                            icon={IconFileCertificate}
-                            label={resolveLanguageKey("type")}
-                            tooltip={resolveLanguageKey("type")}
-                            path="type"
-                            type="enum"
-                            languageKeyCategory="typeValues"
-                            value={row.type}
-                        />
                         <EntityCardRow
                             icon={IconHash}
                             label={resolveLanguageKey("documentNumber")}
@@ -82,15 +79,6 @@ function VehicleDocumentCard({
                             path="expiresAt"
                             type="date"
                             value={row.expiresAt}
-                        />
-                        <EntityCardRow
-                            icon={IconStatusChange}
-                            label={resolveLanguageKey("status")}
-                            tooltip={resolveLanguageKey("status")}
-                            path="status"
-                            type="enum"
-                            languageKeyCategory="statusValues"
-                            value={row.status}
                         />
                     </EntityCard.Body>
                 </>

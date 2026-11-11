@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCarGarage, IconClock, IconPhone, IconToggleRight} from "@tabler/icons-react";
+import {IconPhone} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -14,6 +14,7 @@ import ActivateRentalLocation from "@carRentalModule/clients/panel/private/locat
 import DeactivateRentalLocation from "@carRentalModule/clients/panel/private/locations/center/actions/deactivateRentalLocation.tsx";
 import ActivateRentalLocationDialog from "@carRentalModule/clients/panel/private/locations/center/dialogs/activateRentalLocationDialog.tsx";
 import DeactivateRentalLocationDialog from "@carRentalModule/clients/panel/private/locations/center/dialogs/deactivateRentalLocationDialog.tsx";
+import {Badge} from "@coreModule/components/ui/badge.tsx";
 
 type RentalLocationCardProps = WithLanguageType & {
     rentalLocation: RentalLocation;
@@ -96,40 +97,20 @@ function RentalLocationCard({
         >
             {({entity: row, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="name" title={row.name}>
+                    <EntityCard.Header titlePath="name"
+                        title={row.name}
+                        badgesBesideTitle
+                        badges={<>{!row.isActive ? <Badge variant="outline" className="text-xs">{String(resolveLanguageKey("inactive"))}</Badge> : null}{!row.pickupAllowed ? <Badge variant="outline" className="text-xs">{String(resolveLanguageKey("noPickups"))}</Badge> : null}</>}>
                         <ActivateRentalLocation entity={row} onAction={setAction} />
                         <DeactivateRentalLocation entity={row} onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
-                        <EntityCardRow
-                            icon={IconClock}
-                            label={resolveLanguageKey("timezone")}
-                            tooltip={resolveLanguageKey("timezone")}
-                            path="timezone"
-                            value={row.timezone}
-                        />
                         <EntityCardRow
                             icon={IconPhone}
                             label={resolveLanguageKey("phone")}
                             tooltip={resolveLanguageKey("phone")}
                             path="phone"
                             value={row.phone}
-                        />
-                        <EntityCardRow
-                            icon={IconCarGarage}
-                            label={resolveLanguageKey("pickupAllowed")}
-                            tooltip={resolveLanguageKey("pickupAllowed")}
-                            path="pickupAllowed"
-                            type="boolean"
-                            value={row.pickupAllowed}
-                        />
-                        <EntityCardRow
-                            icon={IconToggleRight}
-                            label={resolveLanguageKey("isActive")}
-                            tooltip={resolveLanguageKey("isActive")}
-                            path="isActive"
-                            type="boolean"
-                            value={row.isActive}
                         />
                     </EntityCard.Body>
                 </>

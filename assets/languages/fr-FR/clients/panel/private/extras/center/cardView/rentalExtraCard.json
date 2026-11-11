@@ -8,5 +8,6 @@
     "per_day": "Par jour",
     "per_rental": "Par location"
   },
-  "isActive": "Actif"
+  "isActive": "Actif",
+  "inactive": "Inactif"
 }

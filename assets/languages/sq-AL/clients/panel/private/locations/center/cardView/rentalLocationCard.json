@@ -5,5 +5,7 @@
   "timezone": "Zona kohore",
   "phone": "Telefoni",
   "pickupAllowed": "Marrje këtu",
-  "isActive": "Aktiv"
+  "isActive": "Aktiv",
+  "inactive": "Joaktiv",
+  "noPickups": "Pa marrje"
 }

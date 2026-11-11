@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconAlertTriangle, IconCalendarEvent, IconCar, IconCash, IconId, IconStatusChange, IconUser} from "@tabler/icons-react";
+import {IconCalendarEvent, IconCar, IconCash} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -12,6 +12,8 @@ import VehicleFineMenu from "@carRentalModule/clients/panel/private/fines/center
 import VehicleFineDialogs from "@carRentalModule/clients/panel/private/fines/center/dialogs/vehicleFineDialogs.tsx";
 import VehicleFineSheetView from "@carRentalModule/clients/panel/private/fines/center/sheetView/vehicleFineSheetView.tsx";
 import {vehicleFineEditPath} from "@carRentalModule/clients/panel/private/fines/index.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
+import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 
 type VehicleFineCardProps = WithLanguageType & {
     vehicleFine: VehicleFine;
@@ -59,7 +61,12 @@ function VehicleFineCard({
         >
             {({entity: row, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="reference" title={row.reference}>
+                    <EntityCard.Header titlePath="type"
+                        title={String(resolveLanguageKey(`typeValues.${row.type}`))}
+                        subtitlePath="reference"
+                        subtitle={row.reference}
+                        badgesBesideTitle
+                        badges={<StatusBadge tableConfigKey="vehiclefines" field="status" value={row.status} label={String(resolveLanguageKey(`statusValues.${row.status}`))} />}>
                         <VehicleFineMenu fine={row} onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
@@ -79,44 +86,11 @@ function VehicleFineCard({
                             value={row.offenceAt}
                         />
                         <EntityCardRow
-                            icon={IconAlertTriangle}
-                            label={resolveLanguageKey("type")}
-                            tooltip={resolveLanguageKey("type")}
-                            path="type"
-                            type="enum"
-                            languageKeyCategory="typeValues"
-                            value={row.type}
-                        />
-                        <EntityCardRow
                             icon={IconCash}
                             label={resolveLanguageKey("amount")}
                             tooltip={resolveLanguageKey("amount")}
                             path="amount"
-                            type="number"
-                            value={row.amount}
-                        />
-                        <EntityCardRow
-                            icon={IconStatusChange}
-                            label={resolveLanguageKey("status")}
-                            tooltip={resolveLanguageKey("status")}
-                            path="status"
-                            type="enum"
-                            languageKeyCategory="statusValues"
-                            value={row.status}
-                        />
-                        <EntityCardRow
-                            icon={IconId}
-                            label={resolveLanguageKey("reservation")}
-                            tooltip={resolveLanguageKey("reservation")}
-                            path="reservation"
-                            value={row.reservation?.number}
-                        />
-                        <EntityCardRow
-                            icon={IconUser}
-                            label={resolveLanguageKey("driverName")}
-                            tooltip={resolveLanguageKey("driverName")}
-                            path="driverName"
-                            value={row.driverName}
+                            value={row.currency?.abbreviation && row.amount != null ? formatCurrency(row.amount, row.currency.abbreviation) : row.amount}
                         />
                     </EntityCard.Body>
                 </>

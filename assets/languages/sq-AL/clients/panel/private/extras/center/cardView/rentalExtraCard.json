@@ -8,5 +8,6 @@
     "per_day": "Në ditë",
     "per_rental": "Për qira"
   },
-  "isActive": "Aktiv"
+  "isActive": "Aktiv",
+  "inactive": "Joaktiv"
 }

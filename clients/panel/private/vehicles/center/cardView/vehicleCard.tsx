@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCar, IconCategory, IconMapPin, IconStatusChange} from "@tabler/icons-react";
+import {IconCategory, IconMapPin} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
@@ -22,6 +22,7 @@ import VehicleSheetView from "@carRentalModule/clients/panel/private/vehicles/ce
 import {vehicleEditPath} from "@carRentalModule/clients/panel/private/vehicles/index.tsx";
 import VehicleRecordsMenu from "@carRentalModule/clients/panel/private/vehicles/center/actions/vehicleRecordsMenu.tsx";
 import VehicleReadinessMenu from "@carRentalModule/clients/panel/private/vehicles/center/actions/vehicleReadinessMenu.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 
 const READINESS_BADGE: Record<VehicleReadiness, string> = {
     ready: STATUS_BADGE_SUCCESS,
@@ -86,10 +87,14 @@ function VehicleCard({
                         />
                     </div>
                     <EntityCard.Header
-                        titlePath="plate"
-                        title={row.plate}
+                        titlePath="model"
+                        title={`${row.make} ${row.model}`}
+                        subtitlePath="plate"
+                        subtitle={row.plate}
                         badgesBesideTitle
                         badges={
+                            <>
+                            {row.status !== "active" ? <StatusBadge tableConfigKey="vehicles" field="status" value={row.status} label={String(resolveLanguageKey(`statusValues.${row.status}`))} /> : null}
                             <DisplayValue path="readiness" value={row.readiness}>
                                 {() => (
                                     <Badge variant="outline" className={cn("text-xs", READINESS_BADGE[row.readiness])}>
@@ -97,19 +102,14 @@ function VehicleCard({
                                     </Badge>
                                 )}
                             </DisplayValue>
+                            </>
                         }
+
                     >
                         <VehicleReadinessMenu vehicle={row} onUpdated={setEntity} />
                         <VehicleRecordsMenu vehicle={row} />
                     </EntityCard.Header>
                     <EntityCard.Body>
-                        <EntityCardRow
-                            icon={IconCar}
-                            label={resolveLanguageKey("model")}
-                            tooltip={resolveLanguageKey("model")}
-                            path="model"
-                            value={`${row.make} ${row.model}`}
-                        />
                         <EntityCardRow
                             icon={IconCategory}
                             label={resolveLanguageKey("category")}
@@ -123,15 +123,6 @@ function VehicleCard({
                             tooltip={resolveLanguageKey("homeLocation")}
                             path="homeLocation"
                             value={row.homeLocation?.name}
-                        />
-                        <EntityCardRow
-                            icon={IconStatusChange}
-                            label={resolveLanguageKey("status")}
-                            tooltip={resolveLanguageKey("status")}
-                            path="status"
-                            type="enum"
-                            languageKeyCategory="statusValues"
-                            value={row.status}
                         />
                     </EntityCard.Body>
                 </>

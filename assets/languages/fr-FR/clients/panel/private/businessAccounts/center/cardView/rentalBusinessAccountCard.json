@@ -6,5 +6,6 @@
   "vatNumber": "Numéro de TVA",
   "discountPercent": "Remise %",
   "isActive": "Actif",
-  "statement": "Relevé mensuel"
+  "statement": "Relevé mensuel",
+  "inactive": "Inactif"
 }

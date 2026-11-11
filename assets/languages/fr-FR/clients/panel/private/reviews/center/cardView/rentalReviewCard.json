@@ -5,5 +5,6 @@
   "reservation": "Réservation",
   "rating": "Note",
   "authorName": "Nom",
-  "isPublished": "Publié"
+  "isPublished": "Publié",
+  "notPublished": "Non publié"
 }

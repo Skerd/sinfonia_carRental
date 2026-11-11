@@ -26,5 +26,8 @@
     "partially_refunded": "Rimborsato in parte",
     "refunded": "Rimborsato",
     "failed": "Pagamento non riuscito"
-  }
+  },
+  "when": "Quando",
+  "car": "Auto",
+  "total": "Totale"
 }

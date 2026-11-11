@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCalendarDue, IconCategory, IconChecks, IconDiscount, IconPercentage, IconToggleRight} from "@tabler/icons-react";
+import {IconCalendarDue, IconCategory, IconChecks, IconDiscount, IconPercentage} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -10,6 +10,7 @@ import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {RentalPromoCode} from "armonia/src/modules/carRental/api/carRental/private/rentalPromoCode/rentalPromoCode.dto.ts";
 import RentalPromoCodeSheetView from "@carRentalModule/clients/panel/private/promoCodes/center/sheetView/rentalPromoCodeSheetView.tsx";
 import {rentalPromoCodeEditPath} from "@carRentalModule/clients/panel/private/promoCodes/index.tsx";
+import {Badge} from "@coreModule/components/ui/badge.tsx";
 
 type RentalPromoCodeCardProps = WithLanguageType & {
     rentalPromoCode: RentalPromoCode;
@@ -53,7 +54,10 @@ function RentalPromoCodeCard({
         >
             {({entity: row}) => (
                 <>
-                    <EntityCard.Header titlePath="code" title={row.code} />
+                    <EntityCard.Header titlePath="code"
+                        title={row.code}
+                        badgesBesideTitle
+                        badges={!row.isActive ? <Badge variant="outline" className="text-xs">{String(resolveLanguageKey("inactive"))}</Badge> : null} />
                     <EntityCard.Body>
                         <EntityCardRow
                             icon={IconPercentage}
@@ -94,13 +98,6 @@ function RentalPromoCodeCard({
                             path="usageCount"
                             type="number"
                             value={row.usageCount}
-                        />
-                        <EntityCardRow
-                            icon={IconToggleRight}
-                            label={resolveLanguageKey("isActive")}
-                            tooltip={resolveLanguageKey("isActive")}
-                            path="isActive"
-                            value={row.isActive}
                         />
                     </EntityCard.Body>
                 </>

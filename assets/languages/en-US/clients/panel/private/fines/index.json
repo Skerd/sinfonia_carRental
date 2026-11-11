@@ -1,6 +1,6 @@
 {
   "path": "src/modules/carRental/clients/panel/private/fines/index.tsx",
-  "title": "Traffic fines",
+  "title": "Fines",
   "description": "Fines and tolls for your cars, matched to the driver at the time",
   "help": {
     "ariaLabel": "About traffic fines",

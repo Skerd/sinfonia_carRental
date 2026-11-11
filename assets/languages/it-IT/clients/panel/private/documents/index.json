@@ -1,6 +1,6 @@
 {
   "path": "src/modules/carRental/clients/panel/private/documents/index.tsx",
-  "title": "Documenti dei veicoli",
+  "title": "Documenti",
   "description": "Libretti, revisioni e tasse con la loro scadenza",
   "help": {
     "ariaLabel": "Informazioni sui documenti",

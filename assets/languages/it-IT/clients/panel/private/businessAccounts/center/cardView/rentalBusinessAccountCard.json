@@ -6,5 +6,6 @@
   "vatNumber": "Partita IVA",
   "discountPercent": "Sconto %",
   "isActive": "Attivo",
-  "statement": "Estratto mensile"
+  "statement": "Estratto mensile",
+  "inactive": "Inattivo"
 }

@@ -6,5 +6,6 @@
   "vatNumber": "Numri i TVSH-së",
   "discountPercent": "Zbritje %",
   "isActive": "Aktiv",
-  "statement": "Pasqyra mujore"
+  "statement": "Pasqyra mujore",
+  "inactive": "Joaktiv"
 }

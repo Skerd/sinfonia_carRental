@@ -5,5 +5,7 @@
   "timezone": "Zeitzone",
   "phone": "Telefon",
   "pickupAllowed": "Abholungen hier",
-  "isActive": "Aktiv"
+  "isActive": "Aktiv",
+  "inactive": "Inaktiv",
+  "noPickups": "Keine Abholung"
 }

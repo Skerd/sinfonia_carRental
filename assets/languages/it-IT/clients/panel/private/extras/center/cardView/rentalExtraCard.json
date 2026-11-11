@@ -8,5 +8,6 @@
     "per_day": "Al giorno",
     "per_rental": "Per noleggio"
   },
-  "isActive": "Attivo"
+  "isActive": "Attivo",
+  "inactive": "Inattivo"
 }

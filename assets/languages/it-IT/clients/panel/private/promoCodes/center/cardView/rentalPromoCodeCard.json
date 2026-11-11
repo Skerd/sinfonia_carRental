@@ -11,5 +11,6 @@
   "typeValues": {
     "percent": "Sconto percentuale",
     "fixed": "Importo fisso"
-  }
+  },
+  "inactive": "Inattivo"
 }

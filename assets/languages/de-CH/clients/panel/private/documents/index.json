@@ -1,6 +1,6 @@
 {
   "path": "src/modules/carRental/clients/panel/private/documents/index.tsx",
-  "title": "Fahrzeugdokumente",
+  "title": "Dokumente",
   "description": "Ausweise, Prüfungen und Steuern mit Ablaufdatum",
   "help": {
     "ariaLabel": "Über Fahrzeugdokumente",
