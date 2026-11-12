@@ -57,4 +57,6 @@ export default createGenericEditPage<CarRentalConfig, EditCarRentalConfigFormTyp
         };
     },
     submitIcon: <IconDeviceFloppy />,
+    // One page per settings section: after a save, stay on the section just saved.
+    stayAfterSave: true,
 });
