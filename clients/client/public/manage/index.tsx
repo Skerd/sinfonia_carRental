@@ -49,7 +49,7 @@ const STATUS_TONE: Record<PublicRentalReservation["status"], string> = {
     no_show: "bg-destructive/10 text-destructive",
 };
 
-function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
+function ManagePage({resolveLanguageKey}: WithLanguageType) {
     const base = useSectionBase();
     const [params] = useSearchParams();
     const token = params.get("token") ?? "";
@@ -177,8 +177,7 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
         );
     }
 
-    const at = (iso: string) =>
-        formatAtLocation(iso, reservation.timezone, languageCode);
+    const at = (iso: string) => formatAtLocation(iso, reservation.timezone);
     const feeApplies =
         reservation.cancellationFeePercent > 0 &&
         new Date(reservation.freeCancellationUntil) <= new Date();

@@ -8,13 +8,18 @@ type Props = WithLanguageType & {pricing: RentalQuote};
 /** Price lines, VAT, total and deposit — the same breakdown before and after booking. */
 function RentalPriceSummary({pricing, resolveLanguageKey}: Props) {
     const {formatMoney} = useRentalConfig();
+    // Day rates that differ (weekend, season) come as separate lines with the same label; their unit price tells them apart.
+    const labelCount = new Map<string, number>();
+    for (const line of pricing.lines) labelCount.set(line.label, (labelCount.get(line.label) ?? 0) + 1);
     return (
         <dl className="flex flex-col gap-2 text-sm">
             {pricing.lines.map((line, index) => (
                 <div key={`${line.kind}-${index}`} className="flex justify-between gap-4">
                     <dt className="text-muted-foreground">
                         {line.label}
-                        {line.quantity > 1 ? ` × ${line.quantity}` : ""}
+                        {line.quantity > 1 || (labelCount.get(line.label) ?? 0) > 1
+                            ? ` · ${line.quantity} × ${formatMoney(line.unitPrice)}`
+                            : ""}
                     </dt>
                     <dd>{formatMoney(line.total)}</dd>
                 </div>

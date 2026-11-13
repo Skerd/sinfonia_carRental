@@ -275,11 +275,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                     </dt>
                     <dd className="text-muted-foreground">
                         {pickupLocation.name} ·{" "}
-                        {formatLocalDateTime(
-                            trip.pickupDate,
-                            trip.pickupTime,
-                            languageCode,
-                        )}
+                        {formatLocalDateTime(trip.pickupDate, trip.pickupTime)}
                     </dd>
                 </div>
                 <div>
@@ -288,11 +284,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                     </dt>
                     <dd className="text-muted-foreground">
                         {returnLocation.name} ·{" "}
-                        {formatLocalDateTime(
-                            trip.returnDate,
-                            trip.returnTime,
-                            languageCode,
-                        )}
+                        {formatLocalDateTime(trip.returnDate, trip.returnTime)}
                     </dd>
                 </div>
             </dl>

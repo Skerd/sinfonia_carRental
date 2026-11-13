@@ -13,7 +13,7 @@ import {useCompanyLink} from "@coreModule/clients/portal/shared/sectionBase.tsx"
 const MINE_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/mine"};
 
 /** The portal account's reservations at every rental company; each opens the company's manage page. */
-function MyRentalReservations({resolveLanguageKey, languageCode}: WithLanguageType) {
+function MyRentalReservations({resolveLanguageKey}: WithLanguageType) {
     const companyLink = useCompanyLink();
     const mine = useHttpRequest<RentalMyReservationsResponse>(MINE_REQUEST, {}, 1);
     const rows = mine.error ? [] : mine.data?.data ?? null;
@@ -28,7 +28,7 @@ function MyRentalReservations({resolveLanguageKey, languageCode}: WithLanguageTy
                     <ItemContent>
                         <ItemTitle>{reservation.categoryName} · {company.name}</ItemTitle>
                         <ItemDescription>
-                            {formatAtLocation(reservation.pickupAt, reservation.timezone, languageCode)} → {formatAtLocation(reservation.returnAt, reservation.timezone, languageCode)}
+                            {formatAtLocation(reservation.pickupAt, reservation.timezone)} → {formatAtLocation(reservation.returnAt, reservation.timezone)}
                             {" · "}{reservation.number}
                         </ItemDescription>
                     </ItemContent>

@@ -1,4 +1,4 @@
-import {addCalendarDays, companyToday} from "@coreModule/helpers/general/dateTime.ts";
+import {addCalendarDays, companyToday, formatDate} from "@coreModule/helpers/general/dateTime.ts";
 import type {SearchRentalFormType} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.forms.ts";
 
 /** A trip as the site keeps it: in the URL, so search results and booking pages can be shared and reloaded. */
@@ -27,15 +27,14 @@ export function dateInDays(daysAhead: number, timeZone?: string): string {
     return addCalendarDays(companyToday(timeZone ?? Intl.DateTimeFormat().resolvedOptions().timeZone), daysAhead);
 }
 
-/** An instant shown as the local date and time at the place it happens. */
-export function formatAtLocation(iso: string, timeZone: string, locale?: string): string {
-    return new Intl.DateTimeFormat(locale, {timeZone, weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit"}).format(new Date(iso));
+const TRIP_DAY = {weekday: "short", day: "numeric", month: "short"} satisfies Intl.DateTimeFormatOptions;
+
+/** An instant shown as the local date and time at the place it happens, in the app's language (GLB-09: core formatDate). */
+export function formatAtLocation(iso: string, timeZone: string): string {
+    return formatDate(iso, {timeZone, format: {...TRIP_DAY, hour: "2-digit", minute: "2-digit"}});
 }
 
-/** A wall-clock date and time as typed for a location (no time zone involved). */
-export function formatLocalDateTime(date: string, time: string, locale?: string): string {
-    const [year, month, day] = date.split("-").map(Number);
-    const weekdayAndDate = new Intl.DateTimeFormat(locale, {timeZone: "UTC", weekday: "short", day: "numeric", month: "short"})
-        .format(new Date(Date.UTC(year, month - 1, day)));
-    return `${weekdayAndDate}, ${time}`;
+/** A wall-clock date and time as typed for a location (no time zone involved), in the app's language. */
+export function formatLocalDateTime(date: string, time: string): string {
+    return `${formatDate(`${date}T12:00:00Z`, {timeZone: "UTC", format: TRIP_DAY})}, ${time}`;
 }
