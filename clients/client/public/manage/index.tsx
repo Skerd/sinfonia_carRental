@@ -25,8 +25,12 @@ import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
 import type {PublicRentalChangeResponse} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.response.types.ts";
 import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
+import MultiLocalFilePicker from "@coreModule/components/viewEngine/widgets/media/multiLocalFilePicker.tsx";
 import RentalStripePayment from "../book/rentalStripePayment.tsx";
 
+/** The server takes at most this many licence files per upload (`documentUpload`). */
+const MAX_DOCUMENTS = 4;
+const DOCUMENT_TYPES = "image/jpeg,image/png,image/webp,application/pdf";
 /** After paying, the webhook confirms the booking; check again for this long before giving up. */
 const PAYMENT_POLL_MS = 2500;
 const MANAGE_URL = "/api/carRental/rentalStorefront/manage";
@@ -64,6 +68,7 @@ function ManagePage({resolveLanguageKey}: WithLanguageType) {
     const [returnDate, setReturnDate] = useState("");
     const [returnTime, setReturnTime] = useState("10:00");
     const [licenseNumber, setLicenseNumber] = useState("");
+    const [documents, setDocuments] = useState<File[]>([]);
     const [rating, setRating] = useState("5");
     const [comment, setComment] = useState("");
     const [reviewSaved, setReviewSaved] = useState(false);
@@ -87,6 +92,7 @@ function ManagePage({resolveLanguageKey}: WithLanguageType) {
                 return;
             }
             if (action.kind === "update") setReservation(response.data);
+            if (action.path.startsWith("documents")) setDocuments([]);
             if (response.payment?.clientSecret) setPayment(response.payment);
         },
         error: (e) => handleError(e, {context: "RentalManage", showToast: true}),
@@ -333,18 +339,29 @@ function ManagePage({resolveLanguageKey}: WithLanguageType) {
                         >
                             {resolveLanguageKey("saveLicence")}
                         </Button>
-                        <Input
-                            type="file"
-                            accept="image/jpeg,image/png,image/webp,application/pdf"
-                            multiple
-                            onChange={(event) => {
-                                const files = event.target.files;
-                                if (!files?.length) return;
+                        {/* The core picker, with this page's words, instead of the browser's English file input (TD-F86). */}
+                        <MultiLocalFilePicker
+                            files={documents}
+                            onFilesChange={setDocuments}
+                            resolveLanguageKey={resolveLanguageKey}
+                            disabled={busy}
+                            maxFiles={MAX_DOCUMENTS}
+                            accept={DOCUMENT_TYPES}
+                            addFileKey="addDocuments"
+                            filesSelectedKey="documentsChosen"
+                        />
+                        <Button
+                            type="button"
+                            variant="outline"
+                            disabled={busy || documents.length === 0}
+                            onClick={() => {
                                 const body = new FormData();
-                                for (const file of files) body.append("files", file);
+                                for (const file of documents) body.append("files", file);
                                 run("update", `documents?token=${encodeURIComponent(token)}`, body);
                             }}
-                        />
+                        >
+                            {resolveLanguageKey("uploadDocuments")}
+                        </Button>
                     </section>
                 ) : null}
                 {reservation.canExtend ? (
