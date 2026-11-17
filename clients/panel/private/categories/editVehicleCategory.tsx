@@ -10,6 +10,6 @@ export default createGenericEditPage<VehicleCategory, EditVehicleCategoryFormTyp
     accessModel: "vehiclecategories",
     apiUrl: "/api/carRental/vehicleCategory",
     schema: editVehicleCategoryFormSchema,
-    mapEntityData: (data) => ({...data, images: data.images?.map((image) => image._id)}),
+    mapEntityData: (data) => ({...data, images: data.images?.map((image) => image._id), videos:data.videos?.map((video) => video._id) }),
     submitIcon: <IconDeviceFloppy />,
 });
