@@ -119,6 +119,17 @@ const carRentalWidgetContribution: WidgetContribution = {
         "#RentalReviewSheetView": {url: "/api/carRental/rentalReview/single", labelFields: ["authorName"]},
         "#RentalDenyEntrySheetView": {url: "/api/carRental/rentalDenyEntry/single", labelFields: ["reason"]},
     },
+    /** Create pages an `#ApiSelect` on `<apiUrl>/select` opens in a dialog ("Create new …" below the dropdown). */
+    createPages: {
+        "/api/carRental/rentalBusinessAccount": lazy(() => import("@carRentalModule/clients/panel/private/businessAccounts/createRentalBusinessAccount.tsx")),
+        "/api/carRental/rentalExtra": lazy(() => import("@carRentalModule/clients/panel/private/extras/createRentalExtra.tsx")),
+        "/api/carRental/rentalLocation": lazy(() => import("@carRentalModule/clients/panel/private/locations/createRentalLocation.tsx")),
+        "/api/carRental/rentalReservation": lazy(() => import("@carRentalModule/clients/panel/private/reservations/createRentalReservation.tsx")),
+        "/api/carRental/vehicle": lazy(() => import("@carRentalModule/clients/panel/private/vehicles/createVehicle.tsx")),
+        "/api/carRental/vehicleCategory": lazy(() => import("@carRentalModule/clients/panel/private/categories/createVehicleCategory.tsx")),
+        "/api/carRental/vehicleInsurance": lazy(() => import("@carRentalModule/clients/panel/private/insurance/createVehicleInsurance.tsx")),
+        "/api/carRental/vehicleMaintenance": lazy(() => import("@carRentalModule/clients/panel/private/maintenance/createVehicleMaintenance.tsx")),
+    },
 };
 
 export default carRentalWidgetContribution;
