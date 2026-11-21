@@ -13,7 +13,7 @@ import RentalCategoryMedia from "../shared/rentalCategoryMedia.tsx";
 import {tripFromSearch, tripToSearch} from "../shared/rentalTripParams.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 
-const SEARCH_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/search"};
+const SEARCH_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/search", cache: true};
 
 function SearchPage({resolveLanguageKey}: WithLanguageType) {
     const base = useSectionBase();

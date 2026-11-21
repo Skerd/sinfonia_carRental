@@ -1,4 +1,6 @@
 import type {PortalContribution} from "@coreModule/helpers/types/portalContribution.types.ts";
+import {prefetchHttpRequest} from "@coreModule/helpers/apiClient/responseCache.ts";
+import {RENTAL_CONFIG_REQUEST} from "@carRentalModule/clients/client/public/shared/rentalConfigContext.tsx";
 import RentalSiteRoutes from "@carRentalModule/clients/client/public/shared/rentalSiteRoutes.tsx";
 import MyRentalReservations from "./myRentalReservations.tsx";
 import RentalCatalogFilters from "./rentalCatalogFilters.tsx";
@@ -12,6 +14,14 @@ const contribution: PortalContribution = {
     CompanySite: RentalSiteRoutes,
     catalogs: [{kind: "vehicleCategory", Filters: RentalCatalogFilters}],
     AccountSection: MyRentalReservations,
+    // A link into a company's site about to be followed: the page's code and the site's settings and fleet.
+    prefetch: ({path, siteCompany}) => {
+        if (path === "/") void import("@carRentalModule/clients/client/public/home/index.tsx");
+        else if (path.startsWith("/categories/")) void import("@carRentalModule/clients/client/public/category/index.tsx");
+        else if (path === "/search") void import("@carRentalModule/clients/client/public/search/index.tsx");
+        else return;
+        prefetchHttpRequest(RENTAL_CONFIG_REQUEST, {}, {siteCompany});
+    },
 };
 
 export default contribution;

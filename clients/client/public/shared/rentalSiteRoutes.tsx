@@ -1,7 +1,6 @@
-import {lazy, Suspense} from "react";
+import {lazy} from "react";
 import {Route, Routes} from "react-router-dom";
 import ErrorBoundary from "@coreModule/components/custom/errors/errorBoundary.tsx";
-import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {RentalConfigProvider} from "@carRentalModule/clients/client/public/shared/rentalConfigContext.tsx";
 import SitePageLayout from "@coreModule/clients/portal/shared/sitePageLayout.tsx";
 
@@ -20,19 +19,17 @@ const NotFoundPage = lazy(() => import("@carRentalModule/clients/client/public/n
 export default function RentalSiteRoutes() {
     return (
         <RentalConfigProvider>
-            <Suspense fallback={<Loader />}>
-                <Routes>
-                    <Route element={<SitePageLayout />}>
-                        <Route index element={<ErrorBoundary><HomePage /></ErrorBoundary>} />
-                        <Route path="search" element={<ErrorBoundary><SearchPage /></ErrorBoundary>} />
-                        <Route path="categories/:categoryId" element={<ErrorBoundary><CategoryPage /></ErrorBoundary>} />
-                        <Route path="book/:categoryId" element={<ErrorBoundary><BookPage /></ErrorBoundary>} />
-                        <Route path="manage" element={<ErrorBoundary><ManagePage /></ErrorBoundary>} />
-                        <Route path="terms" element={<ErrorBoundary><TermsPage /></ErrorBoundary>} />
-                        <Route path="*" element={<ErrorBoundary><NotFoundPage /></ErrorBoundary>} />
-                    </Route>
-                </Routes>
-            </Suspense>
+            <Routes>
+                <Route element={<SitePageLayout />}>
+                    <Route index element={<ErrorBoundary><HomePage /></ErrorBoundary>} />
+                    <Route path="search" element={<ErrorBoundary><SearchPage /></ErrorBoundary>} />
+                    <Route path="categories/:categoryId" element={<ErrorBoundary><CategoryPage /></ErrorBoundary>} />
+                    <Route path="book/:categoryId" element={<ErrorBoundary><BookPage /></ErrorBoundary>} />
+                    <Route path="manage" element={<ErrorBoundary><ManagePage /></ErrorBoundary>} />
+                    <Route path="terms" element={<ErrorBoundary><TermsPage /></ErrorBoundary>} />
+                    <Route path="*" element={<ErrorBoundary><NotFoundPage /></ErrorBoundary>} />
+                </Route>
+            </Routes>
         </RentalConfigProvider>
     );
 }

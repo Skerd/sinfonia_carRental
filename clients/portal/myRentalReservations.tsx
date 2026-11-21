@@ -10,7 +10,7 @@ import type {RentalMyReservationsResponse} from "armonia/src/modules/carRental/a
 import {formatAtLocation} from "@carRentalModule/clients/client/public/shared/rentalTripParams.ts";
 import {useCompanyLink} from "@coreModule/clients/portal/shared/sectionBase.tsx";
 
-const MINE_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/mine"};
+const MINE_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/mine", cache: true};
 
 /** The portal account's reservations at every rental company; each opens the company's manage page. */
 function MyRentalReservations({resolveLanguageKey}: WithLanguageType) {

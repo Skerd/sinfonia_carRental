@@ -20,11 +20,12 @@ const RentalConfigContext = createContext<RentalConfigContextValue>({
     formatMoney: () => "",
 });
 
-const CONFIG_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/config"};
+/** The rental site's settings and fleet; the section asks them ahead for a hovered link into a company's site. */
+export const RENTAL_CONFIG_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/config", cache: true};
 
 /** Loads the business, locations, categories and rules once for the whole site. */
 export function RentalConfigProvider({children}: {children: ReactNode}) {
-    const {data, loading} = useHttpRequest<RentalStorefrontConfigResponse>(CONFIG_REQUEST, {}, 1);
+    const {data, loading} = useHttpRequest<RentalStorefrontConfigResponse>(RENTAL_CONFIG_REQUEST, {}, 1);
     const config = data?.data ?? null;
 
     const value = useMemo<RentalConfigContextValue>(() => ({

@@ -6,6 +6,8 @@ Types and validators come from **armonia**; API calls target **maestro** routes 
 
 Enable via `VITE_ENABLED_MODULES=carRental` (or leave unset to load all present modules). Its public pages run in the portal (`npm run dev -- up carRental`): under `/car-rental` on a company's own site, `/car-rental/<slug>` on the apex.
 
+The portal contribution's `prefetch` (D173) loads a pointed-at link's page code and the rental config for that company, so its pages open at once.
+
 ## Directory layout
 
 ```
