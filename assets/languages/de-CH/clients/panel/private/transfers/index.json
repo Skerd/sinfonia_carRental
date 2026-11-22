@@ -17,7 +17,6 @@
     ]
   },
   "create": "Überführung planen",
-  "searchPlaceholder": "Überführungen suchen oder Filter hinzufügen...",
   "noData": "Noch keine Überführungen",
   "failTitle": "Überführungen konnten nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

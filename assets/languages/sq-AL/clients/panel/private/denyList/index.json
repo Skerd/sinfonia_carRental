@@ -17,7 +17,6 @@
     ]
   },
   "create": "Shto hyrje",
-  "searchPlaceholder": "Kërkoni në listë ose shtoni filtra...",
   "noData": "Askush nuk është i bllokuar",
   "failTitle": "Lista nuk u ngarkua",
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",

@@ -27,7 +27,6 @@
     ]
   },
   "create": "Shto rezervim",
-  "searchPlaceholder": "Kërko rezervime ose shto filtra...",
   "noData": "Ende pa rezervime",
   "failTitle": "Rezervimet nuk u ngarkuan",
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",

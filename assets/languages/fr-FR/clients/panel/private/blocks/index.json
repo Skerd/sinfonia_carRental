@@ -18,7 +18,6 @@
     ]
   },
   "create": "Ajouter un blocage",
-  "searchPlaceholder": "Rechercher des blocages de véhicules ou ajouter des filtres...",
   "noData": "Aucun blocage de véhicule pour l'instant",
   "failTitle": "Impossible de charger les blocages de véhicules",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

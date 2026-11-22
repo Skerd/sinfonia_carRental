@@ -24,7 +24,6 @@
     ]
   },
   "create": "Fahrzeug hinzufügen",
-  "searchPlaceholder": "Flotte durchsuchen oder Filter hinzufügen...",
   "noData": "Noch keine Fahrzeuge",
   "failTitle": "Flotte konnte nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

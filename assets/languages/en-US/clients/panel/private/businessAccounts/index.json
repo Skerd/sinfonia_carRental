@@ -17,7 +17,6 @@
     ]
   },
   "create": "Add account",
-  "searchPlaceholder": "Search accounts or add filters...",
   "noData": "No business accounts yet",
   "failTitle": "Failed to load accounts",
   "failDescription": "Something went wrong while loading. Please try again.",

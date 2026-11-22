@@ -28,7 +28,6 @@
   "saveSuccess": "Rendi i kategorive u ruajt.",
   "saveError": "Rendi i kategorive nuk u ruajt.",
   "loadError": "Kategoritë nuk u ngarkuan.",
-  "searchPlaceholder": "Kërko kategori ose shto filtra...",
   "noData": "Ende pa kategori",
   "failTitle": "Kategoritë nuk u ngarkuan",
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",

@@ -27,7 +27,6 @@
     ]
   },
   "create": "Aggiungi prenotazione",
-  "searchPlaceholder": "Cerca prenotazioni o aggiungi filtri...",
   "noData": "Nessuna prenotazione",
   "failTitle": "Impossibile caricare le prenotazioni",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

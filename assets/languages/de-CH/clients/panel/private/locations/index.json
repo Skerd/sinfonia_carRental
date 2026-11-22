@@ -24,7 +24,6 @@
     ]
   },
   "create": "Standort hinzufügen",
-  "searchPlaceholder": "Standorte suchen oder Filter hinzufügen...",
   "noData": "Noch keine Standorte",
   "failTitle": "Standorte konnten nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

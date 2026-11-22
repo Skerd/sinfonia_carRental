@@ -17,7 +17,6 @@
     ]
   },
   "create": "Ajouter une entrée",
-  "searchPlaceholder": "Rechercher dans la liste ou ajouter des filtres...",
   "noData": "Personne n'est bloqué",
   "failTitle": "Impossible de charger la liste",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

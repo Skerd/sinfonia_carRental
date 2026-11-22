@@ -18,7 +18,6 @@
     ]
   },
   "create": "Add promo code",
-  "searchPlaceholder": "Search promo codes or add filters...",
   "noData": "No promo codes yet",
   "failTitle": "Failed to load promo codes",
   "failDescription": "Something went wrong while loading. Please try again.",

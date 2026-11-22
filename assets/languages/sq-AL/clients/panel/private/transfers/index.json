@@ -17,7 +17,6 @@
     ]
   },
   "create": "Planifiko transferim",
-  "searchPlaceholder": "Kërkoni transferime ose shtoni filtra...",
   "noData": "Ende asnjë transferim",
   "failTitle": "Transferimet nuk u ngarkuan",
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",

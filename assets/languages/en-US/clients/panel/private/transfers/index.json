@@ -17,7 +17,6 @@
     ]
   },
   "create": "Plan transfer",
-  "searchPlaceholder": "Search transfers or add filters...",
   "noData": "No transfers yet",
   "failTitle": "Failed to load transfers",
   "failDescription": "Something went wrong while loading. Please try again.",

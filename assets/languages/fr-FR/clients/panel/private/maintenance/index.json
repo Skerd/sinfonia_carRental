@@ -18,7 +18,6 @@
     ]
   },
   "create": "Ajouter un entretien",
-  "searchPlaceholder": "Rechercher des entretiens ou ajouter des filtres...",
   "noData": "Aucun entretien pour l'instant",
   "failTitle": "Impossible de charger les entretiens",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

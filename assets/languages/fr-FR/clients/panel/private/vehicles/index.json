@@ -24,7 +24,6 @@
     ]
   },
   "create": "Ajouter un véhicule",
-  "searchPlaceholder": "Rechercher dans la flotte ou ajouter des filtres...",
   "noData": "Aucun véhicule pour l'instant",
   "failTitle": "Impossible de charger la flotte",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

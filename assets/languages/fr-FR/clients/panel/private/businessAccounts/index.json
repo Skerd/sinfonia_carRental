@@ -17,7 +17,6 @@
     ]
   },
   "create": "Ajouter un compte",
-  "searchPlaceholder": "Rechercher des comptes ou ajouter des filtres...",
   "noData": "Aucun compte entreprise pour l'instant",
   "failTitle": "Impossible de charger les comptes",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

@@ -18,7 +18,6 @@
     ]
   },
   "create": "Aggiungi codice promozionale",
-  "searchPlaceholder": "Cerca codici promozionali o aggiungi filtri...",
   "noData": "Ancora nessun codice promozionale",
   "failTitle": "Impossibile caricare i codici promozionali",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

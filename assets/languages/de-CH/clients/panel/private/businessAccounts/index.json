@@ -17,7 +17,6 @@
     ]
   },
   "create": "Konto hinzufügen",
-  "searchPlaceholder": "Konten suchen oder Filter hinzufügen...",
   "noData": "Noch keine Geschäftskonten",
   "failTitle": "Konten konnten nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

@@ -17,7 +17,6 @@
     ]
   },
   "create": "Add entry",
-  "searchPlaceholder": "Search the deny list or add filters...",
   "noData": "Nobody is blocked",
   "failTitle": "Failed to load the deny list",
   "failDescription": "Something went wrong while loading. Please try again.",

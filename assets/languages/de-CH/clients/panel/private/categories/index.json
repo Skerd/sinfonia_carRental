@@ -28,7 +28,6 @@
   "saveSuccess": "Reihenfolge gespeichert.",
   "saveError": "Die Reihenfolge konnte nicht gespeichert werden.",
   "loadError": "Kategorien konnten nicht geladen werden.",
-  "searchPlaceholder": "Kategorien suchen oder Filter hinzufügen...",
   "noData": "Noch keine Kategorien",
   "failTitle": "Kategorien konnten nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

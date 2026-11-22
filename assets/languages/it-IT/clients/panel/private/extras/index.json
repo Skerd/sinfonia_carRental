@@ -35,7 +35,6 @@
   "saveSuccess": "Ordine degli extra salvato.",
   "saveError": "Impossibile salvare l'ordine degli extra.",
   "loadError": "Impossibile caricare gli extra.",
-  "searchPlaceholder": "Cerca extra o aggiungi filtri...",
   "noData": "Nessun extra",
   "failTitle": "Impossibile caricare gli extra",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

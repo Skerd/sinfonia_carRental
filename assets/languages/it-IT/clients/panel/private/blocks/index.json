@@ -18,7 +18,6 @@
     ]
   },
   "create": "Aggiungi blocco",
-  "searchPlaceholder": "Cerca blocchi veicolo o aggiungi filtri...",
   "noData": "Nessun blocco veicolo",
   "failTitle": "Impossibile caricare i blocchi veicolo",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

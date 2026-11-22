@@ -18,7 +18,6 @@
     ]
   },
   "create": "Add maintenance",
-  "searchPlaceholder": "Search maintenance or add filters...",
   "noData": "No maintenance yet",
   "failTitle": "Failed to load maintenance",
   "failDescription": "Something went wrong while loading. Please try again.",

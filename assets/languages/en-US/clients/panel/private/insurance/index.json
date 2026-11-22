@@ -18,7 +18,6 @@
     ]
   },
   "create": "Add insurance",
-  "searchPlaceholder": "Search insurance or add filters...",
   "noData": "No insurance yet",
   "failTitle": "Failed to load insurance",
   "failDescription": "Something went wrong while loading. Please try again.",

@@ -19,7 +19,6 @@
     ]
   },
   "create": "Aggiungi multa",
-  "searchPlaceholder": "Cerca multe o aggiungi filtri...",
   "noData": "Ancora nessuna multa",
   "failTitle": "Impossibile caricare le multe",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

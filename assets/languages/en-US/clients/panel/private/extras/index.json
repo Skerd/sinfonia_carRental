@@ -35,7 +35,6 @@
   "saveSuccess": "Extra order saved.",
   "saveError": "Failed to save extra order.",
   "loadError": "Failed to load extras.",
-  "searchPlaceholder": "Search extras or add filters...",
   "noData": "No extras yet",
   "failTitle": "Failed to load extras",
   "failDescription": "Something went wrong while loading. Please try again.",

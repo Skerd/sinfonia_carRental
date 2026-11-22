@@ -24,7 +24,6 @@
     ]
   },
   "create": "Shto automjet",
-  "searchPlaceholder": "Kërko në flotë ose shto filtra...",
   "noData": "Ende pa automjete",
   "failTitle": "Flota nuk u ngarkua",
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",

@@ -28,7 +28,6 @@
   "saveSuccess": "Ordre des catégories enregistré.",
   "saveError": "Impossible d'enregistrer l'ordre des catégories.",
   "loadError": "Impossible de charger les catégories.",
-  "searchPlaceholder": "Rechercher des catégories ou ajouter des filtres...",
   "noData": "Aucune catégorie pour l'instant",
   "failTitle": "Impossible de charger les catégories",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

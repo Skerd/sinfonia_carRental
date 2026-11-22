@@ -17,7 +17,6 @@
     ]
   },
   "create": "Bewertung hinzufügen",
-  "searchPlaceholder": "Bewertungen suchen oder Filter hinzufügen...",
   "noData": "Noch keine Bewertungen",
   "failTitle": "Bewertungen konnten nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

@@ -18,7 +18,6 @@
     ]
   },
   "create": "Aggiungi assicurazione",
-  "searchPlaceholder": "Cerca assicurazioni o aggiungi filtri...",
   "noData": "Ancora nessuna assicurazione",
   "failTitle": "Impossibile caricare le assicurazioni",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

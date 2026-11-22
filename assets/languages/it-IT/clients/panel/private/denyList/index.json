@@ -17,7 +17,6 @@
     ]
   },
   "create": "Aggiungi voce",
-  "searchPlaceholder": "Cerca nella lista o aggiungi filtri...",
   "noData": "Nessuno è bloccato",
   "failTitle": "Impossibile caricare la lista",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

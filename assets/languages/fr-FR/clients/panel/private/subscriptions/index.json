@@ -17,7 +17,6 @@
     ]
   },
   "create": "Ajouter un abonnement",
-  "searchPlaceholder": "Rechercher des abonnements ou ajouter des filtres...",
   "noData": "Aucun abonnement pour l'instant",
   "failTitle": "Impossible de charger les abonnements",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

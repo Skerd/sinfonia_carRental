@@ -17,7 +17,6 @@
     ]
   },
   "create": "Aggiungi conto",
-  "searchPlaceholder": "Cerca conti o aggiungi filtri...",
   "noData": "Ancora nessun conto aziendale",
   "failTitle": "Impossibile caricare i conti",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

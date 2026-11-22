@@ -17,7 +17,6 @@
     ]
   },
   "create": "Aggiungi abbonamento",
-  "searchPlaceholder": "Cerca abbonamenti o aggiungi filtri...",
   "noData": "Ancora nessun abbonamento",
   "failTitle": "Impossibile caricare gli abbonamenti",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

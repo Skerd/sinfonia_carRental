@@ -18,7 +18,6 @@
     ]
   },
   "create": "Versicherung hinzufügen",
-  "searchPlaceholder": "Versicherungen suchen oder Filter hinzufügen...",
   "noData": "Noch keine Versicherungen",
   "failTitle": "Versicherungen konnten nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

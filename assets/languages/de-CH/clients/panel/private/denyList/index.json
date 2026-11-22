@@ -17,7 +17,6 @@
     ]
   },
   "create": "Eintrag hinzufügen",
-  "searchPlaceholder": "Sperrliste suchen oder Filter hinzufügen...",
   "noData": "Niemand ist gesperrt",
   "failTitle": "Sperrliste konnte nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

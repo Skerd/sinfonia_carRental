@@ -24,7 +24,6 @@
     ]
   },
   "create": "Add vehicle",
-  "searchPlaceholder": "Search fleet or add filters...",
   "noData": "No fleet yet",
   "failTitle": "Failed to load fleet",
   "failDescription": "Something went wrong while loading. Please try again.",

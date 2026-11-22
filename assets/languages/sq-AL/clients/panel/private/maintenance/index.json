@@ -18,7 +18,6 @@
     ]
   },
   "create": "Shto mirëmbajtje",
-  "searchPlaceholder": "Kërkoni mirëmbajtje ose shtoni filtra...",
   "noData": "Ende pa mirëmbajtje",
   "failTitle": "Mirëmbajtja nuk u ngarkua",
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",

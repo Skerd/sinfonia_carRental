@@ -19,7 +19,6 @@
     ]
   },
   "create": "Ajouter une amende",
-  "searchPlaceholder": "Rechercher des amendes ou ajouter des filtres...",
   "noData": "Aucune amende pour l'instant",
   "failTitle": "Impossible de charger les amendes",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

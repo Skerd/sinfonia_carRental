@@ -19,7 +19,6 @@
     ]
   },
   "create": "Add fine",
-  "searchPlaceholder": "Search fines or add filters...",
   "noData": "No fines yet",
   "failTitle": "Failed to load fines",
   "failDescription": "Something went wrong while loading. Please try again.",

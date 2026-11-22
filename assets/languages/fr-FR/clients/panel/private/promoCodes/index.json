@@ -18,7 +18,6 @@
     ]
   },
   "create": "Ajouter un code promo",
-  "searchPlaceholder": "Rechercher des codes promo ou ajouter des filtres...",
   "noData": "Aucun code promo pour l'instant",
   "failTitle": "Impossible de charger les codes promo",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

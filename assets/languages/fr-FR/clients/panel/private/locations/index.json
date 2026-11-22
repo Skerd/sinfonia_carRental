@@ -24,7 +24,6 @@
     ]
   },
   "create": "Ajouter un site",
-  "searchPlaceholder": "Rechercher des sites ou ajouter des filtres...",
   "noData": "Aucun site pour l'instant",
   "failTitle": "Impossible de charger les sites",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

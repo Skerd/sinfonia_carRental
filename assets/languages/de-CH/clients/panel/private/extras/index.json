@@ -35,7 +35,6 @@
   "saveSuccess": "Reihenfolge gespeichert.",
   "saveError": "Die Reihenfolge konnte nicht gespeichert werden.",
   "loadError": "Extras konnten nicht geladen werden.",
-  "searchPlaceholder": "Extras suchen oder Filter hinzufügen...",
   "noData": "Noch keine Extras",
   "failTitle": "Extras konnten nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

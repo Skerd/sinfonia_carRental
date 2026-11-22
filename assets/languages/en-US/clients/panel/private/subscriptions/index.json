@@ -17,7 +17,6 @@
     ]
   },
   "create": "Add subscription",
-  "searchPlaceholder": "Search subscriptions or add filters...",
   "noData": "No subscriptions yet",
   "failTitle": "Failed to load subscriptions",
   "failDescription": "Something went wrong while loading. Please try again.",

@@ -17,7 +17,6 @@
     ]
   },
   "create": "Abo hinzufügen",
-  "searchPlaceholder": "Abos suchen oder Filter hinzufügen...",
   "noData": "Noch keine Abos",
   "failTitle": "Abos konnten nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

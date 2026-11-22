@@ -24,7 +24,6 @@
     ]
   },
   "create": "Add location",
-  "searchPlaceholder": "Search locations or add filters...",
   "noData": "No locations yet",
   "failTitle": "Failed to load locations",
   "failDescription": "Something went wrong while loading. Please try again.",

@@ -27,7 +27,6 @@
     ]
   },
   "create": "Add reservation",
-  "searchPlaceholder": "Search reservations or add filters...",
   "noData": "No reservations yet",
   "failTitle": "Failed to load reservations",
   "failDescription": "Something went wrong while loading. Please try again.",

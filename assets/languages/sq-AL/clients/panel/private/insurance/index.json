@@ -18,7 +18,6 @@
     ]
   },
   "create": "Shto sigurim",
-  "searchPlaceholder": "Kërkoni sigurime ose shtoni filtra...",
   "noData": "Ende pa sigurime",
   "failTitle": "Sigurimet nuk u ngarkuan",
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",

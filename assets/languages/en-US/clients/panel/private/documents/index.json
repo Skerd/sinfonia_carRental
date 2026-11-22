@@ -18,7 +18,6 @@
     ]
   },
   "create": "Add document",
-  "searchPlaceholder": "Search documents or add filters...",
   "noData": "No documents yet",
   "failTitle": "Failed to load documents",
   "failDescription": "Something went wrong while loading. Please try again.",

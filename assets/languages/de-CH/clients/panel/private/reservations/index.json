@@ -27,7 +27,6 @@
     ]
   },
   "create": "Reservierung hinzufügen",
-  "searchPlaceholder": "Reservierungen suchen oder Filter hinzufügen...",
   "noData": "Noch keine Reservierungen",
   "failTitle": "Reservierungen konnten nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

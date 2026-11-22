@@ -24,7 +24,6 @@
     ]
   },
   "create": "Aggiungi veicolo",
-  "searchPlaceholder": "Cerca nella flotta o aggiungi filtri...",
   "noData": "Nessun veicolo",
   "failTitle": "Impossibile caricare la flotta",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

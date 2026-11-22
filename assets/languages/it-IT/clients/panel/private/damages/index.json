@@ -19,7 +19,6 @@
     ]
   },
   "create": "Segnala un danno",
-  "searchPlaceholder": "Cerca danni o aggiungi filtri...",
   "noData": "Ancora nessun danno",
   "failTitle": "Impossibile caricare i danni",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

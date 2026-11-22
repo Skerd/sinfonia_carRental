@@ -17,7 +17,6 @@
     ]
   },
   "create": "Ajouter un avis",
-  "searchPlaceholder": "Rechercher des avis ou ajouter des filtres...",
   "noData": "Aucun avis pour l'instant",
   "failTitle": "Impossible de charger les avis",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

@@ -17,7 +17,6 @@
     ]
   },
   "create": "Shto llogari",
-  "searchPlaceholder": "Kërkoni llogari ose shtoni filtra...",
   "noData": "Ende asnjë llogari biznesi",
   "failTitle": "Llogaritë nuk u ngarkuan",
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",

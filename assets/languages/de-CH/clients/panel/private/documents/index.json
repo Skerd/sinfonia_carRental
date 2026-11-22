@@ -18,7 +18,6 @@
     ]
   },
   "create": "Dokument hinzufügen",
-  "searchPlaceholder": "Dokumente suchen oder Filter hinzufügen...",
   "noData": "Noch keine Dokumente",
   "failTitle": "Dokumente konnten nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

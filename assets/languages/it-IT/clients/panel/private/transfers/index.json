@@ -17,7 +17,6 @@
     ]
   },
   "create": "Pianifica trasferimento",
-  "searchPlaceholder": "Cerca trasferimenti o aggiungi filtri...",
   "noData": "Ancora nessun trasferimento",
   "failTitle": "Impossibile caricare i trasferimenti",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

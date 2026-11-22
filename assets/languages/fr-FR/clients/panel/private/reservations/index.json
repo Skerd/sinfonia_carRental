@@ -27,7 +27,6 @@
     ]
   },
   "create": "Ajouter une réservation",
-  "searchPlaceholder": "Rechercher des réservations ou ajouter des filtres...",
   "noData": "Aucune réservation pour l'instant",
   "failTitle": "Impossible de charger les réservations",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

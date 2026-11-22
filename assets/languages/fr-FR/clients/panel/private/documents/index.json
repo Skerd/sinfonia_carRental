@@ -18,7 +18,6 @@
     ]
   },
   "create": "Ajouter un document",
-  "searchPlaceholder": "Rechercher des documents ou ajouter des filtres...",
   "noData": "Aucun document pour l'instant",
   "failTitle": "Impossible de charger les documents",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

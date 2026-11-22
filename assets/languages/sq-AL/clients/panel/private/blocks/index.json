@@ -18,7 +18,6 @@
     ]
   },
   "create": "Shto bllokim",
-  "searchPlaceholder": "Kërko bllokime automjetesh ose shto filtra...",
   "noData": "Ende pa bllokime automjetesh",
   "failTitle": "Bllokimet e automjeteve nuk u ngarkuan",
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",

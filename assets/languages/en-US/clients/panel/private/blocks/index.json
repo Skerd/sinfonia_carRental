@@ -18,7 +18,6 @@
     ]
   },
   "create": "Add block",
-  "searchPlaceholder": "Search vehicle blocks or add filters...",
   "noData": "No vehicle blocks yet",
   "failTitle": "Failed to load vehicle blocks",
   "failDescription": "Something went wrong while loading. Please try again.",

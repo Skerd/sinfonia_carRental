@@ -18,7 +18,6 @@
     ]
   },
   "create": "Sperre hinzufügen",
-  "searchPlaceholder": "Fahrzeugsperren suchen oder Filter hinzufügen...",
   "noData": "Noch keine Fahrzeugsperren",
   "failTitle": "Fahrzeugsperren konnten nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

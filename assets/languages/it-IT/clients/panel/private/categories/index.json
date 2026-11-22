@@ -28,7 +28,6 @@
   "saveSuccess": "Ordine delle categorie salvato.",
   "saveError": "Impossibile salvare l'ordine delle categorie.",
   "loadError": "Impossibile caricare le categorie.",
-  "searchPlaceholder": "Cerca categorie o aggiungi filtri...",
   "noData": "Nessuna categoria",
   "failTitle": "Impossibile caricare le categorie",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

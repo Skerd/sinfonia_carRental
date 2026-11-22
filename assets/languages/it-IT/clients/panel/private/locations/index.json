@@ -24,7 +24,6 @@
     ]
   },
   "create": "Aggiungi sede",
-  "searchPlaceholder": "Cerca sedi o aggiungi filtri...",
   "noData": "Nessuna sede",
   "failTitle": "Impossibile caricare le sedi",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

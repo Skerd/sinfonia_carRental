@@ -19,7 +19,6 @@
     ]
   },
   "create": "Schaden melden",
-  "searchPlaceholder": "Schäden suchen oder Filter hinzufügen...",
   "noData": "Noch keine Schäden",
   "failTitle": "Schäden konnten nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

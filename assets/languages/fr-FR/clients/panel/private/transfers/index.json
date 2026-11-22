@@ -17,7 +17,6 @@
     ]
   },
   "create": "Planifier un transfert",
-  "searchPlaceholder": "Rechercher des transferts ou ajouter des filtres...",
   "noData": "Aucun transfert pour l'instant",
   "failTitle": "Impossible de charger les transferts",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

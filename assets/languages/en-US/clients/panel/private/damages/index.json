@@ -19,7 +19,6 @@
     ]
   },
   "create": "Report damage",
-  "searchPlaceholder": "Search damages or add filters...",
   "noData": "No damages yet",
   "failTitle": "Failed to load damages",
   "failDescription": "Something went wrong while loading. Please try again.",

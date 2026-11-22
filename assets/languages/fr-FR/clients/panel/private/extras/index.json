@@ -35,7 +35,6 @@
   "saveSuccess": "Ordre des suppléments enregistré.",
   "saveError": "Impossible d'enregistrer l'ordre des suppléments.",
   "loadError": "Impossible de charger les suppléments.",
-  "searchPlaceholder": "Rechercher des suppléments ou ajouter des filtres...",
   "noData": "Aucun supplément pour l'instant",
   "failTitle": "Impossible de charger les suppléments",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

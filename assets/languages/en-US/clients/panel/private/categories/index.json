@@ -28,7 +28,6 @@
   "saveSuccess": "Category order saved.",
   "saveError": "Failed to save category order.",
   "loadError": "Failed to load categories.",
-  "searchPlaceholder": "Search categories or add filters...",
   "noData": "No categories yet",
   "failTitle": "Failed to load categories",
   "failDescription": "Something went wrong while loading. Please try again.",
