@@ -4,6 +4,8 @@ import {RENTAL_CONFIG_REQUEST} from "@carRentalModule/clients/client/public/shar
 import RentalSiteRoutes from "@carRentalModule/clients/client/public/shared/rentalSiteRoutes.tsx";
 import MyRentalReservations from "./myRentalReservations.tsx";
 import RentalCatalogFilters from "./rentalCatalogFilters.tsx";
+import {IconCar} from "@tabler/icons-react";
+import BusinessTypeSummary from "./businessTypeSummary.tsx";
 
 /** Car rental on the portal: each company's rental site, its cars in the home catalog, and the visitor's reservations. */
 const contribution: PortalContribution = {
@@ -22,6 +24,8 @@ const contribution: PortalContribution = {
         else return;
         prefetchHttpRequest(RENTAL_CONFIG_REQUEST, {}, {siteCompany});
     },
+    // A person may create this kind of business on the portal (D178); the API declares the same key.
+    businessType: {key: "carRental", Icon: IconCar, Summary: BusinessTypeSummary},
 };
 
 export default contribution;

@@ -1,0 +1,5 @@
+{
+  "path": "src/modules/carRental/clients/portal/businessTypeSummary.tsx",
+  "name": "Car rental",
+  "pitch": "List your cars, take bookings online and manage handovers, deposits and returns."
+}
