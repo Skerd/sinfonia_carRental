@@ -62,5 +62,8 @@
   "reviewTitle": "Comment était la voiture ?",
   "reviewComment": "Quelques mots",
   "sendReview": "Envoyer l'avis",
-  "reviewThanks": "Merci. L'avis attend d'être publié."
+  "reviewThanks": "Merci. L'avis attend d'être publié.",
+  "reviewRating": "Votre note",
+  "reviewStar": "{rating} sur 5",
+  "reviewShownAs": "Une fois publié par l'entreprise, votre avis affiche votre prénom et l'initiale de votre nom."
 }

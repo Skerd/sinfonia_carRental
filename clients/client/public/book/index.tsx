@@ -1,6 +1,8 @@
 import dayjs from "dayjs";
 import {useEffect, useMemo, useRef, useState, type FormEvent} from "react";
 import {compose} from "redux";
+import {useSelector} from "react-redux";
+import type {RootState} from "@coreModule/helpers/redux/store/generalStore.ts";
 import {Link, useNavigate, useParams, useSearchParams} from "react-router-dom";
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
 import {usePortalTitle} from "@coreModule/clients/portal/shared/portalTitle.ts";
@@ -33,6 +35,7 @@ import {
     type RentalConfig,
 } from "../shared/rentalConfigContext.tsx";
 import RentalCategoryFacts from "../shared/rentalCategoryFacts.tsx";
+import {withAccountContact} from "./accountContact.ts";
 import RentalCategoryMedia from "../shared/rentalCategoryMedia.tsx";
 import RentalPriceSummary from "../shared/rentalPriceSummary.tsx";
 import {
@@ -113,6 +116,12 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
         email: "",
         phone: "",
     });
+    // A signed-in customer books as themselves: their details fill the empty contact fields, still editable (TD-F156).
+    const signedIn = useSelector((state: RootState) => Boolean(state.authentication.token));
+    const account = useSelector((state: RootState) => state.authentication.user);
+    useEffect(() => {
+        if (signedIn) setContact((current) => withAccountContact(current, account));
+    }, [signedIn, account]);
     const {fieldErrors, clearFieldError, showIssues} =
         useFieldErrors<ContactKey>(CONTACT_KEYS);
     const [paymentChoice, setPaymentChoice] =

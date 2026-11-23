@@ -48,7 +48,11 @@ function ReassignVehicleDialog({reservation, onClose, onUpdated, resolveLanguage
                 <SimpleSelect
                     options={(free ?? []).map((car) => ({
                         value: car.value,
-                        label: car.readiness === "ready" ? car.label : `${car.label} · ${resolveLanguageKey(`readiness.${car.readiness}`)}`,
+                        label: [
+                            car.label,
+                            car.readiness === "ready" ? null : resolveLanguageKey(`readiness.${car.readiness}`),
+                            car.papersLapse ? resolveLanguageKey("papersLapse") : null,
+                        ].filter(Boolean).join(" · "),
                     }))}
                     value={vehicle}
                     onValueChange={(value: string | string[]) => setVehicle(String(value))}
@@ -57,6 +61,7 @@ function ReassignVehicleDialog({reservation, onClose, onUpdated, resolveLanguage
                     disabled={loading || !free?.length}
                 />
                 {free && !free.length ? <p className="text-sm text-muted-foreground">{resolveLanguageKey("noFreeCars")}</p> : null}
+                {free?.find((car) => car.value === vehicle)?.papersLapse ? <p className="text-sm text-amber-700 dark:text-amber-400">{resolveLanguageKey("papersLapseHint")}</p> : null}
             </div>
         </ReservationActionDialogShell>
     );

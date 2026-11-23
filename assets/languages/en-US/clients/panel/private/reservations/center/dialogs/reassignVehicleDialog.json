@@ -26,5 +26,7 @@
     "ready": "Ready",
     "needs_cleaning": "Needs cleaning",
     "needs_check": "Needs a check"
-  }
+  },
+  "papersLapse": "Papers run out",
+  "papersLapseHint": "Its insurance or road papers run out before the return: renew them before the handover, or it cannot leave."
 }

@@ -26,5 +26,7 @@
     "ready": "Gati",
     "needs_cleaning": "Duhet pastruar",
     "needs_check": "Duhet kontrolluar"
-  }
+  },
+  "papersLapse": "Dokumentet skadojnë",
+  "papersLapseHint": "Sigurimi ose dokumentet e saj skadojnë para kthimit: rinovojini para dorëzimit, përndryshe nuk mund të nisë."
 }

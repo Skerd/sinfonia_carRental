@@ -62,5 +62,8 @@
   "reviewTitle": "Si ishte makina?",
   "reviewComment": "Pak fjalë",
   "sendReview": "Dërgo vlerësimin",
-  "reviewThanks": "Faleminderit. Vlerësimi pret të publikohet."
+  "reviewThanks": "Faleminderit. Vlerësimi pret të publikohet.",
+  "reviewRating": "Vlerësimi juaj",
+  "reviewStar": "{rating} nga 5",
+  "reviewShownAs": "Pasi kompania ta publikojë, vlerësimi juaj tregon emrin tuaj dhe inicialin e mbiemrit."
 }

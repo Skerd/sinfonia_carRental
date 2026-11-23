@@ -26,5 +26,7 @@
     "ready": "Pronta",
     "needs_cleaning": "Da pulire",
     "needs_check": "Da controllare"
-  }
+  },
+  "papersLapse": "Documenti in scadenza",
+  "papersLapseHint": "L'assicurazione o i documenti scadono prima della riconsegna: rinnovali prima della consegna, altrimenti non può partire."
 }

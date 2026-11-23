@@ -26,5 +26,7 @@
     "ready": "Prête",
     "needs_cleaning": "À nettoyer",
     "needs_check": "À contrôler"
-  }
+  },
+  "papersLapse": "Papiers expirés",
+  "papersLapseHint": "Son assurance ou ses papiers expirent avant le retour : renouvelez-les avant la remise, sinon il ne peut pas partir."
 }

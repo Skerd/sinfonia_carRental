@@ -62,5 +62,8 @@
   "reviewTitle": "Wie war das Fahrzeug?",
   "reviewComment": "Ein paar Worte",
   "sendReview": "Bewertung senden",
-  "reviewThanks": "Danke. Die Bewertung wartet auf die Veröffentlichung."
+  "reviewThanks": "Danke. Die Bewertung wartet auf die Veröffentlichung.",
+  "reviewRating": "Ihre Bewertung",
+  "reviewStar": "{rating} von 5",
+  "reviewShownAs": "Sobald das Unternehmen sie veröffentlicht, zeigt Ihre Bewertung Ihren Vornamen und den Anfangsbuchstaben Ihres Nachnamens."
 }

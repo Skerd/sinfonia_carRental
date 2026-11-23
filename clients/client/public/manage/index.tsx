@@ -1,4 +1,5 @@
-import {useEffect, useMemo, useState} from "react";
+import {useEffect, useId, useMemo, useState} from "react";
+import {IconStarFilled} from "@tabler/icons-react";
 import {compose} from "redux";
 import {Link, useSearchParams} from "react-router-dom";
 import {loadStripe} from "@stripe/stripe-js";
@@ -24,10 +25,17 @@ import RentalPriceSummary from "../shared/rentalPriceSummary.tsx";
 import {formatAtLocation} from "../shared/rentalTripParams.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
+import {Label} from "@coreModule/components/ui/label.tsx";
+import {Textarea} from "@coreModule/components/ui/textarea.tsx";
+import {ToggleGroup, ToggleGroupItem} from "@coreModule/components/ui/toggle-group.tsx";
+import {cn} from "@coreModule/components/lib/utils.ts";
+import {RENTAL_REVIEW_COMMENT_MAX} from "armonia/src/modules/carRental/api/carRental/private/rentalReview/rentalReview.schema-def.ts";
 import type {PublicRentalChangeResponse} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.response.types.ts";
 import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
 import MultiLocalFilePicker from "@coreModule/components/viewEngine/widgets/media/multiLocalFilePicker.tsx";
 import RentalStripePayment from "../book/rentalStripePayment.tsx";
+
+const RATINGS = ["1", "2", "3", "4", "5"] as const;
 
 /** The server takes at most this many licence files per upload (`documentUpload`). */
 const MAX_DOCUMENTS = 4;
@@ -71,6 +79,7 @@ function ManagePage({resolveLanguageKey}: WithLanguageType) {
     const [licenseNumber, setLicenseNumber] = useState("");
     const [documents, setDocuments] = useState<File[]>([]);
     const [rating, setRating] = useState("5");
+    const commentId = useId();
     const [comment, setComment] = useState("");
     const [reviewSaved, setReviewSaved] = useState(false);
     const [payment, setPayment] = useState<{
@@ -482,20 +491,34 @@ function ManagePage({resolveLanguageKey}: WithLanguageType) {
                         <h2 className="font-display font-bold tracking-tight text-lg">
                             {resolveLanguageKey("reviewTitle")}
                         </h2>
-                        <Input
-                            type="number"
-                            min={1}
-                            max={5}
-                            value={rating}
-                            onChange={(event) => setRating(event.target.value)}
-                        />
-                        <Input
-                            value={comment}
-                            onChange={(event) => setComment(event.target.value)}
-                            placeholder={String(
-                                resolveLanguageKey("reviewComment"),
-                            )}
-                        />
+                        {/* Stars, as the dentists' review (TD-F157). */}
+                        <div className="flex flex-col gap-2">
+                            <p className="text-sm font-medium">{resolveLanguageKey("reviewRating")}</p>
+                            <ToggleGroup
+                                type="single"
+                                spacing={1}
+                                size="lg"
+                                value={rating}
+                                onValueChange={(next) => { if (next) setRating(next); }}
+                                aria-label={String(resolveLanguageKey("reviewRating"))}
+                            >
+                                {RATINGS.map((value) => (
+                                    <ToggleGroupItem
+                                        key={value}
+                                        value={value}
+                                        className="px-1.5"
+                                        aria-label={String(resolveLanguageKey("reviewStar")).replace("{rating}", value)}
+                                    >
+                                        <IconStarFilled className={cn("size-7", Number(value) <= Number(rating) ? "text-amber-500" : "text-muted-foreground/40")} aria-hidden />
+                                    </ToggleGroupItem>
+                                ))}
+                            </ToggleGroup>
+                        </div>
+                        <div className="flex flex-col gap-2">
+                            <Label htmlFor={commentId}>{resolveLanguageKey("reviewComment")}</Label>
+                            <Textarea id={commentId} value={comment} maxLength={RENTAL_REVIEW_COMMENT_MAX} rows={3} onChange={(event) => setComment(event.target.value)} />
+                        </div>
+                        <p className="text-sm text-muted-foreground">{resolveLanguageKey("reviewShownAs")}</p>
                         <Button
                             type="button"
                             disabled={busy}

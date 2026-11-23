@@ -26,5 +26,7 @@
     "ready": "Bereit",
     "needs_cleaning": "Muss gereinigt werden",
     "needs_check": "Muss geprüft werden"
-  }
+  },
+  "papersLapse": "Papiere laufen ab",
+  "papersLapseHint": "Versicherung oder Fahrzeugpapiere laufen vor der Rückgabe ab: Erneuern Sie sie vor der Übergabe, sonst kann es nicht losfahren."
 }
