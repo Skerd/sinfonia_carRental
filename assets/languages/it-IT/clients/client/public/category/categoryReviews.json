@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/carRental/clients/client/public/category/categoryReviews.tsx",
+  "title": "Recensioni",
+  "count": "{count} recensioni",
+  "countOne": "1 recensione",
+  "ratingLabel": "{rating} stelle su 5",
+  "guest": "Un cliente"
+}

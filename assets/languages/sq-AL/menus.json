@@ -1,5 +1,6 @@
 {
   "carRental": {
+    "setup": {"location": "Shtoni një pikë marrjeje", "category": "Shtoni një kategori makinash", "categoryHint": "Klientët rezervojnë një kategori, si Kompakte ose SUV.", "vehicle": "Shtoni makinën tuaj të parë"},
     "title": "Qiraja e makinave",
     "reservations": {"title": "Rezervimet"},
     "planner": {"title": "Planifikuesi"},

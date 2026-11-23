@@ -1,5 +1,6 @@
 {
   "carRental": {
+    "setup": {"location": "Add a rental location", "category": "Add a car category", "categoryHint": "Guests book a category, such as Compact or SUV.", "vehicle": "Add your first car"},
     "title": "Car rental",
     "reservations": {"title": "Reservations"},
     "planner": {"title": "Planner"},

@@ -1,5 +1,6 @@
 {
   "carRental": {
+    "setup": {"location": "Aggiungi un punto di noleggio", "category": "Aggiungi una categoria di auto", "categoryHint": "I clienti prenotano una categoria, come Compatta o SUV.", "vehicle": "Aggiungi la tua prima auto"},
     "title": "Noleggio auto",
     "reservations": {"title": "Prenotazioni"},
     "planner": {"title": "Pianificazione"},

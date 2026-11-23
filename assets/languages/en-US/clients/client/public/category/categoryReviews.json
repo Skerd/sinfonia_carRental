@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/carRental/clients/client/public/category/categoryReviews.tsx",
+  "title": "Reviews",
+  "count": "{count} reviews",
+  "countOne": "1 review",
+  "ratingLabel": "{rating} out of 5 stars",
+  "guest": "A guest"
+}

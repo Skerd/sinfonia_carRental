@@ -13,6 +13,7 @@ import type {QuoteRentalFormType} from "armonia/src/modules/carRental/api/carRen
 import type {RentalQuoteResponse} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.response.types.ts";
 import {useRentalConfig} from "../shared/rentalConfigContext.tsx";
 import RentalSearchForm from "../shared/rentalSearchForm.tsx";
+import CategoryReviews from "./categoryReviews.tsx";
 import {tripFromSearch, tripToSearch, type RentalTripParams} from "../shared/rentalTripParams.ts";
 
 const QUOTE_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/quote"};
@@ -112,6 +113,7 @@ function CategoryPage({resolveLanguageKey, currentLanguage}: WithLanguageType) {
                             <DetailSpecs rows={specs} />
                         </div>
                     </DetailSection>
+                    <CategoryReviews categoryId={category._id} />
                 </>
             )}
         >

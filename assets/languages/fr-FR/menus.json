@@ -1,5 +1,6 @@
 {
   "carRental": {
+    "setup": {"location": "Ajoutez une agence de location", "category": "Ajoutez une catégorie de voiture", "categoryHint": "Les clients réservent une catégorie, comme Compacte ou SUV.", "vehicle": "Ajoutez votre première voiture"},
     "title": "Location de voitures",
     "reservations": {"title": "Réservations"},
     "planner": {"title": "Planning"},

@@ -1,5 +1,6 @@
 {
   "carRental": {
+    "setup": {"location": "Mietstation hinzufügen", "category": "Fahrzeugkategorie hinzufügen", "categoryHint": "Kunden buchen eine Kategorie, etwa Kompakt oder SUV.", "vehicle": "Erstes Fahrzeug hinzufügen"},
     "title": "Autovermietung",
     "reservations": {"title": "Reservierungen"},
     "planner": {"title": "Planung"},
