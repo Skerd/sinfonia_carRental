@@ -97,6 +97,8 @@ function CategoryPage({resolveLanguageKey, currentLanguage}: WithLanguageType) {
         <DetailPage
             kind="vehicleCategory"
             title={category.name}
+            // The class as the catalog's card lists it, for its heart (TD-F148).
+            keep={{kind: "vehicleCategory", id: category._id, section: "carRental", path: `/categories/${category.slug || category._id}`, title: category.name}}
             media={category.images.length || category.videos.length
                 ? <DetailGallery title={category.name} images={category.images} videos={category.videos} shape="landscape" />
                 : undefined}
