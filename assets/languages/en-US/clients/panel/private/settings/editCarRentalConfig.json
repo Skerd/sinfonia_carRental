@@ -91,6 +91,23 @@
     "title": "Car rental settings",
     "description": "Applies to this rental company."
   },
+  "help": {
+    "ariaLabel": "About car rental settings",
+    "title": "About car rental settings",
+    "overview": "Your rental rules, on five pages. Each page saves on its own and applies to every booking from then on.",
+    "sections": [
+      {
+        "title": "The five pages",
+        "items": [
+          "Online booking: whether your website takes bookings and lists you on the portal, how far ahead and for how long people can book, the turnaround between rentals, and whether guests need an account.",
+          "Payment and cancellation: when customers pay (online, at pickup, or their choice), the currency and VAT, the hold while someone pays online, and the free cancellation window and late cancellation fee.",
+          "Fees and charges: extra and young drivers, one-way returns, late returns, missing fuel, refuelling, cleaning, smoking, and the admin fee for traffic fines.",
+          "Rental terms: the terms customers accept when they book. Give each new text a version, so every booking keeps the terms it was made under.",
+          "Staff alerts: who on your team hears about new bookings."
+        ]
+      }
+    ]
+  },
   "formButtons": {
     "cancel": "Cancel",
     "submit": "Save"

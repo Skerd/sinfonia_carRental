@@ -29,10 +29,8 @@
       "vehicleStatusTitle": "Car status",
       "vehicleStatusText": "Only active cars are rented out. Change the status when a car goes to the garage or leaves your fleet.",
       "tour": {
-        "counter": "Today's desk: the cars going out and the cars coming back. Hand them over and take them back here.",
-        "planner": "Every car on one timeline, with its bookings and blocks. See at a glance which cars are free.",
-        "reservations": "Every booking, from your website or made by your team. Change or cancel one from its menu.",
-        "vehicles": "Your cars, with their category, home location and status. Only active cars are rented out."
+        "introTitle": "Your car rental",
+        "introText": "This part of the panel runs your rental business: the desk, the planner and bookings, the fleet and its upkeep, your customers, and your rules. Next, the tour opens each page and explains it. The ⓘ beside a page's title shows the same help any time."
       }
     },
     "title": "Car rental",

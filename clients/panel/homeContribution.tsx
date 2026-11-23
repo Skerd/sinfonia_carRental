@@ -2,8 +2,8 @@ import type {HomeContribution} from "@coreModule/helpers/types/homeContribution.
 
 /**
  * What a new car rental company sets up before it can take customers (D178), in the order it needs them; each step is
- * done once its list has a row. Each step's guide points at the fields that matter most (D179), and the tour shows the
- * pages a rental desk uses every day. Texts are in this module's `menus.json` (`setup`, `guide`).
+ * done once its list has a row. Each step's guide points at the fields that matter most (D179), and the tour walks every
+ * page of the module (D180). Texts are in this module's `menus.json` (`setup`, `guide`).
  */
 const contribution: HomeContribution = {
     id: "carRental",
@@ -62,20 +62,40 @@ const contribution: HomeContribution = {
             },
         ];
     },
-    // Sidebar links, shown from wherever the person is; the tour then ends at the last one's page help. A stop the
-    // person may not read is left out, so the tour never ends on a page they cannot open.
-    getTour: ({resolveLanguageKey: t}) => ([
-        ["counter", "rentalreservations"],
-        ["planner", "rentalreservations"],
-        ["reservations", "rentalreservations"],
-        ["vehicles", "vehicles"],
-    ] as const).map(([page, accessModel]) => ({
-        target: `nav:/carRental/${page}`,
-        accessModel,
-        // Named as the sidebar names them.
-        title: t(`menus.carRental.${page}.title`),
-        text: t(`menus.carRental.guide.tour.${page}`),
-    })),
+    // Every page of the module, desk first, each explained by its own ⓘ help (D180); a page the person may not read is
+    // left out. The settings pages share one help, so the tour opens the first of them.
+    getTour: ({resolveLanguageKey: t}) => [
+        {
+            target: "page.help",
+            to: "/carRental/counter",
+            accessModel: "rentalreservations",
+            title: t("menus.carRental.guide.tour.introTitle"),
+            text: t("menus.carRental.guide.tour.introText"),
+        },
+        ...([
+            ["/carRental/counter", "rentalreservations"],
+            ["/carRental/planner", "rentalreservations"],
+            ["/carRental/reservations", "rentalreservations"],
+            ["/carRental/vehicles", "vehicles"],
+            ["/carRental/blocks", "vehicleblocks"],
+            ["/carRental/maintenance", "vehiclemaintenances"],
+            ["/carRental/damages", "vehicledamages"],
+            ["/carRental/insurance", "vehicleinsurances"],
+            ["/carRental/documents", "vehicledocuments"],
+            ["/carRental/fines", "vehiclefines"],
+            ["/carRental/transfers", "vehicletransfers"],
+            ["/carRental/businessAccounts", "rentalbusinessaccounts"],
+            ["/carRental/subscriptions", "rentalsubscriptions"],
+            ["/carRental/reviews", "rentalreviews"],
+            ["/carRental/denyList", "rentaldenyentries"],
+            ["/carRental/reports", "rentalreservations"],
+            ["/tenancy/systemSettings/carRentalConfig/booking", "carrentalconfigs"],
+            ["/tenancy/systemSettings/vehicleCategories", "vehiclecategories"],
+            ["/tenancy/systemSettings/rentalExtras", "rentalextras"],
+            ["/tenancy/systemSettings/rentalLocations", "rentallocations"],
+            ["/tenancy/systemSettings/rentalPromoCodes", "rentalpromocodes"],
+        ] as const).map(([page, accessModel]) => ({page, accessModel})),
+    ],
 };
 
 export default contribution;

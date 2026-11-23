@@ -91,6 +91,23 @@
     "title": "Einstellungen Autovermietung",
     "description": "Gilt für diese Autovermietung."
   },
+  "help": {
+    "ariaLabel": "Über die Einstellungen der Autovermietung",
+    "title": "Über die Einstellungen der Autovermietung",
+    "overview": "Die Regeln Ihrer Vermietung, auf fünf Seiten. Jede Seite speichert für sich und gilt ab dann für jede Buchung.",
+    "sections": [
+      {
+        "title": "Die fünf Seiten",
+        "items": [
+          "Onlinebuchung: ob Ihre Website Buchungen annimmt und Sie im Portal zeigt, wie weit im Voraus und wie lange gebucht werden kann, die Pause zwischen zwei Mieten und ob ein Konto nötig ist.",
+          "Zahlung und Stornierung: wann Kunden zahlen (online, bei der Abholung oder nach Wahl), Währung und MWST, die Reservierung während einer Onlinezahlung, die Frist für kostenlose Stornierung und die Gebühr für späte Stornierung.",
+          "Gebühren und Zuschläge: Zusatz- und Junglenker, Rückgabe an einem anderen Standort, verspätete Rückgabe, fehlender Treibstoff, Betanken, Reinigung, Rauchen und die Bearbeitungsgebühr für Bussen.",
+          "Mietbedingungen: die Bedingungen, die Kunden bei der Buchung annehmen. Geben Sie jedem neuen Text eine Version, damit jede Buchung die Bedingungen behält, unter denen sie gemacht wurde.",
+          "Hinweise ans Team: wer in Ihrem Team über neue Buchungen informiert wird."
+        ]
+      }
+    ]
+  },
   "formButtons": {
     "cancel": "Abbrechen",
     "submit": "Speichern"

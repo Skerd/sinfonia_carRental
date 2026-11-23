@@ -29,10 +29,8 @@
       "vehicleStatusTitle": "Fahrzeugstatus",
       "vehicleStatusText": "Nur aktive Autos werden vermietet. Ändern Sie den Status, wenn ein Auto in die Werkstatt kommt oder die Flotte verlässt.",
       "tour": {
-        "counter": "Der Schalter für heute: Autos, die hinausgehen, und Autos, die zurückkommen. Hier übergeben und zurücknehmen.",
-        "planner": "Alle Autos auf einer Zeitachse, mit ihren Buchungen und Sperren. Sehen Sie auf einen Blick, welche Autos frei sind.",
-        "reservations": "Jede Buchung, von Ihrer Website oder von Ihrem Team erfasst. Ändern oder stornieren Sie sie über ihr Menü.",
-        "vehicles": "Ihre Autos mit Kategorie, Heimstandort und Status. Nur aktive Autos werden vermietet."
+        "introTitle": "Ihre Autovermietung",
+        "introText": "Dieser Teil des Panels führt Ihre Vermietung: den Schalter, den Planer und die Buchungen, die Flotte und ihren Unterhalt, Ihre Kunden und Ihre Regeln. Als Nächstes öffnet die Tour jede Seite und erklärt sie. Das ⓘ neben dem Seitentitel zeigt dieselbe Hilfe jederzeit."
       }
     },
     "title": "Autovermietung",

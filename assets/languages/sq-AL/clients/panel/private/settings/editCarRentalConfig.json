@@ -91,6 +91,23 @@
     "title": "Cilësimet e qirasë së makinave",
     "description": "Vlen për këtë kompani qiraje."
   },
+  "help": {
+    "ariaLabel": "Rreth cilësimeve të qirasë",
+    "title": "Rreth cilësimeve të qirasë",
+    "overview": "Rregullat e qirasë suaj, në pesë faqe. Çdo faqe ruhet më vete dhe vlen për çdo rezervim që nga ai moment.",
+    "sections": [
+      {
+        "title": "Pesë faqet",
+        "items": [
+          "Rezervimi online: nëse faqja juaj pranon rezervime dhe ju shfaq në portal, sa kohë përpara dhe për sa kohë mund të rezervohet, koha mes dy qirave, dhe nëse klientët duhet të kenë llogari.",
+          "Pagesa dhe anulimi: kur paguan klienti (online, në marrje ose sipas zgjedhjes së tij), monedha dhe TVSH-ja, mbajtja e makinës ndërsa dikush paguan online, dhe afati i anulimit falas me tarifën e anulimit të vonë.",
+          "Tarifat: shoferët shtesë dhe të rinj, kthimi në një vend tjetër, kthimi me vonesë, karburanti që mungon, mbushja, pastrimi, duhanpirja, dhe tarifa administrative për gjobat e trafikut.",
+          "Kushtet e qirasë: kushtet që klienti pranon kur rezervon. Jepini çdo teksti të ri një version, që çdo rezervim të ruajë kushtet me të cilat u bë.",
+          "Njoftimet për stafin: kush nga ekipi juaj njoftohet për rezervimet e reja."
+        ]
+      }
+    ]
+  },
   "formButtons": {
     "cancel": "Anulo",
     "submit": "Ruaj"

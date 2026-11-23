@@ -29,10 +29,8 @@
       "vehicleStatusTitle": "Statut de la voiture",
       "vehicleStatusText": "Seules les voitures actives sont louées. Changez le statut quand une voiture part au garage ou quitte votre flotte.",
       "tour": {
-        "counter": "Le comptoir du jour : les voitures qui partent et celles qui reviennent. Remettez-les et reprenez-les ici.",
-        "planner": "Toutes les voitures sur une même frise, avec leurs réservations et leurs blocages. Voyez d'un coup d'œil lesquelles sont libres.",
-        "reservations": "Chaque réservation, depuis votre site ou saisie par votre équipe. Modifiez-la ou annulez-la depuis son menu.",
-        "vehicles": "Vos voitures, avec leur catégorie, leur site de rattachement et leur statut. Seules les voitures actives sont louées."
+        "introTitle": "Votre location de voitures",
+        "introText": "Cette partie du panneau fait tourner votre agence : le comptoir, le planning et les réservations, la flotte et son entretien, vos clients et vos règles. La visite ouvre maintenant chaque page et l'explique. Le ⓘ à côté du titre d'une page affiche la même aide à tout moment."
       }
     },
     "title": "Location de voitures",

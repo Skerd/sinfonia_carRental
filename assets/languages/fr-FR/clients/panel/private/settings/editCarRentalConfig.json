@@ -91,6 +91,23 @@
     "title": "Paramètres de location",
     "description": "S'applique à cette agence."
   },
+  "help": {
+    "ariaLabel": "À propos des paramètres de location",
+    "title": "À propos des paramètres de location",
+    "overview": "Les règles de votre agence, sur cinq pages. Chaque page s'enregistre seule et s'applique à chaque réservation à partir de là.",
+    "sections": [
+      {
+        "title": "Les cinq pages",
+        "items": [
+          "Réservation en ligne : si votre site prend des réservations et vous affiche sur le portail, combien de temps à l'avance et pour combien de temps on peut réserver, le délai entre deux locations, et si un compte est nécessaire.",
+          "Paiement et annulation : quand le client paie (en ligne, au retrait ou à son choix), la devise et la TVA, le blocage pendant un paiement en ligne, le délai d'annulation gratuite et les frais d'annulation tardive.",
+          "Frais et suppléments : conducteurs additionnels et jeunes conducteurs, retour dans une autre agence, retard, carburant manquant, plein, nettoyage, tabac et frais de dossier pour les amendes.",
+          "Conditions de location : les conditions que le client accepte en réservant. Donnez une version à chaque nouveau texte, pour que chaque réservation garde les conditions sous lesquelles elle a été faite.",
+          "Alertes au personnel : qui, dans votre équipe, est prévenu des nouvelles réservations."
+        ]
+      }
+    ]
+  },
   "formButtons": {
     "cancel": "Annuler",
     "submit": "Enregistrer"

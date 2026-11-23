@@ -91,6 +91,23 @@
     "title": "Impostazioni noleggio auto",
     "description": "Vale per questo noleggio."
   },
+  "help": {
+    "ariaLabel": "Informazioni sulle impostazioni del noleggio",
+    "title": "Informazioni sulle impostazioni del noleggio",
+    "overview": "Le regole del tuo noleggio, su cinque pagine. Ogni pagina si salva da sola e vale per ogni prenotazione da quel momento.",
+    "sections": [
+      {
+        "title": "Le cinque pagine",
+        "items": [
+          "Prenotazione online: se il tuo sito accetta prenotazioni e ti mostra sul portale, con quanto anticipo e per quanto tempo si può prenotare, il tempo tra due noleggi e se serve un account.",
+          "Pagamento e cancellazione: quando paga il cliente (online, al ritiro o a sua scelta), valuta e IVA, il blocco mentre qualcuno paga online, la finestra di cancellazione gratuita e la penale per la cancellazione tardiva.",
+          "Tariffe e supplementi: conducenti aggiuntivi e giovani, riconsegna in un'altra sede, ritardi, carburante mancante, rifornimento, pulizia, fumo e la spesa amministrativa per le multe.",
+          "Condizioni di noleggio: le condizioni che il cliente accetta quando prenota. Dai una versione a ogni nuovo testo, così ogni prenotazione conserva le condizioni con cui è stata fatta.",
+          "Avvisi al personale: chi del tuo team viene avvisato delle nuove prenotazioni."
+        ]
+      }
+    ]
+  },
   "formButtons": {
     "cancel": "Annulla",
     "submit": "Salva"

@@ -29,10 +29,8 @@
       "vehicleStatusTitle": "Stato dell'auto",
       "vehicleStatusText": "Si noleggiano solo le auto attive. Cambia lo stato quando un'auto va in officina o lascia la flotta.",
       "tour": {
-        "counter": "Il banco di oggi: le auto in uscita e quelle in rientro. Consegnale e riprendile qui.",
-        "planner": "Tutte le auto su un'unica linea del tempo, con prenotazioni e blocchi. Vedi subito quali sono libere.",
-        "reservations": "Ogni prenotazione, dal tuo sito o inserita dal tuo team. Modificala o annullala dal suo menu.",
-        "vehicles": "Le tue auto, con categoria, sede di riferimento e stato. Si noleggiano solo le auto attive."
+        "introTitle": "Il tuo noleggio auto",
+        "introText": "Questa parte del pannello gestisce il tuo noleggio: il banco, il planner e le prenotazioni, la flotta e la sua manutenzione, i clienti e le tue regole. Ora il tour apre ogni pagina e la spiega. La ⓘ accanto al titolo di una pagina mostra lo stesso aiuto in qualsiasi momento."
       }
     },
     "title": "Noleggio auto",
