@@ -25,7 +25,8 @@ function Stars({rating, label}: {rating: number; label: string}) {
 function CategoryReviews({categoryId, resolveLanguageKey}: WithLanguageType & {categoryId: string}) {
     const {data} = useHttpRequest<RentalCategoryReviewsResponse>(REVIEWS_REQUEST, {category: categoryId, limit: 10}, categoryId ? 1 : 0);
     const found = data?.data;
-    if (!found || found.count === 0) return null;
+    // Nothing until the class has a review (an answer without a count has none either).
+    if (!found?.count) return null;
     const ratingLabel = (rating: number) => resolveLanguageKey("ratingLabel").replace("{rating}", String(rating));
 
     return (
