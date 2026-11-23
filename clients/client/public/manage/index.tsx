@@ -4,6 +4,7 @@ import {Link, useSearchParams} from "react-router-dom";
 import {loadStripe} from "@stripe/stripe-js";
 import {Elements} from "@stripe/react-stripe-js";
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
+import {usePortalTitle} from "@coreModule/clients/portal/shared/portalTitle.ts";
 import withLanguage, {
     WithLanguageType,
 } from "@coreModule/helpers/hocs/withLanguage.tsx";
@@ -140,6 +141,12 @@ function ManagePage({resolveLanguageKey}: WithLanguageType) {
         }),
     });
     const cancel = () => setCancelCount((count) => count + 1);
+    usePortalTitle(
+        !token || error ? resolveLanguageKey("linkInvalidTitle")
+            : !reservation ? undefined
+                : payment && stripePromise ? resolveLanguageKey("payTitle")
+                    : `${resolveLanguageKey("bookingNumber")} ${reservation.number}`,
+    );
 
     if (!token || error) {
         return (

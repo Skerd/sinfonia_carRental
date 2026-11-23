@@ -3,6 +3,7 @@ import {useEffect, useMemo, useRef, useState, type FormEvent} from "react";
 import {compose} from "redux";
 import {Link, useNavigate, useParams, useSearchParams} from "react-router-dom";
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
+import {usePortalTitle} from "@coreModule/clients/portal/shared/portalTitle.ts";
 import {loadStripe} from "@stripe/stripe-js";
 import {Elements} from "@stripe/react-stripe-js";
 import withLanguage, {
@@ -206,6 +207,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
             );
         },
     });
+    usePortalTitle(pendingPayment && stripePromise ? resolveLanguageKey("payTitle") : category?.name);
 
     if (!config) return null;
     if (!trip || !category || !pickupLocation || !returnLocation) {

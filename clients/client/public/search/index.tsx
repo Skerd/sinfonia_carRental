@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import {compose} from "redux";
 import {Link, useSearchParams} from "react-router-dom";
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
+import {usePortalTitle} from "@coreModule/clients/portal/shared/portalTitle.ts";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
@@ -29,6 +30,7 @@ function SearchPage({resolveLanguageKey}: WithLanguageType) {
     const search = useHttpRequest<RentalSearchResponse>(SEARCH_REQUEST, trip ?? {}, searchCount);
     const results = search.loading || search.error ? null : search.data?.data.results ?? null;
     const error = search.error ? search.error.message || search.error.error || String(resolveLanguageKey("searchFailed")) : null;
+    usePortalTitle(resolveLanguageKey("resultsTitle"));
 
     return (
         <div className="flex flex-col gap-10">

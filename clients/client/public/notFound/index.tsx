@@ -1,11 +1,13 @@
 import {compose} from "redux";
 import {Link} from "react-router-dom";
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
+import {usePortalTitle} from "@coreModule/clients/portal/shared/portalTitle.ts";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 
 function NotFoundPage({resolveLanguageKey}: WithLanguageType) {
     const base = useSectionBase();
+    usePortalTitle(resolveLanguageKey("title"));
     return (
         <div className="py-20 text-center">
             <p className="font-display text-sm font-semibold uppercase tracking-widest text-muted-foreground">404</p>
