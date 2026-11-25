@@ -26,6 +26,30 @@
       }
     ]
   },
+  "helpAtDesk": {
+    "ariaLabel": "Rreth rezervimeve",
+    "title": "Rreth rezervimeve",
+    "overview": "Çdo rezervim, nga faqja ose i krijuar këtu. Një rezervim është i fiksuar pasi krijohet: ndryshimet bëhen përmes veprimeve në menunë e tij.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Dorëzimi regjistron kilometrat dhe karburantin kur klienti niset; kthimi i regjistron përsëri dhe shton tarifat shtesë.",
+          "Anulimi kthen atë që është paguar, minus tarifën e anulimit nëse zgjidhni ta aplikoni. Rezervimet që prisnin pagesën online dhe skaduan shfaqen si të skaduara.",
+          "Oraret shfaqen në zonën kohore të vendit të marrjes te vetë rezervimi."
+        ]
+      },
+      {
+        "title": "Shoferët, depozita dhe kthimi",
+        "items": [
+          "Çdo shofer duhet të ketë numrin e patentës, ende të vlefshme ditën e kthimit. Pa të, makina nuk niset.",
+          "Merrni depozitën me para në dorë në sportel para dorëzimit dhe mbylleni kur makina kthehet. Bllokimi në kartë dhe karta e ruajtur vijnë së shpejti.",
+          "Dorëzimi dërgon kontratën me email. E shkarkoni përsëri nga menuja e rezervimit.",
+          "Kthimi propozon tarifat e karburantit, vonesës dhe pastrimit nga matjet. Ndryshojini para se të konfirmoni. Një dëmtim i ri regjistrohet te makina."
+        ]
+      }
+    ]
+  },
   "create": "Shto rezervim",
   "noData": "Ende pa rezervime",
   "failTitle": "Rezervimet nuk u ngarkuan",

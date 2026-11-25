@@ -3,9 +3,11 @@
   "title": "Kaution nehmen",
   "descriptionHold": "Der Betrag wird auf der Karte reserviert und nach der Rückgabe freigegeben oder belastet.",
   "descriptionSaveCard": "Diese Miete dauert länger als eine Woche, daher wird die Karte gespeichert statt reserviert. Sie kann nach der Rückgabe belastet werden.",
+  "descriptionCash": "Nehmen Sie die Kaution bar am Schalter entgegen. Nach der Rückgabe wird sie zurückgegeben oder für noch Geschuldetes einbehalten.",
   "amountLabel": "Kaution",
   "method": {
     "card": "Karte",
+    "cardSoon": "Karte · Demnächst",
     "cash": "Bar"
   },
   "confirmCash": "Barkaution erfassen",

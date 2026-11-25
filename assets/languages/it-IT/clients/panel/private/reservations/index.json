@@ -26,6 +26,30 @@
       }
     ]
   },
+  "helpAtDesk": {
+    "ariaLabel": "Informazioni sulle prenotazioni",
+    "title": "Informazioni sulle prenotazioni",
+    "overview": "Ogni prenotazione, dal sito web o creata qui. Una prenotazione è fissa una volta creata: le modifiche passano dalle azioni del suo menu.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "La consegna registra chilometri e carburante quando il cliente parte; la riconsegna li registra di nuovo e aggiunge eventuali addebiti extra.",
+          "L'annullamento rimborsa quanto pagato, meno la penale di cancellazione se scegli di applicarla. Le prenotazioni in attesa di pagamento online e scadute risultano come scadute.",
+          "Gli orari sono mostrati nel fuso orario del luogo di ritiro nella prenotazione stessa."
+        ]
+      },
+      {
+        "title": "Conducenti, deposito e riconsegna",
+        "items": [
+          "Ogni conducente deve avere un numero di patente ancora valido il giorno della riconsegna. Senza, l'auto non parte.",
+          "Prendi il deposito in contanti al banco prima della consegna e chiudilo quando l'auto torna. Blocco sulla carta e carta salvata arrivano prossimamente.",
+          "La consegna invia il contratto per e-mail. Lo scarichi di nuovo dal menu della prenotazione.",
+          "«Ritira» propone i costi di carburante, ritardo e pulizia dai rilievi. Modificali prima di confermare. Un danno trovato in quel momento viene registrato sull'auto."
+        ]
+      }
+    ]
+  },
   "create": "Aggiungi prenotazione",
   "noData": "Nessuna prenotazione",
   "failTitle": "Impossibile caricare le prenotazioni",

@@ -9,6 +9,7 @@
   "chargeCustomer": {
     "title": "Charge the customer",
     "description": "Adds the fine and the handling fee to booking {booking} of {driver} and emails them. A saved card is charged now.",
+    "descriptionAtDesk": "Adds the fine and the handling fee to booking {booking} of {driver} and emails them. They pay it at the desk.",
     "confirm": "Charge"
   },
   "nominateDriver": {

@@ -3,9 +3,11 @@
   "title": "Merr depozitën",
   "descriptionHold": "Shuma bllokohet në kartën e klientit dhe lirohet ose faturohet pas kthimit.",
   "descriptionSaveCard": "Kjo qira zgjat më shumë se një javë, ndaj karta ruhet në vend që të bllokohet. Mund të faturohet pas kthimit.",
+  "descriptionCash": "Merrni depozitën me para në dorë në sportel. Pas kthimit kthehet ose mbahet për atë që ende detyrohet.",
   "amountLabel": "Depozita",
   "method": {
     "card": "Kartë",
+    "cardSoon": "Kartë · Së shpejti",
     "cash": "Para në dorë"
   },
   "confirmCash": "Regjistro depozitën në para",

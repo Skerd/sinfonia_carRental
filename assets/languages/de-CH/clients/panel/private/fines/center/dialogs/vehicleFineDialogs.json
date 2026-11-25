@@ -9,6 +9,7 @@
   "chargeCustomer": {
     "title": "Kundschaft belasten",
     "description": "Fügt Busse und Bearbeitungsgebühr der Buchung {booking} von {driver} hinzu und informiert per E-Mail. Eine gespeicherte Karte wird sofort belastet.",
+    "descriptionAtDesk": "Fügt Busse und Bearbeitungsgebühr der Buchung {booking} von {driver} hinzu und informiert per E-Mail. Bezahlt wird am Schalter.",
     "confirm": "Belasten"
   },
   "nominateDriver": {

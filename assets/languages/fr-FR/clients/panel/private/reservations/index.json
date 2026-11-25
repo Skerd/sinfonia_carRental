@@ -26,6 +26,30 @@
       }
     ]
   },
+  "helpAtDesk": {
+    "ariaLabel": "À propos des réservations",
+    "title": "À propos des réservations",
+    "overview": "Chaque réservation, faite sur le site web ou ici. Une réservation est figée une fois faite : les changements passent par les actions de son menu.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "La remise enregistre le kilométrage et le carburant au départ du client ; le retour les enregistre à nouveau et ajoute les éventuels frais supplémentaires.",
+          "L'annulation rembourse ce qui a été payé, moins les frais d'annulation si vous choisissez de les appliquer. Les réservations qui attendaient un paiement en ligne et ont expiré apparaissent comme expirées.",
+          "Les heures sont affichées dans le fuseau horaire du lieu de prise en charge sur la réservation elle-même."
+        ]
+      },
+      {
+        "title": "Conducteurs, caution et retour",
+        "items": [
+          "Chaque conducteur doit avoir un numéro de permis encore valable le jour du retour. Sans cela, le véhicule ne part pas.",
+          "Encaissez la caution en espèces au comptoir avant la remise et réglez-la au retour. Le blocage et l'enregistrement de carte arrivent bientôt.",
+          "La remise envoie le contrat par e-mail. Téléchargez-le à nouveau dans le menu de la réservation.",
+          "La reprise propose les frais de carburant, de retard et de nettoyage d'après les relevés. Modifiez-les avant de confirmer. Un dommage constaté à ce moment est enregistré sur le véhicule."
+        ]
+      }
+    ]
+  },
   "create": "Ajouter une réservation",
   "noData": "Aucune réservation pour l'instant",
   "failTitle": "Impossible de charger les réservations",

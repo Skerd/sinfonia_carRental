@@ -11,6 +11,7 @@ import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import VehicleFineCard from "./center/cardView/vehicleFineCard.tsx";
 import VehicleFineSheetView from "./center/sheetView/vehicleFineSheetView.tsx";
 import {useVehicleScopedList} from "@carRentalModule/clients/panel/vehicleScope.ts";
+import {CARD_PAYMENTS_AVAILABLE} from "armonia/src/modules/finance/helpers/cardPaymentAvailability.ts";
 
 export function vehicleFineEditPath(row: {_id: string}) {
     return `/carRental/fines/edit?vehicleFineId=${row._id}`;
@@ -47,7 +48,7 @@ function AllVehicleFines({resolveLanguageKey}: WithLanguageType) {
             accessModel="vehiclefines"
             tableConfigKey="vehiclefines"
             header={(ctx) => (
-                <EntityListHeader ctx={ctx} title={scope.headerTitle}>
+                <EntityListHeader ctx={ctx} title={scope.headerTitle} helpKey={CARD_PAYMENTS_AVAILABLE ? undefined : "helpAtDesk"}>
                     <EntityListCreateButton ctx={ctx} path={scope.createPath} icon={<IconPlus />} />
                 </EntityListHeader>
             )}

@@ -3,9 +3,11 @@
   "title": "Prendre la caution",
   "descriptionHold": "Le montant est bloqué sur la carte du client, puis libéré ou débité après le retour.",
   "descriptionSaveCard": "Cette location dure plus d'une semaine : la carte est enregistrée au lieu d'être bloquée. Elle pourra être débitée après le retour.",
+  "descriptionCash": "Encaissez la caution en espèces au comptoir. Après le retour, elle est rendue ou conservée pour ce qui reste dû.",
   "amountLabel": "Caution",
   "method": {
     "card": "Carte",
+    "cardSoon": "Carte · Bientôt",
     "cash": "Espèces"
   },
   "confirmCash": "Enregistrer la caution en espèces",

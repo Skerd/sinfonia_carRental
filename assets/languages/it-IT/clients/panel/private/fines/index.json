@@ -18,6 +18,22 @@
       }
     ]
   },
+  "helpAtDesk": {
+    "ariaLabel": "Informazioni sulle multe",
+    "title": "Informazioni sulle multe",
+    "overview": "Inserisci una multa quando arriva l'avviso. La prenotazione che aveva il veicolo in quel momento viene trovata da sola, con il conducente principale; altrimenti il trasferimento del personale.",
+    "sections": [
+      {
+        "title": "Scegli una strada",
+        "items": [
+          "Comunica il conducente: invia la lettera all'autorità; paga il conducente e al cliente si addebita solo la commissione.",
+          "Addebita al cliente: multa e commissione vanno sulla prenotazione. Dopo la riconsegna hanno una fattura propria, che il cliente paga al banco.",
+          "«Registra il pagamento» quando l'azienda paga l'autorità. Senza prenotazione da addebitare, la multa resta un costo dell'azienda.",
+          "Contesta una multa; annullala se l'autorità vi rinuncia. Il personale viene avvisato una settimana prima della scadenza di una multa non pagata."
+        ]
+      }
+    ]
+  },
   "create": "Aggiungi multa",
   "noData": "Ancora nessuna multa",
   "failTitle": "Impossibile caricare le multe",

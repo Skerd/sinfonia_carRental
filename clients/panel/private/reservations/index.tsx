@@ -15,6 +15,7 @@ import RentalReservationDialogs from "./center/dialogs/rentalReservationDialogs.
 import {usePromoteScopeToQuickFilters} from "@coreModule/helpers/filter/usePromoteScopeToQuickFilters.ts";
 import type {ScopeQuickFilter} from "@coreModule/helpers/filter/filterUrl.ts";
 import {useVehicleScopedList} from "@carRentalModule/clients/panel/vehicleScope.ts";
+import {CARD_PAYMENTS_AVAILABLE} from "armonia/src/modules/finance/helpers/cardPaymentAvailability.ts";
 
 /** A car's records link carries `categoryId` until the category filter owns it. */
 const RESERVATION_CATEGORY_SCOPE: readonly ScopeQuickFilter[] = [
@@ -71,7 +72,7 @@ function AllRentalReservations({resolveLanguageKey}: WithLanguageType) {
             accessModel="rentalreservations"
             tableConfigKey="rentalreservations"
             header={(ctx) => (
-                <EntityListHeader ctx={ctx} title={scope.headerTitle}>
+                <EntityListHeader ctx={ctx} title={scope.headerTitle} helpKey={CARD_PAYMENTS_AVAILABLE ? undefined : "helpAtDesk"}>
                     <EntityListCreateButton ctx={ctx} path={scope.createPath} icon={<IconPlus />} />
                 </EntityListHeader>
             )}

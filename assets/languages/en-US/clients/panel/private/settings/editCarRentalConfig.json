@@ -43,8 +43,10 @@
     "oneWayFeePlaceholder": "",
     "paymentPolicy": {
       "customer_choice": "Customer chooses",
+      "customer_choice_soon": "Customer chooses · Coming soon",
       "pay_at_pickup": "At pickup",
-      "prepay_online": "Online when booking"
+      "prepay_online": "Online when booking",
+      "prepay_online_soon": "Online when booking · Coming soon"
     },
     "paymentPolicyLabel": "How customers pay",
     "paymentPolicyPlaceholder": "Select payment",

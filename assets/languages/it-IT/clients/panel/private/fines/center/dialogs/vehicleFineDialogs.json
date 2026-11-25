@@ -9,6 +9,7 @@
   "chargeCustomer": {
     "title": "Addebita al cliente",
     "description": "Aggiunge multa e spese di gestione alla prenotazione {booking} di {driver} e lo avvisa per e-mail. Una carta salvata viene addebitata subito.",
+    "descriptionAtDesk": "Aggiunge multa e spese di gestione alla prenotazione {booking} di {driver} e lo avvisa per e-mail. Si paga al banco.",
     "confirm": "Addebita"
   },
   "nominateDriver": {

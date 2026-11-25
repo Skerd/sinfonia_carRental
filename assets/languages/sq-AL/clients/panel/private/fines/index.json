@@ -18,6 +18,22 @@
       }
     ]
   },
+  "helpAtDesk": {
+    "ariaLabel": "Rreth gjobave",
+    "title": "Rreth gjobave",
+    "overview": "Regjistroni gjobën kur vjen njoftimi. Rezervimi që kishte automjetin në atë kohë gjendet vetë, me shoferin kryesor; përndryshe transferimi i stafit.",
+    "sections": [
+      {
+        "title": "Zgjidhni një mënyrë",
+        "items": [
+          "Deklaroni shoferin: dërgojini autoritetit letrën e shoferit; paguan shoferi dhe klientit i faturohet vetëm tarifa e trajtimit.",
+          "Faturojini klientit: gjoba dhe tarifa shkojnë te rezervimi. Pas kthimit marrin faturë të veçantë, që klienti e paguan në sportel.",
+          "«Regjistro pagesën» kur kompania paguan autoritetin. Pa rezervim për ta faturuar, gjoba mbetet kosto e kompanisë.",
+          "Kundërshtoni një gjobë; anulojeni nëse autoriteti e heq. Stafi paralajmërohet një javë para afatit të një gjobe të papaguar."
+        ]
+      }
+    ]
+  },
   "create": "Shto gjobë",
   "noData": "Ende asnjë gjobë",
   "failTitle": "Gjobat nuk u ngarkuan",

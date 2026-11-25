@@ -39,6 +39,7 @@
     "paymentChoice": {
       "pay_at_pickup": "Bei Abholung",
       "online": "Online",
+      "online_soon": "Online · Demnächst",
       "on_account": "Auf Rechnung"
     },
     "paymentChoiceLabel": "Zahlung",

@@ -26,6 +26,30 @@
       }
     ]
   },
+  "helpAtDesk": {
+    "ariaLabel": "Über Reservierungen",
+    "title": "Über Reservierungen",
+    "overview": "Jede Buchung, ob über die Website oder hier erfasst. Eine Buchung ist nach dem Erfassen fest: Änderungen erfolgen über die Aktionen in ihrem Menü.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Bei der Übergabe werden Kilometerstand und Tankfüllung erfasst, wenn der Kunde losfährt; bei der Rückgabe werden sie erneut erfasst und allfällige Zusatzkosten hinzugefügt.",
+          "Beim Stornieren wird das Bezahlte zurückerstattet, abzüglich der Stornogebühr, falls Sie diese anwenden. Buchungen, die auf eine Online-Zahlung gewartet haben und abgelaufen sind, erscheinen als abgelaufen.",
+          "Die Zeiten werden in der Buchung selbst in der Zeitzone des Abholorts angezeigt."
+        ]
+      },
+      {
+        "title": "Fahrer/innen, Kaution und Rückgabe",
+        "items": [
+          "Jede Fahrerin und jeder Fahrer braucht eine Führerausweisnummer, die am Rückgabetag noch gültig ist. Ohne sie darf das Fahrzeug nicht weg.",
+          "Nehmen Sie die Kaution vor der Übergabe bar am Schalter entgegen und rechnen Sie sie ab, wenn das Fahrzeug zurückkommt. Kartenreservierungen und gespeicherte Karten folgen demnächst.",
+          "Die Übergabe sendet den Mietvertrag per E-Mail. Im Menü der Buchung können Sie ihn erneut herunterladen.",
+          "Die Rücknahme schlägt Treibstoff-, Verspätungs- und Reinigungskosten aus den Angaben vor. Ändern Sie sie vor dem Bestätigen. Ein neuer Schaden wird am Fahrzeug erfasst."
+        ]
+      }
+    ]
+  },
   "create": "Reservierung hinzufügen",
   "noData": "Noch keine Reservierungen",
   "failTitle": "Reservierungen konnten nicht geladen werden",

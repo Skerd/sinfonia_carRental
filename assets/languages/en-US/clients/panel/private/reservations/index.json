@@ -26,6 +26,30 @@
       }
     ]
   },
+  "helpAtDesk": {
+    "ariaLabel": "About reservations",
+    "title": "About reservations",
+    "overview": "Every booking, from the website or made here. A booking is fixed once made: changes go through the actions in its menu.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Hand over records the odometer and fuel when the customer drives off; Return records them again and adds any extra charges.",
+          "Cancel refunds what was paid, minus the cancellation fee if you choose to apply it. Bookings that waited for online payment and timed out show as expired.",
+          "Times are shown in the pickup location's time zone on the booking itself."
+        ]
+      },
+      {
+        "title": "Drivers, deposit and return",
+        "items": [
+          "Every driver needs a license number that is still valid on the return day. The car cannot leave without it.",
+          "Take the deposit in cash at the desk before handover, and settle it when the car comes back. Card holds and saved cards are coming soon.",
+          "Hand over emails the rental agreement. Download it again from the booking menu.",
+          "Take back suggests fuel, late and cleaning charges from the readings. Change them before you confirm. Damage found then is recorded on the car."
+        ]
+      }
+    ]
+  },
   "create": "Add reservation",
   "noData": "No reservations yet",
   "failTitle": "Failed to load reservations",

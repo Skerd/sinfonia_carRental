@@ -43,8 +43,10 @@
     "oneWayFeePlaceholder": "",
     "paymentPolicy": {
       "customer_choice": "Kunde wählt",
+      "customer_choice_soon": "Kunde wählt · Demnächst",
       "pay_at_pickup": "Bei Abholung",
-      "prepay_online": "Online bei der Buchung"
+      "prepay_online": "Online bei der Buchung",
+      "prepay_online_soon": "Online bei der Buchung · Demnächst"
     },
     "paymentPolicyLabel": "Wie Kunden bezahlen",
     "paymentPolicyPlaceholder": "Zahlungsart auswählen",

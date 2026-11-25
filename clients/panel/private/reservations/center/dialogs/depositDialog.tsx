@@ -9,6 +9,7 @@ import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHtt
 import type {RentalDepositResponse, RentalReservation} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.dto.ts";
 import type {TakeRentalDepositFormType} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.schema-def.ts";
 import {RENTAL_CARD_HOLD_MAX_DAYS} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.constants.ts";
+import {CARD_PAYMENTS_AVAILABLE} from "armonia/src/modules/finance/helpers/cardPaymentAvailability.ts";
 import ReservationActionDialogShell from "./reservationActionDialogShell.tsx";
 import DepositCardForm from "./depositCardForm.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
@@ -26,10 +27,11 @@ type Props = WithLanguageType & WithAxiosType<{data: RentalDepositResponse}, Tak
 /**
  * Takes the deposit at pickup. Cash is held at once. A card is entered by the
  * customer here: a hold for rentals of up to a week, otherwise a card saved for
- * later charges.
+ * later charges. While card payments are coming soon (D190) the card shows it and
+ * only cash is taken.
  */
 function DepositDialog({reservation, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
-    const [method, setMethod] = useState<"card" | "cash">("card");
+    const [method, setMethod] = useState<"card" | "cash">(CARD_PAYMENTS_AVAILABLE ? "card" : "cash");
     const [amount, setAmount] = useState(String(reservation.pricing.depositAmount || ""));
     const [card, setCard] = useState<NonNullable<RentalDepositResponse["payment"]> | null>(null);
     const [cardError, setCardError] = useState<string | null>(null);
@@ -80,7 +82,7 @@ function DepositDialog({reservation, onClose, onUpdated, resolveLanguageKey, onF
     return (
         <ReservationActionDialogShell
             title={resolveLanguageKey("title")}
-            description={resolveLanguageKey(savesCard ? "descriptionSaveCard" : "descriptionHold")}
+            description={resolveLanguageKey(!CARD_PAYMENTS_AVAILABLE ? "descriptionCash" : savesCard ? "descriptionSaveCard" : "descriptionHold")}
             confirmLabel={resolveLanguageKey(method === "cash" ? "confirmCash" : "continueCard")}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}
@@ -99,12 +101,15 @@ function DepositDialog({reservation, onClose, onUpdated, resolveLanguageKey, onF
                 onValueChange={(value) => setMethod(value === "cash" ? "cash" : "card")}
                 disabled={loading}
             >
-                {(["card", "cash"] as const).map((choice) => (
-                    <label key={choice} className="flex items-center gap-2 text-sm">
-                        <RadioGroupItem value={choice} />
-                        {resolveLanguageKey(`method.${choice}`)}
-                    </label>
-                ))}
+                {(["card", "cash"] as const).map((choice) => {
+                    const soon = choice === "card" && !CARD_PAYMENTS_AVAILABLE;
+                    return (
+                        <label key={choice} className="flex items-center gap-2 text-sm">
+                            <RadioGroupItem value={choice} disabled={soon} />
+                            {resolveLanguageKey(soon ? "method.cardSoon" : `method.${choice}`)}
+                        </label>
+                    );
+                })}
             </RadioGroup>
         </ReservationActionDialogShell>
     );

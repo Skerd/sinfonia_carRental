@@ -18,6 +18,22 @@
       }
     ]
   },
+  "helpAtDesk": {
+    "ariaLabel": "Über Bussen",
+    "title": "Über Bussen",
+    "overview": "Erfassen Sie eine Busse, wenn die Mitteilung eintrifft. Die Buchung, die das Fahrzeug zu der Zeit hatte, wird mit ihrem Hauptfahrer automatisch gefunden; sonst die Überführung durch Mitarbeitende.",
+    "sections": [
+      {
+        "title": "Wählen Sie einen Weg",
+        "items": [
+          "Fahrer/in melden: Senden Sie das Fahrerschreiben an die Behörde; die Person bezahlt selbst, die Kundschaft trägt nur die Bearbeitungsgebühr.",
+          "Kundschaft belasten: Busse und Bearbeitungsgebühr kommen auf die Buchung. Nach der Rückgabe erhalten diese eine eigene Rechnung, die die Kundschaft am Schalter bezahlt.",
+          "«Zahlung erfassen», wenn die Firma die Behörde bezahlt. Ohne Buchung zum Belasten bleibt die Busse als Kosten der Firma.",
+          "Bestreiten Sie eine angefochtene Busse; annullieren Sie sie, wenn die Behörde sie fallen lässt. Mitarbeitende werden eine Woche vor Fälligkeit einer unbezahlten Busse gewarnt."
+        ]
+      }
+    ]
+  },
   "create": "Busse hinzufügen",
   "noData": "Noch keine Bussen",
   "failTitle": "Bussen konnten nicht geladen werden",

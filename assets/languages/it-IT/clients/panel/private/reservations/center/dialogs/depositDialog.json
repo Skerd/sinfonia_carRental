@@ -3,9 +3,11 @@
   "title": "Prendi il deposito",
   "descriptionHold": "L'importo viene bloccato sulla carta del cliente e sbloccato o addebitato dopo la riconsegna.",
   "descriptionSaveCard": "Questo noleggio dura più di una settimana, quindi la carta viene salvata invece di bloccata. Potrà essere addebitata dopo la riconsegna.",
+  "descriptionCash": "Prendi il deposito in contanti al banco. Dopo la riconsegna viene restituito o trattenuto per quanto ancora dovuto.",
   "amountLabel": "Deposito",
   "method": {
     "card": "Carta",
+    "cardSoon": "Carta · Prossimamente",
     "cash": "Contanti"
   },
   "confirmCash": "Registra deposito in contanti",

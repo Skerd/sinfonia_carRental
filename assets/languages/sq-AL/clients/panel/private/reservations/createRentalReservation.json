@@ -39,6 +39,7 @@
     "paymentChoice": {
       "pay_at_pickup": "Në marrje",
       "online": "Online",
+      "online_soon": "Online · Së shpejti",
       "on_account": "Në llogari"
     },
     "paymentChoiceLabel": "Pagesa",

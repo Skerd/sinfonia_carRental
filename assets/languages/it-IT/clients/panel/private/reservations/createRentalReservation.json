@@ -39,6 +39,7 @@
     "paymentChoice": {
       "pay_at_pickup": "Al ritiro",
       "online": "Online",
+      "online_soon": "Online · Prossimamente",
       "on_account": "A conto"
     },
     "paymentChoiceLabel": "Pagamento",

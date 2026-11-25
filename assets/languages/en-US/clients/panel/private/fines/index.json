@@ -18,6 +18,22 @@
       }
     ]
   },
+  "helpAtDesk": {
+    "ariaLabel": "About traffic fines",
+    "title": "About traffic fines",
+    "overview": "Enter a fine when the notice arrives. The booking that had the car at that time is found by itself, with its main driver; if none, the staff transfer that had it.",
+    "sections": [
+      {
+        "title": "Choose one way",
+        "items": [
+          "Name the driver: send the driver letter to the authority; the driver pays, and the customer is charged only the handling fee.",
+          "Charge the customer: the fine and the handling fee go on the booking. After the return they get their own invoice, which the customer pays at the desk.",
+          "Record payment when the company pays the authority. With no booking to charge, the fine is kept as the company's cost.",
+          "Dispute a fine you contest; annul it if the authority drops it. Staff are warned a week before an unpaid fine is due."
+        ]
+      }
+    ]
+  },
   "create": "Add fine",
   "noData": "No fines yet",
   "failTitle": "Failed to load fines",

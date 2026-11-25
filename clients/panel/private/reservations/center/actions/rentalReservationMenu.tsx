@@ -5,6 +5,7 @@ import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
 import {DropdownMenuItem} from "@coreModule/components/ui/dropdown-menu.tsx";
 import {IconArrowBackUp, IconCalendarPlus, IconCash, IconCreditCard, IconFileTypePdf, IconId, IconKey, IconSwitchHorizontal, IconUserOff, IconX} from "@tabler/icons-react";
 import type {RentalReservation} from "armonia/src/modules/carRental/api/carRental/private/rentalReservation/rentalReservation.dto.ts";
+import {CARD_PAYMENTS_AVAILABLE} from "armonia/src/modules/finance/helpers/cardPaymentAvailability.ts";
 import {downloadAgreementPdf} from "./downloadAgreementPdf.ts";
 
 /** The lifecycle moves a reservation allows in its current state, for the row and sheet menus. */
@@ -42,7 +43,9 @@ function RentalReservationMenu({reservation, onAction, resolveLanguageKey}: Prop
             {canMove && ["held", "confirmed", "in_progress"].includes(status) && item("drivers", IconId)}
             {canTakePayment && (status === "confirmed" || status === "in_progress") && (!reservation.deposit || reservation.deposit.status === "failed")
                 && (reservation.pricing?.depositAmount ?? 0) > 0 && item("takeDeposit", IconCreditCard)}
-            {canTakePayment && (status === "in_progress" || status === "completed") && reservation.deposit?.status === "held" && item("settleDeposit", IconCreditCard)}
+            {/* A card deposit is settled through the gateway, which waits while card payments are coming soon (D190). */}
+            {canTakePayment && (status === "in_progress" || status === "completed") && reservation.deposit?.status === "held"
+                && (CARD_PAYMENTS_AVAILABLE || reservation.deposit.method === "cash") && item("settleDeposit", IconCreditCard)}
             {canMove && status === "confirmed" && item("handover", IconKey)}
             {canMove && status === "in_progress" && item("returnVehicle", IconArrowBackUp)}
             {canMove && (status === "confirmed" || status === "in_progress") && item("extend", IconCalendarPlus)}

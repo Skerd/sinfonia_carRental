@@ -9,6 +9,7 @@
   "chargeCustomer": {
     "title": "Facturer le client",
     "description": "Ajoute l'amende et les frais de dossier à la réservation {booking} de {driver} et l'informe par e-mail. Une carte enregistrée est débitée tout de suite.",
+    "descriptionAtDesk": "Ajoute l'amende et les frais de dossier à la réservation {booking} de {driver} et l'informe par e-mail. Le paiement se fait au comptoir.",
     "confirm": "Facturer"
   },
   "nominateDriver": {

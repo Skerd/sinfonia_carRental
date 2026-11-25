@@ -43,8 +43,10 @@
     "oneWayFeePlaceholder": "",
     "paymentPolicy": {
       "customer_choice": "Zgjedh klienti",
+      "customer_choice_soon": "Zgjedh klienti · Së shpejti",
       "pay_at_pickup": "Në marrje",
-      "prepay_online": "Online gjatë rezervimit"
+      "prepay_online": "Online gjatë rezervimit",
+      "prepay_online_soon": "Online gjatë rezervimit · Së shpejti"
     },
     "paymentPolicyLabel": "Si paguajnë klientët",
     "paymentPolicyPlaceholder": "Zgjidh pagesën",

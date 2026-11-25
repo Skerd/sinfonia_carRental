@@ -402,14 +402,15 @@ function ManagePage({resolveLanguageKey}: WithLanguageType) {
                                 className="w-32"
                             />
                         </div>
+                        {/* Without card payments online (D190) the difference is paid at the desk. */}
                         <Button
                             type="button"
                             disabled={busy || !returnDate}
                             onClick={() =>
-                                run("update", "extend", {token, returnDate, returnTime, pay: true})
+                                run("update", "extend", {token, returnDate, returnTime, pay: config?.onlinePaymentAvailable === true})
                             }
                         >
-                            {resolveLanguageKey("extendAndPay")}
+                            {resolveLanguageKey(config?.onlinePaymentAvailable ? "extendAndPay" : "extendPayAtDesk")}
                         </Button>
                     </section>
                 ) : null}

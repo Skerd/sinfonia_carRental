@@ -4,6 +4,7 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import withAxios, {WithAxiosType} from "@coreModule/helpers/hocs/withAxios.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import type {VehicleFine} from "armonia/src/modules/carRental/api/carRental/private/vehicleFine/vehicleFine.dto.ts";
+import {CARD_PAYMENTS_AVAILABLE} from "armonia/src/modules/finance/helpers/cardPaymentAvailability.ts";
 import ReservationActionDialogShell from "@carRentalModule/clients/panel/private/reservations/center/dialogs/reservationActionDialogShell.tsx";
 import type {VehicleFineAction} from "../actions/vehicleFineMenu.tsx";
 import RecordFinePaymentDialog from "./recordFinePaymentDialog.tsx";
@@ -15,10 +16,12 @@ type Props = WithLanguageType & WithAxiosType<VehicleFine, {_id: string}> & Dial
 /** Confirms one fine action; the dictionary holds the title, text and button per action. */
 function FineActionDialog({action, fine, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading, error}: Props) {
     useImperativeHandle(innerRef, () => ({success: (data) => { onUpdated(data); onClose(); }}));
+    // No saved card is charged while card payments are coming soon (D190): the customer pays at the desk.
+    const descriptionKey = action === "chargeCustomer" && !CARD_PAYMENTS_AVAILABLE ? "chargeCustomer.descriptionAtDesk" : `${action}.description`;
     return (
         <ReservationActionDialogShell
             title={resolveLanguageKey(`${action}.title`)}
-            description={String(resolveLanguageKey(`${action}.description`)).replace("{driver}", fine.driverName ?? "").replace("{booking}", fine.reservation?.number ?? "")}
+            description={String(resolveLanguageKey(descriptionKey)).replace("{driver}", fine.driverName ?? "").replace("{booking}", fine.reservation?.number ?? "")}
             confirmLabel={resolveLanguageKey(`${action}.confirm`)}
             cancelLabel={resolveLanguageKey("cancel")}
             loading={loading}

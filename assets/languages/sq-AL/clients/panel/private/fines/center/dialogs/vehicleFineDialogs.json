@@ -9,6 +9,7 @@
   "chargeCustomer": {
     "title": "Faturo klientin",
     "description": "Shton gjobën dhe tarifën e trajtimit në rezervimin {booking} të {driver} dhe e njofton me email. Një kartë e ruajtur faturohet menjëherë.",
+    "descriptionAtDesk": "Shton gjobën dhe tarifën e trajtimit në rezervimin {booking} të {driver} dhe e njofton me email. Paguhet në sportel.",
     "confirm": "Faturo"
   },
   "nominateDriver": {

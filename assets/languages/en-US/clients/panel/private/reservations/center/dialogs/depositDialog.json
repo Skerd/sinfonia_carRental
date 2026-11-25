@@ -3,9 +3,11 @@
   "title": "Take the deposit",
   "descriptionHold": "The amount is held on the customer's card and released or charged after the return.",
   "descriptionSaveCard": "This rental is longer than a week, so the customer's card is saved instead of held. It can be charged after the return.",
+  "descriptionCash": "Take the deposit in cash at the desk. After the return it is handed back, or kept for what is still owed.",
   "amountLabel": "Deposit",
   "method": {
     "card": "Card",
+    "cardSoon": "Card · Coming soon",
     "cash": "Cash"
   },
   "confirmCash": "Record cash deposit",
