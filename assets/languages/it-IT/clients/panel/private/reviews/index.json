@@ -16,7 +16,6 @@
       }
     ]
   },
-  "create": "Aggiungi recensione",
   "noData": "Ancora nessuna recensione",
   "failTitle": "Impossibile caricare le recensioni",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

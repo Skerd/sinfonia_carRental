@@ -59,8 +59,6 @@ const AllRentalDenyEntrys = lazy(() => import("@carRentalModule/clients/panel/pr
 const CreateRentalDenyEntry = lazy(() => import("@carRentalModule/clients/panel/private/denyList/createRentalDenyEntry.tsx"));
 const EditRentalDenyEntry = lazy(() => import("@carRentalModule/clients/panel/private/denyList/editRentalDenyEntry.tsx"));
 const AllRentalReviews = lazy(() => import("@carRentalModule/clients/panel/private/reviews/index.tsx"));
-const CreateRentalReview = lazy(() => import("@carRentalModule/clients/panel/private/reviews/createRentalReview.tsx"));
-const EditRentalReview = lazy(() => import("@carRentalModule/clients/panel/private/reviews/editRentalReview.tsx"));
 const AllRentalSubscriptions = lazy(() => import("@carRentalModule/clients/panel/private/subscriptions/index.tsx"));
 const CreateRentalSubscription = lazy(() => import("@carRentalModule/clients/panel/private/subscriptions/createRentalSubscription.tsx"));
 const EditRentalSubscription = lazy(() => import("@carRentalModule/clients/panel/private/subscriptions/editRentalSubscription.tsx"));
@@ -142,10 +140,9 @@ const PAGES: Record<string, CrudPages> = {
         edit: (id) => <EditRentalDenyEntry entityId={id} />,
         idParam: "rentalDenyEntryId",
     },
+    // Customers write reviews from their booking's manage link; staff only publish them, so no create or edit page.
     reviews: {
         list: () => <AllRentalReviews />,
-        create: () => <CreateRentalReview />,
-        edit: (id) => <EditRentalReview entityId={id} />,
         idParam: "rentalReviewId",
     },
     subscriptions: {

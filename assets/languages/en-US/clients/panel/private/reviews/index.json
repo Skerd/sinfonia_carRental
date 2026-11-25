@@ -16,7 +16,6 @@
       }
     ]
   },
-  "create": "Add review",
   "noData": "No reviews yet",
   "failTitle": "Failed to load reviews",
   "failDescription": "Something went wrong while loading. Please try again.",

@@ -16,7 +16,6 @@
       }
     ]
   },
-  "create": "Ajouter un avis",
   "noData": "Aucun avis pour l'instant",
   "failTitle": "Impossible de charger les avis",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

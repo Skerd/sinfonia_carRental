@@ -70,7 +70,8 @@ function RentalReviewSheetView({
                 hideActions={hideActions}
                 onDelete={onDelete}
                 onRestore={onRestore}
-                editPath={`/carRental/reviews/edit?rentalReviewId=${entityId}`}
+                hideEdit
+                editPath=""
                 onSheetRowPatched={(row) => {
                     setSheetData(row);
                     onSheetRowPatched?.(row as Partial<RentalReview>);

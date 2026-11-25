@@ -9,7 +9,6 @@ import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {RentalReview} from "armonia/src/modules/carRental/api/carRental/private/rentalReview/rentalReview.dto.ts";
 import RentalReviewSheetView from "@carRentalModule/clients/panel/private/reviews/center/sheetView/rentalReviewSheetView.tsx";
-import {rentalReviewEditPath} from "@carRentalModule/clients/panel/private/reviews/index.tsx";
 import PublishRentalReview from "@carRentalModule/clients/panel/private/reviews/center/actions/publishRentalReview.tsx";
 import UnpublishRentalReview from "@carRentalModule/clients/panel/private/reviews/center/actions/unpublishRentalReview.tsx";
 import PublishRentalReviewDialog from "@carRentalModule/clients/panel/private/reviews/center/dialogs/publishRentalReviewDialog.tsx";
@@ -48,7 +47,8 @@ function RentalReviewCard({
             onRestore={onRestore}
             hideActions={hideActions}
             sheetOnly={sheetOnly}
-            editPath={rentalReviewEditPath}
+            hideEdit
+            editPath={() => ""}
             Sheet={RentalReviewSheetView}
             sheetEntityProp="rentalReview"
             deleteUrl="/api/carRental/rentalReview"

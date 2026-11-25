@@ -3,8 +3,7 @@ import {compose} from "redux";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage, {EntityListCreateButton, EntityListHeader, type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
-import {IconPlus} from "@tabler/icons-react";
+import EntityListPage, {type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import type {RentalReview} from "armonia/src/modules/carRental/api/carRental/private/rentalReview/rentalReview.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import RentalReviewCard from "./center/cardView/rentalReviewCard.tsx";
@@ -13,10 +12,6 @@ import PublishRentalReview from "./center/actions/publishRentalReview.tsx";
 import UnpublishRentalReview from "./center/actions/unpublishRentalReview.tsx";
 import PublishRentalReviewDialog from "./center/dialogs/publishRentalReviewDialog.tsx";
 import UnpublishRentalReviewDialog from "./center/dialogs/unpublishRentalReviewDialog.tsx";
-
-export function rentalReviewEditPath(row: {_id: string}) {
-    return `/carRental/reviews/edit?rentalReviewId=${row._id}`;
-}
 
 function AllRentalReviews({resolveLanguageKey}: WithLanguageType) {
     const quickFilters = useMemo<QuickFilterDef[]>(() => [
@@ -32,17 +27,9 @@ function AllRentalReviews({resolveLanguageKey}: WithLanguageType) {
             collectionName="rentalreviews"
             accessModel="rentalreviews"
             tableConfigKey="rentalreviews"
-            rowActionMenu={{allowMenuForCustomChildren: true}}
-            header={(ctx) => (
-                <EntityListHeader ctx={ctx}>
-                    <EntityListCreateButton
-                        ctx={ctx}
-                        path="/carRental/reviews/create"
-                        icon={<IconPlus />}
-                    />
-                </EntityListHeader>
-            )}
-            buildEditPath={rentalReviewEditPath}
+            // The customer writes the review and staff only publish it: no create, no edit.
+            rowActionMenu={{allowMenuForCustomChildren: true, hideEdit: true}}
+            buildEditPath={() => ""}
             resolveLanguageKey={resolveLanguageKey}
             quickFilters={quickFilters}
             sheetLanguagePath="src/modules/carRental/clients/panel/private/reviews/center/sheetView/rentalReviewSheetView.tsx"
