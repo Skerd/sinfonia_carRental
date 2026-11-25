@@ -9,11 +9,10 @@ import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {RentalReview} from "armonia/src/modules/carRental/api/carRental/private/rentalReview/rentalReview.dto.ts";
 import RentalReviewSheetView from "@carRentalModule/clients/panel/private/reviews/center/sheetView/rentalReviewSheetView.tsx";
-import PublishRentalReview from "@carRentalModule/clients/panel/private/reviews/center/actions/publishRentalReview.tsx";
-import UnpublishRentalReview from "@carRentalModule/clients/panel/private/reviews/center/actions/unpublishRentalReview.tsx";
-import PublishRentalReviewDialog from "@carRentalModule/clients/panel/private/reviews/center/dialogs/publishRentalReviewDialog.tsx";
-import UnpublishRentalReviewDialog from "@carRentalModule/clients/panel/private/reviews/center/dialogs/unpublishRentalReviewDialog.tsx";
-import {Badge} from "@coreModule/components/ui/badge.tsx";
+import ReportMenuItem, {REPORT_TO_PLATFORM_ACTION} from "@coreModule/components/custom/report/reportMenuItem.tsx";
+import {RENTAL_REVIEW_REPORT_KIND} from "armonia/src/modules/carRental/api/carRental/private/rentalReview/rentalReview.dto.ts";
+import {ReportDialog} from "@coreModule/components/custom/report/reportButton.tsx";
+import PlatformHiddenBadge from "@coreModule/components/custom/report/platformHiddenBadge.tsx";
 
 type RentalReviewCardProps = WithLanguageType & {
     rentalReview: RentalReview;
@@ -21,7 +20,6 @@ type RentalReviewCardProps = WithLanguageType & {
     hideActions?: boolean;
     onDelete?: (deleted?: RentalReview, response?: DeletedData) => void;
     onRestore?: () => void;
-    onPublishedChanged?: (isPublished: boolean) => void;
     sheetOnly?: boolean;
     innerRef?: RefObject<WithAxiosLifecycleRef<RentalReview> | null>;
 };
@@ -33,7 +31,6 @@ function RentalReviewCard({
     hideActions = false,
     onDelete,
     onRestore,
-    onPublishedChanged,
     sheetOnly = false,
     innerRef,
 }: RentalReviewCardProps) {
@@ -59,40 +56,12 @@ function RentalReviewCard({
             innerRef={innerRef}
             sheetProps={({entity, setEntity}) => ({
                 fetchId,
-                onPublishedChanged: (isPublished: boolean) => {
-                    setEntity({...entity, isPublished});
-                    onPublishedChanged?.(isPublished);
-                },
-                onSheetRowPatched: (row: Partial<RentalReview>) => {
-                    setEntity({...entity, ...row});
-                    if (typeof row.isPublished === "boolean") onPublishedChanged?.(row.isPublished);
-                },
+                onSheetRowPatched: (row: Partial<RentalReview>) => setEntity({...entity, ...row}),
             })}
-            extraDialogs={({action, setAction, entity, setEntity}) => (
-                <>
-                    {action === "publishRentalReview" && (
-                        <PublishRentalReviewDialog
-                            open
-                            onClose={() => setAction("")}
-                            entity={entity}
-                            onSuccess={() => {
-                                setEntity({...entity, isPublished: true});
-                                onPublishedChanged?.(true);
-                            }}
-                        />
-                    )}
-                    {action === "unpublishRentalReview" && (
-                        <UnpublishRentalReviewDialog
-                            open
-                            onClose={() => setAction("")}
-                            entity={entity}
-                            onSuccess={() => {
-                                setEntity({...entity, isPublished: false});
-                                onPublishedChanged?.(false);
-                            }}
-                        />
-                    )}
-                </>
+            extraDialogs={({action, setAction, entity}) => (
+                action === REPORT_TO_PLATFORM_ACTION ? (
+                    <ReportDialog kind={RENTAL_REVIEW_REPORT_KIND} recordId={entity._id} open onOpenChange={(next) => { if (!next) setAction(""); }} />
+                ) : null
             )}
         >
             {({entity: row, setAction}) => (
@@ -100,9 +69,8 @@ function RentalReviewCard({
                     <EntityCard.Header titlePath="authorName"
                         title={row.authorName}
                         badgesBesideTitle
-                        badges={!row.isPublished ? <Badge variant="outline" className="text-xs">{String(resolveLanguageKey("notPublished"))}</Badge> : null}>
-                        <PublishRentalReview entity={row} onAction={setAction} />
-                        <UnpublishRentalReview entity={row} onAction={setAction} />
+                        badges=<PlatformHiddenBadge hidden={row.hiddenByPlatform} />>
+                        <ReportMenuItem hidden={row.hiddenByPlatform} onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
                         <EntityCardRow

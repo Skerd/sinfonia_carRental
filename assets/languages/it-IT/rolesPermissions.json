@@ -100,6 +100,7 @@
       "images": "Immagini",
       "includedKmPerDay": "Km inclusi al giorno",
       "isPublic": "È pubblico",
+      "hiddenByPlatform": "Nascosta dalla piattaforma",
       "luggage": "Bagagli",
       "mileagePolicy": "Regola chilometrica",
       "minDriverAge": "Età minima del conducente",
@@ -501,12 +502,10 @@
     "Rentalreviews": {
       "authorName": "Nome",
       "comment": "Commento",
-      "isPublished": "Pubblicata",
+      "hiddenByPlatform": "Nascosta dalla piattaforma",
       "rating": "Valutazione",
       "rentalreviews": "Recensioni",
-      "reservation": "Prenotazione",
-      "publish": "Pubblica",
-      "unpublish": "Annulla la pubblicazione"
+      "reservation": "Prenotazione"
     },
     "Rentalsubscriptions": {
       "category": "Categoria",

@@ -15,6 +15,8 @@
   "images": "Images",
   "includedKmPerDay": "Km inclus par jour",
   "isPublic": "Sur le site web",
+  "hiddenByPlatform": "Masquée par la plateforme",
+  "hiddenByPlatformNote": "La plateforme a masqué cette catégorie après un signalement. Elle n'apparaît plus sur votre site ni sur le portail et ne peut plus être réservée en ligne. Contactez la plateforme pour en discuter.",
   "sortOrder": "Ordre de tri",
   "luggage": "Bagages",
   "mileagePolicy": "Kilométrage",

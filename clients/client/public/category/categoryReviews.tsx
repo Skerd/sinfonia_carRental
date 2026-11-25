@@ -4,6 +4,7 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {DATE_FORMATS, formatDate} from "@coreModule/helpers/general/dateTime.ts";
 import {DetailSection} from "@coreModule/clients/portal/shared/detailPage.tsx";
+import ReportButton from "@coreModule/components/custom/report/reportButton.tsx";
 import type {RentalCategoryReviewsResponse} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.response.types.ts";
 
 const REVIEWS_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/reviews", cache: true};
@@ -19,8 +20,8 @@ function Stars({rating, label}: {rating: number; label: string}) {
 }
 
 /**
- * A car class's published reviews on the rental site (D178): written after completed rentals and published by staff.
- * Nothing is shown until there is one.
+ * A car class's published reviews on the rental site (D178): written after completed rentals and shown at once; each can
+ * be reported to the platform (D191). Nothing is shown until there is one.
  */
 function CategoryReviews({categoryId, resolveLanguageKey}: WithLanguageType & {categoryId: string}) {
     const {data} = useHttpRequest<RentalCategoryReviewsResponse>(REVIEWS_REQUEST, {category: categoryId, limit: 10}, categoryId ? 1 : 0);
@@ -39,14 +40,17 @@ function CategoryReviews({categoryId, resolveLanguageKey}: WithLanguageType & {c
                 </span>
             </p>
             <ul className="flex flex-col divide-y">
-                {found.reviews.map((review, index) => (
-                    <li key={`${review.createdAt}-${index}`} className="flex flex-col gap-1.5 py-3">
+                {found.reviews.map((review) => (
+                    <li key={review._id} className="flex flex-col gap-1.5 py-3">
                         <div className="flex flex-wrap items-center justify-between gap-2">
                             <Stars rating={review.rating} label={ratingLabel(review.rating)} />
                             <span className="text-xs text-muted-foreground">{formatDate(review.createdAt, {format: DATE_FORMATS.mediumDate})}</span>
                         </div>
                         {review.comment ? <p className="text-sm">{review.comment}</p> : null}
-                        <p className="text-xs text-muted-foreground">{review.authorName || resolveLanguageKey("guest")}</p>
+                        <div className="flex flex-wrap items-center justify-between gap-2">
+                            <p className="text-xs text-muted-foreground">{review.authorName || resolveLanguageKey("guest")}</p>
+                            <ReportButton kind="carRental.review" recordId={review._id} variant="link" />
+                        </div>
                     </li>
                 ))}
             </ul>

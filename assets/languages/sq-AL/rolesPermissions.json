@@ -100,6 +100,7 @@
       "images": "Imazhet",
       "includedKmPerDay": "Km të përfshira në ditë",
       "isPublic": "Në faqe",
+      "hiddenByPlatform": "E fshehur nga platforma",
       "luggage": "Bagazhet",
       "mileagePolicy": "Rregulli i kilometrazhit",
       "minDriverAge": "Mosha minimale e shoferit",
@@ -501,12 +502,10 @@
     "Rentalreviews": {
       "authorName": "Emri",
       "comment": "Komenti",
-      "isPublished": "E publikuar",
+      "hiddenByPlatform": "I fshehur nga platforma",
       "rating": "Vlerësimi",
       "rentalreviews": "Vlerësimet",
-      "reservation": "Rezervimi",
-      "publish": "Publiko",
-      "unpublish": "Hiq nga publikimi"
+      "reservation": "Rezervimi"
     },
     "Rentalsubscriptions": {
       "category": "Kategoria",

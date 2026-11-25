@@ -100,6 +100,7 @@
       "images": "Bilder",
       "includedKmPerDay": "Inklusive Kilometer pro Tag",
       "isPublic": "Ist öffentlich",
+      "hiddenByPlatform": "Von der Plattform verborgen",
       "luggage": "Gepäck",
       "mileagePolicy": "Kilometerregelung",
       "minDriverAge": "Mindestalter Fahrer/in",
@@ -501,12 +502,10 @@
     "Rentalreviews": {
       "authorName": "Name",
       "comment": "Kommentar",
-      "isPublished": "Veröffentlicht",
+      "hiddenByPlatform": "Von der Plattform verborgen",
       "rating": "Bewertung",
       "rentalreviews": "Bewertungen",
-      "reservation": "Buchung",
-      "publish": "Veröffentlichen",
-      "unpublish": "Veröffentlichung zurückziehen"
+      "reservation": "Buchung"
     },
     "Rentalsubscriptions": {
       "category": "Kategorie",

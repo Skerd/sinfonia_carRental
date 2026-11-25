@@ -7,10 +7,9 @@ import SheetViewRenderer from "@coreModule/components/viewEngine/SheetViewRender
 import {useViewConfig} from "@coreModule/helpers/hooks/useViewConfig.ts";
 import type {RentalReview} from "armonia/src/modules/carRental/api/carRental/private/rentalReview/rentalReview.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
-import PublishRentalReview from "@carRentalModule/clients/panel/private/reviews/center/actions/publishRentalReview.tsx";
-import UnpublishRentalReview from "@carRentalModule/clients/panel/private/reviews/center/actions/unpublishRentalReview.tsx";
-import PublishRentalReviewDialog from "@carRentalModule/clients/panel/private/reviews/center/dialogs/publishRentalReviewDialog.tsx";
-import UnpublishRentalReviewDialog from "@carRentalModule/clients/panel/private/reviews/center/dialogs/unpublishRentalReviewDialog.tsx";
+import ReportMenuItem, {REPORT_TO_PLATFORM_ACTION} from "@coreModule/components/custom/report/reportMenuItem.tsx";
+import {RENTAL_REVIEW_REPORT_KIND} from "armonia/src/modules/carRental/api/carRental/private/rentalReview/rentalReview.dto.ts";
+import {ReportDialog} from "@coreModule/components/custom/report/reportButton.tsx";
 
 type RentalReviewSheetViewOwnProps = {
     open: boolean;
@@ -20,7 +19,6 @@ type RentalReviewSheetViewOwnProps = {
     onDelete?: (response?: DeletedData) => void;
     onRestore?: () => void;
     onSheetRowPatched?: (patch: Partial<RentalReview>) => void;
-    onPublishedChanged?: (isPublished: boolean) => void;
     fetchId?: string;
 };
 
@@ -33,7 +31,6 @@ function RentalReviewSheetView({
     onDelete = () => {},
     onRestore = () => {},
     onSheetRowPatched,
-    onPublishedChanged,
     fetchId,
 }: RentalReviewSheetViewOwnProps & WithLanguageType) {
     const [sheetData, setSheetData] = useState<Record<string, unknown>>(rentalReviewProp || {_id: fetchId});
@@ -77,36 +74,10 @@ function RentalReviewSheetView({
                     onSheetRowPatched?.(row as Partial<RentalReview>);
                 }}
                 actionMenuAllowCustomChildren
-                actionMenuChildren={
-                    <>
-                        <PublishRentalReview entity={asEntity} onAction={(a: string) => setAction(a)} />
-                        <UnpublishRentalReview entity={asEntity} onAction={(a: string) => setAction(a)} />
-                    </>
-                }
+                actionMenuChildren={<ReportMenuItem hidden={asEntity.hiddenByPlatform} onAction={(a: string) => setAction(a)} />}
             />
-            {action === "publishRentalReview" && (
-                <PublishRentalReviewDialog
-                    open
-                    onClose={() => setAction("")}
-                    entity={asEntity}
-                    onSuccess={() => {
-                        setSheetData((prev) => ({...prev, isPublished: true}));
-                        onSheetRowPatched?.({isPublished: true});
-                        onPublishedChanged?.(true);
-                    }}
-                />
-            )}
-            {action === "unpublishRentalReview" && (
-                <UnpublishRentalReviewDialog
-                    open
-                    onClose={() => setAction("")}
-                    entity={asEntity}
-                    onSuccess={() => {
-                        setSheetData((prev) => ({...prev, isPublished: false}));
-                        onSheetRowPatched?.({isPublished: false});
-                        onPublishedChanged?.(false);
-                    }}
-                />
+            {action === REPORT_TO_PLATFORM_ACTION && (
+                <ReportDialog kind={RENTAL_REVIEW_REPORT_KIND} recordId={asEntity._id} open onOpenChange={(next) => { if (!next) setAction(""); }} />
             )}
         </>
     );

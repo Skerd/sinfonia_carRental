@@ -5,12 +5,12 @@
   "help": {
     "ariaLabel": "Rreth vlerësimeve",
     "title": "Rreth vlerësimeve",
-    "overview": "Një klient mund të lërë një vlerësim nga lidhja e menaxhimit pasi makina është kthyer. Mbetet i fshehur derisa ta publikoni.",
+    "overview": "Një klient mund të lërë një vlerësim nga lidhja e menaxhimit pasi makina është kthyer. Shfaqet menjëherë në faqen tuaj dhe në portal.",
     "sections": [
       {
         "title": "Në këtë faqe",
         "items": [
-          "Publikoni një vlerësim për ta treguar.",
+          "Nuk mund ta ndryshoni, fshehni ose fshini një vlerësim. Nëse një vlerësim shkel rregullat, raportojeni te platforma nga menyja e tij.",
           "Një rezervim mund të ketë vetëm një vlerësim."
         ]
       }
@@ -26,7 +26,7 @@
     "rating": "Vlerësimi",
     "comment": "Komenti",
     "authorName": "Emri",
-    "isPublished": "E publikuar",
+    "hiddenByPlatform": "I fshehur nga platforma",
     "createdAt": "Krijuar më",
     "updatedAt": "Përditësuar më",
     "createdBy": "Krijuar nga",

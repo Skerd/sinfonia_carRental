@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {ReactNode, RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconArmchair, IconCash, IconManualGearbox, IconWorldOff} from "@tabler/icons-react";
+import {IconArmchair, IconCash, IconEyeOff, IconManualGearbox, IconWorldOff} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import {accessFieldPathExists} from "@coreModule/helpers/context/accessContext.tsx";
@@ -100,7 +100,17 @@ function VehicleCategoryCard({
                         title={row.name}
                         badgesBesideTitle
                         badges={
-                            accessFieldPathExists(read, "isPublic") && row.isPublic === false ? (
+                            // Hidden by the platform after a report (D191) outweighs the company's own website switch.
+                            accessFieldPathExists(read, "hiddenByPlatform") && row.hiddenByPlatform ? (
+                                <DisplayValue path="hiddenByPlatform" value={resolveLanguageKey("hiddenByPlatform")}>
+                                    {(formatted: ReactNode) => (
+                                        <span className="inline-flex items-center gap-1 text-3xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full bg-destructive/20 text-destructive shrink-0">
+                                            <IconEyeOff className="w-3 h-3" />
+                                            {formatted}
+                                        </span>
+                                    )}
+                                </DisplayValue>
+                            ) : accessFieldPathExists(read, "isPublic") && row.isPublic === false ? (
                                 <DisplayValue path="isPublic" value={resolveLanguageKey("hiddenFromWebsite")}>
                                     {(formatted: ReactNode) => (
                                         <span className="inline-flex items-center gap-1 text-3xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full bg-destructive/20 text-destructive shrink-0">

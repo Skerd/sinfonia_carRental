@@ -4,7 +4,5 @@
   "failedDescription": "Zum erneuten Versuch tippen.",
   "reservation": "Buchung",
   "rating": "Bewertung",
-  "authorName": "Name",
-  "isPublished": "Veröffentlicht",
-  "notPublished": "Nicht veröffentlicht"
+  "authorName": "Name"
 }

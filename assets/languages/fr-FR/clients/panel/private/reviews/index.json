@@ -5,12 +5,12 @@
   "help": {
     "ariaLabel": "À propos des avis",
     "title": "À propos des avis",
-    "overview": "Un client peut laisser un avis depuis le lien de gestion une fois la voiture rendue. Il reste caché tant que vous ne le publiez pas.",
+    "overview": "Un client peut laisser un avis depuis le lien de gestion une fois la voiture rendue. Il s'affiche aussitôt sur votre site et sur le portail.",
     "sections": [
       {
         "title": "Sur cette page",
         "items": [
-          "Publiez un avis pour l'afficher.",
+          "Vous ne pouvez ni modifier, ni masquer, ni supprimer un avis. S'il enfreint les règles, signalez-le à la plateforme depuis son menu.",
           "Une réservation ne peut avoir qu'un seul avis."
         ]
       }
@@ -26,7 +26,7 @@
     "rating": "Note",
     "comment": "Frais de carburant par quart de réservoir manquant",
     "authorName": "Nom",
-    "isPublished": "Publié",
+    "hiddenByPlatform": "Masqué par la plateforme",
     "createdAt": "Créé le",
     "updatedAt": "Mis à jour le",
     "createdBy": "Créé par",

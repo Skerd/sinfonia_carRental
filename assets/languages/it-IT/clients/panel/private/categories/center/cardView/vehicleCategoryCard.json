@@ -11,5 +11,6 @@
   },
   "isPublic": "Sul sito web",
   "sortOrder": "Ordinamento",
-  "hiddenFromWebsite": "Nascosta dal sito web"
+  "hiddenFromWebsite": "Nascosta dal sito web",
+  "hiddenByPlatform": "Nascosta dalla piattaforma"
 }

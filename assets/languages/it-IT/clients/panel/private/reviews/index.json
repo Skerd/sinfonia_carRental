@@ -5,12 +5,12 @@
   "help": {
     "ariaLabel": "Informazioni sulle recensioni",
     "title": "Informazioni sulle recensioni",
-    "overview": "Un cliente può lasciare una recensione dal link di gestione dopo la riconsegna. Resta nascosta finché non la pubblichi.",
+    "overview": "Un cliente può lasciare una recensione dal link di gestione dopo la riconsegna. Compare subito sul tuo sito e sul portale.",
     "sections": [
       {
         "title": "In questa pagina",
         "items": [
-          "Pubblica una recensione per mostrarla.",
+          "Non puoi modificare, nascondere o eliminare una recensione. Se una viola le regole, segnalala alla piattaforma dal suo menu.",
           "Una prenotazione può avere una sola recensione."
         ]
       }
@@ -26,7 +26,7 @@
     "rating": "Valutazione",
     "comment": "Commento",
     "authorName": "Nome",
-    "isPublished": "Pubblicata",
+    "hiddenByPlatform": "Nascosta dalla piattaforma",
     "createdAt": "Creato il",
     "updatedAt": "Aggiornato il",
     "createdBy": "Creato da",

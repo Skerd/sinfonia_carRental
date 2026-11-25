@@ -63,8 +63,8 @@
   "reviewTitle": "How was the car?",
   "reviewComment": "A few words",
   "sendReview": "Send review",
-  "reviewThanks": "Thank you. The review is waiting to be published.",
+  "reviewThanks": "Thank you. Your review is now on the site.",
   "reviewRating": "Your rating",
   "reviewStar": "{rating} out of 5",
-  "reviewShownAs": "Once the company publishes it, your review shows your first name and the initial of your last name."
+  "reviewShownAs": "Your review shows at once, with your first name and the initial of your last name."
 }

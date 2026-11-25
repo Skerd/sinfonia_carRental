@@ -15,6 +15,8 @@
   "images": "Images",
   "includedKmPerDay": "Included km per day",
   "isPublic": "On the website",
+  "hiddenByPlatform": "Hidden by the platform",
+  "hiddenByPlatformNote": "The platform hid this car class after a report. It no longer shows on your site or the portal and cannot be booked online. Contact the platform to talk it over.",
   "sortOrder": "Sort order",
   "luggage": "Luggage",
   "mileagePolicy": "Mileage",

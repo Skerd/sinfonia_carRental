@@ -4,7 +4,5 @@
   "failedDescription": "Prekni për të provuar përsëri.",
   "reservation": "Rezervimi",
   "rating": "Vlerësimi",
-  "authorName": "Emri",
-  "isPublished": "E publikuar",
-  "notPublished": "E pa publikuar"
+  "authorName": "Emri"
 }

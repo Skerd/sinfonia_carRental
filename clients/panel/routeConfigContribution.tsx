@@ -140,7 +140,7 @@ const PAGES: Record<string, CrudPages> = {
         edit: (id) => <EditRentalDenyEntry entityId={id} />,
         idParam: "rentalDenyEntryId",
     },
-    // Customers write reviews from their booking's manage link; staff only publish them, so no create or edit page.
+    // Customers write reviews from their booking's manage link and they show at once (D191), so no create or edit page.
     reviews: {
         list: () => <AllRentalReviews />,
         idParam: "rentalReviewId",

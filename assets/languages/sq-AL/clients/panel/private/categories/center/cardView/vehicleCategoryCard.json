@@ -11,5 +11,6 @@
   },
   "isPublic": "Në faqe",
   "sortOrder": "Renditja",
-  "hiddenFromWebsite": "E fshehur nga faqja"
+  "hiddenFromWebsite": "E fshehur nga faqja",
+  "hiddenByPlatform": "E fshehur nga platforma"
 }

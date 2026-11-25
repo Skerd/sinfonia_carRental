@@ -9,6 +9,7 @@ import {Button} from "@coreModule/components/ui/button.tsx";
 import DetailPage, {DetailFacts, DetailHeading, DetailPrice, DetailSection, DetailSpecs, DetailStatus, DetailText} from "@coreModule/clients/portal/shared/detailPage.tsx";
 import DetailGallery from "@coreModule/clients/portal/shared/detailGallery.tsx";
 import PortalProviderCard from "@coreModule/clients/portal/shared/portalProviderCard.tsx";
+import ReportButton from "@coreModule/components/custom/report/reportButton.tsx";
 import type {QuoteRentalFormType} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.forms.ts";
 import type {RentalQuoteResponse} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.response.types.ts";
 import {useRentalConfig} from "../shared/rentalConfigContext.tsx";
@@ -142,6 +143,8 @@ function CategoryPage({resolveLanguageKey, currentLanguage}: WithLanguageType) {
                     onSubmitTrip={continueToBook}
                 />
             </DetailSection>
+            {/* Something wrong with the class goes to the platform, not the company (D191). */}
+            <ReportButton kind="carRental.carClass" recordId={category._id} className="self-start" />
         </DetailPage>
     );
 }

@@ -8,16 +8,15 @@ import type {RentalReview} from "armonia/src/modules/carRental/api/carRental/pri
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import RentalReviewCard from "./center/cardView/rentalReviewCard.tsx";
 import RentalReviewSheetView from "./center/sheetView/rentalReviewSheetView.tsx";
-import PublishRentalReview from "./center/actions/publishRentalReview.tsx";
-import UnpublishRentalReview from "./center/actions/unpublishRentalReview.tsx";
-import PublishRentalReviewDialog from "./center/dialogs/publishRentalReviewDialog.tsx";
-import UnpublishRentalReviewDialog from "./center/dialogs/unpublishRentalReviewDialog.tsx";
+import ReportMenuItem, {REPORT_TO_PLATFORM_ACTION} from "@coreModule/components/custom/report/reportMenuItem.tsx";
+import {RENTAL_REVIEW_REPORT_KIND} from "armonia/src/modules/carRental/api/carRental/private/rentalReview/rentalReview.dto.ts";
+import {ReportDialog} from "@coreModule/components/custom/report/reportButton.tsx";
 
 function AllRentalReviews({resolveLanguageKey}: WithLanguageType) {
     const quickFilters = useMemo<QuickFilterDef[]>(() => [
         {
-            field: "isPublished",
-            label: resolveLanguageKey("fields.isPublished"),
+            field: "hiddenByPlatform",
+            label: resolveLanguageKey("fields.hiddenByPlatform"),
             type: COLUMN_TYPE.BOOLEAN,
         },
     ], [resolveLanguageKey]);
@@ -27,7 +26,8 @@ function AllRentalReviews({resolveLanguageKey}: WithLanguageType) {
             collectionName="rentalreviews"
             accessModel="rentalreviews"
             tableConfigKey="rentalreviews"
-            // The customer writes the review and staff only publish it: no create, no edit.
+            // The customer writes the review and it shows at once; staff only report one to the platform (D191): no create,
+            // no edit, no delete.
             rowActionMenu={{allowMenuForCustomChildren: true, hideEdit: true}}
             buildEditPath={() => ""}
             resolveLanguageKey={resolveLanguageKey}
@@ -35,34 +35,13 @@ function AllRentalReviews({resolveLanguageKey}: WithLanguageType) {
             sheetLanguagePath="src/modules/carRental/clients/panel/private/reviews/center/sheetView/rentalReviewSheetView.tsx"
             cardViewClassName="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             renderActionMenuChildren={(entity, bindRowAction) => (
-                <>
-                    <PublishRentalReview entity={entity} onAction={bindRowAction} />
-                    <UnpublishRentalReview entity={entity} onAction={bindRowAction} />
-                </>
+                <ReportMenuItem hidden={entity.hiddenByPlatform} onAction={bindRowAction} />
             )}
-            renderFloatingModals={({action, entity, resetAction, listRef}) => {
-                if (action === "publishRentalReview") {
-                    return (
-                        <PublishRentalReviewDialog
-                            open
-                            onClose={resetAction}
-                            entity={entity}
-                            onSuccess={() => listRef.current?.updateRow?.(entity._id, {isPublished: true})}
-                        />
-                    );
-                }
-                if (action === "unpublishRentalReview") {
-                    return (
-                        <UnpublishRentalReviewDialog
-                            open
-                            onClose={resetAction}
-                            entity={entity}
-                            onSuccess={() => listRef.current?.updateRow?.(entity._id, {isPublished: false})}
-                        />
-                    );
-                }
-                return null;
-            }}
+            renderFloatingModals={({action, entity, resetAction}) => (
+                action === REPORT_TO_PLATFORM_ACTION ? (
+                    <ReportDialog kind={RENTAL_REVIEW_REPORT_KIND} recordId={entity._id} open onOpenChange={(next) => { if (!next) resetAction(); }} />
+                ) : null
+            )}
             renderSheet={({open, onOpenChange, entity, onDelete, onRestore, listRef}) => (
                 <RentalReviewSheetView
                     open={open}
@@ -70,16 +49,14 @@ function AllRentalReviews({resolveLanguageKey}: WithLanguageType) {
                     rentalReview={entity}
                     onDelete={onDelete}
                     onRestore={onRestore}
-                    onPublishedChanged={(isPublished: boolean) => listRef.current?.updateRow?.(entity._id, {isPublished})}
                     onSheetRowPatched={(row: Partial<RentalReview>) => listRef.current?.updateRow?.(entity._id, row)}
                 />
             )}
-            renderCard={(row, onDelete, onRestore, listRef) => (
+            renderCard={(row, onDelete, onRestore) => (
                 <RentalReviewCard
                     rentalReview={row}
                     onDelete={(deleted: RentalReview | undefined, response?: DeletedData) => onDelete(deleted, response)}
                     onRestore={() => onRestore(row)}
-                    onPublishedChanged={(isPublished: boolean) => listRef.current?.updateRow?.(row._id, {isPublished})}
                 />
             )}
         />

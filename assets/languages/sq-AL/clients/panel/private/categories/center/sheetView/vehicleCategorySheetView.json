@@ -15,6 +15,8 @@
   "images": "Imazhet",
   "includedKmPerDay": "Km të përfshira në ditë",
   "isPublic": "Në faqe",
+  "hiddenByPlatform": "E fshehur nga platforma",
+  "hiddenByPlatformNote": "Platforma e fshehu këtë kategori pas një raportimi. Nuk shfaqet më në faqen tuaj as në portal dhe nuk mund të rezervohet online. Kontaktoni platformën për ta diskutuar.",
   "sortOrder": "Renditja",
   "luggage": "Bagazhet",
   "mileagePolicy": "Kilometrazhi",

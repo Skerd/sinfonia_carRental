@@ -4,7 +4,5 @@
   "failedDescription": "Tap to retry.",
   "reservation": "Booking",
   "rating": "Rating",
-  "authorName": "Name",
-  "isPublished": "Published",
-  "notPublished": "Not published"
+  "authorName": "Name"
 }

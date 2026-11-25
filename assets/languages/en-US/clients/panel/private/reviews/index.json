@@ -5,12 +5,12 @@
   "help": {
     "ariaLabel": "About reviews",
     "title": "About reviews",
-    "overview": "A customer can leave one review from the manage link after the car is back. It stays hidden until you publish it.",
+    "overview": "A customer can leave one review from the manage link after the car is back. It shows on your site and the portal at once.",
     "sections": [
       {
         "title": "On this page",
         "items": [
-          "Publish a review to show it.",
+          "You cannot change, hide or delete a review. If one breaks the rules, report it to the platform from its menu.",
           "A booking can have only one review."
         ]
       }
@@ -26,7 +26,7 @@
     "rating": "Rating",
     "comment": "Comment",
     "authorName": "Name",
-    "isPublished": "Published",
+    "hiddenByPlatform": "Hidden by the platform",
     "createdAt": "Created at",
     "updatedAt": "Updated at",
     "createdBy": "Created by",
