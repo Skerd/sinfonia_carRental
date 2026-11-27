@@ -40,7 +40,8 @@
     "sameCar": "Bereits auf diesem Auto",
     "otherCategory": "Andere Klasse: eine Buchung bleibt in ihrer Klasse",
     "overlap": "Überschneidet sich mit einer anderen Buchung",
-    "blocked": "Das Auto ist dann gesperrt"
+    "blocked": "Das Auto ist dann gesperrt",
+    "exactCar": "Dieses Fahrzeug wurde genau gebucht: Verwenden Sie «Fahrzeug wechseln» in der Buchung"
   },
   "statusValues": {
     "held": "Wartet auf Zahlung",
@@ -52,5 +53,6 @@
     "no_show": "Nicht erschienen"
   },
   "customRange": "Eigener Zeitraum",
-  "until": "Bis"
+  "until": "Bis",
+  "exactVehicle": "Genau dieses Fahrzeug wurde gebucht"
 }

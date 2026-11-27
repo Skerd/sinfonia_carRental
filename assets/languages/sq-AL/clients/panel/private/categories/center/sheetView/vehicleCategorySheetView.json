@@ -54,5 +54,6 @@
   "crossBorderAllowed": "Jashtë vendit",
   "crossBorderFee": "Tarifa jashtë vendit",
   "compactView": "Kompakte",
-  "cardsView": "Karta"
+  "cardsView": "Karta",
+  "soldAsClass": "Rezervohet si klasë"
 }

@@ -3,5 +3,7 @@
     "subtitle": "Choose where and when, pick a car class, and book. No account needed.",
     "fleetTitle": "Our fleet",
     "from": "From",
-    "perDay": "per day"
+    "perDay": "per day",
+    "exactCarsTitle": "Special cars",
+    "carByCar": "Rented car by car: pick the exact one"
 }

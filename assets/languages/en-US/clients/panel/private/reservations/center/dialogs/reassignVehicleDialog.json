@@ -3,7 +3,7 @@
   "cancel": "Back",
   "confirm": "Change car",
   "title": "Change the car",
-  "description": "Pick another car of the same category. It must be free for the whole booking.",
+  "description": "Pick another free car: of the same category first, or of another one. It must be free for the whole booking.",
   "vehicleLabel": "Car",
   "vehiclePlaceholder": "Select a car",
   "axios": {
@@ -21,12 +21,22 @@
     }
   },
   "loadingCars": "Finding free cars…",
-  "noFreeCars": "No other car of this class is free for the whole booking.",
+  "noFreeCars": "No other car is free for the whole booking.",
   "readiness": {
     "ready": "Ready",
     "needs_cleaning": "Needs cleaning",
     "needs_check": "Needs a check"
   },
   "papersLapse": "Papers run out",
-  "papersLapseHint": "Its insurance or road papers run out before the return: renew them before the handover, or it cannot leave."
+  "papersLapseHint": "Its insurance or road papers run out before the return: renew them before the handover, or it cannot leave.",
+  "pricingLabel": "Price",
+  "pricing": {
+    "keep": "Keep the booked price",
+    "reprice": "Price it for this car"
+  },
+  "pricingHint": {
+    "keep": "The customer pays as booked and keeps the booked km terms: a free upgrade, or a cheaper car you settle yourself.",
+    "reprice": "The rental days are priced again for this car, with its category's km terms and deposit. Extras, fees and discounts keep their amounts."
+  },
+  "customerToldHint": "This car was booked exactly: the customer is emailed the new car."
 }

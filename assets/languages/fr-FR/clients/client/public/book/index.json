@@ -41,5 +41,6 @@
   "promoLabel": "Code promo",
   "promoApply": "Appliquer",
   "promoInvalid": "Ce code promo ne peut pas être utilisé pour cette réservation.",
-  "crossBorder": "Emmener la voiture à l'étranger"
+  "crossBorder": "Emmener la voiture à l'étranger",
+  "exactCar": "Exactement cette voiture"
 }

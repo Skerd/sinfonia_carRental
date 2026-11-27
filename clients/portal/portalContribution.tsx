@@ -14,12 +14,13 @@ const contribution: PortalContribution = {
     section: "carRental",
     path: "car-rental",
     CompanySite: RentalSiteRoutes,
-    catalogs: [{kind: "vehicleCategory", Filters: RentalCatalogFilters}],
+    // Car classes ("or similar") and cars rented on their own (D198); the same car filters serve both.
+    catalogs: [{kind: "vehicleCategory", Filters: RentalCatalogFilters}, {kind: "vehicle", Filters: RentalCatalogFilters}],
     AccountSection: MyRentalReservations,
     // A link into a company's site about to be followed: the page's code and the site's settings and fleet.
     prefetch: ({path, siteCompany}) => {
         if (path === "/") void import("@carRentalModule/clients/client/public/home/index.tsx");
-        else if (path.startsWith("/categories/")) void import("@carRentalModule/clients/client/public/category/index.tsx");
+        else if (path.startsWith("/categories/") || path.startsWith("/cars/")) void import("@carRentalModule/clients/client/public/category/index.tsx");
         else if (path === "/search") void import("@carRentalModule/clients/client/public/search/index.tsx");
         else return;
         prefetchHttpRequest(RENTAL_CONFIG_REQUEST, {}, {siteCompany});

@@ -36,5 +36,11 @@
     "hybrid": "Hibrid",
     "electric": "Elektrik",
     "other": "Karburant tjetër"
-  }
+  },
+  "exactCar": "Pikërisht kjo makinë",
+  "exactCarsTitle": "Ose zgjidhni pikërisht makinën",
+  "chooseCarTitle": "Zgjidhni makinën tuaj",
+  "carByCar": "Jepet me qira makinë për makinë: zgjidhni tuajën",
+  "year": "Viti",
+  "color": "Ngjyra"
 }

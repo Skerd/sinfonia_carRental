@@ -238,10 +238,18 @@ function ManagePage({resolveLanguageKey}: WithLanguageType) {
                                 {resolveLanguageKey("bookingNumber")}{" "}
                                 {reservation.number}
                             </p>
+                            {/* An exact booking names its guaranteed car (D198); the handed-over car's label wins once it is out. */}
                             <h1 className="font-display font-bold tracking-tight text-3xl">
                                 {reservation.vehicleLabel ??
-                                    reservation.categoryName}
+                                    (reservation.exactVehicle && reservation.vehicleTitle
+                                        ? reservation.vehicleTitle
+                                        : reservation.categoryName)}
                             </h1>
+                            {reservation.exactVehicle ? (
+                                <p className="text-sm text-muted-foreground">
+                                    {resolveLanguageKey("exactCar")}
+                                </p>
+                            ) : null}
                         </div>
                         <span
                             className={`rounded-full px-3 py-1 text-sm font-medium ${STATUS_TONE[reservation.status]}`}

@@ -36,5 +36,11 @@
     "hybrid": "Hybrid",
     "electric": "Elektro",
     "other": "Anderer Treibstoff"
-  }
+  },
+  "exactCar": "Genau dieses Auto",
+  "exactCarsTitle": "Oder wählen Sie genau Ihr Auto",
+  "chooseCarTitle": "Wählen Sie Ihr Auto",
+  "carByCar": "Wird Auto für Auto vermietet: Wählen Sie genau eines aus",
+  "year": "Jahrgang",
+  "color": "Farbe"
 }

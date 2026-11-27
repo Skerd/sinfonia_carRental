@@ -73,7 +73,13 @@
     "youngDriverDailyFeeLabel": "Young driver fee per day",
     "youngDriverDailyFeePlaceholder": "",
     "youngDriverUnderAgeLabel": "Young driver: under this age",
-    "youngDriverUnderAgePlaceholder": "e.g. 25"
+    "youngDriverUnderAgePlaceholder": "e.g. 25",
+    "exactCarTransfersLabel": "Bring exact cars from another branch",
+    "exactCarTransfersDescription": "Off: a car rented on its own is offered online only at the branch where it will be at pickup. On: also elsewhere, for the fee below and with this much notice.",
+    "exactCarTransferFeeLabel": "Fee for bringing a car",
+    "exactCarTransferFeePlaceholder": "e.g. 30",
+    "exactCarTransferNoticeHoursLabel": "Notice for bringing a car (hours)",
+    "exactCarTransferNoticeHoursPlaceholder": "e.g. 24"
   },
   "axios": {
     "start": {

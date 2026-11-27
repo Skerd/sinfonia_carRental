@@ -26,7 +26,7 @@ function MyRentalReservations({resolveLanguageKey}: WithLanguageType) {
             {rows.map(({reservation, company, manageToken}) => (
                 <Item key={reservation._id} variant="outline">
                     <ItemContent>
-                        <ItemTitle>{reservation.categoryName} · {company.name}</ItemTitle>
+                        <ItemTitle>{(reservation.exactVehicle && reservation.vehicleTitle) || reservation.categoryName} · {company.name}</ItemTitle>
                         <ItemDescription>
                             {formatAtLocation(reservation.pickupAt, reservation.timezone)} → {formatAtLocation(reservation.returnAt, reservation.timezone)}
                             {" · "}{reservation.number}

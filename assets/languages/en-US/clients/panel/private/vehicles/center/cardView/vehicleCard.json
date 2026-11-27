@@ -23,5 +23,9 @@
     "ready": "Ready",
     "needs_cleaning": "Needs cleaning",
     "needs_check": "Needs a check"
-  }
+  },
+  "listedAlone": "Rented on its own",
+  "dailyRate": "Price per day",
+  "ownDailyRate": "Own price per day",
+  "hiddenByPlatform": "Hidden by the platform"
 }

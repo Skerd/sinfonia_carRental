@@ -13,7 +13,7 @@ const TermsPage = lazy(() => import("@carRentalModule/clients/client/public/term
 const NotFoundPage = lazy(() => import("@carRentalModule/clients/client/public/notFound/index.tsx"));
 
 /**
- * One rental company's site: category pages, search, book as a guest, manage the booking from
+ * One rental company's site: category and car pages, search, book as a guest, manage the booking from
  * the emailed link. The portal serves it under `/car-rental` on the company's host, `/car-rental/<company>` on the apex.
  */
 export default function RentalSiteRoutes() {
@@ -24,6 +24,8 @@ export default function RentalSiteRoutes() {
                     <Route index element={<ErrorBoundary><HomePage /></ErrorBoundary>} />
                     <Route path="search" element={<ErrorBoundary><SearchPage /></ErrorBoundary>} />
                     <Route path="categories/:categoryId" element={<ErrorBoundary><CategoryPage /></ErrorBoundary>} />
+                    {/* A car rented on its own (D198): the same page, for this exact car. */}
+                    <Route path="cars/:vehicleId" element={<ErrorBoundary><CategoryPage /></ErrorBoundary>} />
                     <Route path="book/:categoryId" element={<ErrorBoundary><BookPage /></ErrorBoundary>} />
                     <Route path="manage" element={<ErrorBoundary><ManagePage /></ErrorBoundary>} />
                     <Route path="terms" element={<ErrorBoundary><TermsPage /></ErrorBoundary>} />

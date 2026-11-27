@@ -23,5 +23,9 @@
     "ready": "Gati",
     "needs_cleaning": "Duhet pastruar",
     "needs_check": "Duhet kontrolluar"
-  }
+  },
+  "listedAlone": "Me qira më vete",
+  "dailyRate": "Çmimi për ditë",
+  "ownDailyRate": "Çmimi i vet për ditë",
+  "hiddenByPlatform": "E fshehur nga platforma"
 }

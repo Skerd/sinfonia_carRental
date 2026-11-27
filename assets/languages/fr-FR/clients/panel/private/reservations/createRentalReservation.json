@@ -59,7 +59,9 @@
     "returnTimeLabel": "Heure de retour",
     "tripSectionTitle": "Trajet",
     "vehicleLabel": "Véhicule",
-    "vehiclePlaceholder": "N'importe quelle voiture libre de la catégorie"
+    "vehiclePlaceholder": "N'importe quelle voiture libre de la catégorie",
+    "exactVehicleLabel": "Réserver exactement cette voiture",
+    "exactVehicleDescription": "Demande un véhicule choisi. Facturée aux prix propres de cette voiture et garantie au client ; sinon la voiture choisie indique seulement laquelle de la catégorie part."
   },
   "axios": {
     "start": {

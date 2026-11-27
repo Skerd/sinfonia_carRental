@@ -3,7 +3,7 @@
   "cancel": "Kthehu",
   "confirm": "Ndrysho makinën",
   "title": "Ndrysho makinën",
-  "description": "Zgjidhni një makinë tjetër të së njëjtës kategori. Duhet të jetë e lirë për gjithë rezervimin.",
+  "description": "Zgjidhni një makinë tjetër të lirë: fillimisht nga e njëjta kategori, ose nga një tjetër. Duhet të jetë e lirë për gjithë rezervimin.",
   "vehicleLabel": "Makina",
   "vehiclePlaceholder": "Zgjidh një makinë",
   "axios": {
@@ -21,12 +21,22 @@
     }
   },
   "loadingCars": "Duke kërkuar makina të lira…",
-  "noFreeCars": "Asnjë makinë tjetër e kësaj kategorie nuk është e lirë për gjithë rezervimin.",
+  "noFreeCars": "Asnjë makinë tjetër nuk është e lirë për gjithë rezervimin.",
   "readiness": {
     "ready": "Gati",
     "needs_cleaning": "Duhet pastruar",
     "needs_check": "Duhet kontrolluar"
   },
   "papersLapse": "Dokumentet skadojnë",
-  "papersLapseHint": "Sigurimi ose dokumentet e saj skadojnë para kthimit: rinovojini para dorëzimit, përndryshe nuk mund të nisë."
+  "papersLapseHint": "Sigurimi ose dokumentet e saj skadojnë para kthimit: rinovojini para dorëzimit, përndryshe nuk mund të nisë.",
+  "pricingLabel": "Çmimi",
+  "pricing": {
+    "keep": "Mbaj çmimin e rezervuar",
+    "reprice": "Rillogarit për këtë makinë"
+  },
+  "pricingHint": {
+    "keep": "Klienti paguan si në rezervim dhe mban kushtet e kilometrave të rezervuara: një përmirësim falas, ose një makinë më e lirë që e rregulloni vetë.",
+    "reprice": "Ditët e qirasë rillogariten për këtë makinë, me kushtet e kilometrave dhe depozitën e kategorisë së saj. Shtesat, tarifat dhe zbritjet mbajnë shumat e tyre."
+  },
+  "customerToldHint": "Kjo makinë ishte rezervuar pikërisht: klientit i dërgohet email me makinën e re."
 }

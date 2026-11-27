@@ -73,7 +73,13 @@
     "youngDriverDailyFeeLabel": "Supplemento conducente giovane al giorno",
     "youngDriverDailyFeePlaceholder": "",
     "youngDriverUnderAgeLabel": "Conducente giovane: sotto questa età",
-    "youngDriverUnderAgePlaceholder": "es. 25"
+    "youngDriverUnderAgePlaceholder": "es. 25",
+    "exactCarTransfersLabel": "Portare le auto precise da un'altra filiale",
+    "exactCarTransfersDescription": "Disattivato: un'auto noleggiata da sola è offerta online solo nella filiale in cui si troverà al ritiro. Attivato: anche altrove, con il costo qui sotto e questo preavviso.",
+    "exactCarTransferFeeLabel": "Costo del trasferimento",
+    "exactCarTransferFeePlaceholder": "es. 30",
+    "exactCarTransferNoticeHoursLabel": "Preavviso per il trasferimento (ore)",
+    "exactCarTransferNoticeHoursPlaceholder": "es. 24"
   },
   "axios": {
     "start": {

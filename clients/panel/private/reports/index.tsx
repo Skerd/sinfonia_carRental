@@ -17,6 +17,7 @@ import {handleError} from "@coreModule/helpers/general/errors.ts";
 import Header from "@coreModule/components/custom/header.tsx";
 import {readPageHelp} from "@coreModule/components/custom/pageHelp.tsx";
 import {KpiCard} from "@coreModule/components/custom/kpiCard.tsx";
+import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 import {
     DashboardWidgetCard,
     DashboardWidgetEmpty,
@@ -85,6 +86,8 @@ function ReportsPage({resolveLanguageKey}: WithLanguageType) {
         .filter((row) => row.revenue > 0)
         .map((row) => ({name: row.plate, revenue: row.revenue}));
     const summary = report?.summary;
+    // Every amount with its currency (UX-07); a bare number only before the rental settings name one.
+    const money = (amount: number) => (report?.currency ? formatCurrency(amount, report.currency.abbreviation) : String(amount));
 
     return (
         <div className="flex flex-col gap-4 p-4">
@@ -145,20 +148,20 @@ function ReportsPage({resolveLanguageKey}: WithLanguageType) {
                     <KpiCard
                         compact
                         title={String(resolveLanguageKey("revenue"))}
-                        value={summary.revenue}
+                        value={money(summary.revenue)}
                         icon={IconCoin}
                         variant="primary"
                     />
                     <KpiCard
                         compact
                         title={String(resolveLanguageKey("averageDailyRate"))}
-                        value={summary.averageDailyRate}
+                        value={money(summary.averageDailyRate)}
                         icon={IconChartBar}
                     />
                     <KpiCard
                         compact
                         title={String(resolveLanguageKey("revpac"))}
-                        value={summary.revenuePerAvailableCarDay}
+                        value={money(summary.revenuePerAvailableCarDay)}
                         icon={IconChartBar}
                     />
                     <KpiCard
@@ -187,6 +190,17 @@ function ReportsPage({resolveLanguageKey}: WithLanguageType) {
                         value={`${summary.unavailableSearches}/${summary.searches}`}
                         icon={IconSearch}
                     />
+                    {/* Exact cars against classes (D198): bookings that started in the window and what they earned. */}
+                    {(report?.bySaleKind ?? []).map((row) => (
+                        <KpiCard
+                            key={row.kind}
+                            compact
+                            title={String(resolveLanguageKey(`saleKind.${row.kind}`))}
+                            value={money(row.revenue)}
+                            subtitle={String(resolveLanguageKey("bookingsCount")).replace("{count}", String(row.bookings))}
+                            icon={IconCoin}
+                        />
+                    ))}
                 </div>
             ) : null}
             <DashboardWidgetCard
@@ -269,21 +283,21 @@ function ReportsPage({resolveLanguageKey}: WithLanguageType) {
                                     <td className="py-2 pr-3">
                                         {percent(row.utilisation)}
                                     </td>
-                                    <td className="py-2 pr-3">{row.revenue}</td>
+                                    <td className="py-2 pr-3">{money(row.revenue)}</td>
                                     <td className="py-2 pr-3">
-                                        {row.maintenanceCost}
+                                        {money(row.maintenanceCost)}
                                     </td>
                                     <td className="py-2 pr-3">
-                                        {row.repairCost}
+                                        {money(row.repairCost)}
                                     </td>
                                     <td className="py-2 pr-3">
-                                        {row.insurancePremium}
+                                        {money(row.insurancePremium)}
                                     </td>
                                     <td className="py-2 pr-3">
-                                        {row.finesCost}
+                                        {money(row.finesCost)}
                                     </td>
                                     <td className="py-2 pr-3">
-                                        {row.recovered}
+                                        {money(row.recovered)}
                                     </td>
                                     <td className="py-2">
                                         {row.payback !== undefined

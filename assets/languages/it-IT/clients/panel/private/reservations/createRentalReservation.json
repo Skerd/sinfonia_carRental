@@ -59,7 +59,9 @@
     "returnTimeLabel": "Ora di riconsegna",
     "tripSectionTitle": "Viaggio",
     "vehicleLabel": "Veicolo",
-    "vehiclePlaceholder": "Qualsiasi auto libera della categoria"
+    "vehiclePlaceholder": "Qualsiasi auto libera della categoria",
+    "exactVehicleLabel": "Prenota esattamente quest'auto",
+    "exactVehicleDescription": "Richiede un veicolo scelto. Calcolata ai prezzi propri di quell'auto e garantita al cliente; altrimenti l'auto scelta indica solo quale della categoria parte."
   },
   "axios": {
     "start": {

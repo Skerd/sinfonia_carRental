@@ -73,7 +73,13 @@
     "youngDriverDailyFeeLabel": "Junglenkergebühr pro Tag",
     "youngDriverDailyFeePlaceholder": "",
     "youngDriverUnderAgeLabel": "Junglenker/in: unter diesem Alter",
-    "youngDriverUnderAgePlaceholder": "z. B. 25"
+    "youngDriverUnderAgePlaceholder": "z. B. 25",
+    "exactCarTransfersLabel": "Bestimmte Fahrzeuge aus einer anderen Filiale bringen",
+    "exactCarTransfersDescription": "Aus: Ein einzeln vermietetes Fahrzeug wird online nur in der Filiale angeboten, in der es bei der Abholung steht. Ein: auch anderswo, gegen die Gebühr unten und mit diesem Vorlauf.",
+    "exactCarTransferFeeLabel": "Gebühr für die Überführung",
+    "exactCarTransferFeePlaceholder": "z. B. 30",
+    "exactCarTransferNoticeHoursLabel": "Vorlauf für die Überführung (Stunden)",
+    "exactCarTransferNoticeHoursPlaceholder": "z. B. 24"
   },
   "axios": {
     "start": {

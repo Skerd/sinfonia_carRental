@@ -11,6 +11,8 @@ import ShowVehicleCategoryOnWebsite from "@carRentalModule/clients/panel/private
 import HideVehicleCategoryFromWebsite from "@carRentalModule/clients/panel/private/categories/center/actions/hideVehicleCategoryFromWebsite.tsx";
 import ShowVehicleCategoryOnWebsiteDialog from "@carRentalModule/clients/panel/private/categories/center/dialogs/showVehicleCategoryOnWebsiteDialog.tsx";
 import HideVehicleCategoryFromWebsiteDialog from "@carRentalModule/clients/panel/private/categories/center/dialogs/hideVehicleCategoryFromWebsiteDialog.tsx";
+import EditCarPrices from "@carRentalModule/clients/panel/private/categories/center/actions/editCarPrices.tsx";
+import CarPricesDialog from "@carRentalModule/clients/panel/private/categories/center/dialogs/carPricesDialog.tsx";
 
 type VehicleCategorySheetViewOwnProps = {
     open: boolean;
@@ -74,6 +76,7 @@ function VehicleCategorySheetView({
                     <>
                         <ShowVehicleCategoryOnWebsite entity={asEntity} onAction={setAction} />
                         <HideVehicleCategoryFromWebsite entity={asEntity} onAction={setAction} />
+                        <EditCarPrices onAction={setAction} />
                     </>
                 }
                 onSheetRowPatched={(row) => {
@@ -91,6 +94,9 @@ function VehicleCategorySheetView({
                         onSheetRowPatched?.({isPublic: true});
                     }}
                 />
+            )}
+            {action === "editCarPrices" && (
+                <CarPricesDialog open={true} onClose={() => setAction("")} entity={asEntity} />
             )}
             {action === "hideVehicleCategoryFromWebsite" && (
                 <HideVehicleCategoryFromWebsiteDialog

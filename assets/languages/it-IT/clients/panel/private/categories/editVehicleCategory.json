@@ -84,7 +84,9 @@
     "amountCurrencyDescription": "Nella valuta del noleggio (Configurazioni › Noleggio auto › Prenotazione online).",
     "slugDescription": "Facoltativo. Se vuoto, viene creato dal nome.",
     "isPublicLabel": "Visibile sul sito",
-    "isPublicDescription": "Disattivata, la categoria non appare nella prenotazione online; al banco resta prenotabile."
+    "isPublicDescription": "Disattivata, la categoria non appare nella prenotazione online; al banco resta prenotabile.",
+    "soldAsClassLabel": "Prenotabile come categoria (\"o simile\")",
+    "soldAsClassDescription": "Disattivato: la categoria è solo un titolo per le sue auto noleggiate da sole; il cliente ne sceglie una."
   },
   "axios": {
     "start": {

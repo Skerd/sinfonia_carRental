@@ -147,5 +147,40 @@
   "finesGroup": "Gjobat",
   "blocksGroup": "Bllokimet e automjeteve",
   "compactView": "Kompakte",
-  "cardsView": "Karta"
+  "cardsView": "Karta",
+  "salesGroup": "Shitja dhe çmimi",
+  "listedAlone": "Me qira më vete",
+  "listingTitle": "Emri në faqe",
+  "listingDescription": "Përshkrimi në faqe",
+  "listingImages": "Fotot në faqe",
+  "rateSeasons": "Çmime sezonale të veta",
+  "startDate": "Nga",
+  "endDate": "Deri",
+  "dailyRate": "Tarifa ditore",
+  "hiddenByPlatform": "E fshehur nga platforma",
+  "hiddenByPlatformNote": "Platforma e fshehu këtë makinë pas një raportimi. Nuk shfaqet më në faqen tuaj të qirasë apo në portal dhe nuk mund të rezervohet më vete online; stafi mund ta rezervojë ende.",
+  "ownDailyRate": "Çmimi i vet për ditë",
+  "ownWeekendDailyRate": "Çmimi i vet për ditë në fundjavë",
+  "ownWeeklyRate": "Çmimi i vet javor",
+  "ownDepositAmount": "Depozita e vet",
+  "categoryDailyRate": "Çmimi për ditë (i kategorisë)",
+  "categoryWeekendDailyRate": "Çmimi për ditë në fundjavë (i kategorisë)",
+  "categoryWeeklyRate": "Çmimi javor (i kategorisë)",
+  "categoryDepositAmount": "Depozita (e kategorisë)",
+  "seats": "Ulëset",
+  "doors": "Dyer",
+  "luggage": "Bagazhet",
+  "transmission": "Kambio",
+  "fuelType": "Lloji i karburantit",
+  "transmissionValues": {
+    "manual": "Manual",
+    "automatic": "Automatik"
+  },
+  "fuelTypeValues": {
+    "petrol": "Benzinë",
+    "diesel": "Naftë",
+    "hybrid": "Hibrid",
+    "electric": "Elektrik",
+    "other": "Tjetër"
+  }
 }

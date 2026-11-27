@@ -1,0 +1,34 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/dialogs/carPricesDialog.tsx",
+  "title": "Çmimet e makinave",
+  "description": "Cilat makina të kësaj kategorie mund t'i rezervojnë klientët pikërisht, dhe çmimi për ditë dhe depozita e vet e secilës. Fushat bosh ndjekin kategorinë ({price} në ditë, depozita {deposit}).",
+  "loading": "Po ngarkohen makinat…",
+  "noCars": "Kjo kategori nuk ka ende makina.",
+  "percentLabel": "Ndrysho të gjitha çmimet ditore me %",
+  "percentPlaceholder": "p.sh. 10 ose -5",
+  "applyPercent": "Zbato",
+  "listAll": "Jepi të gjitha më vete",
+  "car": "Makina",
+  "listedAlone": "Më vete",
+  "dailyRate": "Çmimi i vet për ditë",
+  "depositAmount": "Depozita e vet",
+  "hasOtherOwnPrices": "edhe çmime të veta për fundjavë, javë ose sezon",
+  "emptyHint": "Një makinë me çmimin e vet ditor mban çmimet e veta për fundjavë, javë dhe sezone, nëse i ka; vendosini te makina. Makinat e rezervuara pikërisht mbeten me qira më vete derisa ato rezervime të kenë një makinë tjetër.",
+  "cancel": "Anulo",
+  "confirm": "Ruaj çmimet",
+  "busy": "Po ruhet…",
+  "axios": {
+    "start": {
+      "title": "Po ruhen çmimet e makinave…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Çmimet e makinave u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Çmimet e makinave nuk u ruajtën",
+      "time": 5000
+    }
+  }
+}

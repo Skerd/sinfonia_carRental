@@ -23,5 +23,9 @@
     "ready": "Bereit",
     "needs_cleaning": "Reinigung nötig",
     "needs_check": "Kontrolle nötig"
-  }
+  },
+  "listedAlone": "Einzeln vermietet",
+  "dailyRate": "Preis pro Tag",
+  "ownDailyRate": "Eigener Preis pro Tag",
+  "hiddenByPlatform": "Von der Plattform verborgen"
 }

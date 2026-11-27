@@ -39,5 +39,10 @@
     ]
   },
   "fines": "Gjobat",
-  "recovered": "Rikuperuar"
+  "recovered": "Rikuperuar",
+  "saleKind": {
+    "class": "Të ardhurat nga klasat",
+    "exact": "Të ardhurat nga makinat e caktuara"
+  },
+  "bookingsCount": "{count} rezervime"
 }

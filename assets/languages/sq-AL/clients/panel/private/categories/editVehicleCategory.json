@@ -84,7 +84,9 @@
     "amountCurrencyDescription": "Në monedhën e qirasë (Konfigurimet › Qiraja e makinave › Rezervim online).",
     "slugDescription": "Opsionale. Nëse lihet bosh, krijohet nga emri.",
     "isPublicLabel": "Shfaqet në faqen e internetit",
-    "isPublicDescription": "E fikur, kjo kategori fshihet nga rezervimi online; sporteli mund ta rezervojë ende."
+    "isPublicDescription": "E fikur, kjo kategori fshihet nga rezervimi online; sporteli mund ta rezervojë ende.",
+    "soldAsClassLabel": "Rezervohet si klasë (\"ose e ngjashme\")",
+    "soldAsClassDescription": "Joaktive: kategoria është vetëm një titull për makinat e saj me qira më vete; klienti zgjedh njërën prej tyre."
   },
   "axios": {
     "start": {

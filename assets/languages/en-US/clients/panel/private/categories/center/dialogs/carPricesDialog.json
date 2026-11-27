@@ -1,0 +1,34 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/dialogs/carPricesDialog.tsx",
+  "title": "Car prices",
+  "description": "Which cars of this category customers can book exactly, and each one's own price per day and deposit. Empty fields follow the category ({price} a day, deposit {deposit}).",
+  "loading": "Loading the cars…",
+  "noCars": "This category has no cars yet.",
+  "percentLabel": "Change every day price by %",
+  "percentPlaceholder": "e.g. 10 or -5",
+  "applyPercent": "Apply",
+  "listAll": "Rent all on their own",
+  "car": "Car",
+  "listedAlone": "On its own",
+  "dailyRate": "Own price per day",
+  "depositAmount": "Own deposit",
+  "hasOtherOwnPrices": "also own weekend, week or season prices",
+  "emptyHint": "A car with its own day price keeps its own weekend, week and season prices, if it has any; set them on the car. Cars booked exactly stay rented on their own until those bookings have another car.",
+  "cancel": "Cancel",
+  "confirm": "Save prices",
+  "busy": "Saving…",
+  "axios": {
+    "start": {
+      "title": "Saving car prices…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Car prices saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not save the car prices",
+      "time": 5000
+    }
+  }
+}

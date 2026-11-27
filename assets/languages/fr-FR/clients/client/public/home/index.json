@@ -3,5 +3,7 @@
   "subtitle": "Choisissez le lieu et la date, une catégorie de voiture, et réservez. Aucun compte nécessaire.",
   "fleetTitle": "Notre flotte",
   "from": "À partir de",
-  "perDay": "par jour"
+  "perDay": "par jour",
+  "exactCarsTitle": "Voitures particulières",
+  "carByCar": "Louée voiture par voiture : choisissez la vôtre"
 }

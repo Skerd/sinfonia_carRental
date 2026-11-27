@@ -59,7 +59,9 @@
     "returnTimeLabel": "Ora e kthimit",
     "tripSectionTitle": "Udhëtimi",
     "vehicleLabel": "Automjeti",
-    "vehiclePlaceholder": "Çdo makinë e lirë e kategorisë"
+    "vehiclePlaceholder": "Çdo makinë e lirë e kategorisë",
+    "exactVehicleLabel": "Rezervo pikërisht këtë makinë",
+    "exactVehicleDescription": "Kërkon një automjet të zgjedhur. Llogaritet me çmimet e veta të asaj makine dhe i garantohet klientit; përndryshe makina e zgjedhur tregon vetëm cila nga klasa del."
   },
   "axios": {
     "start": {

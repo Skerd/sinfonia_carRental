@@ -10,5 +10,6 @@
   "days": "giorni",
   "vatIncluded": "IVA inclusa",
   "choose": "Scegli",
-  "soldOut": "Non disponibile per queste date"
+  "soldOut": "Non disponibile per queste date",
+  "exactCar": "Esattamente quest'auto"
 }

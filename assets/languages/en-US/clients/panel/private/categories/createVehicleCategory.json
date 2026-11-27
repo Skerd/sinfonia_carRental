@@ -84,7 +84,9 @@
     "amountCurrencyDescription": "In the rental currency (Configurations › Car rental › Online booking).",
     "slugDescription": "Optional. Left empty, it is made from the name.",
     "isPublicLabel": "Shown on the website",
-    "isPublicDescription": "Off hides this class from online booking; the desk can still book it."
+    "isPublicDescription": "Off hides this class from online booking; the desk can still book it.",
+    "soldAsClassLabel": "Booked as a class (\"or similar\")",
+    "soldAsClassDescription": "Off: the category is only a heading for its cars rented on their own; customers pick one of them."
   },
   "axios": {
     "start": {

@@ -40,7 +40,8 @@
     "sameCar": "Tashmë në këtë makinë",
     "otherCategory": "Kategori tjetër: rezervimi mbetet në kategorinë e vet",
     "overlap": "Mbivendoset me një rezervim tjetër",
-    "blocked": "Makina është e bllokuar atëherë"
+    "blocked": "Makina është e bllokuar atëherë",
+    "exactCar": "Kjo makinë u rezervua pikërisht: përdorni «Ndrysho makinën» te rezervimi"
   },
   "statusValues": {
     "held": "Në pritje të pagesës",
@@ -52,5 +53,6 @@
     "no_show": "Mosparaqitje"
   },
   "customRange": "Interval i zgjedhur",
-  "until": "Deri më"
+  "until": "Deri më",
+  "exactVehicle": "Kjo makinë u rezervua pikërisht"
 }

@@ -73,7 +73,13 @@
     "youngDriverDailyFeeLabel": "Frais jeune conducteur par jour",
     "youngDriverDailyFeePlaceholder": "",
     "youngDriverUnderAgeLabel": "Jeune conducteur : moins de cet âge",
-    "youngDriverUnderAgePlaceholder": "p. ex. 25"
+    "youngDriverUnderAgePlaceholder": "p. ex. 25",
+    "exactCarTransfersLabel": "Amener les voitures précises depuis une autre agence",
+    "exactCarTransfersDescription": "Désactivé : une voiture louée seule n'est proposée en ligne que dans l'agence où elle sera au retrait. Activé : ailleurs aussi, pour les frais ci-dessous et avec ce préavis.",
+    "exactCarTransferFeeLabel": "Frais d'acheminement",
+    "exactCarTransferFeePlaceholder": "p. ex. 30",
+    "exactCarTransferNoticeHoursLabel": "Préavis d'acheminement (heures)",
+    "exactCarTransferNoticeHoursPlaceholder": "p. ex. 24"
   },
   "axios": {
     "start": {

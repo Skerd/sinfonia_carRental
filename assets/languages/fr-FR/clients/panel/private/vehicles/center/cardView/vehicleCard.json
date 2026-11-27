@@ -23,5 +23,9 @@
     "ready": "Prêt",
     "needs_cleaning": "À nettoyer",
     "needs_check": "À contrôler"
-  }
+  },
+  "listedAlone": "Louée seule",
+  "dailyRate": "Prix par jour",
+  "ownDailyRate": "Prix propre par jour",
+  "hiddenByPlatform": "Masquée par la plateforme"
 }

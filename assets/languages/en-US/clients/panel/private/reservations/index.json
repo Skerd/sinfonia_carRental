@@ -90,6 +90,7 @@
     "createdBy": "Created by",
     "company": "Company",
     "deletedAt": "Deleted at",
-    "deletedBy": "Deleted by"
+    "deletedBy": "Deleted by",
+    "exactVehicle": "Guaranteed car"
   }
 }

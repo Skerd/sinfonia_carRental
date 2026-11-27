@@ -1,7 +1,7 @@
 import {useCallback, useEffect, useState, type DragEvent} from "react";
 import {compose} from "redux";
 import {toast} from "sonner";
-import {IconChevronLeft, IconChevronRight, IconTruckDelivery} from "@tabler/icons-react";
+import {IconChevronLeft, IconChevronRight, IconStar, IconTruckDelivery} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
@@ -36,7 +36,7 @@ const SHOWN_STATUSES = ["held", "confirmed", "in_progress", "completed"] as cons
 /** Bookings that keep a car busy, as the server counts them (blockingReservationFilter). */
 const BLOCKING_STATUSES: string[] = ["held", "confirmed", "in_progress"];
 /** Where a dragged booking would land: on a free car of its class, or why not. The server still checks the move. */
-type DropVerdict = "free" | "sameCar" | "otherCategory" | "overlap" | "blocked";
+type DropVerdict = "free" | "sameCar" | "exactCar" | "otherCategory" | "overlap" | "blocked";
 /** A transparent image replaces the browser's drag ghost, so only the landing preview shows. */
 const EMPTY_DRAG_IMAGE = typeof Image === "undefined" ? null : Object.assign(new Image(), {src: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"});
 const TIME: Intl.DateTimeFormatOptions = {hour: "2-digit", minute: "2-digit"};
@@ -120,6 +120,8 @@ function RentalPlannerPage({resolveLanguageKey}: WithLanguageType) {
 
     const verdictOf = (vehicle: Planner["vehicles"][number], reservation: Planner["reservations"][number]): DropVerdict => {
         if (reservation.vehicle === vehicle._id) return "sameCar";
+        // A car booked exactly is changed with "Change car", which asks about the price and tells the customer (D198).
+        if (reservation.exactVehicle) return "exactCar";
         if (dragging?.categoryId !== vehicle.categoryId) return "otherCategory";
         if (planner?.blocks.some((block) => block.vehicle === vehicle._id && overlaps(block.startAt, block.endAt, reservation.pickupAt, reservation.returnAt))) return "blocked";
         const busy = planner?.reservations.some((other) => other._id !== reservation._id && other.vehicle === vehicle._id
@@ -316,8 +318,9 @@ function RentalPlannerPage({resolveLanguageKey}: WithLanguageType) {
                                                         // A grab hand on the bookings that can be dragged to another car; the rest only open.
                                                         entry.status === "held" || entry.status === "confirmed" ? "cursor-grab active:cursor-grabbing" : "cursor-pointer")}
                                                     style={position(entry.pickupAt, entry.returnAt)}
-                                                    title={`${entry.customer} · ${resolveLanguageKey(`statusValues.${entry.status}`)} · ${formatTime(entry.pickupAt)} – ${formatTime(entry.returnAt)} · ${entry.number}${entry.needsTransfer ? ` · ${resolveLanguageKey("needsTransfer")}` : ""}`}
+                                                    title={`${entry.customer} · ${resolveLanguageKey(`statusValues.${entry.status}`)} · ${formatTime(entry.pickupAt)} – ${formatTime(entry.returnAt)} · ${entry.number}${entry.exactVehicle ? ` · ${resolveLanguageKey("exactVehicle")}` : ""}${entry.needsTransfer ? ` · ${resolveLanguageKey("needsTransfer")}` : ""}`}
                                                 >
+                                                    {entry.exactVehicle ? <IconStar size={14} aria-label={String(resolveLanguageKey("exactVehicle"))} /> : null}
                                                     {entry.needsTransfer ? <IconTruckDelivery size={14} aria-label={String(resolveLanguageKey("needsTransfer"))} /> : null}
                                                     <span className="truncate">{entry.customer}</span>
                                                     {/* A bar wide enough (over two days) also says when the car goes and comes back. */}

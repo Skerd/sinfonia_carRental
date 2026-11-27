@@ -137,5 +137,6 @@
   "needsTransfer": "Needs a transfer",
   "priceLines": "Price breakdown",
   "compactView": "Compact",
-  "cardsView": "Cards"
+  "cardsView": "Cards",
+  "exactVehicle": "Guaranteed car"
 }

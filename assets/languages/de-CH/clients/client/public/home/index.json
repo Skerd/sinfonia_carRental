@@ -3,5 +3,7 @@
   "subtitle": "Wählen Sie Ort und Zeit, eine Fahrzeugklasse und buchen Sie. Kein Konto nötig.",
   "fleetTitle": "Unsere Flotte",
   "from": "Von",
-  "perDay": "pro Tag"
+  "perDay": "pro Tag",
+  "exactCarsTitle": "Besondere Autos",
+  "carByCar": "Wird Auto für Auto vermietet: Wählen Sie genau eines aus"
 }

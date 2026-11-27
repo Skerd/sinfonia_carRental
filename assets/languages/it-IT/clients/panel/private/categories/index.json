@@ -78,6 +78,7 @@
     "createdBy": "Creato da",
     "company": "Azienda",
     "deletedAt": "Eliminato il",
-    "deletedBy": "Eliminato da"
+    "deletedBy": "Eliminato da",
+    "soldAsClass": "Prenotabile come categoria"
   }
 }

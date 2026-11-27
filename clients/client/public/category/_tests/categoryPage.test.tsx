@@ -56,7 +56,9 @@ const CONFIG: RentalStorefrontConfigResponse = {
             includedKmPerDay: 200,
             minDriverAge: 21,
             crossBorderAllowed: false,
+            soldAsClass: true,
         }],
+        cars: [],
         extras: [],
     },
 };

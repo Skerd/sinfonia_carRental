@@ -70,6 +70,20 @@
     "vin": "FIN",
     "notes": "Notizen",
     "images": "Fotos",
-    "videos": "Videos"
+    "videos": "Videos",
+    "listedAlone": "Einzeln vermietet",
+    "listingTitle": "Name auf der Website",
+    "dailyRate": "Eigener Preis pro Tag",
+    "weekendDailyRate": "Eigener Wochenendpreis",
+    "weeklyRate": "Eigener Wochenpreis",
+    "depositAmount": "Eigene Kaution",
+    "listingDescription": "Beschreibung auf der Website",
+    "listingImages": "Fotos auf der Website",
+    "rateSeasons": "Eigene Saisonpreise",
+    "seats": "Sitze",
+    "doors": "Türen",
+    "luggage": "Gepäck",
+    "transmission": "Getriebe",
+    "fuelType": "Treibstoffart"
   }
 }

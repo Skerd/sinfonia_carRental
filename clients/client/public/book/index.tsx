@@ -78,9 +78,14 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
     const {config, formatMoney} = useRentalConfig();
     const trip = tripFromSearch(params);
     const tripKey = trip ? tripToSearch(trip) : "";
-    const category = config?.categories.find(
-        (entry) => entry.slug === categoryId || entry._id === categoryId,
-    );
+    // A car rented on its own (D198) travels as `?vehicle=`: this exact car, priced from its own prices.
+    const vehicleId = params.get("vehicle") ?? undefined;
+    const car = vehicleId ? config?.cars.find((entry) => entry._id === vehicleId) : undefined;
+    const category = vehicleId
+        ? config?.categories.find((entry) => entry._id === car?.category)
+        : config?.categories.find(
+              (entry) => entry.slug === categoryId || entry._id === categoryId,
+          );
     const pickupLocation = config?.locations.find(
         (location) => location._id === trip?.pickupLocation,
     );
@@ -150,6 +155,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
     }, [
         tripKey,
         category?._id,
+        car?._id,
         extrasKey,
         birthDate,
         promoCode,
@@ -159,6 +165,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
     const quoteBody: QuoteRentalFormType | Record<string, never> = trip && category ? {
         ...trip,
         category: category._id,
+        ...(car ? {vehicle: car._id} : {}),
         extras,
         ...(birthDate ? {driverBirthDate: birthDate} : {}),
         ...(promoCode ? {promoCode} : {}),
@@ -216,10 +223,11 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
             );
         },
     });
-    usePortalTitle(pendingPayment && stripePromise ? resolveLanguageKey("payTitle") : category?.name);
+    const title = car?.title ?? category?.name;
+    usePortalTitle(pendingPayment && stripePromise ? resolveLanguageKey("payTitle") : title);
 
     if (!config) return null;
-    if (!trip || !category || !pickupLocation || !returnLocation) {
+    if (!trip || !category || !pickupLocation || !returnLocation || (vehicleId && !car)) {
         return (
             <div className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col items-start gap-3">
                 <p>{resolveLanguageKey("missingTrip")}</p>
@@ -256,6 +264,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
         const body: BookRentalFormType = {
             ...trip,
             category: category._id,
+            ...(car ? {vehicle: car._id} : {}),
             extras,
             contact,
             driverBirthDate: birthDate,
@@ -273,10 +282,10 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
         <aside className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-4 lg:sticky lg:top-6">
             <div>
                 <h2 className="font-display font-bold tracking-tight text-lg">
-                    {category.name}
+                    {title}
                 </h2>
                 <p className="text-sm text-muted-foreground">
-                    {resolveLanguageKey("orSimilar")}
+                    {resolveLanguageKey(car ? "exactCar" : "orSimilar")}
                 </p>
             </div>
             <dl className="grid gap-3 text-sm">
@@ -408,21 +417,32 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
         >
             <div className="flex flex-col gap-6">
                 <section className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-2">
-                    <RentalCategoryMedia
-                        category={category}
-                        coverClassName="mb-2 aspect-[16/10] w-full rounded-2xl"
-                    />
+                    {car ? (
+                        car.images[0] ? (
+                            <img src={car.images[0]} alt="" className="mb-2 aspect-[16/10] w-full rounded-2xl object-cover" />
+                        ) : null
+                    ) : (
+                        <RentalCategoryMedia
+                            category={category}
+                            coverClassName="mb-2 aspect-[16/10] w-full rounded-2xl"
+                        />
+                    )}
                     <h1 className="font-display font-bold tracking-tight text-3xl sm:text-4xl">
-                        {category.name}
+                        {title}
                     </h1>
-                    <RentalCategoryFacts category={category} />
+                    {car ? (
+                        <p className="text-sm text-muted-foreground">
+                            {[resolveLanguageKey("exactCar"), car.year, car.color].filter(Boolean).join(" · ")}
+                        </p>
+                    ) : null}
+                    <RentalCategoryFacts category={car ?? category} />
                     <Button
                         asChild
                         variant="link"
                         className="h-auto p-0 text-sm"
                     >
                         <Link
-                            to={`${base}/categories/${category.slug || category._id}?${tripKey}`}
+                            to={car ? `${base}/cars/${car._id}?${tripKey}` : `${base}/categories/${category.slug || category._id}?${tripKey}`}
                         >
                             {resolveLanguageKey("changeSearch")}
                         </Link>

@@ -1,0 +1,34 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/dialogs/carPricesDialog.tsx",
+  "title": "Prix des voitures",
+  "description": "Les voitures de cette catégorie que les clients peuvent réserver précisément, et le prix par jour et la caution propres de chacune. Les champs vides suivent la catégorie ({price} par jour, caution {deposit}).",
+  "loading": "Chargement des voitures…",
+  "noCars": "Cette catégorie n'a pas encore de voitures.",
+  "percentLabel": "Changer tous les prix par jour de %",
+  "percentPlaceholder": "p. ex. 10 ou -5",
+  "applyPercent": "Appliquer",
+  "listAll": "Toutes louées seules",
+  "car": "Voiture",
+  "listedAlone": "Seule",
+  "dailyRate": "Prix propre par jour",
+  "depositAmount": "Caution propre",
+  "hasOtherOwnPrices": "aussi des prix propres week-end, semaine ou saison",
+  "emptyHint": "Une voiture avec son propre prix par jour garde ses prix propres de week-end, de semaine et de saison, s'il y en a ; réglez-les sur la voiture. Les voitures réservées précisément restent louées seules jusqu'à ce que ces réservations aient une autre voiture.",
+  "cancel": "Annuler",
+  "confirm": "Enregistrer les prix",
+  "busy": "Enregistrement…",
+  "axios": {
+    "start": {
+      "title": "Enregistrement des prix des voitures…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Prix des voitures enregistrés",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible d'enregistrer les prix des voitures",
+      "time": 5000
+    }
+  }
+}

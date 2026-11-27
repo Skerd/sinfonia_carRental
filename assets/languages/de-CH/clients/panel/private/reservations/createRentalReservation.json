@@ -59,7 +59,9 @@
     "returnTimeLabel": "Rückgabezeit",
     "tripSectionTitle": "Fahrt",
     "vehicleLabel": "Fahrzeug",
-    "vehiclePlaceholder": "Ein beliebiges freies Auto der Kategorie"
+    "vehiclePlaceholder": "Ein beliebiges freies Auto der Kategorie",
+    "exactVehicleLabel": "Genau dieses Fahrzeug buchen",
+    "exactVehicleDescription": "Erfordert ein gewähltes Fahrzeug. Zu dessen eigenen Preisen berechnet und dem Kunden garantiert; sonst ist das gewählte Fahrzeug nur das, welches aus der Klasse ausfährt."
   },
   "axios": {
     "start": {

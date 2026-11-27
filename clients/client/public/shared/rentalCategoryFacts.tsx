@@ -2,9 +2,10 @@ import {compose} from "redux";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import type {RentalStorefrontCategory} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.response.types.ts";
 
-type Props = WithLanguageType & {category: RentalStorefrontCategory};
+/** A category's specs, or a car's own (they are its category's unless it has its own, TD-B291). */
+type Props = WithLanguageType & {category: Pick<RentalStorefrontCategory, "seats" | "doors" | "luggage" | "transmission" | "fuelType">};
 
-/** "5 seats · 4 doors · 2 bags · Automatic · Petrol" for a category card. */
+/** "5 seats · 4 doors · 2 bags · Automatic · Petrol" for a category or car card. */
 function RentalCategoryFacts({category, resolveLanguageKey}: Props) {
     const facts = [
         `${category.seats} ${resolveLanguageKey("seats")}`,

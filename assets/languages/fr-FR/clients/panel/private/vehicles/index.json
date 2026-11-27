@@ -70,6 +70,20 @@
     "vin": "VIN",
     "notes": "Notes",
     "images": "Photos",
-    "videos": "Vidéos"
+    "videos": "Vidéos",
+    "listedAlone": "Louée seule",
+    "listingTitle": "Nom sur le site",
+    "dailyRate": "Prix propre par jour",
+    "weekendDailyRate": "Prix propre le week-end",
+    "weeklyRate": "Prix propre à la semaine",
+    "depositAmount": "Caution propre",
+    "listingDescription": "Description sur le site",
+    "listingImages": "Photos sur le site",
+    "rateSeasons": "Prix saisonniers propres",
+    "seats": "Places",
+    "doors": "Portes",
+    "luggage": "Bagages",
+    "transmission": "Transmission",
+    "fuelType": "Type de carburant"
   }
 }

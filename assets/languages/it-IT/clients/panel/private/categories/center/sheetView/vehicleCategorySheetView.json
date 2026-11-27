@@ -54,5 +54,6 @@
   "crossBorderAllowed": "Estero",
   "crossBorderFee": "Supplemento estero",
   "compactView": "Compatta",
-  "cardsView": "Schede"
+  "cardsView": "Schede",
+  "soldAsClass": "Prenotabile come categoria"
 }

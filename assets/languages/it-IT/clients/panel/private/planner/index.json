@@ -40,7 +40,8 @@
     "sameCar": "Già su questa auto",
     "otherCategory": "Altra categoria: una prenotazione resta nella sua categoria",
     "overlap": "Si sovrappone a un'altra prenotazione",
-    "blocked": "L'auto è bloccata in quel periodo"
+    "blocked": "L'auto è bloccata in quel periodo",
+    "exactCar": "Quest'auto è stata prenotata esattamente: usa «Cambia auto» sulla prenotazione"
   },
   "statusValues": {
     "held": "In attesa di pagamento",
@@ -52,5 +53,6 @@
     "no_show": "Non presentato"
   },
   "customRange": "Intervallo personalizzato",
-  "until": "Fino al"
+  "until": "Fino al",
+  "exactVehicle": "Quest'auto è stata prenotata esattamente"
 }

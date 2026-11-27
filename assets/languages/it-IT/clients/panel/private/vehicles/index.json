@@ -70,6 +70,20 @@
     "vin": "Telaio (VIN)",
     "notes": "Note",
     "images": "Foto",
-    "videos": "Video"
+    "videos": "Video",
+    "listedAlone": "Noleggiata da sola",
+    "listingTitle": "Nome sul sito",
+    "dailyRate": "Prezzo proprio al giorno",
+    "weekendDailyRate": "Prezzo proprio nel weekend",
+    "weeklyRate": "Prezzo settimanale proprio",
+    "depositAmount": "Deposito proprio",
+    "listingDescription": "Descrizione sul sito",
+    "listingImages": "Foto sul sito",
+    "rateSeasons": "Prezzi stagionali propri",
+    "seats": "Posti",
+    "doors": "Porte",
+    "luggage": "Bagagli",
+    "transmission": "Cambio",
+    "fuelType": "Tipo di carburante"
   }
 }

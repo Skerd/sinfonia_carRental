@@ -41,5 +41,6 @@
     "promoLabel": "Promo code",
     "promoApply": "Apply",
     "promoInvalid": "This promo code can't be used for this booking.",
-    "crossBorder": "Taking the car out of the country"
+    "crossBorder": "Taking the car out of the country",
+    "exactCar": "This exact car"
 }

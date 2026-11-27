@@ -39,5 +39,10 @@
     ]
   },
   "fines": "Fines",
-  "recovered": "Recovered"
+  "recovered": "Recovered",
+  "saleKind": {
+    "class": "Revenue from classes",
+    "exact": "Revenue from exact cars"
+  },
+  "bookingsCount": "{count} bookings"
 }

@@ -3,5 +3,7 @@
   "subtitle": "Zgjidhni ku dhe kur, një kategori makine dhe rezervoni. Pa nevojë për llogari.",
   "fleetTitle": "Flota jonë",
   "from": "Nga",
-  "perDay": "në ditë"
+  "perDay": "në ditë",
+  "exactCarsTitle": "Makina të veçanta",
+  "carByCar": "Jepet me qira makinë për makinë: zgjidhni tuajën"
 }

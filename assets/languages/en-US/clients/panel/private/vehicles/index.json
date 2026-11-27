@@ -70,6 +70,20 @@
     "vin": "VIN",
     "notes": "Notes",
     "images": "Photos",
-    "videos": "Videos"
+    "videos": "Videos",
+    "listedAlone": "Rented on its own",
+    "listingTitle": "Name on the website",
+    "dailyRate": "Own price per day",
+    "weekendDailyRate": "Own weekend price",
+    "weeklyRate": "Own weekly price",
+    "depositAmount": "Own deposit",
+    "listingDescription": "Description on the website",
+    "listingImages": "Photos on the website",
+    "rateSeasons": "Own seasonal prices",
+    "seats": "Seats",
+    "doors": "Doors",
+    "luggage": "Luggage",
+    "transmission": "Transmission",
+    "fuelType": "Fuel type"
   }
 }

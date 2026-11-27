@@ -21,6 +21,36 @@ function HomePage({resolveLanguageKey}: WithLanguageType) {
                 </div>
             </section>
 
+            {/* Cars rented on their own (D198): this exact car, at its own price. */}
+            {config.cars.length ? (
+                <section className="flex flex-col gap-6">
+                    <h2 className="font-display font-bold tracking-tight text-2xl sm:text-3xl">{resolveLanguageKey("exactCarsTitle")}</h2>
+                    <ul className="grid gap-x-4 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-6">
+                        {config.cars.map((car) => {
+                            return (
+                                <li key={car._id}>
+                                    <Link to={`${base}/cars/${car._id}`} className="group flex flex-col gap-3 rounded-2xl outline-none focus-visible:ring-3 focus-visible:ring-ring/50">
+                                        {car.images[0] ? (
+                                            <img src={car.images[0]} alt="" className="aspect-[4/5] w-full rounded-2xl object-cover" loading="lazy" />
+                                        ) : (
+                                            <div className="aspect-[4/5] w-full rounded-2xl bg-muted" aria-hidden />
+                                        )}
+                                        <h3 className="font-display text-lg font-bold tracking-tight">{car.title}</h3>
+                                        {car.year || car.color ? (
+                                            <p className="text-sm text-muted-foreground">{[car.year, car.color].filter(Boolean).join(" · ")}</p>
+                                        ) : null}
+                                        <RentalCategoryFacts category={car} />
+                                        <p className="font-display text-[15px] font-semibold tabular-nums">
+                                            {resolveLanguageKey("from")} {formatMoney(car.dailyRate)} {resolveLanguageKey("perDay")}
+                                        </p>
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </section>
+            ) : null}
+
             {config.categories.length ? (
                 <section className="flex flex-col gap-6">
                     <h2 className="font-display font-bold tracking-tight text-2xl sm:text-3xl">{resolveLanguageKey("fleetTitle")}</h2>
@@ -35,9 +65,14 @@ function HomePage({resolveLanguageKey}: WithLanguageType) {
                                     )}
                                     <h3 className="font-display text-lg font-bold tracking-tight">{category.name}</h3>
                                     <RentalCategoryFacts category={category} />
-                                    <p className="font-display text-[15px] font-semibold tabular-nums">
-                                        {resolveLanguageKey("from")} {formatMoney(category.dailyRate)} {resolveLanguageKey("perDay")}
-                                    </p>
+                                    {/* A class that only heads its cars rented on their own has no class price (D198). */}
+                                    {category.soldAsClass === false ? (
+                                        <p className="text-sm text-muted-foreground">{resolveLanguageKey("carByCar")}</p>
+                                    ) : (
+                                        <p className="font-display text-[15px] font-semibold tabular-nums">
+                                            {resolveLanguageKey("from")} {formatMoney(category.dailyRate)} {resolveLanguageKey("perDay")}
+                                        </p>
+                                    )}
                                 </Link>
                             </li>
                         ))}

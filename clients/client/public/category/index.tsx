@@ -21,24 +21,37 @@ const QUOTE_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalS
 
 const LANGUAGE_PATH = "src/modules/carRental/clients/client/public/category/index.tsx";
 
+/**
+ * One bookable item of the rental site: a car class (`/categories/:categoryId`, "or similar") or a car rented on its own
+ * (`/cars/:vehicleId`, this exact car, D198). A car shows its own name, photos and prices with its class's facts; a
+ * class that is only a heading for such cars (not sold as a class) lists them instead of taking a booking.
+ */
 function CategoryPage({resolveLanguageKey, currentLanguage}: WithLanguageType) {
     const base = useSectionBase();
     // A class opens by its web address (slug); links made with its id still open it.
-    const {categoryId = ""} = useParams();
+    const {categoryId = "", vehicleId} = useParams();
     const [params] = useSearchParams();
     const navigate = useNavigate();
     const {config, loading, formatMoney} = useRentalConfig();
-    const category = config?.categories.find((entry) => entry.slug === categoryId || entry._id === categoryId);
+    const car = vehicleId ? config?.cars.find((entry) => entry._id === vehicleId) : undefined;
+    const category = vehicleId
+        ? config?.categories.find((entry) => entry._id === car?.category)
+        : config?.categories.find((entry) => entry.slug === categoryId || entry._id === categoryId);
+    // What a booking from this page is for: this car, or the class when it is sold as one.
+    const bookable = Boolean(car) || category?.soldAsClass !== false;
+    const groupCars = category ? config?.cars.filter((entry) => entry.category === category._id && entry._id !== car?._id) ?? [] : [];
     const initial = tripFromSearch(params);
     const [trip, setTrip] = useState<RentalTripParams | null>(initial);
     const tripKey = trip ? tripToSearch(trip) : "";
     const returnsBeforePickup = !!trip && `${trip.returnDate}T${trip.returnTime}` <= `${trip.pickupDate}T${trip.pickupTime}`;
-    const quotable = !!trip && !!category && !!trip.pickupLocation && !returnsBeforePickup;
+    const quotable = bookable && !!trip && !!category && !!trip.pickupLocation && !returnsBeforePickup;
     const [quoteCount, setQuoteCount] = useState(0);
     useEffect(() => {
         if (quotable) setQuoteCount((count) => count + 1);
-    }, [tripKey, category?._id]);
-    const quoteBody: QuoteRentalFormType | Record<string, never> = trip && category ? {...trip, category: category._id, extras: []} : {};
+    }, [tripKey, category?._id, car?._id]);
+    const quoteBody: QuoteRentalFormType | Record<string, never> = trip && category
+        ? {...trip, category: category._id, ...(car ? {vehicle: car._id} : {}), extras: []}
+        : {};
     const quoteRequest = useHttpRequest<RentalQuoteResponse>(QUOTE_REQUEST, quoteBody, quoteCount);
     const quote = quotable && !quoteRequest.error ? quoteRequest.data?.data ?? null : null;
     const quoteError = quotable && quoteRequest.error
@@ -60,7 +73,7 @@ function CategoryPage({resolveLanguageKey, currentLanguage}: WithLanguageType) {
         );
     }
 
-    if (!category) {
+    if (!category || (vehicleId && !car)) {
         return (
             <div className="flex flex-col items-center gap-4 py-20 text-center">
                 <h1 className="font-display text-3xl font-semibold">{resolveLanguageKey("notFound")}</h1>
@@ -70,16 +83,20 @@ function CategoryPage({resolveLanguageKey, currentLanguage}: WithLanguageType) {
         );
     }
 
+    // A car's own specs where it has them, else its category's (TD-B291).
+    const specsOf = car ?? category;
     const facts = [
-        {icon: IconUsers, label: resolveLanguageKey("facts.seats"), value: String(category.seats)},
-        category.doors != null && {icon: IconDoorEnter, label: resolveLanguageKey("facts.doors"), value: String(category.doors)},
-        category.luggage != null && {icon: IconLuggage, label: resolveLanguageKey("facts.bags"), value: String(category.luggage)},
-        {icon: IconSettings, label: resolveLanguageKey("facts.transmission"), value: resolveLanguageKey(`transmission.${category.transmission}`)},
-        {icon: IconGasStation, label: resolveLanguageKey("facts.fuel"), value: resolveLanguageKey(`fuel.${category.fuelType}`)},
+        {icon: IconUsers, label: resolveLanguageKey("facts.seats"), value: String(specsOf.seats)},
+        specsOf.doors != null && {icon: IconDoorEnter, label: resolveLanguageKey("facts.doors"), value: String(specsOf.doors)},
+        specsOf.luggage != null && {icon: IconLuggage, label: resolveLanguageKey("facts.bags"), value: String(specsOf.luggage)},
+        {icon: IconSettings, label: resolveLanguageKey("facts.transmission"), value: resolveLanguageKey(`transmission.${specsOf.transmission}`)},
+        {icon: IconGasStation, label: resolveLanguageKey("facts.fuel"), value: resolveLanguageKey(`fuel.${specsOf.fuelType}`)},
     ].filter((fact): fact is {icon: TablerIcon; label: string; value: string} => Boolean(fact));
 
     const specs = [
-        {label: resolveLanguageKey("deposit"), value: formatMoney(category.depositAmount)},
+        car?.year != null && {label: resolveLanguageKey("year"), value: String(car.year)},
+        car?.color && {label: resolveLanguageKey("color"), value: car.color},
+        {label: resolveLanguageKey("deposit"), value: formatMoney(car ? car.depositAmount : category.depositAmount)},
         {
             label: resolveLanguageKey("mileage"),
             value: category.mileagePolicy === "unlimited"
@@ -91,23 +108,52 @@ function CategoryPage({resolveLanguageKey, currentLanguage}: WithLanguageType) {
 
     const continueToBook = (next: RentalTripParams) => {
         if (!quote) return;
-        navigate(`${base}/book/${category.slug || category._id}?${tripToSearch(next)}`);
+        navigate(`${base}/book/${category.slug || category._id}?${tripToSearch(next)}${car ? `&vehicle=${car._id}` : ""}`);
     };
+    const title = car ? car.title : category.name;
+    const images = car ? car.images : category.images;
+    const videos = car ? [] : category.videos;
+    const description = car ? car.description : category.description;
+    const carsList = groupCars.length ? (
+        <DetailSection title={resolveLanguageKey(bookable ? "exactCarsTitle" : "chooseCarTitle")}>
+            <ul className="grid gap-4 sm:grid-cols-2">
+                {groupCars.map((entry) => (
+                    <li key={entry._id}>
+                        <Link
+                            to={`${base}/cars/${entry._id}${tripKey ? `?${tripKey}` : ""}`}
+                            className="flex items-center gap-3 rounded-2xl bg-muted p-3 outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+                        >
+                            {entry.images[0]
+                                ? <img src={entry.images[0]} alt="" className="size-16 shrink-0 rounded-xl object-cover" loading="lazy" />
+                                : <div className="size-16 shrink-0 rounded-xl bg-background" aria-hidden />}
+                            <span className="flex flex-col gap-0.5">
+                                <span className="font-medium">{entry.title}</span>
+                                <span className="text-sm text-muted-foreground">{[entry.year, entry.color].filter(Boolean).join(" · ")}</span>
+                                <span className="text-sm font-semibold tabular-nums">{formatMoney(entry.dailyRate)} {resolveLanguageKey("perDay")}</span>
+                            </span>
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </DetailSection>
+    ) : null;
 
     return (
         <DetailPage
-            kind="vehicleCategory"
-            title={category.name}
-            // The class as the catalog's card lists it, for its heart (TD-F148).
-            keep={{kind: "vehicleCategory", id: category._id, section: "carRental", path: `/categories/${category.slug || category._id}`, title: category.name}}
-            media={category.images.length || category.videos.length
-                ? <DetailGallery title={category.name} images={category.images} videos={category.videos} shape="landscape" />
+            kind={car ? "vehicle" : "vehicleCategory"}
+            title={title}
+            // The item as the catalog's card lists it, for its heart (TD-F148).
+            keep={car
+                ? {kind: "vehicle", id: car._id, section: "carRental", path: `/cars/${car._id}`, title: car.title}
+                : {kind: "vehicleCategory", id: category._id, section: "carRental", path: `/categories/${category.slug || category._id}`, title: category.name}}
+            media={images.length || videos.length
+                ? <DetailGallery title={title} images={images} videos={videos} shape="landscape" />
                 : undefined}
             story={(
                 <>
-                    {category.description ? (
+                    {description ? (
                         <DetailSection title={resolveLanguageKey("description")}>
-                            <DetailText>{category.description}</DetailText>
+                            <DetailText>{description}</DetailText>
                         </DetailSection>
                     ) : null}
                     <DetailSection title={resolveLanguageKey("details")}>
@@ -116,35 +162,44 @@ function CategoryPage({resolveLanguageKey, currentLanguage}: WithLanguageType) {
                             <DetailSpecs rows={specs} />
                         </div>
                     </DetailSection>
-                    <CategoryReviews categoryId={category._id} />
+                    {car ? <CategoryReviews vehicleId={car._id} /> : <CategoryReviews categoryId={category._id} />}
                 </>
             )}
         >
             <PortalProviderCard kind="vehicleCategory" />
-            <DetailHeading title={category.name}>
-                <p className="text-sm text-muted-foreground">{resolveLanguageKey("orSimilar")}</p>
-                <DetailPrice
-                    amount={quote ? formatMoney(quote.grandTotal) : formatMoney(category.dailyRate)}
-                    note={quote
-                        ? resolveLanguageKey(quote.rentalDays === 1 ? "forDay" : "forDays").replace("{days}", String(quote.rentalDays))
-                        : resolveLanguageKey("perDay")}
-                />
+            <DetailHeading title={title}>
+                <p className="text-sm text-muted-foreground">
+                    {car ? `${resolveLanguageKey("exactCar")} · ${category.name}` : resolveLanguageKey(bookable ? "orSimilar" : "carByCar")}
+                </p>
+                {bookable ? (
+                    <DetailPrice
+                        amount={quote ? formatMoney(quote.grandTotal) : formatMoney(car ? car.dailyRate : category.dailyRate)}
+                        note={quote
+                            ? resolveLanguageKey(quote.rentalDays === 1 ? "forDay" : "forDays").replace("{days}", String(quote.rentalDays))
+                            : resolveLanguageKey("perDay")}
+                    />
+                ) : null}
                 {quote ? <DetailStatus tone="success">{resolveLanguageKey("available")}</DetailStatus> : null}
                 {quoteError ? <DetailStatus tone="destructive">{quoteError}</DetailStatus> : null}
             </DetailHeading>
-            <DetailSection title={resolveLanguageKey("tripTitle")}>
-                <RentalSearchForm
-                    key={initial ? tripToSearch(initial) : "new"}
-                    initial={initial}
-                    layout="stack"
-                    submitLabel={resolveLanguageKey("continue")}
-                    submitDisabled={!quote}
-                    onTripChange={setTrip}
-                    onSubmitTrip={continueToBook}
-                />
-            </DetailSection>
+            {bookable ? (
+                <DetailSection title={resolveLanguageKey("tripTitle")}>
+                    <RentalSearchForm
+                        key={initial ? tripToSearch(initial) : "new"}
+                        initial={initial}
+                        layout="stack"
+                        submitLabel={resolveLanguageKey("continue")}
+                        submitDisabled={!quote}
+                        onTripChange={setTrip}
+                        onSubmitTrip={continueToBook}
+                    />
+                </DetailSection>
+            ) : null}
+            {carsList}
             {/* Something wrong with the class goes to the platform, not the company (D191). */}
-            <ReportButton kind="carRental.carClass" recordId={category._id} className="self-start" />
+            {car
+                ? <ReportButton kind="carRental.car" recordId={car._id} className="self-start" />
+                : <ReportButton kind="carRental.carClass" recordId={category._id} className="self-start" />}
         </DetailPage>
     );
 }

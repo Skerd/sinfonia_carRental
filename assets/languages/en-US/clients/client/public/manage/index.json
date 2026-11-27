@@ -66,5 +66,6 @@
   "reviewThanks": "Thank you. Your review is now on the site.",
   "reviewRating": "Your rating",
   "reviewStar": "{rating} out of 5",
-  "reviewShownAs": "Your review shows at once, with your first name and the initial of your last name."
+  "reviewShownAs": "Your review shows at once, with your first name and the initial of your last name.",
+  "exactCar": "This exact car"
 }

@@ -70,6 +70,20 @@
     "vin": "VIN",
     "notes": "Shënime",
     "images": "Foto",
-    "videos": "Video"
+    "videos": "Video",
+    "listedAlone": "Me qira më vete",
+    "listingTitle": "Emri në faqe",
+    "dailyRate": "Çmimi i vet për ditë",
+    "weekendDailyRate": "Çmimi i vet në fundjavë",
+    "weeklyRate": "Çmimi i vet javor",
+    "depositAmount": "Depozita e vet",
+    "listingDescription": "Përshkrimi në faqe",
+    "listingImages": "Fotot në faqe",
+    "rateSeasons": "Çmime sezonale të veta",
+    "seats": "Ulëset",
+    "doors": "Dyer",
+    "luggage": "Bagazhet",
+    "transmission": "Kambio",
+    "fuelType": "Lloji i karburantit"
   }
 }

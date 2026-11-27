@@ -147,5 +147,40 @@
   "finesGroup": "Bussen",
   "blocksGroup": "Fahrzeugsperren",
   "compactView": "Kompakt",
-  "cardsView": "Karten"
+  "cardsView": "Karten",
+  "salesGroup": "Verkauf und Preis",
+  "listedAlone": "Einzeln vermietet",
+  "listingTitle": "Name auf der Website",
+  "listingDescription": "Beschreibung auf der Website",
+  "listingImages": "Fotos auf der Website",
+  "rateSeasons": "Eigene Saisonpreise",
+  "startDate": "Von",
+  "endDate": "Bis",
+  "dailyRate": "Tagespreis",
+  "hiddenByPlatform": "Von der Plattform verborgen",
+  "hiddenByPlatformNote": "Die Plattform hat dieses Fahrzeug nach einer Meldung ausgeblendet. Es erscheint nicht mehr auf Ihrer Vermietungs-Website oder im Portal und kann online nicht mehr einzeln gebucht werden; das Personal kann es weiterhin buchen.",
+  "ownDailyRate": "Eigener Preis pro Tag",
+  "ownWeekendDailyRate": "Eigener Wochenendpreis pro Tag",
+  "ownWeeklyRate": "Eigener Wochenpreis",
+  "ownDepositAmount": "Eigene Kaution",
+  "categoryDailyRate": "Preis pro Tag (der Kategorie)",
+  "categoryWeekendDailyRate": "Wochenendpreis pro Tag (der Kategorie)",
+  "categoryWeeklyRate": "Wochenpreis (der Kategorie)",
+  "categoryDepositAmount": "Kaution (der Kategorie)",
+  "seats": "Sitze",
+  "doors": "Türen",
+  "luggage": "Gepäck",
+  "transmission": "Getriebe",
+  "fuelType": "Treibstoffart",
+  "transmissionValues": {
+    "manual": "Manuell",
+    "automatic": "Automatik"
+  },
+  "fuelTypeValues": {
+    "petrol": "Benzin",
+    "diesel": "Diesel",
+    "hybrid": "Hybrid",
+    "electric": "Elektro",
+    "other": "Andere"
+  }
 }

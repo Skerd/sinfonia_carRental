@@ -59,7 +59,9 @@
     "returnTimeLabel": "Return time",
     "tripSectionTitle": "Trip",
     "vehicleLabel": "Vehicle",
-    "vehiclePlaceholder": "Any free car of the category"
+    "vehiclePlaceholder": "Any free car of the category",
+    "exactVehicleLabel": "Book this exact car",
+    "exactVehicleDescription": "Needs a vehicle picked. Priced at that car's own prices and guaranteed to the customer; otherwise the picked car is only which of the class goes out."
   },
   "axios": {
     "start": {

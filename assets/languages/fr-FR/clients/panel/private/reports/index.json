@@ -39,5 +39,10 @@
     ]
   },
   "fines": "Amendes",
-  "recovered": "Récupéré"
+  "recovered": "Récupéré",
+  "saleKind": {
+    "class": "Revenu des catégories",
+    "exact": "Revenu des voitures précises"
+  },
+  "bookingsCount": "{count} réservations"
 }

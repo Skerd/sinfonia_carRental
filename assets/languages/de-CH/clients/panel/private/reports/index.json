@@ -39,5 +39,10 @@
     ]
   },
   "fines": "Bussen",
-  "recovered": "Zurückerhalten"
+  "recovered": "Zurückerhalten",
+  "saleKind": {
+    "class": "Umsatz aus Klassen",
+    "exact": "Umsatz aus bestimmten Fahrzeugen"
+  },
+  "bookingsCount": "{count} Buchungen"
 }

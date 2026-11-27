@@ -36,5 +36,11 @@
     "hybrid": "Ibrido",
     "electric": "Elettrico",
     "other": "Altro carburante"
-  }
+  },
+  "exactCar": "Esattamente quest'auto",
+  "exactCarsTitle": "Oppure scegli l'auto esatta",
+  "chooseCarTitle": "Scegli la tua auto",
+  "carByCar": "Si noleggia auto per auto: scegli la tua",
+  "year": "Anno",
+  "color": "Colore"
 }

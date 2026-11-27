@@ -3,7 +3,7 @@
   "cancel": "Indietro",
   "confirm": "Cambia auto",
   "title": "Cambia l'auto",
-  "description": "Scegli un'altra auto della stessa categoria. Deve essere libera per tutta la prenotazione.",
+  "description": "Scegli un'altra auto libera: prima della stessa categoria, oppure di un'altra. Deve essere libera per tutta la prenotazione.",
   "vehicleLabel": "Auto",
   "vehiclePlaceholder": "Seleziona un'auto",
   "axios": {
@@ -21,12 +21,22 @@
     }
   },
   "loadingCars": "Ricerca auto libere…",
-  "noFreeCars": "Nessun'altra auto di questa categoria è libera per tutta la prenotazione.",
+  "noFreeCars": "Nessun'altra auto è libera per tutta la prenotazione.",
   "readiness": {
     "ready": "Pronta",
     "needs_cleaning": "Da pulire",
     "needs_check": "Da controllare"
   },
   "papersLapse": "Documenti in scadenza",
-  "papersLapseHint": "L'assicurazione o i documenti scadono prima della riconsegna: rinnovali prima della consegna, altrimenti non può partire."
+  "papersLapseHint": "L'assicurazione o i documenti scadono prima della riconsegna: rinnovali prima della consegna, altrimenti non può partire.",
+  "pricingLabel": "Prezzo",
+  "pricing": {
+    "keep": "Mantieni il prezzo prenotato",
+    "reprice": "Ricalcola per quest'auto"
+  },
+  "pricingHint": {
+    "keep": "Il cliente paga come prenotato e mantiene le condizioni chilometriche prenotate: un upgrade gratuito, o un'auto più economica che regoli tu.",
+    "reprice": "I giorni di noleggio vengono ricalcolati per quest'auto, con i chilometri e il deposito della sua categoria. Extra, costi e sconti mantengono i loro importi."
+  },
+  "customerToldHint": "Quest'auto era stata prenotata esattamente: il cliente riceve un'e-mail con la nuova auto."
 }

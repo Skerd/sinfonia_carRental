@@ -3,7 +3,7 @@
   "cancel": "Retour",
   "confirm": "Changer de voiture",
   "title": "Changer la voiture",
-  "description": "Choisissez une autre voiture de la même catégorie. Elle doit être libre pendant toute la réservation.",
+  "description": "Choisissez une autre voiture libre : de la même catégorie d'abord, ou d'une autre. Elle doit être libre pendant toute la réservation.",
   "vehicleLabel": "Voiture",
   "vehiclePlaceholder": "Choisir une voiture",
   "axios": {
@@ -21,12 +21,22 @@
     }
   },
   "loadingCars": "Recherche des voitures libres…",
-  "noFreeCars": "Aucune autre voiture de cette catégorie n'est libre pour toute la réservation.",
+  "noFreeCars": "Aucune autre voiture n'est libre pendant toute la réservation.",
   "readiness": {
     "ready": "Prête",
     "needs_cleaning": "À nettoyer",
     "needs_check": "À contrôler"
   },
   "papersLapse": "Papiers expirés",
-  "papersLapseHint": "Son assurance ou ses papiers expirent avant le retour : renouvelez-les avant la remise, sinon il ne peut pas partir."
+  "papersLapseHint": "Son assurance ou ses papiers expirent avant le retour : renouvelez-les avant la remise, sinon il ne peut pas partir.",
+  "pricingLabel": "Prix",
+  "pricing": {
+    "keep": "Garder le prix réservé",
+    "reprice": "Recalculer pour cette voiture"
+  },
+  "pricingHint": {
+    "keep": "Le client paie comme réservé et garde les conditions de kilométrage réservées : un surclassement offert, ou une voiture moins chère que vous réglez vous-même.",
+    "reprice": "Les jours de location sont recalculés pour cette voiture, avec le kilométrage et la caution de sa catégorie. Options, frais et remises gardent leurs montants."
+  },
+  "customerToldHint": "Cette voiture avait été réservée précisément : le client reçoit un e-mail avec la nouvelle voiture."
 }

@@ -1,0 +1,34 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/dialogs/carPricesDialog.tsx",
+  "title": "Fahrzeugpreise",
+  "description": "Welche Fahrzeuge dieser Kategorie Kunden genau buchen können, und der eigene Tagespreis und die eigene Kaution jedes Fahrzeugs. Leere Felder folgen der Kategorie ({price} pro Tag, Kaution {deposit}).",
+  "loading": "Fahrzeuge werden geladen…",
+  "noCars": "Diese Kategorie hat noch keine Fahrzeuge.",
+  "percentLabel": "Alle Tagespreise um % ändern",
+  "percentPlaceholder": "z. B. 10 oder -5",
+  "applyPercent": "Anwenden",
+  "listAll": "Alle einzeln vermieten",
+  "car": "Fahrzeug",
+  "listedAlone": "Einzeln",
+  "dailyRate": "Eigener Preis pro Tag",
+  "depositAmount": "Eigene Kaution",
+  "hasOtherOwnPrices": "auch eigene Wochenend-, Wochen- oder Saisonpreise",
+  "emptyHint": "Ein Fahrzeug mit eigenem Tagespreis behält seine eigenen Wochenend-, Wochen- und Saisonpreise, falls vorhanden; legen Sie diese beim Fahrzeug fest. Genau gebuchte Fahrzeuge bleiben einzeln vermietet, bis diese Buchungen ein anderes Fahrzeug haben.",
+  "cancel": "Abbrechen",
+  "confirm": "Preise speichern",
+  "busy": "Wird gespeichert…",
+  "axios": {
+    "start": {
+      "title": "Fahrzeugpreise werden gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Fahrzeugpreise gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Fahrzeugpreise konnten nicht gespeichert werden",
+      "time": 5000
+    }
+  }
+}

@@ -54,5 +54,6 @@
   "crossBorderAllowed": "Cross-border",
   "crossBorderFee": "Cross-border fee",
   "compactView": "Compact",
-  "cardsView": "Cards"
+  "cardsView": "Cards",
+  "soldAsClass": "Booked as a class"
 }

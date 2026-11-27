@@ -40,7 +40,8 @@
     "sameCar": "Already on this car",
     "otherCategory": "Another class: a booking stays in its class",
     "overlap": "Overlaps another booking on this car",
-    "blocked": "The car is blocked then"
+    "blocked": "The car is blocked then",
+    "exactCar": "This car was booked exactly: use Change car on the booking"
   },
   "statusValues": {
     "held": "Awaiting payment",
@@ -52,5 +53,6 @@
     "no_show": "No-show"
   },
   "customRange": "Custom range",
-  "until": "Until"
+  "until": "Until",
+  "exactVehicle": "This exact car was booked"
 }

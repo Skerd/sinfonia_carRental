@@ -16,6 +16,8 @@ import ShowVehicleCategoryOnWebsite from "@carRentalModule/clients/panel/private
 import HideVehicleCategoryFromWebsite from "@carRentalModule/clients/panel/private/categories/center/actions/hideVehicleCategoryFromWebsite.tsx";
 import ShowVehicleCategoryOnWebsiteDialog from "@carRentalModule/clients/panel/private/categories/center/dialogs/showVehicleCategoryOnWebsiteDialog.tsx";
 import HideVehicleCategoryFromWebsiteDialog from "@carRentalModule/clients/panel/private/categories/center/dialogs/hideVehicleCategoryFromWebsiteDialog.tsx";
+import EditCarPrices from "@carRentalModule/clients/panel/private/categories/center/actions/editCarPrices.tsx";
+import CarPricesDialog from "@carRentalModule/clients/panel/private/categories/center/dialogs/carPricesDialog.tsx";
 import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 
 type VehicleCategoryCardProps = WithLanguageType & {
@@ -68,6 +70,9 @@ function VehicleCategoryCard({
             })}
             extraDialogs={({action, setAction, entity, setEntity}) => (
                 <>
+                    {action === "editCarPrices" && (
+                        <CarPricesDialog open={true} onClose={() => setAction("")} entity={entity} />
+                    )}
                     {action === "showVehicleCategoryOnWebsite" && (
                         <ShowVehicleCategoryOnWebsiteDialog
                             open
@@ -124,6 +129,7 @@ function VehicleCategoryCard({
                     >
                         <ShowVehicleCategoryOnWebsite entity={row} onAction={setAction} />
                         <HideVehicleCategoryFromWebsite entity={row} onAction={setAction} />
+                        <EditCarPrices onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
                         <EntityCardRow

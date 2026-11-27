@@ -10,5 +10,6 @@
     "days": "days",
     "vatIncluded": "VAT included",
     "choose": "Choose",
-    "soldOut": "Not available for these dates"
+    "soldOut": "Not available for these dates",
+    "exactCar": "This exact car"
 }

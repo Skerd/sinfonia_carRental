@@ -84,7 +84,9 @@
     "amountCurrencyDescription": "In der Mietwährung (Konfigurationen › Autovermietung › Online-Buchung).",
     "slugDescription": "Optional. Leer gelassen, wird er aus dem Namen gebildet.",
     "isPublicLabel": "Auf der Website sichtbar",
-    "isPublicDescription": "Aus blendet diese Klasse in der Online-Buchung aus; am Schalter bleibt sie buchbar."
+    "isPublicDescription": "Aus blendet diese Klasse in der Online-Buchung aus; am Schalter bleibt sie buchbar.",
+    "soldAsClassLabel": "Als Klasse buchbar («oder ähnlich»)",
+    "soldAsClassDescription": "Aus: Die Kategorie ist nur eine Überschrift für ihre einzeln vermieteten Fahrzeuge; Kunden wählen eines davon."
   },
   "axios": {
     "start": {

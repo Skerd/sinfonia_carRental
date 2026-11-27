@@ -54,5 +54,6 @@
   "crossBorderAllowed": "Transfrontalier",
   "crossBorderFee": "Frais transfrontaliers",
   "compactView": "Compact",
-  "cardsView": "Cartes"
+  "cardsView": "Cartes",
+  "soldAsClass": "Réservable comme catégorie"
 }

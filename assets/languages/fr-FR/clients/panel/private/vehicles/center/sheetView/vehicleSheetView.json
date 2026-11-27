@@ -147,5 +147,40 @@
   "finesGroup": "Amendes",
   "blocksGroup": "Blocages de véhicules",
   "compactView": "Compact",
-  "cardsView": "Cartes"
+  "cardsView": "Cartes",
+  "salesGroup": "Vente et prix",
+  "listedAlone": "Louée seule",
+  "listingTitle": "Nom sur le site",
+  "listingDescription": "Description sur le site",
+  "listingImages": "Photos sur le site",
+  "rateSeasons": "Prix saisonniers propres",
+  "startDate": "De",
+  "endDate": "À",
+  "dailyRate": "Tarif journalier",
+  "hiddenByPlatform": "Masquée par la plateforme",
+  "hiddenByPlatformNote": "La plateforme a masqué cette voiture après un signalement. Elle n'apparaît plus sur votre site de location ni sur le portail et ne peut plus être réservée seule en ligne ; le personnel peut toujours la réserver.",
+  "ownDailyRate": "Prix propre par jour",
+  "ownWeekendDailyRate": "Prix propre par jour le week-end",
+  "ownWeeklyRate": "Prix propre à la semaine",
+  "ownDepositAmount": "Caution propre",
+  "categoryDailyRate": "Prix par jour (de sa catégorie)",
+  "categoryWeekendDailyRate": "Prix par jour le week-end (de sa catégorie)",
+  "categoryWeeklyRate": "Prix à la semaine (de sa catégorie)",
+  "categoryDepositAmount": "Caution (de sa catégorie)",
+  "seats": "Places",
+  "doors": "Portes",
+  "luggage": "Bagages",
+  "transmission": "Transmission",
+  "fuelType": "Type de carburant",
+  "transmissionValues": {
+    "manual": "Manuelle",
+    "automatic": "Automatique"
+  },
+  "fuelTypeValues": {
+    "petrol": "Essence",
+    "diesel": "Diesel",
+    "hybrid": "Hybride",
+    "electric": "Électrique",
+    "other": "Autre"
+  }
 }

@@ -84,7 +84,9 @@
     "amountCurrencyDescription": "Dans la devise de location (Configurations › Location de voitures › Réservation en ligne).",
     "slugDescription": "Facultatif. Laissé vide, il est créé à partir du nom.",
     "isPublicLabel": "Visible sur le site",
-    "isPublicDescription": "Désactivée, cette catégorie disparaît de la réservation en ligne ; le comptoir peut toujours la réserver."
+    "isPublicDescription": "Désactivée, cette catégorie disparaît de la réservation en ligne ; le comptoir peut toujours la réserver.",
+    "soldAsClassLabel": "Réservable comme catégorie (« ou similaire »)",
+    "soldAsClassDescription": "Désactivé : la catégorie ne sert que d'en-tête à ses voitures louées seules ; le client en choisit une."
   },
   "axios": {
     "start": {

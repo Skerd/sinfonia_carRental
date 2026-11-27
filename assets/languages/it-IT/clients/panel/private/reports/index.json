@@ -39,5 +39,10 @@
     ]
   },
   "fines": "Multe",
-  "recovered": "Recuperato"
+  "recovered": "Recuperato",
+  "saleKind": {
+    "class": "Ricavi dalle categorie",
+    "exact": "Ricavi dalle auto precise"
+  },
+  "bookingsCount": "{count} prenotazioni"
 }

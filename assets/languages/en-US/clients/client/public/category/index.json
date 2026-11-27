@@ -36,5 +36,11 @@
     "hybrid": "Hybrid",
     "electric": "Electric",
     "other": "Other fuel"
-  }
+  },
+  "exactCar": "This exact car",
+  "exactCarsTitle": "Or pick the exact car",
+  "chooseCarTitle": "Choose your car",
+  "carByCar": "Rented car by car: pick the exact one",
+  "year": "Year",
+  "color": "Color"
 }

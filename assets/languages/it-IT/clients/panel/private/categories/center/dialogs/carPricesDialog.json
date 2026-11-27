@@ -1,0 +1,34 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/categories/center/dialogs/carPricesDialog.tsx",
+  "title": "Prezzi delle auto",
+  "description": "Quali auto di questa categoria i clienti possono prenotare esattamente, e il prezzo al giorno e il deposito propri di ognuna. I campi vuoti seguono la categoria ({price} al giorno, deposito {deposit}).",
+  "loading": "Caricamento delle auto…",
+  "noCars": "Questa categoria non ha ancora auto.",
+  "percentLabel": "Cambia tutti i prezzi al giorno del %",
+  "percentPlaceholder": "es. 10 o -5",
+  "applyPercent": "Applica",
+  "listAll": "Noleggia tutte da sole",
+  "car": "Auto",
+  "listedAlone": "Da sola",
+  "dailyRate": "Prezzo proprio al giorno",
+  "depositAmount": "Deposito proprio",
+  "hasOtherOwnPrices": "anche prezzi propri per weekend, settimana o stagione",
+  "emptyHint": "Un'auto con il proprio prezzo al giorno mantiene i suoi prezzi propri per weekend, settimana e stagioni, se li ha; impostali sull'auto. Le auto prenotate esattamente restano noleggiate da sole finché quelle prenotazioni non hanno un'altra auto.",
+  "cancel": "Annulla",
+  "confirm": "Salva i prezzi",
+  "busy": "Salvataggio…",
+  "axios": {
+    "start": {
+      "title": "Salvataggio dei prezzi delle auto…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Prezzi delle auto salvati",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare i prezzi delle auto",
+      "time": 5000
+    }
+  }
+}

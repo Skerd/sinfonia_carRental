@@ -66,5 +66,6 @@
   "reviewThanks": "Merci. Votre avis est maintenant en ligne.",
   "reviewRating": "Votre note",
   "reviewStar": "{rating} sur 5",
-  "reviewShownAs": "Votre avis s'affiche aussitôt, avec votre prénom et l'initiale de votre nom."
+  "reviewShownAs": "Votre avis s'affiche aussitôt, avec votre prénom et l'initiale de votre nom.",
+  "exactCar": "Exactement cette voiture"
 }

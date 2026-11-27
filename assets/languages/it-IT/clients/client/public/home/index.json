@@ -3,5 +3,7 @@
   "subtitle": "Scegli dove e quando, una categoria di auto e prenota. Nessun account necessario.",
   "fleetTitle": "La nostra flotta",
   "from": "Da",
-  "perDay": "al giorno"
+  "perDay": "al giorno",
+  "exactCarsTitle": "Auto speciali",
+  "carByCar": "Si noleggia auto per auto: scegli la tua"
 }

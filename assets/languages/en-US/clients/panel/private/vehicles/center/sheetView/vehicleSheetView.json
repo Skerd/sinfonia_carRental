@@ -147,5 +147,40 @@
   "finesGroup": "Fines",
   "blocksGroup": "Vehicle blocks",
   "compactView": "Compact",
-  "cardsView": "Cards"
+  "cardsView": "Cards",
+  "salesGroup": "Sales and price",
+  "listedAlone": "Rented on its own",
+  "listingTitle": "Name on the website",
+  "listingDescription": "Description on the website",
+  "listingImages": "Photos on the website",
+  "rateSeasons": "Own seasonal prices",
+  "startDate": "From",
+  "endDate": "To",
+  "dailyRate": "Daily rate",
+  "hiddenByPlatform": "Hidden by the platform",
+  "hiddenByPlatformNote": "The platform hid this car after a report. It no longer shows on your rental site or the portal, and can't be booked on its own online; staff can still book it.",
+  "ownDailyRate": "Own price per day",
+  "ownWeekendDailyRate": "Own weekend price per day",
+  "ownWeeklyRate": "Own weekly price",
+  "ownDepositAmount": "Own deposit",
+  "categoryDailyRate": "Price per day (its category's)",
+  "categoryWeekendDailyRate": "Weekend price per day (its category's)",
+  "categoryWeeklyRate": "Weekly price (its category's)",
+  "categoryDepositAmount": "Deposit (its category's)",
+  "seats": "Seats",
+  "doors": "Doors",
+  "luggage": "Luggage",
+  "transmission": "Transmission",
+  "fuelType": "Fuel type",
+  "transmissionValues": {
+    "manual": "Manual",
+    "automatic": "Automatic"
+  },
+  "fuelTypeValues": {
+    "petrol": "Petrol",
+    "diesel": "Diesel",
+    "hybrid": "Hybrid",
+    "electric": "Electric",
+    "other": "Other"
+  }
 }

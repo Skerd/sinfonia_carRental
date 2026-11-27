@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCategory, IconMapPin} from "@tabler/icons-react";
+import {IconCash, IconCategory, IconEyeOff, IconMapPin} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
@@ -23,6 +23,7 @@ import {vehicleEditPath} from "@carRentalModule/clients/panel/private/vehicles/i
 import VehicleRecordsMenu from "@carRentalModule/clients/panel/private/vehicles/center/actions/vehicleRecordsMenu.tsx";
 import VehicleReadinessMenu from "@carRentalModule/clients/panel/private/vehicles/center/actions/vehicleReadinessMenu.tsx";
 import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
+import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 
 const READINESS_BADGE: Record<VehicleReadiness, string> = {
     ready: STATUS_BADGE_SUCCESS,
@@ -95,6 +96,27 @@ function VehicleCard({
                         badges={
                             <>
                             {row.status !== "active" ? <StatusBadge tableConfigKey="vehicles" field="status" value={row.status} label={String(resolveLanguageKey(`statusValues.${row.status}`))} /> : null}
+                            {/* Hidden by the platform after a report (D191): the public no longer sees it. */}
+                            {row.hiddenByPlatform ? (
+                                <DisplayValue path="hiddenByPlatform" value={row.hiddenByPlatform}>
+                                    {() => (
+                                        <Badge variant="outline" className={cn("text-xs gap-1", STATUS_BADGE_DANGER)}>
+                                            <IconEyeOff className="w-3 h-3" />
+                                            {String(resolveLanguageKey("hiddenByPlatform"))}
+                                        </Badge>
+                                    )}
+                                </DisplayValue>
+                            ) : null}
+                            {/* Rented on its own (D198): the exception, shown as a badge (UX-02). */}
+                            {row.listedAlone ? (
+                                <DisplayValue path="listedAlone" value={row.listedAlone}>
+                                    {() => (
+                                        <Badge variant="outline" className={cn("text-xs", STATUS_BADGE_SUCCESS)}>
+                                            {String(resolveLanguageKey("listedAlone"))}
+                                        </Badge>
+                                    )}
+                                </DisplayValue>
+                            ) : null}
                             <DisplayValue path="readiness" value={row.readiness}>
                                 {() => (
                                     <Badge variant="outline" className={cn("text-xs", READINESS_BADGE[row.readiness])}>
@@ -116,6 +138,14 @@ function VehicleCard({
                             tooltip={resolveLanguageKey("category")}
                             path="category"
                             value={row.category?.name}
+                        />
+                        {/* What booking this exact car costs: its own price, else its category's (D198). */}
+                        <EntityCardRow
+                            icon={IconCash}
+                            label={resolveLanguageKey(row.rates?.ownPrices ? "ownDailyRate" : "dailyRate")}
+                            tooltip={resolveLanguageKey(row.rates?.ownPrices ? "ownDailyRate" : "dailyRate")}
+                            path="dailyRate"
+                            value={row.rates && row.currency?.abbreviation ? formatCurrency(row.rates.dailyRate, row.currency.abbreviation) : undefined}
                         />
                         <EntityCardRow
                             icon={IconMapPin}

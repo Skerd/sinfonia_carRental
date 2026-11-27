@@ -147,5 +147,40 @@
   "finesGroup": "Multe",
   "blocksGroup": "Blocchi veicolo",
   "compactView": "Compatta",
-  "cardsView": "Schede"
+  "cardsView": "Schede",
+  "salesGroup": "Vendita e prezzo",
+  "listedAlone": "Noleggiata da sola",
+  "listingTitle": "Nome sul sito",
+  "listingDescription": "Descrizione sul sito",
+  "listingImages": "Foto sul sito",
+  "rateSeasons": "Prezzi stagionali propri",
+  "startDate": "Da",
+  "endDate": "A",
+  "dailyRate": "Tariffa giornaliera",
+  "hiddenByPlatform": "Nascosta dalla piattaforma",
+  "hiddenByPlatformNote": "La piattaforma ha nascosto quest'auto dopo una segnalazione. Non compare più sul tuo sito di noleggio né sul portale e non si può più prenotare da sola online; il personale può ancora prenotarla.",
+  "ownDailyRate": "Prezzo proprio al giorno",
+  "ownWeekendDailyRate": "Prezzo proprio al giorno nel weekend",
+  "ownWeeklyRate": "Prezzo settimanale proprio",
+  "ownDepositAmount": "Deposito proprio",
+  "categoryDailyRate": "Prezzo al giorno (della categoria)",
+  "categoryWeekendDailyRate": "Prezzo al giorno nel weekend (della categoria)",
+  "categoryWeeklyRate": "Prezzo settimanale (della categoria)",
+  "categoryDepositAmount": "Deposito (della categoria)",
+  "seats": "Posti",
+  "doors": "Porte",
+  "luggage": "Bagagli",
+  "transmission": "Cambio",
+  "fuelType": "Tipo di carburante",
+  "transmissionValues": {
+    "manual": "Manuale",
+    "automatic": "Automatico"
+  },
+  "fuelTypeValues": {
+    "petrol": "Benzina",
+    "diesel": "Diesel",
+    "hybrid": "Ibrido",
+    "electric": "Elettrico",
+    "other": "Altro"
+  }
 }

@@ -41,5 +41,6 @@
   "promoLabel": "Aktionscode",
   "promoApply": "Anwenden",
   "promoInvalid": "Dieser Aktionscode kann für diese Buchung nicht verwendet werden.",
-  "crossBorder": "Das Fahrzeug ins Ausland mitnehmen"
+  "crossBorder": "Das Fahrzeug ins Ausland mitnehmen",
+  "exactCar": "Genau dieses Auto"
 }

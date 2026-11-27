@@ -36,5 +36,11 @@
     "hybrid": "Hybride",
     "electric": "Électrique",
     "other": "Autre carburant"
-  }
+  },
+  "exactCar": "Exactement cette voiture",
+  "exactCarsTitle": "Ou choisissez la voiture exacte",
+  "chooseCarTitle": "Choisissez votre voiture",
+  "carByCar": "Louée voiture par voiture : choisissez la vôtre",
+  "year": "Année",
+  "color": "Couleur"
 }

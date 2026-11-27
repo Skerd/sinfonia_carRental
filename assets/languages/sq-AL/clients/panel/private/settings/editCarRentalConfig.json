@@ -73,7 +73,13 @@
     "youngDriverDailyFeeLabel": "Tarifa e shoferit të ri në ditë",
     "youngDriverDailyFeePlaceholder": "",
     "youngDriverUnderAgeLabel": "Shofer i ri: nën këtë moshë",
-    "youngDriverUnderAgePlaceholder": "p.sh. 25"
+    "youngDriverUnderAgePlaceholder": "p.sh. 25",
+    "exactCarTransfersLabel": "Sillni makinat e caktuara nga një pikë tjetër",
+    "exactCarTransfersDescription": "Joaktive: një makinë me qira më vete ofrohet online vetëm në pikën ku do të jetë në marrje. Aktive: edhe gjetkë, me tarifën më poshtë dhe këtë njoftim paraprak.",
+    "exactCarTransferFeeLabel": "Tarifa e sjelljes së makinës",
+    "exactCarTransferFeePlaceholder": "p.sh. 30",
+    "exactCarTransferNoticeHoursLabel": "Njoftimi për sjelljen e makinës (orë)",
+    "exactCarTransferNoticeHoursPlaceholder": "p.sh. 24"
   },
   "axios": {
     "start": {

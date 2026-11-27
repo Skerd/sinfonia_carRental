@@ -8,6 +8,8 @@ import ReportButton from "@coreModule/components/custom/report/reportButton.tsx"
 import type {RentalCategoryReviewsResponse} from "armonia/src/modules/carRental/api/carRental/public/rentalStorefront/rentalStorefront.response.types.ts";
 
 const REVIEWS_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/reviews", cache: true};
+/** A car rented on its own: the reviews of every rental of that car (D198). */
+const CAR_REVIEWS_REQUEST: HttpRequest = {method: "POST", url: "/api/carRental/rentalStorefront/carReviews", cache: true};
 
 function Stars({rating, label}: {rating: number; label: string}) {
     return (
@@ -20,11 +22,16 @@ function Stars({rating, label}: {rating: number; label: string}) {
 }
 
 /**
- * A car class's published reviews on the rental site (D178): written after completed rentals and shown at once; each can
- * be reported to the platform (D191). Nothing is shown until there is one.
+ * A car class's published reviews on the rental site (D178), or one car's when it is rented on its own (D198): written
+ * after completed rentals and shown at once; each can be reported to the platform (D191). Nothing is shown until there
+ * is one.
  */
-function CategoryReviews({categoryId, resolveLanguageKey}: WithLanguageType & {categoryId: string}) {
-    const {data} = useHttpRequest<RentalCategoryReviewsResponse>(REVIEWS_REQUEST, {category: categoryId, limit: 10}, categoryId ? 1 : 0);
+function CategoryReviews({categoryId, vehicleId, resolveLanguageKey}: WithLanguageType & ({categoryId: string; vehicleId?: never} | {vehicleId: string; categoryId?: never})) {
+    const {data} = useHttpRequest<RentalCategoryReviewsResponse>(
+        vehicleId ? CAR_REVIEWS_REQUEST : REVIEWS_REQUEST,
+        vehicleId ? {vehicle: vehicleId, limit: 10} : {category: categoryId, limit: 10},
+        vehicleId || categoryId ? 1 : 0,
+    );
     const found = data?.data;
     // Nothing until the class has a review (an answer without a count has none either).
     if (!found?.count) return null;
