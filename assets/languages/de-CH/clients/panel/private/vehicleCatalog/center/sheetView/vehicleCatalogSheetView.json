@@ -1,0 +1,57 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/center/sheetView/vehicleCatalogSheetView.tsx",
+  "failedTitle": "Katalogeintrag konnte nicht geladen werden",
+  "failedDescription": "Beim Laden dieses Eintrags ist etwas schiefgelaufen. Klicken Sie, um es erneut zu versuchen.",
+  "failedTooltipDescription": "Klicken, um die Daten erneut zu laden.",
+  "vehicleCatalogSubtitle": "Fahrzeugkatalog",
+  "name": "Name",
+  "overview": "Übersicht",
+  "lifecycle": "Lebenszyklus",
+  "level": "Ebene",
+  "levelValues": {
+    "type": "Fahrzeugtyp",
+    "make": "Marke",
+    "model": "Modell"
+  },
+  "parentEntry": "Gehört zu",
+  "bodyStyle": "Karosserie",
+  "bodyStyleValues": {
+    "hatchback": "Schrägheck",
+    "sedan": "Limousine",
+    "estate": "Kombi",
+    "suv": "SUV",
+    "coupe": "Coupé",
+    "convertible": "Cabriolet",
+    "minivan": "Minivan",
+    "pickup": "Pick-up",
+    "van": "Lieferwagen",
+    "motorcycle": "Motorrad",
+    "scooter": "Roller",
+    "truck": "Lastwagen",
+    "bus": "Bus",
+    "other": "Andere"
+  },
+  "seats": "Sitze",
+  "doors": "Türen",
+  "fuelType": "Treibstoff",
+  "fuelTypeValues": {
+    "petrol": "Benzin",
+    "diesel": "Diesel",
+    "hybrid": "Hybrid",
+    "electric": "Elektro",
+    "other": "Andere"
+  },
+  "transmission": "Getriebe",
+  "transmissionValues": {
+    "manual": "Schaltgetriebe",
+    "automatic": "Automatik"
+  },
+  "yearFrom": "Gebaut ab",
+  "yearTo": "Gebaut bis",
+  "order": "Reihenfolge",
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "createdBy": "Erstellt von",
+  "deletedAt": "Gelöscht am",
+  "deletedBy": "Gelöscht von"
+}

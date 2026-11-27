@@ -1,0 +1,77 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/index.tsx",
+  "title": "Vehicle catalog",
+  "description": "The platform's makes and models, shared by every company.",
+  "help": {
+    "ariaLabel": "About the vehicle catalog",
+    "title": "About the vehicle catalog",
+    "overview": "The vehicle catalog is the platform's: one list of vehicle types, their makes and the makes' models that every company shares, so the same car is never typed five different ways. Pick a car's model from it and the car gets its make, model and the model's specs.",
+    "sections": [
+      {
+        "title": "Each entry",
+        "items": [
+          "A type (car, van, motorcycle…) holds makes; a make holds its models.",
+          "Can't find a make or model? Use Request an entry. The platform reviews it; until then only your company sees it.",
+          "A model's seats, doors, fuel and gearbox fill a car's specs when you pick it; you can still change them on the car.",
+          "Leave the end year empty while the model is still made. Order sorts entries on the same level, lowest first."
+        ]
+      }
+    ]
+  },
+  "createEntry": "Add catalog entry",
+  "fields": {
+    "name": "Name",
+    "level": "Level",
+    "parentEntry": "Belongs to",
+    "bodyStyle": "Body",
+    "seats": "Seats",
+    "doors": "Doors",
+    "fuelType": "Fuel",
+    "transmission": "Gearbox",
+    "yearFrom": "Made from",
+    "yearTo": "Made until",
+    "order": "Order",
+    "createdBy": "Created by",
+    "deletedAt": "Deleted",
+    "deletedBy": "Deleted by",
+    "!enums": {
+      "level": {
+        "type": "Vehicle type",
+        "make": "Make",
+        "model": "Model"
+      },
+      "bodyStyle": {
+        "hatchback": "Hatchback",
+        "sedan": "Sedan",
+        "estate": "Estate",
+        "suv": "SUV",
+        "coupe": "Coupé",
+        "convertible": "Convertible",
+        "minivan": "Minivan",
+        "pickup": "Pickup",
+        "van": "Van",
+        "motorcycle": "Motorcycle",
+        "scooter": "Scooter",
+        "truck": "Truck",
+        "bus": "Bus",
+        "other": "Other"
+      },
+      "fuelType": {
+        "petrol": "Petrol",
+        "diesel": "Diesel",
+        "hybrid": "Hybrid",
+        "electric": "Electric",
+        "other": "Other"
+      },
+      "transmission": {
+        "manual": "Manual",
+        "automatic": "Automatic"
+      }
+    }
+  },
+  "views": {
+    "label": "Views",
+    "list": "List",
+    "hierarchy": "Hierarchy"
+  }
+}

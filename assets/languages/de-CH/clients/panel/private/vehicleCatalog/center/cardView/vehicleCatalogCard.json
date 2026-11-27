@@ -1,0 +1,41 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/center/cardView/vehicleCatalogCard.tsx",
+  "failedTitle": "Katalogeintrag konnte nicht geladen werden",
+  "failedDescription": "Tippen, um es erneut zu versuchen.",
+  "name": "Name",
+  "levelValues": {
+    "type": "Fahrzeugtyp",
+    "make": "Marke",
+    "model": "Modell"
+  },
+  "parentEntry": {
+    "make": "Fahrzeugtyp",
+    "model": "Marke"
+  },
+  "bodyStyle": "Karosserie",
+  "bodyStyleValues": {
+    "hatchback": "Schrägheck",
+    "sedan": "Limousine",
+    "estate": "Kombi",
+    "suv": "SUV",
+    "coupe": "Coupé",
+    "convertible": "Cabriolet",
+    "minivan": "Minivan",
+    "pickup": "Pick-up",
+    "van": "Lieferwagen",
+    "motorcycle": "Motorrad",
+    "scooter": "Roller",
+    "truck": "Lastwagen",
+    "bus": "Bus",
+    "other": "Andere"
+  },
+  "seats": "Sitze",
+  "fuelType": "Treibstoff",
+  "fuelTypeValues": {
+    "petrol": "Benzin",
+    "diesel": "Diesel",
+    "hybrid": "Hybrid",
+    "electric": "Elektro",
+    "other": "Andere"
+  }
+}

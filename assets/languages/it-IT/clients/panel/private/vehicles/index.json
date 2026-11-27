@@ -84,6 +84,7 @@
     "doors": "Porte",
     "luggage": "Bagagli",
     "transmission": "Cambio",
-    "fuelType": "Tipo di carburante"
+    "fuelType": "Tipo di carburante",
+    "catalogModel": "Modello dal catalogo"
   }
 }

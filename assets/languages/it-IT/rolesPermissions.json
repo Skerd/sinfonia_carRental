@@ -18,7 +18,8 @@
     "Rentaldenyentries": "Lista di esclusione",
     "Rentalreviews": "Recensioni",
     "Rentalsubscriptions": "Abbonamenti",
-    "Rentalsearchstats": "Statistiche di ricerca"
+    "Rentalsearchstats": "Statistiche di ricerca",
+    "Vehiclecatalogentries": "Catalogo veicoli"
   },
   "permissions": {
     "Carrentalconfigs": {
@@ -154,7 +155,8 @@
       "lastLatitude": "Ultima latitudine",
       "lastLongitude": "Ultima longitudine",
       "lastReportedAt": "Ultimo segnale",
-      "trackerId": "ID del localizzatore"
+      "trackerId": "ID del localizzatore",
+      "catalogModel": "Modello dal catalogo"
     },
     "Vehicleblocks": {
       "createdAt": "Creato il",
@@ -528,6 +530,26 @@
       "rentalsearchstats": "Statistiche di ricerca",
       "searches": "Ricerche",
       "unavailable": "Ricerche senza auto libere"
+    },
+    "Vehiclecatalogentries": {
+      "name": "Nome",
+      "names": "Nomi",
+      "level": "Livello",
+      "parentEntry": "Appartiene a",
+      "order": "Ordine",
+      "bodyStyle": "Carrozzeria",
+      "seats": "Posti",
+      "doors": "Porte",
+      "fuelType": "Carburante",
+      "transmission": "Cambio",
+      "yearFrom": "Prodotto dal",
+      "yearTo": "Prodotto fino al",
+      "createdAt": "Creato il",
+      "createdBy": "Creato da",
+      "deletedAt": "Eliminato il",
+      "deletedBy": "Eliminato da",
+      "updatedAt": "Aggiornato il",
+      "vehiclecatalogentries": "Catalogo veicoli"
     }
   }
 }

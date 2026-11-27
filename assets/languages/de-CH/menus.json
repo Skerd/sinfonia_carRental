@@ -65,7 +65,8 @@
       "vehicleCategories": {"title": "Kategorien"},
       "rentalExtras": {"title": "Extras"},
       "rentalLocations": {"title": "Standorte"},
-      "rentalPromoCodes": {"title": "Aktionscodes"}
+      "rentalPromoCodes": {"title": "Aktionscodes"},
+      "vehiclecatalogentries": {"title": "Fahrzeugkatalog"}
     }
   }
 }

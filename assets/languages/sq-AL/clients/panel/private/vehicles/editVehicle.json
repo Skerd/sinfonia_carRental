@@ -22,9 +22,9 @@
     "homeLocationLabel": "Vendndodhja bazë",
     "homeLocationPlaceholder": "Zgjidh vendndodhjen",
     "makeLabel": "Marka",
-    "makePlaceholder": "p.sh. Volkswagen",
+    "makePlaceholder": "Zgjidhni një markë",
     "modelLabel": "Modeli",
-    "modelPlaceholder": "p.sh. Golf",
+    "modelPlaceholder": "Zgjidhni një nga modelet e saj",
     "notesLabel": "Shënime",
     "notesPlaceholder": "Shënime të brendshme",
     "odometerKmLabel": "Kilometrat (km)",
@@ -97,7 +97,8 @@
       "petrol": "Benzinë"
     },
     "ownSpecPlaceholder": "Si kategoria",
-    "ownSpecsDescription": "Bosh: si kategoria. Plotësoni vetëm atë që ndryshon për këtë makinë, p.sh. një makinë me 5 vende në një kategori me 4."
+    "ownSpecsDescription": "Bosh: si kategoria. Plotësoni vetëm atë që ndryshon për këtë makinë, p.sh. një makinë me 5 vende në një kategori me 4.",
+    "catalogModelDescription": "Plotëson vendet, dyert, karburantin dhe kambion e makinës kur mungojnë; mund t'i ndryshoni përsëri. Mungon një markë ose model? Kërkojeni te katalogu i automjeteve."
   },
   "axios": {
     "start": {

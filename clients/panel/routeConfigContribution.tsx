@@ -31,6 +31,9 @@ const AllRentalLocations = lazy(() => import("@carRentalModule/clients/panel/pri
 const CreateRentalLocation = lazy(() => import("@carRentalModule/clients/panel/private/locations/createRentalLocation.tsx"));
 const EditRentalLocation = lazy(() => import("@carRentalModule/clients/panel/private/locations/editRentalLocation.tsx"));
 const CarRentalSettings = lazy(() => import("@carRentalModule/clients/panel/private/settings/index.tsx"));
+const AllVehicleCatalogEntries = lazy(() => import("@carRentalModule/clients/panel/private/vehicleCatalog/index.tsx"));
+const CreateVehicleCatalogEntry = lazy(() => import("@carRentalModule/clients/panel/private/vehicleCatalog/createVehicleCatalogEntry.tsx"));
+const EditVehicleCatalogEntry = lazy(() => import("@carRentalModule/clients/panel/private/vehicleCatalog/editVehicleCatalogEntry.tsx"));
 const AllVehicleInsurances = lazy(() => import("@carRentalModule/clients/panel/private/insurance/index.tsx"));
 const CreateVehicleInsurance = lazy(() => import("@carRentalModule/clients/panel/private/insurance/createVehicleInsurance.tsx"));
 const EditVehicleInsurance = lazy(() => import("@carRentalModule/clients/panel/private/insurance/editVehicleInsurance.tsx"));
@@ -179,6 +182,13 @@ const SETTINGS_PAGES: Record<string, CrudPages> = {
         edit: (id) => <EditRentalPromoCode entityId={id} />,
         idParam: "rentalPromoCodeId",
     },
+    // The platform's vehicle catalog (D199), a platform list every company reads and the platform company edits.
+    vehiclecatalogentries: {
+        list: () => <AllVehicleCatalogEntries />,
+        create: () => <CreateVehicleCatalogEntry />,
+        edit: (id) => <EditVehicleCatalogEntry entityId={id} />,
+        idParam: "vehicleCatalogEntryId",
+    },
 };
 
 function renderPage(
@@ -199,6 +209,8 @@ function renderPage(
 const carRentalRouteConfigContribution: RouteConfigContribution = {
     id: "carRental",
     order: 36,
+    // What the platform company does for every company without running car rental: the vehicle catalog (D199).
+    platformUrls: ["/tenancy/systemSettings/vehiclecatalogentries"],
     contributeRoutes({menu, subview, segments, searchParams}: RouteConfigArgs) {
         if (menu === "tenancy" && subview === "systemSettings") {
             if (segments[2] === "carRentalConfig") {

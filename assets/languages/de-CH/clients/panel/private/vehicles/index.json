@@ -84,6 +84,7 @@
     "doors": "Türen",
     "luggage": "Gepäck",
     "transmission": "Getriebe",
-    "fuelType": "Treibstoffart"
+    "fuelType": "Treibstoffart",
+    "catalogModel": "Modell aus dem Katalog"
   }
 }

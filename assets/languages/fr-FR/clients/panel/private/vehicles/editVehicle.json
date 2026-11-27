@@ -22,9 +22,9 @@
     "homeLocationLabel": "Site de rattachement",
     "homeLocationPlaceholder": "Choisir un site",
     "makeLabel": "Marque",
-    "makePlaceholder": "p. ex. Volkswagen",
+    "makePlaceholder": "Choisir une marque",
     "modelLabel": "Modèle",
-    "modelPlaceholder": "p. ex. Golf",
+    "modelPlaceholder": "Choisir l'un de ses modèles",
     "notesLabel": "Notes",
     "notesPlaceholder": "Notes internes",
     "odometerKmLabel": "Kilométrage (km)",
@@ -97,7 +97,8 @@
       "petrol": "Essence"
     },
     "ownSpecPlaceholder": "Comme la catégorie",
-    "ownSpecsDescription": "Vide : comme la catégorie. Ne remplissez que ce qui diffère pour cette voiture, p. ex. une 5 places dans une catégorie de 4 places."
+    "ownSpecsDescription": "Vide : comme la catégorie. Ne remplissez que ce qui diffère pour cette voiture, p. ex. une 5 places dans une catégorie de 4 places.",
+    "catalogModelDescription": "Remplit les places, portes, carburant et boîte de la voiture s'ils manquent ; vous pouvez toujours les modifier. Il manque une marque ou un modèle ? Demandez-le dans le catalogue de véhicules."
   },
   "axios": {
     "start": {

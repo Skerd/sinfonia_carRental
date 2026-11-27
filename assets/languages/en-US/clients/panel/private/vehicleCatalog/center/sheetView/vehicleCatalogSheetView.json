@@ -1,0 +1,57 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/center/sheetView/vehicleCatalogSheetView.tsx",
+  "failedTitle": "Failed to load catalog entry",
+  "failedDescription": "Something went wrong while loading this entry. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
+  "vehicleCatalogSubtitle": "Vehicle catalog",
+  "name": "Name",
+  "overview": "Overview",
+  "lifecycle": "Lifecycle",
+  "level": "Level",
+  "levelValues": {
+    "type": "Vehicle type",
+    "make": "Make",
+    "model": "Model"
+  },
+  "parentEntry": "Belongs to",
+  "bodyStyle": "Body",
+  "bodyStyleValues": {
+    "hatchback": "Hatchback",
+    "sedan": "Sedan",
+    "estate": "Estate",
+    "suv": "SUV",
+    "coupe": "Coupé",
+    "convertible": "Convertible",
+    "minivan": "Minivan",
+    "pickup": "Pickup",
+    "van": "Van",
+    "motorcycle": "Motorcycle",
+    "scooter": "Scooter",
+    "truck": "Truck",
+    "bus": "Bus",
+    "other": "Other"
+  },
+  "seats": "Seats",
+  "doors": "Doors",
+  "fuelType": "Fuel",
+  "fuelTypeValues": {
+    "petrol": "Petrol",
+    "diesel": "Diesel",
+    "hybrid": "Hybrid",
+    "electric": "Electric",
+    "other": "Other"
+  },
+  "transmission": "Gearbox",
+  "transmissionValues": {
+    "manual": "Manual",
+    "automatic": "Automatic"
+  },
+  "yearFrom": "Made from",
+  "yearTo": "Made until",
+  "order": "Order",
+  "createdAt": "Created at",
+  "updatedAt": "Updated at",
+  "createdBy": "Created by",
+  "deletedAt": "Deleted at",
+  "deletedBy": "Deleted by"
+}

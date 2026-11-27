@@ -1,0 +1,57 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/center/sheetView/vehicleCatalogSheetView.tsx",
+  "failedTitle": "Hyrja nuk u ngarkua",
+  "failedDescription": "Diçka shkoi keq gjatë ngarkimit të kësaj hyrjeje. Klikoni për të provuar sërish.",
+  "failedTooltipDescription": "Klikoni për të ringarkuar të dhënat.",
+  "vehicleCatalogSubtitle": "Katalogu i automjeteve",
+  "name": "Emri",
+  "overview": "Përmbledhje",
+  "lifecycle": "Cikli i jetës",
+  "level": "Niveli",
+  "levelValues": {
+    "type": "Lloji i automjetit",
+    "make": "Marka",
+    "model": "Modeli"
+  },
+  "parentEntry": "I përket",
+  "bodyStyle": "Karroceria",
+  "bodyStyleValues": {
+    "hatchback": "Hatchback",
+    "sedan": "Sedan",
+    "estate": "Karavan",
+    "suv": "SUV",
+    "coupe": "Kupe",
+    "convertible": "Kabriolet",
+    "minivan": "Minivan",
+    "pickup": "Pikap",
+    "van": "Furgon",
+    "motorcycle": "Motor",
+    "scooter": "Skuter",
+    "truck": "Kamion",
+    "bus": "Autobus",
+    "other": "Tjetër"
+  },
+  "seats": "Vende",
+  "doors": "Dyer",
+  "fuelType": "Karburanti",
+  "fuelTypeValues": {
+    "petrol": "Benzinë",
+    "diesel": "Naftë",
+    "hybrid": "Hibrid",
+    "electric": "Elektrik",
+    "other": "Tjetër"
+  },
+  "transmission": "Kambio",
+  "transmissionValues": {
+    "manual": "Manuale",
+    "automatic": "Automatike"
+  },
+  "yearFrom": "Prodhuar nga",
+  "yearTo": "Prodhuar deri",
+  "order": "Renditja",
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

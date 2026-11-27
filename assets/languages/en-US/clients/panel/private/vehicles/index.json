@@ -84,6 +84,7 @@
     "doors": "Doors",
     "luggage": "Luggage",
     "transmission": "Transmission",
-    "fuelType": "Fuel type"
+    "fuelType": "Fuel type",
+    "catalogModel": "Model from the catalog"
   }
 }

@@ -22,9 +22,9 @@
     "homeLocationLabel": "Heimstandort",
     "homeLocationPlaceholder": "Standort auswählen",
     "makeLabel": "Marke",
-    "makePlaceholder": "z. B. Volkswagen",
+    "makePlaceholder": "Marke wählen",
     "modelLabel": "Modell",
-    "modelPlaceholder": "z. B. Golf",
+    "modelPlaceholder": "Eines ihrer Modelle wählen",
     "notesLabel": "Notizen",
     "notesPlaceholder": "Interne Notizen",
     "odometerKmLabel": "Kilometerstand (km)",
@@ -97,7 +97,8 @@
       "petrol": "Benzin"
     },
     "ownSpecPlaceholder": "Wie Kategorie",
-    "ownSpecsDescription": "Leer: wie die Kategorie. Füllen Sie nur aus, was bei diesem Fahrzeug abweicht, z. B. ein Fünfsitzer in einer Viersitzer-Kategorie."
+    "ownSpecsDescription": "Leer: wie die Kategorie. Füllen Sie nur aus, was bei diesem Fahrzeug abweicht, z. B. ein Fünfsitzer in einer Viersitzer-Kategorie.",
+    "catalogModelDescription": "Füllt Sitze, Türen, Treibstoff und Getriebe des Fahrzeugs, wo sie fehlen; Sie können sie weiterhin ändern. Fehlt eine Marke oder ein Modell? Beantragen Sie es im Fahrzeugkatalog."
   },
   "axios": {
     "start": {

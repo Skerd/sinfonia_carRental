@@ -18,7 +18,8 @@
     "Rentaldenyentries": "Deny list",
     "Rentalreviews": "Reviews",
     "Rentalsubscriptions": "Subscriptions",
-    "Rentalsearchstats": "Search statistics"
+    "Rentalsearchstats": "Search statistics",
+    "Vehiclecatalogentries": "Vehicle catalog"
   },
   "permissions": {
     "Carrentalconfigs": {
@@ -154,7 +155,8 @@
       "lastLatitude": "Last latitude",
       "lastLongitude": "Last longitude",
       "lastReportedAt": "Last reported",
-      "trackerId": "Tracker ID"
+      "trackerId": "Tracker ID",
+      "catalogModel": "Model from the catalog"
     },
     "Vehicleblocks": {
       "createdAt": "Created at",
@@ -528,6 +530,26 @@
       "rentalsearchstats": "Search statistics",
       "searches": "Searches",
       "unavailable": "Searches with no car free"
+    },
+    "Vehiclecatalogentries": {
+      "name": "Name",
+      "names": "Names",
+      "level": "Level",
+      "parentEntry": "Belongs to",
+      "order": "Order",
+      "bodyStyle": "Body",
+      "seats": "Seats",
+      "doors": "Doors",
+      "fuelType": "Fuel",
+      "transmission": "Gearbox",
+      "yearFrom": "Made from",
+      "yearTo": "Made until",
+      "createdAt": "Created at",
+      "createdBy": "Created by",
+      "deletedAt": "Deleted at",
+      "deletedBy": "Deleted by",
+      "updatedAt": "Updated at",
+      "vehiclecatalogentries": "Vehicle catalog"
     }
   }
 }

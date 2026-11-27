@@ -1,0 +1,41 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/center/cardView/vehicleCatalogCard.tsx",
+  "failedTitle": "Hyrja nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar sërish.",
+  "name": "Emri",
+  "levelValues": {
+    "type": "Lloji i automjetit",
+    "make": "Marka",
+    "model": "Modeli"
+  },
+  "parentEntry": {
+    "make": "Lloji i automjetit",
+    "model": "Marka"
+  },
+  "bodyStyle": "Karroceria",
+  "bodyStyleValues": {
+    "hatchback": "Hatchback",
+    "sedan": "Sedan",
+    "estate": "Karavan",
+    "suv": "SUV",
+    "coupe": "Kupe",
+    "convertible": "Kabriolet",
+    "minivan": "Minivan",
+    "pickup": "Pikap",
+    "van": "Furgon",
+    "motorcycle": "Motor",
+    "scooter": "Skuter",
+    "truck": "Kamion",
+    "bus": "Autobus",
+    "other": "Tjetër"
+  },
+  "seats": "Vende",
+  "fuelType": "Karburanti",
+  "fuelTypeValues": {
+    "petrol": "Benzinë",
+    "diesel": "Naftë",
+    "hybrid": "Hibrid",
+    "electric": "Elektrik",
+    "other": "Tjetër"
+  }
+}

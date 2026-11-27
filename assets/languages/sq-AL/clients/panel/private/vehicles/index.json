@@ -84,6 +84,7 @@
     "doors": "Dyer",
     "luggage": "Bagazhet",
     "transmission": "Kambio",
-    "fuelType": "Lloji i karburantit"
+    "fuelType": "Lloji i karburantit",
+    "catalogModel": "Modeli nga katalogu"
   }
 }

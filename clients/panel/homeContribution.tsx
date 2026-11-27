@@ -94,6 +94,7 @@ const contribution: HomeContribution = {
             ["/tenancy/systemSettings/rentalExtras", "rentalextras"],
             ["/tenancy/systemSettings/rentalLocations", "rentallocations"],
             ["/tenancy/systemSettings/rentalPromoCodes", "rentalpromocodes"],
+            ["/tenancy/systemSettings/vehiclecatalogentries", "vehiclecatalogentries"],
         ] as const).map(([page, accessModel]) => ({page, accessModel})),
     ],
 };

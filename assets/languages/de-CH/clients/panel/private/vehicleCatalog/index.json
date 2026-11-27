@@ -1,0 +1,77 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/index.tsx",
+  "title": "Fahrzeugkatalog",
+  "description": "Die Marken und Modelle der Plattform, für alle Firmen.",
+  "help": {
+    "ariaLabel": "Über den Fahrzeugkatalog",
+    "title": "Über den Fahrzeugkatalog",
+    "overview": "Der Fahrzeugkatalog gehört der Plattform: eine Liste von Fahrzeugtypen, ihren Marken und deren Modellen, die alle Firmen teilen, damit dasselbe Auto nie auf fünf Arten erfasst wird. Wählen Sie das Modell eines Fahrzeugs daraus, und es erhält Marke, Modell und die Daten des Modells.",
+    "sections": [
+      {
+        "title": "Jeder Eintrag",
+        "items": [
+          "Ein Typ (Auto, Lieferwagen, Motorrad…) enthält Marken; eine Marke enthält ihre Modelle.",
+          "Marke oder Modell fehlt? Verwenden Sie «Eintrag anfragen». Die Plattform prüft ihn; bis dahin sieht ihn nur Ihre Firma.",
+          "Sitze, Türen, Treibstoff und Getriebe eines Modells füllen die Daten eines Fahrzeugs, wenn Sie es wählen; am Fahrzeug können Sie sie noch ändern.",
+          "Lassen Sie das Endjahr leer, solange das Modell gebaut wird. Die Reihenfolge sortiert Einträge derselben Ebene, die tiefste zuerst."
+        ]
+      }
+    ]
+  },
+  "createEntry": "Katalogeintrag hinzufügen",
+  "fields": {
+    "name": "Name",
+    "level": "Ebene",
+    "parentEntry": "Gehört zu",
+    "bodyStyle": "Karosserie",
+    "seats": "Sitze",
+    "doors": "Türen",
+    "fuelType": "Treibstoff",
+    "transmission": "Getriebe",
+    "yearFrom": "Gebaut ab",
+    "yearTo": "Gebaut bis",
+    "order": "Reihenfolge",
+    "createdBy": "Erstellt von",
+    "deletedAt": "Gelöscht",
+    "deletedBy": "Gelöscht von",
+    "!enums": {
+      "level": {
+        "type": "Fahrzeugtyp",
+        "make": "Marke",
+        "model": "Modell"
+      },
+      "bodyStyle": {
+        "hatchback": "Schrägheck",
+        "sedan": "Limousine",
+        "estate": "Kombi",
+        "suv": "SUV",
+        "coupe": "Coupé",
+        "convertible": "Cabriolet",
+        "minivan": "Minivan",
+        "pickup": "Pick-up",
+        "van": "Lieferwagen",
+        "motorcycle": "Motorrad",
+        "scooter": "Roller",
+        "truck": "Lastwagen",
+        "bus": "Bus",
+        "other": "Andere"
+      },
+      "fuelType": {
+        "petrol": "Benzin",
+        "diesel": "Diesel",
+        "hybrid": "Hybrid",
+        "electric": "Elektro",
+        "other": "Andere"
+      },
+      "transmission": {
+        "manual": "Schaltgetriebe",
+        "automatic": "Automatik"
+      }
+    }
+  },
+  "views": {
+    "label": "Ansichten",
+    "list": "Liste",
+    "hierarchy": "Hierarchie"
+  }
+}

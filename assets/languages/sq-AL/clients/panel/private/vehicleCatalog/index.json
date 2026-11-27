@@ -1,0 +1,77 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/index.tsx",
+  "title": "Katalogu i automjeteve",
+  "description": "Markat dhe modelet e platformës, të përbashkëta për të gjitha kompanitë.",
+  "help": {
+    "ariaLabel": "Rreth katalogut të automjeteve",
+    "title": "Rreth katalogut të automjeteve",
+    "overview": "Katalogu i automjeteve është i platformës: një listë llojesh automjetesh, markash të tyre dhe modelesh të këtyre markave, që e ndajnë të gjitha kompanitë, që e njëjta makinë të mos shkruhet kurrë në pesë mënyra. Zgjidhni prej tij modelin e një makine dhe makina merr markën, modelin dhe të dhënat e modelit.",
+    "sections": [
+      {
+        "title": "Çdo hyrje",
+        "items": [
+          "Një lloj (makinë, furgon, motor…) përmban marka; një markë përmban modelet e saj.",
+          "Mungon një markë apo model? Përdorni «Kërko një hyrje». Platforma e shqyrton; deri atëherë e sheh vetëm kompania juaj.",
+          "Vendet, dyert, karburanti dhe kambio e një modeli plotësojnë të dhënat e makinës kur e zgjidhni; mund t'i ndryshoni ende te makina.",
+          "Lëreni vitin e fundit bosh për sa kohë modeli prodhohet. Renditja rendit hyrjet e të njëjtit nivel, nga më e ulëta."
+        ]
+      }
+    ]
+  },
+  "createEntry": "Shto hyrje në katalog",
+  "fields": {
+    "name": "Emri",
+    "level": "Niveli",
+    "parentEntry": "I përket",
+    "bodyStyle": "Karroceria",
+    "seats": "Vende",
+    "doors": "Dyer",
+    "fuelType": "Karburanti",
+    "transmission": "Kambio",
+    "yearFrom": "Prodhuar nga",
+    "yearTo": "Prodhuar deri",
+    "order": "Renditja",
+    "createdBy": "Krijuar nga",
+    "deletedAt": "Fshirë",
+    "deletedBy": "Fshirë nga",
+    "!enums": {
+      "level": {
+        "type": "Lloji i automjetit",
+        "make": "Marka",
+        "model": "Modeli"
+      },
+      "bodyStyle": {
+        "hatchback": "Hatchback",
+        "sedan": "Sedan",
+        "estate": "Karavan",
+        "suv": "SUV",
+        "coupe": "Kupe",
+        "convertible": "Kabriolet",
+        "minivan": "Minivan",
+        "pickup": "Pikap",
+        "van": "Furgon",
+        "motorcycle": "Motor",
+        "scooter": "Skuter",
+        "truck": "Kamion",
+        "bus": "Autobus",
+        "other": "Tjetër"
+      },
+      "fuelType": {
+        "petrol": "Benzinë",
+        "diesel": "Naftë",
+        "hybrid": "Hibrid",
+        "electric": "Elektrik",
+        "other": "Tjetër"
+      },
+      "transmission": {
+        "manual": "Manuale",
+        "automatic": "Automatike"
+      }
+    }
+  },
+  "views": {
+    "label": "Pamjet",
+    "list": "Lista",
+    "hierarchy": "Hierarkia"
+  }
+}

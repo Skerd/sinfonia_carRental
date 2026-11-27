@@ -1,0 +1,99 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/createVehicleCatalogEntry.tsx",
+  "form": {
+    "basicsSectionTitle": "Të dhënat bazë",
+    "nameLabel": "Emri",
+    "namePlaceholder": "p.sh. E-Class",
+    "levelLabel": "Niveli",
+    "levelPlaceholder": "Lloj, markë ose model",
+    "levels": {
+      "type": "Lloji i automjetit",
+      "make": "Marka",
+      "model": "Modeli"
+    },
+    "parentEntryLabel": {
+      "make": "Lloji i automjetit",
+      "model": "Marka"
+    },
+    "parentEntryPlaceholder": {
+      "make": "Zgjidhni llojin e automjetit",
+      "model": "Zgjidhni markën"
+    },
+    "specsSectionTitle": "Të dhënat e zakonshme",
+    "bodyStyleLabel": "Karroceria",
+    "bodyStylePlaceholder": "Zgjidhni karrocerinë",
+    "bodyStyles": {
+      "hatchback": "Hatchback",
+      "sedan": "Sedan",
+      "estate": "Karavan",
+      "suv": "SUV",
+      "coupe": "Kupe",
+      "convertible": "Kabriolet",
+      "minivan": "Minivan",
+      "pickup": "Pikap",
+      "van": "Furgon",
+      "motorcycle": "Motor",
+      "scooter": "Skuter",
+      "truck": "Kamion",
+      "bus": "Autobus",
+      "other": "Tjetër"
+    },
+    "seatsLabel": "Vende",
+    "seatsPlaceholder": "p.sh. 5",
+    "doorsLabel": "Dyer",
+    "doorsPlaceholder": "p.sh. 4",
+    "fuelTypeLabel": "Karburanti",
+    "fuelTypePlaceholder": "Zgjidhni karburantin",
+    "fuelTypes": {
+      "petrol": "Benzinë",
+      "diesel": "Naftë",
+      "hybrid": "Hibrid",
+      "electric": "Elektrik",
+      "other": "Tjetër"
+    },
+    "transmissionLabel": "Kambio",
+    "transmissionPlaceholder": "Zgjidhni kambion",
+    "transmissions": {
+      "manual": "Manuale",
+      "automatic": "Automatike"
+    },
+    "yearFromLabel": "Prodhuar nga (viti)",
+    "yearFromPlaceholder": "p.sh. 2016",
+    "yearToLabel": "Prodhuar deri (viti)",
+    "yearToPlaceholder": "p.sh. 2023",
+    "yearToDescription": "Bosh për sa kohë prodhohet.",
+    "namesSectionTitle": "Emri në çdo gjuhë",
+    "names": {
+      "en": "Anglisht",
+      "sq": "Shqip",
+      "de": "Gjermanisht",
+      "fr": "Frëngjisht",
+      "it": "Italisht"
+    },
+    "visibilitySectionTitle": "Dukshmëria",
+    "orderLabel": "Renditja",
+    "orderPlaceholder": "0"
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhet hyrja",
+      "time": 3000
+    },
+    "success": {
+      "title": "Hyrja u shtua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Hyrja nuk u shtua",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Shto hyrje në katalog",
+    "description": "Shtoni në katalogun e platformës një lloj automjeti, një markë ose një model."
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto hyrjen"
+  }
+}

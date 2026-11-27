@@ -1,0 +1,99 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/createVehicleCatalogEntry.tsx",
+  "form": {
+    "basicsSectionTitle": "Grundangaben",
+    "nameLabel": "Name",
+    "namePlaceholder": "z. B. E-Klasse",
+    "levelLabel": "Ebene",
+    "levelPlaceholder": "Typ, Marke oder Modell",
+    "levels": {
+      "type": "Fahrzeugtyp",
+      "make": "Marke",
+      "model": "Modell"
+    },
+    "parentEntryLabel": {
+      "make": "Fahrzeugtyp",
+      "model": "Marke"
+    },
+    "parentEntryPlaceholder": {
+      "make": "Fahrzeugtyp wählen",
+      "model": "Marke wählen"
+    },
+    "specsSectionTitle": "Übliche Daten",
+    "bodyStyleLabel": "Karosserie",
+    "bodyStylePlaceholder": "Karosserie wählen",
+    "bodyStyles": {
+      "hatchback": "Schrägheck",
+      "sedan": "Limousine",
+      "estate": "Kombi",
+      "suv": "SUV",
+      "coupe": "Coupé",
+      "convertible": "Cabriolet",
+      "minivan": "Minivan",
+      "pickup": "Pick-up",
+      "van": "Lieferwagen",
+      "motorcycle": "Motorrad",
+      "scooter": "Roller",
+      "truck": "Lastwagen",
+      "bus": "Bus",
+      "other": "Andere"
+    },
+    "seatsLabel": "Sitze",
+    "seatsPlaceholder": "z. B. 5",
+    "doorsLabel": "Türen",
+    "doorsPlaceholder": "z. B. 4",
+    "fuelTypeLabel": "Treibstoff",
+    "fuelTypePlaceholder": "Treibstoff wählen",
+    "fuelTypes": {
+      "petrol": "Benzin",
+      "diesel": "Diesel",
+      "hybrid": "Hybrid",
+      "electric": "Elektro",
+      "other": "Andere"
+    },
+    "transmissionLabel": "Getriebe",
+    "transmissionPlaceholder": "Getriebe wählen",
+    "transmissions": {
+      "manual": "Schaltgetriebe",
+      "automatic": "Automatik"
+    },
+    "yearFromLabel": "Gebaut ab (Jahr)",
+    "yearFromPlaceholder": "z. B. 2016",
+    "yearToLabel": "Gebaut bis (Jahr)",
+    "yearToPlaceholder": "z. B. 2023",
+    "yearToDescription": "Leer, solange es gebaut wird.",
+    "namesSectionTitle": "Name in jeder Sprache",
+    "names": {
+      "en": "Englisch",
+      "sq": "Albanisch",
+      "de": "Deutsch",
+      "fr": "Französisch",
+      "it": "Italienisch"
+    },
+    "visibilitySectionTitle": "Sichtbarkeit",
+    "orderLabel": "Reihenfolge",
+    "orderPlaceholder": "0"
+  },
+  "axios": {
+    "start": {
+      "title": "Katalogeintrag wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Katalogeintrag hinzugefügt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Der Katalogeintrag konnte nicht hinzugefügt werden",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Katalogeintrag hinzufügen",
+    "description": "Fügen Sie dem Katalog der Plattform einen Fahrzeugtyp, eine Marke oder ein Modell hinzu."
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Eintrag hinzufügen"
+  }
+}

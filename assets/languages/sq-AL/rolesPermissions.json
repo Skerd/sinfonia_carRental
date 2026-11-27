@@ -18,7 +18,8 @@
     "Rentaldenyentries": "Lista e bllokimit",
     "Rentalreviews": "Vlerësimet",
     "Rentalsubscriptions": "Abonimet",
-    "Rentalsearchstats": "Statistikat e kërkimeve"
+    "Rentalsearchstats": "Statistikat e kërkimeve",
+    "Vehiclecatalogentries": "Katalogu i automjeteve"
   },
   "permissions": {
     "Carrentalconfigs": {
@@ -154,7 +155,8 @@
       "lastLatitude": "Gjerësia gjeografike e fundit",
       "lastLongitude": "Gjatësia gjeografike e fundit",
       "lastReportedAt": "Sinjali i fundit",
-      "trackerId": "ID e gjurmuesit"
+      "trackerId": "ID e gjurmuesit",
+      "catalogModel": "Modeli nga katalogu"
     },
     "Vehicleblocks": {
       "createdAt": "Krijuar më",
@@ -528,6 +530,26 @@
       "rentalsearchstats": "Statistikat e kërkimeve",
       "searches": "Kërkimet",
       "unavailable": "Kërkime pa automjet të lirë"
+    },
+    "Vehiclecatalogentries": {
+      "name": "Emri",
+      "names": "Emrat",
+      "level": "Niveli",
+      "parentEntry": "I përket",
+      "order": "Renditja",
+      "bodyStyle": "Karroceria",
+      "seats": "Vende",
+      "doors": "Dyer",
+      "fuelType": "Karburanti",
+      "transmission": "Kambio",
+      "yearFrom": "Prodhuar nga",
+      "yearTo": "Prodhuar deri",
+      "createdAt": "Krijuar më",
+      "createdBy": "Krijuar nga",
+      "deletedAt": "Fshirë më",
+      "deletedBy": "Fshirë nga",
+      "updatedAt": "Përditësuar më",
+      "vehiclecatalogentries": "Katalogu i automjeteve"
     }
   }
 }

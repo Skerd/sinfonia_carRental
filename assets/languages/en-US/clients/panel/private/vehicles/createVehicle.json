@@ -22,9 +22,9 @@
     "homeLocationLabel": "Home location",
     "homeLocationPlaceholder": "Select location",
     "makeLabel": "Make",
-    "makePlaceholder": "e.g. Volkswagen",
+    "makePlaceholder": "Select a make",
     "modelLabel": "Model",
-    "modelPlaceholder": "e.g. Golf",
+    "modelPlaceholder": "Select one of its models",
     "notesLabel": "Notes",
     "notesPlaceholder": "Internal notes",
     "odometerKmLabel": "Odometer (km)",
@@ -97,7 +97,8 @@
       "petrol": "Petrol"
     },
     "ownSpecPlaceholder": "Category's",
-    "ownSpecsDescription": "Empty: the category's. Fill in only what differs for this car, e.g. a 5-seat car in a 4-seat category."
+    "ownSpecsDescription": "Empty: the category's. Fill in only what differs for this car, e.g. a 5-seat car in a 4-seat category.",
+    "catalogModelDescription": "Fills the car's seats, doors, fuel and gearbox where it has none; you can still change them. Missing a make or model? Request it in the vehicle catalog."
   },
   "axios": {
     "start": {

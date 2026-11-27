@@ -65,7 +65,8 @@
       "vehicleCategories": {"title": "Kategoritë"},
       "rentalExtras": {"title": "Shtesat"},
       "rentalLocations": {"title": "Vendndodhjet"},
-      "rentalPromoCodes": {"title": "Kodet promocionale"}
+      "rentalPromoCodes": {"title": "Kodet promocionale"},
+      "vehiclecatalogentries": {"title": "Katalogu i automjeteve"}
     }
   }
 }

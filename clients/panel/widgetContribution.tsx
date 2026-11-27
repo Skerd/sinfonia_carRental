@@ -29,6 +29,9 @@ const RentalReservationSheetViewLazy = lazy(
 const RentalLocationSheetViewLazy = lazy(
     () => import("@carRentalModule/clients/panel/private/locations/center/sheetView/rentalLocationSheetView.tsx"),
 );
+const VehicleCatalogSheetViewLazy = lazy(
+    () => import("@carRentalModule/clients/panel/private/vehicleCatalog/center/sheetView/vehicleCatalogSheetView.tsx"),
+);
 const VehicleCategorySheetViewLazy = lazy(
     () => import("@carRentalModule/clients/panel/private/categories/center/sheetView/vehicleCategorySheetView.tsx"),
 );
@@ -76,6 +79,7 @@ const carRentalWidgetContribution: WidgetContribution = {
         "#RentalReservationSheetView": RentalReservationSheetViewLazy,
         "#RentalLocationSheetView": RentalLocationSheetViewLazy,
         "#VehicleCategorySheetView": VehicleCategorySheetViewLazy,
+        "#VehicleCatalogSheetView": VehicleCatalogSheetViewLazy,
         "#VehicleBlockSheetView": VehicleBlockSheetViewLazy,
         "#RentalExtraSheetView": RentalExtraSheetViewLazy,
         "#RentalPromoCodeSheetView": RentalPromoCodeSheetViewLazy,
@@ -111,6 +115,7 @@ const carRentalWidgetContribution: WidgetContribution = {
         "#RentalReservationSheetView": {url: "/api/carRental/rentalReservation/single", labelFields: ["number"]},
         "#RentalLocationSheetView": {url: "/api/carRental/rentalLocation/single", labelFields: ["name"]},
         "#VehicleCategorySheetView": {url: "/api/carRental/vehicleCategory/single", labelFields: ["name"]},
+        "#VehicleCatalogSheetView": {url: "/api/carRental/vehicleCatalog/single", labelFields: ["name"]},
         "#VehicleBlockSheetView": {url: "/api/carRental/vehicleBlock/single", labelFields: ["reason"]},
         "#RentalExtraSheetView": {url: "/api/carRental/rentalExtra/single", labelFields: ["name"]},
         "#RentalPromoCodeSheetView": {url: "/api/carRental/rentalPromoCode/single", labelFields: ["code"]},
@@ -126,6 +131,7 @@ const carRentalWidgetContribution: WidgetContribution = {
         "/api/carRental/rentalLocation": lazy(() => import("@carRentalModule/clients/panel/private/locations/createRentalLocation.tsx")),
         "/api/carRental/rentalReservation": lazy(() => import("@carRentalModule/clients/panel/private/reservations/createRentalReservation.tsx")),
         "/api/carRental/vehicle": lazy(() => import("@carRentalModule/clients/panel/private/vehicles/createVehicle.tsx")),
+        "/api/carRental/vehicleCatalog": lazy(() => import("@carRentalModule/clients/panel/private/vehicleCatalog/createVehicleCatalogEntry.tsx")),
         "/api/carRental/vehicleCategory": lazy(() => import("@carRentalModule/clients/panel/private/categories/createVehicleCategory.tsx")),
         "/api/carRental/vehicleInsurance": lazy(() => import("@carRentalModule/clients/panel/private/insurance/createVehicleInsurance.tsx")),
         "/api/carRental/vehicleMaintenance": lazy(() => import("@carRentalModule/clients/panel/private/maintenance/createVehicleMaintenance.tsx")),

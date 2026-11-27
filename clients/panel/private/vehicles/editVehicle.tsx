@@ -13,9 +13,12 @@ export default createGenericEditPage<Vehicle, EditVehicleFormType>({
     mapEntityData: (data) => ({
         ...data,
         category: data.category?._id,
+        catalogMake: data.catalogMake?._id,
+        catalogModel: data.catalogModel?._id,
         homeLocation: data.homeLocation?._id,
         images: data.images?.map((image) => image._id),
         videos: data.videos?.map((video) => video._id),
+        listingImages: data.listingImages?.map((image) => image._id),
     }),
     submitIcon: <IconDeviceFloppy />,
 });

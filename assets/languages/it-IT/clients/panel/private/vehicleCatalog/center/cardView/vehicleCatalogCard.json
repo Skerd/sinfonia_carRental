@@ -1,0 +1,41 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/center/cardView/vehicleCatalogCard.tsx",
+  "failedTitle": "Impossibile caricare la voce",
+  "failedDescription": "Tocca per riprovare.",
+  "name": "Nome",
+  "levelValues": {
+    "type": "Tipo di veicolo",
+    "make": "Marca",
+    "model": "Modello"
+  },
+  "parentEntry": {
+    "make": "Tipo di veicolo",
+    "model": "Marca"
+  },
+  "bodyStyle": "Carrozzeria",
+  "bodyStyleValues": {
+    "hatchback": "Berlina compatta",
+    "sedan": "Berlina",
+    "estate": "Station wagon",
+    "suv": "SUV",
+    "coupe": "Coupé",
+    "convertible": "Cabriolet",
+    "minivan": "Monovolume",
+    "pickup": "Pick-up",
+    "van": "Furgone",
+    "motorcycle": "Moto",
+    "scooter": "Scooter",
+    "truck": "Camion",
+    "bus": "Autobus",
+    "other": "Altro"
+  },
+  "seats": "Posti",
+  "fuelType": "Carburante",
+  "fuelTypeValues": {
+    "petrol": "Benzina",
+    "diesel": "Diesel",
+    "hybrid": "Ibrida",
+    "electric": "Elettrica",
+    "other": "Altro"
+  }
+}

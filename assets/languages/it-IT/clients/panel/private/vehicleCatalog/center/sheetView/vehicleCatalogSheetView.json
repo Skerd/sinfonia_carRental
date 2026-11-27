@@ -1,0 +1,57 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/center/sheetView/vehicleCatalogSheetView.tsx",
+  "failedTitle": "Impossibile caricare la voce",
+  "failedDescription": "Si è verificato un problema durante il caricamento di questa voce. Clicca per riprovare.",
+  "failedTooltipDescription": "Clicca per ricaricare i dati.",
+  "vehicleCatalogSubtitle": "Catalogo veicoli",
+  "name": "Nome",
+  "overview": "Panoramica",
+  "lifecycle": "Ciclo di vita",
+  "level": "Livello",
+  "levelValues": {
+    "type": "Tipo di veicolo",
+    "make": "Marca",
+    "model": "Modello"
+  },
+  "parentEntry": "Appartiene a",
+  "bodyStyle": "Carrozzeria",
+  "bodyStyleValues": {
+    "hatchback": "Berlina compatta",
+    "sedan": "Berlina",
+    "estate": "Station wagon",
+    "suv": "SUV",
+    "coupe": "Coupé",
+    "convertible": "Cabriolet",
+    "minivan": "Monovolume",
+    "pickup": "Pick-up",
+    "van": "Furgone",
+    "motorcycle": "Moto",
+    "scooter": "Scooter",
+    "truck": "Camion",
+    "bus": "Autobus",
+    "other": "Altro"
+  },
+  "seats": "Posti",
+  "doors": "Porte",
+  "fuelType": "Carburante",
+  "fuelTypeValues": {
+    "petrol": "Benzina",
+    "diesel": "Diesel",
+    "hybrid": "Ibrida",
+    "electric": "Elettrica",
+    "other": "Altro"
+  },
+  "transmission": "Cambio",
+  "transmissionValues": {
+    "manual": "Manuale",
+    "automatic": "Automatico"
+  },
+  "yearFrom": "Prodotto dal",
+  "yearTo": "Prodotto fino al",
+  "order": "Ordine",
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da"
+}

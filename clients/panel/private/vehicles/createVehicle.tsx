@@ -9,6 +9,6 @@ export default createGenericCreatePage<CreateVehicleFormType>({
     accessModel: "vehicles",
     apiUrl: "/api/carRental/vehicle",
     schema: createVehicleFormSchema,
-    defaultValues: {plate: "", make: "", model: "", category: "", homeLocation: "", status: "active"},
+    defaultValues: {plate: "", catalogMake: "", catalogModel: "", category: "", homeLocation: "", status: "active"},
     submitIcon: <IconPlus />,
 });

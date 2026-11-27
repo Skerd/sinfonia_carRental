@@ -1,0 +1,104 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/editVehicleCatalogEntry.tsx",
+  "editTitle": "Modifier l'entrée",
+  "editDescription": "Mettez à jour cette entrée du catalogue de véhicules.",
+  "errorTitle": "Impossible de charger l'entrée",
+  "errorDescription": "Cette entrée n'a pas pu être chargée. Réessayez.",
+  "form": {
+    "_idLabel": "ID de l'enregistrement",
+    "basicsSectionTitle": "Informations de base",
+    "nameLabel": "Nom",
+    "namePlaceholder": "p. ex. Classe E",
+    "levelLabel": "Niveau",
+    "levelPlaceholder": "Type, marque ou modèle",
+    "levels": {
+      "type": "Type de véhicule",
+      "make": "Marque",
+      "model": "Modèle"
+    },
+    "parentEntryLabel": {
+      "make": "Type de véhicule",
+      "model": "Marque"
+    },
+    "parentEntryPlaceholder": {
+      "make": "Choisissez le type de véhicule",
+      "model": "Choisissez la marque"
+    },
+    "specsSectionTitle": "Caractéristiques habituelles",
+    "bodyStyleLabel": "Carrosserie",
+    "bodyStylePlaceholder": "Choisissez la carrosserie",
+    "bodyStyles": {
+      "hatchback": "Berline compacte",
+      "sedan": "Berline",
+      "estate": "Break",
+      "suv": "SUV",
+      "coupe": "Coupé",
+      "convertible": "Cabriolet",
+      "minivan": "Monospace",
+      "pickup": "Pick-up",
+      "van": "Utilitaire",
+      "motorcycle": "Moto",
+      "scooter": "Scooter",
+      "truck": "Camion",
+      "bus": "Bus",
+      "other": "Autre"
+    },
+    "seatsLabel": "Places",
+    "seatsPlaceholder": "p. ex. 5",
+    "doorsLabel": "Portes",
+    "doorsPlaceholder": "p. ex. 4",
+    "fuelTypeLabel": "Carburant",
+    "fuelTypePlaceholder": "Choisissez le carburant",
+    "fuelTypes": {
+      "petrol": "Essence",
+      "diesel": "Diesel",
+      "hybrid": "Hybride",
+      "electric": "Électrique",
+      "other": "Autre"
+    },
+    "transmissionLabel": "Boîte",
+    "transmissionPlaceholder": "Choisissez la boîte",
+    "transmissions": {
+      "manual": "Manuelle",
+      "automatic": "Automatique"
+    },
+    "yearFromLabel": "Produit depuis (année)",
+    "yearFromPlaceholder": "p. ex. 2016",
+    "yearToLabel": "Produit jusqu'à (année)",
+    "yearToPlaceholder": "p. ex. 2023",
+    "yearToDescription": "Vide tant qu'il est produit.",
+    "namesSectionTitle": "Nom dans chaque langue",
+    "names": {
+      "en": "Anglais",
+      "sq": "Albanais",
+      "de": "Allemand",
+      "fr": "Français",
+      "it": "Italien"
+    },
+    "visibilitySectionTitle": "Visibilité",
+    "orderLabel": "Ordre de tri",
+    "orderPlaceholder": "0"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement de l'entrée",
+      "time": 3000
+    },
+    "success": {
+      "title": "Entrée mise à jour",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible de mettre à jour l'entrée",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifier l'entrée",
+    "description": "Mettez à jour cette entrée du catalogue de véhicules."
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Enregistrer"
+  }
+}

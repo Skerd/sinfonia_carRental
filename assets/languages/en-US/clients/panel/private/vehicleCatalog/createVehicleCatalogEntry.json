@@ -1,0 +1,99 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/createVehicleCatalogEntry.tsx",
+  "form": {
+    "basicsSectionTitle": "Basics",
+    "nameLabel": "Name",
+    "namePlaceholder": "e.g. E-Class",
+    "levelLabel": "Level",
+    "levelPlaceholder": "Type, make or model",
+    "levels": {
+      "type": "Vehicle type",
+      "make": "Make",
+      "model": "Model"
+    },
+    "parentEntryLabel": {
+      "make": "Vehicle type",
+      "model": "Make"
+    },
+    "parentEntryPlaceholder": {
+      "make": "Choose the vehicle type",
+      "model": "Choose the make"
+    },
+    "specsSectionTitle": "Typical specs",
+    "bodyStyleLabel": "Body",
+    "bodyStylePlaceholder": "Choose the body",
+    "bodyStyles": {
+      "hatchback": "Hatchback",
+      "sedan": "Sedan",
+      "estate": "Estate",
+      "suv": "SUV",
+      "coupe": "Coupé",
+      "convertible": "Convertible",
+      "minivan": "Minivan",
+      "pickup": "Pickup",
+      "van": "Van",
+      "motorcycle": "Motorcycle",
+      "scooter": "Scooter",
+      "truck": "Truck",
+      "bus": "Bus",
+      "other": "Other"
+    },
+    "seatsLabel": "Seats",
+    "seatsPlaceholder": "e.g. 5",
+    "doorsLabel": "Doors",
+    "doorsPlaceholder": "e.g. 4",
+    "fuelTypeLabel": "Fuel",
+    "fuelTypePlaceholder": "Choose the fuel",
+    "fuelTypes": {
+      "petrol": "Petrol",
+      "diesel": "Diesel",
+      "hybrid": "Hybrid",
+      "electric": "Electric",
+      "other": "Other"
+    },
+    "transmissionLabel": "Gearbox",
+    "transmissionPlaceholder": "Choose the gearbox",
+    "transmissions": {
+      "manual": "Manual",
+      "automatic": "Automatic"
+    },
+    "yearFromLabel": "Made from (year)",
+    "yearFromPlaceholder": "e.g. 2016",
+    "yearToLabel": "Made until (year)",
+    "yearToPlaceholder": "e.g. 2023",
+    "yearToDescription": "Empty while it is still made.",
+    "namesSectionTitle": "Name in every language",
+    "names": {
+      "en": "English",
+      "sq": "Albanian",
+      "de": "German",
+      "fr": "French",
+      "it": "Italian"
+    },
+    "visibilitySectionTitle": "Visibility",
+    "orderLabel": "Sort order",
+    "orderPlaceholder": "0"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving catalog entry",
+      "time": 3000
+    },
+    "success": {
+      "title": "Catalog entry added",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not add the catalog entry",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Add catalog entry",
+    "description": "Add a vehicle type, a make or a model to the platform's catalog."
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add entry"
+  }
+}

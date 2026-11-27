@@ -1,0 +1,77 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/index.tsx",
+  "title": "Catalogo veicoli",
+  "description": "Le marche e i modelli della piattaforma, condivisi da tutte le aziende.",
+  "help": {
+    "ariaLabel": "Informazioni sul catalogo veicoli",
+    "title": "Informazioni sul catalogo veicoli",
+    "overview": "Il catalogo veicoli è della piattaforma: un elenco di tipi di veicolo, delle loro marche e dei modelli delle marche, condiviso da tutte le aziende, così la stessa auto non viene mai scritta in cinque modi diversi. Scegli da qui il modello di un'auto e l'auto riceve marca, modello e le caratteristiche del modello.",
+    "sections": [
+      {
+        "title": "Ogni voce",
+        "items": [
+          "Un tipo (auto, furgone, moto…) contiene le marche; una marca contiene i suoi modelli.",
+          "Manca una marca o un modello? Usa «Richiedi una voce». La piattaforma la esamina; nel frattempo la vede solo la tua azienda.",
+          "Posti, porte, carburante e cambio di un modello compilano le caratteristiche di un'auto quando lo scegli; puoi ancora modificarle sull'auto.",
+          "Lascia vuoto l'anno di fine finché il modello è in produzione. L'ordine dispone le voci dello stesso livello, dalla più bassa."
+        ]
+      }
+    ]
+  },
+  "createEntry": "Aggiungi voce",
+  "fields": {
+    "name": "Nome",
+    "level": "Livello",
+    "parentEntry": "Appartiene a",
+    "bodyStyle": "Carrozzeria",
+    "seats": "Posti",
+    "doors": "Porte",
+    "fuelType": "Carburante",
+    "transmission": "Cambio",
+    "yearFrom": "Prodotto dal",
+    "yearTo": "Prodotto fino al",
+    "order": "Ordine",
+    "createdBy": "Creato da",
+    "deletedAt": "Eliminato",
+    "deletedBy": "Eliminato da",
+    "!enums": {
+      "level": {
+        "type": "Tipo di veicolo",
+        "make": "Marca",
+        "model": "Modello"
+      },
+      "bodyStyle": {
+        "hatchback": "Berlina compatta",
+        "sedan": "Berlina",
+        "estate": "Station wagon",
+        "suv": "SUV",
+        "coupe": "Coupé",
+        "convertible": "Cabriolet",
+        "minivan": "Monovolume",
+        "pickup": "Pick-up",
+        "van": "Furgone",
+        "motorcycle": "Moto",
+        "scooter": "Scooter",
+        "truck": "Camion",
+        "bus": "Autobus",
+        "other": "Altro"
+      },
+      "fuelType": {
+        "petrol": "Benzina",
+        "diesel": "Diesel",
+        "hybrid": "Ibrida",
+        "electric": "Elettrica",
+        "other": "Altro"
+      },
+      "transmission": {
+        "manual": "Manuale",
+        "automatic": "Automatico"
+      }
+    }
+  },
+  "views": {
+    "label": "Viste",
+    "list": "Elenco",
+    "hierarchy": "Gerarchia"
+  }
+}

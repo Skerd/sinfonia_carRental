@@ -1,4 +1,4 @@
-import {IconBell, IconCalendarEvent, IconCar, IconCategory, IconCreditCard, IconFileText, IconMapPin, IconPlus, IconReceipt, IconTicket} from "@tabler/icons-react";
+import {IconBell, IconBook2, IconCalendarEvent, IconCar, IconCategory, IconCreditCard, IconFileText, IconMapPin, IconPlus, IconReceipt, IconTicket} from "@tabler/icons-react";
 import type {TenancySettingsContribution} from "@coreModule/helpers/types/tenancySettingsContribution.types.ts";
 import type {NavLinkItem, NavSubItem} from "@coreModule/helpers/types/sidebarNav.types.ts";
 import {carRentalConfigSectionPath, type CarRentalConfigSection} from "@carRentalModule/clients/panel/private/settings/carRentalConfigSections.ts";
@@ -38,6 +38,7 @@ const carRentalTenancySettingsContribution: TenancySettingsContribution = {
             catalog("rentalExtras", "rentalExtras", IconPlus, "rentalextras"),
             catalog("rentalLocations", "rentalLocations", IconMapPin, "rentallocations"),
             catalog("rentalPromoCodes", "rentalPromoCodes", IconTicket, "rentalpromocodes"),
+            catalog("vehiclecatalogentries", "vehiclecatalogentries", IconBook2, "vehiclecatalogentries"),
         ];
         return {
             title: resolveLanguageKey("menus.tenancy.systemSettings.carRentalConfig.title"),

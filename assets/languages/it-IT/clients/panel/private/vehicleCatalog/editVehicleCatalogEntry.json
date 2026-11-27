@@ -1,0 +1,104 @@
+{
+  "path": "src/modules/carRental/clients/panel/private/vehicleCatalog/editVehicleCatalogEntry.tsx",
+  "editTitle": "Modifica voce",
+  "editDescription": "Aggiorna questa voce del catalogo veicoli.",
+  "errorTitle": "Impossibile caricare la voce",
+  "errorDescription": "Non è stato possibile caricare questa voce. Riprova.",
+  "form": {
+    "_idLabel": "ID record",
+    "basicsSectionTitle": "Dati principali",
+    "nameLabel": "Nome",
+    "namePlaceholder": "es. Classe E",
+    "levelLabel": "Livello",
+    "levelPlaceholder": "Tipo, marca o modello",
+    "levels": {
+      "type": "Tipo di veicolo",
+      "make": "Marca",
+      "model": "Modello"
+    },
+    "parentEntryLabel": {
+      "make": "Tipo di veicolo",
+      "model": "Marca"
+    },
+    "parentEntryPlaceholder": {
+      "make": "Scegli il tipo di veicolo",
+      "model": "Scegli la marca"
+    },
+    "specsSectionTitle": "Caratteristiche tipiche",
+    "bodyStyleLabel": "Carrozzeria",
+    "bodyStylePlaceholder": "Scegli la carrozzeria",
+    "bodyStyles": {
+      "hatchback": "Berlina compatta",
+      "sedan": "Berlina",
+      "estate": "Station wagon",
+      "suv": "SUV",
+      "coupe": "Coupé",
+      "convertible": "Cabriolet",
+      "minivan": "Monovolume",
+      "pickup": "Pick-up",
+      "van": "Furgone",
+      "motorcycle": "Moto",
+      "scooter": "Scooter",
+      "truck": "Camion",
+      "bus": "Autobus",
+      "other": "Altro"
+    },
+    "seatsLabel": "Posti",
+    "seatsPlaceholder": "es. 5",
+    "doorsLabel": "Porte",
+    "doorsPlaceholder": "es. 4",
+    "fuelTypeLabel": "Carburante",
+    "fuelTypePlaceholder": "Scegli il carburante",
+    "fuelTypes": {
+      "petrol": "Benzina",
+      "diesel": "Diesel",
+      "hybrid": "Ibrida",
+      "electric": "Elettrica",
+      "other": "Altro"
+    },
+    "transmissionLabel": "Cambio",
+    "transmissionPlaceholder": "Scegli il cambio",
+    "transmissions": {
+      "manual": "Manuale",
+      "automatic": "Automatico"
+    },
+    "yearFromLabel": "Prodotto dal (anno)",
+    "yearFromPlaceholder": "es. 2016",
+    "yearToLabel": "Prodotto fino al (anno)",
+    "yearToPlaceholder": "es. 2023",
+    "yearToDescription": "Vuoto finché è in produzione.",
+    "namesSectionTitle": "Nome in ogni lingua",
+    "names": {
+      "en": "Inglese",
+      "sq": "Albanese",
+      "de": "Tedesco",
+      "fr": "Francese",
+      "it": "Italiano"
+    },
+    "visibilitySectionTitle": "Visibilità",
+    "orderLabel": "Ordine",
+    "orderPlaceholder": "0"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio della voce",
+      "time": 3000
+    },
+    "success": {
+      "title": "Voce aggiornata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile aggiornare la voce",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifica voce",
+    "description": "Aggiorna questa voce del catalogo veicoli."
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Salva modifiche"
+  }
+}
