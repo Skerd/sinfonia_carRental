@@ -95,7 +95,7 @@ function CategoryPage({resolveLanguageKey, currentLanguage}: WithLanguageType) {
 
     const specs = [
         car?.year != null && {label: resolveLanguageKey("year"), value: String(car.year)},
-        car?.color && {label: resolveLanguageKey("color"), value: car.color},
+        car?.color && {label: resolveLanguageKey("color"), value: resolveLanguageKey(`colorValues.${car.color}`)},
         {label: resolveLanguageKey("deposit"), value: formatMoney(car ? car.depositAmount : category.depositAmount)},
         {
             label: resolveLanguageKey("mileage"),
@@ -128,7 +128,7 @@ function CategoryPage({resolveLanguageKey, currentLanguage}: WithLanguageType) {
                                 : <div className="size-16 shrink-0 rounded-xl bg-background" aria-hidden />}
                             <span className="flex flex-col gap-0.5">
                                 <span className="font-medium">{entry.title}</span>
-                                <span className="text-sm text-muted-foreground">{[entry.year, entry.color].filter(Boolean).join(" · ")}</span>
+                                <span className="text-sm text-muted-foreground">{[entry.year, entry.color && resolveLanguageKey(`colorValues.${entry.color}`)].filter(Boolean).join(" · ")}</span>
                                 <span className="text-sm font-semibold tabular-nums">{formatMoney(entry.dailyRate)} {resolveLanguageKey("perDay")}</span>
                             </span>
                         </Link>

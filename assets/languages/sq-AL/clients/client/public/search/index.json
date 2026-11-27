@@ -11,5 +11,21 @@
   "vatIncluded": "TVSH e përfshirë",
   "choose": "Zgjidh",
   "soldOut": "Nuk disponohet për këto data",
-  "exactCar": "Pikërisht kjo makinë"
+  "exactCar": "Pikërisht kjo makinë",
+  "colorValues": {
+    "white": "E bardhë",
+    "black": "E zezë",
+    "silver": "Argjendi",
+    "grey": "Gri",
+    "blue": "Blu",
+    "red": "E kuqe",
+    "green": "Jeshile",
+    "beige": "Bezhë",
+    "brown": "Kafe",
+    "yellow": "E verdhë",
+    "orange": "Portokalli",
+    "gold": "Ari",
+    "purple": "Vjollcë",
+    "other": "Tjetër"
+  }
 }

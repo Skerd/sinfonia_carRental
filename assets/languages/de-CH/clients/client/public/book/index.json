@@ -42,5 +42,21 @@
   "promoApply": "Anwenden",
   "promoInvalid": "Dieser Aktionscode kann für diese Buchung nicht verwendet werden.",
   "crossBorder": "Das Fahrzeug ins Ausland mitnehmen",
-  "exactCar": "Genau dieses Auto"
+  "exactCar": "Genau dieses Auto",
+  "colorValues": {
+    "white": "Weiss",
+    "black": "Schwarz",
+    "silver": "Silber",
+    "grey": "Grau",
+    "blue": "Blau",
+    "red": "Rot",
+    "green": "Grün",
+    "beige": "Beige",
+    "brown": "Braun",
+    "yellow": "Gelb",
+    "orange": "Orange",
+    "gold": "Gold",
+    "purple": "Violett",
+    "other": "Andere"
+  }
 }

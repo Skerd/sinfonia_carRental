@@ -40,6 +40,22 @@
         "ready": "Ready",
         "needs_cleaning": "Needs cleaning",
         "needs_check": "Needs a check"
+      },
+      "color": {
+        "white": "White",
+        "black": "Black",
+        "silver": "Silver",
+        "grey": "Grey",
+        "blue": "Blue",
+        "red": "Red",
+        "green": "Green",
+        "beige": "Beige",
+        "brown": "Brown",
+        "yellow": "Yellow",
+        "orange": "Orange",
+        "gold": "Gold",
+        "purple": "Purple",
+        "other": "Other"
       }
     },
     "plate": "Plate",

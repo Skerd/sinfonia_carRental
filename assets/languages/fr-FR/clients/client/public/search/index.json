@@ -11,5 +11,21 @@
   "vatIncluded": "TVA incluse",
   "choose": "Choisir",
   "soldOut": "Indisponible pour ces dates",
-  "exactCar": "Exactement cette voiture"
+  "exactCar": "Exactement cette voiture",
+  "colorValues": {
+    "white": "Blanc",
+    "black": "Noir",
+    "silver": "Argent",
+    "grey": "Gris",
+    "blue": "Bleu",
+    "red": "Rouge",
+    "green": "Vert",
+    "beige": "Beige",
+    "brown": "Marron",
+    "yellow": "Jaune",
+    "orange": "Orange",
+    "gold": "Or",
+    "purple": "Violet",
+    "other": "Autre"
+  }
 }

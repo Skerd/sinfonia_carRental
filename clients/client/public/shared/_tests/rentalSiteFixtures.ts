@@ -59,7 +59,7 @@ export const SITE_CONFIG: RentalStorefrontConfigResponse = {
             make: "BMW",
             model: "5 Series",
             year: 2024,
-            color: "Black",
+            color: "black",
             images: ["/bmw.jpg"],
             dailyRate: 150,
             depositAmount: 1500,

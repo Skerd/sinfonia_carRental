@@ -18,7 +18,7 @@
     "categoryLabel": "Categoria",
     "categoryPlaceholder": "Seleziona categoria",
     "colorLabel": "Colore",
-    "colorPlaceholder": "es. Bianco",
+    "colorPlaceholder": "Scegli un colore",
     "homeLocationLabel": "Sede di riferimento",
     "homeLocationPlaceholder": "Seleziona sede",
     "makeLabel": "Marca",
@@ -98,7 +98,23 @@
     },
     "ownSpecPlaceholder": "Come la categoria",
     "ownSpecsDescription": "Vuoto: come la categoria. Compila solo ciò che è diverso per quest'auto, es. un'auto a 5 posti in una categoria da 4.",
-    "catalogModelDescription": "Compila posti, porte, carburante e cambio dell'auto dove mancano; puoi sempre modificarli. Manca una marca o un modello? Richiedilo nel catalogo veicoli."
+    "catalogModelDescription": "Compila posti, porte, carburante e cambio dell'auto dove mancano; puoi sempre modificarli. Manca una marca o un modello? Richiedilo nel catalogo veicoli.",
+    "colors": {
+      "white": "Bianco",
+      "black": "Nero",
+      "silver": "Argento",
+      "grey": "Grigio",
+      "blue": "Blu",
+      "red": "Rosso",
+      "green": "Verde",
+      "beige": "Beige",
+      "brown": "Marrone",
+      "yellow": "Giallo",
+      "orange": "Arancione",
+      "gold": "Oro",
+      "purple": "Viola",
+      "other": "Altro"
+    }
   },
   "axios": {
     "start": {

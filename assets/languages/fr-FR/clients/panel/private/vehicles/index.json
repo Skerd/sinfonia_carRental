@@ -40,6 +40,22 @@
         "ready": "Prêt",
         "needs_cleaning": "À nettoyer",
         "needs_check": "À contrôler"
+      },
+      "color": {
+        "white": "Blanc",
+        "black": "Noir",
+        "silver": "Argent",
+        "grey": "Gris",
+        "blue": "Bleu",
+        "red": "Rouge",
+        "green": "Vert",
+        "beige": "Beige",
+        "brown": "Marron",
+        "yellow": "Jaune",
+        "orange": "Orange",
+        "gold": "Or",
+        "purple": "Violet",
+        "other": "Autre"
       }
     },
     "plate": "Plaque",

@@ -40,6 +40,22 @@
         "ready": "Pronto",
         "needs_cleaning": "Da pulire",
         "needs_check": "Da controllare"
+      },
+      "color": {
+        "white": "Bianco",
+        "black": "Nero",
+        "silver": "Argento",
+        "grey": "Grigio",
+        "blue": "Blu",
+        "red": "Rosso",
+        "green": "Verde",
+        "beige": "Beige",
+        "brown": "Marrone",
+        "yellow": "Giallo",
+        "orange": "Arancione",
+        "gold": "Oro",
+        "purple": "Viola",
+        "other": "Altro"
       }
     },
     "plate": "Targa",

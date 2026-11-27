@@ -5,5 +5,21 @@
   "from": "À partir de",
   "perDay": "par jour",
   "exactCarsTitle": "Voitures particulières",
-  "carByCar": "Louée voiture par voiture : choisissez la vôtre"
+  "carByCar": "Louée voiture par voiture : choisissez la vôtre",
+  "colorValues": {
+    "white": "Blanc",
+    "black": "Noir",
+    "silver": "Argent",
+    "grey": "Gris",
+    "blue": "Bleu",
+    "red": "Rouge",
+    "green": "Vert",
+    "beige": "Beige",
+    "brown": "Marron",
+    "yellow": "Jaune",
+    "orange": "Orange",
+    "gold": "Or",
+    "purple": "Violet",
+    "other": "Autre"
+  }
 }

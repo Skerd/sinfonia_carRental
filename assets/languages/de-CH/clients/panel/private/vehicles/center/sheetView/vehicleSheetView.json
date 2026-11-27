@@ -182,5 +182,21 @@
     "hybrid": "Hybrid",
     "electric": "Elektro",
     "other": "Andere"
+  },
+  "colorValues": {
+    "white": "Weiss",
+    "black": "Schwarz",
+    "silver": "Silber",
+    "grey": "Grau",
+    "blue": "Blau",
+    "red": "Rot",
+    "green": "Grün",
+    "beige": "Beige",
+    "brown": "Braun",
+    "yellow": "Gelb",
+    "orange": "Orange",
+    "gold": "Gold",
+    "purple": "Violett",
+    "other": "Andere"
   }
 }

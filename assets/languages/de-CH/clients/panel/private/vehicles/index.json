@@ -40,6 +40,22 @@
         "ready": "Bereit",
         "needs_cleaning": "Reinigung nötig",
         "needs_check": "Kontrolle nötig"
+      },
+      "color": {
+        "white": "Weiss",
+        "black": "Schwarz",
+        "silver": "Silber",
+        "grey": "Grau",
+        "blue": "Blau",
+        "red": "Rot",
+        "green": "Grün",
+        "beige": "Beige",
+        "brown": "Braun",
+        "yellow": "Gelb",
+        "orange": "Orange",
+        "gold": "Gold",
+        "purple": "Violett",
+        "other": "Andere"
       }
     },
     "plate": "Kennzeichen",

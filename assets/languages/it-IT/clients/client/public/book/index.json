@@ -42,5 +42,21 @@
   "promoApply": "Applica",
   "promoInvalid": "Questo codice promozionale non può essere usato per questa prenotazione.",
   "crossBorder": "Portare l'auto all'estero",
-  "exactCar": "Esattamente quest'auto"
+  "exactCar": "Esattamente quest'auto",
+  "colorValues": {
+    "white": "Bianco",
+    "black": "Nero",
+    "silver": "Argento",
+    "grey": "Grigio",
+    "blue": "Blu",
+    "red": "Rosso",
+    "green": "Verde",
+    "beige": "Beige",
+    "brown": "Marrone",
+    "yellow": "Giallo",
+    "orange": "Arancione",
+    "gold": "Oro",
+    "purple": "Viola",
+    "other": "Altro"
+  }
 }

@@ -42,5 +42,21 @@
   "chooseCarTitle": "Scegli la tua auto",
   "carByCar": "Si noleggia auto per auto: scegli la tua",
   "year": "Anno",
-  "color": "Colore"
+  "color": "Colore",
+  "colorValues": {
+    "white": "Bianco",
+    "black": "Nero",
+    "silver": "Argento",
+    "grey": "Grigio",
+    "blue": "Blu",
+    "red": "Rosso",
+    "green": "Verde",
+    "beige": "Beige",
+    "brown": "Marrone",
+    "yellow": "Giallo",
+    "orange": "Arancione",
+    "gold": "Oro",
+    "purple": "Viola",
+    "other": "Altro"
+  }
 }

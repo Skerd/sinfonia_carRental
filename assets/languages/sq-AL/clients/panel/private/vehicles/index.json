@@ -40,6 +40,22 @@
         "ready": "Gati",
         "needs_cleaning": "Duhet pastruar",
         "needs_check": "Duhet kontrolluar"
+      },
+      "color": {
+        "white": "E bardhë",
+        "black": "E zezë",
+        "silver": "Argjendi",
+        "grey": "Gri",
+        "blue": "Blu",
+        "red": "E kuqe",
+        "green": "Jeshile",
+        "beige": "Bezhë",
+        "brown": "Kafe",
+        "yellow": "E verdhë",
+        "orange": "Portokalli",
+        "gold": "Ari",
+        "purple": "Vjollcë",
+        "other": "Tjetër"
       }
     },
     "plate": "Targa",

@@ -69,7 +69,7 @@ function SearchPage({resolveLanguageKey}: WithLanguageType) {
                                                     <Link to={`${base}/cars/${car._id}?${tripKey}`} className="outline-none hover:underline focus-visible:underline">{car.title}</Link>
                                                 </h2>
                                                 {car.year || car.color ? (
-                                                    <p className="text-sm text-muted-foreground">{[car.year, car.color].filter(Boolean).join(" · ")}</p>
+                                                    <p className="text-sm text-muted-foreground">{[car.year, car.color && resolveLanguageKey(`colorValues.${car.color}`)].filter(Boolean).join(" · ")}</p>
                                                 ) : null}
                                                 <RentalCategoryFacts category={car} />
                                                 {transfer ? (

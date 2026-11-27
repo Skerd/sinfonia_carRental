@@ -42,5 +42,21 @@
   "promoApply": "Appliquer",
   "promoInvalid": "Ce code promo ne peut pas être utilisé pour cette réservation.",
   "crossBorder": "Emmener la voiture à l'étranger",
-  "exactCar": "Exactement cette voiture"
+  "exactCar": "Exactement cette voiture",
+  "colorValues": {
+    "white": "Blanc",
+    "black": "Noir",
+    "silver": "Argent",
+    "grey": "Gris",
+    "blue": "Bleu",
+    "red": "Rouge",
+    "green": "Vert",
+    "beige": "Beige",
+    "brown": "Marron",
+    "yellow": "Jaune",
+    "orange": "Orange",
+    "gold": "Or",
+    "purple": "Violet",
+    "other": "Autre"
+  }
 }

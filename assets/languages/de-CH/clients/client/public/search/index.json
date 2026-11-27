@@ -11,5 +11,21 @@
   "vatIncluded": "Inkl. MWST",
   "choose": "Auswählen",
   "soldOut": "Für diese Daten nicht verfügbar",
-  "exactCar": "Genau dieses Auto"
+  "exactCar": "Genau dieses Auto",
+  "colorValues": {
+    "white": "Weiss",
+    "black": "Schwarz",
+    "silver": "Silber",
+    "grey": "Grau",
+    "blue": "Blau",
+    "red": "Rot",
+    "green": "Grün",
+    "beige": "Beige",
+    "brown": "Braun",
+    "yellow": "Gelb",
+    "orange": "Orange",
+    "gold": "Gold",
+    "purple": "Violett",
+    "other": "Andere"
+  }
 }

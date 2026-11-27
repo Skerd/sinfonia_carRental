@@ -42,5 +42,21 @@
   "chooseCarTitle": "Zgjidhni makinën tuaj",
   "carByCar": "Jepet me qira makinë për makinë: zgjidhni tuajën",
   "year": "Viti",
-  "color": "Ngjyra"
+  "color": "Ngjyra",
+  "colorValues": {
+    "white": "E bardhë",
+    "black": "E zezë",
+    "silver": "Argjendi",
+    "grey": "Gri",
+    "blue": "Blu",
+    "red": "E kuqe",
+    "green": "Jeshile",
+    "beige": "Bezhë",
+    "brown": "Kafe",
+    "yellow": "E verdhë",
+    "orange": "Portokalli",
+    "gold": "Ari",
+    "purple": "Vjollcë",
+    "other": "Tjetër"
+  }
 }

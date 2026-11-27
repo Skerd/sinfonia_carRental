@@ -18,7 +18,7 @@
     "categoryLabel": "Kategoria",
     "categoryPlaceholder": "Zgjidh kategorinë",
     "colorLabel": "Ngjyra",
-    "colorPlaceholder": "Shkruani ngjyrën",
+    "colorPlaceholder": "Zgjidhni një ngjyrë",
     "homeLocationLabel": "Vendndodhja bazë",
     "homeLocationPlaceholder": "Zgjidh vendndodhjen",
     "makeLabel": "Marka",
@@ -98,7 +98,23 @@
     },
     "ownSpecPlaceholder": "Si kategoria",
     "ownSpecsDescription": "Bosh: si kategoria. Plotësoni vetëm atë që ndryshon për këtë makinë, p.sh. një makinë me 5 vende në një kategori me 4.",
-    "catalogModelDescription": "Plotëson vendet, dyert, karburantin dhe kambion e makinës kur mungojnë; mund t'i ndryshoni përsëri. Mungon një markë ose model? Kërkojeni te katalogu i automjeteve."
+    "catalogModelDescription": "Plotëson vendet, dyert, karburantin dhe kambion e makinës kur mungojnë; mund t'i ndryshoni përsëri. Mungon një markë ose model? Kërkojeni te katalogu i automjeteve.",
+    "colors": {
+      "white": "E bardhë",
+      "black": "E zezë",
+      "silver": "Argjendi",
+      "grey": "Gri",
+      "blue": "Blu",
+      "red": "E kuqe",
+      "green": "Jeshile",
+      "beige": "Bezhë",
+      "brown": "Kafe",
+      "yellow": "E verdhë",
+      "orange": "Portokalli",
+      "gold": "Ari",
+      "purple": "Vjollcë",
+      "other": "Tjetër"
+    }
   },
   "axios": {
     "start": {

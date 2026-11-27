@@ -37,7 +37,7 @@ function HomePage({resolveLanguageKey}: WithLanguageType) {
                                         )}
                                         <h3 className="font-display text-lg font-bold tracking-tight">{car.title}</h3>
                                         {car.year || car.color ? (
-                                            <p className="text-sm text-muted-foreground">{[car.year, car.color].filter(Boolean).join(" · ")}</p>
+                                            <p className="text-sm text-muted-foreground">{[car.year, car.color && resolveLanguageKey(`colorValues.${car.color}`)].filter(Boolean).join(" · ")}</p>
                                         ) : null}
                                         <RentalCategoryFacts category={car} />
                                         <p className="font-display text-[15px] font-semibold tabular-nums">

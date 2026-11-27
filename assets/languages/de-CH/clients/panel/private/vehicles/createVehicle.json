@@ -18,7 +18,7 @@
     "categoryLabel": "Kategorie",
     "categoryPlaceholder": "Kategorie auswählen",
     "colorLabel": "Farbe",
-    "colorPlaceholder": "z. B. Weiss",
+    "colorPlaceholder": "Farbe wählen",
     "homeLocationLabel": "Heimstandort",
     "homeLocationPlaceholder": "Standort auswählen",
     "makeLabel": "Marke",
@@ -98,7 +98,23 @@
     },
     "ownSpecPlaceholder": "Wie Kategorie",
     "ownSpecsDescription": "Leer: wie die Kategorie. Füllen Sie nur aus, was bei diesem Fahrzeug abweicht, z. B. ein Fünfsitzer in einer Viersitzer-Kategorie.",
-    "catalogModelDescription": "Füllt Sitze, Türen, Treibstoff und Getriebe des Fahrzeugs, wo sie fehlen; Sie können sie weiterhin ändern. Fehlt eine Marke oder ein Modell? Beantragen Sie es im Fahrzeugkatalog."
+    "catalogModelDescription": "Füllt Sitze, Türen, Treibstoff und Getriebe des Fahrzeugs, wo sie fehlen; Sie können sie weiterhin ändern. Fehlt eine Marke oder ein Modell? Beantragen Sie es im Fahrzeugkatalog.",
+    "colors": {
+      "white": "Weiss",
+      "black": "Schwarz",
+      "silver": "Silber",
+      "grey": "Grau",
+      "blue": "Blau",
+      "red": "Rot",
+      "green": "Grün",
+      "beige": "Beige",
+      "brown": "Braun",
+      "yellow": "Gelb",
+      "orange": "Orange",
+      "gold": "Gold",
+      "purple": "Violett",
+      "other": "Andere"
+    }
   },
   "axios": {
     "start": {

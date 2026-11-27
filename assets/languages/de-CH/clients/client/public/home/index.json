@@ -5,5 +5,21 @@
   "from": "Von",
   "perDay": "pro Tag",
   "exactCarsTitle": "Besondere Autos",
-  "carByCar": "Wird Auto für Auto vermietet: Wählen Sie genau eines aus"
+  "carByCar": "Wird Auto für Auto vermietet: Wählen Sie genau eines aus",
+  "colorValues": {
+    "white": "Weiss",
+    "black": "Schwarz",
+    "silver": "Silber",
+    "grey": "Grau",
+    "blue": "Blau",
+    "red": "Rot",
+    "green": "Grün",
+    "beige": "Beige",
+    "brown": "Braun",
+    "yellow": "Gelb",
+    "orange": "Orange",
+    "gold": "Gold",
+    "purple": "Violett",
+    "other": "Andere"
+  }
 }

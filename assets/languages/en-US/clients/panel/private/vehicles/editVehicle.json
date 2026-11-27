@@ -18,7 +18,7 @@
     "categoryLabel": "Category",
     "categoryPlaceholder": "Select category",
     "colorLabel": "Color",
-    "colorPlaceholder": "e.g. White",
+    "colorPlaceholder": "Select a colour",
     "homeLocationLabel": "Home location",
     "homeLocationPlaceholder": "Select location",
     "makeLabel": "Make",
@@ -98,7 +98,23 @@
     },
     "ownSpecPlaceholder": "Category's",
     "ownSpecsDescription": "Empty: the category's. Fill in only what differs for this car, e.g. a 5-seat car in a 4-seat category.",
-    "catalogModelDescription": "Fills the car's seats, doors, fuel and gearbox where it has none; you can still change them. Missing a make or model? Request it in the vehicle catalog."
+    "catalogModelDescription": "Fills the car's seats, doors, fuel and gearbox where it has none; you can still change them. Missing a make or model? Request it in the vehicle catalog.",
+    "colors": {
+      "white": "White",
+      "black": "Black",
+      "silver": "Silver",
+      "grey": "Grey",
+      "blue": "Blue",
+      "red": "Red",
+      "green": "Green",
+      "beige": "Beige",
+      "brown": "Brown",
+      "yellow": "Yellow",
+      "orange": "Orange",
+      "gold": "Gold",
+      "purple": "Purple",
+      "other": "Other"
+    }
   },
   "axios": {
     "start": {

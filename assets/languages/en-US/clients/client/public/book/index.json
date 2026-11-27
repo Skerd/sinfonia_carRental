@@ -42,5 +42,21 @@
     "promoApply": "Apply",
     "promoInvalid": "This promo code can't be used for this booking.",
     "crossBorder": "Taking the car out of the country",
-    "exactCar": "This exact car"
+    "exactCar": "This exact car",
+    "colorValues": {
+        "white": "White",
+        "black": "Black",
+        "silver": "Silver",
+        "grey": "Grey",
+        "blue": "Blue",
+        "red": "Red",
+        "green": "Green",
+        "beige": "Beige",
+        "brown": "Brown",
+        "yellow": "Yellow",
+        "orange": "Orange",
+        "gold": "Gold",
+        "purple": "Purple",
+        "other": "Other"
+    }
 }

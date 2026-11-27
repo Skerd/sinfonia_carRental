@@ -432,7 +432,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                     </h1>
                     {car ? (
                         <p className="text-sm text-muted-foreground">
-                            {[resolveLanguageKey("exactCar"), car.year, car.color].filter(Boolean).join(" · ")}
+                            {[resolveLanguageKey("exactCar"), car.year, car.color && resolveLanguageKey(`colorValues.${car.color}`)].filter(Boolean).join(" · ")}
                         </p>
                     ) : null}
                     <RentalCategoryFacts category={car ?? category} />

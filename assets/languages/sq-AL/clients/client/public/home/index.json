@@ -5,5 +5,21 @@
   "from": "Nga",
   "perDay": "në ditë",
   "exactCarsTitle": "Makina të veçanta",
-  "carByCar": "Jepet me qira makinë për makinë: zgjidhni tuajën"
+  "carByCar": "Jepet me qira makinë për makinë: zgjidhni tuajën",
+  "colorValues": {
+    "white": "E bardhë",
+    "black": "E zezë",
+    "silver": "Argjendi",
+    "grey": "Gri",
+    "blue": "Blu",
+    "red": "E kuqe",
+    "green": "Jeshile",
+    "beige": "Bezhë",
+    "brown": "Kafe",
+    "yellow": "E verdhë",
+    "orange": "Portokalli",
+    "gold": "Ari",
+    "purple": "Vjollcë",
+    "other": "Tjetër"
+  }
 }
